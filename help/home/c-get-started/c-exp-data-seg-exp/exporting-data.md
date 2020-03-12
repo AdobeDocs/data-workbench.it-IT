@@ -53,8 +53,7 @@ Per impostare la configurazione di esportazione, sono stati aggiunti due nuovi f
    >
    >Esempio di generazione di chiavi SSH tramite keygen:
    >
-   >
-   ```
+   >```
    >ssh-keygen -t rsa -b 4096 -C "<label>"
    >```
 
