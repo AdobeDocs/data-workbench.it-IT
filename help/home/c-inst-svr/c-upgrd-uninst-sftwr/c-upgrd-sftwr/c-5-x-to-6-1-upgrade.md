@@ -180,8 +180,7 @@ L&#39;installazione del server di report ora è completa.
    >
    >Ad esempio, per avviare il cinese semplificato, creare una scelta rapida che passi all&#39;impostazione della riga di comando.
    >
-   >
-   ```
+   >```
    >Insight.exe -zh-cn
    >```
    >
