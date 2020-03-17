@@ -3,7 +3,7 @@ description: Aggiornamento dei componenti server per Workbench dati 6.3.
 title: Aggiornamento del server DWB da 6.2 a 6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 79d5a2f44ade88f25f7621a4738d14c43777fc9f
 
 ---
 
@@ -22,26 +22,27 @@ Se avete dei profili personalizzati che hanno la precedenza sui file predefiniti
    1. Modificare il tipo di dati per **[!UICONTROL Proxy Password]** da &quot; [!DNL string"] a &quot; [!DNL EncryptedString]&quot; nella sezione Configurazione ** workstation.
 
       ```
-      Proxy User Name = string: 
-      Proxy Password = EncryptedString:   ( 
-      
-<i>da Password proxy = String</i>)Usa file indirizzo = booleano: true&quot;
+        Proxy User Name = string: 
+        Proxy Password = EncryptedString:   ( 
+        from Proxy Password = String) 
+        Use Address File = bool: true
+      ```
 
-    1. Aggiungete nuove voci per abilitare le nuove trasformazioni Nome coppia valore: *BuildNameValuePair* e *ExtractNameValuePair*.
-    
-    Apri un&#39;area di lavoro e fai clic con il pulsante destro del mouse **Admin** > **Profile Manager**.
-    
-    In **Context**, fare clic sul file **meta.cfg** nella colonna **Base**, quindi fare clic su **Make Local*. Nella colonna della tabella Utente, fare clic con il pulsante destro del mouse e selezionare **Open** > **in Workstation*.
-    
-    ![](assets/meta_cfg.png)
-    
-    * Nella nuova finestra, fate clic su **metadata** e aggiungete modelli figlio accettabili.
-    
-    ![](assets/meta_cfg_child.png)
-    
-    * Aprire **transformation** e aggiungere nuovi modelli.
-    
-    ![](assets/meta_cfg_template.png)
+   1. Aggiungete nuove voci per abilitare le nuove trasformazioni Nome coppia valore: *BuildNameValuePair* e *ExtractNameValuePair*.
+
+      Aprite un’area di lavoro e fate clic con il pulsante destro del mouse su **Admin** (Amministratore) > **Profile Manager (Gestione** profili).
+
+      In **Contesto**, fare clic sul file **meta.cfg** nella colonna **Base** , quindi fare clic su **Rendi locale**. Nella colonna della tabella Utente, fare clic con il pulsante destro del mouse e selezionare **Apri** > **in Workstation**.
+
+      ![](assets/meta_cfg.png)
+
+      * Nella nuova finestra, fate clic su **metadati** e aggiungete modelli figlio validi.
+
+         ![](assets/meta_cfg_child.png)
+
+      * Aprire **la trasformazione** e aggiungere nuovi modelli.
+
+         ![](assets/meta_cfg_template.png)
 
 * **Aggiornamento per miglioramenti** di unione rapida. Aggiungi parametri o modifica valori ai seguenti file di configurazione per sfruttare i miglioramenti di velocità in Workbench dati durante una trasformazione.
 
