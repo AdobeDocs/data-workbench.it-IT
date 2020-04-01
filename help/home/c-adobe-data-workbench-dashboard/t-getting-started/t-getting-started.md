@@ -5,7 +5,7 @@ title: Introduzione
 topic: Data workbench
 uuid: 9e2ed5fd-29d7-4e06-ad55-c4a35a9043c8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a076f6b7ba89e0f009b1d3818ad245bc7a177b35
 
 ---
 
@@ -29,9 +29,8 @@ Per iniziare a utilizzare il dashboard del workbench dati di Adobe, procedere co
    Contattate l’amministratore per creare un account. Vi verranno forniti un nome utente, una password temporanea e le istruzioni per accedere al dashboard. 1. Accedi al dashboard workbench dati Adobe.
 
    Il dashboard è un&#39;applicazione Internet avanzata che richiede solo un browser Web e una connessione di rete appropriata per funzionare. Per accedere al dashboard, è sufficiente avere a disposizione un browser compatibile e la possibilità di connettersi al server del dashboard.
-
    1. Accedete al dashboard.
    1. Aprite un browser Web compatibile.
    1. Andate all&#39;URL in cui si trova il dashboard di Adobe Data Workbench. Se non siete sicuri dell&#39;URL in cui è ospitato il dashboard, contattate l&#39;amministratore.
    1. Immettete il vostro nome utente e la password.
-   1. Fai clic su **[!UICONTROL Log in]** (Fine).
+   1. Fai clic su **[!UICONTROL Log in]**.
