@@ -5,7 +5,7 @@ title: Tracciamento delle attività dei visitatori all’interno dei contenuti F
 topic: Data workbench
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
 
 ---
 
@@ -30,7 +30,7 @@ Per facilitare il tracciamento dell&#39;attività dei visitatori all&#39;interno
    ```
 
 1. Create un file vuoto denominato [!DNL flashtag.txt] e inserite il file sui server Web.
-1. Nella funzione del passaggio 1, sostituire il segnaposto [!DNL [PATH_TO_WEB_SERVER]] con il percorso completo o relativo alla posizione del [!DNL flashtag.txt] file. Ad esempio:
+1. Nella funzione del passaggio 1, sostituire il segnaposto \[[!DNL PATH_TO_WEB_SERVER]\] con il percorso completo o relativo alla posizione del [!DNL flashtag.txt] file. Ad esempio:
 
    ```
    var FLASHTAGURI = http://www.mysite.com/flashtag/flashtag.txt”;
@@ -44,7 +44,7 @@ Per facilitare il tracciamento dell&#39;attività dei visitatori all&#39;interno
 
    Questo esempio illustra l&#39;utilizzo dell&#39;evento on(release); tuttavia, è possibile fare riferimento alla funzione tag() attraverso qualsiasi evento che si desidera monitorare, ad esempio un evento on(press), on(rollover), on(rollout) o on(keypress).
 
-   Il segnaposto [!DNL [PUT_PAGE_NAME_HERE]] deve essere sostituito con una stringa che rappresenta il nome della pagina o dell&#39;evento da tracciare. La variabile [!DNL [PUT_PAGE_NAME_HERE]] può essere modificata manualmente o tramite un riferimento di variabile per indicare un nome univoco per la pagina o l&#39;evento all&#39;interno dell&#39; [!DNL Flash] applicazione. Il valore che sostituisce il segnaposto [!DNL [PUT_PAGE_NAME_HERE]] può essere costituito da un nome semplice o essere strutturato in modo da rappresentare una struttura gerarchica simile a un URI completo. Ad esempio:
+   Il segnaposto \[[!DNL PUT_PAGE_NAME_HERE]\] deve essere sostituito con una stringa che rappresenta il nome della pagina o dell&#39;evento da tracciare. La variabile \[[!DNL PUT_PAGE_NAME_HERE]\] può essere modificata manualmente o mediante un riferimento di variabile per indicare un nome univoco per la pagina o l&#39;evento all&#39;interno dell&#39; [!DNL Flash] applicazione. Il valore che sostituisce il segnaposto \[[!DNL PUT_PAGE_NAME_HERE]\] può essere costituito da un nome semplice o strutturato in modo da rappresentare una struttura gerarchica simile a un URI completo. Ad esempio:
 
    ```
    on(release) {tag(“/about_us/index.swf","[PUT_ADDITIONAL_VAR_HERE]");}
@@ -52,13 +52,13 @@ Per facilitare il tracciamento dell&#39;attività dei visitatori all&#39;interno
 
    Adobe consiglia di compilare, prima della distribuzione del codice, una specifica scritta per i nomi delle pagine e gli eventi, in modo da facilitare l&#39;allineamento dei requisiti aziendali e delle attività di sviluppo e ridurre il potenziale per ulteriori cicli di sviluppo.
 
-1. Se necessario, è possibile raccogliere ulteriori variabili e associarle alle pagine o agli eventi del [!DNL Flash] filmato. A tal fine, sostituire il segnaposto [!DNL [PUT_ADDITIONAL_VAR_HERE]] con un set di coppie nome=valore separate da una e commerciale (&amp;). Ad esempio:
+1. Se necessario, è possibile raccogliere ulteriori variabili e associarle alle pagine o agli eventi del [!DNL Flash] filmato. A questo scopo, sostituite il segnaposto \[[!DNL PUT_ADDITIONAL_VAR_HERE]\] con un set di coppie nome=valore separate da una e commerciale (&amp;). Ad esempio:
 
    ```
    on(release) {tag(“/about_us/index.swf"," var1=value1&var2=value2");}
    ```
 
-   Le variabili possono essere modificate manualmente o mediante un riferimento variabile per indicare gli attributi aggiuntivi da raccogliere e associare alla pagina o all’evento. Se non sono disponibili variabili aggiuntive da raccogliere, rimuovere [!DNL [PUT_ADDITIONAL_VAR_HERE]].
+   Le variabili possono essere modificate manualmente o mediante un riferimento variabile per indicare gli attributi aggiuntivi da raccogliere e associare alla pagina o all’evento. Se non sono presenti variabili aggiuntive applicabili da raccogliere, rimuovete \[[!DNL PUT_ADDITIONAL_VAR_HERE]\].
 
    La configurazione del tracciamento dei visitatori all&#39;interno dei contenuti [!DNL Flash] multimediali avanzati è ora completa. Quando l&#39;evento viene richiamato, viene chiamata la [!DNL (PAGENAME,VARIABLES)] funzione tag, con conseguente richiesta HTTP per il file seguente. Questa funzione viene chiamata in aggiunta ad altre funzioni che possono essere attivate come definito nel [!DNL Flash] filmato:
 
@@ -140,7 +140,7 @@ La richiesta HTTP derivante dalla funzione [!DNL Flash] Tag ActionScript genera 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-query </td> 
-   <td colname="col2"> Stringa di query </td> 
+   <td colname="col2"> Stringa query </td> 
    <td colname="col3"> Eventuale porzione della stringa di query dell’URI richiesto dal client </td> 
    <td colname="col4"> PAGENAME=/about_us/index.swf&amp;var1=value1&amp;var2=value2 </td> 
   </tr> 
