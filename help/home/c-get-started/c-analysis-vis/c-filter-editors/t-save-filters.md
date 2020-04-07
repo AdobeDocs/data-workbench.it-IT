@@ -5,7 +5,7 @@ title: Salvare e caricare i filtri
 topic: Data workbench
 uuid: 5312b9c4-0193-4d45-af54-e8f6d2706bf2
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 3e8f2c01b913afb25fe5f6bde1c7ec5145059266
 
 ---
 
@@ -14,12 +14,12 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 Passaggi per salvare e caricare i filtri.
 
-1. Fate clic con il pulsante destro del mouse sul nome del filtro (oppure **[!UICONTROL[noname]]** se il filtro è nuovo) e fate clic **[!UICONTROL Save Filter]**.
+1. Fate clic con il pulsante destro del mouse sul nome del filtro (oppure **\[[!UICONTROL noname]\]** se il filtro è nuovo) e fate clic **[!UICONTROL Save Filter]**.
 1. Immettete il nome desiderato per il filtro nell’ **[!UICONTROL Save As]** etichetta.
 
    ![Informazioni sul passaggio](assets/vis_FilterEditor_SaveFilter.png)
 
-1. Fai clic su **[!UICONTROL Save Filter]** (Fine).
+1. Fai clic su **[!UICONTROL Save Filter]**.
 
    Dopo aver salvato il filtro, potete caricarlo e usarlo in altre aree di lavoro. Di seguito viene illustrato come caricare un filtro esistente o farvi riferimento per nome in un [!DNL Metric Editor]. Consultate [Creazione e modifica di metriche](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)derivate.
 
