@@ -4,7 +4,7 @@ solution: Insight
 title: Configurazione del server Master Insight per il clustering
 uuid: c3ac38e3-79c5-4863-9156-194589a6bcbd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
@@ -137,7 +137,7 @@ Il [!DNL Synchronize.cfg] file specifica la posizione del master [!DNL Insight S
 1. Espande la struttura del componente.
 1. Nel parametro Indirizzo server principale cluster, specificate l&#39;indirizzo IP del master (primario) **[!UICONTROL Insight Server]**.
 
-   ![](assets/cfg_cluster_SyncFile_(CentralCopy).png)
+   ![](assets/cfg_cluster_SyncFile_CentralCopy.png)
 
    Per creare un registro che registra ogni volta che si verifica la sincronizzazione tra il master [!DNL Insight Server] e l&#39;elaborazione [!DNL Insight Servers], accertatevi che il parametro Enable Synchronization Log (Abilita registro sincronizzazione) sia impostato su &quot;true&quot;.
 
