@@ -3,7 +3,7 @@ description: Workbench dati fornisce una procedura guidata per l'installazione d
 title: Procedura guidata di impostazione della workstation
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
@@ -52,14 +52,14 @@ Avviate l&#39;eseguibile della procedura guidata di installazione e seguite ogni
       >
       >Inizialmente verrà installato un file ***Insight.cfg*** generico senza i dettagli del server. È consigliabile utilizzare il file ***Insight.cfg*** appena installato e personalizzarlo invece di spostare un file da un&#39;installazione precedente. Poiché il percorso di installazione della workstation è cambiato, si consiglia di aggiungere font, rimuovere la cartella ** utente e rimuovere il *TraceFileComponent *.
 
-1. (facoltativo) Selezionate** Personalizzato** per scegliere il pacchetto lingua e la posizione del programma e dei file di dati.
+1. (Facoltativo) Selezionate **Personalizzato** per scegliere il pacchetto lingua e il percorso del programma e dei file di dati.
 1. Selezionate la posizione delle **scelte rapide nel menu** Start.
 
    ![](assets/6_4_workstation_wizard_folder.png)
 
    Fare clic su **Non creare una cartella** del menu Start per non installare un collegamento nel menu Start di Windows.
 
-1. Fai clic su **Successivo.** Verrà visualizzato un riepilogo dei percorsi e delle lingue di percorso del file selezionati. Fai clic su **Installa.**
+1. Fai clic su **Avanti.** Verrà visualizzato un riepilogo dei percorsi e delle lingue di percorso del file selezionati. Fai clic su **Installa.**
 
 1. Individuare il certificato **Workbench** dati.
 
