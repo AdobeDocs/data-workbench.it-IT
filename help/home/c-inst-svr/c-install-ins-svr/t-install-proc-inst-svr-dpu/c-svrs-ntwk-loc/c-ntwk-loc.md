@@ -1,17 +1,17 @@
 ---
-description: Concettualmente, il file indirizzo ha lo stesso scopo del file ETC\HOSTS su un computer in rete.
+description: Concettualmente, il file indirizzo ha lo stesso scopo del file ETC&bsol;HOSTS su un computer collegato in rete.
 solution: Insight
 title: Posizioni di rete
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
+source-git-commit: e8612fab1c13ca5262816dde7deaa6fd8bedbc62
 
 ---
 
 
 # Posizioni di rete{#network-locations}
 
-Concettualmente, il file indirizzo ha lo stesso scopo del file ETC\HOSTS su un computer in rete.
+Concettualmente, il file indirizzo ha lo stesso scopo del file ETC&amp;bsol;HOSTS su un computer collegato in rete.
 
 Tuttavia, a differenza del file HOSTS, che descrive una singola raccolta di nomi, il file di indirizzo contiene più raccolte di nomi denominate posizioni di rete.
 
