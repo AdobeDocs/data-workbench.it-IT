@@ -3,7 +3,7 @@ description: Nuove funzioni e problemi risolti in Workbench dati 6.73.
 title: Note sulla versione di Workbench dati 6.73
 uuid: bba63a8c-9cb7-4334-b66a-22db92153066
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: 9552a2f9fe4e450b1e212b38a09f77252a009419
 
 ---
 
@@ -12,11 +12,7 @@ source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
 
 Nuove funzioni e problemi risolti in Workbench dati 6.73.
 
-## Data Workbench 6.73 Release Notes {#topic-7655534554ac4a4b816af1bd73b06aad56757}
-
-Nuove funzioni e problemi risolti in Workbench dati 6.73.
-
-## Problemi risolti {#section-160baf6ea04c45a993777ee4260691ed}
+## Correzioni {#section-160baf6ea04c45a993777ee4260691ed}
 
 * È stato corretto un problema in Workstation a causa del quale gli utenti non potevano accedere da alcuni hardware ad alta risoluzione e con valore DPI elevato.
 * È stato risolto un problema nel server in cui l&#39;e-mail mancava nei nomi dei file di archivio quando si utilizzava l&#39;accesso IMS.
