@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: analytics
 audience: end-user
-user-guide-title: Data Workbench Help
+user-guide-title: Guida di Workbench dati
 translation-type: tm+mt
-source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
+source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
 
 ---
 
@@ -20,15 +20,15 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + [Portale di report Workbench dati 2.1](home/c-release-notes-insight/reportserver-2-1.md)
    + [Note sulla versione di Workbench dati 6.61](home/c-release-notes-insight/c-6-6-1.md)
    + [Note sulla versione di Workbench dati 6.6](home/c-release-notes-insight/c-6-6.md)
-   + [Aggiornamento Workbench dati 6.52](home/c-release-notes-insight/c-6-52.md)
-   + [Aggiornamento Workbench dati 6.51](home/c-release-notes-insight/c-6-51.md)
+   + [Aggiornamento Data Workbench 6.52](home/c-release-notes-insight/c-6-52.md)
+   + [Aggiornamento Data Workbench 6.51](home/c-release-notes-insight/c-6-51.md)
    + [Note sulla versione di Workbench dati 6.5](home/c-release-notes-insight/c-6-5.md)
    + [Note sulla versione di Workbench dati 6.4](home/c-release-notes-insight/c-6-4/c-6-4.md)
-   + [Aggiornamento Workbench dati 6.31](home/c-release-notes-insight/c-6-3-1.md)
+   + [Aggiornamento Data Workbench 6.31](home/c-release-notes-insight/c-6-3-1.md)
    + [Note sulla versione di Workbench dati 6.3](home/c-release-notes-insight/c-6-3/c-6-3.md)
-   + [Aggiornamento Workbench dati 6.21](home/c-release-notes-insight/c-6-2-1.md)
-   + [Note sulla versione di Workbench dati 6.1](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
-   + [Aggiornamento Workbench dati 6.11](home/c-release-notes-insight/c-6-1-1.md)
+   + [Aggiornamento Data Workbench 6.21](home/c-release-notes-insight/c-6-2-1.md)
+   + [Note sulla versione di Workbench dati 6.2](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
+   + [Aggiornamento Data Workbench 6.11](home/c-release-notes-insight/c-6-1-1.md)
    + [Aggiornamento feed dati per aprile MR 2014](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
    + [Note sulla versione di Workbench dati 6.1](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
    + [Note sulla versione di Workbench dati 6.0 e 6.0.4](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
@@ -358,6 +358,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
 + Configurazione set di dati {#dataset}
    + [Informazioni sulla costruzione del set di dati](home/c-dataset-const-proc/c-dataset-constr.md)
    + [Informazioni sulla configurazione del set di dati](home/c-dataset-const-proc/c-dataset-config.md)
+   + [Supporto di Workbench dati per GDPR](home/c-dataset-const-proc/dwb-gdpr.md)
    + File di configurazione dell&#39;elaborazione del registro {#log-proc-config-file}
       + [Informazioni sul file di configurazione dell&#39;elaborazione del registro](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [Modifica del file di configurazione dell&#39;elaborazione del registro](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
