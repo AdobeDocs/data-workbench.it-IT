@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Guida di Workbench dati
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
 
 ---
 
@@ -14,6 +14,7 @@ source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
 + [Guida di Workbench dati](home/home.md)
 + Note sulla versione {#release-notes}
    + [Panoramica sulle note sulla versione](home/c-release-notes-insight/release-notes.md)
+   + [Note sulla versione di Workbench dati 6.74](home/c-release-notes-insight/dwb-6-74-release-notes.md)
    + [Note sulla versione di Workbench dati 6.73](home/c-release-notes-insight/dwb-6-73-release-notes.md)
    + [Note sulla versione di Workbench dati 6.72](home/c-release-notes-insight/dwb-6-72-release-notes.md)
    + [Note sulla versione di Workbench dati 6.7](home/c-release-notes-insight/dwb-6-7-release-notes.md)
