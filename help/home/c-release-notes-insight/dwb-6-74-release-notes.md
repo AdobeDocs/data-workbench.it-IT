@@ -2,7 +2,7 @@
 description: Nuove funzioni in Workbench dati 6.74.
 title: Note sulla versione di Workbench dati 6.74
 translation-type: tm+mt
-source-git-commit: 9552a2f9fe4e450b1e212b38a09f77252a009419
+source-git-commit: 82d91013a9b225d5a0d4becb7e3ed3f42ec16aff
 
 ---
 
