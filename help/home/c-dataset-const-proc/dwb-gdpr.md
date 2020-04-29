@@ -4,7 +4,7 @@ solution: Analytics
 title: Supporto di Workbench dati per GDPR
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
 
 ---
 
@@ -21,7 +21,7 @@ Il regolamento GDPR identifica i ruoli e gli obblighi dei diversi soggetti respo
 * Adobe funge da **elaboratore** dati per fornire software e servizi per l&#39;implementazione dei requisiti GDPR in base all&#39;accordo con Adobe.
 * Dopo l&#39;integrazione di Workbench dati con il servizio GDPR e secondo gli standard GDPR, i visitatori di un sito (i soggetti **dei** dati) possono esercitare il loro &quot;diritto di essere dimenticati&quot; da Adobe, il processore dei dati. Per ottenere il diritto di essere dimenticati, il controller dei dati può caricare gli ID visitatore contestati in Adobe da un’interfaccia utente o da un’API. Per ulteriori informazioni, consulta la documentazione sul flusso di lavoro [GDPR di](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) Adobe Analytics, inclusa la sezione relativa alle richieste [di](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html) invio ed eliminazione di accesso.
 
->[!Note]
+>[!NOTE]
 >
 >Per altre origini dati, la tua organizzazione sarà responsabile della pulizia degli ID visitatore contestati da altre origini log, come CRM, POS, IVR e altre origini dati non utilizzate. I pacchetti di servizi con ambito personalizzato saranno disponibili per fornire supporto alle organizzazioni, _fornendo un set completo di file sostitutivi per ogni origine_ dati o altre opzioni personalizzate.
 
