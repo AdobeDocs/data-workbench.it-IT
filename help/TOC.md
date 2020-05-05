@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Guida di Workbench dati
 translation-type: tm+mt
-source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
+source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 
 ---
 
@@ -966,6 +966,5 @@ source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
       + [Modifiche alla configurazione per il nuovo schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Impostazione dimensioni derivate](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [API Query](https://www.adobe.io/)
-+ [Workbench dati con feed dati di Analytics](home/assets/dwb-analytics-implementation.pdf)
 + [Integrazione di Workbench dati con Adobe Target](home/dwb-adobe-target.md)
 + [Glossario Workbench dati](dwb-glossary.md)
