@@ -3,7 +3,7 @@ description: Spiegazione di Countables in Dataworkbench (DWB) per progettare e i
 title: Struttura dello schema Strutture contabili
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
 translation-type: tm+mt
-source-git-commit: 6443bdf8856ba51252685fa0c1ed65f831142956
+source-git-commit: 8b0e9c8855a7c7228393dfab4bf78645f1953794
 
 ---
 
@@ -91,4 +91,4 @@ Per creare la tabella Contabile in Workbench dati, procedere come segue:
 
    Se il Contabile non è il primo livello, nel campo padre assegnare il nome della Contabile padre. Nell&#39;esempio seguente, viene creata la tabella Conteggio coinvolgimento e il padre per la tabella contabile è Cliente. ![](assets/dwb_impl_arch_5.png)
 
-Per ulteriori informazioni sull&#39;architettura del workbench dati per la progettazione dello schema, le strutture calcolabili e le configurazioni del feed di dati offline, vedere la Guida di riferimento [per l&#39;interfaccia](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html) dello schema [DataSet e le](../../assets/insight_sc_implementation.pdf)dimensioni e le metriche.
+Per ulteriori informazioni sull&#39;architettura del workbench dati per la progettazione dello schema, le strutture calcolabili e le configurazioni del feed di dati offline, vedere l&#39;interfaccia [Schema](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html)DataSet.
