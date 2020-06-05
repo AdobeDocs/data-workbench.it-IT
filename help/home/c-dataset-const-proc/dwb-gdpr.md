@@ -4,7 +4,10 @@ solution: Analytics
 title: Supporto di Workbench dati per GDPR
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
+source-git-commit: 279e71f3da3f0ebc29091e88b87666a22a36a8d6
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ Il regolamento GDPR identifica i ruoli e gli obblighi dei diversi soggetti respo
 
 >[!NOTE]
 >
->Per altre origini dati, la tua organizzazione sarà responsabile della pulizia degli ID visitatore contestati da altre origini log, come CRM, POS, IVR e altre origini dati non utilizzate. I pacchetti di servizi con ambito personalizzato saranno disponibili per fornire supporto alle organizzazioni, _fornendo un set completo di file sostitutivi per ogni origine_ dati o altre opzioni personalizzate.
+>Per altre origini dati, la tua organizzazione sarà responsabile della pulizia degli ID visitatore contestati da altre origini log, come CRM, POS, IVR e altre origini dati non utilizzate. I pacchetti di servizi con ambito personalizzato saranno disponibili per fornire supporto alle organizzazioni, _fornendo un set completo di file sostitutivi per ogni origine_ di dati che gli utenti che mantengono il servizio in corso devono supportare o mantenere.
 
 ## Aggiornamento di DWB per l’implementazione GDPR
 
@@ -31,7 +34,7 @@ Consulenza consiglierà sul pacchetto di servizi appropriato per rendere conform
 
 Se necessario:
 
-* [Eseguire l&#39;aggiornamento alla versione](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html) più recente di Workbench dati. Per garantire la massima sicurezza, nelle versioni DWB 6.7 sono stati aggiunti nuovi certificati e nuove funzioni di sicurezza, necessari per l&#39;integrazione con GDPR.
+* [Eseguire l&#39;aggiornamento alla versione](https://docs.adobe.com/content/help/it-IT/data-workbench/using/release-notes/release-notes.html) più recente di Workbench dati. Per garantire la massima sicurezza, nelle versioni DWB 6.7 sono stati aggiunti nuovi certificati e funzioni di sicurezza necessari per l&#39;integrazione con GDPR.
 * Se si utilizzano i registri eventi TSV Analytics precedenti, eseguire l&#39;aggiornamento al feed [dati](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/log-proc-config-file/c-log-sources.html#section-9a824b4c3d5549e7952a7111232035b2)Avro.
 * Se si utilizza un UCP legacy (Unified Customer Process) con Transform per aggiornare i log esistenti, eseguire l&#39;aggiornamento al processo corrente. Il processo aggiornato genera direttamente un file di ricerca master per la mappatura degli ID visitatore tra le origini.
 * Standardizzare il flusso di dati per soddisfare il servizio GDPR.
