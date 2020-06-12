@@ -3,7 +3,10 @@ description: Effettuare l'aggiornamento a Workbench dati v6.4.
 title: Aggiornamento da 6.3 a 6.4
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Per effettuare l&#39;aggiornamento a Workbench dati 6.4, attenersi ai seguenti r
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   In questo modo saranno consentiti i diritti &quot;white list&quot; per questi eseguibili di interfaccia.
+   In questo modo verranno abilitati i diritti di elenco per questi eseguibili di interfaccia.
 
 * **Aggiornate il certificato *Trust_ca_cert.pem*sui server**.
 * **Riorganizzazione dei profili** di attribuzione.
