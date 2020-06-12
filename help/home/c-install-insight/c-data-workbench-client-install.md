@@ -5,7 +5,10 @@ title: Requisiti della workstation
 topic: Data workbench
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ Prima di installare Workbench dati Workstation (Client), assicurarsi che le atti
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   In questo modo saranno consentiti i diritti &quot;white list&quot; per questi eseguibili di interfaccia.
+   In questo modo verranno abilitati i diritti di elenco per questi eseguibili di interfaccia.
 
 * **Installate Microsoft Excel per esportare i dati di analisi.** Per esportare i dati dalle aree di lavoro come file di Microsoft Excel ( [!DNL .xls] o [!DNL .xlsx]), nel computer in cui si installa Workbench dati deve essere installato Excel e registrato. Se Excel non è stato registrato e Workbench dati tenta di accedervi per la prima volta, verrà visualizzata una finestra di dialogo di registrazione. Se non si è certi che la copia sia registrata, avviare Excel manualmente e, se viene visualizzata una finestra di dialogo di registrazione, completare la procedura di registrazione.
 
@@ -45,7 +48,7 @@ Prima di installare Workbench dati Workstation (Client), assicurarsi che le atti
 
 **Requisiti del client Workbench dati**
 
-**Versione**
+**Sistema operativo**
 
 * Microsoft Windows 7 a 64 bit
 * Microsoft Windows 8.1 a 64 bit
@@ -92,7 +95,7 @@ Almeno 10 (10) GB di spazio libero su disco rigido
 
 Accesso alla stampante (stampanti a colori o in scala di grigi) per aree di lavoro e rapporti di stampa
 
-**Altro**
+**Altre**
 
 * Mouse dedicato
 * Ambiente di lavoro a basso impatto
