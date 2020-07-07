@@ -4,7 +4,10 @@ solution: Insight
 title: Informazioni su cluster di server Insight
 uuid: d65e0fe5-f87d-4d8e-a208-9192e9d62fb5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 0%
 
 ---
 
@@ -25,19 +28,17 @@ Il master [!DNL Insight Server] gestisce la comunicazione tra l&#39;altro [!DNL 
 
 >[!NOTE]
 >
->Il file **PAServer.cfg** . Se si desidera inviare i processi di clustering Predictive Analytics ai server Insight, sarà necessario configurare il [!DNL PAServer.cfg] file per la gestione degli invii del clustering lato server. Il profilo personalizzato deve ereditare il profilo [!DNL PAServer.cfg] dal profilo Predictive Analytics ( [!DNL Server\Profiles\Predictive Analytics\Dataset]). Impostate un server ** principale in questo file e salvate il file [!DNL PAServer.cfg] nel sito di implementazione. >
+>Il file **PAServer.cfg** . Se si desidera inviare i processi di clustering Predictive  Analytics ai server Insight, sarà necessario configurare il [!DNL PAServer.cfg] file per la gestione degli invii del clustering lato server. Il profilo personalizzato deve ereditare il [!DNL PAServer.cfg] dal profilo Predictive  Analytics ([!DNL Server\Profiles\Predictive Analytics\Dataset]). Impostate un server ** principale in questo file e salvate il file [!DNL PAServer.cfg] nel sito di implementazione.
 >
-```>
+>
+```
 >PAServer = PAServerConfig: 
 >   Master Server = serverInfo: 
 >       Address = string: 
 >       Port = int: 80
 >       Use SSL = bool: false
->```>
-
-
+>```
 
 >[!IMPORTANT]
 >
 >Le istruzioni di cui al presente capitolo non si applicano alla creazione di un [!DNL Insight Server] cluster costituito da più di cinque (5) [!DNL Insight Servers]. Contattate Adobe per ottenere i requisiti di sistema e le raccomandazioni di configurazione del profilo per cluster di dimensioni superiori a cinque [!DNL Insight Servers].
-
