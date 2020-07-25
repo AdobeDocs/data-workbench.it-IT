@@ -2,37 +2,41 @@
 cloud: experience-cloud
 product: analytics
 audience: end-user
-user-guide-title: Guida di Workbench dati
+user-guide-title: Data Workbench Aiuto
+user-guide-description: Learn about the multi-channel capabilities of Data Workbench. Includes Data Workbench Client, Installation, Dataset Configuration guides, and more.
 translation-type: tm+mt
-source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
+source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
+workflow-type: tm+mt
+source-wordcount: '3518'
+ht-degree: 2%
 
 ---
 
 
-# Guida di Workbench dati {#using}
+# Data Workbench Aiuto {#using}
 
-+ [Guida di Workbench dati](home/home.md)
++ [Data Workbench Aiuto](home/home.md)
 + Note sulla versione {#release-notes}
    + [Panoramica sulle note sulla versione](home/c-release-notes-insight/release-notes.md)
-   + [Note sulla versione di Workbench dati 6.74](home/c-release-notes-insight/dwb-6-74-release-notes.md)
-   + [Note sulla versione di Workbench dati 6.73](home/c-release-notes-insight/dwb-6-73-release-notes.md)
-   + [Note sulla versione di Workbench dati 6.72](home/c-release-notes-insight/dwb-6-72-release-notes.md)
-   + [Note sulla versione di Workbench dati 6.7](home/c-release-notes-insight/dwb-6-7-release-notes.md)
-   + [Portale di report Workbench dati 2.1](home/c-release-notes-insight/reportserver-2-1.md)
-   + [Note sulla versione di Workbench dati 6.61](home/c-release-notes-insight/c-6-6-1.md)
-   + [Note sulla versione di Workbench dati 6.6](home/c-release-notes-insight/c-6-6.md)
+   + [Note sulla versione di Data Workbench 6.74](home/c-release-notes-insight/dwb-6-74-release-notes.md)
+   + [Data Workbench 6.73 - Note sulla versione](home/c-release-notes-insight/dwb-6-73-release-notes.md)
+   + [Data Workbench 6.72 - Note sulla versione](home/c-release-notes-insight/dwb-6-72-release-notes.md)
+   + [Note sulla versione di Data Workbench 6.7](home/c-release-notes-insight/dwb-6-7-release-notes.md)
+   + [Data Workbench portale di report 2.1](home/c-release-notes-insight/reportserver-2-1.md)
+   + [Note sulla versione di Data Workbench 6.61](home/c-release-notes-insight/c-6-6-1.md)
+   + [Note sulla versione di Data Workbench 6.6](home/c-release-notes-insight/c-6-6.md)
    + [Aggiornamento Data Workbench 6.52](home/c-release-notes-insight/c-6-52.md)
    + [Aggiornamento Data Workbench 6.51](home/c-release-notes-insight/c-6-51.md)
-   + [Note sulla versione di Workbench dati 6.5](home/c-release-notes-insight/c-6-5.md)
-   + [Note sulla versione di Workbench dati 6.4](home/c-release-notes-insight/c-6-4/c-6-4.md)
+   + [Note sulla versione di Data Workbench 6.5](home/c-release-notes-insight/c-6-5.md)
+   + [Note sulla versione di Data Workbench 6.4](home/c-release-notes-insight/c-6-4/c-6-4.md)
    + [Aggiornamento Data Workbench 6.31](home/c-release-notes-insight/c-6-3-1.md)
-   + [Note sulla versione di Workbench dati 6.3](home/c-release-notes-insight/c-6-3/c-6-3.md)
+   + [Data Workbench 6.3 - Note sulla versione](home/c-release-notes-insight/c-6-3/c-6-3.md)
    + [Aggiornamento Data Workbench 6.21](home/c-release-notes-insight/c-6-2-1.md)
-   + [Note sulla versione di Workbench dati 6.2](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
+   + [Note sulla versione di Data Workbench 6.2](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Aggiornamento Data Workbench 6.11](home/c-release-notes-insight/c-6-1-1.md)
    + [Aggiornamento feed dati per aprile MR 2014](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
-   + [Note sulla versione di Workbench dati 6.1](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
-   + [Note sulla versione di Workbench dati 6.0 e 6.0.4](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
+   + [Note sulla versione di Data Workbench 6.1](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
+   + [Note sulla versione di Data Workbench 6.0 e 6.0.4](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + Installazione {#install}
    + [Requisiti della workstation](home/c-install-insight/c-data-workbench-client-install.md)
    + Configurazione workstation {#workstation-setup}
@@ -45,16 +49,16 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Download e installazione del certificato digitale](home/c-install-insight/install-setup/c-dgtl-crtf.md)
       + [Configurazione della connessione a Insight Server](home/c-install-insight/install-setup/c-conn-isvr.md)
       + [Risoluzione dei problemi di connessione](home/c-install-insight/install-setup/t-conn-trbsh.md)
-   + Aggiornamento del workbench dati {#upgrade-dwb}
-      + [Aggiornamento della panoramica del workbench dati](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
+   + Aggiornamento Data Workbench {#upgrade-dwb}
+      + [Aggiornamento della panoramica delle Date Workbench](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [Aggiornamento da 6.4 a 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [Aggiornamento da 6.3 a 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
       + [Aggiornamento del server DWB: da 6.2 a 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
       + [Aggiornamento del server DWB: da 6.1 a 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
-      + [Aggiornamento di Workbench dati da 6.0 a 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
-      + [Aggiornamento a Workbench dati da 5.5 a 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
+      + [Aggiornamento a Data Workbench da 6.0 a 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
+      + [Aggiornamento a Data Workbench da 5.5 a 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
 + Client {#client}
-   + [Apertura di Workbench dati](home/c-get-started/t-open-ins.md)
+   + [Data Workbench di apertura](home/c-get-started/t-open-ins.md)
    + [Provisioning autonomo degli utenti](home/c-get-started/c-self-provisioning-users.md)
    + [Utilizzo offline e online](home/c-get-started/c-off-on.md)
    + [Profili](home/c-get-started/c-work-prof.md)
@@ -76,7 +80,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Sblocco di un’area di lavoro](home/c-get-started/c-work-worksp/c-unlock-wksp.md)
       + [Eliminazione di un’area di lavoro](home/c-get-started/c-work-worksp/c-del-wksp.md)
       + [Utilizzo del menu Finestra dell&#39;area di lavoro](home/c-get-started/c-work-worksp/c-wksp-win-menu.md)
-   + [Scelte rapide da tastiera per il client Workbench dati](home/c-get-started/analytics-quick-keys-for-dataworkbench.md)
+   + [Scelte rapide da tastiera per Data Workbench Client](home/c-get-started/analytics-quick-keys-for-dataworkbench.md)
    + Utilizzo delle finestre in un’area di lavoro {#working-with-windows-workspace}
       + [Utilizzo delle finestre in una panoramica dell’area di lavoro](home/c-get-started/c-wk-win-wksp/c-wk-win-wksp.md)
       + [Manipolare le finestre in un’area di lavoro](home/c-get-started/c-wk-win-wksp/c-man-win-wksp.md)
@@ -92,10 +96,10 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Esportazione segmento con intestazioni personalizzate](home/c-get-started/c-exp-data-seg-exp/c-segment-export.md)
       + [Esportazione di un segmento mediante la distribuzione S/FTP](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
       + [Esportazione profili e audience](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
-      + [Esportazione nei servizi di base di Analytics](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
-      + [Esporta in Adobe Target](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
+      + [Esportazione  servizi di base Analytics](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
+      + [Esporta in  Adobe Target](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
       + [Esportazione guidata segmenti](home/c-get-started/c-exp-data-seg-exp/segment-export.md)
-   + [Report di Analytics](home/c-get-started/c-template-report-types.md)
+   + [rapporti Analytics](home/c-get-started/c-template-report-types.md)
    + Rapporti di attribuzione {#attribution-reports}
       + [Utilizzo dei rapporti di attribuzione](home/c-get-started/c-attribution-profiles/c-attribution-profiles.md)
       + [Panoramica del profilo di attribuzione](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
@@ -315,7 +319,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Opzione di configurazione](home/c-get-started/c-admin-intrf/c-config-opt.md)
    + Funzionalità di interfaccia e analisi {#ui-analysis-features}
       + [Funzionalità di interfaccia e analisi](home/c-get-started/c-intf-anlys-ftrs/c-intf-anlys-ftrs.md)
-      + [Personalizza Workbench dati localmente](home/c-get-started/c-intf-anlys-ftrs/c-cstm-lcl.md)
+      + [Personalizza Data Workbench localmente](home/c-get-started/c-intf-anlys-ftrs/c-cstm-lcl.md)
       + Personalizzare i menu {#custom-menus}
          + [Personalizzare un menu](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-ctm-menus.md)
          + [Creazione di un menu e di una voce di menu dell’area di lavoro](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-wksp-menus-itms.md)
@@ -359,12 +363,12 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 + Configurazione set di dati {#dataset}
    + [Informazioni sulla costruzione del set di dati](home/c-dataset-const-proc/c-dataset-constr.md)
    + [Informazioni sulla configurazione del set di dati](home/c-dataset-const-proc/c-dataset-config.md)
-   + [Supporto di Workbench dati per GDPR](home/c-dataset-const-proc/dwb-gdpr.md)
+   + [Supporto Data Workbench per GDPR](home/c-dataset-const-proc/dwb-gdpr.md)
    + File di configurazione dell&#39;elaborazione del registro {#log-proc-config-file}
       + [Informazioni sul file di configurazione dell&#39;elaborazione del registro](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [Modifica del file di configurazione dell&#39;elaborazione del registro](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
       + [Origini log](home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md)
-      + [Configurazione di un&#39;unità del file server Workbench dati](home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md)
+      + [Configurazione di un&#39;unità del file server di Data Workbench](home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md)
       + [Parametri di elaborazione del registro](home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md)
       + [Origini dati ODBC](home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md)
       + [Considerazioni per il file di configurazione dell&#39;elaborazione del registro](home/c-dataset-const-proc/c-log-proc-config-file/c-cons-log-proc-config-file.md)
@@ -453,7 +457,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + File Transform.cfg {#transform-cfg-file}
             + [Il file Transform.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md)
             + [Definizione degli esportatori](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-def-exp.md)
-            + [Esempio di file Transform.cfg di Workbench dati](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md)
+            + [Esempio di Data Workbench di file Transform.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md)
          + [Il file Transform Mode.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-transf-mode-file.md)
          + [Il File Definitions.cfg Del Campo Richiesto](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/c-req-field-def-file.md)
    + Rielaborazione e riconversione {#reproc-retrans}
@@ -500,7 +504,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + [Configurare il set di report](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/t-config-rpt-set.md)
          + [Generazione di rapporti come file Microsoft Excel](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-gen-rpts-ex-files.md)
          + [Generazione dinamica di report](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-dyn-gen-rpts.md)
-         + [Pubblicare il set di report sul server Workbench dati](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-pub-rpt-set.md)
+         + [Pubblicare il set di report sul server di Data Workbench](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-pub-rpt-set.md)
       + [Verifica dello stato del set di report](home/c-rpt-oview/c-work-rpt-sets/c-rev-rpt-set-stat.md)
       + Modifica dei file Report.cfg esistenti {#edit-existing-report-files}
          + [Modifica dei file Report.cfg esistenti](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md)
@@ -521,7 +525,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + [Procedure di installazione dei certificati digitali](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/t-dig-cert-install-proc.md)
       + [Configurazione della connessione al server di Insight](home/c-rpt-oview/c-inst-rpt/t-config-conn-ins-svr.md)
       + [Aggiorna server di report con un file della lingua (file .zbin)](home/c-rpt-oview/c-inst-rpt/c-zbin-file-update.md)
-      + [Abilitazione dell&#39;accesso al server Workbench dati](home/c-rpt-oview/c-inst-rpt/t-en-acc-ins-svr.md)
+      + [Abilitazione dell&#39;accesso al server di Data Workbench](home/c-rpt-oview/c-inst-rpt/t-en-acc-ins-svr.md)
       + [Visualizzazione dello stato del server di report](home/c-rpt-oview/c-inst-rpt/t-display-svr-st-rpt.md)
       + [Registrazione del server di report come servizio Windows](home/c-rpt-oview/c-inst-rpt/t-reg-rpt-win-svc.md)
       + [Aggiornamento e disinstallazione del server di report](home/c-rpt-oview/c-inst-rpt/c-upgrade-uninstall-rpt.md)
@@ -594,7 +598,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [Considerazioni P3P per l&#39;assegnazione di tag a pagine di terze parti](home/c-undst-pg-tag/c-cons-thrd-pty-pg-tag.md)
    + [Foglio di lavoro Mappatura variabile tag pagina](home/c-undst-pg-tag/c-pg-tag-wkst.md)
 + Metriche, dimensioni e filtri {#metrics}
-   + [Metriche, dimensioni e filtri di Workbench dati](home/c-about/c-about.md)
+   + [Informazioni su Data Workbench metriche, dimensioni e filtri](home/c-about/c-about.md)
    + [Espansione di metriche, dimensioni e filtri](home/c-about/c-expand-capabilities.md)
    + [Tipi di dimensioni](home/c-about/c-dimension-types.md)
    + [Procedura guidata di attenuazione delle metriche](home/c-about/metric-dim.md)
@@ -611,9 +615,9 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Dimensioni profilo di valore](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
       + [Dimensioni profilo di marketing](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
 + Informazioni geografiche {#geography}
-   + [Informazioni sulla geografia del workbench dati](home/c-geo-oview/c-geo-oview.md)
-   + Installazione della geografia del workbench dati {#install-geography}
-      + [Installazione della geografia del workbench dati](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
+   + [Informazioni su Data Workbench Geography](home/c-geo-oview/c-geo-oview.md)
+   + Installazione di Data Workbench Geography {#install-geography}
+      + [Installazione di Data Workbench Geography](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
       + [Installazione del profilo geografico](home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)
       + [Installazione dei file di ricerca per la geografia](home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)
       + [Installazione del file Terrain Images.cfg](home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md)
@@ -641,15 +645,15 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + Servizi dati {#data-services}
       + [Informazioni su Data Services](home/c-geo-oview/c-wk-data-svcs/c-abt-data-svcs.md)
       + Installazione di un servizio dati {#install-data-service}
-         + [Installazione di un servizio dati in un server Workbench dati](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-install-data-svc.md)
+         + [Installazione di un servizio dati su un server di Data Workbench](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-install-data-svc.md)
          + [Installazione del profilo del servizio dati](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)
          + [Installazione dei file di ricerca del servizio dati](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md)
       + [Aggiornamento dei file del servizio dati](home/c-geo-oview/c-wk-data-svcs/c-updt-data-svc-files.md)
-   + Aggiornamento e disinstallazione della geografia di Workbench dati {#upgrade-uninstall-geo}
-      + [Aggiornamento della geografia del workbench dati](home/c-geo-oview/c-upgrd-uninst-geo/t-upgrd-geo.md)
-      + [Disinstallazione della geografia del workbench dati](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
+   + Aggiornamento e disinstallazione della geografia di Data Workbench {#upgrade-uninstall-geo}
+      + [Aggiornamento della posizione geografica delle Date Workbench](home/c-geo-oview/c-upgrd-uninst-geo/t-upgrd-geo.md)
+      + [Disinstallazione di Data Workbench Geography](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
 + Esperimenti controllati {#experiments}
-   + [Informazioni Sugli Esperimenti Controllati Di Workbench Dati](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
+   + [Informazioni sugli esperimenti controllati da Data Workbench](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
    + [In Che Modo Il Sito Identifica I Visitatori?](home/c-undst-ctrld-exp/c-id-vstrs.md)
    + [Come Funzionano Gli Esperimenti Controllati?](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
    + [Cosa Dovrei Verificare?](home/c-undst-ctrld-exp/c-wht-test-.md)
@@ -676,8 +680,8 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [Foglio di calcolo Progettazione Di Esperimenti](home/c-undst-ctrld-exp/t-exp-dsn-spst.md)
 + Amministrazione e installazione server {#server-admin-install}
    + [Requisiti di sistema del server](home/c-inst-svr/c-msr-server/c-msr-server.md)
-   + Installazione dei server Workbench dati {#install-servers}
-      + [Installazione dei server Workbench dati](home/c-inst-svr/c-install-ins-svr/c-install-ins-svr.md)
+   + Installazione dei server di Data Workbench {#install-servers}
+      + [Installazione dei server di Data Workbench](home/c-inst-svr/c-install-ins-svr/c-install-ins-svr.md)
       + [Informazioni sulle unità di licenza di Insight Server](home/c-inst-svr/c-install-ins-svr/c-abt-inst-svr-lic-units.md)
       + DPU server Insight {#insight-server-dpu}
          + [Procedure di installazione per una DPU di Insight Server](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-proc-inst-svr-dpu.md)
@@ -685,7 +689,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + Certificati digitali {#dig-certs}
             + [Download e installazione dei certificati digitali](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md)
             + [Cifratura stringa](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/string-encryption.md)
-            + [Uso di certificati personalizzati in Workbench dati](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md)
+            + [Utilizzo di certificati personalizzati nella Data Workbench](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md)
             + [Archivio certificati di Windows](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/crypto-api.md)
          + [Controllo delle impostazioni della porta](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-chk-pt-stgs.md)
          + [Aggiornamento del file di controllo dell&#39;accesso](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-updt-accss-ctrl-file.md)
@@ -712,8 +716,8 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
             + [Aggiunta di server Insight a un cluster esistente](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-ins-svrs-ex-clstr.md)
             + [Aggiunta di un DPU di Insight Server a un cluster esistente](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-dpu-ex-clstr.md)
             + [Aggiunta di un FSU per server di Insight a un cluster esistente](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-fsu-ex-clstr.md)
-   + Amministrazione del server Workbench dati {#admin-dwb-server}
-      + [Amministrazione del server Workbench dati](home/c-inst-svr/c-admin-inst-svr/c-admin-inst-svr.md)
+   + Amministrazione del server di Data Workbench {#admin-dwb-server}
+      + [Amministrazione del server di Data Workbench](home/c-inst-svr/c-admin-inst-svr/c-admin-inst-svr.md)
       + [Nuova convalida del certificato digitale](home/c-inst-svr/c-admin-inst-svr/c-reval-dgtl-cert.md)
       + [Conferma dell&#39;esecuzione del servizio](home/c-inst-svr/c-admin-inst-svr/c-cfrm-svc-rng.md)
       + Controllo degli accessi {#access-control}
@@ -747,7 +751,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + Configuring {#configure}
          + [Configurazione della funzionalità Ripetitore](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-cnfg-rptr-fntly.md)
          + [Configurazione di un FSU di Insight Server per il Ripetitore](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-fsu-rptr.md)
-         + [Configurazione del controllo di accesso per i computer di destinazione](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
+         + [Configurazione del controllo di accesso per i computer Target](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
          + [Creazione di una connessione tra Insight e Ripetitore](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md)
          + [Passaggi successivi](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-nxt-stps-reptr.md)
       + [Amministrazione Ripetitore](home/c-inst-svr/c-rptr-fntly/c-admin-rptr.md)
@@ -762,11 +766,11 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + [Aggiornamento di Insight Server](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
          + [Aggiornamento del server DWB: da 6.2 a 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
          + [Aggiornamento del server DWB: da 6.1 a 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
-         + Aggiornamento di Workbench dati da 6.0 a 6.1 {#upgrade-6-0-to-6-1}
-            + [Aggiornamento di Workbench dati da 6.0 a 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
+         + Aggiornamento a Data Workbench da 6.0 a 6.1 {#upgrade-6-0-to-6-1}
+            + [Aggiornamento a Data Workbench da 6.0 a 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
             + [Installazione dell’Editor del metodo di input](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
             + [Distribuzione DeviceAtlas](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
-         + [Aggiornamento a Workbench dati da 5.5 a 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
+         + [Aggiornamento a Data Workbench da 5.5 a 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
          + [Aggiornamento del server DWB: Da 5.4 a 5.5](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md)
          + [Aggiornamento della trasformazione](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-trfm.md)
          + [Aggiornamento Ripetitore](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md)
@@ -806,7 +810,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Conferma dell&#39;esecuzione di Data Collector](home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md)
       + [Conferma dell&#39;esecuzione del trasmettitore dati](home/c-snsr-ovrvw/admin-sensor/c-data-trmtr-rng.md)
       + [Monitoraggio degli eventi amministrativi](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
-      + [Modifica del server di Workbench dati di Target](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
+      + [Modifica di Target Data Workbench Server](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
       + Sensori offline {#offline}
          + [Gestione con i sensori offline](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-ofln-snsrs.md)
          + [Informazioni sul tempo di utilizzo](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-as-of-tm.md)
@@ -829,19 +833,19 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 + Installazione del profilo di monitoraggio {#monitor}
    + [Installazione del profilo di monitoraggio](home/monitoring-installation/monitoring-installation.md)
    + Aree di lavoro {#workspace}
-      + [Aree di lavoro per il monitoraggio del server Workbench dati](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
-      + [Workbench dati Area di lavoro Storica](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
-      + [Area di lavoro Stato profilo di Workbench dati](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
-      + [Area di lavoro Stato del server Workbench dati](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
-   + Dimensioni e metriche del profilo di Workbench dati {#monitoring-appendix}
-      + [Dimensioni e metriche del profilo di Workbench dati](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
-      + [Dimensioni nel profilo storico Workbench dati](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
-      + [Dimensioni nel profilo Stato profilo Workbench dati](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
-      + [Dimensioni nel profilo Stato server Workbench dati](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
-      + [Metriche nel profilo di monitoraggio storico Workbench dati](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
-+ Dashboard {#dashboard}
+      + [Aree di lavoro per il monitoraggio di Data Workbench Server](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
+      + [Data Workbench area di lavoro Cronologia](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
+      + [Data Workbench stato profilo, area di lavoro](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
+      + [Area di lavoro Stato server Data Workbench](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
+   + Data Workbench dimensioni e metriche del profilo {#monitoring-appendix}
+      + [Data Workbench dimensioni e metriche del profilo](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
+      + [Dimensioni nel profilo storico Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
+      + [Dimensioni nel profilo Stato profilo Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
+      + [Dimensioni nel profilo Stato server di Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
+      + [Metriche nel profilo Data Workbench monitoraggio storico](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
++ Dashboard di {#dashboard}
    + [Opportunità aziendali](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
-   + [Funzioni ](home/c-adobe-data-workbench-dashboard/c-features.md)
+   + [Funzioni](home/c-adobe-data-workbench-dashboard/c-features.md)
    + [Glossario](home/c-adobe-data-workbench-dashboard/c-glossary.md)
    + [Introduzione](home/c-adobe-data-workbench-dashboard/t-getting-started/t-getting-started.md)
    + [Interfaccia utente dashboard](home/c-adobe-data-workbench-dashboard/t-getting-started/c-dashboard-user-interface.md)
@@ -905,7 +909,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Abilitazione di IIS](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-enabling-iis.md)
       + [Installazione dei componenti richiesti](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-installing-required-components.md)
    + Comunicazione server {#servers-communication}
-      + [Comunicazione tra dashboard e server Workbench dati](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
+      + [Comunicazione da dashboard a Data Workbench server](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [Verifica abilitazione API query](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
       + [Configurazione del controllo di accesso](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + Distribuzione dashboard {#dashboard-deployment}
@@ -941,16 +945,16 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Modifica di un gruppo di utenti](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-editing-a-user-group.md)
       + [Rimozione di un gruppo di utenti](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-removing-a-user-group.md)
    + [Registri di sistema](home/c-preparing-for-dashboard-installation/c-system-logs.md)
-+ Implementa Workbench dati {#implement}
++ Implementa Data Workbench {#implement}
    + [Implementazione di Adobe Data Workbench](home/dwb-implement-overview/dwb-implement-overview.md)
-   + [Individuazione e requisiti di Workbench dati](home/dwb-implement-overview/dwb-implement-discovery.md)
-   + [Installazione e provisioning di Workbench dati](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
+   + [Data Workbench individuazione e requisiti](home/dwb-implement-overview/dwb-implement-discovery.md)
+   + [Installazione e provisioning di Data Workbench](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
    + [Istruzioni di configurazione di base per i servizi gestiti DWB](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
-   + [Architettura Workbench dati](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
+   + [Architettura Data Workbench](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
    + [Struttura dello schema Strutture contabili](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md)
-   + [Amministrazione Workbench dati](home/dwb-implement-overview/dwb-implement-admin.md)
+   + [Amministrazione Data Workbench](home/dwb-implement-overview/dwb-implement-admin.md)
    + Configurazione e implementazione {#implement-configure}
-      + [Configurazione e implementazione di Workbench dati](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
+      + [Data Workbench configurazione e implementazione](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
       + [Impostazione dell&#39;ora evento](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-event-time.md)
       + [Impostazione dimensione](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-dim-setup.md)
       + [Impostazione metriche](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-metric-setup.md)
@@ -962,9 +966,9 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Impostazione API query](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-query-api.md)
       + [Elaborazione dei dati - Creazione della chiave primaria](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-primary-key.md)
    + Implementazione delle funzioni {#feature-implemenatation}
-      + [Implementazione delle funzionalità di Workbench dati](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
+      + [Data Workbench implementazione delle funzioni](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
       + [Modifiche alla configurazione per il nuovo schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Impostazione dimensioni derivate](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [API Query](https://www.adobe.io/)
-+ [Integrazione di Workbench dati con Adobe Target](home/dwb-adobe-target.md)
-+ [Glossario Workbench dati](dwb-glossary.md)
++ [Data Workbench integrazione con  Adobe Target](home/dwb-adobe-target.md)
++ [Glossario Data Workbench](dwb-glossary.md)
