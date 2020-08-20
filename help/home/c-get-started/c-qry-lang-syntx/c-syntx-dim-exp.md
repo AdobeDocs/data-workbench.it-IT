@@ -1,24 +1,27 @@
 ---
-description: Le espressioni di dimensione non vengono mai utilizzate da sole, ma possono essere utilizzate ovunque venga chiamata una dimensione in un'espressione metrica o filtro.
+description: Le espressioni Dimension non vengono mai utilizzate da sole, ma possono essere utilizzate ovunque venga chiamata una dimensione in un'espressione metrica o filtro.
 solution: Analytics
 title: Sintassi delle espressioni dimensione
 topic: Data workbench
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1855'
+ht-degree: 0%
 
 ---
 
 
 # Sintassi delle espressioni dimensione{#syntax-for-dimension-expressions}
 
-Le espressioni di dimensione non vengono mai utilizzate da sole, ma possono essere utilizzate ovunque venga chiamata una dimensione in un&#39;espressione metrica o filtro.
+Le espressioni Dimension non vengono mai utilizzate da sole, ma possono essere utilizzate ovunque venga chiamata una dimensione in un&#39;espressione metrica o filtro.
 
 1. Le parole sottolineate devono essere inserite letteralmente nel testo dell&#39;espressione.
-1. Il modulo {TEXT}? rappresenta testo facoltativo.
-1. Il modulo {TEXT}* rappresenta il testo che può ripetersi zero o più volte.
-1. Modulo {A| B| C|..} rappresenta il testo che consiste esattamente in una delle opzioni specificate, come A, B o C....
-1. Il modulo [A,B] rappresenta un intervallo di numeri, da A a B escluso.
+1. Il modulo `{TEXT}?` rappresenta il testo facoltativo.
+1. Il modulo `{TEXT}*` rappresenta il testo che può ripetersi zero o più volte.
+1. Il modulo `{A | B | C |...}` rappresenta il testo composto esattamente da una delle opzioni specificate, ad esempio A, B o C....
+1. Il modulo `[A,B)` rappresenta un intervallo di numeri, da A a B escluso.
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
@@ -28,7 +31,7 @@ Le espressioni di dimensione non vengono mai utilizzate da sole, ma possono esse
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Dimensione) </p> </td> 
-   <td colname="col2"> <p>Il risultato di (Dimensione) è lo stesso del risultato di Dimension. Le parentesi specificano l'ordine delle operazioni in un'espressione. </p> <p>Esempio: Sessioni[ (Pagina) = "/home" ] indica il numero di sessioni in cui è possibile visitare la pagina "/home". </p> </td> 
+   <td colname="col2"> <p>Il risultato di (Dimension) è lo stesso del risultato del Dimension. Le parentesi specificano l'ordine delle operazioni in un'espressione. </p> <p>Esempio: Sessioni[ (Pagina) = "/home" ] indica il numero di sessioni in cui è possibile visitare la pagina "/home". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Dim per livello </p> </td> 
@@ -48,7 +51,7 @@ Le espressioni di dimensione non vengono mai utilizzate da sole, ma possono esse
   </tr> 
   <tr> 
    <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Size}? }?) </p> </td> 
-   <td colname="col2"> <p>Definisce una dimensione i cui elementi sono intervalli di numeri (di dimensione fissa, ad esempio [0-9], [10-19],...). Gli elementi di livello si riferiscono all'elemento del dim del bucket il cui intervallo contiene il valore di Metric per l'elemento di livello specificato. Format è la stringa in formato printf utilizzata per formattare gli elementi di Metric. </p> <p>Esempio: Se la dimensione Page_Duration_Minutes è una dimensione a livello di visualizzazione pagina che rappresenta il numero di minuti trascorsi su ciascuna pagina, bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f Minutes", 0, 5) è una dimensione a livello di sessione che rappresenta il numero di minuti trascorsi in ciascuna sessione; gli elementi sono intervalli di 5 minuti {[0-5), [5-10),...,[495-500)}. </p> <p>Start è il valore iniziale del primo intervallo (impostazione predefinita: 0) e Dimensione è la dimensione dell'intervallo (impostazione predefinita: 1). </p> </td> 
+   <td colname="col2"> <p>Definisce una dimensione i cui elementi sono intervalli di numeri (di dimensione fissa, ad esempio [0-9], [10-19],...). Gli elementi di livello si riferiscono all'elemento del dim del bucket il cui intervallo contiene il valore di Metric per l'elemento di livello specificato. Format è la stringa in formato printf utilizzata per formattare gli elementi di Metric. </p> <p>Esempio: Se la dimensione Page_Duration_Minutes è una dimensione a livello di visualizzazione pagina che rappresenta il numero di minuti trascorsi su ciascuna pagina, bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f Minutes", 0, 5) è una dimensione a livello di sessione che rappresenta il numero di minuti trascorsi in ciascuna sessione; gli elementi sono intervalli di 5 minuti <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start è il valore iniziale del primo intervallo (impostazione predefinita: 0) e Dimensione è la dimensione dell'intervallo (impostazione predefinita: 1). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prefix(Level {,ElementName-&gt;(Prefix{,Prefix}* )}* ) </p> </td> 
@@ -56,11 +59,11 @@ Le espressioni di dimensione non vengono mai utilizzate da sole, ma possono esse
   </tr> 
   <tr> 
    <td colname="col1"> <p>latency(Level, Clip, Dim, Filter, MaxBefore, MaxAfter, FormatString) </p> </td> 
-   <td colname="col2"> <p>Consultate <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Creazione di dimensioni di latenza </a>. </p> </td> 
+   <td colname="col2"> <p>Consultate <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Creazione di Dimension di latenza </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>cartesian_product(Separator {,Dim}*) </p> </td> 
-   <td colname="col2"> <p>Definisce una dimensione i cui elementi sono tutte le combinazioni ("il prodotto cartesiano") degli elementi delle dimensioni date. Il nome di ciascun elemento è composto dalla concatenazione degli elementi corrispondenti nelle dimensioni di input, separati dalla stringa Separatore data. </p> <p>Ad esempio, se la dimensione D1 include gli elementi {"a", "b"} e la dimensione D2 ha gli elementi {"x", "y"}, quindi il prodotto cartesiano("-", D1, D2) ha gli elementi {"a-x", "a-y", "b-x", "b-y"}. </p> <p>Si noti che internamente, ciascuna delle dimensioni di input viene trattata come se il numero dei suoi elementi fosse la potenza successiva più alta di due. Questo si traduce nel prodotto cartesiano con alcuni elementi fittizi. Quando si utilizza l'API di Workbench dati, a seconda del formato di output, questi elementi possono essere richiesti, o visualizzati come "#nnn", dove nnn è l'ordinale dell'elemento (e deve essere ignorato dal client). </p> <p>Ad esempio, nell'esempio precedente, se D2 contenesse i tre elementi {"x", "y", "z"}, verrebbe trattato come se avesse quattro elementi, e il prodotto cartesiano avrebbe gli elementi {"a-x", "a-y", "a-z", "#3", "b-x", "b-y", "b-z", "#7"}. </p> <p>Se non viene specificata alcuna dimensione, il risultato è una dimensione con un elemento, "#0", che equivale alla dimensione Nessuno. </p> </td> 
+   <td colname="col2"> <p>Definisce una dimensione i cui elementi sono tutte le combinazioni ("il prodotto cartesiano") degli elementi delle dimensioni date. Il nome di ciascun elemento è composto dalla concatenazione degli elementi corrispondenti nelle dimensioni di input, separati dalla stringa Separatore data. </p> <p>Ad esempio, se la dimensione D1 include gli elementi {"a", "b"} e la dimensione D2 ha gli elementi {"x", "y"}, quindi il prodotto cartesiano("-", D1, D2) ha gli elementi {"a-x", "a-y", "b-x", "b-y"}. </p> <p>Si noti che internamente, ciascuna delle dimensioni di input viene trattata come se il numero dei suoi elementi fosse la potenza successiva più alta di due. Questo si traduce nel prodotto cartesiano con alcuni elementi fittizi. Quando si utilizza l'API Data Workbench, a seconda del formato di output, questi elementi possono essere richiesti, oppure possono essere visualizzati come "#nnn", dove nnn è l'ordinale dell'elemento (e deve essere ignorato dal client). </p> <p>Ad esempio, nell'esempio precedente, se D2 contenesse i tre elementi {"x", "y", "z"}, verrebbe trattato come se avesse quattro elementi, e il prodotto cartesiano avrebbe gli elementi {"a-x", "a-y", "a-z", "#3", "b-x", "b-y", "b-z", "#7"}. </p> <p>Se non viene specificata alcuna dimensione, il risultato è una dimensione con un elemento, "#0", che equivale alla dimensione Nessuno. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>near_countable(Dim) </p> </td> 
