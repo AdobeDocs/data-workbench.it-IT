@@ -5,7 +5,10 @@ title: Sintassi delle espressioni metriche
 topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '851'
+ht-degree: 1%
 
 ---
 
@@ -19,10 +22,10 @@ Per ulteriori informazioni, consultate [Creazione e modifica di metriche](../../
 Note:
 
 1. Le parole sottolineate devono essere inserite letteralmente nel testo dell&#39;espressione.
-1. Il modulo {TEXT}? rappresenta testo facoltativo.
-1. Il modulo {TEXT}* rappresenta il testo che può ripetersi zero o più volte.
-1. Modulo {A| B| C|..} rappresenta il testo che consiste esattamente in una delle opzioni specificate, come A, B o C....
-1. Il modulo [A,B] rappresenta un intervallo di numeri, da A a B escluso.
+1. Il modulo `{TEXT}?` rappresenta il testo facoltativo.
+1. Il modulo `{TEXT}*` rappresenta il testo che può ripetersi zero o più volte.
+1. Il modulo `{A | B | C |...}` rappresenta il testo composto esattamente da una delle opzioni specificate, ad esempio A, B o C....
+1. Il modulo `[A,B)` rappresenta un intervallo di numeri, da A a B escluso.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
@@ -56,11 +59,11 @@ Note:
   </tr> 
   <tr> 
    <td colname="col1"> <p>trust(Metric) </p> </td> 
-   <td colname="col2"> <p>Una stima della deviazione standard della metrica. Questo viene calcolato utilizzando una tecnica di campionamento nota come "jackknifing". </p> <p>Questa metrica richiede molta memoria e non deve essere utilizzata nelle tabelle di grandi dimensioni. </p> <p>Per utilizzare questa sintassi, è necessario avere una dimensione del coltello jackcoltello (denominato "coltello jackcoltello") con le proprietà appropriate. Per ulteriori informazioni, contattate i servizi di consulenza Adobe. </p> <p>Esempio: confidence(Average_Score) </p> <p> <p>Nota:  I tipi di metriche di confidenza, tra cui quelle relative a confidence(metriche) e confidence(metriche,jacknife), sono particolarmente utili quando si utilizza la funzionalità di sperimentazione controllata di Adobe. Se una metrica passasse dal 12% al 16% durante un esperimento controllato, potreste usare un callout di confidenza per calcolare le probabilità che il salto fosse dovuto a una variazione casuale. Questo può aiutare a evitare di trarre conclusioni sbagliate da prove limitate, e, al contrario, fornire la garanzia che un cambiamento discutibile è effettivamente reale. </p> </p> </td> 
+   <td colname="col2"> <p>Una stima della deviazione standard della metrica. Questo viene calcolato utilizzando una tecnica di campionamento nota come "jackknifing". </p> <p>Questa metrica richiede molta memoria e non deve essere utilizzata nelle tabelle di grandi dimensioni. </p> <p>Per utilizzare questa sintassi, è necessario avere una dimensione del coltello jackcoltello (denominato "coltello jackcoltello") con le proprietà appropriate. Per ulteriori informazioni, contattare  Adobe Consulenza. </p> <p>Esempio: confidence(Average_Score) </p> <p> <p>Nota:  I tipi di metriche di confidenza, tra cui confidence(Metric) e Confidence(Metric,jacknife), sono particolarmente utili quando si utilizza  funzionalità di sperimentazione controllata del Adobe. Se una metrica passasse dal 12% al 16% durante un esperimento controllato, potreste usare un callout di confidenza per calcolare le probabilità che il salto fosse dovuto a una variazione casuale. Questo può aiutare a evitare di trarre conclusioni sbagliate da prove limitate, e, al contrario, fornire la garanzia che un cambiamento discutibile è effettivamente reale. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>trust(metrica, coltello a giacca) </p> </td> 
-   <td colname="col2"> <p>Una stima della deviazione standard della metrica. Questo viene calcolato utilizzando una tecnica di campionamento nota come "jackknifing". Questa sintassi consente di determinare la confidenza di una metrica utilizzando una dimensione del coltello jackcoltello denominata qualcosa di diverso dal "coltello jackcoltello". </p> <p>Questa metrica richiede molta memoria e non deve essere utilizzata nelle tabelle di grandi dimensioni. </p> <p>Per utilizzare questa sintassi, è necessario avere una dimensione del coltello jackcoltello (denominata qualcosa di diverso da "coltello jackcoltello") con le proprietà appropriate. Per ulteriori informazioni, contattate i servizi di consulenza Adobe. </p> <p>Esempio: confidence(Average_Score,SubSamples) </p> </td> 
+   <td colname="col2"> <p>Una stima della deviazione standard della metrica. Questo viene calcolato utilizzando una tecnica di campionamento nota come "jackknifing". Questa sintassi consente di determinare la confidenza di una metrica utilizzando una dimensione del coltello jackcoltello denominata qualcosa di diverso dal "coltello jackcoltello". </p> <p>Questa metrica richiede molta memoria e non deve essere utilizzata nelle tabelle di grandi dimensioni. </p> <p>Per utilizzare questa sintassi, è necessario avere una dimensione del coltello jackcoltello (denominata qualcosa di diverso da "coltello jackcoltello") con le proprietà appropriate. Per ulteriori informazioni, contattare  Adobe Consulenza. </p> <p>Esempio: confidence(Average_Score,SubSamples) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>eval(CellReference) </p> </td> 
@@ -75,11 +78,11 @@ Note:
    <td colname="col2"> <p>"Metric where Filter": Una nuova metrica filtrata dal filtro specificato. </p> <p>Esempio: Jan_Sessions = Sessioni[ Month="Jan" ] </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Metrica per dimensione </p> </td> 
+   <td colname="col1"> <p>Metrica per Dimension </p> </td> 
    <td colname="col2"> <p>Una metrica valutata al "livello" della dimensione. Il risultato di (M by X)[F] (il risultato della metrica "M by X" valutata con il filtro "F") è il risultato di M[F by X] (il risultato della metrica "M" valutata con il filtro "F per X"). </p> <p>Esempio: AB_Visitors = </p> <p>(Visitatori per sessione)[Page="A" e Page="B"] = </p> <p>Visitatori[(Page="A" e Page="B") per sessione] = </p> <p>Il numero di visitatori che hanno visitato la pagina A e la pagina B nella stessa sessione. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>number </p> </td> 
+   <td colname="col1"> <p>numero </p> </td> 
    <td colname="col2"> <p>Una metrica con un valore fisso. </p> <p>Esempio: Pi = 3,1415 </p> </td> 
   </tr> 
   <tr> 
