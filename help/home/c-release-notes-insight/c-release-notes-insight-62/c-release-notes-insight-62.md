@@ -1,34 +1,37 @@
 ---
-description: Le note sulla versione di Workbench dati 6.2 includono nuove funzioni, requisiti per l'aggiornamento, correzioni di bug e problemi noti.
-title: Note sulla versione di Workbench dati 6.1
+description: Le note sulla versione di Data Workbench 6.2 includono nuove funzioni, requisiti per l’aggiornamento, correzioni di bug e problemi noti.
+title: Note sulla versione di Data Workbench 6.2
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1250'
+ht-degree: 2%
 
 ---
 
 
-# Data Workbench 6.2 Release Notes{#data-workbench-release-notes}
+# Note sulla versione di Data Workbench 6.2{#data-workbench-release-notes}
 
-Le note sulla versione di Workbench dati 6.2 includono nuove funzioni, requisiti per l&#39;aggiornamento, correzioni di bug e problemi noti.
+Le note sulla versione di Data Workbench 6.2 includono nuove funzioni, requisiti per l’aggiornamento, correzioni di bug e problemi noti.
 
 ## Nuove funzionalità {#section-1225066ea8f44cf68e42e019d0bca816}
 
-Workbench dati 6.2 include le seguenti nuove funzioni:
+La Data Workbench 6.2 include le seguenti nuove funzioni:
 
-| Funzioni  | Descrizione |
+| Funzioni | Descrizione |
 |--- |--- |
-| Albero decisionale | Le strutture decisionali sono una visualizzazione di analisi predittiva utilizzata per valutare le caratteristiche e le relazioni dei visitatori. Il Generatore albero decisionale genera una visualizzazione struttura decisionale basata su uno specifico caso positivo e su un insieme di input. |
+| Alberi delle decisioni | Le strutture decisionali sono una visualizzazione di analisi predittiva utilizzata per valutare le caratteristiche e le relazioni dei visitatori. Il Generatore albero decisionale genera una visualizzazione struttura decisionale basata su uno specifico caso positivo e su un insieme di input. |
 | Aggiornamento al filtro binario nella matrice di correlazione | Il filtro binario è stato aggiornato con nuove funzioni e richiede di rigenerare qualsiasi matrice di correlazione con un filtro binario integrato nelle versioni precedenti. |
-| Mappa densità | La mappa di densità è una visualizzazione che visualizza gli elementi come rettangoli ombreggiati all’interno di una mappa quadrata. |
-| Profilo attribuzione | Per analizzare rapidamente i valori di attribuzione (eventi per attribuire la responsabilità di una conversione o di una vendita di successo), Workbench dati fornisce un profilo di attribuzione basato su regole con funzioni che consentono all&#39;architetto di impostare i rapporti di attribuzione e all&#39;analista di eseguire i rapporti. |
-| Report di analisi | I modelli di report standardizzano i report di Adobe Analytics per gli utenti del workbench dati che utilizzano il profilo Adobe SC. Tali rapporti sono identici a quelli impiegati in Marketing Reports &amp; Analytics (ex SiteCatalyst). |
-| 3D Dispersione | Un grafico a dispersione 3D rappresenta gli elementi di una dimensione dati (come Giorni o Sito di riferimento) su una griglia tridimensionale in cui gli assi x, y e z rappresentano diverse metriche. |
+| Mappa di densità | La mappa di densità è una visualizzazione che visualizza gli elementi come rettangoli ombreggiati all’interno di una mappa quadrata. |
+| Profilo di attribuzione | Per analizzare rapidamente i valori di attribuzione (eventi per attribuire la responsabilità di una conversione o di una vendita di successo), Data Workbench fornisce un profilo di attribuzione basato su regole con funzioni che consentono all&#39;architetto di impostare i rapporti di attribuzione e all&#39;analista di eseguire i rapporti. |
+| Report di analisi | I modelli di report standardizzano  rapporti di Adobe Analytics per gli utenti del workbench dati che utilizzano il profilo SC del Adobe . Tali rapporti sono identici a quelli utilizzati in Marketing Reports &amp; Analytics (ex SiteCatalyst). |
+| Dispersioni 3D | Un grafico a dispersione 3D rappresenta gli elementi di una dimensione dati (come Giorni o Sito di riferimento) su una griglia tridimensionale in cui gli assi x, y e z rappresentano diverse metriche. |
 
 
-## Aggiornamenti dell&#39;interfaccia utente client Workbench dati{#data-workbench-client-ui-updates}
+## Data Workbench aggiornamenti interfaccia utente client{#data-workbench-client-ui-updates}
 
-Workbench dati 6.2 include nuovi aggiornamenti dell&#39;interfaccia utente al pannello Segnalibri, nuove icone nella barra degli strumenti dell&#39;area di lavoro, la possibilità di trascinare l&#39;area di lavoro all&#39;interno di una schermata, nuovi tasti rapidi e aggiornamenti alla visualizzazione del grafico a torta.
+Data Workbench 6.2 include nuovi aggiornamenti dell&#39;interfaccia utente al pannello Segnalibri, nuove icone nella barra degli strumenti dell&#39;area di lavoro, la possibilità di trascinare l&#39;area di lavoro all&#39;interno di una schermata, nuovi tasti rapidi e aggiornamenti alla visualizzazione del grafico a torta.
 
 ## Nuove funzioni segnalibro {#section-e361b605441540ca8213c3fddb5e0718}
 
@@ -57,13 +60,14 @@ Ora è possibile contrassegnare aree di lavoro significative per spostarsi rapid
 >
 >* È possibile salvare 25 segnalibri.
 >* Se aggiungete un segnalibro e quindi spostate la posizione dell&#39;area di lavoro, il segnalibro non sarà valido e deve essere eliminato dal pannello Segnalibri e reimpostato.
+
 >
 
 
 
 ## Nuove icone in Workspace {#section-c108bbd1661249e79c146727ff3d2470}
 
-Workbench dati 6.2 ora sostituisce il testo nell&#39;area di lavoro con icone. Puoi comunque passare il mouse sopra e visualizzare il messaggio della descrizione comandi che identifica l’icona, incluso **[!UICONTROL File]**, **[!UICONTROL Add]** e **[!UICONTROL Export]**.
+Data Workbench 6.2 ora sostituisce il testo nell’area di lavoro con delle icone. Puoi comunque passare il mouse sopra e visualizzare il messaggio della descrizione comandi che identifica l’icona, incluso **[!UICONTROL File]**, **[!UICONTROL Add]** e **[!UICONTROL Export]**.
 
 ![](assets/new_icons.png)
 
@@ -78,8 +82,8 @@ Workbench dati 6.2 ora sostituisce il testo nell&#39;area di lavoro con icone. P
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Reporting e analisi di marketing </td> 
-   <td colname="col2">Aprite la pagina dell'Aiuto di <span class="uicontrol"> Adobe Marketing Reports &amp; Analytics</span> . </td> 
+   <td colname="col1"> Reports &amp; Analytics per il marketing </td> 
+   <td colname="col2">Aprite la pagina dell'aiuto <span class="uicontrol"> Adobe Reporting e analisi</span> di marketing. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Idea Exchange </td> 
@@ -87,7 +91,7 @@ Workbench dati 6.2 ora sostituisce il testo nell&#39;area di lavoro con icone. P
   </tr> 
   <tr> 
    <td colname="col1"> Aiuto </td> 
-   <td colname="col2">Aprire la documentazione <span class="uicontrol"></span>Workbench dati. <p>È inoltre possibile premere <span class="uicontrol"> &lt;F1&gt;</span> per aprire la guida all'interno di un'area di lavoro. </p> </td> 
+   <td colname="col2">Aprite la documentazione <span class="uicontrol"> di</span>Data Workbench. <p>È inoltre possibile premere <span class="uicontrol"> &lt;F1&gt;</span> per aprire la guida all'interno di un'area di lavoro. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Informazioni </td> 
@@ -147,17 +151,17 @@ I nuovi tasti di scelta rapida consentono di ridimensionare e riadattare le aree
 * L&#39;errore di connessione della workstation che visualizza il messaggio &quot;412 Configuration Conflict&quot; (Conflitto di configurazione 412) ora viene sostituito con un messaggio descrittivo che identifica l&#39;azione del sistema.
 * È ora possibile eseguire il comando &quot;post&quot; nel server di report.
 * Sono stati corretti degli errori di interfaccia utente nell&#39;interfaccia client per il cinese semplificato.
-* Adobe Analytics ha aggiornato il feed di dati che consente a Workbench dati di sfruttare i profili e le audience che si integrano con Adobe Experience Cloud. Tutti gli utenti di Workbench dati dovevano preparare il proprio ambiente per questa transizione entro il 21 aprile 2014.
+*  Adobe Analytics ha aggiornato il feed di dati che consente l&#39;Data Workbench per sfruttare i profili e le audience che si integrano con l&#39;Adobe Experience Cloud. Tutti gli utenti delle Date Workbench dovevano preparare il proprio ambiente per questa transizione entro il 21 aprile 2014.
 
-   Profili e audience sono stati introdotti per fornire una visualizzazione completa dei clienti in Adobe Analytics. Questo nuovo servizio è disponibile in Adobe Experience Cloud per apportare ulteriori vantaggi tra gli strumenti di analisi, al fine di iniziare a stabilire le basi per queste funzionalità in Analytics. Il nuovo identificatore visitatore di Experience Cloud verrà aggiunto al feed di dati, insieme ad altri miglioramenti e miglioramenti per adattarsi al nuovo feed di dati e all’identificatore visitatore globale.
+   Profili e pubblico è stato introdotto per fornire una visualizzazione completa dei clienti in  Adobe Analytics. Questo nuovo servizio è disponibile all&#39;interno dell&#39;Adobe Experience Cloud per fornire ulteriore valore tra gli strumenti di analisi, in modo da iniziare a stabilire le basi per queste funzionalità in Analytics. Il nuovo identificatore visitatore  Experience Cloud verrà aggiunto al feed di dati, insieme ad altri miglioramenti e miglioramenti per adattarsi al nuovo feed di dati e all’identificatore visitatore globale.
 * Durante l’importazione di un’area di lavoro, viene visualizzato un messaggio di errore anche se l’importazione è avvenuta correttamente.
 
 ## Requisiti per l&#39;aggiornamento {#section-3cc74d08f7454d698b5a6d3f1dcde282}
 
-* Il profilo Attribuzione è configurato per gli utenti che hanno implementato il profilo Adobe SC per utilizzare il feed di dati di Analytics (SC/Insight). Per impostazione predefinita, gli eventi Marketing e Conversion vengono utilizzati come interazioni predefinite valutate nei modelli basati su regole.
-* Per gli utenti del profilo Adobe SC che eseguono l’aggiornamento a Workbench dati 6.2, se non si utilizzano le configurazioni predefinite, verificare che il [!DNL x-bot_id] valore nel [!DNL SC Fields.cfg] file sia decodificato correttamente e che il [!DNL x-bot_id] campo sia elencato correttamente nei [!DNL Decoding Instructions.cfg] file e nei [!DNL Exclude Hit.cfg] file. Questo problema si verifica solo se il file di configurazione è stato modificato dalla configurazione predefinita.
+* Il profilo Attribuzione è configurato per gli utenti che hanno implementato il profilo SC del Adobe  per utilizzare il feed di dati di Analytics (SC/Insight). Per impostazione predefinita, gli eventi Marketing e Conversion vengono utilizzati come interazioni predefinite valutate nei modelli basati su regole.
+* Per gli utenti del profilo SC del Adobe  aggiornamento alla Data Workbench 6.2, se non si utilizzano le configurazioni predefinite, verificare che il [!DNL x-bot_id] valore nel [!DNL SC Fields.cfg] file sia decodificato correttamente e che il [!DNL x-bot_id] campo sia elencato correttamente nel [!DNL Decoding Instructions.cfg] file e nei [!DNL Exclude Hit.cfg] file. Questo problema si verifica solo se il file di configurazione è stato modificato dalla configurazione predefinita.
 
-* Se avete eliminato i campi inutilizzati nel file **[!UICONTROL Dataset]** > **[!UICONTROL Log Processing** > **[!DNL SC Fields.cfg]** per il profilo Adobe SC, dovrete aggiornare per contenere i valori dei campi aggiornati utilizzati per il profilo Attribution.
+* Se avete eliminato i campi inutilizzati nel **[!UICONTROL Dataset]** > **[!UICONTROL Log Processing]** > **[!DNL SC Fields.cfg]** file per il profilo SC del Adobe , dovrete aggiornarli per contenere i valori dei campi aggiornati utilizzati per il profilo Attribuzione.
 
 ## Problemi noti {#section-dbb307639835493a83409f5f461932b8}
 
