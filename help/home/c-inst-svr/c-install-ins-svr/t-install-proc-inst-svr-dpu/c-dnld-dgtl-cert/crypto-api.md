@@ -3,7 +3,10 @@ description: L'archivio certificati di Windows consente di memorizzare il certif
 title: Archivio certificati di Windows
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
+workflow-type: tm+mt
+source-wordcount: '1000'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ In [Utilizzo di certificati](../../../../../home/c-inst-svr/c-install-ins-svr/t-
 </filepath>>\Certificates\
 ```
 
-Il nome del certificato è `<Common Name>.pem` (ad esempio, [!DNL Analytics Server 1.pem](non il [!DNL trust_ca_cert.pem] file).
+Il nome del certificato è `<Common Name>.pem` (ad esempio [!DNL Analytics Server 1.pem] (non il [!DNL trust_ca_cert.pem] file).
 
 Prima di importare il certificato e la chiave privata, è necessario convertirli da . [!DNL pem] in un [!DNL .pfx] formato, ad esempio [!DNL pkcs12.pfx] ).
 
@@ -77,7 +80,7 @@ Prima di importare il certificato e la chiave privata, è necessario convertirli
 
    ![](assets/6_5_crypto_api_3.png)
 
-   Fai clic su **Successivo**.
+   Fai clic su **Avanti**.
 
 1. Accertatevi che **Posizionate tutti i certificati nel seguente archivio** sia selezionato e che l&#39;archivio certificati elencato sia **Personale**. Se siete un utente avanzato, potete selezionare un altro store a questo punto, ma dovrete cambiare la configurazione in un secondo momento.
 
@@ -89,7 +92,7 @@ Prima di importare il certificato e la chiave privata, è necessario convertirli
 
 **Passaggio 2: Modificate il file Insight.cfg.**
 
-È necessario modificare il [!DNL Insight.cfg] file per indirizzare Workbench dati all&#39;utilizzo della funzione Archivio certificati di Windows. Ogni voce del server in questo file deve avere alcuni parametri aggiuntivi specificati. Se i parametri vengono omessi, per impostazione predefinita la workstation utilizzerà la configurazione del certificato esistente. Se i parametri sono specificati ma hanno valori errati, la workstation immetterà uno stato di errore e dovrete fare riferimento al file di registro per le informazioni di errore.
+È necessario modificare il [!DNL Insight.cfg] file per indirizzare l&#39;Data Workbench all&#39;utilizzo della funzione Archivio certificati di Windows. Per ogni voce del server in questo file devono essere specificati alcuni parametri aggiuntivi. Se i parametri vengono omessi, per impostazione predefinita la workstation utilizzerà la configurazione del certificato esistente. Se i parametri sono specificati ma hanno valori errati, la workstation immetterà uno stato di errore e dovrete fare riferimento al file di registro per le informazioni di errore.
 
 1. Aprite il file **Insight.cfg** (che si trova nella directory di installazione di **Insight** ).
 
@@ -113,7 +116,7 @@ Prima di importare il certificato e la chiave privata, è necessario convertirli
 
 1. Dopo aver aggiunto questi parametri e verificato che i valori corrispondano all&#39;elenco in Gestione certificati di Windows, salvare il [!DNL Insight.cfg] file.
 
-È ora possibile avviare la workstation (oppure disconnettersi/riconnettersi al server). Workbench dati deve caricare il certificato e la chiave dall&#39;archivio certificati e connettersi normalmente.
+È ora possibile avviare la workstation (oppure disconnettersi/riconnettersi al server). L&#39;Data Workbench deve caricare il certificato e la chiave dall&#39;archivio certificati e connettersi normalmente.
 
 ## Uscita log {#section-a7ef8c9e90ef4bbabaa3cd51a2aca3ab}
 
