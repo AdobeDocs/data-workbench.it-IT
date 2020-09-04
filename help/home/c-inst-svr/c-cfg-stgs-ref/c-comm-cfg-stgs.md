@@ -4,9 +4,9 @@ solution: Insight
 title: Impostazioni di configurazione delle comunicazioni
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+source-git-commit: 638eca495223fc9d5326bf9462a9c289d6fe2d9e
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 3%
 
 ---
@@ -34,11 +34,11 @@ Completa i parametri nel file seguente:
  <tbody> 
   <tr> 
    <td colname="col1"> File di controllo di accesso </td> 
-   <td colname="col2"> <p>Posizione del file <span class="filepath"> Access Control.cfg </span> . Il percorso predefinito è la <span class="filepath"> cartella Controllo </span> accesso all'interno della directory di installazione di <span class="keyword"> Insight Server </span> o <span class="wintitle"> Repeat </span> . </p> <p>Esempio: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Posizione del file <span class="filepath"> Access Control.cfg </span> . Il percorso predefinito è la <span class="filepath"> cartella Controllo </span> accesso all'interno della directory di installazione di <span class="keyword"> Insight Server </span> o <span class="wintitle"> Repeat </span> . </p> <p>Esempio: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Directory registro di accesso </td> 
-   <td colname="col2"> <p>Cartella a cui si desidera mappare i registri di controllo. </p> <p>Esempio: <filepath></filepath> </p> <p> <p>Nota:  È possibile mappare i registri di controllo su un'altra unità locale (ad esempio: <span class="filepath"> stringa: P:\\Audit\\ </span>), ma non mappare i registri di controllo su un'unità di rete. </p> </p> </td> 
+   <td colname="col2"> <p>Cartella a cui si desidera mappare i registri di controllo. </p> <p>Esempio: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Nota:  È possibile mappare i registri di controllo su un'altra unità locale (ad esempio: <span class="filepath"> stringa: P:\\Audit\\ </span>), ma non mappare i registri di controllo su un'unità di rete. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Accesso dettagliato </td> 
@@ -46,19 +46,19 @@ Completa i parametri nel file seguente:
   </tr> 
   <tr> 
    <td colname="col1"> Interfaccia IP </td> 
-   <td colname="col2"> <p>Indirizzo IP da utilizzare quando sono disponibili due schede di rete per l'accesso a due reti diverse. </p> <p>Esempio: I <filepath></filepath><i>&lt; <span class="filepath"> Indirizzo IP </span>&gt;</i> </p> </td> 
+   <td colname="col2"> <p>Indirizzo IP da utilizzare quando sono disponibili due schede di rete per l'accesso a due reti diverse. </p> <p>Esempio: <code>IP Interface = string: &lt; IP Address &gt;</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Porta </td> 
-   <td colname="col2"> <p>Porta non sicura (HTTP) sulla quale <span class="keyword"> Insight Server </span> o <span class="wintitle"> Ripetitore </span> ascolta. La porta predefinita è 80. Se si inserisce un valore pari a 0, le connessioni non sicure vengono disattivate. </p> <p>Esempio: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Porta non sicura (HTTP) sulla quale <span class="keyword"> Insight Server </span> o <span class="wintitle"> Ripetitore </span> ascolta. La porta predefinita è 80. Se si inserisce un valore pari a 0, le connessioni non sicure vengono disattivate. </p> <p>Esempio: <code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Cipher SSL </td> 
-   <td colname="col2"> Alcuni ambienti richiedono una maggiore sicurezza delle comunicazioni rispetto ad altri. Se desiderate utilizzare una suite di crittografia SSL specifica, potete specificarla con questo parametro. <p>Esempio: <filepath></filepath> </p> </td> 
+   <td colname="col2"> Alcuni ambienti richiedono una maggiore sicurezza delle comunicazioni rispetto ad altri. Se desiderate utilizzare una suite di crittografia SSL specifica, potete specificarla con questo parametro. <p>Esempio: <code>SSL Ciphers = string: AES256-SHA256</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Porta SSL </td> 
-   <td colname="col2"> <p>Porta protetta (tramite SSL) su cui <span class="keyword"> Insight Server </span> o <span class="wintitle"> Ripetitore </span> ascolta. La porta predefinita è 443. Se si immette un valore pari a 0, vengono disattivate le connessioni protette. </p> <p>Esempio: <span class="filepath"></span> </p> <filepath></filepath> </td> 
+   <td colname="col2"> <p>Porta protetta (tramite SSL) su cui <span class="keyword"> Insight Server </span> o <span class="wintitle"> Ripetitore </span> ascolta. La porta predefinita è 443. Se si immette un valore pari a 0, vengono disattivate le connessioni protette. </p> <p>Esempio: <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
