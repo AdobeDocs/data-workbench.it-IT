@@ -3,7 +3,10 @@ description: Istruzioni per l'installazione e la configurazione del sensore per 
 title: Sun Java Server su Windows Server 2000 o versione successiva
 uuid: 43f3eee0-2633-4bda-af6c-6c15433dd539
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 1%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Istruzioni per l&#39;installazione e la configurazione del sensore per Sun Java System Application Server Standard Edition 7 in esecuzione in Windows Server 2000 o versioni successive.
 
-I file di programma per Sensor vengono assemblati in un file di installazione ottenuto dal sito di download di Adobe. Se non disponete già del file di installazione Sensor per il vostro particolare server Web, scaricatelo (o ottenetelo dal rappresentante Adobe) prima di iniziare le seguenti procedure.
+I file di programma per Sensor sono pacchetti in un file di installazione che si ottiene dal sito di download del Adobe . Se non disponete già del file di installazione Sensor per il vostro particolare server Web, scaricatelo (o ottenetelo dal rappresentante del Adobe ) prima di iniziare le seguenti procedure.
 
 Sensor supporta i seguenti server in esecuzione con RedHat Linux 7.x o versioni successive o Sun Solaris SPARC 2.6 o versioni successive:
 
@@ -66,7 +69,7 @@ Procedura per estrarre e installare i file di programma per Sensor sul server.
 >
 >Il pacchetto di installazione contiene un foglio di calcolo denominato TestExperiment.xls. Questo foglio di calcolo è uno strumento che gli architetti usano per configurare un esperimento controllato. Il sensore stesso non utilizza questo file, quindi non è necessario installare il file sul computer in cui è in esecuzione Sensor (anche se potete scegliere di farlo). Potreste desiderare, invece, copiare il file in una posizione in cui gli architetti possano accedervi o semplicemente estrarre il file dal pacchetto di installazione in base alle esigenze. Per ulteriori informazioni sulla sperimentazione controllata, consulta la Guida agli esperimenti controllati di Insight.
 
-## Modificare il file di configurazione Sensor {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
+## Edit the Sensor Configuration File {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
 Il [!DNL txlogd.conf] file contiene i parametri di configurazione per Sensor.
 
@@ -100,12 +103,12 @@ Dopo aver configurato il file txlogd.conf, potete avviare il programma di trasme
 
    Questo comando avvia il trasmettitore, crea la coda del disco e registra Sensor come servizio Windows.
 
-1. Per confermare che il trasmettitore funziona correttamente, fate clic su Start > Pannello di controllo > Strumenti di amministrazione > Servizi. Nell&#39;elenco dei servizi, individuare la voce per Sensor e confermare che il suo stato è Avviato e il suo tipo di avvio è Automatico. Quindi chiudete il pannello di controllo Servizi.
-1. Per verificare se il trasmettitore ha riscontrato degli errori durante l’avvio, fate clic su Start > Pannello di controllo > Strumenti di amministrazione > Visualizzatore eventi per aprire il visualizzatore eventi.
+1. Per confermare che il trasmettitore funziona correttamente, fate clic su Start > Pannello di controllo Campaign > Strumenti di amministrazione > Servizi. Nell&#39;elenco dei servizi, individuare la voce per Sensor e confermare che il suo stato è Avviato e il suo tipo di avvio è Automatico. Quindi chiudete il pannello di controllo Servizi.
+1. Per verificare se il trasmettitore ha riscontrato degli errori durante l’avvio, fate clic su Start > Pannello di controllo Campaign > Strumenti di amministrazione > Visualizzatore eventi per aprire il visualizzatore eventi.
 
    1. Nel riquadro a sinistra della finestra Visualizzatore eventi, selezionate il registro Applicazioni.
-   1. Nel riquadro a destra, cercate gli eventi con &quot;Adobe&quot; nella colonna Sorgente.
-   1. Se si verifica un errore in &quot;Adobe&quot;, fare doppio clic sull&#39;errore per visualizzare la finestra Proprietà evento. Questa finestra fornisce informazioni dettagliate sull&#39;errore.
+   1. Nel riquadro di destra, cercate gli eventi con &quot; Adobe&quot; nella colonna Sorgente.
+   1. Se si verifica un errore in &quot; Adobe&quot;, fare doppio clic sull&#39;errore per visualizzare la finestra Proprietà evento. Questa finestra fornisce informazioni dettagliate sull&#39;errore.
 
 1. Al termine dell&#39;esame del registro Applicazioni, chiudete il visualizzatore eventi.
 1. Verificare che il trasmettitore abbia creato la coda del disco (Diskq2000.log) nella directory in cui sono stati installati i file del programma Sensor e che si tratti della dimensione specificata nel parametro QueueSize nel file txlogd.conf.
@@ -134,7 +137,7 @@ funcs="vys-cookie,vys-log,vys-init,vys-content-type"
 Init fn="vys-init" config-file="C:/VisualSciences/txlogd.conf"
 ```
 
-Nel file obj.conf (ad esempio, C:\Sun\AppServer7\domains\domain1\server1\config\ server1-obj.conf), aggiungete le seguenti righe direttamente sotto la riga &quot;<Object name="default">&quot; esistente:
+Nel file obj.conf (ad esempio, C:\Sun\AppServer7\domains\domain1\server1\config\ server1-obj.conf), aggiungete le seguenti righe direttamente sotto la `<Object name="default">` riga esistente:
 
 ```
 NameTrans fn="vys-cookie" 
