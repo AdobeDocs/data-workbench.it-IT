@@ -5,7 +5,10 @@ title: Acquisizione di richieste di oggetti incorporati (tag pagina)
 topic: Data workbench
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +21,7 @@ Tali richieste di oggetti incorporati sono più comunemente richieste per file d
 
 Ad esempio, un’immagine potrebbe essere un annuncio pubblicitario e potrebbe essere utile sapere che l’annuncio è stato colpito da un visitatore. Uno snippet JavaScript può essere utilizzato per misurare che il browser in questione ha una determinata caratteristica e riportarlo a una [!DNL Sensor] per l’acquisizione. Ogni pagina di un sito può contenere 10 o 100 richieste di oggetti incorporati. Se un sito memorizza le informazioni di registro per ciascuna di queste richieste, la quantità di memorizzazione dei dati necessaria per mantenere i dati di registro disponibili per l&#39;analisi futura viene moltiplicata per il numero di richieste di oggetti incorporati per ciascuna pagina richiesta. Per questo motivo, [!DNL Site] consente di mantenere le richieste importanti per l&#39;analisi e di scartare altre richieste prima di sostenere costi di storage superflui.
 
-Utilizzando la funzione di esclusione fornita nelle funzionalità di filtraggio del tipo di contenuto di [!DNL Sensor] (aggiungendo &quot;Log=1&quot; alla stringa di query di un URL di richiesta di oggetto incorporato), è possibile acquisire una particolare richiesta di oggetto incorporato e i relativi dati di misurazione senza che sia necessario che il gestore del sito memorizzi tutte le richieste di quel tipo (ad esempio, tutte <image> requests).
+Utilizzando la funzione di esclusione fornita nelle funzionalità di filtraggio del tipo di contenuto di [!DNL Sensor] (aggiungendo &quot;Log=1&quot; alla stringa di query di un URL di richiesta di oggetto incorporato), è possibile acquisire una particolare richiesta di oggetto incorporato e i relativi dati di misurazione senza che sia necessario che il gestore del sito memorizzi tutte le richieste di quel tipo (ad esempio, tutte le `<image>` richieste).
 
 [!DNL Sensor] raccoglie i dati di misurazione nella tabella seguente per ogni richiesta di oggetto incorporato eseguita dal server Web, partendo dal presupposto che non [!DNL Sensor] sia configurato per escluderlo o che il filtro sia stato ignorato. Le informazioni raccolte sono correlate al visitatore e alla sessione e alle sessioni successive attraverso le voci del campo di registro x-trackingid o cs(cookie).
 
