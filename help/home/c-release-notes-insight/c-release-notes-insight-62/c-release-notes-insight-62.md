@@ -3,7 +3,7 @@ description: Le note sulla versione di Data Workbench 6.2 includono nuove funzio
 title: Note sulla versione di Data Workbench 6.2
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 2%
@@ -52,7 +52,7 @@ Ora è possibile contrassegnare aree di lavoro significative per spostarsi rapid
 
 **Per eliminare un segnalibro:**
 
-* Nel pannello Segnalibri, fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Rimuovi<bookmark title>]**per eliminare un segnalibro selezionato o selezionare **[!UICONTROL Clear All Bookmarks]**per eliminare tutti i segnalibri.
+* Nel pannello Segnalibri, fare clic con il pulsante destro del mouse e selezionare **Rimuovi`<bookmark title>`** per eliminare un segnalibro selezionato, oppure selezionare **[!UICONTROL Clear All Bookmarks]** per eliminare tutti i segnalibri.
 
 * È inoltre possibile fare clic con il pulsante destro del mouse sull&#39;area di lavoro nella visualizzazione delle miniature all&#39;interno del piano di lavoro e selezionare **[!UICONTROL Clear Bookmark]**.
 
