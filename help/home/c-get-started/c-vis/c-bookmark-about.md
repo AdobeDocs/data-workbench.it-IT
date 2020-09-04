@@ -5,7 +5,7 @@ title: Aggiungere un segnalibro
 topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 translation-type: tm+mt
-source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Puoi assegnare ai segnalibri aree di lavoro significative per spostarti rapidame
 
 **Per eliminare un segnalibro:**
 
-* Nel pannello Segnalibri, fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Rimuovi<bookmark title>]**per eliminare un segnalibro selezionato o selezionare **[!UICONTROL Clear All Bookmarks]**per eliminare tutti i segnalibri.
+* Nel pannello Segnalibri, fare clic con il pulsante destro del mouse e selezionare **Rimuovi`<bookmark title>`** per eliminare un segnalibro selezionato, oppure selezionare **[!UICONTROL Clear All Bookmarks]** per eliminare tutti i segnalibri.
 
 * È inoltre possibile fare clic con il pulsante destro del mouse sull&#39;area di lavoro nella visualizzazione delle miniature all&#39;interno del piano di lavoro e selezionare **[!UICONTROL Clear Bookmark]**.
 
