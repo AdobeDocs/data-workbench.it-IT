@@ -4,7 +4,10 @@ solution: Insight
 title: Impostazioni di configurazione delle comunicazioni
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +22,7 @@ Completa i parametri nel file seguente:
 
 >[!NOTE]
 >
->Prima di modificare eventuali parametri non elencati in questa tabella, contattate Adobe.
+>Prima di modificare i parametri non elencati in questa tabella, contattate  Adobe.
 
 <table id="table_C87F1150E53548F484A8C0CFE91F1079"> 
  <thead> 
@@ -86,4 +89,3 @@ Completa i parametri nel file seguente:
   </tr> 
  </tbody> 
 </table>
-
