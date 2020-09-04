@@ -1,16 +1,19 @@
 ---
-description: Workbench dati fornisce una procedura guidata per l'installazione dell'applicazione workstation (client).
-title: Procedura guidata di impostazione della workstation
+description: Data Workbench fornisce una procedura guidata per l'installazione dell'applicazione workstation (client).
+title: Configurazione guidata della workstation
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 1%
 
 ---
 
 
-# Procedura guidata di impostazione della workstation{#workstation-setup-wizard}
+# Configurazione guidata della workstation{#workstation-setup-wizard}
 
-Workbench dati fornisce una procedura guidata per l&#39;installazione dell&#39;applicazione workstation (client).
+Data Workbench fornisce una procedura guidata per l&#39;installazione dell&#39;applicazione workstation (client).
 
 ## Installazione della workstation mediante la procedura guidata di installazione {#section-58da9bb6196c46eab3b54146913fdcb8}
 
@@ -24,13 +27,13 @@ Avviate l&#39;eseguibile della procedura guidata di installazione e seguite ogni
 
    ![](assets/6_4_workstation_wizard.png)
 
-1. Fare clic su **Avanti** nella finestra di dialogo **Benvenuti nella procedura guidata** di impostazione Workbench dati.
+1. Fate clic su **Avanti** nella finestra di dialogo **Configurazione guidata** di Data Workbench.
 
 1. Selezionare per installare una **nuova installazione** o per **aggiornare o ripristinare** un&#39;installazione esistente.
 
    **La nuova installazione** sovrascrive tutti i file installati in precedenza.
 
-   **L&#39;aggiornamento** consente di aggiornare Workstation alla versione più recente o di ripristinare un&#39;installazione esistente. Workbench dati confronterà i file **Insight.exe** installati ed eseguirà l&#39;Installazione guidata Workstation se è disponibile una versione più recente del client.
+   **L&#39;aggiornamento** consente di aggiornare Workstation alla versione più recente o di ripristinare un&#39;installazione esistente. Data Workbench confronterà i file **Insight.exe** installati ed eseguirà l&#39;Installazione guidata Workstation se è disponibile una versione più recente del client.
 
 1. Selezionate il percorso di installazione:
 
@@ -61,17 +64,17 @@ Avviate l&#39;eseguibile della procedura guidata di installazione e seguite ogni
 
 1. Fai clic su **Avanti.** Verrà visualizzato un riepilogo dei percorsi e delle lingue di percorso del file selezionati. Fai clic su **Installa.**
 
-1. Individuare il certificato **Workbench** dati.
+1. Individuare il certificato di **Data Workbench**.
 
-   Se durante l&#39;installazione non è possibile trovare il certificato di Workbench dati, verrà aperta una finestra di dialogo per individuare il percorso del certificato (un file **.pem** che si trova per impostazione predefinita nella cartella **Certificati** client), oppure fare clic su **Ignora** per trovare il certificato dopo l&#39;installazione.
+   Se durante l&#39;installazione non è possibile trovare il certificato di Data Workbench, verrà aperta una finestra di dialogo per individuare il percorso del certificato (un file **.pem** che si trova per impostazione predefinita nella cartella **Certificati** client), oppure fare clic su **Ignora** per trovare il certificato dopo l&#39;installazione.
 
    Fate clic su **Installa** dopo aver individuato il certificato.
 
-1. Al termine della configurazione guidata e dopo l&#39;installazione di Workbench dati, fare clic su **Fine** per completare la configurazione.
+1. Al termine della configurazione guidata e dopo aver installato l&#39;Data Workbench, fare clic su **Fine** per completare la configurazione.
 
    >[!NOTE]
    >
-   >Il percorso di registro predefinito per la procedura guidata di configurazione della workstation è disponibile all&#39;indirizzo **[!DNL C:\Users\`<userName>`\AppData\Local\Temp.]**
+   >Percorso di registro predefinito per la procedura guidata di configurazione della workstation in `C:\Users\<userName>\AppData\Local\Temp`.
 
    Selezionare la casella di controllo **Avvia applicazione** per aprire il workbench dopo l&#39;impostazione.
 
@@ -83,7 +86,7 @@ Avviate l&#39;eseguibile della procedura guidata di installazione e seguite ogni
 
 ## Cartelle di installazione {#section-b5ea5a3b3ecb4622aef713972f3f8ebd}
 
-La struttura delle cartelle di Workbench dati presenta due posizioni di installazione:
+La struttura delle cartelle di Data Workbench presenta due percorsi di installazione:
 
 * **File** del programma Il file **Insight.exe** e i file client di supporto (**Insight.ini**) ora si trovano per impostazione predefinita in
 
@@ -109,10 +112,10 @@ La struttura delle cartelle di Workbench dati presenta due posizioni di installa
 
 ## Disinstallazione della workstation {#section-5ce2e233fe4348469ef1b3c451dd5b70}
 
-Workbench dati ora include un eseguibile per disinstallare la workstation (che per impostazione predefinita si trova in **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**).
+L&#39;Data Workbench ora include un eseguibile per disinstallare la workstation (che per impostazione predefinita si trova in **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**).
 
-Avviare e seguire i passaggi per rimuovere i file Workbench dati Workstation dal disco rigido.
+Avviare e seguire i passaggi per rimuovere i file di Data Workbench Workstation dal disco rigido.
 
 >[!NOTE]
 >
->È possibile avviare il file **unins000.exe** eseguibile dalla cartella, utilizzando la scelta rapida **Disinstalla Workbench** dati dal menu Start o da **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
+>Potete avviare il file **unins000.exe** eseguibile dalla cartella, utilizzando la scelta rapida **Disinstalla Data Workbench** dal menu Start o da **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
