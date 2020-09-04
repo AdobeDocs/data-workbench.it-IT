@@ -1,16 +1,19 @@
 ---
-description: Workbench dati 6.2 include nuovi aggiornamenti dell'interfaccia utente al pannello Segnalibri, nuove icone nella barra degli strumenti dell'area di lavoro, la possibilità di trascinare l'area di lavoro all'interno di una schermata, nuovi tasti rapidi e aggiornamenti alla visualizzazione del grafico a torta.
-title: Aggiornamenti dell'interfaccia utente client Workbench dati
+description: Data Workbench 6.2 include nuovi aggiornamenti dell'interfaccia utente al pannello Segnalibri, nuove icone nella barra degli strumenti dell'area di lavoro, la possibilità di trascinare l'area di lavoro all'interno di una schermata, nuovi tasti rapidi e aggiornamenti alla visualizzazione del grafico a torta.
+title: Data Workbench aggiornamenti interfaccia utente client
 uuid: 1bc18c90-8b46-4c90-b7a7-2c6710e1e28c
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '550'
+ht-degree: 1%
 
 ---
 
 
-# Aggiornamenti dell&#39;interfaccia utente client Workbench dati{#data-workbench-client-ui-updates}
+# Data Workbench aggiornamenti interfaccia utente client{#data-workbench-client-ui-updates}
 
-Workbench dati 6.2 include nuovi aggiornamenti dell&#39;interfaccia utente al pannello Segnalibri, nuove icone nella barra degli strumenti dell&#39;area di lavoro, la possibilità di trascinare l&#39;area di lavoro all&#39;interno di una schermata, nuovi tasti rapidi e aggiornamenti alla visualizzazione del grafico a torta.
+Data Workbench 6.2 include nuovi aggiornamenti dell&#39;interfaccia utente al pannello Segnalibri, nuove icone nella barra degli strumenti dell&#39;area di lavoro, la possibilità di trascinare l&#39;area di lavoro all&#39;interno di una schermata, nuovi tasti rapidi e aggiornamenti alla visualizzazione del grafico a torta.
 
 ## Nuove funzioni segnalibro {#section-e361b605441540ca8213c3fddb5e0718}
 
@@ -31,7 +34,7 @@ Ora è possibile contrassegnare aree di lavoro significative per spostarsi rapid
 
 **Per eliminare un segnalibro:**
 
-* Nel pannello Segnalibri, fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Rimuovi<bookmark title>]**per eliminare un segnalibro selezionato o selezionare **[!UICONTROL Clear All Bookmarks]**per eliminare tutti i segnalibri.
+* Nel pannello Segnalibri, fare clic con il pulsante destro del mouse e selezionare **Rimuovi`<bookmark title>`** per eliminare un segnalibro selezionato, oppure selezionare **[!UICONTROL Clear All Bookmarks]** per eliminare tutti i segnalibri.
 
 * È inoltre possibile fare clic con il pulsante destro del mouse sull&#39;area di lavoro nella visualizzazione delle miniature all&#39;interno del piano di lavoro e selezionare **[!UICONTROL Clear Bookmark]**.
 
@@ -39,13 +42,14 @@ Ora è possibile contrassegnare aree di lavoro significative per spostarsi rapid
 >
 >* È possibile salvare 25 segnalibri.
 >* Se aggiungete un segnalibro e quindi spostate la posizione dell&#39;area di lavoro, il segnalibro non sarà valido e deve essere eliminato dal pannello Segnalibri e reimpostato.
+
 >
 
 
 
 ## Nuove icone in Workspace {#section-c108bbd1661249e79c146727ff3d2470}
 
-Workbench dati 6.2 ora sostituisce il testo nell&#39;area di lavoro con icone. Puoi comunque passare il mouse sopra e visualizzare il messaggio della descrizione comandi che identifica l’icona, incluso **[!UICONTROL File]**, **[!UICONTROL Add]** e **[!UICONTROL Export]**.
+Data Workbench 6.2 ora sostituisce il testo nell’area di lavoro con delle icone. Puoi comunque passare il mouse sopra e visualizzare il messaggio della descrizione comandi che identifica l’icona, incluso **[!UICONTROL File]**, **[!UICONTROL Add]** e **[!UICONTROL Export]**.
 
 ![](assets/new_icons.png)
 
@@ -60,8 +64,8 @@ Workbench dati 6.2 ora sostituisce il testo nell&#39;area di lavoro con icone. P
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Reporting e analisi di marketing </td> 
-   <td colname="col2">Aprite la pagina dell'Aiuto di <span class="uicontrol"> Adobe Marketing Reports &amp; Analytics</span> . </td> 
+   <td colname="col1"> Reports &amp; Analytics per il marketing </td> 
+   <td colname="col2">Aprite la pagina dell'aiuto <span class="uicontrol"> Adobe Reporting e analisi</span> di marketing. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Idea Exchange </td> 
@@ -69,7 +73,7 @@ Workbench dati 6.2 ora sostituisce il testo nell&#39;area di lavoro con icone. P
   </tr> 
   <tr> 
    <td colname="col1"> Aiuto </td> 
-   <td colname="col2">Aprire la documentazione <span class="uicontrol"></span>Workbench dati. <p>È inoltre possibile premere <span class="uicontrol"> &lt;F1&gt;</span> per aprire la guida all'interno di un'area di lavoro. </p> </td> 
+   <td colname="col2">Aprite la documentazione <span class="uicontrol"> di</span>Data Workbench. <p>È inoltre possibile premere <span class="uicontrol"> &lt;F1&gt;</span> per aprire la guida all'interno di un'area di lavoro. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Informazioni </td> 
