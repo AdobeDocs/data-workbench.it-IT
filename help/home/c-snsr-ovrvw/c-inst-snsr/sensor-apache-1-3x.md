@@ -3,7 +3,10 @@ description: Istruzioni dettagliate per l'installazione e la configurazione del 
 title: Apache Server 1.3.x su Linux, Sun Solaris, FreeBSD o Mac OS X
 uuid: bd46dd0f-fe36-4f8b-a87c-8ca7b64da609
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+workflow-type: tm+mt
+source-wordcount: '1345'
+ht-degree: 2%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Istruzioni dettagliate per l&#39;installazione e la configurazione del sensore per un server Apache 1.3.x su RedHat Linux 7.x o versioni successive, SUSE Linux 9.x o versioni successive, Sun Solaris SPARC 2.6 o versioni successive, Sun Solaris x86 9 o versioni successive, FreeBSD 4 o versioni successive o Mac OS X PowerPC.
 
-I file di programma per Sensor vengono assemblati in un file di installazione ottenuto dal sito di download di Adobe. Se non disponete già del file di installazione Sensor per il vostro particolare server Web, scaricatelo (o ottenetelo dal rappresentante Adobe) prima di iniziare le seguenti procedure.
+I file di programma per Sensor sono pacchetti in un file di installazione che si ottiene dal sito di download del Adobe . Se non disponete già del file di installazione Sensor per il vostro particolare server Web, scaricatelo (o ottenetelo dal rappresentante del Adobe ) prima di iniziare le seguenti procedure.
 
 Per installare e configurare Sensor, devi eseguire i seguenti passaggi di alto livello:
 
@@ -89,7 +92,7 @@ Per impostazione predefinita, i file di programma nel file tar hanno le seguenti
 | txlogd.conf | rw- rw- r— | chmod 664 |
 | trust_ca_cert.pem | rw- rw- r— | chmod 664 |
 
-## Modificare il file di configurazione Sensor {#section-3f22a1c91d7d43b6b4c30f1b7448b17f}
+## Edit the Sensor configuration file {#section-3f22a1c91d7d43b6b4c30f1b7448b17f}
 
 Il [!DNL txlogd.conf] file contiene i parametri di configurazione per Sensor.
 
@@ -187,12 +190,12 @@ Questo comando avvia il trasmettitore come un demone. I messaggi di funzionament
 
 >[!NOTE]
 >
->Alcuni utenti di Solaris potrebbero riscontrare un errore &quot;impossibile acquisire mutex&quot;. Affinché il sensore funzioni correttamente su questi sistemi, è necessario aggiungere o modificare la seguente riga nel file /etc/system: >
+>Alcuni utenti di Solaris potrebbero riscontrare un errore &quot;impossibile acquisire mutex&quot;. Affinché il sensore funzioni correttamente su questi sistemi, è necessario aggiungere o modificare la seguente riga nel file /etc/system:
 >
-```>
+>
+```
 >semsys:seminfo_semmnu=1024
->```>
->The default Solaris setting is 60. Based on tests conducted with Sensor, which uses three semaphores for each instance, Adobe recommends that you use 1024 as your setting. This number is high enough for Sensor to function along with any other applications on the server that may require semaphores, but does not affect performance. To support this recommendation, please note that Adrian Cockcroft stated the following in his book Sun Performance and Tuning (Prentice Hall, October 1994): “Databases tend to use lots of shared memory and semaphore settings. These do not affect performance; as long as they are big enough, the programs will run.”
-
-
+>```
+>
+>L&#39;impostazione predefinita di Solaris è 60. In base ai test condotti con Sensor, che utilizza tre semafori per ogni istanza,  Adobe consiglia di usare 1024 come impostazione. Questo numero è sufficientemente elevato da consentire il funzionamento del sensore insieme ad altre applicazioni sul server che possono richiedere dei semafori, ma non influisce sulle prestazioni. Per sostenere questa raccomandazione, si prega di notare che Adrian Cockcroft ha dichiarato quanto segue nel suo libro Sun Performance and Tuning (Prentice Hall, ottobre 1994): &quot;I database tendono a utilizzare un sacco di memoria condivisa e di impostazioni del semaforo. che non incidono sulle prestazioni; fintanto che sono abbastanza grandi, i programmi funzioneranno.&quot;
 
