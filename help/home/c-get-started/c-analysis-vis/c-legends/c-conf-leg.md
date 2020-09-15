@@ -1,16 +1,19 @@
 ---
 description: Le legende di confidenza consentono di determinare la probabilità che i numeri che si vedono siano dovuti alla probabilità e di comprendere le possibili deviazioni nei dati.
 solution: Analytics
-title: Leggi sulla fiducia
+title: Legende di affidabilità
 topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 2%
 
 ---
 
 
-# Leggi sulla fiducia{#confidence-legends}
+# Legende di affidabilità{#confidence-legends}
 
 Le legende di confidenza consentono di determinare la probabilità che i numeri che si vedono siano dovuti alla probabilità e di comprendere le possibili deviazioni nei dati.
 
@@ -51,9 +54,10 @@ La seguente legenda di attendibilità mostra i dettagli di confidenza sulla metr
 
 >[!NOTE]
 >
->Quando si analizzano i risultati di qualsiasi calcolo, è necessario tenere conto dei seguenti accorgimenti: >
+>Quando si analizzano i risultati di qualsiasi calcolo, è necessario tenere conto dei seguenti accorgimenti:
 >* I numeri sono stime. Se si ripetono gli stessi calcoli con un set di dati diverso, si ottiene un risultato diverso. È nota come variazione casuale.
 >* Le estrapolazioni a probabilità più elevate dipendono da un presupposto di normalità non corretto per tutte le metriche. Pertanto, i valori per la probabilità del 99% sono meno affidabili dei valori per la probabilità del 90%.
+
 >
 >
 Se avete bisogno di più numeri esatti, dovreste consultare un esperto in statistica.
@@ -62,6 +66,6 @@ Se avete bisogno di più numeri esatti, dovreste consultare un esperto in statis
 
 * Nella legenda Confidence, fare clic nel **[!UICONTROL Metric or Formula]** campo e digitare la metrica o l&#39;espressione desiderata. Per le regole di sintassi delle espressioni, vedere Sintassi [della lingua](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)query.
 
-## Esporta in Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
+## Esportare in Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
 Per informazioni sull&#39;esportazione delle finestre, vedere [Esportazione dei dati](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)delle finestre.
