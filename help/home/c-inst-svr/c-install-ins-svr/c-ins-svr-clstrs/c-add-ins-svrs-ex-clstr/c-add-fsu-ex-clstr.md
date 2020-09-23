@@ -1,15 +1,18 @@
 ---
 description: È possibile aggiungere un FSU di Insight Server a un cluster esistente se si desidera memorizzare i dati di origine in un file server aggiuntivo o se si desidera impostare un backup per il server di Insight principale.
-solution: Insight
-title: Aggiunta di un FSU per server di Insight a un cluster esistente
+solution: Analytics
+title: Aggiunta di una FSU di Insight Server a un cluster esistente
 uuid: 57d6ef52-eef9-4425-943a-331e4c9c4207
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 2%
 
 ---
 
 
-# Aggiunta di un FSU per server di Insight a un cluster esistente{#adding-an-insight-server-fsu-to-an-existing-cluster}
+# Aggiunta di una FSU di Insight Server a un cluster esistente{#adding-an-insight-server-fsu-to-an-existing-cluster}
 
 È possibile aggiungere un FSU di Insight Server a un cluster esistente se si desidera memorizzare i dati di origine in un file server aggiuntivo o se si desidera impostare un backup per il server di Insight principale.
 
