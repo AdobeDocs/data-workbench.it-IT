@@ -1,10 +1,13 @@
 ---
 description: Installazione di Insight ServerReplication Service completata.
-solution: Insight
+solution: Analytics
 title: Passaggi successivi
 uuid: 258087cd-4dde-4e47-9285-d411f22e19ed
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '36'
+ht-degree: 11%
 
 ---
 
