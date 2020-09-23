@@ -1,10 +1,13 @@
 ---
 description: Per utilizzare un cluster, è necessario designare un server Insight nel cluster che funga da server di visualizzazione principale.
-solution: Insight
+solution: Analytics
 title: Installazione di Master Insight Server
 uuid: a73214f3-b175-4e9e-8802-7a8451d86d3a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 5%
 
 ---
 
@@ -21,4 +24,4 @@ Oltre alle connessioni di intermediazione tra un client e altri [!DNL Insight Se
 
 1. Determinare quale computer fungerà da master [!DNL Insight Server].
 1. Installate e configurate [!DNL Insight Server] (in genere, un [!DNL Insight Server] FSU) su questo computer come descritto in [Insight Server](../../../../../../home/c-inst-svr/c-msr-server/c-msr-server.md).
-1. Installate [!DNL Insight] e configurate una connessione al master [!DNL Insight Server] come descritto nella Guida *[!DNL Insight]*utente.
+1. Installate [!DNL Insight] e configurate una connessione al master [!DNL Insight Server] come descritto nella Guida *[!DNL Insight]* utente.
