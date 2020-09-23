@@ -1,15 +1,18 @@
 ---
 description: Se i client possono raggiungere un server Insight attraverso più reti (ad esempio, attraverso la Intranet aziendale e tramite Internet), il file dell'indirizzo deve definire un percorso di rete separato per ciascuno degli indirizzi IP del server.
-solution: Insight
-title: Indirizzi IP multipli per un server Insight
+solution: Analytics
+title: Indirizzi IP multipli per Insight Server
 uuid: 6ed00b47-8ba3-4127-a5db-7e684e573d9c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
 
-# Indirizzi IP multipli per un server Insight{#multiple-ip-addresses-for-an-insight-server}
+# Indirizzi IP multipli per Insight Server{#multiple-ip-addresses-for-an-insight-server}
 
 Se i client possono raggiungere un server Insight attraverso più reti (ad esempio, attraverso la Intranet aziendale e tramite Internet), il file dell&#39;indirizzo deve definire un percorso di rete separato per ciascuno degli indirizzi IP del server.
 
