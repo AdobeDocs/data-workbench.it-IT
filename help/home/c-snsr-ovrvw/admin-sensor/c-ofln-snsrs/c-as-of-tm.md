@@ -1,15 +1,18 @@
 ---
 description: Un server workbench dati viene a conoscenza di un'origine dati, come un sensore, quando riceve i dati da tale origine.
-solution: Insight
-title: Informazioni sul tempo di utilizzo
+solution: Analytics
+title: Informazioni sul tempo “a partire da”
 uuid: a1853573-e77c-41f7-8b99-2843e38cc82d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 2%
 
 ---
 
 
-# Informazioni sul tempo di utilizzo{#understanding-as-of-time}
+# Informazioni sul tempo “a partire da”{#understanding-as-of-time}
 
 Un server workbench dati viene a conoscenza di un&#39;origine dati, come un sensore, quando riceve i dati da tale origine.
 
@@ -19,7 +22,7 @@ Supponiamo di disporre di tre serie [!DNL Sensors] che inviano dati a un [!DNL d
 
 In pratica, l&#39; [!DNL data workbench server] unica preoccupazione riguarda il tempo come e non quello che potrebbe essere chiamato &quot;tempo muro&quot;, o l&#39;ora da un orologio sul muro. Il tempo [!DNL data workbench server] conosce solo come il tempo. Ciò è particolarmente importante ai fini della segnalazione, in quanto garantisce che i report vengano sempre eseguiti in base al tempo previsto, in modo da garantire che i report con solo dati parziali non possano mai essere inviati agli utenti finali del sistema.
 
-I [!DNL data workbench server] dati inviati dal trasmettitore vengono utilizzati per fornire i dati relativi al tempo, sia che si tratti di dati effettivi raccolti dal sito Web, sia che si tratti di heartbeat periodici inviati dall&#39;utente [!DNL Sensors]. Questi heartbeat servono due scopi:
+I [!DNL data workbench server] dati inviati dal trasmettitore vengono utilizzati per fornire i dati relativi al tempo, sia che si tratti di dati effettivi raccolti dal sito Web, sia che si tratti di heartbeat periodici inviati dal [!DNL Sensors]. Questi heartbeat servono due scopi:
 
 1. Per mantenere una connessione HTTP/1.1 persistente aperta tra [!DNL Sensor] e [!DNL data workbench server].
 
