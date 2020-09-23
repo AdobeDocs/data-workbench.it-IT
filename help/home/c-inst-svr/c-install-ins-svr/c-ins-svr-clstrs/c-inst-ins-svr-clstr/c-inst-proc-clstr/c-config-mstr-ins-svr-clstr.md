@@ -1,15 +1,18 @@
 ---
 description: Informazioni sulla configurazione del cluster nel server Master Insight, sull'aggiornamento del file di controllo degli accessi per un cluster e altro ancora.
-solution: Insight
-title: Configurazione del server Master Insight per il clustering
+solution: Analytics
+title: Configurazione di Master Insight Server per il clustering
 uuid: c3ac38e3-79c5-4863-9156-194589a6bcbd
 translation-type: tm+mt
-source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1244'
+ht-degree: 1%
 
 ---
 
 
-# Configurazione del server Master Insight per il clustering{#configuring-the-master-insight-server-for-clustering}
+# Configurazione di Master Insight Server per il clustering{#configuring-the-master-insight-server-for-clustering}
 
 Informazioni sulla configurazione del cluster nel server Master Insight, sull&#39;aggiornamento del file di controllo degli accessi per un cluster e altro ancora.
 
@@ -26,7 +29,7 @@ Per completare questi passaggi, è necessario conoscere i nomi comuni (come spec
 
 >[!NOTE]
 >
->Le procedure descritte in questa sezione richiedono [!DNL Insight]. Se non avete installato [!DNL Insight], seguite le istruzioni riportate nella **[!DNL Insight]Guida **utente prima di continuare.
+>Le procedure descritte in questa sezione richiedono [!DNL Insight]. Se non avete installato [!DNL Insight], seguite le istruzioni riportate nella **[!DNL Insight]Guida** utente prima di continuare.
 
 ## Aggiunta dei server di elaborazione a Insight al file di indirizzo {#section-2fe5298180164e8dbaa59ea6b6ff682d}
 
@@ -58,7 +61,7 @@ Utilizzare la procedura seguente per aggiungere i nomi comuni di elaborazione e 
    1. Nel parametro Name specificate il nome [!DNL Insight Server’s] comune di elaborazione.
    1. Nel parametro Address, specificate l&#39;indirizzo [!DNL Insight Server’s] IP di elaborazione.
 
-      È possibile utilizzare un asterisco come carattere jolly nel campo Indirizzo, ad esempio 10.10.116.*, per semplificare il clustering. Vedere [Informazioni sui livelli](../../../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-lvls.md#concept-6b292edf79214750a8d0525097b8795a)di accesso.
+      È possibile utilizzare un asterisco come carattere jolly nel campo Indirizzo, ad esempio 10.10.116.*, per semplificare il clustering. See [Understanding Access Levels](../../../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-lvls.md#concept-6b292edf79214750a8d0525097b8795a).
 
       L&#39;esempio seguente definisce un cluster contenente due [!DNL Insight Servers]:
 
@@ -147,7 +150,7 @@ Il [!DNL Synchronize.cfg] file specifica la posizione del master [!DNL Insight S
 
    1. In [!DNL Server Files Manager], fare clic con il pulsante destro del mouse sul segno di spunta del file nella [!DNL Temp] colonna e scegliere **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
 
-## Configurazione della posizione del dataset (temp.db) {#section-5ec257a4b4c64fb58baec1f12119a822}
+## Configurazione della posizione del set di dati (temp.db) {#section-5ec257a4b4c64fb58baec1f12119a822}
 
 Eseguire la procedura seguente se si desidera che l&#39;elaborazione [!DNL Insight Servers] mantenga [!DNL temp.db] (il dataset) in una directory o in un&#39;unità diversa dalla posizione predefinita oppure se si desidera distribuire [!DNL temp.db] su più unità.
 
