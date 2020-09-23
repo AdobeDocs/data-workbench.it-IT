@@ -1,15 +1,18 @@
 ---
 description: Informazioni sui parametri Sensor txlogd.conf richiesti.
-solution: Insight
+solution: Analytics
 title: Parametri richiesti
 uuid: 187f4199-ec7f-4d5a-93eb-64a62d51ec7b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 1%
 
 ---
 
 
-# Required Parameters{#required-parameters}
+# Parametri richiesti{#required-parameters}
 
 Informazioni sui parametri Sensor txlogd.conf richiesti.
 
@@ -27,15 +30,15 @@ Informazioni sui parametri Sensor txlogd.conf richiesti.
   </tr> 
   <tr> 
    <td colname="col1"> ServerAddress </td> 
-   <td colname="col2"> <p>L'indirizzo del server <span class="keyword"> workbench</span> dati a cui questo <span class="wintitle"> sensore</span> invia i dati dell'evento. </p> <p>Nota:  <p>Quando si lavora in un ambiente cluster, <span class="wintitle"> Sensor</span> deve essere configurato per accedere al server <span class="keyword"></span> workbench dati master per evitare problemi di sincronizzazione. In Workbench dati è possibile visualizzare informazioni sui server <span class="keyword"> workbench di elaborazione dati nel cluster utilizzando la voce di menu Server correlati in</span> Server Manager <span class="wintitle"></span>. Per ulteriori informazioni su <span class="wintitle"> Server Manager</span>, vedere la <i><span class="keyword"> Guida ai sensori di Workbench</span><span class="wintitle"> dati</span></i>. </p> <p>Se il server Web è in grado di risolvere i nomi dei server tramite DNS, potete specificare l'indirizzo del server per nome. In caso contrario, è necessario specificare l'indirizzo IP numerico del server. </p> <p>Esempio: <span class="filepath"> ServerAddress 10.1.0.7</span> o </p> <p> <span class="filepath"> ServerAddress vserver01.mycompany.com</span> </p> </p> </td> 
+   <td colname="col2"> <p>L'indirizzo del server <span class="keyword"> workbench</span> dati a cui questo <span class="wintitle"> sensore</span> invia i dati dell'evento. </p> <p>Nota:  <p>Quando si lavora in un ambiente cluster, <span class="wintitle"> Sensor</span> deve essere configurato per accedere al server <span class="keyword"></span> workbench dati master per evitare problemi di sincronizzazione. In Data Workbench è possibile visualizzare informazioni sui server <span class="keyword"> workbench di elaborazione dei dati nel cluster utilizzando la voce di menu Server correlati in</span> Server Manager <span class="wintitle"></span>. Per ulteriori informazioni su <span class="wintitle"> Server Manager</span>, consulta la <i><span class="keyword"> Data Workbench</span><span class="wintitle"> Sensor</span> Guide</i>. </p> <p>Se il server Web è in grado di risolvere i nomi dei server tramite DNS, potete specificare l'indirizzo del server per nome. In caso contrario, è necessario specificare l'indirizzo IP numerico del server. </p> <p>Esempio: <span class="filepath"> ServerAddress 10.1.0.7</span> o </p> <p> <span class="filepath"> ServerAddress vserver01.mycompany.com</span> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL </td> 
-   <td colname="col2"> <p>Indica se <span class="wintitle"> Sensor</span> comunica con il server <span class="keyword"> workbench</span> dati utilizzando HTTP o HTTPS. Impostate su "on" per HTTPS o "off" per HTTP. </p> <p>Esempio: <span class="filepath"> SSL su</span> </p> </td> 
+   <td colname="col2"> <p>Indica se <span class="wintitle"> Sensor</span> comunica con il server <span class="keyword"> workbench</span> dati utilizzando HTTP o HTTPS. Impostate su "on" per HTTPS o "off" per HTTP. </p> <p>Esempio: <span class="filepath"> SSL attivato</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ServerPort </td> 
-   <td colname="col2"> <p>La porta su cui il server <span class="keyword"> workbench</span> dati ascolta i dati dell'evento. </p> <p>Esempio: Porta <span class="filepath"> server 443</span> </p> </td> 
+   <td colname="col2"> <p>La porta su cui il server <span class="keyword"> workbench</span> dati ascolta i dati dell'evento. </p> <p>Esempio: <span class="filepath"> PortaServer 443</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> CertName </td> 
