@@ -1,16 +1,19 @@
 ---
 description: Definite la funzione principale dell'obiettivo e dell'audience target.
-solution: Insight,Analytics
-title: Definizione dell'obiettivo
+solution: Analytics,Analytics
+title: Definizione dell’obiettivo
 topic: Data workbench
 uuid: 4957b249-8790-4275-98ab-9c6398039a63
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 3%
 
 ---
 
 
-# Definizione dell&#39;obiettivo{#defining-the-objective}
+# Definizione dell’obiettivo{#defining-the-objective}
 
 Definite la funzione principale dell&#39;obiettivo e dell&#39;audience target.
 
