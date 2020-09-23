@@ -1,15 +1,18 @@
 ---
 description: Il file di indirizzo installato in Insight Server contiene quattro percorsi di rete predefiniti.
-solution: Insight
-title: Il file di indirizzo installato su Insight Server
+solution: Analytics
+title: Il file degli indirizzi installato su Insight Server
 uuid: a58d36d8-e1a3-43e7-91c5-c57351e1be49
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 1%
 
 ---
 
 
-# Il file di indirizzo installato su Insight Server{#the-address-file-installed-on-insight-server}
+# Il file degli indirizzi installato su Insight Server{#the-address-file-installed-on-insight-server}
 
 Il file di indirizzo installato in Insight Server contiene quattro percorsi di rete predefiniti.
 
@@ -119,7 +122,7 @@ La procedura seguente descrive come configurare il file dell&#39;indirizzo per d
      Parent = string: ClientDefaultNetworkLocation
    ```
 
-   Se [!DNL Insight Server] disponete di un indirizzo IP singolo e, di conseguenza, di un solo NetworkLocation, puntate il parametro Parent su tale NetworkLocation. Se [!DNL Insight Server] avete più indirizzi IP, indicate il parametro Parent a NetworkLocation che definisce l&#39;indirizzo a cui i vostri [!DNL Insight] e [!DNL Report] client si connettono più frequentemente.
+   Se [!DNL Insight Server] si dispone di un indirizzo IP singolo e, di conseguenza, di un solo NetworkLocation, puntare il parametro Parent su tale NetworkLocation. Se [!DNL Insight Server] avete più indirizzi IP, indicate il parametro Parent a NetworkLocation che definisce l&#39;indirizzo a cui i vostri [!DNL Insight] e [!DNL Report] client si connettono più frequentemente.
 
 1. Nel percorso di [!DNL Insight Server] rete, modificare il parametro Parent come mostrato di seguito per indicare NetworkLocation che il server utilizza per risolvere i nomi comuni di altri [!DNL Insight Servers] quando opera in un cluster. (Anche se questo percorso di rete non viene utilizzato a meno che un cluster non [!DNL Insight Server] operi, è buona norma, anche in una singola configurazione server, puntare il parametro Parent a un percorso di rete che identifichi l&#39;indirizzo IP interno del server.)
 
@@ -137,7 +140,7 @@ L&#39;esempio seguente mostra un file di indirizzo completato. Questo file defin
 
 * NetworkLocation 3 è il percorso di [!DNL Insight Server] rete. Questo è il percorso di rete predefinito [!DNL Insight Server] utilizzato quando comunica con altri server in un cluster. In questo esempio, il percorso di [!DNL Insight Server] rete eredita le relative definizioni di indirizzi dalla NetworkLocation intranet &quot;MyCorporate&quot;.
 
-* L&#39;elemento 4 di NetworkLocation è il percorso di rete del [!DNL Report] server. Si tratta del percorso di rete predefinito utilizzato da [!DNL Report]. In questo esempio, il percorso di rete del [!DNL Report] server eredita le definizioni di indirizzi da NetworkLocation &quot;Internet&quot;.
+* NetworkLocation, elemento 4 è il percorso di rete del [!DNL Report] server. Si tratta del percorso di rete predefinito utilizzato da [!DNL Report]. In questo esempio, il percorso di rete del [!DNL Report] server eredita le definizioni di indirizzi da NetworkLocation &quot;Internet&quot;.
 
    ```
    Locations = vector: 5 items 
