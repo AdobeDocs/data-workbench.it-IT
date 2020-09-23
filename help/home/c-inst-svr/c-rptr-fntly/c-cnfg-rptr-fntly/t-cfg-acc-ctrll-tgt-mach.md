@@ -1,10 +1,10 @@
 ---
-description: I computer Target Insight Server che eseguono Insight Server Replication Service devono essere in grado di leggere i file di registro in questo server di ripetizione.
-solution: Insight
+description: I computer server di destinazione che eseguono il servizio di replica di Insight Server devono essere in grado di leggere i file di registro in questo server di ripetizione.
+solution: Analytics
 title: Configurazione del controllo di accesso per i computer di destinazione
 uuid: 35e032cf-6c1d-4348-88ce-4f4a6a30b16f
 translation-type: tm+mt
-source-git-commit: 0276701151d1403926ce184069526ebdf3e28e36
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 6%
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # Configurazione del controllo di accesso per i computer di destinazione{#configuring-access-control-for-target-machines}
 
-I computer Target Insight Server che eseguono Insight Server Replication Service devono essere in grado di leggere i file di registro in questo server di ripetizione.
+I computer server di destinazione che eseguono il servizio di replica di Insight Server devono essere in grado di leggere i file di registro in questo server di ripetizione.
 
 L&#39;accesso ai computer di destinazione è concesso utilizzando il [!DNL Access Control.cfg] file.
 
