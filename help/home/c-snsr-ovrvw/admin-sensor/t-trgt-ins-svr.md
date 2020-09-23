@@ -1,15 +1,18 @@
 ---
 description: Per modificare il server workbench dati con il quale un sensore comunica (il server di destinazione), è necessario modificare il file txlogd.conf su ciascuno dei server Web in cui è installato Sensor.
-solution: Insight
-title: Modifica del server di Workbench dati di Target
+solution: Analytics
+title: Modifica del server target di Data Workbench
 uuid: 931d376d-8622-4858-8290-19ce91538570
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 4%
 
 ---
 
 
-# Modifica del server di Workbench dati di Target{#changing-the-target-data-workbench-server}
+# Modifica del server target di Data Workbench{#changing-the-target-data-workbench-server}
 
 Per modificare il server workbench dati con il quale un sensore comunica (il server di destinazione), è necessario modificare il file txlogd.conf su ciascuno dei server Web in cui è installato Sensor.
 
