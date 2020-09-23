@@ -1,15 +1,18 @@
 ---
 description: Istruzioni per configurare gli avvisi amministrativi per Insight Server, Ripetitore o Trasforma.
-solution: Insight
-title: Impostazioni configurazione avvisi amministrativi
+solution: Analytics
+title: Impostazioni di configurazione di avvisi amministrativi
 uuid: c2be2d1e-d81d-4d9f-ac94-4b642dad90b9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '514'
+ht-degree: 4%
 
 ---
 
 
-# Impostazioni configurazione avvisi amministrativi{#administrative-alerts-configuration-settings}
+# Impostazioni di configurazione di avvisi amministrativi{#administrative-alerts-configuration-settings}
 
 Istruzioni per configurare gli avvisi amministrativi per Insight Server, Ripetitore o Trasforma.
 
@@ -47,7 +50,7 @@ Completa i parametri nel file seguente:
   </tr> 
   <tr> 
    <td colname="col1"> Timeout avviso sensore (min) </td> 
-   <td colname="col2"> <p>Il server genera un avviso e-mail quando non ha ricevuto dati da un <span class="wintitle"> sensore configurato e connesso in precedenza </span> in questa finestra temporale. Il valore predefinito è 15. </p> <p> <p>Nota:  <span class="wintitle"> Sensor </span> Alert Timeout funziona solo se viene persa una connessione esistente a un <span class="wintitle"> sensore </span> . Se il servizio del server viene arrestato e riavviato e i <span class="wintitle"> sensori </span> non si connettono, il server non genera avvisi e-mail. </p> </p> </td> 
+   <td colname="col2"> <p>Il server genera un avviso e-mail quando non ha ricevuto dati da un <span class="wintitle"> sensore configurato e connesso in precedenza </span> in questa finestra temporale. Il valore predefinito è 15. </p> <p> <p>Nota:  <span class="wintitle"> Timeout </span> avviso sensore funziona solo se viene persa una connessione esistente a un <span class="wintitle"> sensore </span> . Se il servizio del server viene arrestato e riavviato e i <span class="wintitle"> sensori </span> non si connettono, il server non genera avvisi e-mail. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Indirizzo del server </td> 
