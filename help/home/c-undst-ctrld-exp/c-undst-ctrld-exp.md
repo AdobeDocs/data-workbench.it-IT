@@ -1,20 +1,23 @@
 ---
 description: Gli esperimenti controllati sono test che consentono di confrontare i risultati ottenuti da un gruppo di campioni sperimentali con quelli di un gruppo di controllo standard.
-solution: Insight,Analytics
-title: Esperimenti controllati da Workbench dati
+solution: Analytics,Analytics
+title: Data Workbench esperimenti controllati
 topic: Data workbench
 uuid: 5fce2d9e-4975-44e4-a7c0-11064d8d28b4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
 
-# Esperimenti controllati da Workbench dati{#data-workbench-controlled-experiments}
+# Data Workbench Controlled Experiments{#data-workbench-controlled-experiments}
 
 Gli esperimenti controllati sono test che consentono di confrontare i risultati ottenuti da un gruppo di campioni sperimentali con quelli di un gruppo di controllo standard.
 
-Site consente di implementare, misurare e analizzare esperimenti controllati e i relativi risultati in relazione a diversi aspetti del sito Web. In questo modo è possibile testare le ipotesi relative al miglioramento delle prestazioni del sito Web prima di spendere tempo significativo o denaro completamente implementando le modifiche proposte.
+Site consente di implementare, misurare e analizzare esperimenti controllati e i relativi risultati in relazione a diversi aspetti del sito Web. In questo modo potete testare le ipotesi relative al miglioramento delle prestazioni del sito Web prima di spendere tempo significativo o denaro pienamente implementando le modifiche proposte.
 
 >[!NOTE]
 >
