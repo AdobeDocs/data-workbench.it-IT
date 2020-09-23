@@ -1,11 +1,14 @@
 ---
 description: Puoi visualizzare i risultati di un esperimento in una visualizzazione in Insight.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Visualizzazione dei risultati
 topic: Data workbench
 uuid: de9b6f34-faf8-43e2-bf93-1078e624b908
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '32'
+ht-degree: 18%
 
 ---
 
