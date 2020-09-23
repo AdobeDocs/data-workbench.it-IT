@@ -1,10 +1,13 @@
 ---
 description: Procedura per avviare Insight Server e registrarlo contemporaneamente come Microsoft Windows Service.
-solution: Insight
+solution: Analytics
 title: Registrazione di Insight Server come servizio Windows
 uuid: 1b3d53ca-d50f-4520-abf5-6d5c40493b88
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '582'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +18,7 @@ Procedura per avviare Insight Server e registrarlo contemporaneamente come Micro
 
 >[!NOTE]
 >
->Quando si avvia [!DNL Insight Server] per la prima volta, si connette automaticamente al server delle licenze Adobe per registrare il certificato digitale. Per completare correttamente il processo di registrazione, è necessario che il computer sia connesso a Internet quando si eseguono i seguenti passaggi.
+>Quando si avvia [!DNL Insight Server] per la prima volta, si connette automaticamente al server licenze di Adobe  per registrare il certificato digitale. Per completare correttamente il processo di registrazione, è necessario che il computer sia connesso a Internet quando si eseguono i seguenti passaggi.
 
 **Per avviarlo[!DNL Insight Server]e registrarlo come servizio Windows**
 
@@ -39,8 +42,8 @@ Procedura per avviare Insight Server e registrarlo contemporaneamente come Micro
 1. Per verificare se [!DNL Insight Server] si sono verificati errori durante l&#39;avvio, fate clic su **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**. Questa sequenza di comandi può variare a seconda della versione di Windows in uso.
 
    1. Nel riquadro a sinistra della [!DNL Event Viewer] finestra, selezionare il **[!UICONTROL Application]** registro.
-   1. Nel riquadro a destra, cercate gli eventi con &quot;Adobe&quot; nella [!DNL Source] colonna.
-   1. Se si verifica un errore in &quot;Adobe&quot;, fare doppio clic sull&#39;errore per visualizzare la [!DNL Event Properties] finestra. Questa finestra fornisce informazioni dettagliate sull&#39;errore.
+   1. Nel riquadro a destra, cercate gli eventi con &quot; Adobe&quot; nella [!DNL Source] colonna.
+   1. Se si verifica un errore in &quot; Adobe&quot;, fare doppio clic sull&#39;errore per visualizzare la [!DNL Event Properties] finestra. Questa finestra fornisce informazioni dettagliate sull&#39;errore.
 
 1. Al termine dell’analisi del [!DNL Applications] registro, chiudete il visualizzatore eventi.
 
