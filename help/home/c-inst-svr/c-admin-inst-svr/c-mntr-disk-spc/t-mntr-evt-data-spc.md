@@ -1,15 +1,18 @@
 ---
 description: Informazioni sul monitoraggio dello spazio dei dati dell'evento e sulla modifica della directory di registro per i dati Sensor.
-solution: Insight
-title: Monitoraggio dello spazio dati evento
+solution: Analytics
+title: Monitoraggio dello spazio dei dati degli eventi
 uuid: e514e8fb-e735-4003-ab21-17470c73af37
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '582'
+ht-degree: 1%
 
 ---
 
 
-# Monitoraggio dello spazio dati evento{#monitoring-event-data-space}
+# Monitoraggio dello spazio dei dati degli eventi{#monitoring-event-data-space}
 
 Informazioni sul monitoraggio dello spazio dei dati dell&#39;evento e sulla modifica della directory di registro per i dati Sensor.
 
@@ -17,7 +20,7 @@ Informazioni sul monitoraggio dello spazio dei dati dell&#39;evento e sulla modi
 
 [!DNL Insight Server] memorizza un file di registro al [!DNL Sensor] giorno sull&#39;unità di elaborazione dati o sull&#39;unità del file server, a seconda della configurazione. Le dimensioni dei file di registro e la quantità di spazio di archiviazione dati necessaria dipendono da molte variabili, tra cui, ad esempio, il numero di siti Web registrati e il numero di richieste ricevute al secondo dai server Web.
 
-Un&#39;installazione tipica di [!DNL Insight Server] (o un [!DNL Insight Server] cluster) è in grado di memorizzare più terabyte di dati, partendo dal presupposto che l&#39;implementazione utilizzi l&#39;hardware consigliato da Adobe per i [!DNL Insight Server] computer.
+Un&#39;installazione tipica di [!DNL Insight Server] (o un [!DNL Insight Server] cluster) è in grado di memorizzare più terabyte di dati, partendo dal presupposto che l&#39;implementazione utilizzi l&#39;hardware consigliato da  Adobe per i [!DNL Insight Server] computer.
 
 In genere, tutti i dati del registro restano presenti nel [!DNL Insight Server] computer. Se diventa necessario rendere disponibile più spazio di archiviazione dati sul computer, è possibile spostare tutti i file di registro tranne il giorno più recente su un altro computer o supporto di memorizzazione dati (unità zip, nastro e così via). Lo spostamento dei dati non richiede l&#39;arresto [!DNL Insight Server]e non influisce sulle funzionalità disponibili in qualsiasi [!DNL Insights] connessione [!DNL Insight Server] e utilizzo di dati continui. Se non elabora o rielabora un set di dati di analisi, puoi continuare ad accedere a tutti i dati precedenti e i nuovi dati restano disponibili in [!DNL Insight]. Se si elabora o rielabora un dataset di analisi, non è possibile accedere ai dati fino al completamento dell&#39;elaborazione.
 
