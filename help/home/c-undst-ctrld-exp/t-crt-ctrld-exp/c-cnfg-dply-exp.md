@@ -1,22 +1,25 @@
 ---
 description: Dopo aver definito l'obiettivo, le ipotesi e i dettagli dell'esperimento e aver creato il contenuto di test, è necessario configurare Sensor per distribuire l'esperimento controllato.
-solution: Insight,Analytics
-title: Configurazione e distribuzione dell'esperimento
+solution: Analytics,Analytics
+title: Configurazione e distribuzione dell’esperimento
 topic: Data workbench
 uuid: 460d3ea4-a6c8-4ac4-9a3f-eab71f65b096
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1486'
+ht-degree: 1%
 
 ---
 
 
-# Configurazione e distribuzione dell&#39;esperimento{#configuring-and-deploying-the-experiment}
+# Configurazione e distribuzione dell’esperimento{#configuring-and-deploying-the-experiment}
 
 Dopo aver definito l&#39;obiettivo, le ipotesi e i dettagli dell&#39;esperimento e aver creato il contenuto di test, è necessario configurare Sensor per distribuire l&#39;esperimento controllato.
 
 ## Configurazione del file di configurazione dell’esperimento {#section-037fe7dea9c94aee9cdc354dafdb7c03}
 
-Per configurare l&#39;esperimento, dovete completare il foglio di calcolo di configurazione dell&#39;esperimento fornito da Adobe (denominato [!DNL TestExperiment.xls] per impostazione predefinita). Questo file si configura [!DNL Sensor] per eseguire l&#39;esperimento ed è la versione Excel del file di testo specificata in [Modifica del parametro](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)ExpFile.
+Per configurare l’esperimento, dovete completare il foglio di calcolo di configurazione dell’esperimento fornito da  Adobe (denominato [!DNL TestExperiment.xls] per impostazione predefinita). Questo file si configura [!DNL Sensor] per eseguire l&#39;esperimento ed è la versione Excel del file di testo specificata in [Modifica del parametro](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)ExpFile.
 
 Questo file può contenere informazioni su più esperimenti, che possono essere eseguiti allo stesso tempo o in momenti diversi e utilizzare gruppi e percentuali diversi, ma questi esperimenti non sono in alcun modo correlati.
 
@@ -34,7 +37,7 @@ Completate questo file prima dell&#39;inizio dell&#39;esperimento e non modifica
 >
 >Qualsiasi esperimento è immediatamente nullo se la definizione dell&#39;esperimento cambia dopo l&#39;inizio dell&#39;esperimento.
 
-1. Se disponete dell&#39;accesso dell&#39;amministratore ai server Web o applicazione, andate alla cartella di [!DNL Sensor] installazione su qualsiasi [!DNL Sensor] computer del cluster Web per accedere al [!DNL TestExperiment.xls] file. Se non disponete dell&#39;accesso dell&#39;amministratore, contattate il vostro account manager Adobe per richiedere il [!DNL TestExperiment.xls] file.
+1. Se disponete dell&#39;accesso dell&#39;amministratore ai server Web o applicazione, andate alla cartella di [!DNL Sensor] installazione su qualsiasi [!DNL Sensor] computer del cluster Web per accedere al [!DNL TestExperiment.xls] file. Se non disponete dell&#39;accesso dell&#39;amministratore, contattate il vostro account manager  Adobe per richiedere il [!DNL TestExperiment.xls] file.
 
 1. Aprite il [!DNL TestExperiment.xls] file (se lo desiderate potete rinominare) e completate i seguenti campi:
 
@@ -98,7 +101,7 @@ Questo esempio indica che l&#39;esperimento &quot;New_Homepage&quot; inizia il 1
 >Anche se il file di esempio sopra ha un gruppo di controllo esplicito definito, non è necessario definire esplicitamente un gruppo di controllo — l&#39;esperimento crea automaticamente il gruppo di controllo. Se la somma delle percentuali per tutti i gruppi di un esperimento è inferiore al 100%, un gruppo di controllo implicito viene assegnato agli utenti che non rientrano in uno dei gruppi espliciti.
 
 1. Per inserire commenti per fornire ulteriori informazioni su esperimenti specifici, iniziare la cella con un simbolo cancelletto (#) e seguire i commenti. I commenti possono essere inseriti ovunque nel file.
-1. Dopo aver completato le variabili nel foglio di calcolo della configurazione dell’esperimento, salvate le modifiche, quindi salvate il file in formato di testo delimitato da tabulazioni ( [!DNL *.txt]) utilizzando il nome specificato nel parametro ExpFile nel file di [!DNL Sensor] configurazione. Consultate [Modifica del parametro](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)ExpFile.
+1. Dopo aver completato le variabili nel foglio di calcolo della configurazione dell’esperimento, salvate le modifiche, quindi salvate il file in formato di testo delimitato da tabulazioni ( [!DNL *.txt]) utilizzando il nome specificato nel parametro ExpFile nel file di [!DNL Sensor] configurazione. See [Modifying the ExpFile Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
 
    Esempio di un file di testo di configurazione sperimentale:
 
@@ -122,10 +125,10 @@ Dovete distribuire il file di configurazione dell&#39;esperimento a ogni compute
 
    >[!NOTE]
    >
-   >Non collegate a nessuno dei file di prova direttamente da una pagina del sito Web. In questo modo i risultati dei test e i punteggi dell&#39;indice non vengono convalidati.
+   >Non collegate a nessuno dei file di prova direttamente da una pagina del sito Web. In questo modo i risultati dei test e i punteggi dell&#39;indice vengono invalidati.
 
 **Per distribuire l&#39;esperimento**
 
-* Su ogni applicazione o server Web che esegue un server [!DNL Sensor] che distribuisce le pagine coinvolte nell&#39;esperimento, inserite il file di testo della configurazione dell&#39;esperimento nella directory specificata nel parametro ExpFile nel file di [!DNL Sensor] configurazione. Consultate [Modifica del parametro](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)ExpFile.
+* Su ogni applicazione o server Web che esegue un server [!DNL Sensor] che distribuisce le pagine coinvolte nell&#39;esperimento, inserite il file di testo della configurazione dell&#39;esperimento nella directory specificata nel parametro ExpFile nel file di [!DNL Sensor] configurazione. See [Modifying the ExpFile Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
 
 [!DNL Sensor] seleziona in modo casuale i visitatori del sito Web per ciascun gruppo in base alle percentuali definite nel file e distribuisce loro il contenuto del gruppo di test o di controllo, a seconda delle necessità.
