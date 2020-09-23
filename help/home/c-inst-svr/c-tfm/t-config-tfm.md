@@ -1,15 +1,18 @@
 ---
 description: La funzionalità di trasformazione viene eseguita su un computer FSU di Insight Server per consentire l'esportazione dei dati di origine del registro da utilizzare in altre applicazioni.
-solution: Insight
-title: Configurazione della trasformazione
+solution: Analytics
+title: Configurazione di Transform
 uuid: 0526704a-71b2-4094-9d3a-1ba84f4dc287
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 1%
 
 ---
 
 
-# Configurazione della trasformazione{#configuring-transform}
+# Configurazione di Transform{#configuring-transform}
 
 La funzionalità di trasformazione viene eseguita su un computer FSU di Insight Server per consentire l&#39;esportazione dei dati di origine del registro da utilizzare in altre applicazioni.
 
@@ -17,11 +20,11 @@ La funzionalità di trasformazione viene eseguita su un computer FSU di Insight 
 
 >[!NOTE]
 >
->In genere [!DNL Transform] è installato su un [!DNL Insight Server] FSU. Tuttavia, l’implementazione potrebbe richiedere l’installazione su un [!DNL Insight Server] DPU. Per ulteriori informazioni, contattate Adobe.
+>In genere [!DNL Transform] è installato su un [!DNL Insight Server] FSU. Tuttavia, l’implementazione potrebbe richiedere l’installazione su un [!DNL Insight Server] DPU. Per ulteriori informazioni, contatta  Adobe.
 
 Per informazioni sui requisiti di sistema per l’installazione, la configurazione e il funzionamento [!DNL Transform]consultate il documento sui requisiti *di sistema* minimi.
 
-Adobe distribuisce la [!DNL Transform] funzionalità come profilo all&#39;interno del [!DNL .zip] file per il pacchetto di [!DNL Insight Server] rilascio. Il [!DNL Transform] profilo è un profilo interno che fornisce funzionalità aggiuntive a [!DNL Insight Server]. Come per tutti gli altri profili interni forniti da Adobe, il profilo non deve essere modificato. Tutta la personalizzazione deve avvenire nel dataset o nei profili specifici del ruolo o in altri profili creati.
+ Adobe distribuisce la [!DNL Transform] funzionalità come profilo all&#39;interno del [!DNL .zip] file per il pacchetto di [!DNL Insight Server] rilascio. Il [!DNL Transform] profilo è un profilo interno che fornisce funzionalità aggiuntive a [!DNL Insight Server]. Come per tutti gli altri profili interni forniti dal  Adobe, il profilo non deve essere modificato. Tutta la personalizzazione deve avvenire nel dataset o nei profili specifici del ruolo o in altri profili creati.
 
 Il profilo è costituito dai file seguenti:
 
@@ -65,5 +68,5 @@ Tutti questi file si trovano nella [!DNL Dataset] cartella del profilo.
 
       >[!NOTE]
       >
-      >Non salvate il file di configurazione modificato in alcun profilo interno fornito da Adobe (incluso il profilo), in quanto le modifiche vengono sovrascritte quando installate gli aggiornamenti a tali profili.
+      >Non salvate il file di configurazione modificato in alcun profilo interno fornito dal  Adobe (incluso il profilo), in quanto le modifiche vengono sovrascritte quando installate gli aggiornamenti a tali profili.
 
