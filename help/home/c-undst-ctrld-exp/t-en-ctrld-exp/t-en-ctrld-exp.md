@@ -1,11 +1,14 @@
 ---
 description: Per abilitare la sperimentazione controllata, un utente con accesso amministratore ai server Web o applicazione deve modificare il parametro ExpFile nel file di configurazione Sensor (in genere denominato tramite txlogd.conf) su ogni server Web o applicativo del cluster Web in cui è installato un sensore.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Abilitazione della sperimentazione controllata
 topic: Data workbench
 uuid: 27d68fad-ae2d-4a2e-b449-fbaf88286cfa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 2%
 
 ---
 
