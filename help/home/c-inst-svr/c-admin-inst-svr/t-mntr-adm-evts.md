@@ -1,10 +1,13 @@
 ---
 description: È necessario monitorare regolarmente i file del registro eventi per tenere traccia dei messaggi evento del sistema Insight Server, registrati nei file <YYYYMMDD>-event.txt, per impostazione predefinita, che si trovano nella cartella Eventi all'interno della directory di installazione di Insight Server.
-solution: Insight
+solution: Analytics
 title: Monitoraggio degli eventi amministrativi
 uuid: 92d71478-0857-4af8-909c-0cf800b081f4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 2%
 
 ---
 
