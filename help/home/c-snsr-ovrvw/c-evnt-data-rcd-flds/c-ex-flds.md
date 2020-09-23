@@ -1,10 +1,13 @@
 ---
 description: Il sensore, se utilizzato su un server, può raccogliere i campi dei dati evento da qualsiasi intestazione o variabile di risposta HTTP valida, disponibile tramite l'API del server.
-solution: Insight
+solution: Analytics
 title: Campi estensibili
 uuid: 91b9857e-44a4-497f-b157-51afd30306fe
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 1%
 
 ---
 
@@ -63,4 +66,4 @@ La tabella seguente include le descrizioni dei componenti di una voce &quot;Spec
  </tbody> 
 </table>
 
-Per assistenza nella configurazione [!DNL Sensor] per la raccolta dei campi dei record di dati evento estensibili, contattate i servizi di consulenza Adobe.
+Per assistenza nella configurazione [!DNL Sensor] per la raccolta dei campi dei record di dati di eventi estensibili, contattare  Adobe Consulting Services.
