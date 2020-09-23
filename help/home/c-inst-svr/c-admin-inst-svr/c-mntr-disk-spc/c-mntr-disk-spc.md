@@ -1,10 +1,13 @@
 ---
 description: È necessario monitorare regolarmente lo spazio disponibile su disco in modo che tutti i computer Insight Server continuino a funzionare al livello più alto possibile.
-solution: Insight
+solution: Analytics
 title: Monitoraggio dello spazio su disco
 uuid: 13248e36-4e88-4212-816e-bcc12deefcb4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 4%
 
 ---
 
@@ -26,5 +29,5 @@ Per ulteriori informazioni sui requisiti di memorizzazione dei dati rispetto a q
 
 >[!NOTE]
 >
->I consulenti Adobe possono valutare lo scenario d’uso per aiutarti a pianificare la quantità di archiviazione dati generata e necessaria dall’utilizzo delle applicazioni software Adobe. Per richiedere tale valutazione, contattate il servizio di supporto Adobe.
+> consulenti di Adobe possono valutare lo scenario d&#39;uso per aiutarti a pianificare la quantità di storage dei dati generata e necessaria dall&#39;uso  applicazioni software di Adobe. Per richiedere tale valutazione, contattare  Adobe di assistenza.
 
