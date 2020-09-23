@@ -1,15 +1,18 @@
 ---
 description: In alcuni casi, potrebbe essere necessario aggiungere un computer Insight Server a un cluster Insight Server esistente.
-solution: Insight
-title: Aggiunta di server Insight a un cluster esistente
+solution: Analytics
+title: Aggiunta di Insight Server a un cluster esistente
 uuid: 951bd6fe-14e4-4192-917c-342fde7b43ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 12%
 
 ---
 
 
-# Aggiunta di server Insight a un cluster esistente{#adding-insight-servers-to-an-existing-cluster}
+# Aggiunta di Insight Server a un cluster esistente{#adding-insight-servers-to-an-existing-cluster}
 
 In alcuni casi, potrebbe essere necessario aggiungere un computer Insight Server a un cluster Insight Server esistente.
 
