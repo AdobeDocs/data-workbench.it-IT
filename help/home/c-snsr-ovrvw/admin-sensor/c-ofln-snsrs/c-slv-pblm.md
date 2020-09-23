@@ -1,23 +1,26 @@
 ---
-description: Se un server Web non è in linea a causa di un errore, la soluzione è semplice e richiede un utente Workbench dati con privilegi appropriati per aprire il file Log Processing Mode.cfg e aggiungere l'ID del sensore (nel nostro esempio, WEB2) alla sezione "Origini offline".
-solution: Insight
+description: Quando un server Web va offline a causa di un errore, la soluzione è semplice che richiede un utente di Data Workbench con privilegi appropriati per aprire il file Log Processing Mode.cfg e aggiungere l'ID del sensore (nel nostro esempio, WEB2) alla sezione "Sorgenti offline".
+solution: Analytics
 title: Risoluzione del problema
 uuid: 19d47b06-be12-4adf-9eac-b16cf7131834
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
 
 
 # Risoluzione del problema{#solving-the-problem}
 
-Se un server Web non è in linea a causa di un errore, la soluzione è semplice e richiede un utente Workbench dati con privilegi appropriati per aprire il file Log Processing Mode.cfg e aggiungere l&#39;ID del sensore (nel nostro esempio, WEB2) alla sezione &quot;Origini offline&quot;.
+Quando un server Web va offline a causa di un errore, la soluzione è semplice che richiede un utente di Data Workbench con privilegi appropriati per aprire il file Log Processing Mode.cfg e aggiungere l&#39;ID del sensore (nel nostro esempio, WEB2) alla sezione &quot;Sorgenti offline&quot;.
 
 Questa sezione del file indica [!DNL data workbench server] che non deve più aspettarsi dati da questa origine perché, in realtà, è offline.
 
 >[!NOTE]
 >
->Questa modifica non deve essere eseguita da un consulente Adobe. Chiunque disponga dei privilegi appropriati per aprire il [!DNL Log Processing Mode.cfg] file può apportare questa modifica.
+>Tale modifica non deve essere eseguita da un consulente  Adobe. Chiunque disponga dei privilegi appropriati per aprire il [!DNL Log Processing Mode.cfg] file può apportare questa modifica.
 
 Se WEB2 ricomincia a inviare i dati, [!DNL data workbench server] riporta l&#39;origine online e regola il tempo di disponibilità in modo da riflettere l&#39;ultima volta che ha ricevuto i dati da tutte le fonti di cui è a conoscenza. In altre parole, i nuovi dati che entrano nel sistema hanno la precedenza su ciò che è scritto nel [!DNL Log Processing Mode.cfg file].
 
