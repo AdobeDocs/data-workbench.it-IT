@@ -1,11 +1,14 @@
 ---
 description: Ora che è disponibile il campo x-Experts, è necessario creare una dimensione estesa per includere il campo x-Experts nel dataset, che consente di visualizzare i risultati in Insight.
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: Modifica di Transformation.cfg
 topic: Data workbench
 uuid: c17e48db-8fd9-4640-b621-6963bb8223d7
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +19,7 @@ Ora che è disponibile il campo x-Experts, è necessario creare una dimensione e
 
 A tale scopo, è necessario aggiungere una nuova dimensione al [!DNL Transformation.cfg] file.
 
-Se intendete eseguire più esperimenti, dovete anche aggiungere una nuova trasformazione Dividi al [!DNL Transformation.cfg] file. Questa trasformazione Split separa i diversi nomi di esperimenti e gruppi in modo che le informazioni siano più facili da interpretare. Per evitare di ripetere l&#39;elaborazione dei dati se doveste aggiungere ulteriori esperimenti in una data successiva, Adobe consiglia di aggiungere la trasformazione Split anche se al momento non state pianificando l&#39;esecuzione di più esperimenti.
+Se intendete eseguire più esperimenti, dovete anche aggiungere una nuova trasformazione Dividi al [!DNL Transformation.cfg] file. Questa trasformazione Split separa i diversi nomi di esperimenti e gruppi in modo che le informazioni siano più facili da interpretare. Per evitare di ripetere l&#39;elaborazione dei dati se doveste aggiungere ulteriori esperimenti in una data successiva,  Adobe consiglia di aggiungere la trasformazione Spalato anche se al momento non state pianificando l&#39;esecuzione di più esperimenti.
 
 La procedura seguente include la creazione della nuova trasformazione Split e della dimensione estesa. Se non si desidera aggiungere la trasformazione Dividi, è sufficiente saltare i passaggi da 5 a 7.
 
