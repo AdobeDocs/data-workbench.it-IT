@@ -1,15 +1,18 @@
 ---
 description: Sono disponibili cinque gruppi di controllo di accesso predefiniti, ma potete creare e gestire altri gruppi in base alle vostre esigenze.
-solution: Insight
-title: Informazioni sui gruppi di controllo degli accessi
+solution: Analytics
+title: Informazioni sui gruppi di controllo di accesso
 uuid: ff783078-6d2f-4a64-ab11-8083e35d765f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 8%
 
 ---
 
 
-# Informazioni sui gruppi di controllo degli accessi{#understanding-access-control-groups}
+# Informazioni sui gruppi di controllo di accesso{#understanding-access-control-groups}
 
 Sono disponibili cinque gruppi di controllo di accesso predefiniti, ma potete creare e gestire altri gruppi in base alle vostre esigenze.
 
