@@ -1,15 +1,18 @@
 ---
 description: Le istruzioni per l'installazione di un FSU di Insight Server e la configurazione per l'uso amministrativo sono molto simili a quelle per l'installazione e la configurazione di un DPU di Insight Server.
-solution: Insight
-title: Procedure di installazione per un FSU di Insight Server
+solution: Analytics
+title: Procedure di installazione per una FSU di Insight Server
 uuid: ffed5095-f83c-4641-9ccc-4b94f51c3f95
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 8%
 
 ---
 
 
-# Procedure di installazione per un FSU di Insight Server{#installation-procedures-for-an-insight-server-fsu}
+# Procedure di installazione per una FSU di Insight Server{#installation-procedures-for-an-insight-server-fsu}
 
 Le istruzioni per l&#39;installazione di un FSU di Insight Server e la configurazione per l&#39;uso amministrativo sono molto simili a quelle per l&#39;installazione e la configurazione di un DPU di Insight Server.
 
