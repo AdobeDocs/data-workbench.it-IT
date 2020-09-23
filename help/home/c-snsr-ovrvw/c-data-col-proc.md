@@ -1,10 +1,13 @@
 ---
 description: Sensor automatizza l'acquisizione di dati dal tuo canale Internet eliminando la maggior parte del lavoro umano tradizionalmente coinvolto nella raccolta di dati.
-solution: Insight
+solution: Analytics
 title: Come funziona il processo di raccolta dei dati?
 uuid: d34e5938-217b-4a1e-b96e-55a02b1c3af0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 4%
 
 ---
 
