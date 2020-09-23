@@ -1,16 +1,19 @@
 ---
 description: In un esperimento, potete definire un numero qualsiasi di gruppi di test oltre al gruppo di controllo.
-solution: Insight,Analytics
-title: Come Funzionano Gli Esperimenti Controllati?
+solution: Analytics,Analytics
+title: Come funzionano gli esperimenti controllati?
 topic: Data workbench
 uuid: 9549e2ab-dca9-4fb1-9729-65072f951900
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 3%
 
 ---
 
 
-# Come Funzionano Gli Esperimenti Controllati?{#how-do-controlled-experiments-work}
+# Come funzionano gli esperimenti controllati?{#how-do-controlled-experiments-work}
 
 In un esperimento, potete definire un numero qualsiasi di gruppi di test oltre al gruppo di controllo.
 
@@ -24,5 +27,5 @@ I risultati degli esperimenti possono essere facilmente analizzati utilizzando [
 
 >[!NOTE]
 >
->Adobe consiglia vivamente di coordinare ed eseguire esperimenti controllati con l&#39;input di quegli utenti dell&#39;organizzazione che sono responsabili della configurazione e della manutenzione dei set di dati di analisi.
+> Adobe consiglia vivamente di coordinare ed eseguire esperimenti controllati con l&#39;input di quegli individui nell&#39;organizzazione che sono responsabili della configurazione e della manutenzione dei set di dati di analisi.
 
