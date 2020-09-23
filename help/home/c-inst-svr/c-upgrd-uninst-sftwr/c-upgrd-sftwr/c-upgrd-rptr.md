@@ -1,15 +1,18 @@
 ---
 description: Istruzioni per l'aggiornamento Ripetitore con Insight o per l'aggiornamento copiando i file.
-solution: Insight
-title: Aggiornamento Ripetitore
+solution: Analytics
+title: Aggiornamento di Repeater
 uuid: 2027ed9e-9dd9-40f5-b7e9-2709f8745b5c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
 
 
-# Aggiornamento Ripetitore{#upgrading-repeater}
+# Aggiornamento di Repeater{#upgrading-repeater}
 
 Istruzioni per l&#39;aggiornamento Ripetitore con Insight o per l&#39;aggiornamento copiando i file.
 
@@ -17,7 +20,7 @@ Per effettuare l’aggiornamento dalla piattaforma 4.x o [!DNL Repeater] version
 
 * Se avete creato una connessione tra [!DNL Insight] e [!DNL Repeater] come descritto in [Creazione di una connessione tra Insight e Ripetitore](../../../../home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md#task-785bfe5f0e31484683e4345038add118), potete utilizzare [!DNL Insight] per effettuare l&#39;aggiornamento [!DNL Repeater]. Consultate [Aggiornamento Ripetitore Con Insight](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md#section-59c24448fd0f45c08abd0245ad746764).
 
-   -or-
+   -oppure-
 
 * Se non è stato possibile creare o meno una connessione tra [!DNL Insight] e [!DNL Repeater], è necessario copiare i file di aggiornamento direttamente nel [!DNL Repeater] computer. Consultate [Aggiornamento del ripetitore mediante la copia dei file](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md#section-202f2209f6604f19a15d96b517ea1bc1).
 
@@ -38,18 +41,18 @@ Per effettuare l’aggiornamento dalla piattaforma 4.x o [!DNL Repeater] version
 
 >[!NOTE]
 >
->Se dovete caricare altri file per completare l&#39; [!DNL Repeater] aggiornamento, Adobe vi fornirà le istruzioni necessarie.
+>Se dovete caricare altri file per completare l&#39; [!DNL Repeater] aggiornamento,  Adobe fornirà le istruzioni necessarie.
 
 Dopo aver caricato i file di aggiornamento nel [!DNL Repeater] computer, [!DNL Repeater] si riavvia automaticamente e carica la nuova versione.
 
 ## Aggiornamento del ripetitore tramite copia dei file {#section-202f2209f6604f19a15d96b517ea1bc1}
 
-1. Aprite il file di aggiornamento fornito da Adobe. Probabilmente, questo file è un [!DNL .zip] file da aggiornare [!DNL Insight Server].
+1. Aprite il file di aggiornamento fornito da  Adobe. Probabilmente, questo file è un [!DNL .zip] file da aggiornare [!DNL Insight Server].
 1. Andate alla directory in cui avete installato [!DNL Repeater] (ad esempio, [!DNL D:\Adobe\Repeater]).
 1. Copiate la [!DNL bin] cartella all’interno del [!DNL .zip] file e incollatela nella directory di [!DNL Repeater] installazione per sovrascrivere la [!DNL bin] cartella esistente.
 
 >[!NOTE]
 >
->Se dovete caricare altri file per completare l&#39; [!DNL Insight Server] aggiornamento, Adobe vi fornirà le istruzioni necessarie.
+>Se dovete caricare altri file per completare l&#39; [!DNL Insight Server] aggiornamento,  Adobe fornirà le istruzioni necessarie.
 
 Dopo aver copiato i file di aggiornamento nel [!DNL Repeater] computer, [!DNL Repeater] si riavvia automaticamente e carica la nuova versione.
