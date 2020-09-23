@@ -1,10 +1,13 @@
 ---
 description: I livelli di accesso descrivono gli URI che un gruppo di utenti può leggere o modificare sul computer.
-solution: Insight
+solution: Analytics
 title: Informazioni sui livelli di accesso
 uuid: e9091ae1-9a34-4e00-a928-20d04119ee9e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 3%
 
 ---
 
@@ -64,7 +67,7 @@ Gli URI nei gruppi di controllo di accesso predefiniti sono stati configurati co
   </tr> 
   <tr> 
    <td colname="col1"> <p>Server cluster </p> </td> 
-   <td colname="col2"> <p>/Components for Processing Servers/ </p> <p>/Indirizzi/ </p> <p>/Profili/ </p> <p>/Searchups/ </p> <p>/Access Control/ </p> <p>/Bin/ </p> <p>/Registri/ </p> </td> 
+   <td colname="col2"> <p>/Components for Processing Servers/ </p> <p>/Indirizzi/ </p> <p>/Profili/ </p> <p>/Searchups/ </p> <p>/Controllo di accesso/ </p> <p>/Bin/ </p> <p>/Registri/ </p> </td> 
    <td colname="col3"> <p>/Cluster/ </p> </td> 
    <td colname="col4"> <p>Accesso in lettura e scrittura alla directory Cluster. </p> </td> 
   </tr> 
