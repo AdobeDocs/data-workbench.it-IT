@@ -1,15 +1,18 @@
 ---
 description: Un server Insight di elaborazione è identico a un server Insight master, ad eccezione del contenuto della directory Components.
-solution: Insight
-title: Installazione e configurazione dei server di Process Insight
+solution: Analytics
+title: Installazione e configurazione dell’elaborazione degli Insight Server
 uuid: 186675f7-8b63-4675-89ec-51b0837a64d8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 5%
 
 ---
 
 
-# Installazione e configurazione dei server di Process Insight{#installing-and-configuring-the-processing-insight-servers}
+# Installazione e configurazione dell’elaborazione degli Insight Server{#installing-and-configuring-the-processing-insight-servers}
 
 Un server Insight di elaborazione è identico a un server Insight master, ad eccezione del contenuto della directory Components.
 
@@ -19,12 +22,12 @@ Quando installate un&#39;elaborazione, [!DNL Insight Server]effettuate le seguen
 
 1. Eliminate la directory Componenti originale nell&#39;elaborazione [!DNL Insight Server].
 1. Rinominare la directory Components for Processing Servers in Components (Componenti per i server di elaborazione) in Components (Componenti).
-1. Modificare la [!DNL Synchronize.cfg] directory Components in modo che punti al master [!DNL Insight Server].
+1. Modificate il [!DNL Synchronize.cfg] contenuto nella directory Components in modo che punti al master [!DNL Insight Server].
 
 **Per installare e configurare un&#39;elaborazione[!DNL Insight Server]**
 
 1. Installate i file del [!DNL Insight Server] programma come descritto in [Installazione dei file](../../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-prgm-files.md#task-1e6251fd39714186baa40d38f23d0088)del programma Insight Server. Assicurarsi di duplicare la struttura di directory utilizzata sul master [!DNL Insight Server]. Ad esempio, se [!DNL Insight Server] è installato [!DNL C:\Adobe\Server] sul master [!DNL Insight Server], è necessario installarlo [!DNL C:\Adobe\Server] anche nell&#39;elaborazione [!DNL Insight Servers] .
-1. Installate il certificato digitale emesso da Adobe per questa particolare elaborazione [!DNL Insight Server]. Per istruzioni, vedere [Download e installazione dei certificati](../../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md#concept-4f79c240492f4e52b6375b4b3bbefa17) digitali.
+1. Installate il certificato digitale emesso  Adobe per questa particolare elaborazione [!DNL Insight Server]. Per istruzioni, vedere [Download e installazione dei certificati](../../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md#concept-4f79c240492f4e52b6375b4b3bbefa17) digitali.
 1. In Esplora risorse, effettuare le seguenti operazioni durante l&#39;elaborazione [!DNL Insight Server]:
 
    1. Delete the **[!UICONTROL Components]** folder.
