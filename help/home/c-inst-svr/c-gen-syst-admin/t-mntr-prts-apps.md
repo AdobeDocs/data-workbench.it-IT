@@ -1,15 +1,18 @@
 ---
 description: Per monitorare più accuratamente l'implementazione, è possibile monitorare tutte le porte sui computer server e i prodotti software in esecuzione su ciascuna di queste porte.
-solution: Insight
-title: Porte e applicazioni di monitoraggio
+solution: Analytics
+title: Monitoraggio di porte e applicazioni
 uuid: 63d92718-81df-49eb-adda-8b49bde57a9d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 4%
 
 ---
 
 
-# Porte e applicazioni di monitoraggio{#monitoring-ports-and-applications}
+# Monitoraggio di porte e applicazioni{#monitoring-ports-and-applications}
 
 Per monitorare più accuratamente l&#39;implementazione, è possibile monitorare tutte le porte sui computer server e i prodotti software in esecuzione su ciascuna di queste porte.
 
@@ -24,7 +27,7 @@ Utilizzando un&#39;applicazione o uno script, è possibile monitorare la porta T
 
    Esempio: [!DNL https://127.0.0.1/Status/]
 
-   Il computer deve rispondere con una descrizione dello stato del server. Se non risponde, controllate i registri eventi e contattate l&#39;Assistenza clienti Adobe.
+   Il computer deve rispondere con una descrizione dello stato del server. In caso contrario, controllate i registri eventi e contattate &#39;Assistenza clienti del Adobe.
 
-   Per ulteriori informazioni su questo tipo di monitoraggio avanzato, contattate i servizi di consulenza Adobe.
+   Per maggiori informazioni su questo tipo di monitoraggio avanzato, contattare  Adobe Consulting Services.
 
