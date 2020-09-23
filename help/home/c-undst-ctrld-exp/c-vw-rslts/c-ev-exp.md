@@ -1,16 +1,19 @@
 ---
 description: Dopo aver eseguito l’esperimento fino a quando il numero minimo di visitatori non ha partecipato all’esperimento, potete essere certi di una sufficiente affidabilità statistica per valutare i risultati dell’esperimento.
-solution: Insight,Analytics
-title: Valutazione dell'esperimento
+solution: Analytics,Analytics
+title: Valutazione dell’esperimento
 topic: Data workbench
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 1%
 
 ---
 
 
-# Valutazione dell&#39;esperimento{#evaluating-the-experiment}
+# Valutazione dell’esperimento{#evaluating-the-experiment}
 
 Dopo aver eseguito l’esperimento fino a quando il numero minimo di visitatori non ha partecipato all’esperimento, potete essere certi di una sufficiente affidabilità statistica per valutare i risultati dell’esperimento.
 
