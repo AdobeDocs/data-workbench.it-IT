@@ -1,15 +1,18 @@
 ---
 description: Informazioni sulla valutazione e il monitoraggio del carico dello spazio indirizzo.
-solution: Insight
-title: Monitoraggio dell'utilizzo della memoria
+solution: Analytics
+title: Monitoraggio dell’utilizzo della memoria
 uuid: e7f1c51b-d874-43f4-a074-1c064b5f298a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 2%
 
 ---
 
 
-# Monitoraggio dell&#39;utilizzo della memoria{#monitoring-memory-usage}
+# Monitoraggio dell’utilizzo della memoria{#monitoring-memory-usage}
 
 Informazioni sulla valutazione e il monitoraggio del carico dello spazio indirizzo.
 
@@ -19,7 +22,7 @@ Informazioni sulla valutazione e il monitoraggio del carico dello spazio indiriz
 
 Il carico spazio indirizzo è una misura della frazione della quantità massima di spazio indirizzo utilizzata da un [!DNL Insight Server] utente configurato correttamente. Anche se i parametri di configurazione vengono modificati per ridurre l&#39;utilizzo della memoria, in genere non diminuisce finché il [!DNL Insight Server] servizio non viene riavviato.
 
-Un margine di sicurezza è integrato nel limite massimo di carico spazio indirizzo per tenere conto di incrementi imprevisti nell&#39;utilizzo dello spazio indirizzo. Non si dovrebbe mai tagliare deliberatamente in questo margine di sicurezza. Esiste per le situazioni di emergenza e non per il supporto delle funzionalità aggiunte all’applicazione Adobe.
+Un margine di sicurezza è integrato nel limite massimo di carico spazio indirizzo per tenere conto di incrementi imprevisti nell&#39;utilizzo dello spazio indirizzo. Non si dovrebbe mai tagliare deliberatamente in questo margine di sicurezza. Esiste per le situazioni di emergenza e non per il supporto delle funzionalità aggiunte all&#39;applicazione del Adobe .
 
 >[!NOTE]
 >
@@ -38,7 +41,7 @@ Gli errori registrati nel registro dei dati dell&#39; [!DNL Insight Server] even
 
 **Per valutare il carico dello spazio di indirizzi**
 
-Per valutare con precisione il carico dello spazio indirizzi per il sistema in uso, Adobe consiglia di rielaborare il set di dati, eseguire alcune normali query senza riavviare in seguito [!DNL Insight Server]e quindi visualizzare il carico dello spazio indirizzi misurato seguendo questi passaggi.
+Per valutare con precisione il carico di spazio indirizzi per il sistema,  Adobe consiglia di rielaborare il dataset, eseguendo alcune query normali senza successivamente riavviare [!DNL Insight Server]e quindi visualizzando il carico di spazio indirizzi misurato seguendo questi passaggi.
 
 Se un oggetto [!DNL Insight Server] non è stato rielaborato e interrogato in modo significativo dall&#39;ultimo riavvio, non è necessario trarre conclusioni dal carico Spazio indirizzi.
 
@@ -50,9 +53,9 @@ Se un oggetto [!DNL Insight Server] non è stato rielaborato e interrogato in mo
 
    | Caricamento spazio indirizzo (%) | Stato | Azione consigliata |
    |---|---|---|
-   | 0-15 | magro e medio | Nessuno. |
-   | 15-33 | light | Nessuno. |
-   | 33-66 | moderato | Nessuno. |
+   | 0-15 | magro e medio | None. |
+   | 15-33 | light | None. |
+   | 33-66 | moderato | None. |
    | 66-100 | pesante | Per evitare problemi di esaurimento della memoria, non aggiungere ulteriori funzionalità o tentare di elaborare più dati. |
    | 100-125 | affidabilità compromessa | Regolate la configurazione del set di dati per ridurre il carico di spazio indirizzo. |
    | 125 o superiore | fallimento imminente | Regolate la configurazione del set di dati per ridurre il carico di spazio indirizzo. Potrebbe non essere possibile visualizzare lo stato di errore imminente prima che si verifichi un errore. |
