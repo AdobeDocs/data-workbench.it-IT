@@ -1,15 +1,18 @@
 ---
 description: Formattare le istruzioni sui parametri basati su tempo in Insight Server.
-solution: Insight
-title: Codici Fuso Orario
+solution: Analytics
+title: Codici del fuso orario
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 4%
 
 ---
 
 
-# Codici Fuso Orario{#time-zone-codes}
+# Codici del fuso orario{#time-zone-codes}
 
 Formattare le istruzioni sui parametri basati su tempo in Insight Server.
 
@@ -25,7 +28,7 @@ UTC + *dstrules*
 
 Il segno (+) può essere un segno più (+) o meno (-) e *hhmm* è l&#39;offset dall&#39;UTC in ore e minuti. Le *combinazioni* di variabili facoltative specificano un insieme di regole per implementare l&#39;ora legale o un criterio simile per lo spostamento dell&#39;orologio.
 
-Se si specificano *le specifiche*, un file delimitato da tabulazioni denominato *&lt;[!DNL dstrules]>* [!DNL .dst] deve essere presente nella directory Dataset\TimeZone del profilo Base (per i file di configurazione non associati a un particolare dataset) o del profilo dataset (per i file di configurazione specifici per i dataset). Il file specifica un set di regole indipendente dal fuso orario per l&#39;ora legale. Potete avere diversi insiemi di regole per anni diversi. Il [!DNL DST.dst] file fornito da Adobe nel profilo Base specifica le regole standard statunitensi stabilite dal Energy Policy Act del 2005 (in vigore dal 2007) e dalle regole statunitensi per gli anni precedenti.
+Se si specificano *le specifiche*, un file delimitato da tabulazioni denominato *&lt;[!DNL dstrules]>* [!DNL .dst] deve essere presente nella directory Dataset\TimeZone del profilo Base (per i file di configurazione non associati a un particolare dataset) o del profilo dataset (per i file di configurazione specifici per i dataset). Il file specifica un set di regole indipendente dal fuso orario per l&#39;ora legale. Potete avere diversi insiemi di regole per anni diversi. Il [!DNL DST.dst] file fornito da  Adobe nel profilo Base specifica le norme standard statunitensi stabilite dal Energy Policy Act del 2005 (in vigore a partire dal 2007) e le regole USA per gli anni precedenti.
 
 Di seguito sono elencate le voci relative al fuso orario di esempio:
 
@@ -50,7 +53,7 @@ La tabella seguente contiene l&#39;elenco di codici che è possibile utilizzare 
 | cst | Standard centrale | 6 |
 | cdt | Luce diurna centrale | 6 |
 | mst | Mountain Standard | 7 |
-| mdt | Luce diurna montagna | 7 |
+| Dayt | Luce diurna montagna | 7 |
 | pst | Standard Pacifico | 8 |
 | pdt | Luce diurna Pacifico | 8 |
 
