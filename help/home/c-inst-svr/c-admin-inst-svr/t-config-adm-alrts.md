@@ -1,10 +1,13 @@
 ---
 description: Gli avvisi amministrativi inviano notifiche e-mail agli indirizzi e-mail specificati quando vengono rilevati errori da Insight Server durante il normale funzionamento.
-solution: Insight
+solution: Analytics
 title: Configurazione degli avvisi amministrativi
 uuid: 398e088b-ff83-46ae-a20c-ba0b50d85702
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
