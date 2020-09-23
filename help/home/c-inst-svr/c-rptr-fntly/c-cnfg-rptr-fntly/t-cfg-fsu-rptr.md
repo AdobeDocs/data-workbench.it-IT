@@ -1,15 +1,18 @@
 ---
 description: Istruzioni per l'installazione e la configurazione di un'unità FSU di Insight Server da utilizzare con Ripetitore.
-solution: Insight
-title: Configurazione di un FSU di Insight Server per il Ripetitore
+solution: Analytics
+title: Configurazione di un FSU di Insight Server per il Repeater (Ripetitore)
 uuid: c2bae862-37d3-4841-b31b-59593c1e4316
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 5%
 
 ---
 
 
-# Configurazione di un FSU di Insight Server per il Ripetitore{#configuring-an-insight-server-fsu-for-repeater}
+# Configurazione di un FSU di Insight Server per il Repeater (Ripetitore){#configuring-an-insight-server-fsu-for-repeater}
 
 Istruzioni per l&#39;installazione e la configurazione di un&#39;unità FSU di Insight Server da utilizzare con Ripetitore.
 
@@ -21,7 +24,7 @@ Completa i seguenti task in ordine. Eventuali eccezioni o modifiche da apportare
 
 1. Installate il certificato [!DNL Insight Server] digitale come descritto in [Download e installazione dei certificati](../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md#concept-4f79c240492f4e52b6375b4b3bbefa17)digitali.
 
-   Dopo aver eseguito l&#39;accesso ad Adobe License Server, ricordare di cercare il nome del certificato che corrisponde al nome comune del server del computer ripetitore designato.
+   Dopo aver eseguito l&#39;accesso al server licenze  Adobe, ricordare di cercare il nome del certificato che corrisponde al nome comune del server del computer ripetitore designato.
 
 1. Controllate le impostazioni della porta nel [!DNL Communications.cfg] file come descritto in [Controllo delle impostazioni](../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-chk-pt-stgs.md#task-a91191b0a19e4437aa535a27c734ae64)della porta.
 
