@@ -1,15 +1,18 @@
 ---
 description: I file di registro di controllo tengono traccia di tutte le connessioni e le disconnessioni tentate da Insight Server, ciascuna delle quali è registrata nei file <YYYYMMDD>-access.txt che si trovano per impostazione predefinita nella cartella Audit all'interno della directory di installazione di Insight Server.
-solution: Insight
-title: Monitoraggio dei registri di controllo
+solution: Analytics
+title: Monitoraggio degli audit di controllo
 uuid: 38af9328-3f72-48a4-a0de-bf7477fedc25
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 4%
 
 ---
 
 
-# Monitoraggio dei registri di controllo{#monitoring-audit-logs}
+# Monitoraggio degli audit di controllo{#monitoring-audit-logs}
 
 I file di registro di controllo tengono traccia di tutte le connessioni tentate e le disconnessioni da Insight Server, ciascuna delle quali è registrata nei `<YYYYMMDD>-access.txt` file che si trovano per impostazione predefinita nella cartella di controllo all&#39;interno della directory di installazione di Insight Server.
 
