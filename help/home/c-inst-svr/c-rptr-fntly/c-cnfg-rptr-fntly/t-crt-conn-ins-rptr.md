@@ -1,15 +1,18 @@
 ---
 description: Se i firewall di rete non impediscono l’accesso al server di ripetizione dalle macchine Insight, è possibile creare una connessione tra il server di ripetizione e Insight in modo da poter gestire il server di ripetizione utilizzando Insight.
-solution: Insight
-title: Creazione di una connessione tra Insight e Ripetitore
+solution: Analytics
+title: Creazione di una connessione tra Insight e il Repeater (Ripetitore)
 uuid: dccce83a-8708-4763-a19a-64d905a9f624
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 4%
 
 ---
 
 
-# Creazione di una connessione tra Insight e Ripetitore{#creating-a-connection-between-insight-and-repeater}
+# Creazione di una connessione tra Insight e il Repeater (Ripetitore){#creating-a-connection-between-insight-and-repeater}
 
 Se i firewall di rete non impediscono l’accesso al server di ripetizione dalle macchine Insight, è possibile creare una connessione tra il server di ripetizione e Insight in modo da poter gestire il server di ripetizione utilizzando Insight.
 
@@ -33,7 +36,7 @@ Se i firewall di rete non impediscono l’accesso al server di ripetizione dalle
   </tr> 
   <tr> 
    <td colname="col1"> Indirizzo </td> 
-   <td colname="col2"> <p>Il nome host o l'indirizzo IP numerico del server di ripetizione. </p> <p>Esempio: <span class="filepath"> Repeat.mycompany.com</span> o 192.168.1.90 </p> </td> 
+   <td colname="col2"> <p>Il nome host o l'indirizzo IP numerico del server di ripetizione. </p> <p>Esempio: <span class="filepath"> Repeat ater.mycompany.com</span> o 192.168.1.90 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Certificato client SSL </td> 
