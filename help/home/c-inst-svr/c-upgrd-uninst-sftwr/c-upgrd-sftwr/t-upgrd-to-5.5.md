@@ -1,17 +1,20 @@
 ---
-description: Aggiornamento dei componenti server per Workbench dati 6.1 dall'installazione 5.4.
-solution: Insight
+description: Aggiornamento dei componenti server per Data Workbench 6.1 dall’installazione 5.4.
+solution: Analytics
 title: Aggiornamento a DWB Server da 5.4 a 5.5
 uuid: 9cf9f493-f098-4c6d-a8b5-786833496557
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 2%
 
 ---
 
 
-# Aggiornamento del server DWB: Da 5.4 a 5.5{#dwb-server-upgrade-to}
+# Aggiornamento del server DWB: da 5.4 a 5.5{#dwb-server-upgrade-to}
 
-Aggiornamento dei componenti server per Workbench dati 6.1 dall&#39;installazione 5.4.
+Aggiornamento dei componenti server per Data Workbench 6.1 dall’installazione 5.4.
 
 Di conseguenza, l&#39;aggiornamento da [!DNL Insight] 5.4 a [!DNL Insight] 5.5 è relativamente semplice.
 
