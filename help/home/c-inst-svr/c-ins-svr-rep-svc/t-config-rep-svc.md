@@ -1,10 +1,13 @@
 ---
 description: È necessario configurare i server di destinazione Insight per recuperare i dati dal Ripetitore in cui sono memorizzati i dati dell'evento originale.
-solution: Insight
+solution: Analytics
 title: Configurazione del servizio di replica
 uuid: 93931b1d-d1fd-4e98-aa88-f7962eea92a2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1005'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Per configurare il recupero dei dati da una [!DNL Repeater] destinazione [!DNL I
 1. Fate clic con il pulsante destro del mouse sull’icona della destinazione da [!DNL Insight Server] configurare e fate clic su **[!UICONTROL Server Files]**.
 1. Nella [!DNL Server Files Manager], fate clic **[!UICONTROL Components]** per visualizzarne il contenuto. Il [!DNL Replicate.cfg] file si trova all&#39;interno di questa directory.
 1. Fare clic con il pulsante destro del mouse sul segno di spunta nella colonna del nome *del* server per [!DNL Replicate.cfg] e fare clic su **[!UICONTROL Make Local]**. Un segno di spunta viene visualizzato nella [!DNL Temp] colonna per [!DNL Replicate.cfg].
-1. Fare clic con il pulsante destro del mouse sul segno di spunta appena creato nella [!DNL Temp] colonna e scegliere **[!UICONTROL Open]** > **[!UICONTROL in Insight]**. Si apre [!DNL Replicate.cfg] la finestra.
+1. Fare clic con il pulsante destro del mouse sul segno di spunta appena creato nella [!DNL Temp] colonna e scegliere **[!UICONTROL Open]** > **[!UICONTROL in Insight]**. Si apre la [!DNL Replicate.cfg] finestra.
 1. Nella [!DNL Replicate.cfg] finestra fare clic su **[!UICONTROL Replicate.cfg]**, quindi **[!UICONTROL component]** visualizzarne il contenuto.
 1. Modificate i parametri utilizzando l&#39;esempio e la tabella seguenti come guide:
 
@@ -58,7 +61,7 @@ Per configurare il recupero dei dati da una [!DNL Repeater] destinazione [!DNL I
    </tr> 
    <tr> 
       <td colname="col1"> URI remoto </td> 
-      <td colname="col2">L’URI, inclusa una maschera di file, per accedere all’archivio file del <span class="wintitle"> Ripetitore</span> . Il file <span class="filepath"> Communications.cfg</span> nel <span class="wintitle"> Ripetitore</span> deve essere configurato in modo che sia possibile accedere ai dati dell'evento utilizzando questo URI. Vedere <a href="../../../home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/t-mntr-evt-data-spc.md#task-a54d4bd16b96437f943cd09e5d848440"> Monitoraggio dello spazio</a>dati evento. </td> 
+      <td colname="col2">L’URI, inclusa una maschera di file, per accedere all’archivio file del <span class="wintitle"> Ripetitore</span> . Il file <span class="filepath"> Communications.cfg</span> nel <span class="wintitle"> Ripetitore</span> deve essere configurato in modo che sia possibile accedere ai dati dell'evento utilizzando questo URI. See <a href="../../../home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/t-mntr-evt-data-spc.md#task-a54d4bd16b96437f943cd09e5d848440"> Monitoring Event Data Space</a>. </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Server </td> 
@@ -90,7 +93,7 @@ Per configurare il recupero dei dati da una [!DNL Repeater] destinazione [!DNL I
    </tr> 
    <tr> 
       <td colname="col1"> Ora di fine, Ora di inizio </td> 
-      <td colname="col2"> <p>(Facoltativo) Limita il set di file di dati dell'evento copiati nel server <span class="keyword"> di</span> Insight di destinazione a quelli che contengono dati nell'intervallo definito da Ora di inizio e Ora di fine. Se è impostata l'ora di inizio, i file dei dati dell'evento in cui tutte le voci di registro provengono da un'ora precedente a quella di inizio specificata non vengono copiati. Se è impostata l'ora di fine, i file dei dati dell'evento in cui non vengono copiate tutte le voci del registro dall'ora specificata o da quella successiva. Se solo una parte dei dati in un file si trova nell'intervallo specificato, l'intero file viene copiato nel computer di destinazione. </p> <p>Adobe consiglia di utilizzare per il momento uno dei seguenti formati: 
+      <td colname="col2"> <p>(Facoltativo) Limita il set di file di dati dell'evento copiati nel server <span class="keyword"> di</span> Insight di destinazione a quelli che contengono dati nell'intervallo definito da Ora di inizio e Ora di fine. Se è impostata l'ora di inizio, i file dei dati dell'evento in cui tutte le voci di registro provengono da un'ora precedente a quella di inizio specificata non vengono copiati. Se è impostata l'ora di fine, i file dei dati dell'evento in cui non vengono copiate tutte le voci del registro dall'ora specificata o da quella successiva. Se solo una parte dei dati in un file si trova nell'intervallo specificato, l'intero file viene copiato nel computer di destinazione. </p> <p> Adobe consiglia di utilizzare per il momento uno dei seguenti formati: 
       <ul id="ul_AE15A159A4C043398B37AD56FDFD9DCA">
       <li id="li_4DEF0F13D13E43E39CBD1A0F32765F32">1 gennaio 2013 HH:MM:SS EDT </li>
       <li id="li_E3275312E93D4C1FAA028543DC21B51A">1 gen 2013 HH:MM:SS GMT </li>
@@ -108,7 +111,7 @@ Per configurare il recupero dei dati da una [!DNL Repeater] destinazione [!DNL I
 
 Questo esempio illustra come i file vengono copiati se i parametri Appiattisci tracciati e Ricorsivi sono impostati su true.
 
-Supponiamo che l&#39;URI remoto sia [!DNL /RemoteRoot/] e che il percorso locale sia [!DNL E:\LocalRoot\]. Sul computer remoto ( [!DNL Repeater]), i file sono organizzati come segue:
+Supponiamo che URI remoto sia [!DNL /RemoteRoot/] e Percorso locale sia [!DNL E:\LocalRoot\]. Sul computer remoto ( [!DNL Repeater]), i file sono organizzati come segue:
 
 * [!DNL /RemoteRoot/fileA.txt]
 * [!DNL /RemoteRoot/Dir1/fileB.txt]
