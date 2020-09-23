@@ -1,15 +1,18 @@
 ---
 description: Informazioni sulla configurazione generale del sensore con un'istanza del server Web in esecuzione su un server Web.
-solution: Insight
-title: Utilizzo di più istanze di un server Web
+solution: Analytics
+title: Utilizzo di più istanze di un server web
 uuid: 778ea95f-e0f2-4c2a-b7ed-7e323fea1e48
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 5%
 
 ---
 
 
-# Utilizzo di più istanze di un server Web{#working-with-multiple-instances-of-a-web-server}
+# Utilizzo di più istanze di un server web{#working-with-multiple-instances-of-a-web-server}
 
 Informazioni sulla configurazione generale del sensore con un&#39;istanza del server Web in esecuzione su un server Web.
 
