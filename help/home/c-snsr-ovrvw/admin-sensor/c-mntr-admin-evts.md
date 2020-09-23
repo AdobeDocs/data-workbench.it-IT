@@ -1,10 +1,13 @@
 ---
 description: Per rilevare gli errori del sensore il prima possibile e correggerli prima che causino gravi problemi o interruzioni, è necessario monitorare regolarmente i registri eventi.
-solution: Insight
+solution: Analytics
 title: Monitoraggio degli eventi amministrativi
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1092'
+ht-degree: 1%
 
 ---
 
@@ -19,13 +22,13 @@ Potete monitorare questi eventi utilizzando il file Visualizzatore eventi di Win
 
 ## Monitoraggio degli eventi in Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
-Il sensore registra gli errori nel registro applicazioni del visualizzatore eventi di Windows con l&#39;origine &quot;Adobe&quot;.
+Il sensore registra gli errori nel registro applicazioni del visualizzatore eventi di Windows con un&#39;origine &quot; Adobe&quot;.
 
 I messaggi vengono registrati come &quot;Informazioni&quot;, &quot;Avvertenza&quot; o &quot;Errore&quot; a seconda della loro gravità.
 
 **Per aprire il visualizzatore** eventi di Windows:
 
-* Fate clic su **Start > Pannello di controllo > Strumenti di amministrazione > Visualizzatore** eventi.
+* Fate clic su **Start > Pannello di controllo Campaign > Strumenti di amministrazione > Visualizzatore** eventi.
 
 ## Monitoraggio di eventi su Unix {#section-5de3947891fb47ac88b7c855e545d54a}
 
@@ -86,8 +89,8 @@ Tabelle che descrivono gli eventi Sensor e le azioni suggerite per le piattaform
    <td colname="col2"> Nessuna azione richiesta. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Informazioni sensore 1012: Coda disco Adobe #% piena </td> 
-   <td colname="col2"> Questo messaggio viene registrato ogni volta che l'utilizzo della coda del disco supera una soglia del 10%. Se questa percentuale continua a crescere, è necessario intervenire prima che la coda sia piena e i dati vadano persi. Il problema più probabile è che il sensore ha smesso di comunicare con il server di Insight. Contatta Adobe ClientCare. </td> 
+   <td colname="col1"> Informazioni sensore 1012:  coda disco Adobe è piena #% </td> 
+   <td colname="col2"> Questo messaggio viene registrato ogni volta che l'utilizzo della coda del disco supera una soglia del 10%. Se questa percentuale continua a crescere, è necessario intervenire prima che la coda sia piena e i dati vadano persi. Il problema più probabile è che il sensore ha smesso di comunicare con il server di Insight. Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Informazioni sensore 1013: Configurazione sensore modificata </td> 
@@ -95,7 +98,7 @@ Tabelle che descrivono gli eventi Sensor e le azioni suggerite per le piattaform
   </tr> 
   <tr> 
    <td colname="col1"> Informazioni sensore 1014: Problema durante la creazione del generatore di numeri casuali </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Informazioni sensore 1016: Nome file di configurazione caricato </td> 
@@ -119,59 +122,59 @@ Tabelle che descrivono gli eventi Sensor e le azioni suggerite per le piattaform
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 3023: Impossibile creare il blocco (g_lockThrottle) </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 3024: Impossibile creare il blocco (g_lockConfigCheck) </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 4014: Impossibile aprire la coda del disco. </td> 
-   <td colname="col2"> Verifica il nome del file QueueFile in txlogd.conf e, se ritenuto corretto, contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Verifica il nome del file QueueFile in txlogd.conf e, se ritenuto corretto, contatta  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 4020: Non è un file di coda </td> 
-   <td colname="col2"> Verifica il nome del file QueueFile in txlogd.conf e, se ritenuto corretto, contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Verifica il nome del file QueueFile in txlogd.conf e, se ritenuto corretto, contatta  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 4021: Coda piena </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 4022: Impossibile mappare il blocco di memoria di lunghezza &lt;x&gt; all'offset &lt;y&gt; </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 5012: Impossibile creare il mutex. </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 5013: Impossibile acquisire il mutex. </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 5030: Errore forchetta riprodotta. </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 5031: setsid non riuscito. </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 5032: Errore forchetta riprodotta. </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 5033: chdir non riuscito. </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 5034: Segnale ricevuto </td> 
-   <td colname="col2"> Il programma è stato probabilmente terminato da un segnale esterno. Se non è possibile determinare l'origine del segnale, contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Il programma è stato probabilmente terminato da un segnale esterno. Se non è possibile determinare l'origine del segnale, contattare  ClientCare di Adobe. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 5035: Uscita chiamata dall'esterno principale </td> 
-   <td colname="col2"> Contatta Adobe ClientCare. </td> 
+   <td colname="col2"> Contattare  Adobe ClientCare. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Errore sensore 5036: txlogd è già in esecuzione </td> 
@@ -185,15 +188,15 @@ Tabelle che descrivono gli eventi Sensor e le azioni suggerite per le piattaform
 | Messaggio evento | Azione suggerita |
 |---|---|
 | Errore sensore 3015: La direttiva VisualSciencesConfig non è presente in httpd.conf. | Errore di configurazione. La direttiva VisualSciencesConfig deve essere in httpd.conf con un parametro che corrisponde alla posizione di txlogd.conf. |
-| Errore sensore 3019: vys-cookie non è stato chiamato prima di vys-log. Contattare il supporto tecnico. | Contatta Adobe ClientCare. |
-| Errore sensore 3025: Sottoreplica i punti a se stesso | Contatta Adobe ClientCare. |
+| Errore sensore 3019: vys-cookie non è stato chiamato prima di vys-log. Contattare il supporto tecnico. | Contattare  Adobe ClientCare. |
+| Errore sensore 3025: Sottoreplica i punti a se stesso | Contattare  Adobe ClientCare. |
 
 **AOL Server**
 
 | Messaggio evento | Azione suggerita |
 |---|---|
 | Errore sensore 3015: ns/server/[server]/modulo/sezione[modulo] mancante nel file di configurazione AOLServer. | Errore di configurazione. Corretto come indicato in errore. |
-| Errore sensore 3019: vys-cookie non è stato chiamato prima di vys-log. Contattare il supporto tecnico. Contatta Adobe ClientCare. | Contattare il supporto tecnico. Contatta Adobe ClientCare. |
+| Errore sensore 3019: vys-cookie non è stato chiamato prima di vys-log. Contattare il supporto tecnico. Contattare  Adobe ClientCare. | Contattare il supporto tecnico. Contattare  Adobe ClientCare. |
 | Errore sensore 3020: VisualSciencesConfig mancante come prima voce nella sezione della [sezione] nel file di configurazione AOLServer. | Errore di configurazione. Corretto come indicato in errore. |
 | Errore sensore 3021: VisualSciencesConfig non contiene un valore nella sezione [sezione] del file di configurazione AOLServer. | Errore di configurazione. Corretto come indicato in errore. |
 
