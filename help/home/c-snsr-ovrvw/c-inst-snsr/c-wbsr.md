@@ -1,10 +1,13 @@
 ---
 description: Istruzioni dettagliate per l'installazione e la configurazione del sensore per WebSphere 5.x in esecuzione su AIX 5.1 o versione successiva.
-solution: Insight
+solution: Analytics
 title: WebSphere su AIX
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1645'
+ht-degree: 0%
 
 ---
 
@@ -13,11 +16,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Istruzioni dettagliate per l&#39;installazione e la configurazione del sensore per WebSphere 5.x in esecuzione su AIX 5.1 o versione successiva.
 
-I file di programma per [!DNL Sensor] vengono assemblati in un file di installazione ottenuto dal sito di download di Adobe. Se non disponete già del file di [!DNL Sensor] installazione per il vostro particolare server Web, scaricatelo (o ottenetelo dal rappresentante Adobe) prima di iniziare le seguenti procedure.
+I file di programma per [!DNL Sensor] vengono assemblati in un file di installazione ottenuto dal sito di download del Adobe . Se non disponete già del file di [!DNL Sensor] installazione per il vostro particolare server Web, scaricatelo (o ottenetelo dal rappresentante del Adobe ) prima di iniziare le seguenti procedure.
 
 >[!NOTE]
 >
->I server [!DNL Sensor] WebSphere non supportano la sperimentazione controllata. Per informazioni sulla sperimentazione controllata, vedere la Guida agli esperimenti controllati di *Workbench dati.*
+>I server [!DNL Sensor] WebSphere non supportano la sperimentazione controllata. Per informazioni sulla sperimentazione controllata, consultate la Guida agli esperimenti controllati di *Data Workbench.*
 
 ## Installare i file del programma {#section-86f69127278c41bc90b97b68bb40bc6e}
 
@@ -98,7 +101,7 @@ Per ripristinare le autorizzazioni alle impostazioni predefinite consigliate, ut
 
 Se desiderate utilizzare autorizzazioni diverse da quelle consigliate, controllate le informazioni in Sensor UNIX File Permissions (Autorizzazioni file UNIX Sensor), per essere certi di capire come vengono utilizzati questi file.
 
-## Modificare il file di configurazione Sensor {#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## Edit the Sensor Configuration file {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 Il file txlogd.conf contiene i parametri di configurazione per Sensor.
 
@@ -241,7 +244,7 @@ Quando un sensore per la piattaforma J2EE riceve una richiesta, richiama una cla
 
 Per ulteriori informazioni sull&#39;elaborazione, vedere la Guida alla configurazione del *set di dati*.
 
-1. Aggiungi il codice seguente nella parte superiore della pagina .jsp da cui vuoi acquisire i dati:
+1. Aggiungete il codice seguente nella parte superiore della pagina .jsp da cui desiderate acquisire i dati:
 
    ```
    <%@ page import="com.visualsciences.collector.VSCollector" %>
