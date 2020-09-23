@@ -1,15 +1,18 @@
 ---
 description: Procedura per installare un cluster di Insight Server.
-solution: Insight
-title: Installazione di un cluster di server di Insight
+solution: Analytics
+title: Installazione di un cluster di Insight Server
 uuid: 0a0eb03d-2454-4b02-8b9d-cacf9deb5451
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '81'
+ht-degree: 12%
 
 ---
 
 
-# Installazione di un cluster di server di Insight{#installing-an-insight-server-cluster}
+# Installazione di un cluster di Insight Server{#installing-an-insight-server-cluster}
 
 Procedura per installare un cluster di Insight Server.
 
