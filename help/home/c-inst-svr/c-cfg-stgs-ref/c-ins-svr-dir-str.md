@@ -1,15 +1,18 @@
 ---
 description: Elenco dei file installati con Insight Server e i file presenti dopo che è stato registrato ed eseguito per la prima volta.
-solution: Insight
-title: Struttura directory server Insight
+solution: Analytics
+title: Struttura directory di Insight Server
 uuid: 8339b275-f118-4d5d-937e-4df9f8a56b50
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 4%
 
 ---
 
 
-# Struttura directory server Insight{#insight-server-directory-structure}
+# Struttura directory di Insight Server{#insight-server-directory-structure}
 
 Elenco dei file installati con Insight Server e i file presenti dopo che è stato registrato ed eseguito per la prima volta.
 
@@ -26,7 +29,7 @@ Le seguenti directory sono incluse nel pacchetto di [!DNL Insight Server] instal
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Controllo degli accessi </td> 
+   <td colname="col1"> Controllo di accesso </td> 
    <td colname="col2"> <span class="keyword"> File di configurazione di Insight Server </span> che specifica un elenco di gruppi di accesso. </td> 
   </tr> 
   <tr> 
