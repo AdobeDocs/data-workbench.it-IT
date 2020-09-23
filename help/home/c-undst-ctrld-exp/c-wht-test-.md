@@ -1,20 +1,23 @@
 ---
 description: I risultati dei test devono essere chiari e significativi in modo da poter essere certi di prendere decisioni in dollari su larga scala sulla base di tali risultati.
-solution: Insight,Analytics
-title: Cosa Dovrei Verificare?
+solution: Analytics,Analytics
+title: Cosa dovrei verificare?
 topic: Data workbench
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 1%
 
 ---
 
 
-# Cosa Dovrei Verificare?{#what-should-i-test}
+# Cosa dovrei verificare?{#what-should-i-test}
 
 I risultati dei test devono essere chiari e significativi in modo da poter essere certi di prendere decisioni in dollari su larga scala sulla base di tali risultati.
 
-Sebbene sia possibile sottoporre a test vari layout di pagina con [!DNL Sensor] e sito, Adobe consiglia di concentrarsi sul test di iniziative aziendali strategiche di alto valore o di nuova o riprogettata funzionalità del sito Web, che rispondono agli obiettivi impostati per il sito Web e per la propria attività. Potete testare problemi quali le migliori garanzie di prezzo, la funzionalità di personalizzazione, le offerte di mercato (ad esempio, pacchetti o pacchetti), la progettazione creativa e i processi applicativi.
+Sebbene sia possibile sottoporre a test vari layout di pagina con [!DNL Sensor] e Sito,  Adobe suggerisce di focalizzare l&#39;attenzione sul test di iniziative aziendali strategiche di alto valore, o di nuove o riprogettate funzionalità del sito Web che soddisfano gli obiettivi impostati per il sito Web e per la propria attività. Potete testare problemi quali le migliori garanzie di prezzo, la funzionalità di personalizzazione, le offerte di mercato (ad esempio, pacchetti o pacchetti), la progettazione creativa e i processi applicativi.
 
 I seguenti concetti sono più importanti nello sviluppo dell’esperimento controllato:
 
