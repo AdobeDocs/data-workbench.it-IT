@@ -1,15 +1,18 @@
 ---
 description: Informazioni sul monitoraggio dei dataset e l'aggiunta di nuove posizioni per l'archiviazione dei dati dei dataset.
-solution: Insight
-title: Monitoraggio dello spazio dei dati
+solution: Analytics
+title: Monitoraggio dello spazio dei dati del set di dati
 uuid: 0b7b95e7-b1bb-49cf-b465-fdbdc4ee214e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 2%
 
 ---
 
 
-# Monitoraggio dello spazio dei dati{#monitoring-dataset-data-space}
+# Monitoraggio dello spazio dei dati del set di dati{#monitoring-dataset-data-space}
 
 Informazioni sul monitoraggio dei dataset e l&#39;aggiunta di nuove posizioni per l&#39;archiviazione dei dati dei dataset.
 
@@ -40,7 +43,7 @@ Se si desidera [!DNL Insight Server] mantenere il dataset su un&#39;unità diver
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, il parametro Rileva corruzione disco è impostato su true. Il parametro Dimensione cache disco (MB) controlla la quantità di memoria che [!DNL Insight Server] utilizza per aumentare la velocità di accesso al disco ed è impostato su 128 per impostazione predefinita. Contatta Adobe prima di modificare uno di questi parametri.
+   >Per impostazione predefinita, il parametro Rileva corruzione disco è impostato su true. Il parametro Dimensione cache disco (MB) controlla la quantità di memoria che [!DNL Insight Server] utilizza per aumentare la velocità di accesso al disco ed è impostato su 128 per impostazione predefinita. Contatta  Adobe prima di modificare uno di questi parametri.
 
 1. Per modificare i file del disco nel [!DNL Insight Server] computer, fare clic con il pulsante destro del mouse **[!UICONTROL Disk Files]** e scegliere **[!UICONTROL Add new]** > **[!UICONTROL Disk File]**.
 
@@ -52,7 +55,7 @@ Se si desidera [!DNL Insight Server] mantenere il dataset su un&#39;unità diver
 
    >[!NOTE]
    >
-   >Per impostazione predefinita, il parametro Rileva corruzione disco è impostato su true. Il parametro Dimensione cache disco (MB) controlla la quantità di memoria che [!DNL Insight Server] utilizza per aumentare la velocità di accesso al disco ed è impostato su 128 per impostazione predefinita. Contatta Adobe prima di modificare uno di questi parametri.
+   >Per impostazione predefinita, il parametro Rileva corruzione disco è impostato su true. Il parametro Dimensione cache disco (MB) controlla la quantità di memoria che [!DNL Insight Server] utilizza per aumentare la velocità di accesso al disco ed è impostato su 128 per impostazione predefinita. Contatta  Adobe prima di modificare uno di questi parametri.
 
 1. Salvate le modifiche al server effettuando le seguenti operazioni:
 
