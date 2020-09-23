@@ -1,26 +1,29 @@
 ---
 description: Questo file funziona non solo come un foglio di lavoro ma anche come un record delle vostre decisioni sull'esperimento.
-solution: Insight,Analytics
-title: Foglio di calcolo Progettazione Di Esperimenti
+solution: Analytics,Analytics
+title: Foglio di calcolo di progettazione di esperimenti
 topic: Data workbench
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1398'
+ht-degree: 0%
 
 ---
 
 
-# Foglio di calcolo Progettazione Di Esperimenti{#experiment-design-spreadsheet}
+# Foglio di calcolo di progettazione di esperimenti{#experiment-design-spreadsheet}
 
 Questo file funziona non solo come un foglio di lavoro ma anche come un record delle vostre decisioni sull&#39;esperimento.
 
-Se avete bisogno di aiuto nella progettazione dell&#39;esperimento, potete utilizzare il foglio di calcolo della progettazione dell&#39;esperimento (denominato VS Controlled Experience Design.xls per impostazione predefinita) fornito da Adobe.
+Se avete bisogno di aiuto nella progettazione dell&#39;esperimento, potete utilizzare il foglio di calcolo della progettazione dell&#39;esperimento (denominato VS Controlled Experiment Design.xls per impostazione predefinita) fornito da  Adobe.
 
 Il foglio di calcolo della progettazione dell&#39;esperimento può fornire utili inferenze statistiche solo quando la metrica in questione è definita come percentuale di visitatori che soddisfano alcuni criteri. In altre parole, è utile solo quando si esegue il test di un&#39;ipotesi metrica basata sui visitatori.
 
 **Per progettare l&#39;esperimento utilizzando il file di progettazione dell&#39;esperimento**
 
-1. Se disponete dell&#39;accesso dell&#39;amministratore ai server Web o ai server applicazione, individuate la cartella di [!DNL Sensor] installazione su qualsiasi [!DNL Sensor] computer del cluster Web. Se non disponete dell&#39;accesso dell&#39;amministratore, contattate il vostro account manager Adobe per richiedere il file.
+1. Se disponete dell&#39;accesso dell&#39;amministratore ai server Web o ai server applicazione, individuate la cartella di [!DNL Sensor] installazione su qualsiasi [!DNL Sensor] computer del cluster Web. Se non disponete dell&#39;accesso dell&#39;amministratore, contattate il vostro account manager  Adobe per richiedere il file.
 1. Aprite il file VS Controlled Experiment Design.xls. Se lo desiderate, potete rinominare il file.
 
    Il foglio di calcolo riportato nella pagina seguente è un esempio di come si potrebbe completare il foglio di calcolo quando si prepara a testare le ipotesi di esempio utilizzate in questa guida.
@@ -91,11 +94,11 @@ Il foglio di calcolo della progettazione dell&#39;esperimento può fornire utili
   </tr> 
   <tr> 
    <td colname="col1"> Maggiore del valore per il gruppo di controllo? </td> 
-   <td colname="col2"> Impostate questo campo su True se desiderate che sia possibile concludere che la metrica del gruppo di test è aumentata durante l'esperimento. Impostare questo campo su False per ridurre il numero di visitatori necessari per trarre delle conclusioni. Adobe consiglia di impostarlo su True. </td> 
+   <td colname="col2"> Impostate questo campo su True se desiderate che sia possibile concludere che la metrica del gruppo di test è aumentata durante l'esperimento. Impostare questo campo su False per ridurre il numero di visitatori necessari per trarre delle conclusioni.  Adobe consiglia di impostarlo su True. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Minore del valore per il gruppo di controllo? </td> 
-   <td colname="col2"> Impostate questo campo su True se desiderate che la metrica del gruppo di test sia diminuita durante l'esperimento. Adobe consiglia di impostarlo su True. </td> 
+   <td colname="col2"> Impostate questo campo su True se desiderate che la metrica del gruppo di test sia diminuita durante l'esperimento.  Adobe consiglia di impostarlo su True. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Di almeno (livello di rilevamento) </td> 
