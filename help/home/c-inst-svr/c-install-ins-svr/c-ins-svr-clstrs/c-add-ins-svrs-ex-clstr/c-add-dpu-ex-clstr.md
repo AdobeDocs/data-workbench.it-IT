@@ -1,15 +1,18 @@
 ---
 description: In genere, si desidera aggiungere un'unità di elaborazione dati di Insight Server a un cluster esistente quando la quantità di dati da elaborare e rendere accessibili agli utenti di Insight e Report supera la capacità della configurazione corrente del cluster.
-solution: Insight
-title: Aggiunta di un DPU di Insight Server a un cluster esistente
+solution: Analytics
+title: Aggiunta di una DPU di Insight Server a un cluster esistente
 uuid: 1977a90e-bd51-4838-9498-f7692891109f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 4%
 
 ---
 
 
-# Aggiunta di un DPU di Insight Server a un cluster esistente{#adding-an-insight-server-dpu-to-an-existing-cluster}
+# Aggiunta di una DPU di Insight Server a un cluster esistente{#adding-an-insight-server-dpu-to-an-existing-cluster}
 
 In genere, si desidera aggiungere un&#39;unità di elaborazione dati di Insight Server a un cluster esistente quando la quantità di dati da elaborare e rendere accessibili agli utenti di Insight e Report supera la capacità della configurazione corrente del cluster.
 
