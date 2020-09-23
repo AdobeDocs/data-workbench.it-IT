@@ -1,10 +1,13 @@
 ---
 description: Il file di configurazione DPU, DPU.cfg, specifica vari parametri di prestazioni per Insight Server.
-solution: Insight
+solution: Analytics
 title: Configurazione di DPU.cfg
 uuid: c348622b-7d4b-4cfa-a8f8-a07d91e440d5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Il file di configurazione DPU, DPU.cfg, specifica vari parametri di prestazioni per Insight Server.
 
-La modalità di impostazione di questi parametri dipende dalla dimensione del set di dati e da molti altri fattori. Per assistenza nell&#39;ottimizzazione delle prestazioni, contattate i servizi di consulenza Adobe.
+La modalità di impostazione di questi parametri dipende dalla dimensione del set di dati e da molti altri fattori. Per assistenza nell&#39;ottimizzazione delle prestazioni, contattare  Adobe Consulting Services.
 
 **Frequenza consigliata:** Solo se necessario
 
@@ -29,7 +32,7 @@ La modalità di impostazione di questi parametri dipende dalla dimensione del se
 
    >[!NOTE]
    >
-   >Contattate Adobe prima di modificare uno qualsiasi dei parametri in questo file.
+   >Contatta  Adobe prima di modificare i parametri di questo file.
 
    ![](assets/cfg_DPU_egvalues.png)
 
