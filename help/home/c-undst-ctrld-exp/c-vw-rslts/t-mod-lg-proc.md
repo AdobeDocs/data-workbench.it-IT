@@ -1,16 +1,19 @@
 ---
 description: È necessario aggiungere il campo x-esperimento al file Log Processing.cfg, utilizzato per creare una dimensione estesa.
-solution: Insight,Analytics
-title: Modifica di Log Processing.cfg
+solution: Analytics,Analytics
+title: Modifica del registro Processing.cfg
 topic: Data workbench
 uuid: 9105b09b-e3d5-4922-a205-b459553a4bec
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 4%
 
 ---
 
 
-# Modifica di Log Processing.cfg{#modifying-log-processing-cfg}
+# Modifica del registro Processing.cfg{#modifying-log-processing-cfg}
 
 È necessario aggiungere il campo x-esperimento al file Log Processing.cfg, utilizzato per creare una dimensione estesa.
 
