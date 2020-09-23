@@ -1,16 +1,19 @@
 ---
 description: Un'ipotesi è un'ipotesi, che può essere considerata vera ai fini dell'argomentazione, che fornisce una spiegazione provvisoria che può essere verificata con un'ulteriore indagine.
-solution: Insight,Analytics
-title: Formulazione di un'ipotesi
+solution: Analytics,Analytics
+title: Formulazione di un’ipotesi
 topic: Data workbench
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 3%
 
 ---
 
 
-# Formulazione di un&#39;ipotesi{#forming-a-hypothesis}
+# Formulazione di un’ipotesi{#forming-a-hypothesis}
 
 Un&#39;ipotesi è un&#39;ipotesi, che può essere considerata vera ai fini dell&#39;argomentazione, che fornisce una spiegazione provvisoria che può essere verificata con un&#39;ulteriore indagine.
 
