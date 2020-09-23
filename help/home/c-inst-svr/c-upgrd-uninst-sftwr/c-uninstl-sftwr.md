@@ -1,10 +1,13 @@
 ---
 description: Istruzioni per disinstallare Insight Server, Transform o Ripetitore.
-solution: Insight
+solution: Analytics
 title: Disinstallazione del software
 uuid: 79cf0db6-0f99-40fa-a7b0-38dd8d7246bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 3%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Istruzioni per disinstallare Insight Server, Transform o Ripetitore.
 
-## Disinstallazione di Adobe Insight Server {#section-7d7befe672854df79bb6c28ec02f6670}
+## Disinstallazione  Adobe di Insight Server {#section-7d7befe672854df79bb6c28ec02f6670}
 
 1. Annullamento della registrazione del servizio [!DNL Insight Server] Windows.
 
