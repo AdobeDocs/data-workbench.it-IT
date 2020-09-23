@@ -1,16 +1,19 @@
 ---
 description: Dopo aver aggiunto il nuovo campo a Log Processing.cfg e creato la nuova trasformazione Split e la dimensione estesa, è possibile visualizzare la nuova dimensione estesa creata non appena la fase di Fast Input della rielaborazione dei dati è terminata.
-solution: Insight,Analytics
-title: Visualizzazione dei risultati dell'esperimento
+solution: Analytics,Analytics
+title: Visualizzazione dei risultati dell’esperimento
 topic: Data workbench
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 4%
 
 ---
 
 
-# Visualizzazione dei risultati dell&#39;esperimento{#viewing-the-experiment-results}
+# Visualizzazione dei risultati dell’esperimento{#viewing-the-experiment-results}
 
 Dopo aver aggiunto il nuovo campo a Log Processing.cfg e creato la nuova trasformazione Split e la dimensione estesa, è possibile visualizzare la nuova dimensione estesa creata non appena la fase di Fast Input della rielaborazione dei dati è terminata.
 
