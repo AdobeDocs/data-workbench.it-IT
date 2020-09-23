@@ -1,10 +1,13 @@
 ---
 description: Quando configurate un profilo di set di dati da eseguire su un cluster di Insight Server, tutti i computer del cluster condividono tutti i file di configurazione del set di dati per tale profilo.
-solution: Insight
+solution: Analytics
 title: Configurazione di un profilo da eseguire su un cluster
 uuid: e181d069-fb2f-4a71-a86f-bb9a48cfe059
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +34,7 @@ Per ulteriori informazioni sulla designazione di un&#39;unità [!DNL Insight Ser
 
 Se si decide di archiviare i file di dati di origine su ciascuno dei server di elaborazione anziché su una singola unità File Server, è necessario suddividere i file in modo uniforme tra i server di elaborazione. Non memorizzare tutti i file sorgente del dataset su ciascuno dei server di elaborazione. Se più copie dello stesso file sono disponibili su più server di elaborazione, i dati vengono letti più volte (una per ogni computer) e distorcono i dati.
 
-Per informazioni su come determinare quali file di registro [!DNL Insight Servers] elaborare, contattate Adobe Consulting.
+Per informazioni sull&#39; [!DNL Insight Servers] elaborazione dei file di registro, contattare  Consulenza del Adobe.
 
 ## Specifica dei server di elaborazione in Profile.cfg {#section-99664e072c21462f91fbafb6d893fcf9}
 
