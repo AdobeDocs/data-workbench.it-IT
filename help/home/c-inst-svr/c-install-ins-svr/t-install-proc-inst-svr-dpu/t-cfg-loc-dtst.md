@@ -1,15 +1,18 @@
 ---
 description: Per impostazione predefinita, Insight Server scrive il relativo dataset (temp.db) nella stessa unità dei file del programma Insight Server.
-solution: Insight
-title: Configurazione della posizione del dataset (temp.db)
+solution: Analytics
+title: Configurazione della posizione del set di dati (temp.db)
 uuid: a6884cad-70ed-4bc6-853c-700d301fb178
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 5%
 
 ---
 
 
-# Configurazione della posizione del dataset (temp.db){#configuring-the-location-of-the-dataset-temp-db}
+# Configurazione della posizione del set di dati (temp.db){#configuring-the-location-of-the-dataset-temp-db}
 
 Per impostazione predefinita, Insight Server scrive il relativo dataset (temp.db) nella stessa unità dei file del programma Insight Server.
 
@@ -25,7 +28,7 @@ Se si desidera [!DNL Insight Server] mantenere il dataset su un&#39;unità diver
 
 1. Aprite il [!DNL Disk Files.cfg] file in un editor di testo come Blocco note.
 
-   Per impostazione predefinita, questo file contiene una singola voce nella struttura File disco come illustrato di seguito.
+   Per impostazione predefinita, questo file contiene una sola voce nella struttura File disco, come illustrato di seguito.
 
    ```
    component = DiskSpaceManagerComponent:
