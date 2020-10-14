@@ -1,40 +1,40 @@
 ---
-description: L'archivio certificati di Windows consente di memorizzare il certificato del client e la chiave privata nell'archivio certificati di Windows per la comunicazione SSL con i server.
+description: L’archivio certificati di Windows consente di memorizzare il certificato e la chiave privata del client nell’archivio certificati di Windows per la comunicazione SSL con i server.
 title: Archivio certificati di Windows
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1000'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Archivio certificati di Windows{#windows-certificate-store}
+# Archivio certificati di Windows {#windows-certificate-store}
 
-L&#39;archivio certificati di Windows consente di memorizzare il certificato del client e la chiave privata nell&#39;archivio certificati di Windows per la comunicazione SSL con i server.
+L’archivio certificati di Windows consente di memorizzare il certificato e la chiave privata del client nell’archivio certificati di Windows per la comunicazione SSL con i server.
 
-L&#39;archivio certificati di Windows per il client è una nuova funzione che consente di memorizzare il certificato di comunicazione SSL e la chiave privata nell&#39;archivio certificati di Windows anziché nel `Insight/Certificates/<CertName>.pem` file. L&#39;utilizzo dell&#39;archivio certificati di Windows potrebbe essere preferibile se si utilizza l&#39;archivio certificati per altre applicazioni e si desidera eseguire la gestione certificati in un&#39;unica posizione, oppure per gli utenti che dispongono dell&#39;accesso al controllo di Windows aggiuntivo fornito dall&#39;archivio certificati di Windows.
+L’archivio certificati di Windows per il client è una nuova funzione che consente di memorizzare il certificato e la chiave privata di comunicazione SSL nell’archivio certificati di Windows anziché nel file `Insight/Certificates/<CertName>.pem`. L’utilizzo dell’archivio certificati di Windows potrebbe essere preferibile se si utilizza l’archivio certificati per altre applicazioni e si desidera eseguire la gestione certificati in un’unica posizione oppure per gli utenti che apprezzano la registrazione di controllo di Windows aggiuntiva fornita dall’archivio certificati di Windows.
 
 >[!NOTE]
 >
->La licenza con il server licenze viene mantenuta utilizzando il `<Common Name>.pem` file esistente e il certificato ottenuto dall&#39;archivio certificati verrà utilizzato solo per la comunicazione ai server specificati.
+>La concessione di licenze con il server licenze viene comunque mantenuta utilizzando il file esistente `<Common Name>.pem` e il certificato ottenuto dall’archivio certificati verrà utilizzato solo per la comunicazione ai server specificati.
 
 ## Prerequisiti {#section-69b18600052145ff8e5299b7123e69c5}
 
-1. È necessario avere accesso al [!DNL certmgr.msc] file con la possibilità di importare un certificato e una chiave nello store **Personale** . (Deve essere vero per impostazione predefinita per la maggior parte degli utenti Windows).
+1. È necessario avere accesso al file [!DNL certmgr.msc] con la possibilità di importare un certificato e una chiave nell’archivio **Personali**. (dovrebbe essere così per impostazione predefinita per la maggior parte degli utenti Windows).
 
-1. L&#39;utente che esegue la configurazione deve disporre di una copia dello strumento della riga di comando **OpenSSL** .
-1. Il server e il client devono già essere configurati per utilizzare un certificato SSL personalizzato, come descritto in [Utilizzo di certificati](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd)personalizzati, fornendo istruzioni per memorizzare il certificato client nell&#39;archivio certificati di Windows anziché archiviarlo nella directory **Certificati** .
+1. L’utente che esegue la configurazione deve disporre di una copia dello strumento della riga di comando **OpenSSL**.
+1. Il server e il client devono già essere configurati per utilizzare un certificato SSL personalizzato, come descritto in [Utilizzo di certificati personalizzati](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd), fornendo istruzioni per archiviare il certificato client nell’archivio certificati di Windows anziché nella directory **Certificati**.
 
-## Configurazione dell&#39;archivio certificati di Windows {#section-3629802122e947d4b4f63e8b732cfe27}
+## Configurazione dell’archivio certificati di Windows {#section-3629802122e947d4b4f63e8b732cfe27}
 
-L&#39;archivio certificati di Windows per i client è attivato seguendo la procedura seguente:
+L’archivio certificati di Windows per i client si attiva con la procedura seguente:
 
-**Passaggio 1: Importa il certificato SSL dell&#39;utente e la chiave privata nell&#39;archivio certificati di Windows.**
+**Passaggio 1: importa il certificato SSL e la chiave privata dell’utente nell’archivio certificati di Windows.**
 
-In [Utilizzo di certificati](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd) personalizzati si è invitati a inserire il certificato SSL e la chiave nella seguente directory:
+In [Utilizzo di certificati personalizzati](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd) ti viene indicato di inserire il certificato SSL e la chiave nella seguente directory:
 
 ```
 < 
@@ -43,61 +43,61 @@ In [Utilizzo di certificati](../../../../../home/c-inst-svr/c-install-ins-svr/t-
 </filepath>>\Certificates\
 ```
 
-Il nome del certificato è `<Common Name>.pem` (ad esempio [!DNL Analytics Server 1.pem] (non il [!DNL trust_ca_cert.pem] file).
+Il nome del certificato è `<Common Name>.pem`, ad esempio [!DNL Analytics Server 1.pem] (non il file [!DNL trust_ca_cert.pem]).
 
-Prima di importare il certificato e la chiave privata, è necessario convertirli da . [!DNL pem] in un [!DNL .pfx] formato, ad esempio [!DNL pkcs12.pfx] ).
+Prima di importare il certificato e la chiave privata, è necessario convertirli dal formato . [!DNL pem] in un formato [!DNL .pfx], ad esempio [!DNL pkcs12.pfx].
 
-1. Aprite un prompt dei comandi o un terminale e andate alla directory:
+1. Apri un prompt dei comandi o un terminale e vai alla directory:
 
    ```
    <CommonName>.pem c: cd \<DWB Install folder \Certificates
    ```
 
-1. Eseguire [!DNL openssl] con i seguenti argomenti (con il nome effettivo del [!DNL .pem] file):
+1. Esegui [!DNL openssl] con i seguenti argomenti (con il nome effettivo del file [!DNL .pem]):
 
    ```
    openssl pkcs12 -in "<Common Name>.pem" -export -out "<Common Name>.pfx"
    ```
 
-   Se richiesto, fate clic su **Invio** per saltare l’immissione di una password di esportazione.
+   Se richiesto, fai clic su **Invio** per saltare l’immissione di una password di esportazione.
 
-1. Eseguire [!DNL certmgr.msc] dalla riga di comando, dal menu Start o dal prompt di esecuzione.
-1. Aprite l&#39;archivio certificati **personali** per l&#39;utente corrente.
+1. Esegui [!DNL certmgr.msc] dal prompt di esecuzione, dal menu Start o dalla riga di comando.
+1. Apri l’archivio certificati **Personali** per l’utente corrente.
 
    ![](assets/6_5_crypto_api_0.png)
 
-1. Fare clic con il pulsante destro del mouse su **Certificati** e scegliere **Tutte le attività** > **Importa**.
+1. Fai clic con il pulsante destro del mouse su **Certificati** e scegli **Tutte le attività** > **Importa**.
 
-   Accertatevi che l&#39;opzione Utente **** corrente sia selezionata, quindi fate clic su **Avanti**.
+   Accertati che l’opzione **Utente corrente** sia selezionata, quindi fai clic su **Avanti**.
 
    ![](assets/6_5_crypto_api_4.png)
 
-1. Fate clic su **Sfoglia** e selezionate il `<CommonName>.pfx` file creato in precedenza. Per visualizzarlo dovrete modificare la casella a discesa dell&#39;estensione del file da un certificato X.509 a **Personal Information Exchange** o a **Tutti i file** .
+1. Fai clic su **Sfoglia** e seleziona il file `<CommonName>.pfx` creato in precedenza. Per visualizzarlo dovrai modificare la casella a discesa dell’estensione del file da un certificato X.509 a **Personal Information Exchange** o a **Tutti i file**.
 
-   Selezionate il file e fate clic su **Apri**, quindi su **Avanti**.
+   Seleziona il file e fai clic su **Apri**, quindi su **Avanti**.
 
-1. Non inserite una password e accertatevi che siano selezionate solo le opzioni **Contrassegna la chiave come esportabile** e **Includi tutte le proprietà** estese.
+1. Non inserire una password e accertati che siano selezionate solo le opzioni **Contrassegna la chiave come esportabile** e **Includi tutte le proprietà estese**.
 
    ![](assets/6_5_crypto_api_3.png)
 
    Fai clic su **Avanti**.
 
-1. Accertatevi che **Posizionate tutti i certificati nel seguente archivio** sia selezionato e che l&#39;archivio certificati elencato sia **Personale**. Se siete un utente avanzato, potete selezionare un altro store a questo punto, ma dovrete cambiare la configurazione in un secondo momento.
+1. Assicurati che l’opzione **Colloca tutti i certificati nel seguente archivio** sia selezionata e che l’archivio certificati elencato sia **Personali**. Se sei un utente avanzato, a questo punto puoi selezionare un altro archivio, ma dovrai cambiare la configurazione in un secondo momento.
 
-1. Fare clic su **Avanti** , quindi su **Fine**. Viene visualizzata una finestra di dialogo in cui viene indicato che l&#39;importazione è avvenuta correttamente e il certificato viene visualizzato nella cartella Certificati dello store.
+1. Fai clic su **Avanti**, quindi su **Fine**. Dovresti visualizzare una finestra di dialogo in cui viene indicato che l’importazione è avvenuta correttamente e vedere il certificato nella cartella Certificati dell’archivio.
 
    >[!NOTE]
    >
-   >Prestare particolare attenzione ai **campi Rilasciati** e **Rilasciati da** . Ne avrete bisogno nel prossimo passo.
+   >Presta particolare attenzione ai campi **Rilasciati a** e **Rilasciati da**. Ne avrai bisogno nel prossimo passaggio.
 
-**Passaggio 2: Modificate il file Insight.cfg.**
+**Passaggio 2: modifica il file Insight.cfg.**
 
-È necessario modificare il [!DNL Insight.cfg] file per indirizzare l&#39;Data Workbench all&#39;utilizzo della funzione Archivio certificati di Windows. Per ogni voce del server in questo file devono essere specificati alcuni parametri aggiuntivi. Se i parametri vengono omessi, per impostazione predefinita la workstation utilizzerà la configurazione del certificato esistente. Se i parametri sono specificati ma hanno valori errati, la workstation immetterà uno stato di errore e dovrete fare riferimento al file di registro per le informazioni di errore.
+È necessario modificare il file [!DNL Insight.cfg] per indirizzare Data Workbench all’utilizzo della funzione archivio certificati di Windows. Per ogni voce del server in questo file devono essere specificati alcuni parametri aggiuntivi. Se i parametri vengono omessi, per impostazione predefinita la workstation utilizzerà la configurazione del certificato esistente. Se i parametri sono specificati ma hanno valori errati, la workstation entrerà in uno stato di errore e dovrai fare riferimento al file di registro per le informazioni relative all’errore.
 
-1. Aprite il file **Insight.cfg** (che si trova nella directory di installazione di **Insight** ).
+1. Apri il file **Insight.cfg** (che si trova nella directory di installazione di **Insight**).
 
-1. Scorrete verso il basso fino alla voce del server che desiderate configurare. Se si desidera utilizzare l&#39;archivio certificati di Windows per ogni server, è necessario apportare queste modifiche a ogni voce nel vettore di [!DNL serverInfo] oggetti.
-1. Aggiungete questi parametri al [!DNL Insight.cfg] file. È possibile eseguire questa operazione dalla workstation o manualmente aggiungendo i seguenti parametri all&#39; [!DNL serverInfo] oggetto. Assicuratevi di utilizzare gli spazi invece dei caratteri di tabulazione e di non eseguire altri errori tipografici o di sintassi in questo file. )
+1. Scorri verso il basso fino alla voce del server che desideri configurare. Se desideri utilizzare l’archivio certificati di Windows per ogni server, è necessario apportare queste modifiche a ogni voce nel vettore degli oggetti [!DNL serverInfo].
+1. Aggiungi questi parametri al loro file [!DNL Insight.cfg]. È possibile eseguire questa operazione dalla workstation o manualmente aggiungendo i seguenti parametri all’oggetto [!DNL serverInfo]. Assicurati di utilizzare gli spazi invece dei caratteri di tabulazione e di non commettere altri errori tipografici o di sintassi in questo file.
 
    ```
    SSL Use CryptoAPI = bool: true  
@@ -106,21 +106,21 @@ Prima di importare il certificato e la chiave privata, è necessario convertirli
    SSL CryptoAPI Cert Store Name = string: My 
    ```
 
-   Il valore booleano abilita o disabilita la funzione. Il nome del certificato corrisponde a **Emittente** nel gestore certificati. Il nome dell&#39;emittente del certificato corrisponde a **Emesso da** e il nome **** archivio deve corrispondere al nome dell&#39;archivio certificati.
+   Il valore booleano abilita o disabilita la funzione. Il nome del certificato corrisponde a **Rilasciato a** nel gestore certificati. Il nome dell’autorità di certificazione corrisponde a **Rilasciato da** e il **Nome archivio** deve corrispondere al nome dell’archivio certificati.
 
    >[!NOTE]
    >
-   >Il nome &quot;Personale&quot; nel Gestore dei certificati (certmgr.msc) in realtà fa riferimento all&#39;archivio certificati denominato **My.** Di conseguenza, se importate il certificato di comunicazione SSL e la chiave (.PFX) nell&#39;archivio certificati **personale** come consigliato, dovete impostare la stringa **SSL CryptoAPI Cert Name** su &quot;My&quot;. L&#39;impostazione di questo parametro su &quot;Personale&quot; non funzionerà. Questa è una particolarità dell&#39;archivio certificati di Windows.
+   >Il nome “Personali” nel gestore certificati (certmgr.msc) in realtà fa riferimento all’archivio certificati denominato **My.** Di conseguenza, se importi il certificato di comunicazione e la chiave SSL (.PFX) nell’archivio certificati **Personali** come consigliato, devi impostare la stringa **SSL CryptoAPI Cert Store Name** su “My”. L’impostazione di questo parametro su “Personale” non funzionerà. Questa è una particolarità dell’archivio certificati di Windows.
 
-   Un elenco completo degli store di sistema predefiniti può essere ottenuto qui: [https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx). Nel sistema potrebbero essere presenti ulteriori archivi di certificati. Se si desidera utilizzare uno store diverso da &quot;Personale&quot; (ad esempio **My**), è necessario ottenere il nome canonico dell&#39;archivio certificati e fornirlo nel [!DNL Insight.cfg] file. (Il nome dell&#39;archivio di sistema &quot;My&quot; viene spesso indicato come &quot;My&quot; e &quot;MY&quot; dalla documentazione di Windows. Il parametro non fa distinzione tra maiuscole e minuscole.
+   Un elenco completo degli archivi di sistema predefiniti è disponibile qui: [https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx). Nel sistema potrebbero essere presenti ulteriori archivi di certificati. Se desideri utilizzare un archivio diverso da “Personali” (ad esempio **My**), è necessario ottenere il nome canonico dell’archivio certificati e fornirlo nel file [!DNL Insight.cfg]. Il nome dell’archivio di sistema “My” viene spesso indicato come “My” e “MY” nella documentazione di Windows. Il parametro sembra non fare distinzione tra maiuscole e minuscole.
 
-1. Dopo aver aggiunto questi parametri e verificato che i valori corrispondano all&#39;elenco in Gestione certificati di Windows, salvare il [!DNL Insight.cfg] file.
+1. Dopo aver aggiunto questi parametri e verificato che i valori corrispondano all’elenco nel gestore certificati di Windows, salva il file [!DNL Insight.cfg].
 
-È ora possibile avviare la workstation (oppure disconnettersi/riconnettersi al server). L&#39;Data Workbench deve caricare il certificato e la chiave dall&#39;archivio certificati e connettersi normalmente.
+Ora puoi avviare la workstation (oppure disconnetterti/riconnetterti al server). Data Workbench dovrebbe caricare il certificato e la chiave dall’archivio certificati e connettersi normalmente.
 
-## Uscita log {#section-a7ef8c9e90ef4bbabaa3cd51a2aca3ab}
+## Output del registro {#section-a7ef8c9e90ef4bbabaa3cd51a2aca3ab}
 
-Se un certificato non viene trovato o non è valido, il messaggio di errore viene inviato al [!DNL HTTP.log] file.
+Se un certificato non viene trovato o non è valido, il messaggio di errore viene inviato al file [!DNL HTTP.log].
 
 ```
 ERROR Fatal error: the cert could not be found!
@@ -128,4 +128,4 @@ ERROR Fatal error: the cert could not be found!
 
 >[!NOTE]
 >
->Il framework di registrazione L4 può essere attivato configurando il [!DNL L4.cfg] file (consultate il vostro account manager per configurare questa impostazione).
+>Il framework di registrazione L4 può essere attivato configurando il file [!DNL L4.cfg] (consulta il tuo account manager per configurarlo).
