@@ -5,7 +5,10 @@ title: Condizioni di funzionamento del test
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1119'
+ht-degree: 4%
 
 ---
 
@@ -17,7 +20,7 @@ Informazioni sulle condizioni dell&#39;operazione di test, tra cui confronto, no
 * [Confronta](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac)
 * [Non vuoto](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-1decb9d887894073a1b6b3d985729ac8)
 * [Intervallo](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-1db31583bb09418b8f49481a897b08a6)
-* [Espressione regolare](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-ae9c016502cb44128760c58f2d2d5297)
+* [Regular Expression (Espressione regolare)](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-ae9c016502cb44128760c58f2d2d5297)
 * [Corrispondenza stringa](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)
 
 ## Confronta {#section-fb2bdb3838504099b324b9838cdeeaac}
@@ -60,7 +63,7 @@ I parametri della [!DNL Compare] condizione sono descritti nella tabella seguent
    <td colname="col2"> <p>Operazione di confronto. Le operazioni disponibili (e il loro significato) sono i seguenti: 
      <ul id="ul_74F3C298E9CC4FE89897BA0052A9EB9F"> 
       <li id="li_1605FA73474E404A84056D40E7082623"> = or == (l'input A è uguale all'input B) </li> 
-      <li id="li_F694A262ED7A4787B2A68B877339620C"> &lt;&gt; o != (l'input A non è uguale all'input B) </li> 
+      <li id="li_F694A262ED7A4787B2A68B877339620C"> &lt;&gt; oppure != (l'input A non è uguale all'input B) </li> 
       <li id="li_1A75437E23B64BEB92297E1C771092B0"> &lt; (L'ingresso A è inferiore all'ingresso B) </li> 
       <li id="li_B80ED6BE9DEA41FE84BC6BA3B7759276"> &lt;= (l'input A è minore o uguale all'input B) </li> 
       <li id="li_93148F34065F489E8E198DFB9F9F0E70"> &gt; (L'ingresso A è maggiore dell'ingresso B) </li> 
@@ -69,7 +72,7 @@ I parametri della [!DNL Compare] condizione sono descritti nella tabella seguent
    <td colname="col3"> = </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Type (Tipo) </td> 
+   <td colname="col1"> Tipo </td> 
    <td colname="col2">Tipo di confronto da effettuare. I tipi disponibili sono <span class="wintitle"> LEXICAL</span>, <span class="wintitle"> NUMERIC</span>e <span class="wintitle"> DATETIME</span>. Per una descrizione dei tipi, vedere <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> Tipi di test per le operazioni</a>di test. </td> 
    <td colname="col3"> <span class="wintitle"> LEXICO</span> </td> 
   </tr> 
@@ -136,7 +139,7 @@ I parametri della [!DNL Range] condizione sono descritti nella tabella seguente:
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Type (Tipo) </td> 
+   <td colname="col1"> Tipo </td> 
    <td colname="col2">Tipo di confronto da effettuare. I tipi disponibili sono <span class="wintitle"> LEXICAL</span>, <span class="wintitle"> NUMERIC</span>e <span class="wintitle"> DATETIME</span>. Per una descrizione dei tipi, vedere <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> Tipi di test per le operazioni</a>di test. </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -196,7 +199,7 @@ I parametri della [!DNL Regular Expression] condizione sono descritti nella tabe
  </tbody> 
 </table>
 
-Questo esempio illustra l’utilizzo della [!DNL Regular Expression] condizione per far corrispondere un campo di dati raccolti dal traffico del sito Web. La condizione restituisce true solo se il campo cs(referrer-query) contiene una stringa che corrisponde all&#39;espressione regolare campaign=C[1-9][0-9]{4}. Questa espressione regolare corrisponde a qualsiasi stringa contenente &quot;campaign=C12345.&quot; Tuttavia, il pattern non corrisponderebbe alla stringa &quot;campaign=C0123&amp;&quot; perché il primo carattere dopo &quot;C&quot; non è compreso tra 1 e 9.
+Questo esempio illustra l’utilizzo della [!DNL Regular Expression] condizione per far corrispondere un campo di dati raccolti dal traffico del sito Web. La condizione restituisce true solo se il campo cs(referrer-query) contiene una stringa corrispondente all&#39;espressione regolare `campaign=C[1-9][0-9]{4}`. Questa espressione regolare corrisponde a qualsiasi stringa contenente &quot;campaign=C12345.&quot; Tuttavia, il pattern non corrisponderebbe alla stringa &quot;campaign=C0123&amp;&quot; perché il primo carattere dopo &quot;C&quot; non è compreso tra 1 e 9.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
