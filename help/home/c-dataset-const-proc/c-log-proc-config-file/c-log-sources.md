@@ -1,22 +1,25 @@
 ---
 description: Le origini di registro sono file che contengono i dati da utilizzare per creare un dataset.
 solution: Analytics
-title: Origini log
+title: Origini del registro
 topic: Data workbench
 uuid: ea21c3d7-9188-4ba8-bacd-052d678bd799
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '3664'
+ht-degree: 1%
 
 ---
 
 
-# Origini log{#log-sources}
+# Origini del registro{#log-sources}
 
 Le origini di registro sono file che contengono i dati da utilizzare per creare un dataset.
 
 I dati disponibili nelle origini del registro sono denominati dati evento perché ogni record di dati rappresenta un record di transazione o una singola istanza di un evento. Il server workbench dati può elaborare origini di registro derivate da dati raccolti da [!DNL Sensors] o estratti da altre origini dati.
 
-* **Dati raccolti da [!DNL Sensors]: ** I dati raccolti dai server [!DNL Sensors] HTTP e applicativi vengono trasmessi ai server workbench di dati, che convertono i dati in file di registro ( [!DNL .vsl]) altamente compressi. Consultate File [Sensor](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009).
+* **Dati raccolti da [!DNL Sensors]: ** I dati raccolti dai server [!DNL Sensors] HTTP e applicativi vengono trasmessi ai server workbench dati, che convertono i dati in file di registro ( [!DNL .vsl]) altamente compressi. Consultate File [Sensor](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009).
 
 * **Dati estratti da Insight Server:** Il server workbench dati legge i dati degli eventi contenuti in file semplici, file XML o database conformi a ODBC e utilizza i relativi decoder per estrarre gli elementi desiderati dei dati. Tali dati evento non devono necessariamente risiedere nella memoria, ma i record che contengono i dati devono includere un ID di tracciamento. Vedere [File](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)di registro, origini [di registro](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)XML e origini [dati](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)ODBC.
 
@@ -118,11 +121,12 @@ Il file contenente i dati dell&#39;evento deve soddisfare i seguenti requisiti:
 * Per specificare l&#39;ora di inizio e di fine dell&#39;elaborazione dati, ogni nome file deve essere del modulo:
 
    * [!DNL YYYYMMDD-SOURCE.log]
+
    dove *YYYMMDD* è il giorno di Greenwich Mean Time (GMT) di tutti i dati nel file, e *SOURCE* è una variabile che identifica l&#39;origine dei dati contenuti nel file.
 
    >[!NOTE]
    >
-   >Contattate i servizi di consulenza Adobe per una revisione dei file di registro che prevedete di incorporare nel dataset.
+   >Contattare  Adobe Consulting Services per una revisione dei file di registro che si intende incorporare nel dataset.
 
 ## Parametri {#section-83a861ac24954d54bbb9530e4d8bf23c}
 
@@ -162,7 +166,7 @@ Per le origini di registro dei file di registro, sono disponibili i parametri ne
   </tr> 
   <tr> 
    <td colname="col1"> Gruppo decodificatore </td> 
-   <td colname="col2"> Nome del gruppo di decodificatori del file di testo da applicare all'origine del registro del file di registro. Questo nome deve corrispondere esattamente al nome del gruppo di decodificatori del file di testo corrispondente specificato nel file <span class="wintitle"> Log Processing Dataset Include</span> . Consultate Gruppi <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd"></a>decodificatori di file di testo. </td> 
+   <td colname="col2"> Nome del gruppo di decodificatori del file di testo da applicare all'origine del registro del file di registro. Questo nome deve corrispondere esattamente al nome del gruppo di decodificatori del file di testo corrispondente specificato nel file <span class="wintitle"> Log Processing Dataset Include</span> . See <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd"> Text File Decoder Groups</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ID origine registro </td> 
@@ -170,7 +174,7 @@ Per le origini di registro dei file di registro, sono disponibili i parametri ne
   </tr> 
   <tr> 
    <td colname="col1"> Pattern maschera </td> 
-   <td colname="col2"> <p>Un'espressione regolare con un singolo pattern di cattura che estrae un nome coerente utilizzato per identificare l'origine di una serie di file di registro. Viene considerato solo il nome del file. Il percorso e l'estensione non vengono considerati per la corrispondenza dell'espressione regolare. Se non si specifica un pattern <span class="wintitle"> di</span>maschera, viene generata automaticamente una maschera. </p> <p> Per i file <span class="filepath"> Logs\010105server1.log</span> e <span class="filepath"> Logs\010105server2.log</span>, il pattern <span class="wintitle"> della</span> maschera sarebbe [0-9]{6}(.*). Questo pattern estrae la stringa "server1" o "server2" dai nomi di file riportati sopra. </p> <p> Consultate <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Espressioni</a>regolari. </p> </td> 
+   <td colname="col2"> <p>Un'espressione regolare con un singolo pattern di cattura che estrae un nome coerente utilizzato per identificare l'origine di una serie di file di registro. Viene considerato solo il nome del file. Il percorso e l'estensione non vengono considerati per la corrispondenza dell'espressione regolare. Se non si specifica un pattern <span class="wintitle"> di</span>maschera, viene generata automaticamente una maschera. </p> <p> Per i file <span class="filepath"> Logs\010105server1.log</span> e <span class="filepath"> Logs\010105server2.log</span>, il <span class="wintitle"> pattern</span> della maschera sarà <code>[0-9]{6}(.*)</code>. Questo pattern estrae la stringa "server1" o "server2" dai nomi di file riportati sopra. </p> <p> Consultate <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Espressioni</a>regolari. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Ricorsivo </td> 
@@ -203,7 +207,7 @@ c_xml_log_sources.xml
 
 Il file contenente i dati dell&#39;evento deve soddisfare i seguenti requisiti:
 
-* I dati dell&#39;evento devono essere inclusi in un file XML formattato correttamente con relazioni padre-figlio appropriate.
+* I dati evento devono essere inclusi in un file XML formattato correttamente con le relazioni padre-figlio appropriate.
 * Per ogni formato di file XML deve esistere un gruppo di decodificatori univoco. Per informazioni sulla creazione di un gruppo di decodificatori, consultate Gruppi [decodificatori](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md#concept-5eda5ab253724674832f6951e2a0d1c3)XML.
 * Ogni record visitatore nel file deve contenere:
 
@@ -220,7 +224,7 @@ Per un esempio di file XML che soddisfa tali requisiti, vedere Gruppi [decodific
 
 >[!NOTE]
 >
->Per una revisione dei file di registro XML che si intende incorporare nel dataset, contattare Adobe Consulting Services.
+>Contattare  Adobe Consulting Services per una revisione dei file di registro XML che si intende incorporare nel dataset.
 
 ## Parametri {#section-d07b96d7f6ad4affb9cc0a0bc1b88c4d}
 
@@ -260,7 +264,7 @@ Per le origini di registro XML, sono disponibili i parametri della tabella segue
   </tr> 
   <tr> 
    <td colname="col1"> Gruppo decodificatore </td> 
-   <td colname="col2"> Nome del gruppo di decodificatori XML da applicare all'origine di registro XML. Questo nome deve corrispondere esattamente al nome del gruppo di decodificatori XML corrispondente specificato nel file <span class="wintitle"> Log Processing Dataset Include</span> . Consultate Gruppi <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md#concept-5eda5ab253724674832f6951e2a0d1c3"></a>decoder XML. </td> 
+   <td colname="col2"> Nome del gruppo di decodificatori XML da applicare all'origine di registro XML. Questo nome deve corrispondere esattamente al nome del gruppo di decodificatori XML corrispondente specificato nel file <span class="wintitle"> Log Processing Dataset Include</span> . See <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md#concept-5eda5ab253724674832f6951e2a0d1c3"> XML Decoder Groups</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ID origine registro </td> 
@@ -268,7 +272,7 @@ Per le origini di registro XML, sono disponibili i parametri della tabella segue
   </tr> 
   <tr> 
    <td colname="col1"> Pattern maschera </td> 
-   <td colname="col2"> <p>Un'espressione regolare con un singolo pattern di cattura che estrae un nome coerente utilizzato per identificare l'origine di una serie di file di registro. Viene considerato solo il nome del file. Il percorso e l'estensione non vengono considerati per la corrispondenza dell'espressione regolare. Se non si specifica un pattern <span class="wintitle"> di</span>maschera, viene generata automaticamente una maschera. </p> <p> Per i file <span class="filepath"> Logs\010105server1.xml</span> e <span class="filepath"> Logs\010105server2.xml</span>, il pattern della maschera sarebbe [0-9]{6}(.*). Questo pattern estrae la stringa "server1" o "server2" dai nomi di file riportati sopra. </p> <p> Consultate <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Espressioni</a>regolari. </p> </td> 
+   <td colname="col2"> <p>Un'espressione regolare con un singolo pattern di cattura che estrae un nome coerente utilizzato per identificare l'origine di una serie di file di registro. Viene considerato solo il nome del file. Il percorso e l'estensione non vengono considerati per la corrispondenza dell'espressione regolare. Se non si specifica un pattern <span class="wintitle"> di</span>maschera, viene generata automaticamente una maschera. </p> <p> Per i file <span class="filepath"> Logs\010105server1.xml</span> e <span class="filepath"> Logs\010105server2.xml</span>, il pattern della maschera sarebbe <code>[0-9]{6}(.*)</code>. Questo pattern estrae la stringa "server1" o "server2" dai nomi di file riportati sopra. </p> <p> Consultate <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> Espressioni</a>regolari. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Ricorsivo </td> 
@@ -293,14 +297,14 @@ Per le origini di registro XML, sono disponibili i parametri della tabella segue
 AVRO-log-file.xml
 -->
 
-Il feed di dati Avro offre un modo più efficiente per integrare i dati in Workbench dati:
+Il feed di dati Avro fornisce un modo più efficiente per integrare i dati nella Data Workbench:
 
 <!-- <a id="section_45E3105B971C4220AE9CF573BEBF6080"></a> -->
 
 * Avro fornisce un formato di origine singola per i dati relativi al traffico e al commercio.
 * Il feed Avro è compresso con dati di più blocchi sorgente forniti al giorno. Fornisce solo campi popolati e fornisce funzioni di monitoraggio e notifica, accesso ai dati storici e auto-ripristino.
 * Lo schema, un layout autodefinito dei file di registro Avro, è incluso all&#39;inizio di ciascun file.
-* I nuovi campi vengono aggiunti con le informazioni di supporto per l&#39;acquisizione dei dati di Workbench dati senza che sia necessario apportare alcuna modifica al decodificatore. Questi includono:
+* I nuovi campi vengono aggiunti con le informazioni di supporto per l’acquisizione dei dati di Data Workbench, senza che siano necessarie modifiche al decodificatore. Questi includono:
 
    * Evar: 1-250 (precedentemente 1-75)
    * Eventi personalizzati: 1-1000 (contro 1-100)
