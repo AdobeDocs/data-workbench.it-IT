@@ -5,7 +5,10 @@ title: Espressioni regolari
 topic: Data workbench
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1418'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +29,7 @@ Un&#39;espressione regolare è un pattern di testo, composto da una combinazione
 
 Per identificare ed estrarre pattern di stringhe complessi, il server workbench dati utilizza espressioni regolari in alcune delle trasformazioni e condizioni. Di seguito è riportata una breve guida alle espressioni regolari.
 
-La presente appendice non costituisce un&#39;introduzione completa alle espressioni regolari. Un riferimento particolarmente buono è la pubblicazione O&#39;Reilly *Mastering Regular Expressions, 2nd Edition* di Jeffrey E. F. Friedl.
+Questa appendice non è un&#39;introduzione completa alle espressioni regolari. Un riferimento particolarmente buono è la pubblicazione O&#39;Reilly *Mastering Regular Expressions, 2nd Edition* di Jeffrey E. F. Friedl.
 
 ## Terminologia delle espressioni regolari {#section-80b0d54f731e448391532ab3eb3c525c}
 
@@ -64,9 +67,9 @@ Un metacarattere è un carattere speciale in un programma o in un campo di dati 
 
 | metacarattero | description |
 |---|---|
-| . (punto) | Corrisponde a un singolo carattere, ad esempio: corrisponde `re:x.z` a &quot;xyz&quot; o &quot;xxz&quot;. |
-| * (stella) | Corrisponde a uno o più caratteri, ad esempio: corrisponde `re:Z*` a &quot;ZZZ&quot;. |
-| ? (carattere jolly) | Corrisponde a 0 o 1 dell&#39;espressione precedente per imporre una corrispondenza minima, ad esempio: corrisponde `xy?z` a &quot;xy&quot; e &quot;xyz&quot;. |
+| . (punto) | Corrisponde a un singolo carattere, ad esempio: `re:x.z` corrisponde a &quot;xyz&quot; o &quot;xxz&quot;. |
+| * (stella) | Corrisponde a uno o più caratteri, ad esempio: `re:Z*` corrisponde a &quot;ZZZ&quot;. |
+| ? (carattere jolly) | Corrisponde a 0 o 1 dell&#39;espressione precedente per imporre una corrispondenza minima, ad esempio: `xy?z` restituisce &quot;xy&quot; e &quot;xyz&quot;. |
 
 È inoltre possibile utilizzare espressioni regolari comuni aggiuntive per creare stringhe di ricerca più complesse.
 
@@ -88,7 +91,7 @@ La corrispondenza letterale consente di cercare una singola stringa, ma tra pare
   </tr> 
   <tr> 
    <td colname="col1"> Trattino (-) </td> 
-   <td colname="col2"> <p>Corrisponde a un intervallo di caratteri. Così, invece di scrivere [0123456789] potremmo semplicemente scrivere [0-9]. </p> <p> Può essere esteso a intervalli di caratteri e a più intervalli all’interno di un unico set di parentesi. Ad esempio, [0-9A-C] corrisponde ai caratteri da 0 a 9 e da A a C. </p> <p> <p>Nota:  Per verificare che un trattino (-) sia un letterale tra parentesi quadre, deve essere primo o ultimo. Ad esempio, [-0-9] test per - e da 0 a 9. </p> </p> </td> 
+   <td colname="col2"> <p>Corrisponde a un intervallo di caratteri. Così, invece di scrivere [0123456789] potremmo semplicemente scrivere [0-9]. </p> <p> Può essere esteso a intervalli di caratteri e a più intervalli all’interno di un unico set di parentesi. Ad esempio, [0-9A-C] corrisponde ai caratteri da 0 a 9 e da A a C. </p> <p> <p>Nota:  Per verificare se un trattino (-) è un letterale tra parentesi quadre, deve essere primo o ultimo. Ad esempio, [-0-9] test per - e da 0 a 9. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Pipe (|) </td> 
@@ -157,7 +160,7 @@ I metacaratteri di iterazione consentono di far corrispondere un pattern più di
   </tr> 
   <tr> 
    <td colname="col1"> {n} </td> 
-   <td colname="col2"> <p>Corrispondenza esatta del carattere o dell'intervallo di procedimento con un valore identico a n volte. Il pattern seguente corrisponde ai numeri di telefono degli Stati Uniti: [0-9]{3}-[0-9]{3}-[0-9]{4}. </p> <p> Sebbene non sia un pattern ottimale, determina se la stringa di destinazione è nel formato corretto. </p> </td> 
+   <td colname="col2"> <p>Corrispondenza esatta del carattere o dell'intervallo di procedimento con un valore identico a n volte. Il pattern seguente corrisponde ai numeri di telefono degli Stati Uniti: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Sebbene non sia un pattern ottimale, determina se la stringa di destinazione è nel formato corretto. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> {n,m} </td> 
