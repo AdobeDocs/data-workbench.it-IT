@@ -1,16 +1,17 @@
 ---
-description: Le informazioni sul dataset includono i file e come i relativi parametri influenzano le fasi di elaborazione del log e trasformazione del processo di costruzione del dataset.
-solution: Analytics
-title: Set di dati - Includi file
-topic: Data workbench
+description: Le informazioni sul set di dati includono i file e come i loro parametri influenzano le fasi di elaborazione e trasformazione del registro del processo di costruzione del set di dati.
+title: 'Dataset Include Files (File inclusi nel set di dati) '
 uuid: 0f729537-e001-4536-bb40-bb4d043dd109
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 12%
 
 ---
 
 
-# Set di dati - Includi file{#dataset-include-files}
+# Dataset Include Files (File inclusi nel set di dati) {#dataset-include-files}
 
-Le informazioni sul dataset includono i file e come i relativi parametri influenzano le fasi di elaborazione del log e trasformazione del processo di costruzione del dataset.
+Le informazioni sul set di dati includono i file e come i loro parametri influenzano le fasi di elaborazione e trasformazione del registro del processo di costruzione del set di dati.
 
