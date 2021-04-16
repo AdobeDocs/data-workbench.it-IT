@@ -1,40 +1,41 @@
 ---
 description: Procedura per disinstallare data workbenchGeography.
-solution: Analytics
-title: Disinstallazione della geografia del workbench dati
-topic: Data workbench
+title: Disinstallazione della geografia di Data Workbench
 uuid: 038b2dfb-4db2-42c6-85c3-bc5d776e7736
+exl-id: e3898423-3b28-4786-834a-1d1ff9deb7c6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
 
-
-# Disinstallazione della geografia del workbench dati{#uninstalling-data-workbench-geography}
+# Disinstallazione della geografia di Data Workbench{#uninstalling-data-workbench-geography}
 
 Procedura per disinstallare data workbenchGeography.
 
 >[!NOTE]
 >
->Se il profilo con il quale si utilizza il workbench dati [!DNL Geography] è in esecuzione in un cluster di server workbench dati, disinstallare il [!DNL Geography] profilo dal server workbench dati master nel cluster.
+>Se il profilo con cui utilizzi Data Workbench [!DNL Geography] è in esecuzione su un cluster di server di Data Workbench, disinstalla il profilo [!DNL Geography] dal server principale di Data Workbench nel cluster.
 
-1. Utilizzare i passaggi seguenti per aggiornare il [!DNL profile.cfg] file per ciascun profilo con il quale si utilizzava il workbench dati [!DNL Geography].
+1. Utilizza i passaggi seguenti per aggiornare il file [!DNL profile.cfg] per ciascun profilo con cui stavi utilizzando Data Workbench [!DNL Geography].
 
-   1. Aprite il [!DNL Profile Manager].
-   1. Fare clic con il pulsante destro del mouse sul segno di spunta accanto a [!DNL profile.cfg] e fare clic su **[!UICONTROL Make Local]**. Un segno di spunta per questo file viene visualizzato nella [!DNL User] colonna.
+   1. Apri [!DNL Profile Manager].
+   1. Fai clic con il pulsante destro del mouse sul segno di spunta accanto a [!DNL profile.cfg] e fai clic su **[!UICONTROL Make Local]**. Un segno di spunta per questo file viene visualizzato nella colonna [!DNL User].
 
-   1. Fare clic con il pulsante destro del mouse sul segno di spunta appena creato e scegliere **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. Viene [!DNL profile.cfg] visualizzata la finestra.
+   1. Fai clic con il pulsante destro del mouse sul segno di spunta appena creato e fai clic su **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. Viene visualizzata la finestra [!DNL profile.cfg].
 
-   1. Nella [!DNL profile.cfg] finestra, eliminate la voce di [!DNL Geography] profilo dal [!DNL Directories] vettore.
+   1. Nella finestra [!DNL profile.cfg] , elimina la voce di profilo [!DNL Geography] dal vettore [!DNL Directories].
 
-   1. Se hai utilizzato un servizio dati, elimina la voce [!DNL IP Geo-intelligence] o del [!DNL IP Geo-location] profilo dal [!DNL Directories] vettore.
+   1. Se hai utilizzato un servizio dati, elimina la voce di profilo [!DNL IP Geo-intelligence] o [!DNL IP Geo-location] dal vettore [!DNL Directories].
 
-   1. Fare clic con il pulsante destro del mouse **[!UICONTROL (modified)]** nella parte superiore della finestra e fare clic su **[!UICONTROL Save]**.
+   1. Fai clic con il pulsante destro del mouse su **[!UICONTROL (modified)]** nella parte superiore della finestra e fai clic su **[!UICONTROL Save]**.
 
-   1. Fare [!DNL Profile Manager]clic con il pulsante destro del mouse sul segno di spunta [!DNL profile.cfg] nella [!DNL User] colonna, quindi scegliere **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
+   1. In [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta per [!DNL profile.cfg] nella colonna [!DNL User], quindi fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
 
-1. Eliminare la cartella Geografia dalla cartella Profili nella directory di installazione del server workbench dati.
-1. Se hai utilizzato un servizio dati, elimina la cartella Geo-Intelligence o Geolocalità IP dalla cartella Profili nella directory di installazione del server workbench dati.
-1. Eliminare la cartella Geografia dalla cartella Ricerche nella directory di installazione del server workbench dati.
-1. Se hai utilizzato un servizio dati, elimina la cartella Geo-Intelligence o Geolocalità IP dalla cartella Ricerche nella directory di installazione del server workbench dati.
-1. Se sono state create nuove immagini di terreno, eliminare il [!DNL Terrain Images.cfg] file dalla cartella Components nella directory di installazione del server workbench dati.
+1. Elimina la cartella Geografia dalla cartella Profili nella directory di installazione del server di Data Workbench.
+1. Se utilizzi un servizio dati, elimina la cartella Geo-intelligence IP o Geo-location IP dalla cartella Profiles nella directory di installazione del server di Data Workbench.
+1. Elimina la cartella Geografia dalla cartella Ricerche nella directory di installazione del server di Data Workbench.
+1. Se utilizzi un servizio dati, elimina la cartella Geo-intelligence IP o Geo-location IP dalla cartella Ricerche nella directory di installazione del server di Data Workbench.
+1. Se hai creato nuove immagini del terreno, elimina il file [!DNL Terrain Images.cfg] dalla cartella Componenti nella directory di installazione del server di Data Workbench.
