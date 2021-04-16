@@ -1,39 +1,40 @@
 ---
-description: Per connettersi a un server workbench dati, il server di report deve disporre dell'autorizzazione per accedere a tale server.
-solution: Analytics
-title: Abilitazione dell'accesso al server Workbench dati
-topic: Data workbench
+description: Per connettersi a un server di Data Workbench, il server di rapporto deve disporre delle autorizzazioni necessarie per accedere a tale server.
+title: Abilitazione dell’accesso al server di Data Workbench
 uuid: e112ac2a-34fe-40a2-9324-262f5cb1f681
+exl-id: bf409413-470e-4e05-9bd2-b5b511bbe4a5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 6%
 
 ---
 
+# Abilitazione dell’accesso al server di Data Workbench{#enabling-access-to-the-data-workbench-server}
 
-# Abilitazione dell&#39;accesso al server Workbench dati{#enabling-access-to-the-data-workbench-server}
+Per connettersi a un server di Data Workbench, il server di rapporto deve disporre delle autorizzazioni necessarie per accedere a tale server.
 
-Per connettersi a un server workbench dati, il server di report deve disporre dell&#39;autorizzazione per accedere a tale server.
-
-È possibile concedere l&#39;accesso a un server workbench dati aggiungendo al file di controllo dell&#39;accesso del server il nome comune del server di report (assegnato nel certificato digitale del server di report).
+Per concedere l’accesso a un server di Data Workbench, aggiungi al file di controllo accessi del server il nome comune del server di rapporto (assegnato sul certificato digitale del server di rapporto).
 
 >[!NOTE]
 >
->Quando lavori in un ambiente cluster, Report Server deve essere configurato per accedere al server Workbench dati master per evitare problemi di sincronizzazione. Nel workbench dati è possibile visualizzare informazioni sui server di elaborazione nel cluster utilizzando la voce di [!DNL Related Servers] menu presente nel [!DNL Servers Manager]. Per ulteriori informazioni sull&#39; [!DNL Servers Manager]argomento, vedere il capitolo Interfaccia amministrativa della Guida *utente di Workbench* dati.
+>Quando si lavora in un ambiente cluster, Report Server deve essere configurato per accedere al server di Data Workbench principale per evitare problemi di sincronizzazione. All’interno di Data Workbench è possibile visualizzare informazioni sui server di elaborazione nel cluster utilizzando la voce di menu [!DNL Related Servers] in [!DNL Servers Manager]. Per ulteriori informazioni su [!DNL Servers Manager], vedere il capitolo relativo alle interfacce amministrative della *Guida utente alla Data Workbench*.
 
-La procedura seguente descrive come aggiungere manualmente Report Server al file di controllo dell&#39;accesso in un server Workbench dati. Per aggiornare il file di controllo di accesso in questo modo, è necessario avere accesso al file system nel computer in cui è installato il server workbench dati.
+La procedura seguente descrive come aggiungere manualmente Report Server al file di controllo accessi su un server di Data Workbench. Per aggiornare il file di controllo di accesso in questo modo, è necessario disporre dell’accesso al file system nel computer in cui è installato il server di Data Workbench.
 
-È inoltre possibile aggiornare il file di controllo dell&#39;accesso del server utilizzando il workbench dati [!DNL Server Files Manager] in. A tal fine, il client workbench dati deve disporre di privilegi amministrativi sul server.
+Puoi anche aggiornare il file di controllo degli accessi del server utilizzando [!DNL Server Files Manager] in Data Workbench. A questo scopo, il client di Data Workbench deve disporre di privilegi amministrativi sul server.
 
-Per ulteriori informazioni sull&#39; [!DNL Server Files Manager]argomento, vedere il capitolo Interfaccia amministrativa della Guida *utente di Workbench* dati.
+Per ulteriori informazioni su [!DNL Server Files Manager], vedere il capitolo relativo alle interfacce amministrative della *Guida utente alla Data Workbench*.
 
-**Per configurare l&#39;accesso a un server workbench dati**
+**Per configurare l’accesso a un server di Data Workbench**
 
-1. Passare alla cartella Controllo accesso nella directory in cui è stato installato il server Workbench dati (InsightServer64.exe).
+1. Passare alla cartella Controllo accesso nella directory in cui è stato installato il server di Data Workbench (InsightServer64.exe).
 
    Esempio: [!DNL C:\Adobe\Server\Access Control]
 
-1. Aprite [!DNL Access Control.cfg] in un editor di testo come Blocco note.
-1. Individuare [!DNL Report Server AccessGroup] e aggiungere un nome [!DNL Report Server’s] comune a questo gruppo come evidenziato nel seguente frammento di file. (Digitate il nome comune esattamente come appare sul certificato [!DNL Report Server’s] digitale.)
+1. Apri [!DNL Access Control.cfg] in un editor di testo come Blocco note.
+1. Individua il [!DNL Report Server AccessGroup] e aggiungi [!DNL Report Server’s] nome comune a questo gruppo, come evidenziato nel seguente frammento di file. (Digita il nome comune esattamente come appare nel certificato digitale [!DNL Report Server’s].)
 
    ```
    . . .
