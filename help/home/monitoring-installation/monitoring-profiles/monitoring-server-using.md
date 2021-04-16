@@ -1,30 +1,30 @@
 ---
-description: Il profilo Stato server workbench dati fornisce informazioni aggiornate sullo stato del server workbench dati in base al server anziché alle metriche del profilo o ai dati storici.
-solution: Analytics
-title: Area di lavoro Stato del server Workbench dati
-topic: Data workbench
+description: Il profilo Stato server di Data Workbench fornisce informazioni correnti sullo stato del server di Data Workbench in base al server, anziché alle metriche di profilo o ai dati storici.
+title: Area di lavoro di stato del server di Data Workbench
 uuid: d8bba770-86d3-40e6-bae0-8d635891e481
+exl-id: 53f72bbe-9f2c-471c-aea9-575944d299b0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 9%
 
 ---
 
+# Area di lavoro di stato del server di Data Workbench{#data-workbench-server-status-workspace}
 
-# Area di lavoro Stato del server Workbench dati{#data-workbench-server-status-workspace}
-
-Il profilo Stato server workbench dati fornisce informazioni aggiornate sullo stato del server workbench dati in base al server anziché alle metriche del profilo o ai dati storici.
+Il profilo Stato server di Data Workbench fornisce informazioni correnti sullo stato del server di Data Workbench in base al server, anziché alle metriche di profilo o ai dati storici.
 
 ## Stato generale {#section-65d1fa393cfd450cbacef3cba823fcc1}
 
-Aprire la visualizzazione del set di dati Stato generale all&#39;interno del profilo Stato server workbench dati.
+Apri la visualizzazione del set di dati Stato generale all’interno del profilo di stato del server di Data Workbench.
 
 ![](assets/Managing_Server_Status.png)
 
-Per ulteriori informazioni di riferimento sulle dimensioni utilizzate nel profilo Stato server workbench dati, vedere [Dimensioni nel profilo](../../../home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md#concept-8cbeb91e99bc42e2b52b22d551423f8a) Stato server Insight.
+Per ulteriori informazioni di riferimento sulle dimensioni utilizzate nel profilo dello stato del server di Data Workbench, consulta i Dimension [nel profilo dello stato di Insight Server](../../../home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md#concept-8cbeb91e99bc42e2b52b22d551423f8a) .
 
-## Stato disco {#section-36406f5f1262457e89ff13ad917f621f}
+## Stato del disco {#section-36406f5f1262457e89ff13ad917f621f}
 
-Visualizzare l&#39;utilizzo corrente del disco, compreso l&#39;utilizzo interno di temp.db.
+Visualizza l&#39;utilizzo corrente del disco, incluso l&#39;utilizzo interno di temp.db.
 
 ![](assets/Managing_Server_DiskStatus.png)
-
