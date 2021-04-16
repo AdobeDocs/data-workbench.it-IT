@@ -1,22 +1,23 @@
 ---
-description: Il profilo Geografia fornito con workbenchGeography è un profilo interno che fornisce funzionalità aggiuntive all’applicazione Adobe.
-solution: Analytics
+description: Il profilo Geografia fornito con data workbenchGeography è un profilo interno che fornisce funzionalità aggiuntive all’applicazione Adobe.
 title: Installazione del profilo geografico
-topic: Data workbench
 uuid: afc0699d-e58b-481b-a3f2-ab6d6998bdd8
+exl-id: 9ab07fd4-d6e7-495e-ba34-04e53c9b0aa3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 2%
 
 ---
 
-
 # Installazione del profilo geografico{#installing-the-geography-profile}
 
-Il profilo Geografia fornito con workbenchGeography è un profilo interno che fornisce funzionalità aggiuntive all’applicazione Adobe.
+Il profilo Geografia fornito con data workbenchGeography è un profilo interno che fornisce funzionalità aggiuntive all’applicazione Adobe.
 
-Come per tutti gli altri profili interni forniti da Adobe, il [!DNL Geography] profilo non deve essere modificato. Tutta la personalizzazione deve avvenire nel dataset o nei profili specifici del ruolo o in altri profili creati.
+Come per tutti gli altri profili interni forniti dall’Adobe, il profilo [!DNL Geography] non deve essere modificato. Tutte le personalizzazioni devono verificarsi nel set di dati o nei profili specifici per il ruolo o in altri profili creati.
 
-Il [!DNL Geography] profilo include diversi set di dati di trasformazione che includono file (che si trovano nella [!DNL Dataset\Transformation\Geography] cartella) che definiscono dimensioni geografiche. Di seguito è riportato un elenco dei set di dati di trasformazione che include i file forniti con il [!DNL Geography] profilo:
+Il profilo [!DNL Geography] include diversi set di dati di trasformazione che definiscono le dimensioni geografiche, inclusi i file (che si trovano nella cartella [!DNL Dataset\Transformation\Geography] ). Di seguito è riportato un elenco del set di dati di trasformazione che include i file forniti con il profilo [!DNL Geography] :
 
 * [!DNL City.cfg]
 * [!DNL Coordinates.cfg]
@@ -24,38 +25,37 @@ Il [!DNL Geography] profilo include diversi set di dati di trasformazione che in
 * [!DNL DMA.cfg]
 * [!DNL Domain.cfg]
 
-A ogni file viene assegnato un nome per la dimensione estesa definita. Un file aggiuntivo, [!DNL IPLookup.cfg], definisce diversi campi di dati geografici utilizzati per definire le dimensioni nell&#39;altro set di dati di trasformazione include i file.
+A ogni file viene assegnato un nome per la dimensione estesa definita. Un file aggiuntivo, [!DNL IPLookup.cfg], definisce diversi campi di dati geografici utilizzati per definire dimensioni nell’altro set di dati di trasformazione che includono file.
 
-Per informazioni sui set di dati di trasformazione e sui file di inclusione, vedere la Guida alla configurazione del set di *dati*.
+Per informazioni sui file di inclusione dei set di dati di trasformazione, consulta la *Guida alla configurazione del set di dati*.
 
-**Per installare il[!DNL Geography]profilo sul server workbench dati**
+**Per installare il  [!DNL Geography] profilo sul server di Data Workbench**
 
 >[!NOTE]
 >
->Le seguenti istruzioni di installazione presuppongono l&#39;installazione del workbench dati e la creazione di una connessione tra il workbench dati e il server workbench dati su cui si sta installando il workbench dati [!DNL Geography]. In caso contrario, vedere la Guida *utente di Workbench* dati.
+>Le istruzioni di installazione seguenti presuppongono l’installazione di Data Workbench e l’impostazione di una connessione tra Data Workbench e il server di Data Workbench sul quale si sta installando Data Workbench [!DNL Geography]. Se non lo hai fatto, consulta la *Data Workbench guida utente*.
 
-1. Aprite la cartella Profili dal [!DNL .zip] file fornito da Adobe.
-1. Copiare la [!DNL Geography] cartella nella cartella Profili nella directory di installazione del server workbench dati. Si desidera finire con una [!DNL ...\Profiles\Geography] cartella sul server workbench dati, come illustrato nell&#39;esempio seguente. I nomi delle altre cartelle all’interno della cartella Profili possono essere diversi da quelli mostrati.
+1. Apri la cartella Profiles dal file [!DNL .zip] fornito in Adobe.
+1. Copia la cartella [!DNL Geography] nella cartella Profiles nella directory di installazione del server di Data Workbench. Desideri ritrovarti con una cartella [!DNL ...\Profiles\Geography] sul server di Data Workbench come mostrato nell’esempio seguente. I nomi delle altre cartelle all’interno della cartella Profiles possono essere diversi da quelli visualizzati.
 
    ![Informazioni sul passaggio](assets/Geo_installProfiles_dir.png)
 
-1. Utilizzare i passaggi seguenti per aggiornare il [!DNL profile.cfg] file per ciascun profilo con il quale si desidera utilizzare il workbench dati [!DNL Geography].
+1. Utilizza i passaggi seguenti per aggiornare il file [!DNL profile.cfg] per ciascun profilo con cui desideri utilizzare Data Workbench [!DNL Geography].
 
-   1. Aprite il [!DNL Profile Manager].
-   1. Fare clic con il pulsante destro del mouse sul segno di spunta accanto a [!DNL profile.cfg] e fare clic su **[!UICONTROL Make Local]**. Un segno di spunta per questo file viene visualizzato nella [!DNL User] colonna.
+   1. Apri [!DNL Profile Manager].
+   1. Fai clic con il pulsante destro del mouse sul segno di spunta accanto a [!DNL profile.cfg] e fai clic su **[!UICONTROL Make Local]**. Un segno di spunta per questo file viene visualizzato nella colonna [!DNL User].
 
-   1. Fare clic con il pulsante destro del mouse sul segno di spunta appena creato e scegliere **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. Viene [!DNL profile.cfg] visualizzata la finestra.
+   1. Fai clic con il pulsante destro del mouse sul segno di spunta appena creato e fai clic su **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. Viene visualizzata la finestra [!DNL profile.cfg].
 
-   1. Nella [!DNL profile.cfg] finestra fare clic con il pulsante destro del mouse **[!UICONTROL Directories]** e scegliere **[!UICONTROL Add new]** > **[!UICONTROL Directory]**.
+   1. Nella finestra [!DNL profile.cfg], fai clic con il pulsante destro del mouse su **[!UICONTROL Directories]** e fai clic su **[!UICONTROL Add new]** > **[!UICONTROL Directory]**.
 
-      Per aggiungere la nuova directory alla fine dell&#39;elenco di directory, fare clic con il pulsante destro del mouse sul numero o sul nome dell&#39;ultima directory dell&#39;elenco e scegliere **[!UICONTROL Add new]** > **[!UICONTROL Directory]**.
+      Per aggiungere la nuova directory alla fine dell’elenco di directory, fare clic con il pulsante destro del mouse sul numero o sul nome dell’ultima directory nell’elenco e fare clic su **[!UICONTROL Add new]** > **[!UICONTROL Directory]**.
 
    1. Digitare il nome della nuova directory: [!DNL Geography].
-   1. Fare clic con il pulsante destro del mouse **[!UICONTROL (modified)]** nella parte superiore della finestra e fare clic su **[!UICONTROL Save]**.
+   1. Fai clic con il pulsante destro del mouse su **[!UICONTROL (modified)]** nella parte superiore della finestra e fai clic su **[!UICONTROL Save]**.
 
-   1. Fare [!DNL Profile Manager]clic con il pulsante destro del mouse sul segno di spunta [!DNL profile.cfg] nella [!DNL User] colonna, quindi scegliere **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
+   1. In [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta per [!DNL profile.cfg] nella colonna [!DNL User], quindi fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
 
       >[!NOTE]
       >
-      >Non salvate il file di configurazione modificato in alcun profilo interno fornito da Adobe (incluso il [!DNL Geography] profilo), in quanto le modifiche vengono sovrascritte quando installate gli aggiornamenti a tali profili.
-
+      >Non salvare il file di configurazione modificato in nessuno dei profili interni forniti dall’Adobe (incluso il profilo [!DNL Geography] ), in quanto le modifiche vengono sovrascritte quando installi gli aggiornamenti a tali profili.
