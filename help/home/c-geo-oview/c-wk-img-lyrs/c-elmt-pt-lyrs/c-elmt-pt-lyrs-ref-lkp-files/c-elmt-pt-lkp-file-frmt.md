@@ -1,30 +1,31 @@
 ---
 description: Informazioni sulle colonne del livello del punto elemento.
-solution: Analytics
-title: Formato file di ricerca punto elemento
-topic: Data workbench
+title: Formato del file di ricerca del punto elemento
 uuid: 3480b9f3-35cd-40b7-aac9-15a3e2f19c1c
+exl-id: da81da9e-0567-4f3a-bc0d-ab6c5e4a23b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 6%
 
 ---
 
-
-# Formato file di ricerca punto elemento{#element-point-lookup-file-format}
+# Formato del file di ricerca del punto elemento{#element-point-lookup-file-format}
 
 Informazioni sulle colonne del livello del punto elemento.
 
-Il file di ricerca del livello del punto elemento deve contenere almeno tre colonne:
+Il file di ricerca a livello di punto elemento deve contenere almeno le tre colonne seguenti:
 
-* **[!DNL Key]colonna:**Questa colonna deve contenere dati chiave comuni, che consentono al server workbench dati di collegare i dati nel file di ricerca a quelli nel dataset. La[!DNL Key]colonna deve essere la prima colonna del file di ricerca. Ogni riga in questa colonna identifica un elemento della dimensione.
+* **[!DNL Key]colonna:** questa colonna deve contenere dati chiave comuni, che consentono al server di Data Workbench di collegare i dati nel file di ricerca a quelli nel set di dati. La colonna [!DNL Key] deve essere la prima colonna del file di ricerca. Ogni riga in questa colonna identifica un elemento della dimensione.
 
-* **[!DNL Longitude]colonna:**Questa colonna deve contenere la longitudine per ogni punto dati della[!DNL Key]colonna.
+* **[!DNL Longitude]colonna:** questa colonna deve contenere la longitudine di ogni punto dati della  [!DNL Key] colonna.
 
-* **[!DNL Latitude]colonna:**Questa colonna deve contenere la latitudine per ogni punto dati della[!DNL Key]colonna.
+* **[!DNL Latitude]colonna:** questa colonna deve contenere la latitudine di ciascun punto dati della  [!DNL Key] colonna.
 
-* **[!DNL Name]colonna:**(Facoltativo). Se si desidera specificare un nome da visualizzare sulla mappa per ogni punto dati, è possibile includere una[!DNL Name]colonna nel file di ricerca.
+* **[!DNL Name]Colonna:**  (facoltativo). Se desideri specificare un nome da visualizzare sulla mappa per ogni punto dati, puoi includere una colonna [!DNL Name] nel file di ricerca.
 
-Ogni riga del file di [!DNL Zip Points.txt] ricerca contiene un CAP nella prima colonna seguito da longitudine, latitudine e nome città associato.
+Ogni riga nel file di ricerca [!DNL Zip Points.txt] contiene un codice ZIP nella prima colonna seguito da longitudine, latitudine e nome della città associato.
 
 ```
 tude, and associated city name.
@@ -33,4 +34,3 @@ ZIP_CODE LATITUDE LONGITUDE NAME
 00211 +43.005895 -071.013202 PORTSMOUTH, NH
 ...
 ```
-
