@@ -1,26 +1,27 @@
 ---
-description: Sensor acquisisce tutti i dati di misurazione eseguiti sulle richieste di pagina (richieste GET) effettuate ai server Web in cui è stata installata.
-solution: Analytics
-title: Acquisizione dati richiesta pagina
-topic: Data workbench
+description: Sensor acquisisce tutti i dati di misurazione che vengono eseguiti sulle richieste di pagina (richieste di GET) effettuate ai server web in cui è stato installato.
+title: Acquisizione dei dati della richiesta di pagina
 uuid: 06cf2b14-8d2c-483e-8a75-ce772798978f
+exl-id: e42566a3-d5b4-4f1a-b8cd-1ea646041101
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 4%
 
 ---
 
+# Acquisizione dei dati della richiesta di pagina{#acquiring-page-request-data}
 
-# Acquisizione dati richiesta pagina{#acquiring-page-request-data}
+Sensor acquisisce tutti i dati di misurazione che vengono eseguiti sulle richieste di pagina (richieste di GET) effettuate ai server web in cui è stato installato.
 
-Sensor acquisisce tutti i dati di misurazione eseguiti sulle richieste di pagina (richieste GET) effettuate ai server Web in cui è stata installata.
+[!DNL Sensor] acquisisce i dati di misurazione tramite l’interfaccia di programmazione dell’applicazione del server web, direttamente dall’istanza o dalle istanze del software del server web in esecuzione sul server web. [!DNL Sensor] non accede ai file di registro generati dal server web. Infatti, dopo che [!DNL Sensor] e il server di Data Workbench sono stati installati e testati, la funzione di registrazione nativa del server web può essere disabilitata senza influire sulla raccolta dei dati. In molti casi, la disabilitazione della registrazione dei file sui dischi locali dei computer server web migliora la capacità di servizio delle pagine di tali server web a causa della quantità relativamente grande di I/O disco fisso necessaria per registrare tali informazioni sul disco locale del computer server web.
 
-[!DNL Sensor] acquisisce questi dati di misurazione attraverso l&#39;interfaccia di programmazione dell&#39;applicazione del server Web, direttamente dall&#39;istanza o dalle istanze del software del server Web in esecuzione sul server Web. [!DNL Sensor] non accede ai file di registro generati dal server Web. Infatti, dopo che [!DNL Sensor] e dopo che il server workbench dati è stato installato e testato, la funzione di registrazione nativa del server Web può essere disattivata senza influire sulla raccolta dei dati. In molti casi, la disabilitazione della registrazione di file ai dischi locali dei computer server Web migliora la capacità di trasmissione delle pagine di tali server Web, a causa della quantità relativamente grande di I/O disco fisso richiesto per registrare queste informazioni sul disco locale del server Web.
+[!DNL Sensor] raccoglie i dati di misurazione e richiesta web direttamente da ogni processo del server web e del server web virtuale (se applicabile) e scrive temporaneamente i dati in un file di coda, una coda di memoria a tolleranza di errore con supporto del disco fisso, sul server web. Il servizio Sensor Transmitter (o daemon a seconda della piattaforma) recupera i dati dal file di coda, quindi li comprime e li crittografa prima di trasmetterli al server di Data Workbench per l’archiviazione a lungo termine. Con [!DNL Sensor], i dati vengono accumulati sui computer del server web nel file di coda solo se si sta avendo un problema di rete o di altro tipo che ne impedisce la trasmissione. Il file di coda consente l’efficiente archiviazione locale di ore o giorni di dati di richiesta web per proteggere i dati se un errore di rete o di sistema non consente la trasmissione dei dati al server di Data Workbench in tempo reale.
 
-[!DNL Sensor] raccoglie i dati delle misurazioni e delle richieste Web direttamente da ogni processo del server Web e del server Web virtuale (se applicabile) e scrive temporaneamente i dati su un file di coda, una coda di memoria tollerante agli errori con supporto del disco fisso, nel server Web. Il servizio Sensor Transmitter (o demone a seconda della piattaforma) recupera i dati dal file di coda, quindi li comprime e li codifica prima di trasmetterlo al server del workbench dati per l&#39;archiviazione a lungo termine. Con [!DNL Sensor], i dati vengono accumulati sui computer del server Web nel file coda solo se si ha un problema di rete o di altro tipo che ne impedisce la trasmissione. Il file di coda consente l&#39;efficiente archiviazione locale di ore a giorni di dati di richiesta web per proteggere i dati se un errore di rete o di sistema non consente la trasmissione dei dati al server workbench dati in tempo reale.
+[!DNL Sensor] raccoglie i dati di misurazione da ciascun processo del server web fisico e logico, li filtra per tipo di contenuto, li comprime, li crittografa e li invia in streaming al server di Data Workbench.
 
-[!DNL Sensor] raccoglie i dati di misurazione da ciascun processo del server Web fisico e logico, li filtra per tipo di contenuto, li comprime, li cifra e li invia in streaming al server del workbench dati.
-
-La tabella seguente contiene i campi delle informazioni di registro acquisite da [!DNL Sensor] per ogni richiesta GET che non viene filtrata in base al file di [!DNL Sensor’s] configurazione:
+La tabella seguente contiene i campi delle informazioni di log acquisite da [!DNL Sensor] per ogni richiesta di GET che non viene filtrata in base al file di configurazione [!DNL Sensor’s]:
 
 <table id="table_5F65474150EC41648B35D0B031FB9B15"> 
  <thead> 
@@ -35,13 +36,13 @@ La tabella seguente contiene i campi delle informazioni di registro acquisite da
   <tr> 
    <td colname="col1"> x-trackingid </td> 
    <td colname="col2"> Identificatore di tracciamento (visitatore univoco) </td> 
-   <td colname="col3"> Identificatore letto da un cookie inserito nel browser dell'utente dal <span class="wintitle"> sensore </span> nella richiesta iniziale del visitatore </td> 
+   <td colname="col3"> Identificatore letto da un cookie inserito nel browser dell’utente da <span class="wintitle"> Sensor </span> sulla richiesta iniziale del visitatore </td> 
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Data </p> <p>Tempo </p> </td> 
    <td colname="col2"> Timestamp </td> 
-   <td colname="col3"> Tempo di elaborazione della richiesta da parte del server (con precisione di 100 ns; la precisione dipende dall'ambiente del server e dall'NTP) </td> 
+   <td colname="col3"> il momento in cui la richiesta è stata elaborata dal server (con precisione di 100 ns; la precisione dipende dall'ambiente del server e da NTP) </td> 
    <td colname="col4"> 2002-11-21 17:21:45.123 </td> 
   </tr> 
   <tr> 
@@ -52,15 +53,15 @@ La tabella seguente contiene i campi delle informazioni di registro acquisite da
   </tr> 
   <tr> 
    <td colname="col1"> sc-status </td> 
-   <td colname="col2"> Codice stato risposta HTTP </td> 
-   <td colname="col3"> Codice numerico generato dal server che nota lo stato della risposta del server HTTP </td> 
+   <td colname="col2"> Codice di stato della risposta HTTP </td> 
+   <td colname="col3"> Codice numerico generato dal server che prende nota dello stato della risposta del server HTTP </td> 
    <td colname="col4"> 404 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-stem </td> 
-   <td colname="col2"> URI Stem </td> 
+   <td colname="col2"> Stile URI </td> 
    <td colname="col3"> La parte di stelo dell'URI richiesto dal client </td> 
-   <td colname="col4"> <span class="filepath"> pagedir/page.asp </span> </td> 
+   <td colname="col4"> <span class="filepath"> pagedir/page.asp  </span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> c-ip </td> 
@@ -70,15 +71,15 @@ La tabella seguente contiene i campi delle informazioni di registro acquisite da
   </tr> 
   <tr> 
    <td colname="col1"> s-dns </td> 
-   <td colname="col2"> Nome dominio server </td> 
-   <td colname="col3"> Nome di dominio del server Web che elabora la richiesta </td> 
-   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td> 
+   <td colname="col2"> Nome di dominio del server </td> 
+   <td colname="col3"> Nome di dominio del server web che elabora la richiesta </td> 
+   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(referrer) </td> 
    <td colname="col2"> URL di riferimento </td> 
    <td colname="col3"> Contenuto del campo referente HTTP inviato dal client </td> 
-   <td colname="col4"> <span class="filepath"> http://www.referringsite.com </span> </td> 
+   <td colname="col4"> <span class="filepath"> http://www.referringsite.com  </span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(user-agent) </td> 
@@ -95,9 +96,8 @@ La tabella seguente contiene i campi delle informazioni di registro acquisite da
   <tr> 
    <td colname="col1"> cs-uri-query </td> 
    <td colname="col2"> Stringa di query </td> 
-   <td colname="col3"> Eventuale porzione della stringa di query dell’URI richiesto dal client </td> 
+   <td colname="col3"> La porzione, se presente, dell'URI richiesto dal client </td> 
    <td colname="col4"> PAGENAME=dynamic1&amp;link=3001 </td> 
   </tr> 
  </tbody> 
 </table>
-
