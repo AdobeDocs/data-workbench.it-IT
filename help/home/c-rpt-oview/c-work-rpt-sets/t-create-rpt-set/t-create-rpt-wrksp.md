@@ -1,32 +1,33 @@
 ---
-description: Potete creare più aree di lavoro per un singolo set di rapporti direttamente nel piano di lavoro.
-solution: Analytics
-title: Creare le aree di lavoro del server di report
-topic: Data workbench
+description: Puoi creare più aree di lavoro per un singolo set di rapporti direttamente nel Worktop (piano di lavoro).
+title: Creare le aree di lavoro del server di rapporto
 uuid: 818569c7-fff9-4277-996b-8c47e4ef1dbc
+exl-id: 2bc068f1-c32f-4c14-b3fa-6b46e950abc7
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 10%
 
 ---
 
+# Creare le aree di lavoro del server di rapporto{#create-the-report-server-workspaces}
 
-# Creare le aree di lavoro del server di report{#create-the-report-server-workspaces}
+Puoi creare più aree di lavoro per un singolo set di rapporti direttamente nel Worktop (piano di lavoro).
 
-Potete creare più aree di lavoro per un singolo set di rapporti direttamente nel piano di lavoro.
+Per informazioni su Data Workbench e sull’utilizzo dell’interfaccia, consulta la [Guida del client Data Workbench](https://docs.adobe.com/content/help/it-IT/data-workbench/using/client/t-open-ins.html).
 
-Per informazioni sul workbench dati e sull&#39;utilizzo dell&#39;interfaccia, vedere la [Guida](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html)client Workbench dati.
+**Per creare un’area di lavoro di un rapporto utilizzando[!DNL Worktop]**
 
-**Per creare un’area di lavoro di un rapporto con il pulsante[!DNL Worktop]**
+1. All’interno di Data Workbench, nella scheda [!DNL Reports] , seleziona la cartella del set di rapporti (scheda o sottodirectory a discesa) in cui desideri aggiungere i nuovi rapporti.
+1. Aggiungi un’area di lavoro report utilizzando uno dei seguenti metodi:
 
-1. Nel workbench dati, nella [!DNL Reports] scheda, selezionare la cartella del set di report (scheda o sottodirectory a discesa) in cui si desidera aggiungere i nuovi report.
-1. Per aggiungere un’area di lavoro rapporti, effettuate una delle seguenti operazioni:
+   * Fai clic con il pulsante destro del mouse nella sottodirectory del set di rapporti desiderata e fai clic su **[!UICONTROL New]** > **[!UICONTROL Blank Workspace]** o **[!UICONTROL New]** > **[!UICONTROL Report Template]**.
 
-   * Fare clic con il pulsante destro del mouse all&#39;interno della sottodirectory del set di rapporti desiderata e scegliere **[!UICONTROL New]** > **[!UICONTROL Blank Workspace]** o **[!UICONTROL New]** > **[!UICONTROL Report Template]**.
+      -oppure-
 
-      -or-
-
-   * Copiate un’area di lavoro da un’altra posizione e incollatela nella cartella del set di rapporti appropriata della [!DNL Reports] scheda.
+   * Copia un&#39;area di lavoro da un&#39;altra posizione e incollala nella cartella appropriata del set di rapporti nella scheda [!DNL Reports] .
 
 1. Fai clic sulla miniatura per aprire l’area di lavoro e aggiungere al rapporto le visualizzazioni, le legende e le annotazioni desiderate.
-1. Per assegnare un nome al rapporto, fate clic sul testo nella barra del titolo del rapporto per passare alla modalità di modifica e digitate il nuovo titolo.
-1. Per salvare il rapporto, fai clic con il pulsante destro del mouse sulla barra del titolo del rapporto e fai clic **[!UICONTROL Save]**.
+1. Per assegnare un nome al rapporto, fai clic sul testo nella barra del titolo del rapporto per accedere alla modalità di modifica e digita il nuovo titolo.
+1. Per salvare il rapporto, fare clic con il pulsante destro del mouse sulla barra del titolo del rapporto e fare clic su **[!UICONTROL Save]**.
