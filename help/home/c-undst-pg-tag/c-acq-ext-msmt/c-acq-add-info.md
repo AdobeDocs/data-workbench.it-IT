@@ -1,22 +1,23 @@
 ---
-description: Le variabili stringa di query possono essere aggiunte a una richiesta JavaScript per raccogliere ulteriori misure quando viene effettuata una richiesta.
-solution: Analytics
+description: Le variabili della stringa di query possono essere aggiunte a una richiesta JavaScript per raccogliere misurazioni aggiuntive quando viene effettuata una richiesta.
 title: Acquisizione di informazioni aggiuntive
-topic: Data workbench
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
+exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 4%
 
 ---
 
-
 # Acquisizione di informazioni aggiuntive{#acquiring-additional-information}
 
-Le variabili stringa di query possono essere aggiunte a una richiesta JavaScript per raccogliere ulteriori misure quando viene effettuata una richiesta.
+Le variabili della stringa di query possono essere aggiunte a una richiesta JavaScript per raccogliere misurazioni aggiuntive quando viene effettuata una richiesta.
 
-Queste variabili possono essere aggiunte manualmente o mediante script nella pagina stessa.
+Queste variabili possono essere aggiunte manualmente o da uno script nella pagina stessa.
 
-Ulteriori informazioni che è possibile acquisire da una pagina possono essere aggiunte all&#39;oggetto incorporato tramite script utilizzando il seguente codice come esempio:
+Ulteriori informazioni che possono essere acquisite da una pagina possono essere aggiunte all&#39;oggetto incorporato tramite script utilizzando il seguente codice come esempio:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -36,11 +37,10 @@ v["_2"] = "visa";
 <!-- END REFERENCE PAGE TAG-->
 ```
 
-In questo esempio, le variabili di script per v_1 e v_2 possono essere derivate da un&#39;altra funzione all&#39;interno della pagina Web. Le variabili sono state inserite come esempi. Oltre alle misure di base acquisite con ciascuna richiesta, con la richiesta dell’URL soprastante si acquisirebbero le seguenti misure estese:
+In questo esempio, le variabili di script per v_1 e v_2 possono essere derivate da un&#39;altra funzione all&#39;interno della pagina web. Le variabili sono state inserite come esempi. Oltre alle misurazioni della linea di base acquisite con ciascuna richiesta, con la richiesta dell&#39;URL di cui sopra si acquisiscono le seguenti misurazioni estese:
 
 | Dati raccolti | Spiegazione | Esempio |
 |---|---|---|
-| v_pn= | Valore associato alla variabile della stringa di query v_pn | v_pn=Modulo applicazione |
-| v_1= | Valore associato alla variabile della stringa della query v_1 | v_1=99.99 |
-| v_2= | Valore associato alla variabile della stringa della query v_2 | v_2=visto |
-
+| v_pn= | Valore associato alla variabile della stringa di query v_pn | v_pn=Modulo di applicazione |
+| v_1= | Valore associato alla variabile della stringa di query v_1 | v_1=99.99 |
+| v_2= | Valore associato alla variabile della stringa di query v_2 | v_2=visto |
