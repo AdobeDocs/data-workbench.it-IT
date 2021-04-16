@@ -1,23 +1,24 @@
 ---
-description: Informazioni sulle numerose visualizzazioni di analisi disponibili in Workbench dati.
-solution: Analytics
+description: Informazioni sulle numerose visualizzazioni di analisi disponibili nella Data Workbench.
 title: Visualizzazioni di analisi
-topic: Data workbench
 uuid: db003afa-b971-4510-b762-3ef9b29e0910
+exl-id: a455d3cc-8133-4a08-9656-91332765c6c3
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 4%
 
 ---
 
-
 # Visualizzazioni di analisi{#analysis-visualizations}
 
-Informazioni sulle numerose visualizzazioni di analisi disponibili in Workbench dati.
+Informazioni sulle numerose visualizzazioni di analisi disponibili nella Data Workbench.
 
-* Per aprire una qualsiasi visualizzazione, fai clic con il pulsante destro del mouse in un’area di lavoro e seleziona l’opzione di menu desiderata oppure fai clic su **Ctrl** + **n**.
+* Per aprire una visualizzazione, fai clic con il pulsante destro del mouse in un’area di lavoro e seleziona l’opzione di menu desiderata, oppure fai clic su **Ctrl** + **n**.
 
-* Le visualizzazioni non possono essere importate come aree di lavoro. Quando fate clic con il pulsante destro del mouse sul piano di lavoro e selezionate **[!UICONTROL Import]**, potete importare un’area di lavoro esistente, ma non una visualizzazione che risiede all’esterno dell’area di lavoro.
+* Le visualizzazioni non possono essere importate come aree di lavoro. Quando fai clic con il pulsante destro del mouse sul Worktop (piano di lavoro) e seleziona **[!UICONTROL Import]** (Aggiungi area di lavoro), puoi importare un’area di lavoro esistente, ma non una visualizzazione che si trova al di fuori dell’area di lavoro.
 
    ![](assets/import_workspace.png)
 
-   Se tenti di importare una visualizzazione, riceverai un errore di tipo &quot;Area di lavoro non valida&quot;.
+   Se tenti di importare una visualizzazione, riceverai un errore &quot;workspace non valido&quot;.
