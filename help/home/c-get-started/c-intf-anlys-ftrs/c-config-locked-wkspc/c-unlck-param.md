@@ -1,34 +1,34 @@
 ---
 description: Il parametro Sblocca nel file Insight.cfg di un utente specifica se l’utente dispone dell’autorizzazione per sbloccare temporaneamente le aree di lavoro bloccate per la modifica.
-solution: Analytics
-title: Impostate il parametro unlock
-topic: Data workbench
+title: Impostate il parametro di sblocco
 uuid: db094e32-7d82-4f93-a492-a6bed33ae722
+exl-id: 5eda919f-4cfe-4692-9dbf-f7cf64fde1de
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 3%
 
 ---
 
-
-# Impostate il parametro unlock{#set-the-unlock-parameter}
+# Impostate il parametro di sblocco{#set-the-unlock-parameter}
 
 Il parametro Sblocca nel file Insight.cfg di un utente specifica se l’utente dispone dell’autorizzazione per sbloccare temporaneamente le aree di lavoro bloccate per la modifica.
 
-Se il parametro Sblocca è già presente nel [!DNL Insight.cfg] file dell&#39;utente, è possibile modificarlo utilizzando Workbench dati. Se non è già presente nel [!DNL Insight.cfg] file dell&#39;utente, è necessario aggiungerlo al file utilizzando un editor di testo, ad esempio Blocco note.
+Se il parametro Sblocca è già presente nel file dell’utente [!DNL Insight.cfg], puoi modificare il parametro utilizzando Data Workbench. Se non è già presente nel file [!DNL Insight.cfg] dell’utente, è necessario aggiungerlo al file utilizzando un editor di testo, ad esempio Blocco note.
 
-**Per impostare un[!DNL Unlock]parametro esistente nel file Insight.cfg**
+**Per impostare un  [!DNL Unlock] parametro esistente nel file Insight.cfg**
 
-1. In un’area di lavoro, fate clic con il pulsante destro del mouse **[!UICONTROL Admin]** > **[!UICONTROL Client Configuration]**. Si apre il [!DNL Insight.cfg] file.
-1. Per il parametro Sblocca, digitate true o false. True consente all&#39;utente di sbloccare temporaneamente qualsiasi area di lavoro bloccata, mentre false non lo fa.
-1. Per salvare le modifiche alla configurazione, fai clic con il pulsante destro del mouse **[!UICONTROL Insight.cfg (modified)]** nella parte superiore della finestra e fai clic su **[!UICONTROL Save as Insight.cfg]**.
+1. In un’area di lavoro, fai clic con il pulsante destro del mouse su **[!UICONTROL Admin]** > **[!UICONTROL Client Configuration]**. Viene aperto il file [!DNL Insight.cfg] .
+1. Per il parametro Sblocca, digitare true o false. True consente all&#39;utente di sbloccare temporaneamente qualsiasi area di lavoro bloccata, mentre false non lo consente.
+1. Per salvare le modifiche di configurazione, fai clic con il pulsante destro del mouse su **[!UICONTROL Insight.cfg (modified)]** nella parte superiore della finestra e fai clic su **[!UICONTROL Save as Insight.cfg]**.
 
-**Per aggiungere il parametro Sblocca al file Insight.cfg**
+**Per aggiungere il parametro Unlock al file Insight.cfg**
 
-1. Accedere alla directory di installazione di Workbench dati e aprire il [!DNL Insight.cfg] file utilizzando un editor di testo, come Blocco note.
-1. Aggiungete il parametro Sblocca alla fine del file, come nell’esempio seguente:
+1. Accedi alla directory di installazione di Data Workbench e apri il file [!DNL Insight.cfg] utilizzando un editor di testo, ad esempio Blocco note.
+1. Aggiungi il parametro Sblocca alla fine del file, come nell’esempio seguente:
 
 [!DNL Unlock = bool: false]
 
-1. Impostate il valore su true o false. True consente all&#39;utente di sbloccare temporaneamente qualsiasi area di lavoro bloccata, mentre false non lo fa.
-1. Salvate e chiudete il file.
-
+1. Imposta il valore su true o false. True consente all&#39;utente di sbloccare temporaneamente qualsiasi area di lavoro bloccata, mentre false non lo consente.
+1. Salva e chiudi il file.
