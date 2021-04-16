@@ -1,19 +1,20 @@
 ---
-description: Workbench dati consente di creare nuove metriche, filtri e dimensioni per espandere le informazioni disponibili tramite un'applicazione o per personalizzare facilmente le definizioni dell'applicazione in base alle proprie esigenze. La natura aperta di metriche, dimensioni e filtri consente di rispondere a più domande quando si aggiungono nuove metriche e dimensioni.
-solution: Analytics
+description: Data Workbench consente di creare nuove metriche, filtri e dimensioni per espandere le informazioni disponibili tramite un’applicazione o personalizzare facilmente le definizioni dell’applicazione in base alle tue esigenze. La natura aperta di metriche, dimensioni e filtri consente di rispondere a ulteriori domande quando si aggiungono nuove metriche e dimensioni.
 title: Espansione di metriche, dimensioni e filtri
-topic: Data workbench
 uuid: eaec0731-1916-4063-9fda-3a92ee325024
+exl-id: 5a7719a3-ba2e-4361-87e0-4d0df23196df
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 4%
 
 ---
 
-
 # Espansione di metriche, dimensioni e filtri{#expanding-metrics-dimensions-and-filters}
 
-Workbench dati consente di creare nuove metriche, filtri e dimensioni per espandere le informazioni disponibili tramite un&#39;applicazione o per personalizzare facilmente le definizioni dell&#39;applicazione in base alle proprie esigenze. La natura aperta di metriche, dimensioni e filtri consente di rispondere a più domande quando si aggiungono nuove metriche e dimensioni.
+Data Workbench consente di creare nuove metriche, filtri e dimensioni per espandere le informazioni disponibili tramite un’applicazione o personalizzare facilmente le definizioni dell’applicazione in base alle tue esigenze. La natura aperta di metriche, dimensioni e filtri consente di rispondere a ulteriori domande quando si aggiungono nuove metriche e dimensioni.
 
-Le metriche definite di recente possono essere valutate su dimensioni esistenti e, analogamente, possono essere valutate su dimensioni appena definite. Le metriche definite di recente possono essere utilizzate anche come input in altre metriche. Poiché le metriche sono basate sul lato client (ovvero, la loro costruzione non richiede l&#39;elaborazione del dataset), hanno un impatto minimo sulle prestazioni del sistema. Potete aumentare le capacità di analisi creando molti livelli di metriche.
+Le metriche definite di recente possono essere valutate rispetto alle dimensioni esistenti e, analogamente, possono essere valutate rispetto a dimensioni appena definite. Le metriche appena definite possono essere utilizzate anche come input in altre metriche. Poiché le metriche sono generate sul lato client (ovvero, la loro costruzione non richiede l’elaborazione del set di dati), hanno un impatto minimo sulle prestazioni del sistema. Puoi aumentare le funzionalità di analisi creando molti livelli di metriche.
 
-Per ulteriori informazioni sulla sintassi utilizzata per manipolare metriche, dimensioni e filtri, consulta Sintassi [del](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-qry-lang-syntx.html)linguaggio.
+Per ulteriori informazioni sulla sintassi utilizzata per manipolare metriche, dimensioni e filtri, consulta [sintassi del linguaggio](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-qry-lang-syntx.html).
