@@ -1,25 +1,24 @@
 ---
-description: Quando si riavvia un computer Insight Server, è prima necessario arrestare il servizio Insight Server.
-solution: Analytics
+description: Quando si riavvia un computer Insight Server, è innanzitutto necessario arrestare il servizio Insight Server.
 title: Riavvio del servizio
 uuid: fda05e5a-9527-43e0-86c8-c4adba51955c
+exl-id: 2ba63d84-edf9-4442-a0f8-e08e88935374
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '60'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
-
 # Riavvio del servizio{#restarting-the-service}
 
-Quando si riavvia un computer Insight Server, è prima necessario arrestare il servizio Insight Server.
+Quando si riavvia un computer Insight Server, è innanzitutto necessario arrestare il servizio Insight Server.
 
-**Frequenza consigliata:** Solo se necessario
+**Frequenza consigliata:** solo se necessario
 
-**Per arrestare il[!DNL Insight Server]servizio**
+**Per interrompere il  [!DNL Insight Server] servizio**
 
 1. Fai clic su **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Services]**.
-1. Selezionate il [!DNL Insight Server] servizio e fate clic sul **[!UICONTROL Stop]** pulsante.
-Quando si riavvia il [!DNL Insight Server] computer, il [!DNL Insight Server] servizio viene avviato automaticamente.
+1. Seleziona il servizio [!DNL Insight Server] e fai clic sul pulsante **[!UICONTROL Stop]** .
+Quando si riavvia il computer [!DNL Insight Server], il servizio [!DNL Insight Server] viene avviato automaticamente.
