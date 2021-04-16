@@ -1,28 +1,29 @@
 ---
-description: Le mappe di processo possono essere configurate in modo da funzionare con qualsiasi combinazione di dimensione di base, dimensione di gruppo, dimensione di livello e metrica adatta all'applicazione e al set di dati.
-solution: Analytics
-title: Configurare una mappa di processo
-topic: Data workbench
+description: Le mappe dei processi possono essere configurate in modo da funzionare con qualsiasi combinazione di dimensioni di base, dimensioni di gruppo, dimensione di livello e metrica significativa per l’applicazione e il set di dati.
+title: Configurare una mappa del processo
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
+exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 1%
 
 ---
 
+# Configurare una mappa del processo{#configure-a-process-map}
 
-# Configurare una mappa di processo{#configure-a-process-map}
+Le mappe dei processi possono essere configurate in modo da funzionare con qualsiasi combinazione di dimensioni di base, dimensioni di gruppo, dimensione di livello e metrica significativa per l’applicazione e il set di dati.
 
-Le mappe di processo possono essere configurate in modo da funzionare con qualsiasi combinazione di dimensione di base, dimensione di gruppo, dimensione di livello e metrica adatta all&#39;applicazione e al set di dati.
+Dopo aver configurato una mappa del processo, questa viene elencata con altre mappe del processo in [!DNL Add Visualization menu].
 
-Dopo aver configurato una mappa di processo, questa viene elencata con altre mappe di processo nella [!DNL Add Visualization menu].
+1. In [!DNL Profile Manager], fai clic su **[!UICONTROL Menu]**, fai clic su **[!UICONTROL Add Visualization]**, quindi fai clic sul tipo di mappa del processo da configurare (Mappa della metrica 2D, Mappa del processo 2D o Mappa del processo 3D).
 
-1. In [!DNL Profile Manager], fate clic **[!UICONTROL Menu]**, fate clic **[!UICONTROL Add Visualization]**, quindi fate clic sul tipo di mappa del processo da configurare (Mappa della metrica 2D, Mappa del processo 2D o Mappa del processo 3D).
+   Nella directory risiede almeno un file [!DNL *.vw].
 
-   Almeno un [!DNL *.vw] file risiede nella directory.
-
-1. Fare clic con il pulsante destro del mouse sul segno di spunta per il file desiderato e fare clic **[!UICONTROL Make Local]**.
-1. Fare clic con il pulsante destro del mouse sul segno di spunta del file nella [!DNL User] colonna e scegliere **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
-1. Modificate i parametri del file utilizzando come guide il file di esempio e la tabella seguenti:
+1. Fai clic con il pulsante destro del mouse sul segno di spunta per il file desiderato e fai clic su **[!UICONTROL Make Local]**.
+1. Fai clic con il pulsante destro del mouse sul segno di spunta del file nella colonna [!DNL User] e fai clic su **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Modifica i parametri del file utilizzando il file di esempio e la tabella seguenti come guide:
 
    ```
    window = simpleBorderWindow: 
@@ -50,8 +51,8 @@ Dopo aver configurato una mappa di processo, questa viene elencata con altre map
 <table id="table_3F072DB1B68746C49DF9332718982EBE"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Per questo parametro... </th> 
-   <th colname="col2" class="entry"> Fornire queste informazioni... </th> 
+   <th colname="col1" class="entry"> Per questo parametro.. </th> 
+   <th colname="col2" class="entry"> Fornisci queste informazioni.. </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -61,15 +62,15 @@ Dopo aver configurato una mappa di processo, questa viene elencata con altre map
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>Nome dimensione di base</i> </p> </td> 
-   <td colname="col2"> <p>Nome della dimensione i cui elementi appaiono come nodi sulla mappa di processo. </p> </td> 
+   <td colname="col2"> <p>Nome della dimensione i cui elementi vengono visualizzati come nodi nella mappa del processo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>Nome dimensione livello</i> </p> </td> 
-   <td colname="col2"> <p>Il nome del livello (padre) della dimensione di base di cui trascinare gli elementi nella mappa di processo. </p> </td> 
+   <td colname="col2"> <p>Nome del livello (padre) della dimensione di base di cui si trascinano gli elementi nella mappa del processo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>Nome dimensione gruppo</i> </p> </td> 
-   <td colname="col2"> <p>Nome della dimensione che determina il modo in cui gli elementi della dimensione livello vengono raggruppati per formare le connessioni tra i nodi. Una connessione tra due nodi non può estendersi su più di un elemento di una dimensione gruppo. Quando si effettua una selezione basata su un nodo all'interno di una mappa di processo, si selezionano tutti gli elementi della dimensione del gruppo che hanno interessato tale nodo. </p> </td> 
+   <td colname="col2"> <p>Nome della dimensione che determina il modo in cui gli elementi della dimensione di livello vengono raggruppati per formare le connessioni tra nodi. Una connessione tra due nodi non può estendersi su più di un elemento di una dimensione di gruppo. Quando effettui una selezione basata su un nodo all’interno di una mappa del processo, stai selezionando tutti gli elementi della dimensione del gruppo che coinvolgono quel nodo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>Nome della metrica per la mappa metrica</i> </p> </td> 
@@ -80,14 +81,14 @@ Dopo aver configurato una mappa di processo, questa viene elencata con altre map
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla dimensione di base, la dimensione del gruppo, la dimensione del livello e la metrica per una mappa di processo, consultate [Mappe](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e)di processo.
+>Per ulteriori informazioni sulla dimensione di base, la dimensione di gruppo, la dimensione di livello e la metrica per una mappa del processo, consulta [Mappe del processo](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
 
-1. In Blocco note, fare clic **[!UICONTROL File]** > **[!UICONTROL Save As]** per salvare il file con un nuovo nome basato sulla dimensione di base, ovvero Nome *dimensione di* base.vw.
+1. Nel Blocco note, fai clic su **[!UICONTROL File]** > **[!UICONTROL Save As]** per salvare il file con un nuovo nome basato sulla dimensione di base, ovvero *Nome della dimensione di base*.vw.
 
-   Se stai configurando una mappa metrica 2D, devi salvare il file con un nome basato sul nome della metrica per la mappa metrica, ovvero il nome della *metrica per la mappa* metrica. Accertatevi di salvare il file nella directory appropriata della mappa di processo.
+   (Per configurare una mappa metrica 2D, è necessario salvare il file con un nome basato sul nome della metrica per la mappa metrica, ovvero *Nome della metrica per la mappa metrica*.vw.) Assicurati di salvare il file nella directory di mappa del processo appropriata.
 
    >[!NOTE]
    >
-   >Per essere certi che la mappa del processo venga salvata come [!DNL *.vw] file, nella [!DNL Save As] finestra impostate Salva come tipo su Tutti i file.
+   >Per assicurarti che la mappa del processo sia salvata come file [!DNL *.vw], nella finestra [!DNL Save As] imposta il tipo Salva come su Tutti i file.
 
-1. (Facoltativo) Per rendere disponibili le modifiche a tutti gli utenti del profilo di lavoro, nel [!DNL Profile Manager]pannello fare clic con il pulsante destro del mouse sul segno di spunta del file nella [!DNL User] colonna e scegliere **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. (Facoltativo) Per rendere le modifiche disponibili a tutti gli utenti del profilo di lavoro, nella sezione [!DNL Profile Manager] fai clic con il pulsante destro del mouse sul segno di spunta del file nella colonna [!DNL User] e fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
