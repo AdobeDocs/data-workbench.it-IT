@@ -1,32 +1,30 @@
 ---
-description: I file di registro di controllo tengono traccia di tutte le connessioni e le disconnessioni tentate da Insight Server, ciascuna delle quali è registrata nei file <YYYYMMDD>-access.txt che si trovano per impostazione predefinita nella cartella Audit all'interno della directory di installazione di Insight Server.
-solution: Analytics
+description: I file di log di controllo tengono traccia di tutte le connessioni tentate a Insight Server e delle disconnessioni da esse, ognuna delle quali è registrata nei file <YYYYMMDD>-access.txt che si trovano per impostazione predefinita nella cartella Audit all'interno della directory di installazione di Insight Server.
 title: Monitoraggio degli audit di controllo
 uuid: 38af9328-3f72-48a4-a0de-bf7477fedc25
+exl-id: 220330da-e5dc-4ac0-9b70-42b08ccb3577
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 4%
 
 ---
 
-
 # Monitoraggio degli audit di controllo{#monitoring-audit-logs}
 
-I file di registro di controllo tengono traccia di tutte le connessioni tentate e le disconnessioni da Insight Server, ciascuna delle quali è registrata nei `<YYYYMMDD>-access.txt` file che si trovano per impostazione predefinita nella cartella di controllo all&#39;interno della directory di installazione di Insight Server.
+I file di registro di controllo tengono traccia di tutte le connessioni tentate a Insight Server e delle disconnessioni da esse, ognuna delle quali è registrata nei file `<YYYYMMDD>-access.txt` che si trovano per impostazione predefinita nella cartella di controllo all’interno della directory di installazione di Insight Server.
 
-**Frequenza consigliata:** Giornaliero o in base alle esigenze per la risoluzione dei problemi
+**Frequenza consigliata:** giornaliera o in base alle esigenze per la risoluzione dei problemi
 
-I registri di controllo possono essere molto utili per risolvere i problemi di connessione a [!DNL Insight Server]. È possibile monitorare questi registri utilizzando lo strumento di gestione automatizzata o visualizzando direttamente i [!DNL access.txt] file.
+I log di controllo possono essere molto utili per la risoluzione dei problemi relativi alla connessione a [!DNL Insight Server]. Puoi monitorare questi registri utilizzando il tuo strumento di gestione automatizzata o visualizzando direttamente i file [!DNL access.txt] .
 
-**Per visualizzare i file access.txt tramite il pannello[!DNL Server Files Manager]**
+**Per visualizzare i file access.txt tramite[!DNL Server Files Manager]**
 
-1. In [!DNL Insight], nella scheda [!DNL Admin] > [!DNL Dataset and Profile] , fare clic sulla **[!UICONTROL Servers Manager]** miniatura per aprire l&#39;area di lavoro Server Manager.
-1. Fare clic con il pulsante destro del mouse sull&#39;icona di un elemento attivo [!DNL Insight Server] e fare clic **[!UICONTROL Server Files]**.
-1. Nella [!DNL Server Files Manager], fate clic **[!UICONTROL Audit]** per visualizzarne il contenuto.
-1. Fare clic con il pulsante destro del mouse sul segno di spunta nella colonna del nome *del* server accanto al file desiderato, quindi fare clic **[!UICONTROL Make Local]**. Un segno di spunta viene visualizzato accanto al nome del file nella [!DNL Temp] colonna.
-1. Fare clic con il pulsante destro del mouse sul nuovo segno di spunta nella [!DNL Temp] colonna e scegliere **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Il registro di controllo viene visualizzato in una nuova finestra Blocco note di Microsoft Windows.
+1. In [!DNL Insight], nella scheda [!DNL Admin] > [!DNL Dataset and Profile] fare clic sulla miniatura **[!UICONTROL Servers Manager]** per aprire l&#39;area di lavoro di Server Manager.
+1. Fai clic con il pulsante destro del mouse sull&#39;icona di un elemento attivo [!DNL Insight Server] e fai clic su **[!UICONTROL Server Files]**.
+1. In [!DNL Server Files Manager], fai clic su **[!UICONTROL Audit]** per visualizzarne il contenuto.
+1. Fai clic con il pulsante destro del mouse sul segno di spunta nella colonna *nome server* accanto al file desiderato e fai clic su **[!UICONTROL Make Local]**. Accanto al nome del file nella colonna [!DNL Temp] viene visualizzato un segno di spunta.
+1. Fai clic con il pulsante destro del mouse sul nuovo segno di spunta nella colonna [!DNL Temp] e fai clic su **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Il registro di controllo viene visualizzato in una nuova finestra Blocco note di Microsoft Windows.
 
    ![Informazioni sul passaggio](assets/cfg_accesscontrol_accessFile.png)
-
