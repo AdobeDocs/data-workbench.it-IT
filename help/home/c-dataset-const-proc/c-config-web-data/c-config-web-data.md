@@ -1,16 +1,16 @@
 ---
-description: Molte impostazioni di configurazione specifiche per il Web per il sito sono definite in Log Processing and Transformation Dataset Include i file.
-solution: Analytics
-title: Impostazioni di configurazione per i dati Web
-topic: Data workbench
+description: Molte impostazioni di configurazione specifiche per il sito sono definite in Elaborazione del registro e Trasformazione Dataset Include files.
+title: Impostazioni di configurazione per i dati web
 uuid: f7d91bb9-d6b3-49e1-a4dc-c7aba08f2906
+exl-id: 575c2c5b-4453-4522-bde0-feabddaec4c3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '42'
+ht-degree: 23%
 
 ---
 
+# Impostazioni di configurazione per i dati web{#configuration-settings-for-web-data}
 
-# Impostazioni di configurazione per i dati Web{#configuration-settings-for-web-data}
-
-Molte impostazioni di configurazione specifiche per il Web per il sito sono definite in Log Processing and Transformation Dataset Include i file.
-
+Molte impostazioni di configurazione specifiche per il sito sono definite in Elaborazione del registro e Trasformazione Dataset Include files.
