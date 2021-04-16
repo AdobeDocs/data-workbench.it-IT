@@ -1,14 +1,15 @@
 ---
 description: Esempio di codice del foglio di stile XSL.
-solution: Analytics
 title: Esempio di foglio di stile XSL
-topic: Data workbench
 uuid: cac5c5ad-b0ec-45d8-901d-e39ce1f6d61a
+exl-id: 688b0ce5-999b-4cfc-9228-146450132aee
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '20'
+ht-degree: 40%
 
 ---
-
 
 # Esempio di foglio di stile XSL{#sample-xsl-style-sheet}
 
@@ -34,4 +35,3 @@ Esempio di codice del foglio di stile XSL.
 </xsl:template>
 </xsl:stylesheet>
 ```
-
