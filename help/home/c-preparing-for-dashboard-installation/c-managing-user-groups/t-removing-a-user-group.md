@@ -1,19 +1,20 @@
 ---
-description: 'null'
-solution: Analytics
+description: Rimozione di un gruppo di utenti
 title: Rimozione di un gruppo di utenti
-topic: Data workbench
 uuid: 722f7ef9-5f93-4944-a1d2-4fbd7833b4f7
+exl-id: 826e8e4f-d64c-43cc-beff-9e03a27d62ca
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '62'
+ht-degree: 20%
 
 ---
 
-
 # Rimozione di un gruppo di utenti{#removing-a-user-group}
 
-1. Fate clic sull&#39; **[!UICONTROL X]** icona alla fine della riga relativa al gruppo da rimuovere dal sistema.
+1. Fai clic sull&#39;icona **[!UICONTROL X]** alla fine della riga relativa al gruppo da rimuovere dal sistema.
 
-   Viene visualizzato un messaggio che richiede se si desidera eliminare il gruppo 1. Fai clic su **[!UICONTROL Yes]** (Fine).
+   Viene visualizzato un prompt che chiede se si desidera eliminare o meno il gruppo 1. Fai clic su **[!UICONTROL Yes]**.
 
-   Se l&#39;operazione ha avuto esito positivo, verrà visualizzato un messaggio che indica che il gruppo è stato rimosso correttamente.
+   Se l&#39;operazione è riuscita, verrà visualizzato un messaggio che indica che il gruppo è stato rimosso correttamente.
