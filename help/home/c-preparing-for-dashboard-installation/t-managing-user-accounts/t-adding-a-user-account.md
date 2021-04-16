@@ -1,33 +1,34 @@
 ---
-description: 'null'
-solution: Analytics
+description: Aggiunta di un account utente
 title: Aggiunta di un account utente
-topic: Data workbench
 uuid: c322eeaa-a3f4-41e8-b38c-dd892ec29a87
+exl-id: c99f3189-4d89-443a-be5b-84352c4ec6e8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 8%
 
 ---
 
-
 # Aggiunta di un account utente{#adding-a-user-account}
 
-1. Fate clic **[!UICONTROL Add User]** per visualizzare il **[!UICONTROL New User]** prompt.
+1. Fai clic su **[!UICONTROL Add User]** per visualizzare il prompt **[!UICONTROL New User]**.
 
    ![](assets/add_user_account.png)
 
-1. Compilare i campi necessari per completare il modulo.
-   1. **[!UICONTROL Username]**: Immettete il nome utente.
-   1. **[!UICONTROL Password]**: Inserite una password lunga più di 6 caratteri.
-   1. **[!UICONTROL Confirm Password]**: Immettere nuovamente la password.
-   1. **[!UICONTROL Authentication Method]**: selezionare un&#39;opzione dall&#39;elenco a discesa.
+1. Compila i campi necessari per completare il modulo.
+   1. **[!UICONTROL Username]**: Immettere il nome utente.
+   1. **[!UICONTROL Password]**: Immettere una password lunga più di 6 caratteri.
+   1. **[!UICONTROL Confirm Password]**: Immetti nuovamente la password.
+   1. **[!UICONTROL Authentication Method]**: seleziona un’opzione dall’elenco a discesa.
 
-      | **Moduli** | Per impostazione predefinita, il dashboard memorizza l’account utente e l’autenticazione avviene internamente. |
+      | **Forms** | Per impostazione predefinita, il dashboard memorizza l’account utente e esegue l’autenticazione internamente. |
       |---|---|
-      | **LDAP** | Selezionate questa opzione se l’utente deve essere autenticato tramite LDAP. (L&#39;utente deve già esistere nella directory). |
-      | **Windows** | Selezionare se l&#39;utente deve essere autenticato mediante l&#39;autenticazione di Windows (l&#39;utente deve già esistere nella directory di Windows). |
+      | **LDAP** | Selezionare questa opzione se l&#39;utente deve essere autenticato tramite LDAP. (L&#39;utente deve esistere già nella directory). |
+      | **Windows** | Selezionare se l&#39;utente deve essere autenticato utilizzando l&#39;autenticazione Windows (l&#39;utente deve esistere già nella directory Windows). |
 
-1. **[!UICONTROL Assigned Groups]**: Scegliete tra il gruppo Amministratori predefiniti e tutti gli altri gruppi creati. Al momento non è necessario alcun gruppo e l’iscrizione al gruppo dell’utente può essere modificata in qualsiasi momento.
-1. Una volta configurato correttamente il modulo, fare clic **[!UICONTROL Add User]** per aggiungere l&#39;utente al sistema.
+1. **[!UICONTROL Assigned Groups]**: Scegli tra il gruppo Administrators predefinito e tutti gli altri gruppi creati. Al momento non sono necessari gruppi e l’iscrizione al gruppo dell’utente può essere modificata in qualsiasi momento.
+1. Una volta configurato correttamente il modulo, fai clic su **[!UICONTROL Add User]** per aggiungere l’utente al sistema.
 
-   Se l&#39;operazione ha avuto esito positivo, verrà visualizzato un messaggio che indica che l&#39;utente è stato creato.
+   Se l’operazione ha avuto esito positivo, viene visualizzato un messaggio che indica che l’utente è stato creato.
