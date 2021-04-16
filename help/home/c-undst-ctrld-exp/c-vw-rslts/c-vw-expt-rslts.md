@@ -1,38 +1,37 @@
 ---
-description: Dopo aver aggiunto il nuovo campo a Log Processing.cfg e creato la nuova trasformazione Split e la dimensione estesa, è possibile visualizzare la nuova dimensione estesa creata non appena la fase di Fast Input della rielaborazione dei dati è terminata.
+description: Dopo aver aggiunto il nuovo campo a Log Processing.cfg e creato la nuova trasformazione Split e la dimensione estesa, puoi visualizzare la nuova dimensione estesa creata non appena la fase Fast Input della rielaborazione dei dati è terminata.
 solution: Analytics,Analytics
 title: Visualizzazione dei risultati dell’esperimento
-topic: Data workbench
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
+exl-id: cada693c-79cb-4f49-a2f0-6ff60425be1c
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 4%
 
 ---
 
-
 # Visualizzazione dei risultati dell’esperimento{#viewing-the-experiment-results}
 
-Dopo aver aggiunto il nuovo campo a Log Processing.cfg e creato la nuova trasformazione Split e la dimensione estesa, è possibile visualizzare la nuova dimensione estesa creata non appena la fase di Fast Input della rielaborazione dei dati è terminata.
+Dopo aver aggiunto il nuovo campo a Log Processing.cfg e creato la nuova trasformazione Split e la dimensione estesa, puoi visualizzare la nuova dimensione estesa creata non appena la fase Fast Input della rielaborazione dei dati è terminata.
 
-Questa dimensione, per impostazione predefinita, mostra il numero di sessioni per ciascun gruppo di esperimenti.
+Questa dimensione, per impostazione predefinita, visualizza il numero di sessioni per ciascuno dei gruppi di esperimenti.
 
-**Per visualizzare la dimensione dell&#39;esperimento**
+**Per visualizzare la dimensione dell’esperimento**
 
-* In qualsiasi area di lavoro di [!DNL Insight], aprite una tabella con la dimensione dell&#39;esperimento creata.
+* In qualsiasi area di lavoro in [!DNL Insight], apri una tabella con la dimensione dell’esperimento creata.
 
-   Gli elementi della dimensione dell&#39;esperimento, che rappresentano ciascun esperimento attualmente in esecuzione e ciascun gruppo all&#39;interno di ciascun esperimento, vengono visualizzati con il numero corrente di sessioni per ciascun gruppo. Ogni gruppo viene denominato nel seguente formato utilizzando il nome dell’esperimento seguito dal nome del gruppo:
+   Gli elementi dimensionali dell&#39;esperimento, che rappresentano ogni esperimento in esecuzione e ogni gruppo all&#39;interno di ogni esperimento, vengono visualizzati con il numero corrente di sessioni per ogni gruppo. Ogni gruppo viene denominato nel formato seguente utilizzando il nome dell&#39;esperimento seguito dal nome del gruppo:
 
    *Nome esperimento.Nome gruppo*
 
    Ad esempio: [!DNL New Homepage.Control]
 
-La tabella seguente mostra la dimensione Gruppi di esperti controllati creata in [!DNL Transformation.cfg] e in ciascuno degli esperimenti e dei relativi gruppi.
+La tabella seguente mostra la dimensione Gruppi di esperimenti controllati creata in [!DNL Transformation.cfg] e ciascuno degli esperimenti e dei relativi gruppi.
 
-L’esperimento New Homepage (Nuova homepage) è presentato in fondo alla tabella con i relativi due gruppi: Controllo e indice2.
+L’esperimento New Homepage viene mostrato nella parte inferiore della tabella con i relativi due gruppi: Controllo e indice2.
 
 ![](assets/controlledexpgrps.png)
 
-Ora potete utilizzare la dimensione dell&#39;esperimento e tutte le metriche pertinenti per esplorare e interpretare i risultati dell&#39;esperimento, nonché creare utili rapporti che descrivano tali risultati.
+Ora puoi utilizzare la dimensione dell’esperimento e tutte le metriche pertinenti per esplorare e interpretare i risultati dell’esperimento, nonché creare utili rapporti che ne descrivono i risultati.
