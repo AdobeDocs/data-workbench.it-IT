@@ -1,19 +1,17 @@
 ---
-description: L’obiettivo generale di eseguire un esperimento controllato su un sito Web è determinare se e in che misura una modifica o un insieme di modifiche definiti produca un effetto sugli utenti del sito Web.
+description: L'obiettivo generale di eseguire un esperimento controllato su un sito web è quello di determinare se e in quale misura una modifica o un insieme di modifiche definiti produca un effetto sugli utenti del sito web.
 solution: Analytics,Analytics
 title: Creazione di un esperimento controllato
-topic: Data workbench
 uuid: 0f7016e7-187e-4fd2-9228-0547cc5b487e
+exl-id: 9287c2c5-8e2a-4d78-8f9d-21a3ee5a5081
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 10%
 
 ---
 
-
 # Creazione di un esperimento controllato{#creating-a-controlled-experiment}
 
-L’obiettivo generale di eseguire un esperimento controllato su un sito Web è determinare se e in che misura una modifica o un insieme di modifiche definiti produca un effetto sugli utenti del sito Web.
-
+L&#39;obiettivo generale di eseguire un esperimento controllato su un sito web è quello di determinare se e in quale misura una modifica o un insieme di modifiche definiti produca un effetto sugli utenti del sito web.
