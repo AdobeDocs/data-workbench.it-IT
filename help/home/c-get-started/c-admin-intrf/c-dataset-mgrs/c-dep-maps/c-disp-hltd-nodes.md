@@ -1,22 +1,22 @@
 ---
-description: Informazioni sulla visualizzazione dei nodi evidenziati in un'altra mappa delle dipendenze.
-solution: Analytics
+description: Informazioni sulla visualizzazione dei nodi evidenziati in un'altra mappa di dipendenza.
 title: Visualizzare un nodo evidenziato
-topic: Data workbench
 uuid: 557252d0-1178-49fb-b473-588ccb117a15
+exl-id: 732aa5fd-4497-45b5-b3ac-5ebf7be1dd81
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '82'
+ht-degree: 9%
 
 ---
 
-
 # Visualizzare un nodo evidenziato{#display-a-highlighted-node}
 
-Informazioni sulla visualizzazione dei nodi evidenziati in un&#39;altra mappa delle dipendenze.
+Informazioni sulla visualizzazione dei nodi evidenziati in un&#39;altra mappa di dipendenza.
 
-Se un percorso di dipendenza è evidenziato nella mappa delle dipendenze, è possibile scegliere di mostrare solo tali nodi in un&#39;altra mappa.
+Se un percorso di dipendenza viene evidenziato nella mappa di dipendenza, è possibile scegliere di mostrare solo tali nodi in un&#39;altra mappa.
 
-* Fare clic con il pulsante destro del mouse su uno dei nodi del percorso di dipendenza e quindi scegliere **[!UICONTROL Show Only These Nodes]**.
+* Fai clic con il pulsante destro del mouse su uno dei nodi nel percorso di dipendenza e fai clic su **[!UICONTROL Show Only These Nodes]**.
 
-   La nuova mappa si apre in un callout e tutte le altre opzioni di menu sono disponibili quando si fa clic con il pulsante destro del mouse su un componente nel callout.
-
+   La nuova mappa viene visualizzata in un callout e tutte le altre opzioni di menu sono disponibili quando si fa clic con il pulsante destro del mouse su un componente del callout.
