@@ -1,35 +1,35 @@
 ---
-description: Dalla visualizzazione Funnel, puoi aprire un browser Percorso per identificare l’abbandono dettagliato dei visitatori e scorrere i percorsi.
-solution: Analytics
-title: Aggiunta di un browser Percorsi
-topic: Data workbench
+description: Dalla visualizzazione Funnel , puoi aprire un browser del percorso per identificare un abbandono dettagliato aggiuntivo dei visitatori e i percorsi che passano attraverso i percorsi.
+title: Aggiunta di un browser del percorso
 uuid: 6b6879bf-81e5-4c6f-a4a6-eecac1ab0a29
+exl-id: d9ecb982-3b9d-497f-9cae-5c4220a5204f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 3%
 
 ---
 
+# Aggiunta di un browser del percorso{#adding-a-path-browser}
 
-# Aggiunta di un browser Percorsi{#adding-a-path-browser}
-
-Dalla visualizzazione Funnel, puoi aprire un browser Percorso per identificare l’abbandono dettagliato dei visitatori e scorrere i percorsi.
+Dalla visualizzazione Funnel , puoi aprire un browser del percorso per identificare un abbandono dettagliato aggiuntivo dei visitatori e i percorsi che passano attraverso i percorsi.
 
 <!-- <a id="section_874AAAA89CB440EA9EABC514E987B613"></a> -->
 
-Potete identificare dove i visitatori &quot;abbandono&quot; (che hanno abbandonato il percorso) o dove si trovano &quot;visitatori in abbandono&quot; (che hanno seguito il percorso). Per aprire più browser di percorsi dalla stessa visualizzazione Funnel, seleziona le frecce di abbandono o fai scorrere i coni.
+Puoi identificare dove sono i visitatori &quot;Abbandono&quot; (che hanno abbandonato il percorso) o dove sono &quot;in calo&quot; (che hanno seguito il percorso). Puoi aprire più browser del percorso dalla stessa visualizzazione Funnel selezionando frecce di abbandono o fall-through coni.
 
-1. Aprite il Browser percorsi per il visitatore di destinazione, i visitatori che hanno lasciato il sito durante un passaggio specifico. Fare clic con il pulsante destro del mouse sulla freccia di abbandono e selezionare l&#39;opzione Aggiungi browser percorso.
+1. Apri il browser Percorsi per il visitatore di abbandono, i visitatori che hanno lasciato il sito durante un passaggio specifico. Fai clic con il pulsante destro del mouse sulla freccia di abbandono e seleziona l’opzione Aggiungi browser percorso .
 
    ![](assets/funnel_path_browser_1.png)
 
-   Dal browser Percorso, potete vedere dove sono andati i visitatori prima di aver toccato un elemento selezionato nell&#39;imbuto (a sinistra) e dove si sono spostati dopo aver lasciato la pagina (a destra).
+   Dal Browser percorsi, puoi vedere dove sono andati i visitatori prima di colpire un elemento selezionato nell’Funnel (a sinistra) e dove si sono spostati dopo aver lasciato la pagina (a destra).
 
    ![](assets/funnel_path_browser_2.png)
 
-   Nella visualizzazione Browser percorsi, la larghezza delle linee che entrano ed escono dalla dimensione selezionata identifica il volume di traffico. Ad esempio, prima di accedere alla pagina Uomo, alcuni visitatori sono entrati attraverso altri percorsi, ma la maggior parte sono entrati nella pagina principale. Quando se ne andò, la maggior parte andò alla pagina Uomo Surf.
+   Nella visualizzazione Browser percorsi , la larghezza delle linee che entrano ed escono dalla dimensione selezionata identifica il volume di traffico. Ad esempio, prima di visitare la pagina Uomini, alcuni visitatori sono entrati attraverso altri percorsi, ma la maggior parte è arrivata attraverso la home page. Alla partenza, la maggior parte è andato alla pagina Uomini Surfing.
 
-1. Aprite il Browser percorso per i visitatori &quot;fall-through&quot;. Fare clic con il pulsante destro del mouse sul cono nell&#39;imbuto per identificare il percorso per i visitatori che hanno attraversato l&#39;imbuto o che si sono spostati al passaggio successivo.
-1. Fate clic sul pulsante **Altro** nella parte inferiore della visualizzazione Browser percorso per aprire una tabella con tutte le visite elencate in una visualizzazione tabulare per le visite precedenti e correnti.
+1. Apri il browser Percorsi per i visitatori &quot;fall-through&quot;. Fai clic con il pulsante destro del mouse sul cono nell’imbuto per identificare il percorso dei visitatori che hanno attraversato l’imbuto o sono passati al passaggio successivo.
+1. Fai clic sul pulsante **Altro** nella parte inferiore della visualizzazione Browser percorsi per aprire una tabella con tutte le visite elencate in una visualizzazione tabulare per le visite precedenti e correnti.
 
    ![](assets/path_browser_more.png)
-
