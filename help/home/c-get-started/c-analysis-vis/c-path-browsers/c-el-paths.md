@@ -1,25 +1,25 @@
 ---
-description: Potete scegliere di visualizzare più elementi nel tracciato.
-solution: Analytics
-title: Visualizzare altri elementi nei tracciati
-topic: Data workbench
+description: Puoi scegliere di visualizzare più elementi nel percorso.
+title: Visualizzare altri elementi nei percorsi
 uuid: dc45121b-1e95-4f7e-a85c-ba8b3a24fa33
+exl-id: 4337ee79-2a62-4be4-a22c-08c77516e327
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 8%
 
 ---
 
+# Visualizzare altri elementi nei percorsi{#view-more-elements-in-paths}
 
-# Visualizzare altri elementi nei tracciati{#view-more-elements-in-paths}
+Puoi scegliere di visualizzare più elementi nel percorso.
 
-Potete scegliere di visualizzare più elementi nel tracciato.
+Nella maggior parte dei casi, il browser percorsi non è abbastanza grande per mostrare tutti gli elementi della sequenza.
 
-Nella maggior parte dei casi, il browser dei percorsi non è sufficientemente grande per mostrare tutti gli elementi della sequenza.
+* Fai clic su **[!UICONTROL More]** nella parte in basso a sinistra della visualizzazione per visualizzare gli elementi precedenti nel percorso.
+* Fai clic su **[!UICONTROL More]** nella parte in basso a destra della visualizzazione per visualizzare gli elementi successivi nel percorso.
 
-* Fai clic **[!UICONTROL More]** nella parte inferiore sinistra della visualizzazione per visualizzare gli elementi precedenti nel percorso.
-* Fai clic **[!UICONTROL More]** nella parte inferiore destra della visualizzazione per visualizzare gli elementi successivi nel percorso.
-
-Facendo clic su Altro in basso a sinistra o in basso a destra nella visualizzazione, si apre una tabella in cui sono elencati gli elementi precedenti o successivi nel percorso. La tabella mostra anche il valore della metrica associata per ciascun elemento.
+Facendo clic su Altro nella parte in basso a sinistra o in basso a destra della visualizzazione, apri una tabella in cui sono elencati gli elementi precedenti o successivi nel percorso. La tabella mostra anche il valore della metrica associata per ciascun elemento.
 
 ![](assets/vis_PathBrowser_MoreMoviesOnPath.png)
-
