@@ -1,51 +1,50 @@
 ---
-description: I profili e i file di ricerca che  Adobe ha sviluppato per la vostra applicazione specifica sono profili interni che forniscono le metriche, le dimensioni e le aree di lavoro che consentono l'analisi del set di dati.
-solution: Analytics
+description: I profili e i file di ricerca sviluppati da Adobe per una particolare applicazione sono profili interni che forniscono le metriche, le dimensioni e le aree di lavoro che consentono l’analisi del set di dati.
 title: Installazione di profili e dei file di ricerca
 uuid: edc670a6-ebc9-4a20-a66f-81dd4adf7433
+exl-id: bf9a3bca-e849-47b6-b038-0349f8ec334a
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 2%
 
 ---
 
-
 # Installazione di profili e dei file di ricerca{#installing-profiles-and-lookup-files}
 
-I profili e i file di ricerca che  Adobe ha sviluppato per la vostra applicazione specifica sono profili interni che forniscono le metriche, le dimensioni e le aree di lavoro che consentono l&#39;analisi del set di dati.
+I profili e i file di ricerca sviluppati da Adobe per una particolare applicazione sono profili interni che forniscono le metriche, le dimensioni e le aree di lavoro che consentono l’analisi del set di dati.
 
-Come per tutti gli altri profili interni forniti dal  Adobe, tali profili non devono essere modificati. Tutta la personalizzazione deve avvenire nel dataset o nei profili specifici del ruolo o in altri profili creati.
+Come per tutti gli altri profili interni forniti dall’Adobe, tali profili non devono essere modificati. Tutte le personalizzazioni devono verificarsi nel set di dati o nei profili specifici per il ruolo o in altri profili creati.
 
- Adobe distribuisce come [!DNL .zip] file il profilo e i file di ricerca dell’applicazione. Ogni file zip è denominato per l&#39;applicazione il cui profilo e file di ricerca contiene. Ad esempio, [!DNL Site52.zip] contiene i file di profilo per Site v5.2. Il [!DNL .zip] file contiene due cartelle ( [!DNL Lookups] e [!DNL Profiles]).
+Adobe distribuisce il profilo e i file di ricerca per la tua applicazione come file [!DNL .zip]. Ogni file zip viene denominato per l’applicazione di cui sono contenuti il profilo e i file di ricerca. (Ad esempio, [!DNL Site52.zip] contiene i file di profilo per Site v5.2.) Il file [!DNL .zip] contiene due cartelle ( [!DNL Lookups] e [!DNL Profiles]).
 
 >[!NOTE]
 >
->Se non disponete già del file di installazione che contiene i profili e i file di ricerca per la vostra applicazione, scaricateli dal sito FTP del Adobe  prima di iniziare.
+>Se non disponi già del file di installazione contenente i profili e i file di ricerca per la tua applicazione, scaricali dal sito FTP di Adobe prima di iniziare.
 
-È necessario installare il profilo e i relativi file di ricerca nel [!DNL Insight Server] computer in cui si elabora ed esegue il profilo del set di dati. Se si sta eseguendo un [!DNL Insight Server] cluster, è necessario installare i file sul server master. Per informazioni sui profili dei set di dati, consulta la Guida alla configurazione dei *set di dati*.
+Devi installare il profilo e i relativi file di ricerca nel computer [!DNL Insight Server] in cui elabora ed esegui il profilo del set di dati. Se si esegue un cluster [!DNL Insight Server], è necessario installare i file sul server master. Per informazioni sui profili dei set di dati, consulta la *Guida alla configurazione dei set di dati*.
 
-**Per installare i profili per l&#39;applicazione  Adobe**
+**Per installare profili per la tua applicazione Adobe**
 
-1. Aprite la [!DNL Profiles] cartella dal [!DNL .zip] file fornito da  Adobe.
+1. Apri la cartella [!DNL Profiles] dal file [!DNL .zip] fornito dall’Adobe.
 
-1. Copiate tutte le cartelle all’interno della [!DNL Profiles] cartella del [!DNL .zip] file nella [!DNL Profiles] cartella della directory di [!DNL Insight Server] installazione. Per concludere, è necessario disporre  [!DNL ...\Profiles\]*di&lt;[!DNL internal profile name]>* cartelle [!DNL Insight Server] come illustrato nell&#39;esempio seguente. I nomi effettivi dei profili potrebbero essere diversi.
+1. Copia tutte le cartelle all&#39;interno della cartella [!DNL Profiles] nel file [!DNL .zip] nella cartella [!DNL Profiles] nella directory di installazione [!DNL Insight Server]. Vuoi finire con le cartelle  [!DNL ...\Profiles\]*&lt; [!DNL internal profile name]>* sul tuo [!DNL Insight Server] come mostrato nell&#39;esempio seguente. I nomi dei profili effettivi possono essere diversi.
 
    ![](assets/win_installprofiles.png)
 
-1. Andate alla  [!DNL Profiles\]*cartella&lt;[!DNL dataset profile name]>* nella directory in cui avete installato [!DNL Insight Server] e individuate il [!DNL profile.cfg] file in questa directory.
+1. Passa alla cartella  [!DNL Profiles\]*&lt; [!DNL dataset profile name]>* nella directory in cui hai installato [!DNL Insight Server] e individua il file [!DNL profile.cfg] in questa directory.
 
    >[!NOTE]
    >
-   >Se state installando i profili per la prima volta, potete utilizzare il profilo di esempio fornito come profilo di set di dati. Potete trovare il [!DNL profile.cfg] file (potrebbe essere denominato come [!DNL profile.cfg.offline]) per il profilo Sample all&#39;interno della [!DNL Profiles\Sample] cartella nella directory di [!DNL Insight Server] installazione.
+   >Se stai installando i profili per la prima volta, puoi utilizzare il profilo di esempio fornito come profilo di set di dati. Puoi trovare il file [!DNL profile.cfg] (potrebbe essere denominato come [!DNL profile.cfg.offline]) per il profilo Sample all&#39;interno della cartella [!DNL Profiles\Sample] nella directory di installazione di [!DNL Insight Server].
 
-1. Aprite il [!DNL profile.cfg] file utilizzando un editor di testo come Blocco note ed effettuate le seguenti operazioni:
+1. Apri il file [!DNL profile.cfg] utilizzando un editor di testo come Blocco note ed effettua le seguenti operazioni:
 
-   1. Aggiungete voci per i profili interni nel vettore Directory. I nomi dei profili corrispondono ai nomi delle directory copiate nella [!DNL Profiles] cartella del [!DNL Insight Server] computer.
+   1. Aggiungi le voci per i profili interni nel vettore Directory. I nomi dei profili corrispondono ai nomi delle directory copiate nella cartella [!DNL Profiles] sul computer [!DNL Insight Server].
 
-   1. Aggiornate il numero di directory in base alle necessità.
-   1. Aggiungi il nome comune del server alla riga Nome comune del file, come evidenziato di seguito:
+   1. Aggiorna il numero di directory appropriato.
+   1. Aggiungi il nome comune del server alla riga Nome comune in questo file, come evidenziato di seguito:
 
       ```
       Profile = profileInfo: 
@@ -63,15 +62,14 @@ Come per tutti gli altri profili interni forniti dal  Adobe, tali profili non de
 
       >[!NOTE]
       >
-      >Il *serverCommonName* specificato per il Nome comune nel [!DNL profile.cfg] file corrisponde al nome comune del server per il [!DNL Insight Server] computer in cui si sta elaborando ed eseguendo il profilo del dataset. Per istruzioni sull&#39;aggiornamento in [!DNL profile.cfg] modo che il profilo del set di dati venga eseguito su un [!DNL Insight Server] cluster, vedere [Cluster](../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-abt-ins-svr-clsters.md)di server Insight.
+      >Il *serverCommonName* specificato per il Nome comune nel file [!DNL profile.cfg] corrisponde al nome comune del server per il computer [!DNL Insight Server] in cui si sta elaborando ed eseguendo il profilo di set di dati. Per istruzioni su come aggiornare [!DNL profile.cfg] in modo che il profilo del set di dati venga eseguito su un cluster [!DNL Insight Server], consulta [Cluster di Insight Server](../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-abt-ins-svr-clsters.md).
 
-1. Salvate il file. Assicurarsi di salvare il file come [!DNL profile.cfg] se avesse un nome diverso.
+1. Salvate il file. Assicurati di salvare il file come [!DNL profile.cfg] se è stato denominato in modo diverso.
 
-**Per installare i file di ricerca per l&#39;applicazione  Adobe**
+**Per installare i file di ricerca per la tua applicazione Adobe**
 
-1. Aprite la [!DNL Lookups] cartella dal [!DNL .zip] file fornito da  Adobe.
+1. Apri la cartella [!DNL Lookups] dal file [!DNL .zip] fornito dall’Adobe.
 
-1. Copiate tutte le cartelle all’interno della [!DNL Lookups] cartella del [!DNL .zip] file nella [!DNL Lookups] cartella della directory di [!DNL Insight Server] installazione. Per concludere, è necessario disporre  [!DNL ...\Lookups\]*di&lt;[!DNL internal profile name]>* cartelle [!DNL Insight Server] come illustrato nell&#39;esempio seguente. I nomi effettivi dei profili potrebbero essere diversi.
+1. Copia tutte le cartelle all&#39;interno della cartella [!DNL Lookups] nel file [!DNL .zip] nella cartella [!DNL Lookups] nella directory di installazione [!DNL Insight Server]. Vuoi finire con le cartelle  [!DNL ...\Lookups\]*&lt; [!DNL internal profile name]>* sul tuo [!DNL Insight Server] come mostrato nell&#39;esempio seguente. I nomi dei profili effettivi possono essere diversi.
 
    ![](assets/win_installLookups.png)
-
