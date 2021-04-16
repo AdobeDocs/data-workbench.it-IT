@@ -1,23 +1,22 @@
 ---
-description: Pianificare due scenari per quanto riguarda il sensore che va offline.
-solution: Analytics
+description: Pianifica due scenari per quanto riguarda il sensore che va offline.
 title: Gestire i sensori offline
 uuid: a8be847d-e506-4fbc-9d57-a28ff0cbeff2
+exl-id: f655c2ad-da3a-47cc-a62c-0a2937cdc0e4
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 11%
 
 ---
 
-
 # Gestire i sensori offline{#dealing-with-offline-sensors}
 
-Pianificare due scenari per quanto riguarda il sensore che va offline.
+Pianifica due scenari per quanto riguarda il sensore che va offline.
 
-**Frequenza consigliata:** Se necessario
+**Frequenza consigliata:** in base alle esigenze
 
-Questi scenari indicano che il server Web non può essere ruotato da altri server, e che il server Web sta per essere disattivato a causa di un errore.
+Questi scenari sono il server web fuori dalla rotazione da altri server, e il server web si abbassa completamente a causa di un errore.
 
-Il primo concetto da capire è il tempo &quot;Come di&quot; nel [!DNL data workbench server].
+Il primo concetto da comprendere è il tempo &quot;A partire&quot; nel [!DNL data workbench server].
