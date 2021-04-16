@@ -1,34 +1,32 @@
 ---
-description: La directory Dataset include file aggiuntivi necessari per il funzionamento del software o per l'implementazione del Adobe .
-solution: Analytics
+description: La directory Dataset include file aggiuntivi necessari per il funzionamento del software o fornisce funzionalità aggiuntive per l'implementazione del tuo Adobe.
 title: Altri file
-topic: Data workbench
 uuid: 87d83fa5-df25-4da1-8b11-16639902d8d7
+exl-id: 0a1fb37c-00ac-46d4-9d0a-904ebd3ccfba
 translation-type: tm+mt
-source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 1%
 
 ---
 
-
 # Altri file{#other-files}
 
-La directory Dataset include file aggiuntivi necessari per il funzionamento del software o per l&#39;implementazione del Adobe .
+La directory Dataset include file aggiuntivi necessari per il funzionamento del software o fornisce funzionalità aggiuntive per l&#39;implementazione del tuo Adobe.
 
-* **[!DNL Client.cfg:]** Il [!DNL Client.cfg] file all&#39;interno della directory Dataset per il [!DNL Base] profilo è richiesto per il funzionamento del software. Non eliminare o modificare nessuno dei parametri nel [!DNL Client.cfg] file.
+* **[!DNL Client.cfg:]** Il  [!DNL Client.cfg] file all&#39;interno della directory Dataset per il  [!DNL Base] profilo è necessario per il funzionamento del software. Non eliminare o modificare nessuno dei parametri nel file [!DNL Client.cfg].
 
-* **[!DNL Cluster.cfg:]** Il [!DNL Cluster.cfg] file all&#39;interno della directory Dataset per il [!DNL Base] profilo è richiesto per il funzionamento del software. Nel [!DNL Cluster.cfg] file, è necessario modificare solo il parametro Normalize Server se si sta configurando un dataset da elaborare in un cluster di server workbench dati. Per istruzioni su come modificare il parametro Normalize Server, vedere [Creazione di un server di normalizzazione centralizzato per un cluster](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md).
+* **[!DNL Cluster.cfg:]** Il  [!DNL Cluster.cfg] file all&#39;interno della directory Dataset per il  [!DNL Base] profilo è necessario per il funzionamento del software. Nel file [!DNL Cluster.cfg], devi modificare solo il parametro Normalize Server se configuri un set di dati da elaborare in un cluster di server di Data Workbench. Per istruzioni su come modificare il parametro Normalize Server, vedere [Creazione di un server di normalizzazione centralizzato per un cluster](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md).
 
-* **[!DNL Insight Transform.cfg]e[!DNL Insight Transform Mode.cfg]:** Se si utilizza la funzionalità di trasformazione, nella directory Dataset per il [!DNL Transform.cfg] profilo sono presenti due file di configurazione aggiuntivi, workbench dati [!DNL TransformMode.cfg]e workbench dati [!DNL Transform] . Per informazioni su questi file e sui relativi parametri, vedere [Funzionalità](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html)di trasformazione.
+* **[!DNL Insight Transform.cfg]e  [!DNL Insight Transform Mode.cfg]:** se utilizzi la funzionalità di trasformazione, nella directory Dataset per il  [!DNL Transform.cfg] profilo sono presenti due file di configurazione aggiuntivi, Data Workbench  [!DNL TransformMode.cfg]e Data Workbench  [!DNL Transform] . Per informazioni su questi file e sui relativi parametri, vedere [Funzionalità di trasformazione](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
 
-* Il file **PAServer.cfg** . Se si desidera inviare i processi di clustering Predictive Analytics ai server Insight, sarà necessario configurare il [!DNL PAServer.cfg] file per la gestione degli invii del clustering lato server.
-Il profilo personalizzato deve ereditare il profilo [!DNL PAServer.cfg] dal profilo Predictive Analytics ( [!DNL Server\Profiles\Predictive Analytics\Dataset]).
+* Il file **PAServer.cfg**. Se desideri inviare i lavori di clustering Predictive Analytics a Insight Server, dovrai configurare il file [!DNL PAServer.cfg] per la gestione degli invii di clustering lato server.
+Il profilo personalizzato deve ereditare il valore [!DNL PAServer.cfg] dal profilo Predictive Analytics ( [!DNL Server\Profiles\Predictive Analytics\Dataset]).
 
    >[!IMPORTANT]
    >
-   >Impostate un server ** principale in questo file e salvate il file [!DNL PAServer.cfg] nel sito di implementazione.
+   >Imposta un *server principale* in questo file e salva il [!DNL PAServer.cfg] nel sito di implementazione.
    >
    >
    ```
@@ -38,4 +36,3 @@ Il profilo personalizzato deve ereditare il profilo [!DNL PAServer.cfg] dal prof
    >       Port = int: 80
    >       Use SSL = bool: false
    >```
-
