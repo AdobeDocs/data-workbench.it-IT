@@ -1,29 +1,30 @@
 ---
-description: Prima di poter generare rapporti e avvisi, è necessario configurare il server di report per specificare l'indirizzo del server di Insight e identificare i profili con cui si desidera eseguire il rapporto.
-solution: Analytics
-title: Configurazione della connessione al server di Insight
-topic: Data workbench
+description: Prima di poter generare rapporti e avvisi, è necessario configurare Report Server per specificare l’indirizzo di Insight Server e identificare i profili sui quali si desidera creare rapporti.
+title: Configurazione della connessione a Insight Server
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
+exl-id: a398a665-fe09-448a-977c-b0f9de4add09
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
+# Configurazione della connessione a Insight Server{#configuring-the-connection-to-the-insight-server}
 
-# Configurazione della connessione al server di Insight{#configuring-the-connection-to-the-insight-server}
-
-Prima di poter generare rapporti e avvisi, è necessario configurare il server di report per specificare l&#39;indirizzo del server di Insight e identificare i profili con cui si desidera eseguire il rapporto.
+Prima di poter generare rapporti e avvisi, è necessario configurare Report Server per specificare l’indirizzo di Insight Server e identificare i profili sui quali si desidera creare rapporti.
 
 >[!NOTE]
 >
->Fino a quando non configurate il server di report come descritto di seguito, non potete eseguire correttamente il server di report. Se si tenta di eseguire Report Server con il file non configurato installato con il programma, Report Server genera un flusso di errori.
+>Finché non si configura il server di rapporto come descritto di seguito, non è possibile eseguire correttamente il server di rapporto. Se si tenta di eseguire Report Server con il file non configurato installato con il programma, Report Server genera un flusso di errori.
 
-**Per configurare il server di report**
+**Per configurare il server di rapporto**
 
-1. Con Esplora risorse, andate alla directory in cui avete installato Report Server.
-1. Aprite il [!DNL ReportServer.cfg] file in Blocco note e modificate il file come desiderate.
+1. Con Esplora risorse, passare alla directory in cui è stato installato Report Server.
+1. Apri il file [!DNL ReportServer.cfg] in Blocco note e modifica il file come desiderato.
 
-   L&#39;esempio seguente [!DNL Report Server.cfg] contiene solo i parametri inclusi nel [!DNL Report Server.cfg] file per impostazione predefinita (evidenziando le impostazioni dei parametri richieste). Se contattate Adobe License Server tramite un server proxy, dovete aggiungere il vettore Licensing e i relativi parametri. Per una descrizione dettagliata, consulta Parametri [di](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) Report Server.cfg.
+   L&#39;esempio seguente [!DNL Report Server.cfg] contiene solo i parametri inclusi nel file [!DNL Report Server.cfg] per impostazione predefinita (ed evidenzia le impostazioni dei parametri richieste). Se si contatta il server licenze Adobe tramite un server proxy, è necessario aggiungere il vettore Licensing e i relativi parametri. Per una descrizione dettagliata, consulta [Parametri server.cfg del rapporto](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) .
 
    ```
    Fonts = vector: 0 items
@@ -59,4 +60,4 @@ Prima di poter generare rapporti e avvisi, è necessario configurare il server d
      SMTP Server for Errors Send To = string: RecipientAddresses
    ```
 
-1. Salvate e chiudete il file.
+1. Salva e chiudi il file.
