@@ -1,16 +1,16 @@
 ---
-description: Informazioni sull'aggiornamento del software workbench dati.
-solution: Analytics
-title: Aggiornamento del workbench dati
-topic: Data workbench
+description: Informazioni sull’aggiornamento del software di Data Workbench.
+title: Aggiornamento di Data Workbench
 uuid: 8cc8e12b-a0c4-438d-b4b7-a27b37ef9daf
+exl-id: 9f7496c5-e45f-4441-a099-21fa018d9742
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '20'
+ht-degree: 30%
 
 ---
 
+# Aggiornamento di Data Workbench{#upgrading-data-workbench}
 
-# Aggiornamento del workbench dati{#upgrading-data-workbench}
-
-Informazioni sull&#39;aggiornamento del software workbench dati.
-
+Informazioni sull’aggiornamento del software di Data Workbench.
