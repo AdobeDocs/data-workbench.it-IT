@@ -1,33 +1,34 @@
 ---
-description: Questo capitolo descrive i passaggi per installare workbenchGeography di dati su un server workbench dati.
-solution: Analytics
-title: Installazione della geografia del workbench dati
-topic: Data workbench
+description: Questo capitolo descrive i passaggi per installare data workbenchGeography su un server di Data Workbench.
+title: Installazione della geografia di Data Workbench
 uuid: 2c3d2e4a-97a7-4afc-b72d-c012db77e535
+exl-id: 3f32672c-e62b-4b8b-84f7-11ff732519ad
 translation-type: tm+mt
-source-git-commit: fd3afa80250d5ae20b7758ba840fd4d436545cf2
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 3%
 
 ---
 
+# Installazione della geografia di Data Workbench{#installing-data-workbench-geography}
 
-# Installazione della geografia del workbench dati{#installing-data-workbench-geography}
+Questo capitolo descrive i passaggi per installare data workbenchGeography su un server di Data Workbench.
 
-Questo capitolo descrive i passaggi per installare workbenchGeography di dati su un server workbench dati.
+Per completare questi passaggi, devi disporre dell’accesso ai file sul server di Data Workbench.
 
-Per completare questi passaggi, è necessario avere accesso ai file sul server workbench dati.
+Se ti sei abbonato a uno dei due servizi dati facoltativi, devi anche installare il profilo del servizio dati e i relativi file di ricerca.
 
-Se si è abbonati a uno dei due servizi dati facoltativi, è necessario installare anche il profilo del servizio dati e i relativi file di ricerca.
+Per informazioni sui requisiti di sistema per l’installazione, la configurazione e il funzionamento di Data Workbench [!DNL Geography], consulta il documento *Requisiti minimi di sistema* .
 
-Per informazioni sui requisiti di sistema per l&#39;installazione, la configurazione e il workbench dati operativo, [!DNL Geography]vedere il documento sui requisiti *di sistema* minimi.
+Adobe distribuisce il prodotto software di Data Workbench [!DNL Geography] come file [!DNL .zip]. Questo file contiene due cartelle (ricerche e profili). Per installare Data Workbench [!DNL Geography] su un server di Data Workbench, è necessario eseguire i seguenti passaggi:
 
-Adobe distribuisce come [!DNL Geography] [!DNL .zip] file il prodotto software per workbench dati. Questo file contiene due cartelle (Ricerche e Profili). Per installare workbench dati [!DNL Geography] su un server workbench dati, è necessario eseguire i seguenti passaggi:
+* Installa il profilo [!DNL Geography]. Consulta [Installazione del profilo geografico](../../../home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md).
 
-* Installare il [!DNL Geography] profilo. Consultate [Installazione del profilo](../../../home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)geografico.
+* Installa le ricerche [!DNL Geography]. Consulta [Installazione dei file di ricerca per la geografia](../../../home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md).
 
-* Installate le [!DNL Geography] ricerche. Consultate [Installazione dei file](../../../home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)di ricerca per la geografia.
-
-* (Facoltativo) Installare il [!DNL Terrain Images.cfg] file. Consultate [Installazione del file](../../../home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md)Terrain Images.cfg.
+* (Facoltativo) Installa il file [!DNL Terrain Images.cfg] . Consulta [Installazione del file Terrain Images.cfg](../../../home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md).
 
 >[!NOTE]
 >
->È necessario installare i file per il workbench dati [!DNL Geography] nel computer server workbench dati su cui si sta elaborando ed eseguendo il profilo del dataset. Se si esegue un cluster di server workbench dati, è necessario installare i file sul server master. Per informazioni sui profili dei set di dati, consulta la Guida alla configurazione dei *set di dati*.
+>È necessario installare i file per Data Workbench [!DNL Geography] nel computer server di Data Workbench in cui si sta elaborando ed eseguendo il profilo di set di dati. Se si esegue un cluster di server di Data Workbench, è necessario installare i file sul server master. Per informazioni sui profili dei set di dati, consulta la *Guida alla configurazione dei set di dati*.
