@@ -1,57 +1,58 @@
 ---
-description: È possibile ingrandire o ridurre i dati in grafici, globi, mappe di processo e grafici a dispersione.
-solution: Analytics
+description: È possibile ingrandire o ridurre i dati in grafici, globi, mappe del processo e grafici a dispersione.
 title: Ingrandire o ridurre una visualizzazione
-topic: Data workbench
 uuid: bc28f759-c4d3-4340-8ec7-27cf6aaf21e6
+exl-id: 27072e6b-3102-40b2-a617-3cd26bf6e840
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 3%
 
 ---
 
-
 # Ingrandire o ridurre una visualizzazione{#zoom-in-or-out-in-a-visualization}
 
-È possibile ingrandire o ridurre i dati in grafici, globi, mappe di processo e grafici a dispersione.
+È possibile ingrandire o ridurre i dati in grafici, globi, mappe del processo e grafici a dispersione.
 
-## Zoom sugli oggetti nelle mappe di processo e nei globi {#section-be293f50337f49ee8f0f1ee3e613e4a1}
-
-**Per ingrandire un&#39;area**
-
-* Posizionare il puntatore sull&#39;area desiderata, tenere premuti entrambi i pulsanti del mouse, quindi spostare il mouse in avanti (lontano dall&#39;utente).
+## Zoom su oggetti nelle mappe del processo e nei globi {#section-be293f50337f49ee8f0f1ee3e613e4a1}
 
 **Per ingrandire un&#39;area**
 
-* Posizionare il puntatore sull&#39;area desiderata, tenere premuto entrambi i pulsanti del mouse, quindi spostare il mouse all&#39;indietro (verso l&#39;utente).
+* Posizionare il puntatore sull&#39;area desiderata, tenere premuto entrambi i pulsanti del mouse, quindi spostare il mouse in avanti (lontano da voi).
+
+**Per ingrandire un&#39;area**
+
+* Posizionare il puntatore sull&#39;area desiderata, tenere premuto entrambi i pulsanti del mouse, quindi spostare il mouse indietro (verso di voi).
 
 ## Zoom sugli assi nei grafici e nei grafici a dispersione {#section-1438a5d637e84d68b69e269062dd3d7a}
 
-Entrambi i grafici e i grafici a dispersione dispongono di assi su cui è possibile ingrandire o ridurre separatamente (vale a dire, è possibile ingrandire un asse e quindi ridurre l’altro).
+Entrambi i grafici e i grafici a dispersione hanno assi su cui è possibile ingrandire o ridurre separatamente (in altre parole, è possibile ingrandire un asse e quindi ridurre l&#39;altro).
 
 >[!NOTE]
 >
->Per l’asse y in un grafico a linee e l’asse x o y in un grafico a dispersione, lo zoom viene ripristinato ogni volta che i dati sottostanti cambiano. Poiché questo accade spesso quando si lavora online, Adobe consiglia di lavorare offline quando è necessario ingrandire questi assi. Consultate [Utilizzo offline e online](../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
+>Per l’asse y in un grafico a linee e l’asse x o y in un grafico a dispersione, lo zoom viene reimpostato ogni volta che i dati sottostanti cambiano. Poiché questo accade molto spesso quando si lavora online, Adobe consiglia di lavorare offline quando è necessario ingrandire questi assi. Consulta [Funzionamento offline e online](../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
 
-**Per ingrandire l’asse x o y di un grafico** Quando si esegue lo zoom in verticale (lungo l’asse y), l’asse x rimane fisso e i dati si estendono verso l’alto.
+**Per ingrandire l&#39;asse x o y di un** graficoQuando si esegue lo zoom verticale (lungo l&#39;asse y), l&#39;asse x rimane fisso e i dati si estendono verso l&#39;alto.
 
-1. Posizionare il puntatore del mouse sull’area di etichetta della metrica dell’asse x o y del grafico.
+1. Posizionare il puntatore del mouse sull&#39;area della metrica o dell&#39;etichetta della dimensione dell&#39;asse x o y del grafico.
 1. Premere entrambi i tasti del mouse e spostare il mouse in avanti (lontano da voi). Sull’asse vengono visualizzate delle frecce che indicano che più dati sono disponibili oltre la parte della visualizzazione attualmente visualizzata.
 
-**Per ingrandire l’asse x o y di un grafico**
+**Per ridurre l’asse x o y di un grafico**
 
-1. Posizionare il puntatore del mouse sull’area di etichetta della metrica dell’asse x o y del grafico.
-1. Premere entrambi i pulsanti del mouse e spostare il mouse indietro (verso l&#39;utente).
+1. Posizionare il puntatore del mouse sull&#39;area della metrica o dell&#39;etichetta della dimensione dell&#39;asse x o y del grafico.
+1. Premere entrambi i tasti del mouse e spostare il mouse indietro (verso di voi).
 
-**Per ingrandire tutti i dati sull&#39;asse x o y di un grafico** Il comando di [!DNL Zoom to All] menu torna a visualizzare tutti i dati sull&#39;asse selezionato.
+**Per ingrandire tutti i dati sull&#39;asse x o y di un** graficoIl comando di  [!DNL Zoom to All] menu ritorna alla visualizzazione di tutti i dati sull&#39;asse selezionato.
 
-* Fare clic con il pulsante destro del mouse sulle aree del bordo dell&#39;asse x o y (vicino alle etichette dati) e quindi fare clic **[!UICONTROL Zoom to All]**.
+* Fare clic con il pulsante destro del mouse sulle aree dei bordi dell’asse x o y (vicino alle etichette dei dati) e fare clic su **[!UICONTROL Zoom to All]**.
 
    ![](assets/vis_ZoomToAll.png)
 
 **Per ingrandire i dati selezionati nei grafici**
 
-1. Fare clic e trascinare il puntatore del mouse sull&#39;intervallo di dati da selezionare.
-1. Fare clic con il pulsante destro del mouse nell&#39;area dell&#39;etichetta della dimensione e fare clic **[!UICONTROL Zoom to Selection]**.
+1. Fare clic e trascinare il puntatore del mouse sull&#39;intervallo di dati che si desidera selezionare.
+1. Fai clic con il pulsante destro del mouse nell’area dell’etichetta della dimensione e fai clic su **[!UICONTROL Zoom to Selection]**.
 
 ![](assets/vis_ZoomToSelection.png)
 
