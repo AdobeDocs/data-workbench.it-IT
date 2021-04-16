@@ -1,24 +1,24 @@
 ---
-description: Passaggi per salvare una dimensione da una mappa di processo.
-solution: Analytics
-title: Salvataggio di una dimensione da una mappa di processo
-topic: Data workbench
+description: Passaggi per salvare una dimensione da una mappa del processo.
+title: Salvataggio di una dimensione da una mappa del processo
 uuid: 9af8e5c5-9c20-47c5-8c30-221583b0b3c2
+exl-id: bd328918-1b5b-4c58-9d14-693f92e88c69
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '145'
+ht-degree: 9%
 
 ---
 
+# Salvataggio di una dimensione da una mappa del processo{#save-a-dimension-from-a-process-map}
 
-# Salvataggio di una dimensione da una mappa di processo{#save-a-dimension-from-a-process-map}
+Passaggi per salvare una dimensione da una mappa del processo.
 
-Passaggi per salvare una dimensione da una mappa di processo.
+1. Fai clic con il pulsante destro del mouse sui nodi selezionati e fai clic su **[!UICONTROL Save Dimension]**. Viene visualizzata la finestra [!DNL Save Dimension As]. Il percorso di salvataggio predefinito è la cartella User\*profile name*\Dimension.
 
-1. Fare clic con il pulsante destro del mouse sui nodi selezionati e scegliere **[!UICONTROL Save Dimension]**. Viene [!DNL Save Dimension As] visualizzata la finestra. Il percorso di salvataggio predefinito è la cartella Utente\*nome profilo*\Dimensions.
+   Per creare una nuova dimensione basata su più nodi, tieni premuto Ctrl e trascina per creare una casella intorno agli elementi che desideri selezionare. Fai clic con il pulsante destro del mouse sulla casella e fai clic su **[!UICONTROL Collapse to a single node]**. Fai clic con il pulsante destro del mouse sul nodo compresso e fai clic su **[!UICONTROL Save Dimension]**.
 
-   Per creare una nuova dimensione basata su più nodi, Ctrl+clic e trascinate per creare una casella intorno agli elementi da selezionare. Fare clic con il pulsante destro del mouse sulla casella e scegliere **[!UICONTROL Collapse to a single node]**. Fare clic con il pulsante destro del mouse sul nodo compresso e scegliere **[!UICONTROL Save Dimension]**.
+1. Nel campo [!DNL File name] , digita un nome più descrittivo per la dimensione e fai clic su **[!UICONTROL Save]**. Ora puoi accedere a questa dimensione da qualsiasi elenco di dimensioni.
 
-1. Nel [!DNL File name] campo, digitate un nome più descrittivo per la dimensione e fate clic su **[!UICONTROL Save]**. Ora puoi accedere a questa dimensione da qualsiasi elenco di dimensioni.
-
-   Se desiderate che tutti gli utenti di un profilo utilizzino le dimensioni salvate, dovete caricarle nel profilo appropriato utilizzando il [!DNL Profile Manager]. Consultate [Pubblicazione dei file nel profilo](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)di lavoro.
-
+   Se desideri che tutti gli utenti di un profilo utilizzino le dimensioni salvate, caricale nel profilo appropriato utilizzando [!DNL Profile Manager]. Consulta [Pubblicazione di file nel profilo di lavoro](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
