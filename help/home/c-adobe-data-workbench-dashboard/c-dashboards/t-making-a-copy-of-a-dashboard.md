@@ -1,22 +1,20 @@
 ---
 description: Passaggi per copiare un dashboard.
-solution: Analytics
 title: Creazione di una copia di un dashboard
-topic: Data workbench
 uuid: ba47ded4-8676-48a7-853f-6321ea6eb601
+exl-id: e922a9db-81f7-4ef9-a0af-a7ece15bd7a1
 translation-type: tm+mt
-source-git-commit: 99971eae6cf9c65a7a4a972b21a2b8ed4502c007
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 20%
 
 ---
 
-
 # Creazione di una copia di un dashboard{#making-a-copy-of-a-dashboard}
 
 Passaggi per copiare un dashboard.
 
-1. Caricate il dashboard di cui desiderate creare una copia.
-1. Selezionate **[!UICONTROL Save As…]** dal menu del dashboard nella parte superiore dell&#39;interfaccia del dashboard.
-1. Quando viene visualizzata la **[!UICONTROL Save Dashboard As…]** finestra, immettete un nuovo nome per la copia del dashboard.
+1. Carica il dashboard di cui desideri creare una copia.
+1. Seleziona **[!UICONTROL Save As…]** dal menu del dashboard nella parte superiore dell’interfaccia del dashboard.
+1. Quando viene visualizzata la finestra **[!UICONTROL Save Dashboard As…]**, immetti un nuovo nome per la copia del dashboard.
