@@ -1,28 +1,28 @@
 ---
-description: Le interfacce di configurazione del dataset mostrano le relazioni tra i componenti (origini di registro, campi, trasformazioni e dimensioni) del dataset.
-solution: Analytics
-title: Utilizzo Delle Interfacce Di Configurazione Del Set Di Dati
-topic: Data workbench
+description: Le interfacce di configurazione del set di dati mostrano le relazioni tra i componenti (origini di registro, campi, trasformazioni e dimensioni) del set di dati.
+title: Utilizzo delle Interfacce di configurazione del set di dati
 uuid: c29faccd-0402-4982-9e5b-7379e2590246
+exl-id: cc2b876f-8d65-4b36-920a-dde3928795bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 10%
 
 ---
 
+# Utilizzo delle Interfacce di configurazione del set di dati{#working-with-dataset-configuration-interfaces}
 
-# Utilizzo Delle Interfacce Di Configurazione Del Set Di Dati{#working-with-dataset-configuration-interfaces}
+Le interfacce di configurazione del set di dati mostrano le relazioni tra i componenti (origini di registro, campi, trasformazioni e dimensioni) del set di dati.
 
-Le interfacce di configurazione del dataset mostrano le relazioni tra i componenti (origini di registro, campi, trasformazioni e dimensioni) del dataset.
+Alcune interfacce forniscono opzioni per la visualizzazione delle informazioni, la ricerca all’interno o la modifica dei componenti del set di dati.
 
-Alcune interfacce forniscono opzioni per visualizzare informazioni su, cercare all&#39;interno o modificare i componenti del dataset.
+**Apertura delle interfacce di configurazione del set di dati**
 
-**Per aprire le interfacce di configurazione del dataset**
+Puoi aprire le interfacce per la configurazione del set di dati utilizzando uno dei seguenti metodi:
 
-È possibile aprire le interfacce per la configurazione del set di dati utilizzando uno dei seguenti metodi:
-
-* **Menu Amministratore:** Fare clic con il pulsante destro del mouse all&#39;interno di un&#39;area di lavoro, quindi scegliere **[!UICONTROL Admin]** l&#39;opzione di menu appropriata.
+* **Menu Admin:** fai clic con il pulsante destro del mouse in un’area di lavoro, fai clic su  **[!UICONTROL Admin]**, quindi scegli l’opzione di menu appropriata.
 
    -O-
 
-* **Scheda Amministratore:** Fate clic per aprire la miniatura dell’area di lavoro appropriata in **[!UICONTROL Admin]** > **[!UICONTROL Dataset and Profile tab]**.
-
+* **Scheda Amministratore:** fai clic per aprire la miniatura dell’area di lavoro appropriata in  **[!UICONTROL Admin]** >  **[!UICONTROL Dataset and Profile tab]**.
