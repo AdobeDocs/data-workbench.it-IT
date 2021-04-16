@@ -1,22 +1,22 @@
 ---
-description: 'null'
-solution: Analytics
+description: Tabelle
 title: Tabelle
-topic: Data workbench
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
+exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 1%
 
 ---
 
-
 # Tabelle{#tables}
 
-Le tabelle sono le visualizzazioni più dettagliate disponibili nell’applicazione dashboard. Le tabelle consentono di visualizzare i dati delle metriche e delle dimensioni con ogni elemento dati rappresentato come una riga in una tabella. Una colonna contiene i valori delle dimensioni, mentre le altre contengono i valori delle metriche corrispondenti. È possibile visualizzare più metriche e non esistono restrizioni al numero di valori di dimensione che possono essere visualizzati in una tabella. Tutti i valori di una dimensione selezionata presenti nei dati del workbench dati verranno visualizzati nella tabella.
+Le tabelle sono le visualizzazioni più dettagliate disponibili nell’applicazione dashboard. Le tabelle ti consentono di visualizzare i dati delle metriche e delle dimensioni con ciascun elemento dati rappresentato come riga in una tabella. Una colonna contiene i valori di dimensione, mentre le altre contengono i valori di metrica corrispondenti. È possibile visualizzare più metriche e non vi sono restrizioni al numero di valori di dimensione che possono essere visualizzati in una tabella. Tutti i valori per una dimensione selezionata presente nei dati di Data Workbench verranno visualizzati nella tabella.
 
-Per ridisporre l’ordine delle colonne, fare clic e trascinare un’intestazione di colonna in un’altra posizione nell’area di intestazione della colonna. L&#39;ordinamento può essere eseguito in qualsiasi momento facendo clic sull&#39;intestazione della colonna appropriata. Facendo di nuovo clic sull’intestazione della colonna l’ordinamento verrà inverso.
+L’ordine delle colonne può essere ridisposto facendo clic e trascinando un’intestazione di colonna in un’altra posizione nell’area di intestazione della colonna. L’ordinamento può essere eseguito in qualsiasi momento facendo clic sull’intestazione di colonna appropriata. Facendo nuovamente clic sull’intestazione della colonna, l’ordinamento viene invertito.
 
-È possibile effettuare selezioni nelle tabelle facendo clic su una riga specifica. Premendo e tenendo premuto il **[!UICONTROL Control]** tasto, le selezioni vengono mantenute mentre fate clic su altri elementi. Premendo e tenendo premuto il **[!UICONTROL Control]** tasto quando si fa clic, viene attivato anche il valore di una selezione. Questo è utile per rimuovere una sola selezione da un gruppo di elementi già selezionati. Per selezionare un intervallo di righe, fare clic prima su una riga per selezionarla, quindi premere il **[!UICONTROL Shift]** tasto mentre si fa clic sull&#39;ultima riga.
+Le selezioni possono essere effettuate nelle tabelle facendo clic su una riga specifica. Premendo e tenendo premuto il tasto **[!UICONTROL Control]** le selezioni verranno mantenute mentre fai clic su elementi aggiuntivi. Premendo e tenendo premuto il tasto **[!UICONTROL Control]** quando fai clic, viene attivato anche il valore di una selezione. Questa opzione è utile per rimuovere una sola selezione da un gruppo di elementi già selezionati. Per selezionare un intervallo di righe, fai clic prima su una riga per selezionarla, quindi premi il tasto **[!UICONTROL Shift]** facendo clic sull’ultima riga.
 
 ![](assets/table.png)
-
