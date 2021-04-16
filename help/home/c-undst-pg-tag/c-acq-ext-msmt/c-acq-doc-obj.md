@@ -1,20 +1,21 @@
 ---
-description: Utilizzando il modello di oggetto documento JavaScript, è possibile utilizzare metodi di script aggiuntivi per espandere la richiesta per il file zig.js.
-solution: Analytics
+description: Utilizzando il modello di oggetto documento JavaScript, è possibile utilizzare metodi di script aggiuntivi per incrementare la richiesta del file zig.js.
 title: Acquisizione di oggetti documento
-topic: Data workbench
 uuid: 7681c337-b147-4937-9d9c-0ff48d9bdd00
+exl-id: eae6609c-be86-44cf-a1a1-69ffb43231fa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 5%
 
 ---
 
-
 # Acquisizione di oggetti documento{#acquiring-document-objects}
 
-Utilizzando il modello di oggetto documento JavaScript, è possibile utilizzare metodi di script aggiuntivi per espandere la richiesta per il file zig.js.
+Utilizzando il modello di oggetto documento JavaScript, è possibile utilizzare metodi di script aggiuntivi per incrementare la richiesta del file zig.js.
 
-Informazioni quali il valore dei tag META, i valori ID dei tag DIV e così via possono essere citati per nome e raccolti come variabili da utilizzare nell&#39;analisi. Ad esempio, per acquisire in modo dinamico le informazioni contenute nell&#39;elemento META del documento HTML, è possibile utilizzare la seguente sintassi JavaScript:
+Informazioni come il valore dei tag META, i valori ID dei tag DIV e così via possono essere referenziati per nome e raccolti come variabili da utilizzare nell’analisi. Ad esempio, per acquisire in modo dinamico le informazioni contenute nell’elemento META del documento HTML, è possibile utilizzare la seguente sintassi JavaScript:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -37,6 +38,6 @@ v["_1"] = metacontent;
 
 | Dati raccolti | Spiegazione | Esempio |
 |---|---|---|
-| v_1= | Valore associato alla variabile della stringa di query METAVALUE. Questo valore rappresenta i dati all&#39;interno dell&#39;elemento META del documento HTML. | v_1=Questa pagina contiene il contenuto correlato alla pagina di ringraziamento dell’ordine. |
+| v_1= | Valore associato alla variabile della stringa di query METAVALUE. Questo valore rappresenta i dati all’interno dell’elemento META del documento HTML. | v_1=Questa pagina fornisce il contenuto relativo alla pagina di ringraziamento dell&#39;ordine. |
 
-Una volta raccolti i dati, puoi configurare il server workbench dati per elaborare i dati di misurazione ai fini dell&#39;analisi e del reporting.
+Una volta raccolti i dati, puoi configurare il server di Data Workbench per elaborare i dati di misurazione ai fini dell’analisi e del reporting.
