@@ -1,31 +1,31 @@
 ---
 description: Passaggi per visualizzare informazioni o opzioni per una dimensione.
-solution: Analytics
 title: Visualizza il menu Dimensione
-topic: Data workbench
 uuid: e2c4fa8d-3559-45bd-8ec5-d064c763b20b
+exl-id: 55b2cb3a-d82e-4e42-b1b6-079ca3667be8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '89'
+ht-degree: 11%
 
 ---
-
 
 # Visualizza il menu Dimensione{#display-the-dimension-menu}
 
 Passaggi per visualizzare informazioni o opzioni per una dimensione.
 
-1. Nella visualizzazione dell’analisi guidata, fai clic con il pulsante destro del mouse sul nome di una dimensione.
+1. Nella visualizzazione di analisi guidata, fai clic con il pulsante destro del mouse su un nome di dimensione.
 
    ![Informazioni sul passaggio](assets/mnu_GuidedAnalysis.png)
 
    >[!NOTE]
    >
-   >Se il nome di una dimensione viene visualizzato in rosso, non è definito nel set di dati.
+   >Se un nome di dimensione viene visualizzato in rosso, non è definito nel set di dati.
 
 1. Visualizzare le informazioni statistiche sulla dimensione, descritte in precedenza in questa sezione.
-1. (Facoltativo) Fate clic su una delle seguenti opzioni:
+1. (Facoltativo) Fai clic su una delle seguenti opzioni:
 
    * **[!UICONTROL Add]** per aggiungere un’altra dimensione.
-   * **[!UICONTROL Remove]** per rimuovere la quota selezionata.
+   * **[!UICONTROL Remove]** per rimuovere la dimensione selezionata.
    * **[!UICONTROL Add Visualization]** per aggiungere una visualizzazione per la dimensione selezionata.
-
