@@ -1,72 +1,70 @@
 ---
-description: La funzionalità di trasformazione viene eseguita su un computer FSU di Insight Server per consentire l'esportazione dei dati di origine del registro da utilizzare in altre applicazioni.
-solution: Analytics
+description: La funzionalità di trasformazione viene eseguita su un computer FSU di Insight Server per abilitare l’esportazione dei dati di origine dei registri da utilizzare in altre applicazioni.
 title: Configurazione di Transform
 uuid: 0526704a-71b2-4094-9d3a-1ba84f4dc287
+exl-id: 5dbd70e4-55fc-4446-b687-525e7957209b
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 1%
 
 ---
 
-
 # Configurazione di Transform{#configuring-transform}
 
-La funzionalità di trasformazione viene eseguita su un computer FSU di Insight Server per consentire l&#39;esportazione dei dati di origine del registro da utilizzare in altre applicazioni.
+La funzionalità di trasformazione viene eseguita su un computer FSU di Insight Server per abilitare l’esportazione dei dati di origine dei registri da utilizzare in altre applicazioni.
 
-[!DNL Transform] è in grado di leggere [!DNL .vsl] file di registro, file XML e dati ODBC ed esportare i dati come [!DNL .vsl] file, file di testo o file di testo delimitati che possono essere utilizzati da routine di caricamento data warehouse, agenzie di controllo o altri target. L&#39;estrazione e la trasformazione dei dati possono essere eseguite in modo continuo o su altra base programmata. Ogni [!DNL Insight Server] FSU che fornisce l&#39;output dei dati dell&#39;evento alterati deve essere eseguito [!DNL Transform].
+[!DNL Transform] può leggere  [!DNL .vsl] file, file di registro, file XML e dati ODBC ed esportare i dati come  [!DNL .vsl] file, file di testo o file di testo delimitati che possono essere utilizzati da routine di caricamento del data warehouse, agenzie di controllo o altri oggetti. L’estrazione e la trasformazione dei dati possono essere eseguite in modo continuo o su altra base pianificata. Ogni FSU [!DNL Insight Server] che fornisce l&#39;output dei dati dell&#39;evento alterati deve essere eseguita [!DNL Transform].
 
 >[!NOTE]
 >
->In genere [!DNL Transform] è installato su un [!DNL Insight Server] FSU. Tuttavia, l’implementazione potrebbe richiedere l’installazione su un [!DNL Insight Server] DPU. Per ulteriori informazioni, contatta  Adobe.
+>In genere, [!DNL Transform] è installato su una FSU [!DNL Insight Server]. Tuttavia, l’implementazione potrebbe richiedere l’installazione su una DPU [!DNL Insight Server]. Per ulteriori informazioni, contatta l’Adobe .
 
-Per informazioni sui requisiti di sistema per l’installazione, la configurazione e il funzionamento [!DNL Transform]consultate il documento sui requisiti *di sistema* minimi.
+Per informazioni sui requisiti di sistema per l&#39;installazione, la configurazione e il funzionamento [!DNL Transform], vedere il documento *Requisiti minimi di sistema* .
 
- Adobe distribuisce la [!DNL Transform] funzionalità come profilo all&#39;interno del [!DNL .zip] file per il pacchetto di [!DNL Insight Server] rilascio. Il [!DNL Transform] profilo è un profilo interno che fornisce funzionalità aggiuntive a [!DNL Insight Server]. Come per tutti gli altri profili interni forniti dal  Adobe, il profilo non deve essere modificato. Tutta la personalizzazione deve avvenire nel dataset o nei profili specifici del ruolo o in altri profili creati.
+Adobe distribuisce la funzionalità [!DNL Transform] come profilo all&#39;interno del file [!DNL .zip] per il pacchetto di versione [!DNL Insight Server]. Il profilo [!DNL Transform] è un profilo interno che fornisce funzionalità aggiuntive a [!DNL Insight Server]. Come per tutti gli altri profili interni forniti dall’Adobe, il profilo non deve essere modificato. Tutte le personalizzazioni devono verificarsi nel set di dati o nei profili specifici per il ruolo o in altri profili creati.
 
-Il profilo è costituito dai file seguenti:
+Il profilo è costituito dai seguenti file:
 
 * [!DNL Log Processing.cfg]
 * [!DNL [!DNL Insight] Transform.cfg]
 * [!DNL [!DNL Insight] Transform Mode.cfg]
-* un set di dati di elaborazione del registro include un file
+* un file di set di dati di elaborazione del registro include
 
-Tutti questi file si trovano nella [!DNL Dataset] cartella del profilo.
+Tutti questi file si trovano nella cartella [!DNL Dataset] del profilo.
 
-**Per installare il[!DNL Transform]profilo su[!DNL Insight Server]**
+**Per installare il  [!DNL Transform] profilo su[!DNL Insight Server]**
 
 >[!NOTE]
 >
->Le seguenti istruzioni di installazione presuppongono che sia stata installata [!DNL Insight] e stabilita una connessione tra [!DNL Insight] e l’ [!DNL Insight Server] in cui si sta installando [!DNL Transform]. Se non lo avete ancora fatto, consultate la * [!DNL Insight] User Guide*.
+>Le istruzioni di installazione seguenti presuppongono che sia stata installata [!DNL Insight] e che sia stata stabilita una connessione tra [!DNL Insight] e [!DNL Insight Server] in cui si sta installando [!DNL Transform]. Se non lo hai fatto, consulta la * [!DNL Insight] Guida utente*.
 
-1. Aprite il [!DNL .zip] file per il pacchetto di [!DNL Insight Server] rilascio e aprite la [!DNL Profiles] cartella all’interno di tale [!DNL .zip] file.
-1. Copiate la [!DNL Transform] cartella nella [!DNL Profiles] cartella della directory di [!DNL Insight Server] installazione. Desiderate finire con una [!DNL ...\Profiles\Transform] cartella sul vostro computer, [!DNL Insight Server] come illustrato nell&#39;esempio seguente.
+1. Apri il file [!DNL .zip] per il pacchetto di versione [!DNL Insight Server] e apri la cartella [!DNL Profiles] all’interno del file [!DNL .zip].
+1. Copia la cartella [!DNL Transform] nella cartella [!DNL Profiles] nella directory di installazione [!DNL Insight Server]. Vuoi finire con una cartella [!DNL ...\Profiles\Transform] sul tuo [!DNL Insight Server] come mostrato nell&#39;esempio seguente.
 
    ![Informazioni sul passaggio](assets/win_installTransformProfile.png)
 
    >[!NOTE]
    >
-   >Se avete seguito tutti i passaggi per l&#39;installazione [!DNL Insight Server] (consultate [Insight Server](../../../home/c-inst-svr/c-msr-server/c-msr-server.md)), potete già avere una [!DNL Transform] cartella nella directory Profili.
+   >Se hai seguito tutti i passaggi per l’installazione di [!DNL Insight Server] (consulta [Insight Server](../../../home/c-inst-svr/c-msr-server/c-msr-server.md)), potresti avere già una cartella [!DNL Transform] nella directory Profiles .
 
-1. Per aggiornare il [!DNL profile.cfg] file per il profilo con il quale si desidera utilizzare i passaggi seguenti [!DNL Transform]. Il dataset viene rielaborato al completamento di questi passaggi.
+1. Utilizza i passaggi seguenti per aggiornare il file [!DNL profile.cfg] per il profilo con cui desideri utilizzare [!DNL Transform]. Il set di dati rielabora una volta completati questi passaggi.
 
-   1. Aprite il [!DNL Profile Manager].
-   1. Fare clic con il pulsante destro del mouse sul segno di spunta accanto a [!DNL profile.cfg] e fare clic su **[!UICONTROL Make Local]**. Un segno di spunta per questo file viene visualizzato nella [!DNL User] colonna.
+   1. Apri [!DNL Profile Manager].
+   1. Fai clic con il pulsante destro del mouse sul segno di spunta accanto a [!DNL profile.cfg] e fai clic su **[!UICONTROL Make Local]**. Un segno di spunta per questo file viene visualizzato nella colonna [!DNL User].
 
-   1. Fare clic con il pulsante destro del mouse sul segno di spunta appena creato e scegliere **[!UICONTROL Open]** > **[!UICONTROL in Insight]**. Viene [!DNL profile.cfg] visualizzata la finestra.
+   1. Fai clic con il pulsante destro del mouse sul segno di spunta appena creato e fai clic su **[!UICONTROL Open]** > **[!UICONTROL in Insight]**. Viene visualizzata la finestra [!DNL profile.cfg].
 
-   1. Nella [!DNL profile.cfg]finestra, fare clic con il pulsante destro del mouse **[!UICONTROL Directories]** e scegliere **[!UICONTROL Add new]** > **[!UICONTROL Directory]**.
+   1. Nella finestra [!DNL profile.cfg]fare clic con il pulsante destro del mouse su **[!UICONTROL Directories]** e scegliere **[!UICONTROL Add new]** > **[!UICONTROL Directory]**.
 
-      Per aggiungere la nuova directory alla fine dell&#39;elenco di directory, fare clic con il pulsante destro del mouse sul numero o sul nome dell&#39;ultima directory dell&#39;elenco e scegliere **[!UICONTROL Add new]** > **[!UICONTROL Directory]**.
+      Per aggiungere la nuova directory alla fine dell’elenco di directory, fare clic con il pulsante destro del mouse sul numero o sul nome dell’ultima directory nell’elenco e fare clic su **[!UICONTROL Add new]** > **[!UICONTROL Directory]**.
 
    1. Digitare il nome della nuova directory: [!DNL Transform]
-   1. Fare clic con il pulsante destro del mouse **[!UICONTROL (modified)]** nella parte superiore della finestra e fare clic su **[!UICONTROL Save]**.
+   1. Fai clic con il pulsante destro del mouse su **[!UICONTROL (modified)]** nella parte superiore della finestra e fai clic su **[!UICONTROL Save]**.
 
-   1. Fare [!DNL Profile Manager]clic con il pulsante destro del mouse sul segno di spunta [!DNL profile.cfg] nella [!DNL User] colonna, quindi scegliere **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
+   1. In [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta per [!DNL profile.cfg] nella colonna [!DNL User], quindi fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
 
       >[!NOTE]
       >
-      >Non salvate il file di configurazione modificato in alcun profilo interno fornito dal  Adobe (incluso il profilo), in quanto le modifiche vengono sovrascritte quando installate gli aggiornamenti a tali profili.
-
+      >Non salvare il file di configurazione modificato in nessuno dei profili interni forniti dall’Adobe (incluso il profilo), in quanto le modifiche vengono sovrascritte quando installi gli aggiornamenti a tali profili.
