@@ -1,22 +1,23 @@
 ---
 description: Informazioni sulle opzioni del servizio dati per la mappatura degli indirizzi IP.
-solution: Analytics
-title: Informazioni su Data Services
-topic: Data workbench
+title: Informazioni sui servizi dati
 uuid: 60fa12b9-4b64-457d-b0d4-1d7eb44f19b2
+exl-id: 330c6fb6-c579-45fb-ae5a-22649dc006aa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '145'
+ht-degree: 5%
 
 ---
 
-
-# Informazioni su Data Services{#about-the-data-services}
+# Informazioni sui servizi dati{#about-the-data-services}
 
 Informazioni sulle opzioni del servizio dati per la mappatura degli indirizzi IP.
 
-Se si utilizza un&#39;applicazione Adobe, si dispone di un workbench dati con licenza [!DNL Geography]e si desidera mappare gli indirizzi IP a livello globale o creare visualizzazioni che mostrino le dimensioni geografiche dei dati (ad esempio, codice dell&#39;area, fuso orario, MSA) basati sull&#39;indirizzo IP, è possibile abbonarsi a uno dei due servizi dati facoltativi:
+Se utilizzi un’applicazione di Adobe, disponi di una licenza per Data Workbench [!DNL Geography] e desideri mappare gli indirizzi IP sul globo oppure creare visualizzazioni che mostrino dimensioni dei dati geograficamente correlate (ad esempio, codice dell’area, fuso orario, MSA) basate sull’indirizzo IP, puoi abbonarti a uno dei due servizi di dati facoltativi:
 
-* Servizio dati IP di geolintelligence (offerto da Adobe, fornito da Digital Envoy)
-* Servizio dati IP Geolocalità (offerto da Adobe, fornito da Quova)
+* Servizio di dati Geo-intelligence IP (offerto da Adobe, fornito da Digital Envoy)
+* Servizio dati di geolocalizzazione IP (offerto da Adobe, fornito da Quova)
 
-Ogni servizio dati fornisce un profilo che contiene dimensioni aggiuntive di dati (come Codice area, MSA e Fuso orario) e i file di ricerca di supporto contenenti gli elementi di tali dimensioni. Potete utilizzare queste dimensioni aggiuntive nelle aree di lavoro di analisi nel workbench dati.
+Ogni servizio di dati fornisce un profilo contenente dimensioni aggiuntive di dati (come Codice area, MSA e Fuso orario) e i file di ricerca di supporto che contengono gli elementi di tali dimensioni. Puoi utilizzare queste dimensioni aggiuntive nelle aree di lavoro di analisi all’interno di Data Workbench.
