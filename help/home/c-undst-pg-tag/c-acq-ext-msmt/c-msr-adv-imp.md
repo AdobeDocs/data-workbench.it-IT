@@ -1,22 +1,23 @@
 ---
-description: Il marketing del sito Web può comportare il posizionamento di annunci pubblicitari sotto forma di immagini o altri file multimediali (serviti dal server Web) su siti Web di terze parti.
-solution: Analytics
-title: Misurazione dell'impatto pubblicitario
-topic: Data workbench
+description: Il marketing del tuo sito web può comportare il posizionamento di annunci pubblicitari sotto forma di immagini o altri file rich media (serviti dal tuo server web) su siti web di terze parti.
+title: Misurazione dell’impression pubblicitaria
 uuid: ca2bd6bf-4f49-406c-b47a-18d6abfb48a4
+exl-id: 77cd816e-63a4-4080-ac65-0661e1de4ec0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 4%
 
 ---
 
+# Misurazione dell’impression pubblicitaria{#measuring-advertisement-impression}
 
-# Misurazione dell&#39;impatto pubblicitario{#measuring-advertisement-impression}
+Il marketing del tuo sito web può comportare il posizionamento di annunci pubblicitari sotto forma di immagini o altri file rich media (serviti dal tuo server web) su siti web di terze parti.
 
-Il marketing del sito Web può comportare il posizionamento di annunci pubblicitari sotto forma di immagini o altri file multimediali (serviti dal server Web) su siti Web di terze parti.
+In questi casi, potrebbe essere utile misurare sia l’impressione dell’annuncio su un browser sia il successivo click-through, se si verifica, dell’URL di destinazione dell’annuncio sul sito web.
 
-In questi casi, potete misurare sia l’impressione dell’annuncio pubblicitario su un browser, sia il successivo click-through, se si verifica, dell’URL di destinazione dell’annuncio sul vostro sito Web.
-
-Per gli annunci pubblicitari sotto forma di immagini, l&#39;aggiunta [!DNL Log=1] alla stringa di query determina la richiesta di immagine, e quindi l&#39;impressione di annuncio, catturata da [!DNL Sensor] per fini di analisi.
+Per gli annunci sotto forma di immagini, l&#39;aggiunta di [!DNL Log=1] alla stringa di query determina la richiesta di immagine e quindi l&#39;impression pubblicitaria, catturata da [!DNL Sensor] a scopo di analisi.
 
 ```
 <!—REFERENCE IMPRESSION TAG-> 
@@ -26,11 +27,11 @@ Per gli annunci pubblicitari sotto forma di immagini, l&#39;aggiunta [!DNL Log=1
 
 | Dati raccolti | Spiegazione | Esempio |
 |---|---|---|
-| v_ic= | Valore che indica la campagna Impression | v_ic=&quot;CAMPAIGN1&quot; |
-| v_ica= | Valore che indica la risorsa campagna di impressione | v_ica=&quot;72890ab&quot; |
-| v_icr= | Valore che indica il referente della campagna Impression | v_icr=&quot;http://money.cnn.com/markets/ |
+| v_ic= | Valore che indica la campagna di impression | v_ic=&quot;CAMPAIGN1&quot; |
+| v_ica= | Valore che indica la risorsa della campagna di impression | v_ica=&quot;72890ab&quot; |
+| v_icr= | Valore che indica il referente campagna di impression | v_icr=&quot;http://money.cnn.com/markets/ |
 
-Oltre ad aggiungere [!DNL Log=1] alla richiesta dell’immagine, è necessario aggiungere un identificatore all’URL che conduce dall’annuncio alla pagina di destinazione all’interno del sito Web, per tenere traccia dell’annuncio che ha portato al click-through e per monitorare il click-through alla campagna particolare per quell’annuncio.
+Oltre a aggiungere [!DNL Log=1] alla richiesta di immagine, è necessario aggiungere un identificatore all&#39;URL che porta dall&#39;annuncio alla pagina di destinazione all&#39;interno del sito web per tenere traccia dell&#39;annuncio che ha portato al click-through e per monitorare il click-through alla campagna particolare per quell&#39;annuncio.
 
 ```
 <a href=”www.mysite.com/path/to/landingpage?Log=1&v_c=CAMPAIGN&v_ca=72890ab&v_cr=http://money.cnn.com/markets/”>
@@ -49,19 +50,18 @@ Click Here
  <tbody> 
   <tr> 
    <td colname="col1"> v_c= </td> 
-   <td colname="col2"> Valore che indica la campagna Click-through </td> 
+   <td colname="col2"> Valore che indica la campagna di click-through </td> 
    <td colname="col3"> v_c="CAMPAIGN1" </td> 
   </tr> 
   <tr> 
    <td colname="col1"> v_ca= </td> 
-   <td colname="col2"> Valore che indica la risorsa campagna Click-through </td> 
+   <td colname="col2"> Valore che indica la risorsa della campagna di click-through </td> 
    <td colname="col3"> v_ca="72890ab" </td> 
   </tr> 
   <tr> 
    <td colname="col1"> v_cr= </td> 
-   <td colname="col2"> Valore che indica il referente campagna Click-through </td> 
-   <td colname="col3"> <p> <span class="filepath"> v_cr="http://money.cnn.com/</span> </p> <p>markets/ </p> </td> 
+   <td colname="col2"> Valore che indica il referente campagna di click-through </td> 
+   <td colname="col3"> <p> <span class="filepath"> v_cr="http://money.cnn.com/</span> </p> <p>mercati/ </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
