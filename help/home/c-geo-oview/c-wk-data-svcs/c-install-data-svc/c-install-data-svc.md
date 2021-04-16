@@ -1,28 +1,29 @@
 ---
-description: Informazioni sull'installazione di un servizio dati su un server workbench dati.
-solution: Analytics
-title: Installazione di un servizio dati in un server Workbench dati
-topic: Data workbench
+description: Informazioni sull’installazione di un servizio dati su un server di Data Workbench.
+title: Installazione di un servizio dati su un server di Data Workbench
 uuid: afe8e259-7fef-4327-9afc-18f36a1934db
+exl-id: 414e93b7-4e9c-4c84-8fba-8052939240c5
 translation-type: tm+mt
-source-git-commit: 948c6dd04819e939b45745db573a53c8be51ce37
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 7%
 
 ---
 
+# Installazione di un servizio dati su un server di Data Workbench{#installing-a-data-service-on-a-data-workbench-server}
 
-# Installazione di un servizio dati in un server Workbench dati{#installing-a-data-service-on-a-data-workbench-server}
+Informazioni sull’installazione di un servizio dati su un server di Data Workbench.
 
-Informazioni sull&#39;installazione di un servizio dati su un server workbench dati.
-
-Se si utilizza il servizio dati Geo-intelligence IP o il servizio dati Geo-location IP, è necessario installare il [!DNL IP Geo-intelligence] profilo o [!DNL IP Geo-location] i relativi file di ricerca sul server workbench dati. Dopo aver installato il [!DNL Geography] profilo del workbench dati, è necessario completare le seguenti procedure. Vedere [Installazione della geografia](../../../../home/c-geo-oview/c-inst-geo/c-inst-geo.md)del workbench dati. Se non è stato installato il workbench dati, seguire le istruzioni riportate nella Guida *utente di Workbench* dati prima di procedere.
+Se utilizzi il servizio dati Geo-intelligence IP o il servizio dati di geolocalizzazione IP, devi installare il profilo [!DNL IP Geo-intelligence] o [!DNL IP Geo-location] e i relativi file di ricerca sul server di Data Workbench. Dopo aver installato il profilo di Data Workbench [!DNL Geography] , devi completare le seguenti procedure. Consulta [Installazione della geografia di Data Workbench](../../../../home/c-geo-oview/c-inst-geo/c-inst-geo.md). Se non hai installato Data Workbench, segui le istruzioni contenute nella *Data Workbench Guida utente* prima di procedere.
 
 >[!NOTE]
 >
->Per installare i file del servizio dati, è necessario avere accesso ai file sul server Workbench dati.
+>Per installare i file del servizio dati, è necessario disporre dell’accesso ai file sul server di Data Workbench.
 
-Adobe distribuisce i servizi di dati IP Geo-intelligence e IP Geo-location come [!DNL .zip] file. Ciascun [!DNL .zip] file contiene due cartelle: Ricerche e profili. Per installare un servizio dati sul server workbench dati, è necessario eseguire i seguenti passaggi:
+Adobe distribuisce i servizi di dati di geolocalizzazione IP e i servizi di geolocalizzazione IP come file [!DNL .zip]. Ogni file [!DNL .zip] contiene due cartelle: Ricerche e profili. Per installare un servizio dati sul server di Data Workbench, è necessario eseguire i seguenti passaggi:
 
-* Installa il profilo del servizio dati. Consulta [Installazione del profilo](../../../../home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)del servizio dati.
-* Installare le ricerche del servizio dati. Vedere [Installazione dei file](../../../../home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md)di ricerca del servizio dati.
+* Installa il profilo del servizio dati. Consulta [Installazione del profilo del servizio dati](../../../../home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md).
+* Installa le ricerche del servizio dati. Consulta [Installazione dei file di ricerca del servizio dati](../../../../home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md).
 
-È necessario installare il profilo del servizio dati e i file di ricerca nel computer server workbench dati in cui si sta elaborando ed eseguendo il profilo del set di dati. Se si esegue un cluster di server workbench dati, è necessario installare i file sul server master. Per informazioni sui profili dei set di dati, consulta la Guida alla configurazione dei *set di dati*.
+È necessario installare il profilo del servizio dati e i file di ricerca nel computer server di Data Workbench in cui si sta elaborando ed eseguendo il profilo del set di dati. Se si esegue un cluster di server di Data Workbench, è necessario installare i file sul server master. Per informazioni sui profili dei set di dati, consulta la *Guida alla configurazione dei set di dati*.
