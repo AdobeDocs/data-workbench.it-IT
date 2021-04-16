@@ -1,24 +1,24 @@
 ---
-description: Informazioni sull'aggiunta di un callout a una mappa di processo 2D.
-solution: Analytics
+description: Informazioni sull'aggiunta di un callout a una mappa del processo 2D.
 title: Aggiungere un callout
-topic: Data workbench
 uuid: 5302e914-5382-4a35-b4c8-a9ad42859a3e
+exl-id: acb0cdae-80eb-48ee-aeb5-87e7ba557aa8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '51'
+ht-degree: 11%
 
 ---
 
-
 # Aggiungere un callout{#add-a-callout}
 
-Informazioni sull&#39;aggiunta di un callout a una mappa di processo 2D.
+Informazioni sull&#39;aggiunta di un callout a una mappa del processo 2D.
 
-Fare clic con il pulsante destro del mouse sul nodo e scegliere **[!UICONTROL Add Callout]** > *&lt;**[!UICONTROL callout type]**>*.
+Fai clic con il pulsante destro del mouse sul nodo e fai clic su **[!UICONTROL Add Callout]** > *&lt;**[!UICONTROL callout type]**>*.
 
-Per ulteriori informazioni sui layout, consultate [Aggiunta di Callout a un&#39;area di lavoro](../../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0).
+Per ulteriori informazioni sui callout, vedere [Aggiunta di callout a un&#39;area di lavoro](../../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0).
 
 >[!NOTE]
 >
->Potete aggiungere i callout solo alle mappe di processo 2D.
-
+>È possibile aggiungere callout solo alle mappe del processo 2D.
