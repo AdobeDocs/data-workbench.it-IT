@@ -1,16 +1,16 @@
 ---
-description: È possibile personalizzare l'interfaccia di Workbench dati in base alle proprie esigenze e configurare determinate funzionalità in modo da poterle utilizzare nelle analisi. Queste sezioni descrivono come eseguire personalizzazioni e configurazioni.
-solution: Analytics
+description: Puoi personalizzare l’interfaccia Data Workbench in base alle tue esigenze e configurare alcune funzioni in modo da poterle utilizzare nelle analisi. Queste sezioni descrivono come eseguire personalizzazioni e configurazioni.
 title: Funzionalità di interfaccia e analisi
-topic: Data workbench
 uuid: a0298c35-1be6-4491-b3d0-e374bd75a542
+exl-id: 90edf4f3-87d0-4239-a614-98ac397315aa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '74'
+ht-degree: 10%
 
 ---
 
-
 # Funzionalità di interfaccia e analisi{#interface-and-analysis-features}
 
-È possibile personalizzare l&#39;interfaccia di Workbench dati in base alle proprie esigenze e configurare determinate funzionalità in modo da poterle utilizzare nelle analisi. Queste sezioni descrivono come eseguire personalizzazioni e configurazioni.
-
+Puoi personalizzare l’interfaccia Data Workbench in base alle tue esigenze e configurare alcune funzioni in modo da poterle utilizzare nelle analisi. Queste sezioni descrivono come eseguire personalizzazioni e configurazioni.
