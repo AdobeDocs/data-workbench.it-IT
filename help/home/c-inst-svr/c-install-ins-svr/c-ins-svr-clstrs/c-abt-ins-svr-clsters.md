@@ -1,34 +1,33 @@
 ---
-description: È necessario un cluster di Insight Server quando la quantità di dati da elaborare e rendere accessibili agli utenti di Insight e Report supera la capacità di un singolo server Insight.
-solution: Analytics
+description: Un cluster di Insight Server è necessario quando la quantità di dati che desideri elaborare e rendere accessibili agli utenti di Insight e Report supera la capacità di un singolo Insight Server.
 title: Informazioni sui cluster di Insight Server
 uuid: d65e0fe5-f87d-4d8e-a208-9192e9d62fb5
+exl-id: b26e0f63-76db-461d-91e7-0968624aa0f7
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
 
 ---
 
-
 # Informazioni sui cluster di Insight Server{#about-insight-server-clusters}
 
-È necessario un cluster di Insight Server quando la quantità di dati da elaborare e rendere accessibili agli utenti di Insight e Report supera la capacità di un singolo server Insight.
+Un cluster di Insight Server è necessario quando la quantità di dati che desideri elaborare e rendere accessibili agli utenti di Insight e Report supera la capacità di un singolo Insight Server.
 
-Configurando un [!DNL Insight Server] cluster, potete distribuire un singolo dataset di analisi su più computer in un cluster per sfruttare la potenza di elaborazione di più [!DNL Insight Servers].
+Impostando un cluster [!DNL Insight Server], puoi distribuire un singolo set di dati di analisi su più computer in un cluster per sfruttare la potenza di elaborazione di più [!DNL Insight Servers].
 
-Il primo passaggio nell&#39;implementazione di un [!DNL Insight Server] cluster consiste nell&#39;allocare i [!DNL Insight Server] computer del cluster. Il primo [!DNL Insight Server] computer configurato è il master [!DNL Insight Server] (a volte denominato primario [!DNL Insight Server]).
-
->[!NOTE]
->
->Se si utilizza un&#39;unità [!DNL Insight Server] File Server (FSU),  Adobe consiglia di configurare l&#39;FSU come principale [!DNL Insight Server]. Per informazioni sulla configurazione di un FSU, vedere la Guida alla configurazione del *set di dati*.
-
-Il master [!DNL Insight Server] gestisce la comunicazione tra l&#39;altro [!DNL Insight Servers] nel cluster (denominato server di elaborazione o, a volte, server di query) e le istanze di [!DNL Insight] e [!DNL Report]. Per un dato set di dati, l&#39;elaborazione del file di registro si verifica su uno o più dei dati [!DNL Insight Servers] (master o elaborazione) specificati nei file di [!DNL Insight Server] configurazione. Quando si lavora in un ambiente cluster, [!DNL Insight] le installazioni sono configurate per l&#39;accesso al master [!DNL Insight Server], ma le query possono essere gestite da qualsiasi [!DNL Insight Servers] utente all&#39;interno del cluster.
+Il primo passo nell&#39;implementazione di un cluster [!DNL Insight Server] è quello di allocare i computer [!DNL Insight Server] nel cluster. Il primo [!DNL Insight Server] computer configurato è il tuo principale [!DNL Insight Server] (a volte indicato come principale [!DNL Insight Server]).
 
 >[!NOTE]
 >
->Il file **PAServer.cfg** . Se si desidera inviare i processi di clustering Predictive Analytics ai server Insight, sarà necessario configurare il [!DNL PAServer.cfg] file per la gestione degli invii del clustering lato server. Il profilo personalizzato deve ereditare il profilo [!DNL PAServer.cfg] dal profilo Predictive Analytics ([!DNL Server\Profiles\Predictive Analytics\Dataset]). Impostate un server ** principale in questo file e salvate il file [!DNL PAServer.cfg] nel sito di implementazione.
+>Se si utilizza una [!DNL Insight Server] File Server Unit (FSU), Adobe consiglia di configurare la FSU come master [!DNL Insight Server]. Per informazioni sulla configurazione di una FSU, vedere la *Guida alla configurazione del set di dati*.
+
+Il master [!DNL Insight Server] gestisce la comunicazione tra gli altri [!DNL Insight Servers] nel cluster (denominati server di elaborazione o, talvolta, server di query) e le istanze di [!DNL Insight] e [!DNL Report]. Per un dato set di dati, l’elaborazione dei file di registro avviene sul (uno o più) designato [!DNL Insight Servers] (master o elaborazione) come specificato nei file di configurazione [!DNL Insight Server]. Quando si lavora in un ambiente cluster, le installazioni [!DNL Insight] sono configurate per accedere al master [!DNL Insight Server], ma le query possono essere gestite da qualsiasi [!DNL Insight Servers] all&#39;interno del cluster.
+
+>[!NOTE]
+>
+>Il file **PAServer.cfg**. Se desideri inviare i lavori di clustering Predictive Analytics a Insight Server, dovrai configurare il file [!DNL PAServer.cfg] per la gestione degli invii di clustering lato server. Il profilo personalizzato deve ereditare il valore [!DNL PAServer.cfg] dal profilo Predictive Analytics ([!DNL Server\Profiles\Predictive Analytics\Dataset]). Imposta un *server principale* in questo file e salva il [!DNL PAServer.cfg] nel sito di implementazione.
 >
 >
 ```
@@ -41,4 +40,4 @@ Il master [!DNL Insight Server] gestisce la comunicazione tra l&#39;altro [!DNL 
 
 >[!IMPORTANT]
 >
->Le istruzioni di cui al presente capitolo non si applicano alla creazione di un [!DNL Insight Server] cluster costituito da più di cinque (5) [!DNL Insight Servers]. Contattate  Adobe per ottenere i requisiti di sistema e le raccomandazioni di configurazione del profilo per cluster di dimensioni superiori a cinque [!DNL Insight Servers].
+>Le istruzioni contenute in questo capitolo non si applicano alla creazione di un cluster [!DNL Insight Server] costituito da più di cinque (5) [!DNL Insight Servers]. Contatta l&#39;Adobe per ottenere i requisiti di sistema e le raccomandazioni di configurazione del profilo per cluster di dimensioni superiori a cinque [!DNL Insight Servers].
