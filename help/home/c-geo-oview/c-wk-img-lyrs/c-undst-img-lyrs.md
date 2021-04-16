@@ -1,55 +1,56 @@
 ---
-description: Informazioni concettuali sui livelli del profilo Geografia, sui tipi di livelli di immagini e sulla creazione di nuovi livelli.
-solution: Analytics
-title: Nozioni di base sui livelli delle immagini
-topic: Data workbench
+description: Informazioni concettuali sui livelli del profilo Geografia, i tipi di livelli delle immagini e la creazione di nuovi livelli.
+title: Informazioni sui livelli immagine
 uuid: 8f4618bf-d8bd-4d21-a29e-ab2871d781ca
+exl-id: ffe084ec-db8b-46f4-8266-0f1b771b3349
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 1%
 
 ---
 
+# Informazioni sui livelli immagine{#understanding-imagery-layers}
 
-# Nozioni di base sui livelli delle immagini{#understanding-imagery-layers}
+Informazioni concettuali sui livelli del profilo Geografia, i tipi di livelli delle immagini e la creazione di nuovi livelli.
 
-Informazioni concettuali sui livelli del profilo Geografia, sui tipi di livelli di immagini e sulla creazione di nuovi livelli.
+## Tipi di livelli immagine {#section-ce25364651a04cd1b83f9ac7c231fa41}
 
-## Tipi di livelli di immagini {#section-ce25364651a04cd1b83f9ac7c231fa41}
+Data Workbench [!DNL Geography] consente di visualizzare i seguenti tipi di livelli immagine all’interno di Data Workbench:
 
-Workbench dati [!DNL Geography] consente di visualizzare i seguenti tipi di livelli di immagini nel workbench dati:
+* **Livello immagine del terreno:** questo tipo di livello visualizza le immagini del terreno della Terra, su cui possono essere visualizzati i dati geografici. La visualizzazione a livello globale all’interno di Data Workbench è un esempio di livello immagine del terreno. Consulta [Utilizzo dei livelli immagine del terreno](../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md#concept-8a0a16013e824ac29f35a0349b5d8ccf).
 
-* **Livello immagine terreno:** Questo tipo di strato mostra le immagini del terreno della Terra, su cui possono essere visualizzati i dati geografici. La visualizzazione globale nel workbench dati è un esempio di un livello di immagine del terreno. Consultate [Utilizzo dei livelli](../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md#concept-8a0a16013e824ac29f35a0349b5d8ccf)immagine terreno.
+* **Livello del punto elemento:** questo tipo di livello visualizza un punto sul globo per ogni elemento di una dimensione. Consulta [Utilizzo dei livelli del punto elemento](../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs.md#concept-52b3262ab4e042a18956be8809638af9).
 
-* **Livello punto elemento:** Questo tipo di livello visualizza un punto sul globo per ogni elemento di una dimensione. Consultate [Utilizzo dei livelli](../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs.md#concept-52b3262ab4e042a18956be8809638af9)dei punti elemento.
+* **Livello vettoriale:** questo tipo di livello visualizza i dati vettoriali (line art) sul globo. Consulta [Utilizzo dei livelli vettoriali](../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-wk-vctr-lyrs.md#concept-a2c9e8155f554cbe96ee3aaf44f2d620).
 
-* **Livello vettoriale:** Questo tipo di livello visualizza i dati vettoriali (line art) sul globo. Consultate [Utilizzo dei livelli](../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-wk-vctr-lyrs.md#concept-a2c9e8155f554cbe96ee3aaf44f2d620)vettoriali.
+All’interno di Data Workbench, puoi selezionare i livelli da visualizzare per una particolare attività di analisi.
 
-Nel workbench dati, potete selezionare quale dei livelli visualizzare per una particolare attività di analisi.
+## Livelli del profilo geografico {#section-4d9fb9b357764493a4d97d2b4068bb67}
 
-## Livelli profilo di geografia {#section-4d9fb9b357764493a4d97d2b4068bb67}
+Il profilo [!DNL Geography] offre un set di livelli predefiniti per immagini, memorizzati nella cartella Profiles\Geography\Maps folder within the data workbench server installation directory:
 
-Il [!DNL Geography] profilo fornisce un set di livelli predefiniti per immagini, memorizzati nella cartella Profiles\Geography\Maps folder within the data workbench server installation directory:
+* **Marmo blu 2 km:** questo livello di immagine del terreno crea una mappa 3D del mondo, che è ciò che viene visualizzato quando si aggiunge la visualizzazione del globo a un&#39;area di lavoro. Quando questo livello non è selezionato, il globo non è visibile ma gli altri livelli vengono comunque visualizzati. Il file [!DNL Blue Marble 2km.layer] fa riferimento al file [!DNL Blue Marble 2km.tsi].
 
-* **Marmo blu 2 km:** Questo livello di immagine del terreno crea una mappa 3D del mondo, che è ciò che viene visualizzato quando aggiungete la visualizzazione globale a un’area di lavoro. Se questo livello non è selezionato, il globo non è visibile ma gli altri livelli continuano a essere visualizzati. Il [!DNL Blue Marble 2km.layer] file fa riferimento al [!DNL Blue Marble 2km.tsi] file.
+   Per informazioni sulle operazioni con la visualizzazione a livello globale, consulta la *Guida utente Data Workbench*.
 
-   Per informazioni su come utilizzare la visualizzazione globale, consulta la Guida *utente di Workbench* dati.
+* **Punti ZIP:** questo livello di punto elemento ti consente di mappare le posizioni nel set di dati utilizzando un codice ZIP degli Stati Uniti. Il file di ricerca [!DNL Zip Points.txt] (fornito dall’Adobe) contiene un elenco di tutti i codici ZIP degli Stati Uniti e di latitudine e longitudine di ciascun codice ZIP. Il file [!DNL Zip Points.layer] fa riferimento al file [!DNL Zip Points.txt] e al file [!DNL Zipcode.dim] e contiene i parametri di configurazione necessari per visualizzare le posizioni sul globo. Ogni elemento della dimensione del codice ZIP ( [!DNL Zipcode.dim]) definito all’interno del set di dati viene mappato sul globo utilizzando la latitudine e la longitudine elencate per tale codice ZIP nel file di ricerca [!DNL Zip Points.txt] .
 
-* **Punti ZIP:** Questo livello punto elemento consente di mappare le posizioni nel set di dati utilizzando un CAP statunitense. Il file di [!DNL Zip Points.txt] ricerca (fornito da Adobe) contiene un elenco di tutti i codici ZIP degli Stati Uniti e di latitudine e longitudine di ciascun codice ZIP. Il [!DNL Zip Points.layer] file fa riferimento al [!DNL Zip Points.txt] file e al [!DNL Zipcode.dim] file e contiene i parametri di configurazione necessari per visualizzare le posizioni nel mondo. Ogni elemento della dimensione del codice ZIP ( [!DNL Zipcode.dim]) definito all&#39;interno del set di dati viene mappato sul globo utilizzando la latitudine e la longitudine elencate per tale codice ZIP nel file di [!DNL Zip Points.txt] ricerca.
+   Per informazioni sulla definizione delle dimensioni, vedere la *Guida alla configurazione del set di dati.*
 
-   Per informazioni sulla definizione delle dimensioni, vedere la Guida alla configurazione del *set di dati.*
+* **Limiti:** Questo livello vettoriale fornisce i principali confini politici mondiali, come i paesi, così come i confini delle caratteristiche fisiche naturali della Terra, come i laghi e le isole. Il file [!DNL Boundaries.layer] fa riferimento a uno o più dei file [!DNL mwcoast.vec], [!DNL mwisland.vec], [!DNL mwlake.vec], [!DNL mwnation.vec], [!DNL mwriver.vec], [!DNL mwstate.vec], [!DNL US states.vec] e [!DNL world boundaries.vec].
 
-* **Bordi:** Questo strato vettoriale fornisce i principali confini politici mondiali, come i paesi, così come i confini delle caratteristiche fisiche naturali della Terra, come i laghi e le isole. Il [!DNL Boundaries.layer] file fa riferimento a uno o più file [!DNL mwcoast.vec], [!DNL mwisland.vec], [!DNL mwlake.vec], [!DNL mwnation.vec], [!DNL mwriver.vec], [!DNL mwstate.vec], [!DNL US states.vec]e [!DNL world boundaries.vec] .
+* **Coordinate IP:** questo livello di punto elemento utilizza punti dinamici per consentire di mappare le posizioni nel set di dati utilizzando gli indirizzi IP. Il file [!DNL IP Coordinates.layer] fa riferimento alla dimensione Coordinate ( [!DNL Coordinates.dim]) e specifica la metrica Visitatori come metrica da utilizzare per determinare la dimensione dei punti sul globo per ciascuna coordinata.
 
-* **Coordinate IP:** Questo livello punto elemento utilizza punti dinamici per consentire la mappatura delle posizioni nel set di dati utilizzando indirizzi IP. Il [!DNL IP Coordinates.layer] file fa riferimento alla dimensione Coordinate ( [!DNL Coordinates.dim]) e specifica la metrica Visitatori come metrica da utilizzare per determinare la dimensione dei punti sul globo per ciascuna coordinata.
-
-Il vostro [!DNL Geography] profilo o altri profili nell’installazione potrebbe contenere ulteriori livelli di immagini forniti da Adobe o creati dalla vostra società.
+Il profilo [!DNL Geography] o altri profili presenti nell&#39;installazione possono contenere livelli aggiuntivi di immagini forniti dall&#39;Adobe o creati dalla società.
 
 ## Creazione di nuovi livelli {#section-dc5a2f31d5fc46f58b865b9bb89fcfd4}
 
-Potete creare nuovi livelli di immagini copiando il tipo appropriato di file di livello incluso nel [!DNL Geography] profilo in qualsiasi cartella Profili\*nome profilo*\Maps, quindi rinominando e modificando il file come appropriato. Tutti i nuovi livelli devono soddisfare i seguenti requisiti:
+È possibile creare nuovi livelli di immagini copiando il tipo appropriato di file di livello incluso nel profilo [!DNL Geography] in qualsiasi cartella Profiles\*profile name*\Maps, quindi rinominando e modificando il file come appropriato. Tutti i nuovi livelli devono soddisfare i seguenti requisiti:
 
-* Il [!DNL .layer] file deve rispettare il formato di uno dei tipi di livelli supportati.
-* Se necessario, il [!DNL .layer] file deve fare riferimento ai file di ricerca e dimensione appropriati.
-* Anche il file di ricerca di riferimento deve essere memorizzato nella directory di installazione del server workbench dati e il relativo percorso deve essere specificato con precisione nel [!DNL .layer] file.
+* Il file [!DNL .layer] deve rispettare il formato di uno dei tipi di livello supportati.
+* Se necessario, il file [!DNL .layer] deve fare riferimento ai file di ricerca e dimensione appropriati.
+* Anche il file di ricerca di riferimento deve essere memorizzato nella directory di installazione del server di Data Workbench e il relativo percorso deve essere specificato con precisione nel file [!DNL .layer].
 
-Per ulteriori informazioni sul formato e i parametri di ciascun tipo di file di livello e dei relativi file associati, consultate la sezione di questo capitolo relativa al tipo di livello appropriato.
+Per ulteriori informazioni sul formato e i parametri per ciascun tipo di file di livello e i relativi file associati, vedere la sezione di questo capitolo relativa al tipo di livello appropriato.
