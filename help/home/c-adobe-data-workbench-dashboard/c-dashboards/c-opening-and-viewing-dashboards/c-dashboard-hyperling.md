@@ -1,28 +1,28 @@
 ---
-description: Il terzo modo in cui è possibile aprire una dashboard è utilizzare il collegamento ipertestuale di una dashboard.
-solution: Analytics
-title: Collegamento ipertestuale dashboard
-topic: Data workbench
+description: Il terzo modo in cui è possibile aprire un dashboard consiste nell’utilizzare il collegamento ipertestuale di un dashboard.
+title: Collegamento ipertestuale del dashboard
 uuid: da27204f-64be-4ea1-8bf9-ce907e334d86
+exl-id: 05890f46-bcb6-476a-9d3b-4bfeb95b20d4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 2%
 
 ---
 
+# Collegamento ipertestuale del dashboard{#dashboard-hyperlink}
 
-# Collegamento ipertestuale dashboard{#dashboard-hyperlink}
+Il terzo modo in cui è possibile aprire un dashboard consiste nell’utilizzare il collegamento ipertestuale di un dashboard.
 
-Il terzo modo in cui è possibile aprire una dashboard è utilizzare il collegamento ipertestuale di una dashboard.
+Ogni dashboard ha un collegamento ipertestuale univoco che può essere utilizzato per aprire il dashboard attraverso la barra degli indirizzi del browser. I collegamenti ipertestuali del dashboard possono essere utilizzati anche per segnalibri e condivisione tramite e-mail.
 
-Ogni dashboard dispone di un collegamento ipertestuale univoco che può essere utilizzato per aprire il dashboard tramite la barra degli indirizzi del browser. I collegamenti ipertestuali del dashboard possono essere utilizzati anche per l&#39;aggiunta di segnalibri e la condivisione tramite e-mail.
-
-Se disponete di un collegamento ipertestuale del dashboard, inseritelo semplicemente nella barra degli indirizzi del browser e individuate il collegamento. Verrai indirizzato al sito del dashboard e ti verrà richiesto di effettuare l&#39;accesso (se non hai già effettuato l&#39;accesso). Una volta effettuato l&#39;accesso, il dashboard si caricherà nell&#39;interfaccia.
+Se disponi di un collegamento ipertestuale del dashboard, è sufficiente inserirlo nella barra degli indirizzi del browser e passare al collegamento. Verrai indirizzato al sito del dashboard e ti verrà richiesto di effettuare l&#39;accesso (se non hai già effettuato l&#39;accesso). Una volta effettuato l’accesso, il dashboard viene caricato nell’interfaccia.
 
 ![](assets/db_hyperlink.png)
 
 >[!NOTE]
 >
->Viene visualizzato un messaggio se il dashboard non esiste più o se non si dispone delle autorizzazioni necessarie per accedere al dashboard.
+>Viene visualizzato un messaggio se il dashboard non esiste più o non si dispone delle autorizzazioni necessarie per accedere al dashboard.
 
 ![](assets/db_hyperlink2.png)
-
