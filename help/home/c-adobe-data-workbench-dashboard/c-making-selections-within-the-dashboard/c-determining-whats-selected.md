@@ -1,22 +1,22 @@
 ---
-description: Esistono due modi per determinare quali selezioni sono state effettuate all’interno di una dashboard.
-solution: Analytics
+description: Esistono due modi per determinare quali selezioni sono state effettuate all’interno di un dashboard.
 title: Determinazione degli elementi selezionati
-topic: Data workbench
 uuid: fb8c6e4e-7345-431a-b9b4-0c08b8f6aabb
+exl-id: cc627c48-2fd6-4a1a-a4b7-c807af01a0b2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
-
 # Determinazione degli elementi selezionati{#determining-what-s-selected}
 
-Esistono due modi per determinare quali selezioni sono state effettuate all’interno di una dashboard.
+Esistono due modi per determinare quali selezioni sono state effettuate all’interno di un dashboard.
 
-* Innanzitutto, tutte le selezioni effettuate sul dashboard saranno rappresentate da una voce nel **[!UICONTROL Selections]** menu. Ciascun gruppo di selezioni di una visualizzazione verrà visualizzato come un elemento nell’elenco. Questi verranno etichettati con il nome della dimensione corrispondente (es. &quot;Giorno&quot;, &quot;Mese&quot;, ecc.). Posizionando il cursore del mouse su questa voce viene visualizzata una finestra a comparsa che identifica esattamente i valori delle metriche selezionati.
+* In primo luogo, tutte le selezioni effettuate sul dashboard saranno rappresentate da una voce nel menu **[!UICONTROL Selections]**. Ogni gruppo di selezioni da una visualizzazione verrà visualizzato come un elemento dell’elenco. che verranno etichettate con il nome della dimensione corrispondente (ad es. &quot;Day&quot;, &quot;Month&quot;, ecc.). Posizionando il cursore del mouse su questa voce, verrà visualizzato un popup che identifica esattamente i valori di metrica selezionati.
 
    ![](assets/selection_identify.png)
 
-* Un&#39;altra funzione per identificare le selezioni effettuate è l&#39;evidenziazione delle visualizzazioni. Qualsiasi visualizzazione con una selezione sarà evidenziata in arancione. Inoltre, posizionando il cursore del mouse su un elemento di selezione, verrà evidenziata la visualizzazione corrispondente in giallo chiaro, mostrando l’utente da cui proveniva la selezione.
-
+* Un’altra funzione per identificare le selezioni effettuate è l’evidenziazione delle visualizzazioni. Qualsiasi visualizzazione con una selezione sarà evidenziata in arancione. Inoltre, posizionando il cursore del mouse su un elemento di selezione, la visualizzazione corrispondente viene evidenziata in giallo chiaro, mostrando l’utente da cui proviene la selezione.
