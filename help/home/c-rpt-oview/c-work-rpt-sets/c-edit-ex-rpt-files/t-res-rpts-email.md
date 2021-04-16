@@ -1,23 +1,24 @@
 ---
 description: Passaggi per inviare nuovamente i rapporti per e-mail.
-solution: Analytics
-title: Invio di report per e-mail
-topic: Data workbench
+title: Invio di rapporti per e-mail
 uuid: 384dfa1f-6a72-4fef-886e-bf2290f5993f
+exl-id: eb37fd3e-6e7b-4672-bcf0-fffa9f10997d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 6%
 
 ---
 
-
-# Invio di report per e-mail{#resending-reports-by-email}
+# Invio di rapporti per e-mail{#resending-reports-by-email}
 
 Passaggi per inviare nuovamente i rapporti per e-mail.
 
-Se il **[!UICONTROL Allow Report Regeneration]** parametro nel [!DNL Report.cfg] file è impostato su [!DNL True], quando apportate modifiche a un [!DNL Report.cfg] file e lo salvate nuovamente nel server, il server di report genera automaticamente di nuovo i rapporti in quel set. Non invia nuovamente i rapporti via e-mail.
+Se il parametro **[!UICONTROL Allow Report Regeneration]** nel file [!DNL Report.cfg] è impostato su [!DNL True], quando apporti modifiche a un file [!DNL Report.cfg] e salvi di nuovo il file sul server, Report Server rigenera automaticamente i rapporti in quel set. Non invia nuovamente i rapporti via e-mail.
 
-1. Nella [!DNL Reports] scheda, selezionate la sottocartella (scheda o sottodirectory a discesa) per il set di rapporti che desiderate inviare nuovamente.
-1. Fai clic su **[!UICONTROL Report.cfg]** (Fine). Vengono visualizzati i parametri del set di report [!DNL Report.cfg] per il set.
-1. Modificate il **[!UICONTROL Start Date]** parametro in base all&#39;ora futura in cui desiderate inviare i rapporti.
-1. Salvate il file facendo clic con il pulsante destro del mouse **[!UICONTROL Report.cfg (modified)]** nella parte superiore dei parametri e facendo clic su **[!UICONTROL Save to]***&lt; **[!UICONTROL server location]**>*.
-I report in questo set si rigenerano e vengono inviati per e-mail ai destinatari specificati.
+1. Nella scheda [!DNL Reports] , seleziona la sottocartella (scheda o sottodirectory a discesa) per il set di rapporti che desideri inviare nuovamente.
+1. Fai clic su **[!UICONTROL Report.cfg]**. Vengono visualizzati i parametri del [!DNL Report.cfg] per questo set di rapporti.
+1. Modifica il parametro **[!UICONTROL Start Date]** in base all&#39;ora futura in cui dovranno essere inviati i rapporti.
+1. Salva il file facendo clic con il pulsante destro del mouse su **[!UICONTROL Report.cfg (modified)]** nella parte superiore dei parametri e facendo clic su **[!UICONTROL Save to]***&lt; **[!UICONTROL server location]**>*.
+I rapporti in questo set vengono rigenerati e vengono inviati per e-mail ai destinatari specificati.
