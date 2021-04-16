@@ -1,79 +1,82 @@
 ---
-description: Una legenda di valori visualizza gli eventi di valore definiti.
-solution: Analytics
-title: Leggende di valore
-topic: Data workbench
+description: Una legenda valore visualizza gli eventi dei valori definiti.
+title: Legende di valore
 uuid: 7779f442-2f45-4bf8-a62a-585aaceaeb3a
+exl-id: b28ba604-93ef-4081-ae55-937fb537c068
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 2%
 
 ---
 
+# Legende di valore{#value-legends}
 
-# Leggende di valore{#value-legends}
+Una legenda valore visualizza gli eventi dei valori definiti.
 
-Una legenda di valori visualizza gli eventi di valore definiti.
+La legenda del valore è configurata solo nelle applicazioni HBX e [!DNL Site] , ma può essere configurata per altre applicazioni. Per ulteriori informazioni, contattare Adobe Consulting Services.
 
-La legenda del valore è configurata solo in HBX e nelle [!DNL Site] applicazioni, ma può essere configurata per altre applicazioni. Per ulteriori informazioni, contattate i servizi di consulenza Adobe.
+In HBX e [!DNL Site], un evento valore è definito come una sessione che ha generato valore aziendale. Ad esempio, i record di dati evento associati a particolari visualizzazioni di pagina (ad esempio, una pagina di ringraziamento dell’ordine o una pagina di completamento dell’applicazione) potrebbero rappresentare eventi di valore per un’organizzazione aziendale.
 
-In HBX e [!DNL Site], un evento value è definito come una sessione che ha generato valore aziendale. Ad esempio, i record di dati dell&#39;evento associati a particolari visualizzazioni di pagina (ad esempio, una pagina di ringraziamento dell&#39;ordine o una pagina di completamento dell&#39;applicazione) possono rappresentare eventi di valore per un&#39;organizzazione aziendale.
+Con gli eventi di valore, puoi misurare e monitorare la quantità di valore generato dal sito web. È possibile valutare il valore in dollari per ogni evento e rispondere a domande quali:
 
-Con gli eventi value, potete misurare e monitorare la quantità di valore generato dal sito Web. Potete valutare il valore commerciale in dollari per ogni evento e rispondere a domande come:
-
-* Qual è il percorso più redditizio attraverso il sito Web?
+* Qual è il percorso più redditizio attraverso il sito web?
 * Quale referente o campagna ha generato il maggior valore?
 
-Per ogni evento, la legenda visualizza il valore unitario (valore per evento) dell&#39;evento e il valore totale generato dall&#39;evento. È possibile utilizzare la legenda per definire e modificare gli eventi dei valori e per assegnare loro i valori delle unità.
+Per ogni evento, la legenda visualizza il valore unitario dell’evento (valore per evento) e il valore totale generato dall’evento. È possibile utilizzare la legenda per definire e modificare gli eventi di valore e per assegnare loro i valori unitari.
 
-Nella tabella seguente sono elencate le metriche correlate agli eventi dei valori.
+Nella tabella seguente sono elencate le metriche relative agli eventi di valore.
 
 | Metrica | Descrizione |
 |---|---|
-| Conversione | Percentuale di sessioni che hanno generato valore aziendale |
+| Conversione | La percentuale di sessioni che ha generato valore aziendale |
 | Valore | Valore totale dell&#39;attività generato, in dollari |
-| Media Valore | Valore aziendale medio generato, in dollari, per sessione |
+| Media della Valore | Valore medio dell’attività generato, in dollari, per sessione |
 
-Potete definire facilmente qualsiasi cosa i visitatori facciano nel sito Web come un evento di valore: invio di una richiesta di assistenza clienti, completamento di un’applicazione, visualizzazione di un contenuto o completamento di un acquisto. Ogni evento value corrisponde a un utente che accede a una particolare pagina o set di pagine del sito Web ed è associato a un valore aziendale in dollari. Ad esempio, potreste supporre che ogni utente che accede alla pagina &quot;Grazie per l’acquisto&quot; generi in media un margine di contributo di $20. È possibile definire un evento value per la pagina con un valore di $20.
+Puoi definire facilmente qualsiasi cosa i visitatori facciano nel sito web come un evento di valore: registrazione di una richiesta di assistenza clienti, completamento di un&#39;applicazione, visualizzazione di un contenuto o completamento di un acquisto. Ogni evento value corrisponde a un utente che accede a una pagina o a un set di pagine particolari del sito web ed è associato a un valore aziendale in dollari. Ad esempio, supponi che ogni utente che raggiunge la pagina &quot;Grazie per l’acquisto&quot; generi in media un margine di contributo di 20 $. È possibile definire un evento value per la pagina con un valore di $20.
 
-## Definizione di nuovi eventi valore {#section-2ea4d168336e4d2e98b22b636ed43853}
+## Definire nuovi eventi di valore {#section-2ea4d168336e4d2e98b22b636ed43853}
 
-**Per definire un nuovo evento value in HBX o[!DNL Site]**
+**Per definire un nuovo evento valore in HBX o[!DNL Site]**
 
-Quando create un evento value, trascinate le pagine del sito Web che rappresentano un valore da una visualizzazione a una legenda del valore.
+Quando crei un evento value , trascini pagine web che rappresentano un valore da una visualizzazione a una legenda value.
 
-1. Aprite una legenda di valori.
+1. Apri una legenda di valore.
 
    ![](assets/lgd_ValueLegend.png)
 
-1. Aggiungere alla legenda eventi di valore dalle mappe di processo, dalle tabelle di pagine URI o dalle visualizzazioni gerarchiche di pagina:
+1. Aggiungi alla legenda eventi di valore da mappe di processo, tabelle di pagine URI o visualizzazioni gerarchiche di pagina:
 
-   * Da una mappa di processo, trascinare i nodi dalla mappa di processo alla legenda.
+   * Da una mappa del processo, trascinare i nodi dalla mappa del processo alla legenda.
    * Da una tabella di pagina URI, premere Ctrl+Alt e trascinare una pagina dalla tabella alla legenda.
-   * Nella visualizzazione gerarchica delle pagine, fare clic a sinistra del nodo (cartella, pagina o gruppo) e trascinarlo sulla legenda.
+   * Da una visualizzazione gerarchica della pagina, fare clic a sinistra di un nodo (cartella, pagina o gruppo) e trascinarlo nella legenda.
+
    ![](assets/client-leg.png)
 
-   Il puntatore del mouse visualizza la parola &quot;No&quot; fino a quando il mouse non raggiunge la legenda.
+   Il puntatore del mouse visualizza la parola &quot;No&quot; finché il mouse non raggiunge la legenda.
 
-1. Nella legenda Valore, assegnate un valore business a ogni sessione per la quale si verifica l’evento:
+1. Nella legenda valore, assegna un valore aziendale a ogni sessione per la quale si verifica l’evento:
 
-   1. Nella [!DNL Value per Event] colonna, fare clic sulla cella che corrisponde alla pagina aggiunta come evento valore.
-   1. Digitare l&#39;importo in dollari da assegnare per il valore dell&#39;evento e premere Invio.
+   1. Nella colonna [!DNL Value per Event] , fai clic sulla cella corrispondente alla pagina aggiunta come evento di valore.
+   1. Digitare l&#39;importo in dollari da assegnare al valore dell&#39;evento e premere Invio.
+
    ![](assets/lgd_ValueLegend_Value.png)
 
-   Per impostazione predefinita, l&#39;URL della pagina definita come evento valore viene visualizzato nella legenda del valore. Se necessario, potete fare doppio clic su questo URL nella legenda per passare alla modalità di modifica e rinominare l’evento. Potete inoltre modificare il valore di un particolare evento in qualsiasi momento. Il server Workbench dati ricalcola automaticamente le metriche basate sull&#39;evento relative al valore, ad esempio il valore medio e la conversione.
+   Per impostazione predefinita, l’URL della pagina definita come evento valore viene visualizzato nella legenda valore. Se lo desideri, puoi fare doppio clic su questo URL nella legenda per accedere alla modalità di modifica e rinominare l’evento. Puoi anche modificare il valore di un particolare evento in qualsiasi momento. Il server Data Workbench ricalcola automaticamente le metriche basate su eventi di valore, ad esempio il valore medio e la conversione.
 
-Dopo aver definito almeno un evento value, la dimensione Segmento valore diventa disponibile per l&#39;uso. Questa dimensione rappresenta il valore totale generato da un visitatore in tutte le sessioni.
+Dopo aver definito almeno un evento di valore, la dimensione Segmento di valore diventa disponibile per l’uso. Questa dimensione rappresenta il valore totale generato da un visitatore in tutte le sessioni.
 
 ## Rimuovi eventi valore {#section-25cd90a859384ca183c0fc0998f888cf}
 
-* Fate clic con il pulsante destro del mouse sull’evento desiderato e fate clic **[!UICONTROL Delete Event]**.
+* Fai clic con il pulsante destro del mouse sull’evento desiderato e fai clic su **[!UICONTROL Delete Event]**.
 
    ![](assets/lgd_ValueLegend_deleteEvent.png)
 
 >[!NOTE]
 >
->Il server Workbench dati calcola le metriche per l&#39;intero set di dati accessibili al profilo in uso. Per impostazione predefinita, [!DNL Data Workbench Server] calcola metriche quali Valore, Eventi di valore, Valore medio e Conversione tra tutti i dati del set di dati di analisi, anche se i dati non provengono dalla stessa origine logica.
+>Il server Data Workbench calcola le metriche per l’intero set di dati accessibili al profilo in uso. Per impostazione predefinita, il [!DNL Data Workbench Server] calcola metriche quali Valore, Eventi di valore, Valore medio e Conversione in tutti i dati del set di dati di analisi, anche se i dati non provengono dalla stessa origine logica.
 
-## Esporta in Microsoft Excel {#section-feaa7a8eb8124fafbc74169bebaed6d8}
+## Esportare in Microsoft Excel {#section-feaa7a8eb8124fafbc74169bebaed6d8}
 
-Per informazioni sull&#39;esportazione delle finestre, vedere [Esportazione dei dati](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)delle finestre.
+Per informazioni sull&#39;esportazione di finestre, vedere [Esportazione di dati di finestre](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
