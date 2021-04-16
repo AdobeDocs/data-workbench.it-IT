@@ -1,29 +1,29 @@
 ---
-description: Passaggi per aggiornare il profilo Geografia e aggiornare le ricerche Geografia sul server workbench dati.
-solution: Analytics
-title: Aggiornamento della geografia del workbench dati
-topic: Data workbench
+description: Passaggi per aggiornare il profilo Geografia e aggiornare le ricerche Geografiche sul server di Data Workbench.
+title: Aggiornamento della posizione geografica di Data Workbench
 uuid: 7e147283-fe0c-4d7c-b7ad-c7c98029d202
+exl-id: 7c954a73-e6f9-4258-8134-2b96c6fb636b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 5%
 
 ---
 
+# Aggiornamento della posizione geografica di Data Workbench{#upgrading-data-workbench-geography}
 
-# Aggiornamento della geografia del workbench dati{#upgrading-data-workbench-geography}
-
-Passaggi per aggiornare il profilo Geografia e aggiornare le ricerche Geografia sul server workbench dati.
+Passaggi per aggiornare il profilo Geografia e aggiornare le ricerche Geografiche sul server di Data Workbench.
 
 >[!NOTE]
 >
->Se il profilo con il quale si utilizza il workbench dati [!DNL Geography] è in esecuzione su un cluster di server workbench dati, aggiornare il [!DNL Geography] profilo sul server workbench dati master nel cluster.
+>Se il profilo con cui utilizzi Data Workbench [!DNL Geography] è in esecuzione su un cluster di server di Data Workbench, aggiorna il profilo [!DNL Geography] sul server di Data Workbench principale nel cluster.
 
-**Per aggiornare il[!DNL Geography]profilo sul server workbench dati**
+**Per aggiornare il  [!DNL Geography] profilo sul server di Data Workbench**
 
-1. Aprite la cartella Profili dal nuovo [!DNL .zip] file fornito da Adobe.
-1. Copiare la cartella Geografia nella cartella Profili della directory di installazione del server workbench dati per sostituire la cartella Geografia esistente.
-   **Per aggiornare le ricerche[!DNL Geography]nel server workbench dati**
+1. Apri la cartella Profiles dal nuovo file [!DNL .zip] fornito in Adobe.
+1. Copiare la cartella Geografia nella cartella Profiles nella directory di installazione del server di Data Workbench per sostituire la cartella Geography esistente.
+   **Per aggiornare le  [!DNL Geography] ricerche nel server di Data Workbench**
 
-1. Aprite la cartella Ricerche dal nuovo [!DNL .zip]file fornito da Adobe.
-1. Copiare la cartella Geografia nella cartella Ricerche nella directory di installazione del server workbench dati per sostituire la cartella Geography esistente.
-
+1. Apri la cartella Ricerche dal nuovo file [!DNL .zip]fornito dall’Adobe.
+1. Copia la cartella Geografia nella cartella Ricerche della directory di installazione del server di Data Workbench per sostituire la cartella Geography esistente.
