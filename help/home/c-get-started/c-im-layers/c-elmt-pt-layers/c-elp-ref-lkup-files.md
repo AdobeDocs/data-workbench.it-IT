@@ -1,48 +1,49 @@
 ---
-description: Quando si crea un livello punto elemento che fa riferimento a un file di ricerca per ottenere dati di latitudine e longitudine, la posizione del punto viene ottenuta recuperando ogni elemento e la relativa latitudine e longitudine associati dal file di ricerca.
-solution: Analytics
+description: Quando si crea un livello punto elemento che fa riferimento a un file di ricerca per ottenere dati di latitudine e longitudine, la posizione del punto viene ottenuta recuperando ogni elemento e la relativa latitudine e longitudine associate dal file di ricerca.
 title: Definire i livelli dei punti di elemento che fanno riferimento ai file di ricerca
-topic: Data workbench
 uuid: 32c8de7a-4316-4f91-9810-7f584bc7fb0b
+exl-id: 2275fa8e-82fe-49e4-ab3e-91ec6ecb6233
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 3%
 
 ---
 
-
 # Definire i livelli dei punti di elemento che fanno riferimento ai file di ricerca{#define-element-point-layers-referencing-lookup-files}
 
-Quando si crea un livello punto elemento che fa riferimento a un file di ricerca per ottenere dati di latitudine e longitudine, la posizione del punto viene ottenuta recuperando ogni elemento e la relativa latitudine e longitudine associati dal file di ricerca.
+Quando si crea un livello punto elemento che fa riferimento a un file di ricerca per ottenere dati di latitudine e longitudine, la posizione del punto viene ottenuta recuperando ogni elemento e la relativa latitudine e longitudine associate dal file di ricerca.
 
 >[!NOTE]
 >
->Invece di utilizzare un file di ricerca, è possibile utilizzare la funzionalità Punti dinamici, che incorpora la latitudine e la longitudine di una posizione nel nome di ciascun elemento di una dimensione. Consultate [Definizione Dei Livelli Dei Punti Dell’Elemento Utilizzando I Punti](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#concept-51adc5e1df8a48e7bd7a582967e4c512)Dinamici.
+>Invece di utilizzare un file di ricerca, puoi utilizzare la funzionalità Punti dinamici, che incorpora la latitudine e la longitudine di una posizione nel nome di ciascun elemento di una dimensione. Consulta [Definizione dei livelli del punto elemento utilizzando i punti dinamici](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#concept-51adc5e1df8a48e7bd7a582967e4c512).
 
-Per definire un livello punto elemento che faccia riferimento a un file di ricerca, è necessario creare o disporre già di quanto segue:
+Per definire un livello di punto elemento che fa riferimento a un file di ricerca, è necessario creare o disporre già dei seguenti elementi:
 
-* **Una dimensione** definita nel [!DNL Transformation.cfg file] o in un [!DNL transformation dataset include] file. Per informazioni sui file di configurazione della trasformazione, vedere la Guida alla configurazione del *set di dati*.
+* **Una** dimensione definita in  [!DNL Transformation.cfg file] o in un  [!DNL transformation dataset include] file. Per informazioni sui file di configurazione della trasformazione, vedere la *Guida alla configurazione del set di dati*.
 
-* **Un file** di ricerca contenente i dati utilizzati per il plot di ciascun punto dati. Il file deve contenere almeno tre colonne di dati per ogni punto dati: la chiave, la longitudine e la latitudine. Per ulteriori informazioni sul formato richiesto del file di ricerca, vedere Formato [file livello punto](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2)elemento.
+* **Un** file di ricerca contenente i dati utilizzati per tracciare ciascun punto dati. Questo file deve contenere almeno tre colonne di dati per ogni punto dati: la chiave, la longitudine e la latitudine. Per ulteriori informazioni sul formato richiesto del file di ricerca, consulta [Formato del file livello del punto elemento](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
-* **Un file** di livello che specifica la posizione del file di ricerca e identifica la dimensione e la metrica correlate, nonché i nomi delle colonne chiave, longitudine e latitudine nel file di ricerca. Per ulteriori informazioni sul formato richiesto del file di livello, consultate Formato [file livello punto](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2)elemento.
+* **File di livello** che specifica la posizione del file di ricerca e identifica la dimensione e la metrica correlate, nonché i nomi delle colonne chiave, longitudine e latitudine nel file di ricerca. Per ulteriori informazioni sul formato richiesto del file di livello, consulta [Formato del file di livello del punto elemento](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
    >[!NOTE]
    >
-   >Il [!DNL Zip Points.layer] file, fornito con il [!DNL Geography] profilo, è un livello punto elemento che identifica il [!DNL Zipcode.dim] file, il [!DNL Sessions.metric] file, il file di [!DNL Zip Points.txt] ricerca e i nomi delle colonne chiave, longitudine, latitudine e nome nel file di ricerca.
+   >Il file [!DNL Zip Points.layer], fornito con il profilo [!DNL Geography], è un livello punto elemento che identifica il file [!DNL Zipcode.dim], il file [!DNL Sessions.metric], il file di ricerca [!DNL Zip Points.txt] e i nomi delle colonne chiave, longitudine, latitudine e nome nel file di ricerca.
 
-## Formato del file di ricerca punto elemento {#section-0bc8c652c1bd40eb84078f2af71a5c06}
+## Formato del file di ricerca del punto elemento {#section-0bc8c652c1bd40eb84078f2af71a5c06}
 
-Il file di ricerca del livello del punto elemento deve contenere almeno tre colonne:
+Il file di ricerca a livello di punto elemento deve contenere almeno le tre colonne seguenti:
 
-* **[!DNL Key]colonna:**Questa colonna deve contenere dati chiave comuni, che consentono al server Workbench dati di collegare i dati nel file di ricerca a quelli nel dataset. La[!DNL key]colonna deve essere la prima colonna del file di ricerca. Ogni riga in questa colonna identifica un elemento della dimensione.
+* **[!DNL Key]colonna:** questa colonna deve contenere dati chiave comuni, che consentono al server di Data Workbench di collegare i dati nel file di ricerca a quelli nel set di dati. La colonna [!DNL key] deve essere la prima colonna del file di ricerca. Ogni riga in questa colonna identifica un elemento della dimensione.
 
-* **[!DNL Longitude]colonna:**Questa colonna deve contenere la longitudine per ogni punto dati della[!DNL Key]colonna.
+* **[!DNL Longitude]colonna:** questa colonna deve contenere la longitudine di ogni punto dati della  [!DNL Key] colonna.
 
-* **[!DNL Latitude]colonna:**Questa colonna deve contenere la latitudine per ogni punto dati della[!DNL Key]colonna.
+* **[!DNL Latitude]colonna:** questa colonna deve contenere la latitudine di ciascun punto dati della  [!DNL Key] colonna.
 
-* **[!DNL Name]column (facoltativo):**Se si desidera specificare un nome da visualizzare sulla mappa per ogni punto dati, è possibile includere una[!DNL Name]colonna nel file di ricerca.
+* **[!DNL Name]column (Facoltativo):** se desideri specificare un nome da visualizzare sulla mappa per ogni punto dati, puoi includere una  [!DNL Name] colonna nel file di ricerca.
 
-Ogni riga del file di [!DNL Zip Points.txt] ricerca contiene un CAP nella prima colonna seguito da longitudine, latitudine e nome città associato.
+Ogni riga nel file di ricerca [!DNL Zip Points.txt] contiene un codice ZIP nella prima colonna seguito da longitudine, latitudine e nome della città associato.
 
 ```
 tude, and associated city name.
@@ -52,9 +53,9 @@ ZIP_CODE LATITUDE LONGITUDE NAME
 ...
 ```
 
-## Formato file livello punto elemento {#section-52d7e92be8354d979af9e7a2210b76f2}
+## Formato del file del livello del punto elemento {#section-52d7e92be8354d979af9e7a2210b76f2}
 
-Ogni file di livello punto elemento che fa riferimento a un file di ricerca deve essere formattato utilizzando il seguente modello: [!DNL .layer]
+Ogni file di livello del punto elemento [!DNL .layer] che fa riferimento a un file di ricerca deve essere formattato utilizzando il seguente modello:
 
 ```
 Layer = ElementPointLayer:
@@ -84,50 +85,50 @@ Layer = ElementPointLayer:
    <td colname="col2"> Percorso del file di ricerca contenente dati di latitudine e longitudine. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Colonna Longitudine </td> 
-   <td colname="col2"> Il nome della colonna nel file di ricerca contenente i dati di longitudine. </td> 
+   <td colname="col1"> Colonna a longitudine </td> 
+   <td colname="col2"> Nome della colonna nel file di ricerca contenente i dati di longitudine. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Colonna Latitude </td> 
-   <td colname="col2"> Il nome della colonna nel file di ricerca contenente i dati di latitudine. </td> 
+   <td colname="col2"> Nome della colonna nel file di ricerca contenente i dati di latitudine. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Colonna Nome </td> 
-   <td colname="col2"> Facoltativo. Il nome della colonna nel file di ricerca contenente i nomi delle posizioni rappresentate dai dati di latitudine e longitudine. </td> 
+   <td colname="col1"> Colonna nome </td> 
+   <td colname="col2"> Facoltativo. Nome della colonna nel file di ricerca contenente i nomi delle posizioni rappresentate dai dati di latitudine e longitudine. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Colonna chiave </td> 
-   <td colname="col2"> <p>Il nome della colonna nel file di ricerca contenente i dati chiave comuni, che consente al server Workbench dati di integrare i dati nel file di ricerca nel dataset. Deve essere la prima colonna del file di ricerca. </p> <p>Ogni riga in questa colonna è un elemento di una dimensione. Questa dimensione deve essere definita nel file <span class="filepath"> Transformation.cfg</span> o un set di dati di trasformazione deve includere <span class="wintitle"></span> il file e specificata nel parametro Dimension di questo file. Per ulteriori informazioni sui file di configurazione della trasformazione, vedere la Guida alla configurazione del <i>set di dati</i>. </p> </td> 
+   <td colname="col2"> <p>Il nome della colonna nel file di ricerca contenente i dati della chiave comune, che consente al server di Data Workbench di integrare i dati nel file di ricerca nel set di dati. Deve essere la prima colonna del file di ricerca. </p> <p>Ogni riga in questa colonna è un elemento di una dimensione. Questa dimensione deve essere definita nel file <span class="filepath"> Transformation.cfg</span> o in un set di dati di trasformazione <span class="wintitle"> include</span> e specificata nel parametro di Dimension di questo file. Per ulteriori informazioni sui file di configurazione della trasformazione, vedere la <i>Guida alla configurazione del set di dati</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimensione </td> 
-   <td colname="col2">Nome della dimensione (definita in un file di configurazione della trasformazione) contenente elementi che corrispondono alle righe di dati nella colonna <span class="wintitle"> Chiave</span> . </td> 
+   <td colname="col2">Nome della dimensione (definita in un file di configurazione della trasformazione) contenente elementi corrispondenti alle righe di dati nella colonna <span class="wintitle"> Chiave</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Metrica </td> 
-   <td colname="col2"> Nome della metrica valutata sulla dimensione specificata nel parametro Dimension. </td> 
+   <td colname="col2"> Nome della metrica valutata sulla dimensione specificata nel parametro di Dimension. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Scala </td> 
-   <td colname="col2"> Facoltativo. Valore usato per ridimensionare i punti nel livello. Il valore predefinito è 100. Valori maggiori aumentano i punti e valori più bassi li rendono più piccoli. </td> 
+   <td colname="col2"> Facoltativo. Valore utilizzato per ridimensionare i punti nel livello. Il valore predefinito è 100. Valori più grandi aumentano i punti e valori più piccoli li rendono più piccoli. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Colore </td> 
-   <td colname="col2"> Facoltativo. Il vettore del colore RGB, espresso come (rosso, verde, blu). Per ogni colore del vettore, potete immettere un valore compreso tra 0,0 e 1,0. Ad esempio, (1.0, 0.0, 0.0) è rosso chiaro e (0.5, 0.5, 0.5) è grigio. </td> 
+   <td colname="col2"> Facoltativo. Il vettore del colore RGB, espresso come (rosso, verde, blu). Per ogni colore del vettore, è possibile immettere un valore compreso tra 0,0 e 1,0. Ad esempio, (1.0, 0.0, 0.0) è rosso chiaro e (0,5, 0,5, 0,5) è grigio. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Modalità di rendering </td> 
    <td colname="col2"> <p>Facoltativo. Valore intero che rappresenta la modalità di rendering da utilizzare per il livello. Le tre modalità disponibili sono le seguenti: 
      <ul id="ul_F15E43B3BFE54CDD8026837027E25819"> 
-      <li id="li_5405D939540E4D0FA7828D2623D72C44">Modalità di rendering 1. Le dimensioni dei punti sono definite nello spazio sullo schermo (i punti rimangono costanti rispetto allo schermo del computer). Il rendering dei punti viene eseguito utilizzando i poligoni, pertanto non esiste alcun limite superiore per la dimensione in punti. Questa è la modalità di rendering predefinita. </li> 
-      <li id="li_61C5AA926777449E8804C7BCE9E46F9B">Modalità di rendering 2. La dimensione del punto è definita nello spazio del mondo (i punti rimangono una dimensione costante rispetto al globo). Il rendering dei punti viene eseguito utilizzando i poligoni, pertanto non esiste alcun limite superiore per la dimensione in punti. </li> 
-      <li id="li_C00527F959354D3BB7422EFFE1FB5135">Modalità di rendering 3. La dimensione del punto è definita nello spazio sullo schermo. Il rendering dei punti viene eseguito utilizzando i punti morbidi OpenGL. </li> 
+      <li id="li_5405D939540E4D0FA7828D2623D72C44">Modalità di rendering 1. Le dimensioni dei punti sono definite nello spazio dello schermo (i punti rimangono costanti rispetto allo schermo del computer). I punti vengono sottoposti a rendering utilizzando i poligoni, quindi non esiste un limite superiore per le dimensioni dei punti. Questa è la modalità di rendering predefinita. </li> 
+      <li id="li_61C5AA926777449E8804C7BCE9E46F9B">Modalità di rendering 2. La dimensione del punto è definita nello spazio del mondo (i punti rimangono costanti rispetto al globo). I punti vengono sottoposti a rendering utilizzando i poligoni, quindi non esiste un limite superiore per le dimensioni dei punti. </li> 
+      <li id="li_C00527F959354D3BB7422EFFE1FB5135">Modalità di rendering 3. La dimensione del punto è definita nello spazio dello schermo. I punti vengono sottoposti a rendering utilizzando punti lisci OpenGL. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Il [!DNL Zip Points.layer] file è formattato come segue:
+Il file [!DNL Zip Points.layer] viene formattato come segue:
 
 ```
 Layer = ElementPointLayer:
@@ -140,4 +141,3 @@ Layer = ElementPointLayer:
   Dimension = ref: wdata/model/dim/Zipcode
   Metric = ref: wdata/model/metric/Sessions
 ```
-
