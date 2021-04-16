@@ -1,23 +1,24 @@
 ---
-description: Workbench dati fornisce fogli di lavoro per la creazione di filtri e metriche ad hoc per la visualizzazione corrente.
-solution: Analytics
+description: Data Workbench fornisce fogli di lavoro per la creazione di filtri e metriche ad hoc per la visualizzazione corrente.
 title: Fogli di lavoro
-topic: Data workbench
 uuid: 4e498150-3e44-4a19-8d8a-8be0d32693a6
+exl-id: 73f3e400-648c-4659-8e55-d3bd27ccceb6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 2%
 
 ---
 
-
 # Fogli di lavoro{#worksheets}
 
-Workbench dati fornisce fogli di lavoro per la creazione di filtri e metriche ad hoc per la visualizzazione corrente.
+Data Workbench fornisce fogli di lavoro per la creazione di filtri e metriche ad hoc per la visualizzazione corrente.
 
-Un foglio di lavoro è simile a un normale foglio di calcolo, ma a differenza di un foglio di calcolo, ogni cella contenente una formula può definire una metrica.
+Un foglio di lavoro è simile a un foglio di calcolo comune, ma a differenza di un foglio di calcolo, ogni cella contenente una formula può definire una metrica.
 
 ![](assets/vis_Worksheet_TextAndFormula.png)
 
-A differenza delle metriche create con l&#39; [!DNL Metric Editor], le metriche definite utilizzando i fogli di lavoro non vengono visualizzate nei menu delle metriche, ma possono essere salvate e incluse in nessuna delle aree di lavoro.
+A differenza delle metriche create utilizzando [!DNL Metric Editor], le metriche definite utilizzando i fogli di lavoro non vengono visualizzate nei menu delle metriche, ma possono essere salvate e incluse in una qualsiasi delle aree di lavoro.
 
-Per informazioni su [!DNL Metric Editor], consultate [Creazione e modifica di metriche](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)derivate.
+Per informazioni su [!DNL Metric Editor], consulta [Creazione e modifica di metriche derivate](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40).
