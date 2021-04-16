@@ -1,29 +1,30 @@
 ---
-description: Il primo passaggio consiste nell'abilitare il ruolo IIS sul server dashboard.
-solution: Analytics
+description: Il primo passo è quello di abilitare il ruolo IIS sul server del dashboard.
 title: Abilitazione di IIS
-topic: Data workbench
 uuid: fbd194db-3307-41ae-8ece-05eb261d74ad
+exl-id: 0d431302-1e69-49b6-8757-9823fd70a3b4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '126'
+ht-degree: 4%
 
 ---
 
-
 # Abilitazione di IIS{#enabling-iis}
 
-Il primo passaggio consiste nell&#39;abilitare il ruolo IIS sul server dashboard.
+Il primo passo è quello di abilitare il ruolo IIS sul server del dashboard.
 
-1. In **[!UICONTROL Administrative Tools]**, aprire il **[!UICONTROL Server Manager]**.
-1. Fare clic con il pulsante destro del mouse sulla voce di menu Ruoli nella parte sinistra della **[!UICONTROL Server Manager]** finestra.
+1. Alla voce **[!UICONTROL Administrative Tools]**, apri **[!UICONTROL Server Manager]**.
+1. Fare clic con il pulsante destro del mouse sulla voce di menu Ruoli nella parte sinistra della finestra **[!UICONTROL Server Manager]**.
 1. Select **[!UICONTROL Add Roles]**.
-1. Seleziona **[!UICONTROL Web Server (IIS)]** e continua con il **[!UICONTROL Add Roles Wizard]**. Accertatevi che i seguenti servizi ruolo siano abilitati:
+1. Seleziona **[!UICONTROL Web Server (IIS)]** e continua con **[!UICONTROL Add Roles Wizard]**. Assicurati che i seguenti servizi ruolo siano abilitati:
 
-   | Funzioni HTTP comuni |
+   | Funzionalità HTTP comuni |
    |---|
    | Contenuto statico |
    | Documento predefinito |
-   | Esplorazione directory |
+   | Navigazione nelle directory |
    | Errori HTTP |
    | Reindirizzamento HTTP |
 
@@ -38,16 +39,16 @@ Il primo passaggio consiste nell&#39;abilitare il ruolo IIS sul server dashboard
    |---|
    | Registrazione HTTP |
    | Strumenti di registrazione |
-   | Richiedi monitor |
-   | Tracing |
+   | Monitoraggio richieste |
+   | Tracciamento |
    | Registrazione personalizzata |
 
    | Sicurezza |
    |---|
    | Autenticazione di base |
-   | Autenticazione Windows |
+   | Autenticazione di Windows |
    | Autenticazione URL |
-   | Richiedi filtro |
+   | Filtro richieste |
    | Restrizioni IP e dominio |
 
    | Strumenti di gestione |
