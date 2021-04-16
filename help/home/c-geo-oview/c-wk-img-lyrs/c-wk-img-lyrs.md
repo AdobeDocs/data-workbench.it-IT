@@ -1,16 +1,17 @@
 ---
-description: Informazioni concettuali sulla creazione e l’implementazione di livelli.
-solution: Analytics
-title: Utilizzo dei livelli di immagini
-topic: Data workbench
+description: Informazioni concettuali sulla creazione e l’implementazione dei livelli.
+title: Utilizzo dei livelli immagine
 uuid: 3f687c5e-eadf-41e1-a39a-51e017ac32d5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '22'
+ht-degree: 0%
 
 ---
 
 
-# Utilizzo dei livelli di immagini{#working-with-imagery-layers}
+# Utilizzo dei livelli immagine{#working-with-imagery-layers}
 
-Informazioni concettuali sulla creazione e l’implementazione di livelli.
+Informazioni concettuali sulla creazione e l’implementazione dei livelli.
 
