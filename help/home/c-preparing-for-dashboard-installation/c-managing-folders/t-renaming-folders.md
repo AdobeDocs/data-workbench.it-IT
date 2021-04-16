@@ -1,14 +1,15 @@
 ---
-description: 'null'
-solution: Analytics
+description: Ridenominazione delle cartelle
 title: Ridenominazione delle cartelle
-topic: Data workbench
 uuid: 803bad4a-8fe9-48e5-9629-ddc2c5430e2d
+exl-id: 1f40c50f-4af0-41d3-8aa6-b4dd74785ea3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '39'
+ht-degree: 15%
 
 ---
-
 
 # Ridenominazione delle cartelle{#renaming-folders}
 
@@ -16,8 +17,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/rename.png)
 
-1. Inserite il nuovo nome della cartella e premete **[!UICONTROL Enter]**.
+1. Immettere il nuovo nome per la cartella e premere **[!UICONTROL Enter]**.
 
    ![](assets/renamed_folder.png)
 
-   Se l&#39;operazione ha avuto esito positivo, verrà visualizzato un messaggio che indica che la cartella è stata rinominata.
+   Se l’operazione è riuscita, viene visualizzato un messaggio che indica che la cartella è stata rinominata.
