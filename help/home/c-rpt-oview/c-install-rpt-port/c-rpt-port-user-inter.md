@@ -1,54 +1,55 @@
 ---
-description: I set di report devono essere configurati in un modo specifico per produrre report visualizzati correttamente tramite il portale dei report.
-solution: Analytics
-title: Personalizzare l'interfaccia utente del portale di report
-topic: Data workbench
+description: I set di rapporti devono essere configurati in un modo specifico per produrre rapporti visualizzati correttamente tramite Report Portal (Portale dei rapporti).
+title: Personalizzare l’interfaccia utente del Report Portal (Portale dei rapporti)
 uuid: d1ea88e2-7b9e-4b1e-a826-dbe7c2e75976
+exl-id: 1f7c807d-d896-448f-b9dd-9fe6a68ef27e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 2%
 
 ---
 
+# Personalizzare l’interfaccia utente del Report Portal (Portale dei rapporti){#customize-the-report-portal-user-interface}
 
-# Personalizzare l&#39;interfaccia utente del portale di report{#customize-the-report-portal-user-interface}
+I set di rapporti devono essere configurati in un modo specifico per produrre rapporti visualizzati correttamente tramite Report Portal (Portale dei rapporti).
 
-I set di report devono essere configurati in un modo specifico per produrre report visualizzati correttamente tramite il portale dei report.
-
-L&#39;interfaccia utente per [!DNL Report Portal] è progettata per visualizzare una scheda per ogni cartella del set di report che viene visualizzata nella directory di output ed è elencata nel [!DNL profiles.xml] file, così come la [!DNL Admin] scheda incorporata, che deve essere aggiunta al [!DNL TopNavigation.xml] file da visualizzare. Per ulteriori informazioni sulla visualizzazione della [!DNL Admin] scheda incorporata, vedere [Collegamento di una cartella di output a una scheda nell&#39;utente...](../../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-3f6bc47d37ed448e871f4f685f46acee).
+L’interfaccia utente di [!DNL Report Portal] è progettata per visualizzare una scheda per ogni cartella di set di rapporti che viene visualizzata nella directory di output ed è elencata nel file [!DNL profiles.xml], nonché la scheda [!DNL Admin] incorporata, che deve essere aggiunta al file [!DNL TopNavigation.xml] per essere visualizzata. Per ulteriori informazioni sulla visualizzazione della scheda incorporata [!DNL Admin], vedere [Collegamento di una cartella di output a una scheda nell&#39;utente...](../../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-3f6bc47d37ed448e871f4f685f46acee).
 
 ![](assets/report_portal_home.png)
 
-* [Garanzia di compatibilità dei set di rapporti con il portale di rapporti in corso...](../../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-2b141e5d198a4bbea455699126c24706)
-* [Collegamento di una cartella di output a una scheda dell&#39;utente in corso...](../../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-3f6bc47d37ed448e871f4f685f46acee)
+* [Verifica della compatibilità dei set di rapporti con il Report Portal (Portale dei rapporti) in corso...](../../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-2b141e5d198a4bbea455699126c24706)
+* [Collegamento di una cartella di output a una scheda nell&#39;utente in corso...](../../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-3f6bc47d37ed448e871f4f685f46acee)
 
-## Garanzia di compatibilità dei set di rapporti con il portale di rapporti {#section-2b141e5d198a4bbea455699126c24706}
+## Verifica della compatibilità dei set di rapporti con il Report Portal (Portale dei rapporti) {#section-2b141e5d198a4bbea455699126c24706}
 
-Un set di rapporti definisce un processo pianificato per [!DNL Report]. È costituito da due elementi:
+Un set di rapporti definisce un processo pianificato per [!DNL Report]. Si compone di due elementi:
 
-* Una cartella che definisce la raccolta di aree di lavoro da [!DNL Report] generare come rapporti.
+* Cartella che definisce la raccolta di aree di lavoro che si desidera generare come rapporti in [!DNL Report].
 * Un file di configurazione ( [!DNL Report.cfg]).
 
-Tra le altre cose, il [!DNL Report.cfg] file indica [!DNL Report] quando generare i rapporti e dove salvare i file di output. I set di report risiedono nella cartella Reports del server workbench dati. Un profilo può visualizzare un numero qualsiasi di set di report.
+Tra le altre cose, il file [!DNL Report.cfg] indica a [!DNL Report] quando generare i rapporti e dove salvare i file di output. I set di rapporti si trovano nella cartella Report sul server di Data Workbench. Un profilo può visualizzare un qualsiasi numero di set di rapporti.
 
 Per garantire la compatibilità con [!DNL Report Portal], i set di rapporti devono soddisfare i seguenti requisiti:
 
-* La directory di output per i set di report deve contenere un [!DNL profiles.xml] file configurato.
-* Ogni set di report deve includere un report di primo livello denominato &quot;*ReportSetName* Summary&quot;, in cui *ReportSetName* corrisponde al nome del set di report. Ad esempio, quanto segue [!DNL Profile Manager] mostra due set di report, &quot;Home&quot; e &quot;Traffic&quot;. Ogni set di rapporti definisce un rapporto di riepilogo ( [!DNL Home Summary.vw] e, rispettivamente, [!DNL Traffic Summary.vw]).
+* La directory di output dei set di rapporti deve contenere un file [!DNL profiles.xml] configurato.
+* Ogni set di rapporti deve includere un rapporto di primo livello denominato &quot;*ReportSetName* Summary&quot;, in cui *ReportSetName* corrisponde al nome del set di rapporti. Ad esempio, il seguente [!DNL Profile Manager] mostra due set di rapporti: &quot;Home&quot; e &quot;Traffico&quot;. Ogni set di rapporti definisce un rapporto di riepilogo ( [!DNL Home Summary.vw] e [!DNL Traffic Summary.vw] rispettivamente).
 
 ![](assets/rptPort_scrn_RptSets.png)
 
-In [!DNL Report Portal]questo caso, il rapporto di riepilogo viene visualizzato nella scheda del set di rapporti. Il rapporto di riepilogo può contenere qualsiasi area di lavoro, finestra o visualizzazione selezionata.
+In [!DNL Report Portal], il rapporto di riepilogo viene visualizzato nella scheda del set di rapporti. Il rapporto di riepilogo può contenere qualsiasi area di lavoro, finestra o visualizzazione scelta.
 
-* Il rapporto di riepilogo deve essere l&#39;unico rapporto nella cartella di livello principale per un set di report. Tutti gli altri rapporti devono essere inseriti in sottocartelle. Se inserite altri rapporti nella cartella di livello principale, non potete visualizzarli attraverso il portale.
+* Il rapporto di riepilogo deve essere l’unico rapporto presente nella cartella di livello superiore per un set di rapporti. Tutti gli altri rapporti devono essere inseriti in sottocartelle. Se inserisci altri rapporti nella cartella principale, non puoi visualizzarli attraverso il portale.
 
 ## Collegamento di una cartella di output a una scheda nell’interfaccia utente {#section-3f6bc47d37ed448e871f4f685f46acee}
 
-Per specificare le schede che si desidera [!DNL Report Portal] visualizzare, è necessario configurare un [!DNL TopNavigation.xml] file per ciascun profilo. Questo file determina quali set di report vengono visualizzati come schede nell&#39;interfaccia utente per un particolare profilo, nonché l&#39;ordine di tali schede. Il [!DNL TopNavigation.xml] file risiede nella cartella \*PortalName*\PortalFiles\Core\TopNav\*profileName*.
+Per specificare le schede da visualizzare [!DNL Report Portal], è necessario configurare un file [!DNL TopNavigation.xml] per ciascun profilo. Questo file determina quali set di rapporti vengono visualizzati come schede nell’interfaccia utente per un particolare profilo, nonché l’ordine di tali schede. Il file [!DNL TopNavigation.xml] risiede nella cartella \*PortalName*\PortalFiles\Core\TopNav\*profileName*.
 
 **Per modificare il file TopNavigation.xml**
 
-1. Nel computer in cui è in esecuzione IIS, aprite il [!DNL TopNavigation.xml] file in un editor di testo come Blocco note.
-1. Modificate l&#39;elenco di `<TopNav>` elementi in modo che definisca i nomi e l&#39;ordine dei set di report di cui desiderate [!DNL Report Portal] visualizzare l&#39;output, come nell&#39;esempio seguente:
+1. Sul computer in cui è in esecuzione IIS, apri il file [!DNL TopNavigation.xml] in un editor di testo come Blocco note.
+1. Modifica l’elenco degli elementi `<TopNav>` in modo da definire i nomi e l’ordine dei set di rapporti di cui desideri visualizzare l’output [!DNL Report Portal], come nell’esempio seguente:
 
    ```
    <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
@@ -67,10 +68,9 @@ Per specificare le schede che si desidera [!DNL Report Portal] visualizzare, è 
 
    >[!NOTE]
    >
-   >La [!DNL Admin] scheda è una scheda incorporata che fornisce funzionalità aggiuntive. Se non lo si inserisce nel [!DNL TopNavigation.xml] file, questa scheda non viene visualizzata e la relativa funzionalità non è disponibile.
+   >La scheda [!DNL Admin] è una scheda incorporata che fornisce funzionalità aggiuntive. Se non lo includi nel file [!DNL TopNavigation.xml], questa scheda non viene visualizzata e la relativa funzionalità non è disponibile.
 
-1. In \*PortalName*\PortalFiles\Core\TopNav\ folder, create una cartella per il profilo successivo.
-1. Copiate il [!DNL TopNavigation.xml] file dalla prima cartella del profilo e incollatelo nella nuova cartella.
-1. Modificate il file [!DNL TopNavigation.xml] come necessario, quindi salvatelo.
-1. Ripetete i passaggi da 3 a 5 per tutti gli altri profili disponibili nel portale.
-
+1. In \*PortalName*\PortalFiles\Core\TopNav\ folder, crea una cartella per il profilo successivo.
+1. Copia il file [!DNL TopNavigation.xml] dalla prima cartella del profilo e incollalo nella nuova cartella.
+1. Modifica il [!DNL TopNavigation.xml] come necessario, quindi salva il file.
+1. Ripeti i passaggi 3-5 per tutti gli altri profili disponibili nel portale.
