@@ -1,26 +1,26 @@
 ---
-description: La funzionalità Open è attualmente configurata solo nell'applicazione Site e solo per l'apertura degli URI.
-solution: Analytics
+description: La funzionalità Open è attualmente configurata solo nell’applicazione Site e solo per l’apertura degli URI.
 title: Aprire un URI da una tabella
-topic: Data workbench
 uuid: d863e621-96ae-4dc0-80ab-621fa2019c4b
+exl-id: 3e498786-b9c3-40da-9d0e-5337783f782c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 9%
 
 ---
 
-
 # Aprire un URI da una tabella{#open-a-uri-from-a-table}
 
-La funzionalità Open è attualmente configurata solo nell&#39;applicazione Site e solo per l&#39;apertura degli URI.
+La funzionalità Open è attualmente configurata solo nell’applicazione Site e solo per l’apertura degli URI.
 
-Consultate [Configurazione della funzionalità](../../../../home/c-get-started/c-intf-anlys-ftrs/c-config-open-funct.md#concept-854e6dc8bef34e6aa4ccfb7a8929af4d)di apertura.
+Consulta [Configurazione della funzionalità aperta](../../../../home/c-get-started/c-intf-anlys-ftrs/c-config-open-funct.md#concept-854e6dc8bef34e6aa4ccfb7a8929af4d).
 
-In [!DNL Site], da una tabella URI, potete fare clic con il pulsante destro del mouse su un URI per visualizzare una pagina Web in un browser Web. Per visualizzare un URI nel suo formato nativo (ad esempio HTML), Workbench dati deve avere accesso alla posizione di riferimento e all&#39;applicazione necessaria per aprire tale elemento. Ad esempio, per visualizzare una pagina Web, Workbench dati deve disporre dell&#39;accesso a Internet e disporre di un browser Web installato.
+In [!DNL Site], da una tabella URI è possibile fare clic con il pulsante destro del mouse su un URI per visualizzare una pagina Web in un browser Web. Per visualizzare un URI nel formato nativo (ad esempio HTML), Data Workbench deve avere accesso alla posizione di riferimento e all&#39;applicazione necessaria per aprire l&#39;elemento. Ad esempio, per visualizzare una pagina web, Data Workbench deve disporre dell’accesso a Internet e deve disporre di un browser Web installato.
 
-* Fare clic con il pulsante destro del mouse su un elemento della dimensione e quindi scegliere **[!UICONTROL Open URI]**.
+* Fai clic con il pulsante destro del mouse su un elemento della dimensione e fai clic su **[!UICONTROL Open URI]**.
 
    ![](assets/mnu_Table_OpenURI.png)
 
-   L&#39;URI si apre nella relativa applicazione nativa.
-
+   L’URI si apre nella relativa applicazione nativa.
