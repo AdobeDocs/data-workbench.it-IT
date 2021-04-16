@@ -1,31 +1,30 @@
 ---
 description: Per impostazione predefinita, Insight Server ascolta le porte 80 (per HTTP) e 443 (per HTTPS).
-solution: Analytics
 title: Controllo delle impostazioni della porta
 uuid: 1adad226-5891-4498-80b6-1bb4d67f5bbb
+exl-id: 924860e3-5afa-4c0f-bb7a-d38d5c1355b7
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 7%
 
 ---
 
-
 # Controllo delle impostazioni della porta{#checking-the-port-settings}
 
 Per impostazione predefinita, Insight Server ascolta le porte 80 (per HTTP) e 443 (per HTTPS).
 
-Se queste porte sono già allocate da un altro processo nel computer in cui è installato [!DNL Insight Server], utilizzare la procedura seguente per modificare le assegnazioni delle [!DNL Insight Server’s] porte.
+Se queste porte sono già allocate da un altro processo nel computer in cui è installato [!DNL Insight Server], utilizzare la procedura seguente per modificare le assegnazioni di porte [!DNL Insight Server’s].
 
 **Per modificare le assegnazioni delle porte**
 
-1. Andate alla [!DNL Components] cartella nella directory in cui avete installato [!DNL Insight Server].
+1. Passa alla cartella [!DNL Components] nella directory in cui hai installato [!DNL Insight Server].
 
    Esempio: [!DNL C:\Adobe\Server\Components]
 
-1. Aprite il [!DNL Communications.cfg] file in un editor di testo come Blocco note.
-1. Individuate le voci Porta e Porta SSL, come illustrato di seguito:
+1. Apri il file [!DNL Communications.cfg] in un editor di testo come Blocco note.
+1. Individua le voci Porta e Porta SSL, come illustrato di seguito:
 
    ```
    component = CommServer: 
@@ -41,4 +40,4 @@ Se queste porte sono già allocate da un altro processo nel computer in cui è i
      . . .
    ```
 
-1. Se non si tratta delle porte che desiderate [!DNL Insight Server] utilizzare, modificate le assegnazioni delle porte, quindi salvate e chiudete il file.
+1. Se non si tratta delle porte che si desidera utilizzare [!DNL Insight Server], modificare le assegnazioni delle porte, quindi salvare e chiudere il file.
