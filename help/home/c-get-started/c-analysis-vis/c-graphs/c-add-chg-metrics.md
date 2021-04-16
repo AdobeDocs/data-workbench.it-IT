@@ -1,28 +1,28 @@
 ---
 description: Passaggi per aggiungere una nuova metrica o per modificare una metrica.
-solution: Analytics
-title: Aggiunta e modifica di una metrica
-topic: Data workbench
+title: Aggiunta e modifica di metriche
 uuid: c0763e0e-081a-4f00-b655-359f5b790ead
+exl-id: b40ad2bc-410d-4c80-b9f3-bc7e7cc42407
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 7%
 
 ---
 
-
-# Aggiunta e modifica di una metrica{#add-and-change-a-metrics}
+# Aggiunta e modifica di metriche{#add-and-change-a-metrics}
 
 Passaggi per aggiungere una nuova metrica o per modificare una metrica.
 
-Gli esempi seguenti mostrano la metrica Sessioni rappresentata sulla dimensione Ora del giorno (nel grafico della riga superiore) e lo stesso grafico a linee con una seconda metrica, Valore per sessione, aggiunta all&#39;asse sinistro (nel grafico della riga inferiore).
+Gli esempi seguenti mostrano la metrica Sessioni tracciata sulla dimensione Ora del giorno (nel grafico a linee principali) e lo stesso grafico a linee con una seconda metrica, Valore per sessione, aggiunta all’asse sinistro (nel grafico a linee inferiori).
 
 ![](assets/vis_Line_AddMetric.png)
 
 **Per aggiungere una nuova metrica**
 
-* Fai clic con il pulsante destro del mouse su un elemento o l&#39;etichetta di una metrica e fai clic su **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*. La metrica viene aggiunta sotto la metrica selezionata originariamente.
+* Fai clic con il pulsante destro del mouse su un elemento o sull’etichetta di una metrica e fai clic su **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*. La metrica viene aggiunta sotto la metrica selezionata originariamente.
 
 **Per modificare una metrica**
 
-* Fare clic con il pulsante destro del mouse su un elemento o l&#39;etichetta della metrica che si desidera modificare e scegliere **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*. La nuova metrica sostituisce la metrica originale.
-
+* Fai clic con il pulsante destro del mouse su un elemento o sull’etichetta della metrica che desideri modificare e fai clic su **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*. La nuova metrica sostituisce la metrica originale.
