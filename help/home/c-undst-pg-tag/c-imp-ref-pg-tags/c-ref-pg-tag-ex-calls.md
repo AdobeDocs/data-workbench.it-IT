@@ -1,24 +1,25 @@
 ---
-description: La chiamata di esecuzione tag pagina di riferimento viene inserita nelle pagine Web per le quali si desidera raccogliere i dati di misurazione.
-solution: Analytics
-title: Aggiunta di chiamate di esecuzione tag pagina di riferimento
-topic: Data workbench
+description: La chiamata di esecuzione dei tag della pagina di riferimento viene inserita nelle pagine web per le quali desideri raccogliere i dati di misurazione.
+title: Aggiunta di chiamate di esecuzione dei tag della pagina di riferimento
 uuid: 8c682649-d1b1-40a6-a2b2-4ff5a92b732f
+exl-id: a4f9ab2b-50e8-4e0b-9c87-80dffb697316
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 3%
 
 ---
 
+# Aggiunta di chiamate di esecuzione dei tag della pagina di riferimento{#adding-reference-page-tag-execution-calls}
 
-# Aggiunta di chiamate di esecuzione tag pagina di riferimento{#adding-reference-page-tag-execution-calls}
+La chiamata di esecuzione dei tag della pagina di riferimento viene inserita nelle pagine web per le quali desideri raccogliere i dati di misurazione.
 
-La chiamata di esecuzione tag pagina di riferimento viene inserita nelle pagine Web per le quali si desidera raccogliere i dati di misurazione.
+Deve essere incluso nel corpo del documento HTML e può essere posizionato all’interno di un piè di pagina di inclusione globale, se applicabile. Il [!DNL Reference Page Tag Execution Call] può essere modificato dal tuo team per raccogliere informazioni aggiuntive che potrebbero essere identificate durante le riunioni dei requisiti per la raccolta di informazioni con il team Adobe Consulting Services.
 
-Deve essere incluso nel corpo del documento HTML e può essere posizionato all’interno di un piè di pagina di inclusione globale, se applicabile. Il team [!DNL Reference Page Tag Execution Call] può modificare le informazioni aggiuntive che potrebbero essere identificate durante le riunioni dei requisiti con il team dei servizi di consulenza Adobe.
+Per facilitare la raccolta dei dati tramite l’uso di [!DNL Reference Page Tag], completa i seguenti passaggi:
 
-Per facilitare la raccolta dei dati attraverso l&#39;utilizzo di [!DNL Reference Page Tag], completare i seguenti passaggi:
-
-1. Copiate il seguente codice nel corpo del documento HTML:
+1. Copia il seguente codice nel corpo del documento HTML:
 
    ```
    <!--//BEGIN REFERENCE PAGE TAG--> 
@@ -37,16 +38,16 @@ Per facilitare la raccolta dei dati attraverso l&#39;utilizzo di [!DNL Reference
    <!-- END REFERENCE PAGE TAG-->
    ```
 
-1. Modificate il percorso della posizione dei [!DNL zig.js] file e [!DNL zag.gif] dei file. Ad esempio:
+1. Modifica il percorso della posizione dei file [!DNL zig.js] e [!DNL zag.gif]. Ad esempio:
 
    ```
    //www.mysite.com/scripts/zig.js 
    //www.mysite.com/images/zag.gif 
    ```
 
-Verificate che le intestazioni HTTP Cache-Control appropriate siano state impostate sul server Web per garantire che i file [!DNL zig.js]e [!DNL zag.gif] i file non siano memorizzati nella cache dal browser. Potete impostare le informazioni dell&#39;intestazione Cache-Control HTTP utilizzando uno dei due metodi. Il primo metodo consiste nell’impostare un’intestazione HTTP tramite il server Web. Il secondo metodo consiste nell’impostare un’intestazione HTTP per ciascuna pagina o oggetto incorporato utilizzando uno script. Con il metodo di scripting, la pagina Web deve essere stata creata utilizzando un linguaggio di programmazione quale JSP o ASP. Viene quindi creato uno script per inviare le informazioni di intestazione appropriate. Due evidenti svantaggi accompagnano questo metodo: 1) tutte le pagine devono essere codificate per inviare l&#39;intestazione, e 2) le pagine non possono essere HTML statico, il che ha qualche effetto sulle prestazioni del server Web.
+Assicurati che le intestazioni HTTP Cache-Control appropriate siano state impostate sul server web per garantire che i file [!DNL zig.js]e [!DNL zag.gif] non siano memorizzati nella cache dal browser. È possibile impostare le informazioni dell&#39;intestazione HTTP Cache-Control utilizzando uno dei due metodi disponibili. Il primo metodo è quello di impostare un&#39;intestazione HTTP tramite il server web. Il secondo metodo consiste nell&#39;impostare un&#39;intestazione HTTP per ogni pagina specifica o oggetto incorporato utilizzando uno script. Con il metodo di script, la pagina Web deve essere stata creata utilizzando un linguaggio di programmazione come JSP o ASP. La pagina viene quindi script in modo da inviare le informazioni di intestazione appropriate. Due evidenti svantaggi accompagnano questo metodo: 1) tutte le pagine devono essere codificate per inviare l&#39;intestazione; 2) le pagine non possono essere HTML statico, il che ha qualche effetto sulle prestazioni del server web.
 
-I siti Web in esecuzione su Microsoft IIS possono aggiungere l’intestazione HTTP appropriata tramite la console di gestione Microsoft. I siti Web gestiti dai server Web Netscape iPlanet possono ottenere questo risultato modificando il [!DNL obj.conf] file all&#39;interno della directory di configurazione del sito. Il server Web Apache offre ai webmaster la possibilità di personalizzare le intestazioni HTTP utilizzando il modulo mod_header incluso in cui AOLServer diventa personalizzabile tramite l&#39;uso di moduli Tcl. Prima di implementare le intestazioni HTTP Cache-Control, fare riferimento alla documentazione specifica per la piattaforma del server Web.
+I siti Web in esecuzione su Microsoft IIS possono aggiungere l&#39;intestazione HTTP appropriata tramite Microsoft Management Console. I siti Web gestiti dai server Web Netscape iPlanet possono eseguire questa operazione modificando il file [!DNL obj.conf] all&#39;interno della directory di configurazione del sito. Apache Web Server offre ai webmaster la possibilità di personalizzare le intestazioni HTTP utilizzando il modulo mod_headers incluso in cui AOLServer diventa personalizzabile tramite l&#39;uso di moduli Tcl. Prima di implementare le intestazioni HTTP Cache-Control, è necessario fare riferimento alla documentazione specifica della piattaforma del server web.
 
 In generale, l’intestazione HTTP deve essere strutturata come segue:
 
@@ -55,4 +56,3 @@ Cache-Control: no-cache
 Pragma: no-cache 
 Expires: -1
 ```
-
