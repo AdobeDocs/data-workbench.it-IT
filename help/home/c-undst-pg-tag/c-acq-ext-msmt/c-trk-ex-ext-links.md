@@ -1,26 +1,27 @@
 ---
-description: Acquisizione dell'attività tra i collegamenti del sito Web di terze parti per abilitare l'analisi di Exit Target.
-solution: Analytics
+description: Acquisizione di attività tra collegamenti a siti web di terze parti per abilitare l’analisi di Esci da Target.
 title: Tracciamento delle uscite sui collegamenti esterni
-topic: Data workbench
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
+exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 6%
 
 ---
 
-
 # Tracciamento delle uscite sui collegamenti esterni{#tracking-exits-to-external-links}
 
-Acquisizione dell&#39;attività tra i collegamenti del sito Web di terze parti per abilitare l&#39;analisi di Exit Target.
+Acquisizione di attività tra collegamenti a siti web di terze parti per abilitare l’analisi di Esci da Target.
 
-Le pagine Web possono contenere collegamenti a siti Web di terze parti e l&#39;attività tra tali collegamenti può essere acquisita per abilitare l&#39;analisi di Exit Target, soprattutto nel caso in cui il sito di terze parti sia responsabile del pagamento delle commissioni di riferimento al ricevimento di tali riferimenti. Poiché l&#39;evento click è scritto nei file di registro del sistema di terze parti per impostazione predefinita, è necessario apportare delle modifiche al collegamento per l&#39;acquisizione locale dell&#39;evento click. Il collegamento di terze parti presente nel sito Web deve essere modificato come segue:
+Le pagine web possono contenere collegamenti a siti web di terze parti e l&#39;attività di tali collegamenti può essere acquisita per abilitare l&#39;analisi di Esci da Target, soprattutto nel caso in cui il sito di terze parti sia responsabile del pagamento delle tariffe di riferimento quando tali riferimenti vengono ricevuti. Poiché l’evento clic è scritto nei file di registro del sistema di terze parti per impostazione predefinita, è necessario apportare modifiche al collegamento per acquisire localmente l’evento clic. Il collegamento di terze parti presente nel sito web deve essere modificato come segue:
 
 ```
 <A HREF=”http://www.myserver.com/PageExit.htm?v_eurl=http://www.othersite.com”>
 ```
 
-Il [!DNL PageExit.htm] file di riferimento deve essere creato e strutturato in modo da contenere lo script seguente:
+Il file [!DNL PageExit.htm] a cui si fa riferimento deve essere creato e strutturato in modo da contenere il seguente script:
 
 ```
 <html> 
@@ -51,9 +52,8 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-Facendo la richiesta per il [!DNL PageExit.htm] file, il valore v_eurl viene raccolto a scopo di analisi. Inoltre, quando [!DNL PageExit.htm] viene caricato, viene reindirizzato immediatamente alla posizione di destinazione v_eurl specificata.
+Facendo la richiesta per il file [!DNL PageExit.htm], il valore v_eurl viene raccolto a scopo di analisi. Inoltre, quando viene caricato [!DNL PageExit.htm], reindirizza immediatamente alla posizione di destinazione v_eurl specificata.
 
 | Dati raccolti | Spiegazione | Esempio |
 |---|---|---|
-| v_eurl | Valore associato alla variabile della stringa di query v_eurl. Questo valore rappresenta l&#39;URL di destinazione del collegamento presente nella pagina HTML. | v_eurl=www.othersite.com |
-
+| v_eurl | Valore associato alla variabile della stringa di query v_eurl. Questo valore rappresenta l’URL di destinazione del collegamento presente nella pagina HTML. | v_eurl=www.othersite.com |
