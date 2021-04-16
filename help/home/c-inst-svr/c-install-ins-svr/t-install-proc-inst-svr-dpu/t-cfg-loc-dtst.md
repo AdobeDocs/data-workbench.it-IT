@@ -1,34 +1,33 @@
 ---
-description: Per impostazione predefinita, Insight Server scrive il relativo dataset (temp.db) nella stessa unità dei file del programma Insight Server.
-solution: Analytics
+description: Per impostazione predefinita, Insight Server scrive il relativo set di dati (temp.db) nella stessa unità dei file di programma Insight Server.
 title: Configurazione della posizione del set di dati (temp.db)
 uuid: a6884cad-70ed-4bc6-853c-700d301fb178
+exl-id: 6812883f-ad51-4314-8c80-e95c3fe84664
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 5%
 
 ---
 
-
 # Configurazione della posizione del set di dati (temp.db){#configuring-the-location-of-the-dataset-temp-db}
 
-Per impostazione predefinita, Insight Server scrive il relativo dataset (temp.db) nella stessa unità dei file del programma Insight Server.
+Per impostazione predefinita, Insight Server scrive il relativo set di dati (temp.db) nella stessa unità dei file di programma Insight Server.
 
-Ad esempio, se si installa [!DNL Insight Server] sull&#39;unità C, il dataset viene scritto nell&#39;unità C.
+Ad esempio, se installi [!DNL Insight Server] sull&#39;unità C, scrive il set di dati per l&#39;unità C.
 
-Se si desidera [!DNL Insight Server] mantenere il dataset su un&#39;unità diversa, o se la quantità di dati che si prevede di raccogliere richiede l&#39;uso di più unità, è necessario aggiornare il [!DNL Disk Files.cfg] file per specificare dove si desidera [!DNL Insight Server] scrivere il [!DNL temp.db] file.
+Se si desidera che [!DNL Insight Server] mantenga il set di dati su un&#39;unità diversa o se la quantità di dati che si prevede di raccogliere richiede l&#39;utilizzo di più unità, è necessario aggiornare il file [!DNL Disk Files.cfg] per specificare dove si desidera che [!DNL Insight Server] scriva il file [!DNL temp.db].
 
 **Per configurare il percorso di temp.db**
 
-1. Andate alla [!DNL Components] cartella nella directory in cui avete installato [!DNL Insight Server].
+1. Passa alla cartella [!DNL Components] nella directory in cui hai installato [!DNL Insight Server].
 
    Esempio: [!DNL C:\Adobe\Server\Components]
 
-1. Aprite il [!DNL Disk Files.cfg] file in un editor di testo come Blocco note.
+1. Apri il file [!DNL Disk Files.cfg] in un editor di testo come Blocco note.
 
-   Per impostazione predefinita, questo file contiene una sola voce nella struttura File disco, come illustrato di seguito.
+   Per impostazione predefinita, questo file contiene una singola voce nella struttura File disco come mostrato di seguito.
 
    ```
    component = DiskSpaceManagerComponent:
@@ -37,7 +36,7 @@ Se si desidera [!DNL Insight Server] mantenere il dataset su un&#39;unità diver
      Detect Disk Corruption = bool: true
    ```
 
-1. Per cambiare la posizione di [!DNL temp.db], modificare la definizione dei file del disco. L&#39;esempio seguente illustra come modificare la configurazione per distribuire il [!DNL temp.db] file tra le unità C, D ed E:
+1. Per modificare la posizione di [!DNL temp.db], modifica la definizione dei file di disco. L&#39;esempio seguente illustra come modificare la configurazione per distribuire il file [!DNL temp.db] tra le unità C, D ed E:
 
    ```
    component = DiskSpaceManagerComponent:
@@ -50,5 +49,4 @@ Se si desidera [!DNL Insight Server] mantenere il dataset su un&#39;unità diver
 
    >[!NOTE]
    >
-   >Tenete presente l’uso delle doppie barre rovesciate nei nomi dei file riportati sopra. Nei file di [!DNL Insight Server] configurazione, il carattere barra rovesciata è un carattere escape. Viene utilizzato per esprimere sequenze di controllo speciali (ad esempio, \t per un carattere di tabulazione) nel testo. Per rappresentare una barra rovesciata effettiva, è necessario digitare la barra rovesciata due volte (ad esempio \\) per ignorare la funzione escape. Ciò si applica solo quando si modificano i file di configurazione in un editor di testo come Blocco note.
-
+   >Tenere presente l’uso delle barre rovesciate doppie nei nomi dei file indicati sopra. Nei file di configurazione [!DNL Insight Server], il carattere barra rovesciata è un carattere escape. Viene utilizzato per esprimere sequenze di controllo speciali (ad esempio, \t per un carattere di tabulazione) nel testo. Per rappresentare una barra rovesciata effettiva, è necessario digitare la barra rovesciata due volte (ad esempio, \\) per sostituire la funzione escape. Questo si applica solo quando si modificano i file di configurazione in un editor di testo come Blocco note.
