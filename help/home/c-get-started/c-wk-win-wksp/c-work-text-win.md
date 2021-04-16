@@ -1,35 +1,35 @@
 ---
 description: Ovunque sia possibile immettere testo in una finestra, è possibile eseguire molte delle funzioni che è possibile eseguire in qualsiasi editor di testo, ad esempio Blocco note o Microsoft Word.
-solution: Analytics
 title: Operazioni con il testo nelle finestre
-topic: Data workbench
 uuid: c0766fe3-3433-4409-bfae-325ec2f4c5ef
+exl-id: f786014d-c784-44f8-a399-f1d58bbb5f3d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 7%
 
 ---
-
 
 # Operazioni con il testo nelle finestre{#work-with-text-in-windows}
 
 Ovunque sia possibile immettere testo in una finestra, è possibile eseguire molte delle funzioni che è possibile eseguire in qualsiasi editor di testo, ad esempio Blocco note o Microsoft Word.
 
-Workbench dati supporta funzioni di modifica di base, quali taglio (Ctrl+x), copia (Ctrl+c), incolla (Ctrl+v), annullamento (Ctrl+z), ripristino (Ctrl+Maiusc+z), selezione di sezione (clic+trascinamento) e selezione di tutto (Ctrl+a).
+La Data Workbench supporta funzioni di modifica di base, tra cui Taglia (Ctrl+x), Copia (Ctrl+c), Incolla (Ctrl+v), Annulla (Ctrl+Z), Ripristina (Ctrl+Maiusc+Z), seleziona la sezione (clic+trascina) e seleziona tutto (Ctrl+a).
 
-Oltre alla copia e all’incolla di base del testo, potete copiare e incollare testo all’interno e tra file di configurazione ( [!DNL .cfg]).
+Oltre alla copia e all’incolla di base del testo, puoi copiare e incollare testo all’interno e tra i file di configurazione ( [!DNL .cfg]).
 
-**Per copiare e incollare parametri e nodi all&#39;interno di un file di configurazione ([!DNL .cfg])**
+**Per copiare e incollare parametri e nodi in un file di configurazione ([!DNL .cfg])**
 
-Quando copiate e incollate un parametro, entrambi devono essere dello stesso tipo, ad esempio stringa-stringa.
+Quando si copia e incolla un parametro, entrambi devono essere dello stesso tipo, ad esempio stringa in stringa.
 
-1. Fare clic con il pulsante destro del mouse su un nodo o un&#39;etichetta di parametro e quindi scegliere **[!UICONTROL Copy]**.
+1. Fai clic con il pulsante destro del mouse su un nodo o un&#39;etichetta di parametro e fai clic su **[!UICONTROL Copy]**.
 1. Completa uno dei seguenti passaggi:
 
-   * Fare clic con il pulsante destro del mouse sul vettore e scegliere **[!UICONTROL Paste as child]**. Il nodo viene incollato sopra il primo nodo del vettore.
-   * Fare clic con il pulsante destro del mouse sul nodo sotto il quale si desidera incollare il nodo e fare clic **[!UICONTROL Paste]**.
+   * Fai clic con il pulsante destro del mouse sul vettore e fai clic su **[!UICONTROL Paste as child]**. Il nodo viene incollato sopra il primo nodo nel vettore.
+   * Fare clic con il pulsante destro del mouse sul nodo sotto il quale si desidera incollare il nodo e fare clic su **[!UICONTROL Paste]**.
 
 **Per copiare e incollare i nodi in un editor di testo**
 
-1. Fare clic con il pulsante destro del mouse su un vettore o un nodo e quindi scegliere **[!UICONTROL Copy]**.
-1. Nella posizione appropriata all’interno del file dell’editor di testo, premere **[!UICONTROL Ctrl+v]**.
-
+1. Fai clic con il pulsante destro del mouse su un vettore o un nodo e fai clic su **[!UICONTROL Copy]**.
+1. Nella posizione appropriata all’interno del file dell’editor di testo, premi **[!UICONTROL Ctrl+v]**.
