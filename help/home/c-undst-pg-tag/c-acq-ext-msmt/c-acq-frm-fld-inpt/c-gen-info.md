@@ -1,20 +1,21 @@
 ---
-description: I valori immessi in un modulo in una pagina Web possono essere raccolti e aggiunti nella stringa di query della pagina successivamente richiesta (all'invio del modulo) tramite l'uso di JavaScript.
-solution: Analytics
+description: I valori immessi in un modulo in una pagina web possono essere raccolti e aggiunti nella stringa di interrogazione della pagina successivamente richiesta (all’invio del modulo) tramite l’uso di JavaScript.
 title: Informazioni generali
-topic: Data workbench
 uuid: 401816a5-1d95-48e6-bedf-ee2a5dbd2d50
+exl-id: 9effc72b-e75f-423c-87ec-6ac25edee8d6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '175'
+ht-degree: 3%
 
 ---
 
-
 # Informazioni generali{#general-information}
 
-I valori immessi in un modulo in una pagina Web possono essere raccolti e aggiunti nella stringa di query della pagina successivamente richiesta (all&#39;invio del modulo) tramite l&#39;uso di JavaScript.
+I valori immessi in un modulo in una pagina web possono essere raccolti e aggiunti nella stringa di interrogazione della pagina successivamente richiesta (all’invio del modulo) tramite l’uso di JavaScript.
 
-Questo è illustrato nell&#39;esempio seguente. Includere questo JavaScript dopo eventuali script di convalida dei moduli utilizzati nelle pagine HTML.
+Questo è illustrato nell’esempio seguente. Includere questo JavaScript dopo eventuali script di convalida dei moduli utilizzati nelle pagine HTML.
 
 ```
 <html> 
@@ -47,13 +48,13 @@ document.formname.action = document.formname.action + '?' + formvalues;
 </html> 
 ```
 
-In questo esempio i valori immessi nel modulo dall&#39;utente del browser vengono aggiunti alla pagina successiva &quot;thankyou.asp&quot; indicata nel valore dell&#39;azione FORM come segue:
+Questo esempio aggiunge i valori immessi nel modulo dall&#39;utente del browser alla successiva pagina &quot;ringraziamento.asp&quot; indicata nel valore dell&#39;azione MODULO come segue:
 
 ```
 http://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
 ```
 
-Con questa richiesta, oltre alle misure di base raccolte da [!DNL Sensor]:
+Le seguenti misurazioni estese sono acquisite con questa richiesta in aggiunta alle misurazioni di base raccolte da [!DNL Sensor]:
 
 | Dati raccolti | Spiegazione | Esempio |
 |---|---|---|
@@ -61,4 +62,3 @@ Con questa richiesta, oltre alle misure di base raccolte da [!DNL Sensor]:
 | v_2 | Valore associato al campo modulo CITY | v_2=Los Angeles |
 | v_3 | Valore associato al campo modulo STATE | v_3=California |
 | v_4 | Valore associato al campo modulo ZIP | v_4=90210 |
-
