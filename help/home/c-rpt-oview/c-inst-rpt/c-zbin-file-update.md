@@ -1,23 +1,24 @@
 ---
-description: Per tutte le lingue, Report Server 6.0 e versioni successive richiede il file "insight.zbin" copiato nella cartella principale del server di report.
-solution: Analytics
-title: Aggiorna server di report con un file della lingua (file .zbin)
-topic: Data workbench
+description: Per tutte le lingue, Report Server 6.0 e versioni successive richiede il file "insight.zbin" copiato nella cartella principale del server di rapporto.
+title: Aggiorna il server di rapporto con un file della lingua (file .zbin)
 uuid: 2ecf2afc-bb5f-4fc7-8fb8-a904fb7ed407
+exl-id: a76b7c01-83f0-4cf2-97a9-07d51cc75b3c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 9%
 
 ---
 
+# Aggiorna il server di rapporto con un file della lingua (file .zbin){#update-report-server-with-a-language-file-zbin-file}
 
-# Aggiorna server di report con un file della lingua (file .zbin){#update-report-server-with-a-language-file-zbin-file}
+Per tutte le lingue, Report Server 6.0 e versioni successive richiede il file &quot;insight.zbin&quot; copiato nella cartella principale del server di rapporto.
 
-Per tutte le lingue, Report Server 6.0 e versioni successive richiede il file &quot;insight.zbin&quot; copiato nella cartella principale del server di report.
+Aggiornare i file della lingua del server di rapporto:
 
-Aggiornare i file della lingua del server di report:
-
-1. Aggiungete il file &quot;insight.zbin&quot; rinominato nella directory principale di ReportServer.
-1. Il file di configurazione del server di report (reportserver.cfg) richiede impostazioni di font per le lingue a doppio byte. Ad esempio, il cinese richiede l&#39;aggiunta di font utilizzando SimSun:
+1. Aggiungi il file &quot;insight.zbin&quot; rinominato alla directory principale ReportServer.
+1. Il file di configurazione del server di rapporto (reportserver.cfg) richiede le impostazioni dei font per le lingue a doppio byte. Ad esempio, il cinese richiede l’aggiunta di font utilizzando SimSun:
 
    ```
    <b>Report Server.cfg - Add Fonts</b> 
@@ -27,7 +28,7 @@ Aggiornare i file della lingua del server di report:
      1 = string: Arial
    ```
 
-1. È necessario passare un parametro per Report Server 6.0 nella riga di comando per la localizzazione, ad esempio:
+1. Un parametro per Report Server 6.0 deve essere trasmesso nella riga di comando per la localizzazione, ad esempio:
 
    ```
    ReportServer.exe -Locale -zh-cn 
@@ -36,24 +37,24 @@ Aggiornare i file della lingua del server di report:
 
    >[!NOTE]
    >
-   >Se non viene specificata alcuna lingua, il server di report predefinito è Inglese.
+   >Se non viene specificata alcuna impostazione internazionale, il valore predefinito del server di rapporto è Inglese.
 
-   Seguite i passaggi per avviare ReportServer come servizio con i parametri delle impostazioni internazionali:
+   Segui i passaggi per avviare ReportServer come servizio con i parametri internazionali:
 
-   1. Avviate un prompt dei comandi come amministratore.
-   1. Andate alla cartella di installazione di ReportServer.
-   1. Digitate il comando seguente per avviare il servizio:
+   1. Avviare un prompt dei comandi come amministratore.
+   1. Passare alla cartella di installazione di ReportServer.
+   1. Digita il seguente comando per avviare il servizio:
 
       * Per inglese: [!DNL ReportServer.exe -RegServer -Locale -en-us]
       * Per cinese: [!DNL ReportServer.exe -RegServer -Locale -zh-cn]
 
 1. Per verificare se ReportServer è in esecuzione con i parametri corretti:
 
-   1. Aprire Windows Service Manager.
-   1. Right-click [!DNL Adobe Insight Report Server - Properties].
-   Il percorso dell&#39;eseguibile conterrà i parametri:
+   1. Apri Gestione servizi Windows.
+   1. Fare clic con il pulsante destro del mouse su [!DNL Adobe Insight Report Server - Properties].
+
+   Il percorso dell&#39;eseguibile conterrà i parametri seguenti:
 
    ```
    ReportServer.exe -Service ReportServer -Locale -en-us
    ```
-
