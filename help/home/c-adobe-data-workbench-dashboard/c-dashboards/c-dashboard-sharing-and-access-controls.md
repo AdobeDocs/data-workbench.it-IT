@@ -1,19 +1,20 @@
 ---
 description: Le dashboard possono essere private o condivise.
-solution: Analytics
-title: Controlli di accesso e condivisione dashboard
-topic: Data workbench
+title: Condivisione dashboard e controlli di accesso
 uuid: 8bc64cfb-3cda-4d28-8a34-cbefd38f1b70
+exl-id: 31a73d26-2382-4abe-9e11-22da1dca4e25
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 8%
 
 ---
 
-
-# Controlli di accesso e condivisione dashboard{#dashboard-sharing-and-access-controls}
+# Condivisione dashboard e controlli di accesso{#dashboard-sharing-and-access-controls}
 
 Le dashboard possono essere private o condivise.
 
-Se un dashboard è impostato su **[!UICONTROL Private]**, solo l&#39;autore del dashboard o l&#39;amministratore di sistema possono visualizzare e modificare il dashboard.
+Se un dashboard è impostato su **[!UICONTROL Private]**, solo il creatore del dashboard o un amministratore di sistema può visualizzare e modificare il dashboard.
 
-Se una dashboard è impostata su **[!UICONTROL Shared]**, ogni utente con accesso adeguato può visualizzare la dashboard. Affinché gli utenti possano accedere correttamente, devono disporre di un account attivo nell’applicazione del dashboard e gli è stato concesso l’accesso a ciascun profilo contenuto nel dashboard. A parte gli amministratori, altri utenti non possono modificare in modo permanente le dashboard che non hanno creato. Tuttavia, gli utenti possono apportare modifiche e salvare il dashboard come copia.
+Se un dashboard è impostato su **[!UICONTROL Shared]**, ogni utente con accesso appropriato può visualizzare il dashboard. Affinché gli utenti abbiano un accesso corretto, devono disporre di un account attivo nell’applicazione dashboard e devono disporre dell’accesso a ciascun profilo contenuto nel dashboard. A parte gli amministratori, altri utenti non possono modificare in modo permanente le dashboard che non hanno creato. Tuttavia, gli utenti possono apportare modifiche e salvare il dashboard come copia.
