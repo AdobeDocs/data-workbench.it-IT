@@ -3,7 +3,6 @@ description: Una dimensione da molti a molti ha una relazione da molti a molti c
 title: Dimensioni Many-to-Many (Da molte-a-molte)
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
 exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '400'
