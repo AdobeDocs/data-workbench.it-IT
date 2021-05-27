@@ -3,7 +3,6 @@ description: Esportazione, copia e segnalibro dal Worktop.
 title: Utilizzo del menu delle miniature di Worktop
 uuid: bada2260-3ae7-4fb6-938a-40b7acb1ffa7
 exl-id: 2220051d-5c53-48ed-8e13-62883819f22a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '490'
