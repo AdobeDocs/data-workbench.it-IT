@@ -3,7 +3,6 @@ description: La funzionalità Open è attualmente configurata solo nell’applic
 title: Aprire un URI da una tabella
 uuid: d863e621-96ae-4dc0-80ab-621fa2019c4b
 exl-id: 3e498786-b9c3-40da-9d0e-5337783f782c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '131'
