@@ -3,7 +3,6 @@ description: Puoi creare altre visualizzazioni da una mappa del processo.
 title: Creare una visualizzazione da una mappa del processo
 uuid: b4a86c96-3082-4802-9929-6aafa33fcb8c
 exl-id: 3194a81f-4b25-4fb2-bee4-28c2bd401664
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '74'
