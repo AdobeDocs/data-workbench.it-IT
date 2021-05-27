@@ -3,7 +3,6 @@ description: Istruzioni per configurare avvisi amministrativi per Insight Server
 title: Impostazioni di configurazione di avvisi amministrativi
 uuid: c2be2d1e-d81d-4d9f-ac94-4b642dad90b9
 exl-id: c75e442e-33e6-4fc8-8368-29482f09e1cc
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '514'
