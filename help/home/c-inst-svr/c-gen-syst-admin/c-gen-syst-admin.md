@@ -3,7 +3,6 @@ description: L'Adobe consiglia di amministrare e monitorare regolarmente lo stat
 title: Amministrazione generale dei sistemi
 uuid: 36f87f65-3791-41fd-a4fb-b94f7fa32fac
 exl-id: a35b5f2f-8c3c-486c-b795-bd2f84be2fc6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '101'
