@@ -3,7 +3,6 @@ description: Passaggi per rendere disponibile un livello punto elemento da visua
 title: Come rendere disponibile un nuovo livello del punto elemento
 uuid: 7880de63-d206-4c56-b8cf-75882d867ace
 exl-id: 9001f6b6-5d25-48a0-9381-04f679e0ff4d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '205'
