@@ -3,7 +3,6 @@ description: È possibile personalizzare l'aspetto di qualsiasi menu modificando
 title: Personalizzare un menu utilizzando i file order.txt
 uuid: 4346114a-05d0-4d15-9633-09c9d869cdd6
 exl-id: 3803a56f-19b7-4792-a277-97f76c11ec0e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '946'
