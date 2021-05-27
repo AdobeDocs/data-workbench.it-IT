@@ -3,7 +3,6 @@ description: L’opzione Configurazione apre il file Insight.cfg, che controlla 
 title: Opzione di configurazione
 uuid: 1edfcf03-b278-4d81-942c-c9024378e13c
 exl-id: bb694d3c-64f7-4a74-b774-4d5145250e6d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '182'
