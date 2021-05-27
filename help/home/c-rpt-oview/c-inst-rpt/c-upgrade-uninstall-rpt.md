@@ -3,7 +3,6 @@ description: Informazioni sull'aggiornamento e la disinstallazione del software 
 title: Aggiornamento e disinstallazione del server di rapporto
 uuid: 42f0d190-1a88-424d-be4b-90338144d287
 exl-id: 86d0d848-4e2a-45cb-a1b3-b8a856332d33
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '377'
@@ -75,7 +74,7 @@ Per eseguire la procedura seguente, è innanzitutto necessario ottenere il file 
 
 **Per effettuare l’aggiornamento alla versione  [!DNL Report Server] 4.0**
 
-1. Nel computer di Data Workbench, copia il file di aggiornamento del server di rapporto nella cartella [!DNL Temp\Software] nella directory in cui è installato Data Workbench.
+1. Sul computer di Data Workbench, copia il file di aggiornamento del server di rapporto nella cartella [!DNL Temp\Software] nella directory in cui è installato Data Workbench.
 1. Avvia Data Workbench e carica il profilo [!DNL Configuration] .
 1. Fai clic sulla miniatura **[!UICONTROL Configure Connection to Servers]**.
 1. In [!DNL Servers Manager], fai clic con il pulsante destro del mouse sull’icona del server di Data Workbench e fai clic su **[!UICONTROL Server Files]**.
