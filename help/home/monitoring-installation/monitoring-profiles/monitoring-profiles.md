@@ -3,7 +3,6 @@ description: Per identificare correttamente lo stato e le prestazioni del server
 title: Aree di lavoro per il monitoraggio del server di Data Workbench
 uuid: 07bd0749-1d3b-46ef-9c85-5e694a306db1
 exl-id: 9deee1a2-e102-4aaa-a68a-a31543aed07e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '133'
