@@ -2,7 +2,6 @@
 description: Istruzioni per creare dimensioni estese e descrivere i tipi di dimensioni estese che è possibile definire per la creazione durante la fase di trasformazione della costruzione del set di dati.
 title: Dimensioni estese
 uuid: 465682c2-5b08-4b94-817f-ff7b405142af
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '134'
