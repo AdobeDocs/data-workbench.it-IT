@@ -3,7 +3,6 @@ description: Il file di inclusione del set di dati di elaborazione del registro 
 title: Elaborazione del registro di Dataset Include Files (File inclusi nel set di dati)
 uuid: 8bf99c9a-f674-4a07-bb3e-de0d9efc9716
 exl-id: 06d8046d-6bac-4ccd-bcef-06f7c9ec7619
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '660'
