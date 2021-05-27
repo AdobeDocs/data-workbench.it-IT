@@ -3,7 +3,6 @@ description: Se i firewall di rete non impediscono l’accesso al server di ripe
 title: Creazione di una connessione tra Insight e il Repeater (Ripetitore)
 uuid: dccce83a-8708-4763-a19a-64d905a9f624
 exl-id: 81e81db5-0517-41d4-a958-d08cd3975096
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '341'
