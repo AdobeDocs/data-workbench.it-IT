@@ -3,7 +3,6 @@ description: Esistono due modi per determinare quali selezioni sono state effett
 title: Determinazione degli elementi selezionati
 uuid: fb8c6e4e-7345-431a-b9b4-0c08b8f6aabb
 exl-id: cc627c48-2fd6-4a1a-a4b7-c807af01a0b2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '151'
