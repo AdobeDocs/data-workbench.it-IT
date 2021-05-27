@@ -2,7 +2,6 @@
 description: Utilizza i pannelli Finder nella Data Workbench per selezionare metriche, dimensioni e filtri. Questi pannelli forniscono supporto per la ricerca, opzioni di ordinamento e funzionalità di trascinamento e rilascio.
 title: Finder
 uuid: 7a4144f5-133f-48ed-9613-1e42b1313120
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '640'
