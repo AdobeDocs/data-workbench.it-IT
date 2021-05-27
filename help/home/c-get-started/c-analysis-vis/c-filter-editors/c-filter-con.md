@@ -3,7 +3,6 @@ description: Informazioni sull’utilizzo delle condizioni del filtro, tra cui l
 title: Utilizzo delle condizioni del filtro
 uuid: a75fcb21-be5c-452a-8632-86cd78db15cb
 exl-id: 15745b0c-2754-4f8b-acfd-a6bd5886ecf8
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '852'
