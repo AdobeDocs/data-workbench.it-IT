@@ -3,7 +3,6 @@ description: I grafici Incremento e Guadagno offrono visualizzazioni per la valu
 title: Guadagno tendenza e grafici di accuratezza
 uuid: 4f08277e-deea-48d3-ab15-214c43ad6664
 exl-id: 5ac08512-ac9c-4e85-a4f9-ea6d819095d8
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '806'
