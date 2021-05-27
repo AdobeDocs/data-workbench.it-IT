@@ -3,7 +3,6 @@ description: Quando si crea un livello punto elemento che fa riferimento a un fi
 title: Definizione dei livelli del punto elemento con riferimento ai file di ricerca
 uuid: 99d08d43-bdbb-42e1-927a-edf320686c79
 exl-id: b6928821-c825-43e2-8c7b-2ce0f49aa67e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '304'
