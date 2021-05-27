@@ -3,7 +3,6 @@ description: Per impostazione predefinita, le schede appena create visualizzano 
 title: Visualizzare le sottocartelle come schede secondarie
 uuid: b4d7c6dd-d5ad-4b93-ba67-65a69e11eefc
 exl-id: 6a05852b-3efc-4e71-9782-d4cc3a687a26
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '217'
