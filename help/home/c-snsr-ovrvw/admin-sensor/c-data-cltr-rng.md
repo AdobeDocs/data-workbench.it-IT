@@ -3,7 +3,6 @@ description: Controlla se il raccoglitore è in esecuzione utilizzando metodi di
 title: Conferma dell’esecuzione dell’agente di raccolta dati
 uuid: e5b9b12a-b8a5-4c00-abe5-e824516d46b7
 exl-id: 1235d741-1ddf-4a65-8377-3d8a9b4ba0d3
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '455'
@@ -18,7 +17,7 @@ Controlla se il raccoglitore è in esecuzione utilizzando metodi diversi.
 **Frequenza consigliata:** ogni 5-10 minuti
 
 * [Utilizza la funzionalità di test del sito nel trasmettitore.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-a5a697c3252e40f184c0b662926170f2)
-* [Controlla  [!DNL Sensor] se sta impostando un cookie.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
+* [Controlla se  [!DNL Sensor] sta impostando un cookie.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
 
 ## Utilizzo del test del sito {#section-a5a697c3252e40f184c0b662926170f2}
 
