@@ -2,7 +2,6 @@
 description: Sensor è un'applicazione software di acquisizione dati leggera e di basso impatto che raccoglie in modo affidabile, sicuro e continuo i dati degli eventi dai server web, applicativi e di raccolta dati da trasmettere a qualsiasi server di Data Workbench.
 title: Panoramica del sensore
 uuid: 75833d47-dda1-4fdc-9a07-e63342a15b11
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '81'
