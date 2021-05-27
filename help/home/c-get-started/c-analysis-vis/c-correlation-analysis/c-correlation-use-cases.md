@@ -3,7 +3,6 @@ description: Definire punti di correlazione dipendenti che hanno senso nel vostr
 title: Casi di utilizzo dell’analisi correlazione
 uuid: 47328574-6600-44d7-8fff-feff3097488a
 exl-id: d4834350-8756-44b7-ab2d-64f86134100b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '183'
@@ -19,7 +18,7 @@ Questi casi d&#39;uso evidenziano l&#39;arte di identificare le relazioni come p
 
 ## Relazione social media e sito Web {#section-388e18eb9dbd4ff1bd56fb30472a5359}
 
-Gli editori digitali vogliono massimizzare la loro comprensione del potenziale rapporto tra l&#39;attività dei social media e le visite al loro sito web. Ad esempio, l’editore digitale esegue il rapporto di correlazione tra riferimenti Twitter orari e visite per un periodo di due settimane. La correlazione è risultato essere *r* = 0.28, che indica una relazione media e positiva tra le menzioni di Twitter e le visite al sito web.
+Gli editori digitali vogliono massimizzare la loro comprensione del potenziale rapporto tra l&#39;attività dei social media e le visite al loro sito web. Ad esempio, l’editore digitale esegue il rapporto di correlazione tra riferimenti e visite a cadenza oraria di Twitter per un periodo di due settimane. La correlazione è risultato essere *r* = 0.28, che indica una relazione media e positiva tra le menzioni di Twitter e le visite al sito web.
 
 ## Ottimizzazione per i rivenditori e-commerce {#section-4e88ca075d654ffe90768b1c33c62c89}
 
