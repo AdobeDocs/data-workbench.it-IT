@@ -3,7 +3,6 @@ description: È necessario assicurarsi che i computer su cui sono installati i p
 title: Conferma dell’integrità dei sistemi
 uuid: 6d132865-36ab-40fc-be24-e031f356fce2
 exl-id: 543f7592-dd3c-47ba-b174-5f12e9586378
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '169'
