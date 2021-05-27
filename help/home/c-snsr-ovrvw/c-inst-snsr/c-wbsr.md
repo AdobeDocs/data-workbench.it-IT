@@ -3,7 +3,6 @@ description: Istruzioni dettagliate per l'installazione e la configurazione di S
 title: WebSphere su AIX
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1645'
@@ -100,7 +99,7 @@ Per ripristinare le autorizzazioni alle impostazioni predefinite consigliate, ut
 
 Se si desidera utilizzare autorizzazioni diverse dalle impostazioni predefinite consigliate, esaminare le informazioni contenute in Autorizzazioni file UNIX di Sensor, per essere certi di comprendere come vengono utilizzati questi file.
 
-## Modifica il file di configurazione sensore {#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## Modifica il file di configurazione del sensore {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 Il file txlogd.conf contiene i parametri di configurazione per Sensor.
 
