@@ -3,7 +3,6 @@ description: Se non si dispone dell'autorizzazione per eliminare i file da un pr
 title: Nascondere un file svuotandone il contenuto (zero byte)
 uuid: 82c1a5c9-1bbb-41c7-bee7-704f0a9ef87d
 exl-id: d5841fb5-afae-4352-aded-01b0b2eb9f85
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '298'
