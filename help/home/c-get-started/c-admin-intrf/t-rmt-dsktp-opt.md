@@ -3,7 +3,6 @@ description: L'opzione Desktop remoto consente agli amministratori di accedere a
 title: Opzione desktop remoto
 uuid: c5914eff-4554-41d1-b5a7-6a598354eeb4
 exl-id: c4b4f59d-191c-4daa-affa-20a3e89f9fd2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '176'
