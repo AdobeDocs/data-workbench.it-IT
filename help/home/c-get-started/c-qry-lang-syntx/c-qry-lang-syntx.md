@@ -3,7 +3,6 @@ description: Sintassi del linguaggio di query per la creazione e la modifica di 
 title: Sintassi del linguaggio di query
 uuid: 446df540-b3e5-4c21-a0a7-766abddff43d
 exl-id: 8beb2745-1452-4373-87d2-ada705de90b1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '151'
