@@ -3,7 +3,6 @@ description: Vengono forniti rapporti analitici per gli utenti del profilo Adobe
 title: Rapporti di Analytics
 uuid: 5fc26922-0687-464f-8c5d-d72d2a6078f0
 exl-id: 03bbf4a0-767c-4258-9512-2887f346bf0e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '581'
@@ -37,7 +36,7 @@ Di seguito è riportato un elenco dei rapporti di Analytics:
 | [Pagine](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-pages.html) | Classifica le pagine del sito in base alle pagine che ricevono più traffico. Se la tua domanda aziendale tratta dati quantitativi per le pagine, puoi utilizzare questo rapporto per rispondere a tale domanda aggiungendo le metriche corrette. |
 | [Traffico](https://docs.adobe.com/help/en/analytics/components/variables/dimensions-reports/reports-traffic.html) | I rapporti sul traffico forniscono informazioni approfondite su come i visitatori interagiscono con il sito web. |
 | [Conversione](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-conversion.html) | Fornire un&#39;analisi completa, accurata e dettagliata dell&#39;attività del cliente. Le metriche quali la gestione delle campagne, il ciclo di vendita, l’abbandono dei clienti e la conversione dei clienti consentono di misurare le transazioni di e-commerce, le fonti di vendita, l’efficacia pubblicitaria, la fedeltà dei clienti e altro ancora. |
-| [Campaign](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-campaigns.html) | Visualizza informazioni sull&#39;efficacia delle attività pubblicitarie. Puoi vedere quali tipi di attività pubblicitarie ti danno il maggior traffico e quale dei tuoi dipendenti è responsabile di guidare questi sforzi. |
+| [Campaign](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-campaigns.html) | Visualizza informazioni sull&#39;efficacia delle tue attività pubblicitarie. Puoi vedere quali tipi di attività pubblicitarie ti danno il maggior traffico e quale dei tuoi dipendenti è responsabile di guidare questi sforzi. |
 | [Prodotto](https://docs.adobe.com/content/help/it-IT/analytics/components/variables/dimensions-reports/reports-products.html) | Identifica la modalità in cui i singoli prodotti e i gruppi di prodotti (categorie) contribuiscono alle varie metriche di conversione personali, come Entrate o Checkout. |
 | [Dominio di riferimento](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-referring-domains.html) | Mostra i domini che hanno fatto riferimento ai clienti che hanno più influenzato le metriche di successo del tuo sito. I referenti rientrano in due categorie principali: Domini e URL. I domini fanno riferimento al nome di dominio e vengono visualizzati come dominio di base senza la stringa di query o le sottodirectory associate. Gli URL includono il nome di dominio di base, nonché eventuali stringhe di query o sottodirectory. |
 | [Parola chiave di ricerca](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-search-keywords.html) | Rapporti che mostrano un raggruppamento delle parole chiave di ricerca. |
