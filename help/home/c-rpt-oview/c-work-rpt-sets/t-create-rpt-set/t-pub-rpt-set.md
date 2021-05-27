@@ -3,7 +3,6 @@ description: L’ultimo passaggio nella creazione di un set di rapporti consiste
 title: Pubblicare il set di rapporti sul server di Data Workbench
 uuid: 373323f8-d6d7-4696-b361-ce514f0ccff0
 exl-id: 1cf6ba28-94f0-48d2-b2d0-2de7e38620f7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '120'
