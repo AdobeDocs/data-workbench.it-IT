@@ -3,7 +3,6 @@ description: La geografia di Data Workbench è un prodotto software di immagini 
 title: Panoramica sulla geografia di Data Workbench
 uuid: 69003cdd-f814-494a-9be8-438a65411cc7
 exl-id: 53e0d736-86fa-4816-91c7-135e9b8b4c31
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '184'
