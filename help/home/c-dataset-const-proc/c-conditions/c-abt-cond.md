@@ -3,7 +3,6 @@ description: Le trasformazioni e le dimensioni utilizzano condizioni per determi
 title: Informazioni sulle condizioni
 uuid: 882fe761-895c-4226-a019-270c50ae6da2
 exl-id: 0d44282f-1327-4f11-90fc-7e6a2ef8dc76
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '149'
