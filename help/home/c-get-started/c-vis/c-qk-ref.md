@@ -3,7 +3,6 @@ description: Visualizza un elenco di azioni e tasti di scelta rapida dell’inte
 title: Riferimento rapido
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
 exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '477'
@@ -92,7 +91,7 @@ Utilizzare questi tasti di scelta rapida per le aree di lavoro e i file di confi
 | Azione | Risultato |
 |---|---|
 | Ctrl+X | Taglia il testo |
-| Ctrl+Z | Annulla azione per i caratteri digitati in precedenza |
+| Ctrl + Z | Annulla azione per caratteri digitati in precedenza |
 | Ctrl+Maiusc+Z | Ripeti azione per i caratteri digitati |
 | Ctrl+A | Seleziona tutti |
 
@@ -130,7 +129,7 @@ Utilizzare questi tasti di scelta rapida per le aree di lavoro e i file di confi
 |---|---|
 | Ctrl+P | Stampa un’area di lavoro. |
 | Ctrl+W | Chiude un’area di lavoro senza salvarla. |
-| Ctrl+S | Salva un’area di lavoro. |
+| Ctrl + S | Salva un’area di lavoro. |
 | Ctrl+O | Apre un file di visualizzazione. È lo stesso della selezione di Aggiungi > Apri dal menu dell&#39;area di lavoro. |
 | Ctrl+E | Apri una configurazione (per impostazione predefinita) o altri file. È lo stesso della selezione di Aggiungi > Modifica dal menu dell&#39;area di lavoro. Selezionare Tutto per aprire altri file. |
 | Menu dei file usati comunemente | Fai clic su **Aggiungi > Apri** da un&#39;area di lavoro per aprire i file aperti di recente (salva gli ultimi dieci) o i file &quot;pin&quot; al nuovo menu. Dal menu, puoi fare clic sull’icona a forma di pin nell’elenco per salvare la visualizzazione. |
