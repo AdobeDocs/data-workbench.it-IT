@@ -3,7 +3,6 @@ description: Data Workbench supporta sia le proiezioni di latitudine-longitudine
 title: Specificare le informazioni di proiezione per le immagini del terreno
 uuid: cc1e1e35-6b23-4121-a9f5-489001cb2ef8
 exl-id: 2638c5d4-164d-411b-8464-0a3af81b6537
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '751'
@@ -21,7 +20,7 @@ Le informazioni di proiezione sono necessarie per le bitmap non proiettate e per
 
 Il formato di proiezione a latitudine e longitudine (LatLonProjection) nel file [!DNL Terrain Images.cfg] è definito da quattro parametri di latitudine e longitudine.
 
-Per specificare un LatLonProjection per le immagini non proiettate (bitmap non proiettate e immagini generali, non proiettate), è possibile inserire le impostazioni per LatLonProjection nella finestra [!DNL Terrain Images.cfg] in Data Workbench.
+Per specificare un LatLonProjection per le immagini non proiettate (bitmap non proiettate e immagini generali, non proiettate), è possibile immettere le impostazioni per LatLonProjection nella finestra [!DNL Terrain Images.cfg] in Data Workbench.
 
 Per specificare un LatLonProjection per le immagini con informazioni di proiezione incorporate, è necessario aprire il file [!DNL Terrain Images.cfg] in un editor di testo come Notepad, impostare il parametro Info proiezione su LatLonProjection e aggiungere le impostazioni per [!DNL LatLonProjection].
 
