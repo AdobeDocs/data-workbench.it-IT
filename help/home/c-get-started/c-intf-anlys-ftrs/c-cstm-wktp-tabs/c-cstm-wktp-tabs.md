@@ -3,7 +3,6 @@ description: Ogni scheda o sottoscheda nel Worktop corrisponde a un particolare 
 title: Personalizzare una scheda del Worktop (piano di lavoro)
 uuid: f1f557c8-f4cb-4789-8162-39cc7c52c943
 exl-id: 529c6d8d-fc42-4c2b-a111-b8eea4665d8b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '162'
