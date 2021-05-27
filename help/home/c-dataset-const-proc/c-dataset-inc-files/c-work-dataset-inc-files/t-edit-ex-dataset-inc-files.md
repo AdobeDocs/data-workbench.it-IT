@@ -3,7 +3,6 @@ description: I passaggi per modificare il set di dati esistente includono file.
 title: Modifica di Dataset Include Files (File inclusi nel set di dati) esistente
 uuid: fcce2e46-b4a8-4c53-83bb-32ab410eb89e
 exl-id: f4095871-d004-4e10-af18-bf6c1e47493d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '329'
