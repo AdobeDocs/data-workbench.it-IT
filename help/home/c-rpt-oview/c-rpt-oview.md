@@ -2,7 +2,6 @@
 description: Utilizzando il server di rapporto per Data Workbench, puoi pianificare e generare automaticamente set di rapporti e distribuirli ad altri utenti.
 title: Data Workbench server di rapporto
 uuid: eac678de-58bf-46d2-aa09-592696c01fb2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '123'
