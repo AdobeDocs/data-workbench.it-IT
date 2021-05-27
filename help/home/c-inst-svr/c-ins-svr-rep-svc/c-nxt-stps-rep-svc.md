@@ -3,7 +3,6 @@ description: Installazione del servizio di replica di Insight Server completata.
 title: Passaggi successivi
 uuid: 258087cd-4dde-4e47-9285-d411f22e19ed
 exl-id: 673405e9-34f4-434e-865b-c5544725331d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '36'
