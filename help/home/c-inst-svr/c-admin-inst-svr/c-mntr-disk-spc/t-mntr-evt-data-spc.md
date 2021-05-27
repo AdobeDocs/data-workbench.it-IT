@@ -3,7 +3,6 @@ description: Informazioni sul monitoraggio dello spazio dei dati dell'evento e s
 title: Monitoraggio dello spazio dei dati degli eventi
 uuid: e514e8fb-e735-4003-ab21-17470c73af37
 exl-id: 1016d00f-e0a0-47f1-a600-528c4811fcf6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '582'
