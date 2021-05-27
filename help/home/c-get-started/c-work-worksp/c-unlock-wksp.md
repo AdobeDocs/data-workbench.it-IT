@@ -3,7 +3,6 @@ description: Gli amministratori possono configurare Data Workbench per consentir
 title: Sblocco di un’area di lavoro
 uuid: 07e7ee09-36f1-4990-8e6d-5ec356f8cf0d
 exl-id: 6c603e63-3b61-46ce-9798-483cc7eb38ed
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '191'
