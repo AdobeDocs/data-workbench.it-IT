@@ -3,7 +3,6 @@ description: Molti dei profili interni ricevuti con l’applicazione Adobe sono 
 title: Informazioni su Dataset Include Files (File inclusi nel set di dati)
 uuid: e04d412e-7d73-4a7d-b0b6-0c2347c6201b
 exl-id: a23d3f83-4e92-4787-9f77-ee9914cb8893
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '193'
