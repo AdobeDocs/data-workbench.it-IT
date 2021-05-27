@@ -3,7 +3,6 @@ description: Ovunque sia possibile immettere testo in una finestra, è possibile
 title: Operazioni con il testo nelle finestre
 uuid: c0766fe3-3433-4409-bfae-325ec2f4c5ef
 exl-id: f786014d-c784-44f8-a399-f1d58bbb5f3d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '218'
