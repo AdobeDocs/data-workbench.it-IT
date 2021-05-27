@@ -3,7 +3,6 @@ description: L’interfaccia di Stato dettagliata di Data Workbench è utile per
 title: Visualizzazione dello stato del server di rapporto
 uuid: 5260266d-5bd1-4905-9619-f67f6e1bc54c
 exl-id: 3a717a81-7c5d-432d-b214-4ae0455b19b5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '198'
