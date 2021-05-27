@@ -3,7 +3,6 @@ description: Informazioni sui diversi tipi di mappe del processo.
 title: Tipi di mappe del processo
 uuid: 19473b77-13c1-4829-b018-d3316e434ba4
 exl-id: 8bac7036-c7fe-4566-8e59-08e1ddc7ddb7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '748'
