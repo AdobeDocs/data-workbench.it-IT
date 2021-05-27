@@ -3,7 +3,6 @@ description: Dopo l’installazione, il certificato digitale rilasciato da Adobe
 title: Nuova convalida del certificato digitale
 uuid: 8cc6ec17-c565-4276-809a-a7c4fc9919f7
 exl-id: a5a24da2-d28f-402c-82db-f1046c525244
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '152'
