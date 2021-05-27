@@ -3,7 +3,6 @@ description: All’interno di un’area di lavoro, una visualizzazione rappresen
 title: Come una selezione influisce su altre visualizzazioni
 uuid: d46f4e8d-df6f-4a7f-a796-eb9f11536ae5
 exl-id: 7756646b-9309-41aa-a098-8988f6c065c8
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '427'
