@@ -3,7 +3,6 @@ description: La configurazione del set di dati si riferisce al processo di modif
 title: Informazioni sulla configurazione del set di dati
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '916'
