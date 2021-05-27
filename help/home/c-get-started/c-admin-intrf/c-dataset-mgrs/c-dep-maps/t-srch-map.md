@@ -3,7 +3,6 @@ description: Passaggi per cercare i componenti contenenti testo specifico.
 title: Ricerca in una mappa
 uuid: 87fa8c69-f1f1-4977-b60c-050ddaacaab2
 exl-id: fb04aedb-aa31-45d0-9225-66d8fd2f7810
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '61'
