@@ -3,7 +3,6 @@ description: I client di Insight Server (Report e Insight) utilizzano nomi comun
 title: Definizione del percorso di rete del server
 uuid: 9cf2f268-6fde-4427-b832-a238d126d697
 exl-id: def360b8-f146-45ca-ae61-fd213adef68b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '233'
