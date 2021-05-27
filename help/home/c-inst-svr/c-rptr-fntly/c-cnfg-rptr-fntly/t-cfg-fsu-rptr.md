@@ -3,7 +3,6 @@ description: Istruzioni per installare e configurare una FSU di Insight Server d
 title: Configurazione di un FSU di Insight Server per il Repeater (Ripetitore)
 uuid: c2bae862-37d3-4841-b31b-59593c1e4316
 exl-id: dacbabd5-f6f5-4201-8709-146075eae679
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '268'
