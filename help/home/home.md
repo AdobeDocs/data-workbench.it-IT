@@ -1,10 +1,9 @@
 ---
 description: Data Workbench della documentazione
 title: Guida di Data Workbench
-feature: Reports & Analytics Basics
+feature: Nozioni di base su Reports & Analytics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-translation-type: tm+mt
 source-git-commit: 3223733866e82b4ce439ee55fe96fed89a02c5c4
 workflow-type: tm+mt
 source-wordcount: '273'
