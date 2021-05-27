@@ -3,7 +3,6 @@ description: Le dimensioni seguenti sono disponibili per l’utilizzo nel profil
 title: Dimensioni nel profilo di cronologia di Data Workbench
 uuid: 6d93fba4-986b-46a4-9479-aeb54853dff5
 exl-id: 9df1f317-a985-4132-b32e-f2263e0c23b2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1698'
