@@ -2,7 +2,6 @@
 description: Adobe Data Workbench fornisce strumenti e processi per preparare i tuoi dati in modo che siano conformi alle normative generali sulla protezione dei dati (RGPD).
 title: Supporto di Data Workbench per il RGPD
 exl-id: fdc43567-0c57-4851-9073-e295258a8074
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '525'
