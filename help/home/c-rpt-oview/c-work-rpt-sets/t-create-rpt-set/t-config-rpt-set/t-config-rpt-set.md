@@ -3,7 +3,6 @@ description: Dopo aver creato e salvato le aree di lavoro all’interno della ca
 title: Configurare il set di rapporto
 uuid: 21f8dcde-8fe1-4ba0-9eb7-39ff812dcf14
 exl-id: 780e6bb1-b332-4984-b132-df11d95b592a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '223'
