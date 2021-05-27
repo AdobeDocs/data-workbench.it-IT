@@ -3,7 +3,6 @@ description: Quando visualizzi i componenti del set di dati su una mappa di dipe
 title: Blocchi di file
 uuid: 079dccba-ef19-4895-90bb-6c56f26e8beb
 exl-id: 04b0faf1-a16d-4e46-b790-5fe2023f2ba1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '318'
