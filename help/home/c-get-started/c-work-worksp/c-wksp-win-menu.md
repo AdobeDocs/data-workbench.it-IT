@@ -3,7 +3,6 @@ description: Questo menu consente di aggiungere le visualizzazioni disponibili a
 title: Utilizzo del menu Finestra dell’area di lavoro
 uuid: 0fa153c1-5d68-4777-98ee-9682fd4adc41
 exl-id: 1077087b-b985-4339-b465-736722b917a5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '365'
@@ -42,7 +41,7 @@ La tabella seguente contiene le descrizioni di ogni voce di menu.
    <td colname="col2"> Aggiunge una visualizzazione all’area di lavoro in base al tipo di visualizzazione selezionato (ad esempio, un grafico o una tabella) e alle dimensioni selezionate. Consulta <a href="../../../home/c-get-started/c-vis/c-vis.md#concept-f6c7728d5aaa4304bbf2e4dfaed48739"> Utilizzo delle visualizzazioni </a> e <a href="../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md#concept-cb5b9716d3404b2b888a55b3efec1fa5"> Visualizzazioni di analisi </a>. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Legend (Legenda) </td> 
+   <td colname="col1"> Legend (Legenda)  </td> 
    <td colname="col2"> Aggiunge una legenda all’area di lavoro. Consultare <a href="../../../home/c-get-started/c-analysis-vis/c-legends/c-legends.md#concept-ba7a886967314ee5aa358f5949665494"> Legende </a>. </td> 
   </tr> 
   <tr> 
