@@ -3,9 +3,9 @@ description: Dopo aver configurato DWB, puoi implementare queste funzioni.
 title: Implementazione delle funzioni di Data Workbench
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -22,11 +22,11 @@ Dopo aver configurato DWB, puoi implementare queste funzioni.
 
 * Per implementare la **visualizzazione Globe**, vedi [Globi](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html).
 
-* Per implementare **Aree di lavoro per Attribution**, consulta [Attribuzione basata su regole](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-rules-attrib.html) e [Attribuzione adattamento ottimale](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html).
+* Per implementare **Aree di lavoro per Attribution**, consulta [Attribuzione basata su regole](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-rules-attrib.html?lang=en) e [Attribuzione adattamento ottimale](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html?lang=en).
 
 * Per implementare le aree di lavoro di **Predictive Analytics**, consulta [Visualizzazioni](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-vis.html) e la visualizzazione elencata di seguito.
 
-* Per implementare **Predictive Intelligence with Clustering visualizations**, vedi [Clustering](https://docs.adobe.com/help/en/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html).
+* Per implementare **Predictive Intelligence with Clustering visualizations**, vedi [Clustering](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en).
 
 * Per implementare **Predictive Intelligence with Propensity Scoring** (Informazioni predittive con punteggio tendenza), consulta [Propensity Scoring](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-propensity/c-visitor-propensity.html) (Punteggio tendenza).
 
