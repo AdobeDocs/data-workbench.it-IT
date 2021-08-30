@@ -1,18 +1,18 @@
 ---
-description: Data Workbench consente di creare nuove metriche, filtri e dimensioni per espandere le informazioni disponibili tramite un’applicazione o personalizzare facilmente le definizioni dell’applicazione in base alle tue esigenze. La natura aperta di metriche, dimensioni e filtri consente di rispondere a ulteriori domande quando si aggiungono nuove metriche e dimensioni.
+description: Data Workbench consente di creare metriche, filtri e dimensioni per espandere le informazioni disponibili tramite un'applicazione o personalizzare facilmente le definizioni dell'applicazione in base alle tue esigenze. La natura aperta di metriche, dimensioni e filtri consente di rispondere a ulteriori domande quando si aggiungono nuove metriche e dimensioni.
 title: Espansione di metriche, dimensioni e filtri
 uuid: eaec0731-1916-4063-9fda-3a92ee325024
 exl-id: 5a7719a3-ba2e-4361-87e0-4d0df23196df
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 92c0628b78d39a5cf75fb5cb6b63b1c95d3b7eea
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '209'
 ht-degree: 4%
 
 ---
 
 # Espansione di metriche, dimensioni e filtri{#expanding-metrics-dimensions-and-filters}
 
-Data Workbench consente di creare nuove metriche, filtri e dimensioni per espandere le informazioni disponibili tramite un’applicazione o personalizzare facilmente le definizioni dell’applicazione in base alle tue esigenze. La natura aperta di metriche, dimensioni e filtri consente di rispondere a ulteriori domande quando si aggiungono nuove metriche e dimensioni.
+Data Workbench consente di creare metriche, filtri e dimensioni per espandere le informazioni disponibili tramite un&#39;applicazione o personalizzare facilmente le definizioni dell&#39;applicazione in base alle tue esigenze. La natura aperta di metriche, dimensioni e filtri consente di rispondere a ulteriori domande quando si aggiungono nuove metriche e dimensioni.
 
 Le metriche definite di recente possono essere valutate rispetto alle dimensioni esistenti e, analogamente, possono essere valutate rispetto a dimensioni appena definite. Le metriche appena definite possono essere utilizzate anche come input in altre metriche. Poiché le metriche sono generate sul lato client (ovvero, la loro costruzione non richiede l’elaborazione del set di dati), hanno un impatto minimo sulle prestazioni del sistema. Puoi aumentare le funzionalità di analisi creando molti livelli di metriche.
 
