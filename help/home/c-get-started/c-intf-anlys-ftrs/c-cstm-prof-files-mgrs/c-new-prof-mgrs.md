@@ -3,9 +3,9 @@ description: Profile Manager (Gestione profili) visualizza tutte le directory as
 title: Creare un Profile Manager (Gestione profili)
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
 exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Profile Manager (Gestione profili) visualizza tutte le directory associate al pr
 
 È possibile accedere a una sottodirectory del [!DNL Profile Manager] senza dover navigare nell’intera struttura della directory. Ad esempio, le opzioni di menu [!DNL Metrics] e [!DNL Workspaces] disponibili nel menu [!DNL Manage] della finestra dell’area di lavoro consentono di aprire rispettivamente le cartelle Metriche di Profile Manager e Aree di lavoro.
 
-Per ulteriori informazioni su [!DNL Profile Manager], consulta [Profile Manager](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html).
+Per ulteriori informazioni su [!DNL Profile Manager], consulta [Profile Manager](https://experienceleague.adobe.com/docs/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html).
 
 Per impostazione predefinita è possibile accedere ai seguenti manager:
 

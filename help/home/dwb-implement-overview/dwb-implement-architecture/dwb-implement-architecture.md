@@ -1,17 +1,19 @@
 ---
-description: Panoramica dell'architettura di Workbench dati.
-title: Architettura Workbench dati
+description: Panoramica dell’architettura della Data Workbench.
+title: Architettura di Data Workbench
 uuid: 68b3f20b-7707-49bd-a212-399227bd2fad
-translation-type: tm+mt
-source-git-commit: 1e65564796267c546768a97171c4f23373859923
+exl-id: fca4702c-7099-40e5-ad0b-7f8d44fa1a61
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '51'
+ht-degree: 11%
 
 ---
 
+# Architettura di Data Workbench{#data-workbench-architecture}
 
-# Architettura Workbench dati{#data-workbench-architecture}
+Panoramica dell’architettura della Data Workbench.
 
-Panoramica dell&#39;architettura di Workbench dati.
-
-* Panoramica delle strutture [computabili della struttura](../../../home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md#concept-9b8b9c5e0f7341699e14bb9e3be56a51)dello schema.
-* Panoramica dell&#39;interfaccia dello schema [del set di dati](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html)
-* Documentazione per lo schema Analytics (SiteCatalyst) nella guida [Dimensioni e metriche](/help/home/assets/dwb-analytics-implementation.pdf)
+* Panoramica delle [strutture conteggiate della struttura dello schema](../../../home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md#concept-9b8b9c5e0f7341699e14bb9e3be56a51).
+* Panoramica dell’ [Interfaccia schema set di dati](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html)
+* Documentazione per lo schema di Analytics (SiteCatalyst) nella guida [Dimension e metriche](/help/home/assets/dwb-analytics-implementation.pdf)

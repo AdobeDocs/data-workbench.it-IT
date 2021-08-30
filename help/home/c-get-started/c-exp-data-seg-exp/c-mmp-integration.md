@@ -1,33 +1,35 @@
 ---
-description: Workbench dati consente di esportare i file da integrare con Profili e pubblico come parte di un Adobe Experience Cloud integrato.
-title: Esportazione profilo marketing principale
+description: Data Workbench consente di esportare i file da integrare con l’esportazione Profili e pubblico come parte di un Adobe Experience Cloud integrato.
+title: Esportazione del profilo di marketing principale
 uuid: bae0f0c5-a452-4afd-9f2c-5f3ab69a12d2
-translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+exl-id: 9fc89815-d31d-41a7-a0c0-de1e84b24baa
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 2%
 
 ---
 
+# Esportazione del profilo di marketing principale{#master-marketing-profile-export}
 
-# Esportazione profilo marketing principale{#master-marketing-profile-export}
-
-Workbench dati consente di esportare i file da integrare con Profili e pubblico come parte di un Adobe Experience Cloud integrato.
+Data Workbench consente di esportare file da integrare con Profili e pubblico come parte di un Adobe Experience Cloud integrato.
 
 <!-- <a id="section_731922BC8628479198A41EF3EA72F2FF"></a> -->
 
-Profili e pubblico fa parte del servizio [Experience Cloud Identity, un servizio di base del servizio](https://docs.adobe.com/content/help/en/id-service/using/home.html)[!DNL Adobe Experience Cloud]. L&#39;esportazione di profili e audience consente di condividere i tipi di pubblico in Experience Cloud tramite un Experience Cloud ID (ECID) univoco assegnato a ogni visitatore e quindi utilizzato da [Audience Manager](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html). L&#39; [!DNL ExportIntegration.exe] applicazione ( [!DNL E:\Server\Scripts]) viene utilizzata per generare esportazioni MMP e Adobe Target.
+Profili e pubblico fa parte del [servizio Experience Cloud Identity](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=it), un servizio di base di [!DNL Adobe Experience Cloud]. L’esportazione Profili e pubblico consente ai tipi di pubblico di essere condivisi in tutto l’Experience Cloud utilizzando un ID Experience Cloud univoco (ECID) assegnato a ogni visitatore e quindi utilizzato da [Audience Manager](https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.translate.html). L’ applicazione [!DNL ExportIntegration.exe] ( [!DNL E:\Server\Scripts]) viene utilizzata per generare esportazioni MMP e Adobe Target.
 
-**Configurazione del server FSU per l’uso di profili e audience**
+**Configurazione del server FSU per l’utilizzo di profili e pubblico**
 
-1. Accedere al server FSU.
-1. Aprite il file MMPExport.cfg. `Server/Admin/Export/MMPExport.cfg`.
-1. Immettete i valori in tutti i campi come richiesto. Ad esempio:
+1. Accedi al tuo server FSU.
+1. Apri il file MMPExport.cfg . `Server/Admin/Export/MMPExport.cfg`.
+1. Immetti i valori desiderati in tutti i campi. Ad esempio:
 
    >[!NOTE]
    >
-   >L&#39;integrazione MMP/AAM si basa sul bucket s3 di Amazon per il trasferimento dei dati.
+   >L’integrazione MMP/AAM si basa sul bucket s3 di Amazon per il trasferimento dei dati.
    >
    >
-   >Le informazioni s3 richieste per il trasferimento MMP (s3) possono essere ottenute dal team Audience Manager.
+   >Le informazioni s3 richieste per il trasferimento MMP (s3) possono essere ottenute dal team di Audience Manager.
 
    ```
    Sample MMPExport.cfg
@@ -49,7 +51,7 @@ Profili e pubblico fa parte del servizio [Experience Cloud Identity, un servizio
 
    >[!NOTE]
    >
-   >Il [!DNL MMPExport.cfg]file consente inoltre di prendere tutti i record, suddividerli in set e creare blocchi di record. I blocchi di record vengono quindi esportati in Amazon S3. Per creare blocchi di record sono necessari tre parametri obbligatori: [!DNL numRecordsPerChunk], [!DNL numThreads], e [!DNL maxRetriesOnSendFailure].
+   >Il file [!DNL MMPExport.cfg]consente inoltre di prendere tutti i record, suddividerli in set e creare blocchi di record. I blocchi di record vengono quindi esportati in Amazon S3. Per creare blocchi di record sono necessari tre parametri obbligatori: [!DNL numRecordsPerChunk], [!DNL numThreads] e [!DNL maxRetriesOnSendFailure].
 
 **Definizione dei parametri**
 
@@ -62,19 +64,19 @@ Profili e pubblico fa parte del servizio [Experience Cloud Identity, un servizio
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>s3 Bucket</i> </td> 
-   <td colname="col2"> Il bucket AWS S3 in cui viene trasferita l'esportazione. </td> 
+   <td colname="col1"> <i>Intervallo s3</i> </td> 
+   <td colname="col2"> Il bucket AWS S3 in cui viene trasferita l’esportazione. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>directory oggetti s3</i> </td> 
-   <td colname="col2"> Un percorso per salvare i file s3. Questo supporta le sottodirectory. <p> <p>Importante:  Spazio e caratteri multibyte non sono consentiti nel percorso e creeranno errori nell'esportazione. (È consentito attivare la penna). </p> </p> </td> 
+   <td colname="col1"> <i>Directory oggetti s3</i> </td> 
+   <td colname="col2"> Un percorso per salvare i file s3. Questo supporta le sottodirectory. <p> <p>Importante:  Lo spazio e i caratteri multibyte non sono consentiti nel percorso e creeranno errori nell’esportazione. (È consentita la penna). </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>regione s3</i> </td> 
-   <td colname="col2"> Regione AWS s3 a cui viene inviata l'esportazione. Ex. us-east-1 </td> 
+   <td colname="col1"> <i>Regione s3</i> </td> 
+   <td colname="col2"> L’area geografica AWS s3 a cui viene inviata l’esportazione. Es. us-east-1 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>s3 Access Key</i> </td> 
+   <td colname="col1"> <i>Tasto di accesso s3</i> </td> 
    <td colname="col2"> Chiave di accesso AWS s3 </td> 
   </tr> 
   <tr> 
@@ -82,16 +84,16 @@ Profili e pubblico fa parte del servizio [Experience Cloud Identity, un servizio
    <td colname="col2"> Chiave segreta AWS s3 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>nome provider dati</i> </td> 
-   <td colname="col2"> Questo sarà il nome della cartella utilizzato per memorizzare segmenti e caratteristiche in AAM, rispettivamente. Deve essere univoco per cliente. </td> 
+   <td colname="col1"> <i>nome del fornitore dati</i> </td> 
+   <td colname="col2"> Questo sarà il nome della cartella utilizzato rispettivamente per memorizzare segmenti e caratteristiche in AAM. Deve essere univoco per cliente. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>ID client</i> </td> 
-   <td colname="col2"> Si tratta di un ID client univoco fornito a un cliente quando viene eseguito il provisioning per MMP. </td> 
+   <td colname="col2"> Questo è un ID client univoco fornito a un cliente quando è stato eseguito il provisioning per MMP. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>segreto cliente</i> </td> 
-   <td colname="col2"> <p><i></i>Questo è un segreto cliente univoco fornito a un cliente quando viene fornito per MMP. </p> </td> 
+   <td colname="col1"> <i>segreto client</i> </td> 
+   <td colname="col2"> <p><i></i>Questo è un segreto client univoco fornito a un cliente quando viene fornito per MMP. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>username</i> </td> 
@@ -103,37 +105,37 @@ Profili e pubblico fa parte del servizio [Experience Cloud Identity, un servizio
   </tr> 
   <tr> 
    <td colname="col1"> <i>numRecordsPerChunk</i> </td> 
-   <td colname="col2"> <p>Determina la dimensione del blocco in termini di numero di record. </p> <p>L'implementazione ritaglia il valore specificato dall'utente su min = 1000 record&amp;nbsp;(~50 KB blocchi)&amp;nbsp;e max = 50000 record (~2,5 MB blocchi).&amp;nbsp;Un valore predefinito pari a 10000 viene utilizzato nel caso in cui l'utente non specifichi questa proprietà di configurazione. </p> </td> 
+   <td colname="col2"> <p>Determina la dimensione del blocco in termini di numero di record. </p> <p>L'implementazione ritaglia il valore specificato dall'utente a min = 1000 records&amp;nbsp;(~50 KB chunks)&amp;nbsp;e max = 50000 record (~2,5 MB chunks).&amp;nbsp;Viene utilizzato un valore predefinito di 10000 nel caso in cui l'utente non specifichi questa proprietà di configurazione. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>numThread</i> </td> 
-   <td colname="col2"> <p>Determina il parallelismo della parte di invio della parte di invio della parte. Accetta un valore compreso tra 1 e 24 thread e il valore predefinito è 12 thread. </p> </td> 
+   <td colname="col1"> <i>numThreads</i> </td> 
+   <td colname="col2"> <p>Determina il parallelismo della parte di invio del blocco. Accetta un valore compreso tra 1 e 24 thread e il suo valore predefinito è 12 thread. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>maxRetriesOnSendFailed</i> </td> 
-   <td colname="col2"> <p>Determina il numero di tentativi da effettuare in caso di errori di invio blocco. Il valore predefinito è 0 e non specifica alcun tentativo. </p> <p>L'intervallo di sospensione di 2 secondi viene utilizzato tra i tentativi. </p> </td> 
+   <td colname="col1"> <i>maxRetriesOnSendFailure</i> </td> 
+   <td colname="col2"> <p>Determina il numero di tentativi da eseguire in caso di errori di invio del blocco. Il valore predefinito è 0 e non specifica alcun nuovo tentativo. </p> <p>L'intervallo di sospensione di 2 secondi viene utilizzato tra i tentativi. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Generazione dell&#39;esportazione MMP dal client**
 
-1. Dal client, aprite un’area di lavoro e fate clic con il pulsante destro del mouse **[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**.
-1. Aggiungi **livello**.
-1. Fare clic con il pulsante destro del mouse sull&#39;intestazione e selezionare **Aggiungi attributi**.
-1. Fate clic con il pulsante destro del mouse sull’intestazione e selezionate **Nuova esportazione** profilo marketing principale. ![](assets/mmp_mmp_export.png)
-1. Espandete **Query**.
+1. Dal client, apri un’area di lavoro e fai clic con il pulsante destro del mouse su **[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**.
+1. Aggiungi **Livello**.
+1. Fai clic con il pulsante destro del mouse sull&#39;intestazione e seleziona **Aggiungi attributi**.
+1. Fai clic con il pulsante destro del mouse sull&#39;intestazione e seleziona **Nuovo profilo marketing principale Esporta**. ![](assets/mmp_mmp_export.png)
+1. Espandi **Query**.
 
    ![](assets/mmp_mmp_query.png)
 
-1. Espandete Configurazione **** MMP.
-1. (richiesto) Immettete il nome **del segmento** MMP e il campo **ID visitatore** MMP. Questi parametri non possono essere lasciati vuoti.
-1. Il nome **segmento** MMP deve corrispondere all’ID segmento definito nell’MMP.
-1. L’ID **visitatore** MMP è la colonna dell’attributo definita al punto 4 che corrisponde all’ID **** visitatore.
-1. Una volta immessi questi campi, potete salvare l’esportazione facendo clic con il pulsante destro del mouse sull’intestazione dell’esportazione e scegliendo **Salva** come &quot;Utente\.esportazione&quot;.
-1. Apri **Admin** > **Profile Manager** e salva l’esportazione nel profilo.
+1. Espandi **Configurazione MMP**.
+1. (obbligatorio) Immetti il **Nome segmento MMP** e il **Campo ID visitatore MMP**. Questi parametri non possono essere lasciati vuoti.
+1. Il **Nome segmento MMP** deve corrispondere all&#39;ID segmento definito nell&#39;MMP.
+1. Il **ID visitatore MMP** è la colonna dell&#39;attributo definita nel passaggio 4 che corrisponde al **ID visitatore**.
+1. Una volta inseriti questi campi, puoi salvare l’esportazione facendo clic con il pulsante destro del mouse sull’intestazione dell’esportazione e scegliere **Salva** come &quot;Utente\.export&quot;.
+1. Apri **Amministratore** > **Profile Manager** e salva l’esportazione nel profilo.
 
-   Se tutti i dati sono immessi correttamente, questo genererà un file di esportazione nella FSU ([!DNL Server/Exports]) e trasferirà anche l&#39;esportazione in AWS utilizzando le informazioni in [!DNL MMPExport.cfg]. Il registro di questo viene fornito in [!DNL Server/Trace/]. ad esempio, [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
+   Se tutti i dati sono immessi correttamente, questo genera un file di esportazione nella FSU ([!DNL Server/Exports]) e trasferisce anche l’esportazione in AWS utilizzando le informazioni in [!DNL MMPExport.cfg]. Il registro di questo viene fornito in [!DNL Server/Trace/]. es., [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
 
 ```
 Query = SegmentExportQuery: 
@@ -163,8 +165,7 @@ Schedule Start Time = string:
 Time Limit (sec) = double: 1800 
 ```
 
-| Dettagli configurazione | Descrizione |
+| Dettagli di configurazione | Descrizione |
 |---|---|
-| ID segmento MMP | Obbligatorio. Si tratta di un identificatore che verrà definito per primo in Audience Manager. |
-| Campo ID visitatore MMP | Mappare l’ECID. |
-
+| ID segmento MMP | Obbligatorio. Questo è un identificatore che verrebbe definito per primo in Audience Manager. |
+| Campo ID visitatore MMP | Mappa l’ECID. |

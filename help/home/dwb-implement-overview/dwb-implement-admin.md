@@ -1,24 +1,25 @@
 ---
-description: Panoramica dell'amministrazione di Workbench dati.
-title: Amministrazione Workbench dati
+description: Panoramica dell'amministrazione della Data Workbench.
+title: Amministrazione di Data Workbench
 uuid: 97fc7565-9042-42e8-b6a2-6258783cbe69
-translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+exl-id: 8bee2ff6-7e5f-41ba-b705-b18216a082f8
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 3%
 
 ---
 
+# Amministrazione di Data Workbench{#data-workbench-administration}
 
-# Amministrazione Workbench dati{#data-workbench-administration}
+Panoramica dell&#39;amministrazione della Data Workbench.
 
-Panoramica dell&#39;amministrazione di Workbench dati.
+Questa sezione fornisce informazioni di base sul controllo degli accessi, sugli errori e gli avvisi e sugli aggiornamenti del server durante l’amministrazione di DWB.
 
-Questa sezione fornisce informazioni di base sul controllo degli accessi, sugli errori e gli avvisi e sugli aggiornamenti del server durante l&#39;amministrazione di DWB.
+* Per il controllo degli accessi ai gruppi di utenti, vedere [configurazione del controllo degli accessi](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/admin-dwb-server/access-control/c-config-acs-ctrl.html).
+* Per il controllo degli accessi ai gruppi di server, vedere [gruppi di accesso al server](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/admin-dwb-server/access-control/c-undst-acc-lvls.html).
+* Per errori e avvisi - Registrazione errori decodificatore, vedere [Proprietà file di registro](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/log-proc-config-file/c-log-sources.html).
+* Per errori e avvisi - Registro automatico integrazione TnT, consulta [Esportazione profilo marketing principale](https://docs.adobe.com/help/en/data-workbench/using/client/export-data/dwb-crs-integration.html) e [Esportazione nei servizi core di Analytics](https://docs.adobe.com/help/en/data-workbench/using/client/export-data/dwb-crs-integration.html).
 
-* Per il controllo degli accessi dei gruppi di utenti, vedete [Configurazione del controllo](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/admin-dwb-server/access-control/c-config-acs-ctrl.html)degli accessi.
-* Per il controllo degli accessi ai gruppi di server, consultate Gruppi [di accesso al](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/admin-dwb-server/access-control/c-undst-acc-lvls.html)server.
-* Per Errori e avvisi - Registrazione errori decodificatore, vedere Proprietà [file di](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/log-proc-config-file/c-log-sources.html)registro.
-* Per Errori e avvisi - Registro automatico integrazione TnT, consulta Esportazione [e](https://docs.adobe.com/help/en/data-workbench/using/client/export-data/dwb-crs-integration.html) esportazione dei profili marketing principali nei servizi [](https://docs.adobe.com/help/en/data-workbench/using/client/export-data/dwb-crs-integration.html)di base di Analytics.
-
-* Per Errori e avvisi - Avvisi amministrativi, consulta Avvisi [](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/config-settings/c-admin-alts-cfg-stgs.html)amministrativi.
-* Per gli aggiornamenti del server, vedere [Aggiornamento del workbench](https://docs.adobe.com/content/help/en/data-workbench/using/install/upgrade-dwb/c-upgrd-ins.html)dati.
-
+* Per errori e avvisi - Avvisi amministrativi, consulta [Avvisi amministrativi](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/config-settings/c-admin-alts-cfg-stgs.html).
+* Per gli aggiornamenti del server, vedere [Aggiornamento della Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/install/upgrade-dwb/c-upgrd-ins.html).

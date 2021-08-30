@@ -3,9 +3,9 @@ description: Un set di rapporti è un insieme di aree di lavoro generate da Repo
 title: Informazioni sui set di rapporto
 uuid: 421055d7-0cf0-4664-b944-327a254a97a4
 exl-id: 95609a1a-e70c-41e2-ace3-0cb09f77705a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '146'
 ht-degree: 4%
 
 ---
@@ -18,6 +18,6 @@ Nella cartella di installazione [!DNL Insight] ogni sottocartella all&#39;intern
 
 >[!NOTE]
 >
->Nella Data Workbench [!DNL Profile Manager] , i set di rapporti vengono visualizzati come sottocartelle all’interno della cartella [!DNL Reports] . Per ulteriori informazioni su [!DNL Profile Manager], vedere la [Guida utente Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html#Data_Workbench_Help).
+>Nella Data Workbench [!DNL Profile Manager] , i set di rapporti vengono visualizzati come sottocartelle all’interno della cartella [!DNL Reports] . Per ulteriori informazioni su [!DNL Profile Manager], vedere la [Guida utente Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html#Data_Workbench_Help).
 
 Definendo le impostazioni di configurazione specifiche per un set di rapporti nel relativo file [!DNL Report.cfg], puoi pianificare la creazione e la distribuzione dei rapporti, compresi chi riceve i rapporti e in quali formati.

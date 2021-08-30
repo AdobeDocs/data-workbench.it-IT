@@ -1,42 +1,43 @@
 ---
-description: La visualizzazione Tabella associazione consente di associare metriche, dimensioni ed elementi dimensione utilizzando l'algoritmo V di Cramer.
-title: Visualizzazione tabella di associazione
+description: La visualizzazione Tabella associazioni consente di associare metriche, dimensioni ed elementi dimensionali utilizzando l’algoritmo V di Cramer.
+title: Visualizzazione di Associations Table (Tabella associazioni)
 uuid: 4563c336-3377-4929-8694-8c0d00866825
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 3fc2c025-d369-45ed-8c9e-eb4a0ac412b7
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 1%
 
 ---
 
+# Visualizzazione di Associations Table (Tabella associazioni){#association-table-visualization}
 
-# Visualizzazione tabella di associazione{#association-table-visualization}
+La visualizzazione Tabella associazioni consente di associare metriche, dimensioni ed elementi dimensionali utilizzando l’algoritmo V di Cramer.
 
-La visualizzazione Tabella associazione consente di associare metriche, dimensioni ed elementi dimensione utilizzando l&#39;algoritmo V di Cramer.
+La tabella delle associazioni confronta i valori con il calcolo del V di Cramer anziché utilizzare il coefficiente di correlazione di Pearson come utilizzato nelle visualizzazioni [Matrice di correlazione](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html) e [Correlazione corda](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/c-chord-visualization.html) (queste possono solo confrontare le metriche, mentre la tabella delle associazioni e [Accordi di associazione](../../../home/c-get-started/c-analysis-vis/associations-chord.md#concept-51d0bda998474dd5946cc2a9b8393445) possono confrontare metriche, dimensioni ed elementi).
 
-La tabella di associazione confronta i valori con il calcolo V di Cramer anziché utilizzare il coefficiente di correlazione di Pearson come utilizzato nelle visualizzazioni Matrice [di](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html) correlazione e Correlazione [(queste possono solo confrontare le metriche, mentre la tabella di associazione e il cordo](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/c-chord-visualization.html) di [](../../../home/c-get-started/c-analysis-vis/associations-chord.md#concept-51d0bda998474dd5946cc2a9b8393445) associazione possono confrontare metriche, dimensioni ed elementi).
+## Creare una tabella di associazione {#section-87ed12ccc1af4196a1b6534e621c4cbb}
 
-## Creazione di una tabella di associazione {#section-87ed12ccc1af4196a1b6534e621c4cbb}
+La tabella delle associazioni confronta le metriche su una dimensione conteggiata o non numerabile. È possibile modificare la tabella per evidenziare le associazioni all’interno della visualizzazione mediante la selezione del colore o per renderla come mappa di testo, mappa di calore o entrambe.
 
-La tabella di associazione confronta le metriche su una dimensione numerabile o non calcolabile. La tabella può essere modificata per evidenziare le associazioni all’interno della visualizzazione mediante la selezione del colore o per renderla una mappa di testo, una mappa di calore o entrambe.
+1. Aprire una tabella di associazione.
 
-1. Aprite una tabella di associazione.
-
-   Right-click [!DNL Visualization] > [!DNL Predictive Analytics] > [!DNL Association Table].
+   Fai clic con il pulsante destro del mouse su [!DNL Visualization] > [!DNL Predictive Analytics] > [!DNL Association Table].
 
    ![](assets/association_table.png)
 
-1. Seleziona una dimensione estesa: ClickThrough, Hit, Product, Visit o Visitor. Viene aperta una tabella di associazione con la dimensione estesa identificata nell&#39;angolo e la metrica associata inserita sia nella riga che nella colonna.
+1. Seleziona una dimensione estesa: Clickthrough, Hit, Prodotto, Visita o Visitatore. Viene aperta una tabella di associazione con la dimensione estesa identificata nell’angolo e la metrica associata posizionata sia nella riga che nella colonna.
 
    ![](assets/association_table1.png)
 
-   La tabella Associations (Associazioni) utilizza il V di Cramer come correlazione simmetrica, generando metriche, dimensioni ed elementi selezionati che si riflettono sia nelle colonne che nelle righe di una tabella Association. Ad esempio, se selezionate la dimensione estesa del **prodotto** , la metrica viene usata come metrica **[!UICONTROL Visits]** associata sia nella riga che nella colonna della tabella, generando un confronto perfetto ma inutile (1,00) perché i valori confrontati sono identici.
+   La tabella delle associazioni utilizza il V di Cramer come correlazione simmetrica, con conseguente visualizzazione di metriche, dimensioni ed elementi selezionati che si riflettono sia nelle colonne che nelle righe di una tabella delle associazioni. Ad esempio, selezionando la dimensione estesa **Prodotto** , la metrica **[!UICONTROL Visits]** viene utilizzata come metrica associata sia nella riga che nella colonna della tabella, con conseguente confronto perfetto ma inutile (1.00), in quanto i valori confrontati sono identici.
 
-1. Aggiungete altri valori alla tabella di associazione.
+1. Aggiungi altri valori alla tabella di associazione.
 
-   Fare clic con il pulsante destro del mouse in una colonna o riga e selezionare **Aggiungi metrica** o **Aggiungi dimensione**. Puoi anche trascinare metriche e dimensioni da un pannello **Finder** . È inoltre possibile trascinare gli elementi dimensione da una tabella aperta alla visualizzazione tabella.
+   Fai clic con il pulsante destro del mouse su una colonna o una riga e seleziona **Aggiungi metrica** o **Aggiungi Dimension**. Puoi anche trascinare metriche e dimensioni da un pannello **Finder**. È inoltre possibile trascinare gli elementi di Dimension da una tabella aperta alla visualizzazione tabella.
 
    ![](assets/association_table2.png)
 
    >[!NOTE]
    >
-   >Nella tabella di associazione è consentito un limite di dieci righe e colonne.
-
+   >Nella tabella delle associazioni è consentito un limite di dieci righe e colonne.

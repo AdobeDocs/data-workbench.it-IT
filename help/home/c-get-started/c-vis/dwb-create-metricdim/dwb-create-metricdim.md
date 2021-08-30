@@ -1,64 +1,66 @@
 ---
-description: Utilizzate la procedura guidata Dim metrica per creare una nuova dimensione metrica.
-title: Procedura guidata di attenuazione delle metriche
+description: Utilizza la procedura guidata di attenuazione della metrica per creare un nuovo Dimension di metriche.
+title: Procedura guidata di attenuazione della metrica
 uuid: 77b9bc8e-7625-4fef-9de4-f113f9b2debd
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 109fbefc-5608-493d-aec9-8337f21eaa70
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 3%
 
 ---
 
+# Procedura guidata di attenuazione della metrica{#metric-dim-wizard}
 
-# Procedura guidata di attenuazione delle metriche{#metric-dim-wizard}
+Utilizza la procedura guidata di attenuazione della metrica per creare un nuovo Dimension di metriche.
 
-Utilizzate la procedura guidata Dim metrica per creare una nuova dimensione metrica.
-
-Un Dim della metrica converte una metrica in una nuova dimensione. Ad esempio, un Dim della metrica basato su una metrica Visualizzazioni di pagina e livello di Visitatore visualizzerà elementi dimensionali basati sul totale Visualizzazioni di pagina per ciascun Visitatore. Consente di estendere una metrica correntemente definita basata su elementi dimensionali per creare e salvare come nuova dimensione.
+Un’attenuazione della metrica converte una metrica in una nuova dimensione. Ad esempio, un’attenuazione della metrica basata su una metrica di Visualizzazioni di pagina e livello di Visitatore visualizzerà elementi dimensionali in base al totale di Visualizzazioni di pagina per ciascun Visitatore. Consente di estendere una metrica attualmente definita basata su elementi dimensionali per creare e salvare come nuova dimensione.
 
 ## Passaggio 1: seleziona dimensione e metrica {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
 
-1. **Aprite la procedura guidata** Dim metrica.
+1. **Apri la Procedura guidata** di attenuazione della metrica.
 
-   In un’area di lavoro, fare clic con il pulsante destro del mouse e selezionare **Strumenti** > **Crea immagine** metrica.
+   In un’area di lavoro, fai clic con il pulsante destro del mouse e seleziona **Strumenti** > **Crea attenuazione della metrica**.
 
-1. **Denominate il valore di attenuazione** della metrica.
+1. **Denomina** la metrica.
 
    Per impostazione predefinita, il campo Nome viene compilato automaticamente in base alle selezioni Livello e Metrica.
 
-1. **Selezionare un livello dimensione.** Il livello della dimensione è la dimensione padre che contiene tutti i valori degli elementi costitutivi per filtrare l’input e definire un tipo di dimensione.
+1. **Selezionare un livello Dimension.** Il livello di dimensione è la dimensione padre contenente tutti i valori degli elementi costitutivi per filtrare l’input e definire un tipo di dimensione.
 
-   I livelli di dimensione includono:
+   I livelli di Dimension includono:
 
-   * Clic
+   * ClickThrough
    * Hit
    * Prodotto
    * Visita
    * Visitatore
 
-1. **Selezionare una metrica**.
+1. **Seleziona una metrica**.
 
-   Seleziona una metrica pregenerata per estenderla e salvarla come un&#39;attenuazione della metrica.
+   Seleziona una metrica predefinita da estendere e salvare come attenuazione della metrica.
 
    ![](assets/6_4_workstation_metricdim_metric.png)
 
-1. (facoltativo) **Create una formula** metrica.
+1. (facoltativo) **Crea una formula metrica**.
 
-   Fare clic sulla casella per immettere una formula metrica personalizzata. Il valore Preview calcolato verrà visualizzato convalidando l&#39;espressione.
+   Fai clic sulla casella per immettere una formula metrica personalizzata. Il valore Preview calcolato verrà visualizzato durante la convalida dell&#39;espressione.
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   Puoi aggiungere la tua espressione [di](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) metrica oppure tagliare e incollare da un altro editor o visualizzazione di metriche. Errori di sintassi, errori di formula, filtri non definiti e altri errori vengono segnalati nella procedura guidata.
+   Puoi aggiungere la tua [espressione metrica](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) oppure tagliare e incollare da un altro editor o visualizzazione di metriche. Nella procedura guidata vengono segnalati errori di sintassi, errori di formula, filtri non definiti e altri errori.
 
-1. Fai clic su **Successivo**.
+1. Fai clic su **Avanti**.
 
-## Passaggio 2: formati e set bucket {#section-5bddf3cd306545d7806a501637f80f77}
+## Passaggio 2: formattare e impostare i blocchi {#section-5bddf3cd306545d7806a501637f80f77}
 
-È possibile selezionare il formato della metrica e impostare i valori del bucket per un&#39;espressione di dimensione.
+Puoi selezionare il formato della metrica e impostare i valori del bucket per un’espressione di dimensione.
 
-1. Selezionate un **formato** per il nuovo dim della metrica.
+1. Seleziona un **Formato** per il nuovo attenuazione della metrica.
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Il formato definisce il modo in cui la metrica verrà presentata quando viene aperta in una visualizzazione. Questi formati sono selezionati [standard](http://www.cplusplus.com/reference/cstdio/printf/)di stampa, definiti di seguito:
+   Il formato definisce il modo in cui la metrica verrà presentata all’apertura in una visualizzazione. Questi formati sono selezionati [standard di stampa](http://www.cplusplus.com/reference/cstdio/printf/), definiti di seguito:
 
    ```
    %[flags][width][.precision][length][specifier]
@@ -66,32 +68,31 @@ Un Dim della metrica converte una metrica in una nuova dimensione. Ad esempio, u
    0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   Nel campo **Anteprima** , verrà visualizzato un valore basato sulla metrica e sul formato selezionati.
+   Nel campo **Anteprima** viene visualizzato un valore in base alla metrica e al formato selezionati.
 
-1. Aggiungi espressione **Conteggio** intervalli.
+1. Aggiungi l&#39;espressione **Conteggio bucket**.
 
-   Puoi definire una metrica con vari intervalli o intervalli. Questo restituisce sottoinsiemi di elementi basati sulle dimensioni, ad esempio [0-4], [5-10],...). Gli elementi del livello dimensione si riferiscono agli elementi il cui intervallo contiene il valore della metrica. Consultate la descrizione dell&#39;espressione bucket in [Sintassi per le espressioni](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)dimensione.
+   Puoi definire un’attenuazione della metrica con vari intervalli o periodi fissi. Questo restituisce sottoinsiemi di elementi in base alle dimensioni, ad esempio [0-4], [5-10],...). Gli elementi del livello di Dimension si riferiscono agli elementi il cui intervallo contiene il valore della metrica. Vedi la descrizione dell&#39;espressione del bucket in [Sintassi per le espressioni del Dimension](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
-1. Fate clic su **Anteprima** per aprire la tabella dei valori di Dim metrica prima di salvare.
+1. Fai clic su **Anteprima** per aprire la tabella dei valori di attenuazione della metrica prima di salvare.
 
    ![](assets/6_4_workstation_metricdim_preview.png)
 
-   La tabella specifica i valori delle metriche per la metrica dim.
+   La tabella descrive i valori delle metriche per attenuazione metrica.
 
-1. Fai clic su **Mostra nel menu** dimensioni per aggiungere la dimensione appena creata alla scheda **Dimensione** nel **Finder**.
-1. Fai clic su **Successivo**.
+1. Fai clic su **Mostra nel menu del Dimension** per aggiungere la dimensione appena creata alla scheda **Dimension** nel **Finder**.
+1. Fai clic su **Avanti**.
 
-## Passaggio 3: fine e salva {#section-d9043235b18a425f9de0db668d4b1683}
+## Passaggio 3: terminare e salvare {#section-d9043235b18a425f9de0db668d4b1683}
 
-1. Selezionate questa opzione per avviare l’Editor di attenuazione metrica, la visualizzazione grafico o la tabella dopo il salvataggio.
+1. Dopo il salvataggio, seleziona per avviare l’Editor di attenuazione della metrica, la visualizzazione del grafico o la tabella.
 
    | Campo | Descrizione |
    |---|---|
-   | Avvia editor Dim della metrica | Aprite l’Editor di attenuazione della metrica. |
-   | Avvia grafico | Avviate un elemento grafico PNG della tabella. |
-   | Avvia tabella | Avviate una tabella nell’area di lavoro con valori in colonne che elencano i valori della nuova metrica dim rispetto ai valori della metrica selezionata. |
+   | Editor di attenuazione della metrica di Launch | Apri l’Editor di attenuazione della metrica. |
+   | Grafico di Launch | Avviare un grafico PNG della tabella. |
+   | Tabella Launch | Avvia una tabella nell’area di lavoro con valori in colonne che elencano i valori della nuova attenuazione metrica rispetto ai valori della metrica selezionata. |
 
-1. Fate clic su **Fine** e salvate.
+1. Fare clic su **Fine** e salvare.
 
-   Viene aperta una finestra di dialogo di salvataggio che consente di salvare il file. Le opzioni selezionate per visualizzare i valori si apriranno nell’area di lavoro.
-
+   Viene visualizzata una finestra di dialogo di salvataggio che consente di salvare il file. Le opzioni selezionate per visualizzare i valori si apriranno nell’area di lavoro.

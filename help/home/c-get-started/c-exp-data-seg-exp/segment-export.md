@@ -1,49 +1,51 @@
 ---
 description: Esportare segmenti utilizzando la procedura guidata di esportazione dei segmenti
-title: Esportazione guidata segmenti
+title: Procedura guidata di esportazione del segmento
 uuid: 705bdf00-54e5-4992-8978-91afda8c7543
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 6f42c5c6-a158-4ddd-8949-4ef55a44ed1c
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 6%
 
 ---
 
-
-# Segment export wizard{#segment-export-wizard}
+# Procedura guidata di esportazione del segmento{#segment-export-wizard}
 
 Esportare segmenti utilizzando la procedura guidata di esportazione dei segmenti
 
-La procedura guidata di esportazione dei segmenti consente di configurare ed esportare i segmenti anziché di [esportarli da una tabella](https://docs.adobe.com/content/help/en/data-workbench/using/client/export-data/c-sgmt-expt.html)di dettaglio.
+La procedura guidata di esportazione dei segmenti fornisce una procedura dettagliata per configurare ed esportare i segmenti anziché [esportare i segmenti da una tabella di dettaglio](https://experienceleague.adobe.com/docs/data-workbench/using/client/export-data/c-sgmt-expt.html).
 
 ## Esportare segmenti utilizzando la procedura guidata {#section-b30f2699dbc7490bad18512b91cb0cb3}
 
-Per aprire la procedura guidata, fai clic con il pulsante destro del mouse in un’area di lavoro e seleziona **Amministratore** > **Procedure guidate** > Esportazione guidata **** segmenti.
+Per aprire la procedura guidata, fai clic con il pulsante destro del mouse in un&#39;area di lavoro e seleziona **Amministratore** > **Procedure guidate** > **Esportazione guidata segmento**.
 
 >[!NOTE]
 >
->Vengono acquisiti solo i segmenti applicati prima dell’apertura della procedura guidata. Inoltre, le esportazioni di segmenti create dalla procedura guidata non possono generare comandi esterni.
+>Verranno acquisiti solo i segmenti applicati prima dell’apertura della procedura guidata. Inoltre, le esportazioni dei segmenti create dalla procedura guidata non possono generare comandi esterni.
 
-1. Seleziona i vari livelli padre delle dimensioni e delle metriche da aggiungere all&#39;esportazione.
+1. Seleziona i vari livelli padre delle dimensioni e delle metriche da aggiungere all’esportazione.
 
-   I livelli visualizzati dipendono dal profilo selezionato. Potete selezionare più livelli di dimensione in base al profilo.
+   I livelli visualizzati dipendono dal profilo selezionato. Puoi selezionare più livelli di dimensione in base al profilo.
 
    ![](assets/seg_wizard_1.png)
 
-1. Fai clic su **Successivo**.
-1. Selezionare la dimensione e le metriche per i livelli selezionati.
+1. Fai clic su **Avanti**.
+1. Seleziona il Dimension e le metriche per i livelli selezionati.
 
-   Ad esempio, dopo aver selezionato Visualizzazione pagina come livello padre, potete selezionare le dimensioni e le metriche figlie disponibili per l’esportazione.
+   Ad esempio, dopo aver selezionato Visualizzazione pagina come livello padre, puoi selezionare le dimensioni e le metriche secondarie disponibili per l’esportazione.
 
-1. Fai clic su **Successivo**.
+1. Fai clic su **Avanti**.
 
    ![](assets/seg_wizard_2.png)
 
    ![](assets/seg_wizard_2_1.png)
 
-1. Selezionate il formato di esportazione e immettete un nome per il file di esportazione.
+1. Selezionare il formato di esportazione e immettere un nome per il file di esportazione.
 
    ![](assets/seg_wizard_3.png)
 
-   Per i tipi CSV, TSV, Esportazione segmenti ed Esportazione segmenti con intestazione non è necessaria alcuna configurazione aggiuntiva. Tuttavia, i profili e l&#39;esportazione dell&#39;audience, il servizio record personalizzato e l&#39;esportazione Adobe Target devono essere configurati nel passaggio 3. Ad esempio, vedete i campi di configurazione per Profili e Audience Export. Configurate questi tipi di esportazione e fate clic su **Avanti**.
+   I tipi CSV, TSV, Segment Export e Segment Export With Header non necessitano di configurazioni aggiuntive. Tuttavia, i profili e l’esportazione del pubblico, il servizio di record personalizzato e l’esportazione di Adobe Target devono essere configurati nel passaggio 3. Ad esempio, consulta i campi di configurazione per l’esportazione di profili e pubblico . Configura questi tipi di esportazione e fai clic su **Avanti**.
 
    ![](assets/seg_wizard_3_1.png)
 
@@ -53,45 +55,45 @@ Per aprire la procedura guidata, fai clic con il pulsante destro del mouse in un
 
 1. Configura il tipo di esportazione selezionato.
 
-   Intestazione: se Intestazione è True, assegnare un nome al campo File **di** output.
+   Intestazione: se Intestazione è True, denominare il campo **File di output**.
 
-   Campo di escape (Escape Field) - Impostato come **True** o **False**.
+   Campo di escape: impostato come **True** o **False**.
 
-   Ordine dei campi (Order of Fields) - Selezionate un campo e spostatevi in alto o in basso per impostare l&#39;ordine nel file di esportazione.
+   Ordine dei campi - Consente di selezionare un campo e di spostarsi verso l&#39;alto o verso il basso per impostare l&#39;ordine nel file di esportazione.
 
    ![](assets/seg_wizard_4.png)
 
-   Fai clic su **Successivo**.
+   Fai clic su **Avanti**.
 
-1. Visualizza il livello e i filtri applicati in questa finestra di dialogo. Fai clic su **Successivo**. ![](assets/seg_wizard_5.png)
+1. Visualizza il Livello e i filtri applicati in questa finestra di dialogo. Fai clic su **Avanti**. ![](assets/seg_wizard_5.png)
 
-1. Se **CSV**, **TSV**, Esportazione **** segmento o Esportazione **segmento con intestazione** è selezionato, sono disponibili tre opzioni:
+1. Se è selezionato **CSV**, **TSV**, **Esportazione segmento** o **Esportazione segmento con intestazione**, sono disponibili tre opzioni:
 
-   Esportazione generica - Il file di output verrà generato dal server nella cartella Server/Export.
+   Esportazione generica: il file di output verrà generato dal server nella cartella Server/Export.
 
    ![](assets/seg_wizard_6.png)
 
-   Esportazione FTP - Il file di output verrà trasferito al server selezionato. (L&#39;elenco del server verrà selezionato dal file FTPServerInfo.cfg.)
+   Esportazione FTP: il file di output verrà trasferito al server selezionato. (L&#39;elenco del server verrà preso dal file FTPServerInfo.cfg.)
 
    ![](assets/seg_wizard_6_1.png)
 
-   Esportazione SFTP - Il file di output verrà trasferito in modo sicuro al server selezionato.
+   Esportazione SFTP: il file di output verrà trasferito in modo sicuro al server selezionato.
 
-1. Fai clic su **Avanti**. 
+1. Fai clic su **Avanti**
 
-   **Nota:** Se il tipo di esportazione selezionato è **Profili ed esportazione** pubblico, **Custom Record Service** e **Adobe Target Export**, il testo sarà statico in base all&#39;esportazione selezionata.
+   **Nota:** se il tipo di esportazione selezionato è  **Profiles and Audience Export**,  **Custom Record Service** e  **Adobe Target Export**, il testo sarà statico in base all’esportazione selezionata.
 
-1. Configurare i parametri di pianificazione.
+1. Configura i parametri di pianificazione.
 
-   **Una ripresa** può essere impostata su True o False.
+   **È possibile impostare una** ripresa su True o False.
 
-   **È possibile attivare o disattivare la programmazione** avanzata facendo clic sul pulsante Advanced Scheduling Configuration (Configurazione programmazione avanzata).
+   **È possibile attivare o disattivare la** pianificazione avanzata facendo clic sul pulsante Configurazione programmazione avanzata.
 
    ![](assets/seg_wizard_7.png)
 
-   Come per l’esportazione dalla tabella dei dettagli, se l’opzione Impostazioni avanzate è attivata, One Shot viene disattivato. Fai clic su **Successivo**.
+   Come per l&#39;esportazione dalla tabella dei dettagli, una ripresa sparirà se l&#39;impostazione avanzata è attivata. Fai clic su **Avanti**.
 
-1. Visualizzate l’anteprima del file di esportazione e fate clic su **Esegui esportazione**.
+1. Visualizza l&#39;anteprima del file di esportazione e fai clic su **Esegui esportazione**.
 
    ![](assets/seg_wizard_8.png)
 
@@ -122,4 +124,3 @@ I seguenti tipi di esportazioni sono disponibili tramite la procedura guidata:
 * Generico
 * FTP
 * SFTP
-
