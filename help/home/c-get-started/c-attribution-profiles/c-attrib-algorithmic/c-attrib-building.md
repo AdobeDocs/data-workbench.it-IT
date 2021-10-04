@@ -3,9 +3,9 @@ description: Apri Attribuzione adattamento ottimale dal menu Premium e segui que
 title: Creare un modello di attribuzione adattamento ottimale
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
 exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Vedi una panoramica di [Best Fit Attribution](../../../../home/c-get-started/c-a
 
    >[!NOTE]
    >
-   >Attribuzione adattamento ottimale è una funzione di Adobe Analytics Premium che richiede l’abilitazione di Premium nel profilo. Richiede l’aggiornamento del certificato e l’aggiunta del profilo Premium al file profile.cfg. Consulta [Aggiornamento del server DWB: da 6.2 a 6.3](https://experienceleague.adobe.com/docs/data-workbench/using/install/upgrade-dwb/c-6-2-to-6-3-upgrade.html) per DWB 6.3.
+   >Attribuzione adattamento ottimale è una funzione di Adobe Analytics Premium che richiede l’abilitazione di Premium nel profilo. Richiede l’aggiornamento del certificato e l’aggiunta del profilo Premium al file profile.cfg. Consulta [Aggiornamento del server DWB: da 6.2 a 6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md) per DWB 6.3.
 
 1. Imposta la metrica **[!UICONTROL Success]** .
 
@@ -108,54 +108,54 @@ Una volta completato, un grafico visualizza un modello di attribuzione calcolato
 
 Il menu **Opzioni** fornisce funzioni avanzate per impostare e visualizzare l’analisi di attribuzione adattamento ottimale.
 
-<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Menu Opzioni </th> 
-   <th colname="col2" class="entry"> Descrizione </th> 
+<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Menu Opzioni </th>
+   <th colname="col2" class="entry"> Descrizione </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Imposta filtro di formazione  </span> </td> 
-   <td colname="col2"> Il filtro di formazione viene utilizzato con la finestra di successo per filtrare la popolazione durante la creazione del modello di attribuzione. Questo fornirà un sottoinsieme di dati che include solo i visitatori che desideri analizzare. <p>Nota: Gli utenti esperti possono inoltre sfruttare la flessibilità dei filtri per concentrarsi oltre la linea temporale delle finestre di successo e touch. Ad esempio, oltre a selezionare un intervallo di tempo, puoi selezionare un set di <i>Domini di riferimento</i> per esaminare solo l’attribuzione per gli utenti di tali domini. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Mostra descrizione filtro complesso  </span> </td> 
-   <td colname="col2"> Visualizza il codice del filtro per il filtro di formazione, la finestra di successo e la finestra di contatto. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Salva modello  </span> </td> 
-   <td colname="col2"> Salva il modello di attribuzione corrente per un utilizzo futuro. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Modello di caricamento  </span> </td> 
-   <td colname="col2"> Apre un modello di attribuzione salvato in precedenza. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Visualizzazione presentazione  </span> </td> 
-   <td colname="col2"> Nasconde la barra dei menu superiore per la presentazione. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Opzioni &gt; </b> Avanzate include funzionalità per impostare le dimensioni del set di addestramento e specificare l'approccio da adottare in caso di squilibrio di classe. </p> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Advanced &gt; Training Set Size  </span> </td> 
-   <td colname="col2"> <p>Imposta la dimensione del set di addestramento. </p> <p>Nota:  La dimensione predefinita del training è Grande per 250.000 visitatori. </p> 
-    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD"> 
-     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Piccolo = 50.000 </li> 
-     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Piccolo = 75.000 </li> 
-     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normale = 100.000 </li> 
-     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Grande = 250,00 </li> 
-     <li id="li_34B60233C84F48F1BCB8040C5195411A">Enorme = 500.000 </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><b>Avanzate &gt; Bilanciamento classe  </b> </td> 
-   <td colname="col2"> <p>Identifica e definisce il numero di record di input da generare per un problema di squilibrio di classe in base alle dimensioni del set di dati. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Imposta filtro di formazione  </span> </td>
+   <td colname="col2"> Il filtro di formazione viene utilizzato con la finestra di successo per filtrare la popolazione durante la creazione del modello di attribuzione. Questo fornirà un sottoinsieme di dati che include solo i visitatori che desideri analizzare. <p>Nota: Gli utenti esperti possono inoltre sfruttare la flessibilità dei filtri per concentrarsi oltre la linea temporale delle finestre di successo e touch. Ad esempio, oltre a selezionare un intervallo di tempo, puoi selezionare un set di <i>Domini di riferimento</i> per esaminare solo l’attribuzione per gli utenti di tali domini. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Mostra descrizione filtro complesso  </span> </td>
+   <td colname="col2"> Visualizza il codice del filtro per il filtro di formazione, la finestra di successo e la finestra di contatto. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Salva modello  </span> </td>
+   <td colname="col2"> Salva il modello di attribuzione corrente per un utilizzo futuro. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Modello di caricamento  </span> </td>
+   <td colname="col2"> Apre un modello di attribuzione salvato in precedenza. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Visualizzazione presentazione  </span> </td>
+   <td colname="col2"> Nasconde la barra dei menu superiore per la presentazione. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p><b>Opzioni &gt; </b> Avanzate include funzionalità per impostare le dimensioni del set di addestramento e specificare l'approccio da adottare in caso di squilibrio di classe. </p> </td>
+   <td colname="col2"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Advanced &gt; Training Set Size  </span> </td>
+   <td colname="col2"> <p>Imposta la dimensione del set di addestramento. </p> <p>Nota:  La dimensione predefinita del training è Grande per 250.000 visitatori. </p>
+    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD">
+     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Piccolo = 50.000 </li>
+     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Piccolo = 75.000 </li>
+     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normale = 100.000 </li>
+     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Grande = 250,00 </li>
+     <li id="li_34B60233C84F48F1BCB8040C5195411A">Enorme = 500.000 </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><b>Avanzate &gt; Bilanciamento classe  </b> </td>
+   <td colname="col2"> <p>Identifica e definisce il numero di record di input da generare per un problema di squilibrio di classe in base alle dimensioni del set di dati. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 | Opzioni Ripristina e Rimuovi | Descrizione |

@@ -3,9 +3,9 @@ description: Per eseguire l’aggiornamento a Data Workbench v6.1 dall’install
 title: Aggiornamento a Data Workbench da 6.0 a 6.1
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '743'
 ht-degree: 1%
 
 ---
@@ -52,18 +52,18 @@ Segui questi passaggi per aggiornare i componenti **[!UICONTROL Server v6.1]** :
    1. Sostituisci la cartella [!DNL Server\Software] per aggiornare [!DNL Insight.exe] e [!DNL ReportServer.exe]
    1. Aggiorna la cartella [!DNL Server\Scripts] per aggiornare [!DNL TnTSend.exe].
 
-1. Se utilizzi **[!UICONTROL DeviceAtlas]**, dovrai [aggiornare il bundle](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) che si trova nella cartella [!DNL Server\Lookups].
+1. Se utilizzi **[!UICONTROL DeviceAtlas]**, dovrai [aggiornare il bundle](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md) che si trova nella cartella [!DNL Server\Lookups].
 
 1. Configura il file [!DNL Profile.cfg] in modo che il vettore venga aggiornato per riflettere il numero di elementi per ciascun profilo.
 
    Ad esempio, per abilitare il profilo **[!UICONTROL Predictive Analytics]** dovrai aggiornare questa impostazione.
 
    ```
-   Directories = vector: 5 items 
-       0 = string: Base\\ 
-       1 = string: Geography\\ 
-       2 = string: Predictive Analytics\\ 
-       3 = string: Adobe SC\\ 
+   Directories = vector: 5 items
+       0 = string: Base\\
+       1 = string: Geography\\
+       2 = string: Predictive Analytics\\
+       3 = string: Adobe SC\\
        4 = string: Profile Name\\
    ```
 
@@ -85,7 +85,7 @@ Segui questi passaggi per aggiornare i componenti **[!UICONTROL Server v6.1]** :
    Se non hai definito l’ID di origine del registro, riceverai il seguente errore:
 
    ```
-   Missing Log Source ID in log processing.cfg.  
+   Missing Log Source ID in log processing.cfg.
    Log Source ID must be defined for all log sources.
    ```
 
@@ -115,10 +115,10 @@ Installazione del server completata.
 1. (facoltativo) Data Workbench supporta attualmente le lingue inglese (-en-us) e cinese (-zh-cn). È necessario impostare un font per supportare i caratteri a byte singolo e doppio:
 
    ```
-   Report Server.cfg - Add Fonts 
-      Fonts = vector: 2 items  
-      0 = string: SimSun  
-      1 = string: Arial 
+   Report Server.cfg - Add Fonts
+      Fonts = vector: 2 items
+      0 = string: SimSun
+      1 = string: Arial
    ```
 
    Nel sistema operativo Windows devono essere installati anche i font elencati.
@@ -137,7 +137,7 @@ Installazione del server completata.
    1. Avvia il servizio in base alle impostazioni della lingua:
 
       ```
-      ReportServer.exe -RegServer -Locale -en-us (English)  
+      ReportServer.exe -RegServer -Locale -en-us (English)
       ReportServer.exe -RegServer -Locale -zh-cn (Simplified Chinese)
       ```
 
@@ -185,9 +185,9 @@ Per installare il cinese semplificato:
    Data Workbench supporta attualmente sia l’inglese che il cinese semplificato. È possibile selezionare i font per supportare entrambe le lingue seguenti:
 
    ```
-   Fonts = vector: 2 items 
-   0 = string: SimSun 
-   1 = string: Arial 
+   Fonts = vector: 2 items
+   0 = string: SimSun
+   1 = string: Arial
    ```
 
    Nel sistema operativo Windows devono essere installati anche i font richiesti.
