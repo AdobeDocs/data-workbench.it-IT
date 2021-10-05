@@ -3,14 +3,14 @@ description: Glossario di Data Workbench
 title: Glossario di Data Workbench
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
 exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '4201'
 ht-degree: 100%
 
 ---
 
-# Glossario di Data Workbench {#data-workbench-glossary}
+# Glossario di Data Workbench{#data-workbench-glossary}
 
 **Avviso**
 
@@ -62,11 +62,11 @@ Variabile comune che crea una relazione tra le righe in due set di dati tabulari
 
 **Intervallo di affidabilità**
 
-Un intervallo di valori con una specifica probabilità di contenere il tasso o la tendenza. Gli intervalli di affidabilità dell’80% (p-value = 0,20), del 95% (p-value = 0,05) e del 99% (p-value = 0,01) sono quelli più comunemente utilizzati. (Origine: `http://www.nci.nih.gov/statistics/glossary`)
+Un intervallo di valori con una specifica probabilità di contenere il tasso o la tendenza. Gli intervalli di affidabilità dell’80% (p-value = 0,20), del 95% (p-value = 0,05) e del 99% (p-value = 0,01) sono quelli più comunemente utilizzati. (Origine: `https://www.nci.nih.gov/statistics/glossary`)
 
 **Livello di affidabilità**
 
-La probabilità che l’errore di campionamento in un risultato di sondaggio rientri in un intervallo specificato, in genere espresso in termini di errori standard (ad esempio, 1 errore standard equivale a una probabilità del 68%, 2 errori standard a una probabilità del 95,4%). (Origine: `http://www.magazine.org/research/3410.cfm`)
+La probabilità che l’errore di campionamento in un risultato di sondaggio rientri in un intervallo specificato, in genere espresso in termini di errori standard (ad esempio, 1 errore standard equivale a una probabilità del 68%, 2 errori standard a una probabilità del 95,4%). (Origine: `https://www.magazine.org/research/3410.cfm`)
 
 **Conversion Map (Mappa di conversione)**
 
@@ -238,7 +238,7 @@ Una relazione tra due dimensioni dati in cui un singolo elemento in una dimensio
 
 **Ordinal (Ordinale)**
 
-Che appartiene o fa riferimento a un ordine numerico in una serie. (Origine: `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Se una dimensione viene ordinata in modo ordinale all’interno di Dimension, gli elementi della dimensione vengono visualizzati nell’ordine in cui sono rappresentati internamente.
+Che appartiene o fa riferimento a un ordine numerico in una serie. (Origine: `https://wordnet.princeton.edu/perl/webwn?s=ordinal`) Se una dimensione viene ordinata in modo ordinale all’interno di Dimension, gli elementi della dimensione vengono visualizzati nell’ordine in cui sono rappresentati internamente.
 
 **Outlier**
 

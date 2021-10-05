@@ -3,7 +3,7 @@ description: Il Report Portal (Portale dei rapporti) utilizza le informazioni co
 title: Modifica del file di configurazione della sessione
 uuid: c1bcd4d2-9bf5-425a-bda2-7f805983cdc6
 exl-id: 98cf2e11-afb8-4530-aaa4-ea3c913effc1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -30,8 +30,8 @@ Quando installi [!DNL Report Portal], devi modificare questo file come indicato.
 1. Salvate il file.
 1. Per verificare che i file [!DNL Report Portal] siano stati installati correttamente e possano essere raggiunti tramite la directory virtuale designata, apri la pagina seguente nel browser:
 
-   http://*YourServerAddress*/*NomePortale*
+   https://*YourServerAddress*/*NomePortale*
 
-   Esempio:  [!DNL http://localhost/VisualReportPortal]
+   Esempio:  [!DNL https://localhost/VisualReportPortal]
 
    Se gli [!DNL Report Portal] ASP sono stati installati correttamente, verrà visualizzata la pagina di accesso al portale. Se questa pagina non viene visualizzata, verifica che gli ASP siano abilitati in IIS e controlla i mapping delle directory virtuali.

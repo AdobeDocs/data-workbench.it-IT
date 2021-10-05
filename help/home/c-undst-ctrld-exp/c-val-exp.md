@@ -4,7 +4,7 @@ solution: Analytics,Analytics
 title: Convalida dell’esperimento
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 exl-id: 6dfd01ca-288d-40fd-aad4-75a588902ebd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 2%
@@ -27,17 +27,17 @@ Ogni volta che desideri testare un nuovo gruppo, assicurati di cancellare i cook
 
 Per inserirsi in un gruppo specifico all’interno di un esperimento specifico, richiede la pagina di test con una stringa di query nel modulo seguente:
 
-[!DNL http://] *&lt; [!DNL sitename/?Experiment Name=Group Name]>*
+[!DNL https://] *&lt; [!DNL sitename/?Experiment Name=Group Name]>*
 
 Ad esempio:
 
-[!DNL http://www.omniture.com/setcookie.htm?New_Homepage=index2]
+[!DNL https://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
 Quando la richiesta di URL virtuale viene inviata al server, [!DNL Sensor] ti identifica come membro del gruppo specificato all’interno dell’esperimento specificato e quindi ti reindirizzerà alla directory principale del sito web. Ora puoi passare alla posizione appropriata sul sito web per verificare se viene visualizzato il contenuto corretto per l’esperimento e il gruppo.
 
 Se doveste digitare quanto segue nel browser, il browser mostrerebbe la home page del sito web e vi inserirebbe nel gruppo index2 all&#39;interno dell&#39;esperimento New_Homepage:
 
-[!DNL http://www.omniture.com/setcookie.htm?New_Homepage=index2]
+[!DNL https://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
 Quando i visitatori del gruppo index2 richiedono la home page, il collegamento grafico &quot;Richiedi una demo&quot; viene visualizzato più in alto sulla pagina, come nell&#39;immagine seguente:
 

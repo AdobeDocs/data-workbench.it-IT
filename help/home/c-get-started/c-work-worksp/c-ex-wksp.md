@@ -3,7 +3,7 @@ description: È possibile esportare un'area di lavoro come file di immagine .png
 title: Esportare un’area di lavoro
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
 exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 È possibile esportare un&#39;area di lavoro come file di immagine .png o esportare i dati da determinate finestre in un file Excel (.xls o .xlsx).
 
-## Esporta le aree di lavoro come file PNG {#section-f9fbe0f0a1c341e2b063cce106cac35e}
+## Esportare le aree di lavoro come file PNG {#section-f9fbe0f0a1c341e2b063cce106cac35e}
 
 È possibile salvare un&#39;istantanea di un&#39;area di lavoro in formato grafico a rete portatile (`.png` file). Quando si salvano le aree di lavoro come file `.png` sono disponibili le seguenti opzioni di colore:
 
@@ -41,10 +41,9 @@ Per esportare le aree di lavoro e le singole finestre in Microsoft Excel, è nec
 
 >[!NOTE]
 >
->* Quando si esportano dati come file Excel, si apre una nuova istanza di Excel. Per ulteriori informazioni su questo processo, consulta [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
->* Sebbene Data Workbench supporti più di 256 colonne e 65.536 righe di dati, le versioni di Microsoft Excel precedenti alla versione 8.0 non lo supportano.
+>* Quando si esportano dati come file Excel, si apre una nuova istanza di Excel. Per ulteriori informazioni su questo processo, consulta [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757).
+>* Sebbene Data Workbench supporti più di 256 colonne e 65.536 righe di dati, le versioni di Microsoft Excel precedenti alla 8.0 non lo supportano.
 >
-
 
 
 Se questi requisiti sono soddisfatti, Data Workbench avvia automaticamente Microsoft Excel ed esporta i dati in una nuova cartella di lavoro Excel. I dati non vengono esportati dalle seguenti visualizzazioni: grafici, browser dei percorsi, mappe dei processi, grafici a dispersione e globi.
@@ -64,7 +63,7 @@ A meno che non sia stato specificato un titolo personalizzato per la finestra ne
 
 Quando si esporta l&#39;area di lavoro in Excel, il foglio di lavoro contenente i dati per questa finestra viene denominato utilizzando il titolo specificato al posto del titolo nel campo [!UICONTROL Export title].
 
-## Esportare un&#39;area di lavoro o una barra laterale in Excel {#section-360438b66d5f4734826ab463b4a01a75}
+## Esportare un’area di lavoro o una barra laterale in Excel {#section-360438b66d5f4734826ab463b4a01a75}
 
 **Per esportare i dati dell’area di lavoro in un nuovo  [!DNL .xls] file o in un nuovo  [!DNL .xlsx] file**
 

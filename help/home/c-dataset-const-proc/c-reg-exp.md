@@ -3,7 +3,7 @@ description: Le espressioni regolari vengono utilizzate in tutti i campi di rice
 title: Espressioni regolari
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 2%
@@ -44,17 +44,17 @@ La corrispondenza letterale prende una stringa letterale senza caratteri di esca
 
 In questo esempio viene illustrato il funzionamento della corrispondenza letterale. Considera una situazione in cui i dati vengono raccolti dal traffico del sito web e il campo cs(referrer) contiene il seguente valore:
 
-`http://www.abc.com/adventurenews/today.html?ad=123AZ45`
+`https://www.abc.com/adventurenews/today.html?ad=123AZ45`
 
 Per determinare se il referente rappresenta un utente che ha fatto clic su uno degli annunci pubblicitari, è necessario vedere se il referrer contiene l&#39;annuncio stringa. Puoi semplicemente utilizzare la stringa letterale annuncio per cercare la stringa di destinazione e determinare se un annuncio è stato utilizzato per indirizzare il traffico al sito. Anche se questo corrisponderebbe alla stringa di destinazione, corrisponderebbe in due posizioni ed è quindi ambiguo e può portare a falsi positivi.
 
 Il seguente URL contiene la stringa annuncio in due posizioni diverse:
 
-`http://www.abc.com/ad vertnews/today.html?ad =123AZ45`
+`https://www.abc.com/ad vertnews/today.html?ad =123AZ45`
 
 Pertanto, se cerchi di determinare quali sessioni sono iniziate a seguito di una particolare campagna pubblicitaria, è chiaro che non è sufficiente utilizzare semplicemente l’annuncio letterale come espressione regolare. Modificando il valore letterale in &quot;ad=&quot; si eliminerebbe questa ambiguità e si otterrebbe una sola corrispondenza nell’espressione. Tuttavia, anche questo potrebbe non essere sufficiente per garantire che il referrer facesse parte della campagna pubblicitaria. Considera il referente seguente:
 
-`http://www.xyz.com/hello.html?pad=something`
+`https://www.xyz.com/hello.html?pad=something`
 
 Non hai alcun controllo sugli URL che altri utenti potrebbero utilizzare per creare collegamenti al sito. La corrispondenza letterale è un meccanismo troppo semplice per individuare le sessioni iniziate a seguito della campagna pubblicitaria. La sezione seguente illustra come utilizzare i metacaratteri per ottenere una corrispondenza più flessibile e potente.
 
@@ -74,27 +74,27 @@ Un metacarattero è un carattere speciale in un programma o in un campo di dati 
 
 La corrispondenza letterale consente di cercare una singola stringa, ma parentesi graffe, trattini e tubi consentono di definire un elenco di elementi da cercare nella stringa di destinazione.
 
-<table id="table_18B86955EC3748079E7C176273ADE92B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Per questo metacarattero... </th> 
-   <th colname="col2" class="entry"> Il processore di espressioni regolari.. </th> 
-  </tr> 
+<table id="table_18B86955EC3748079E7C176273ADE92B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Per questo metacarattero... </th>
+   <th colname="col2" class="entry"> Il processore di espressioni regolari.. </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Parentesi quadrate ([ ]) </td> 
-   <td colname="col2"> Associa uno qualsiasi dei caratteri all’interno della parentesi con una posizione di un singolo carattere. Ad esempio, [AB] è un'istruzione che deve corrispondere alla lettera A o alla lettera B e [0123456789] indica che deve corrispondere a qualsiasi carattere compreso tra 0 e 9. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Trattino (-) </td> 
-   <td colname="col2"> <p>Associa un intervallo di caratteri. Così, invece di scrivere [0123456789], potevamo semplicemente scrivere [0-9]. </p> <p> Può essere esteso a intervalli di caratteri e a intervalli multipli all’interno di un set di parentesi. Ad esempio, [0-9A-C] corrisponde ai caratteri da 0 a 9 e da A a C. </p> <p> <p>Nota:  Per verificare che un trattino (-) sia un letterale all'interno delle parentesi, deve essere primo o ultimo. Ad esempio, test [-0-9] per - e da 0 a 9. </p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Barra verticale (|) </td> 
-   <td colname="col2"> Associa una delle due scelte a una stringa di destinazione specificata. Ad esempio, b|nat corrisponde a bat o nat. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> Parentesi quadrate ([ ]) </td>
+   <td colname="col2"> Associa uno qualsiasi dei caratteri all’interno della parentesi con una posizione di un singolo carattere. Ad esempio, [AB] è un'istruzione che deve corrispondere alla lettera A o alla lettera B e [0123456789] indica che deve corrispondere a qualsiasi carattere compreso tra 0 e 9. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Trattino (-) </td>
+   <td colname="col2"> <p>Associa un intervallo di caratteri. Così, invece di scrivere [0123456789], potevamo semplicemente scrivere [0-9]. </p> <p> Può essere esteso a intervalli di caratteri e a intervalli multipli all’interno di un set di parentesi. Ad esempio, [0-9A-C] corrisponde ai caratteri da 0 a 9 e da A a C. </p> <p> <p>Nota:  Per verificare che un trattino (-) sia un letterale all'interno delle parentesi, deve essere primo o ultimo. Ad esempio, test [-0-9] per - e da 0 a 9. </p> </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Barra verticale (|) </td>
+   <td colname="col2"> Associa una delle due scelte a una stringa di destinazione specificata. Ad esempio, b|nat corrisponde a bat o nat. </td>
+  </tr>
+ </tbody>
 </table>
 
 Prendi in considerazione gli esempi seguenti:
@@ -135,35 +135,35 @@ Il periodo (.) è un metacarattero speciale che corrisponde a qualsiasi caratter
 
 I metacaratteri di iterazione consentono di associare un pattern più di una volta.
 
-<table id="table_6A14333D6C264A48ADF1EBBAF687CADD"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Per questo metacarattero... </th> 
-   <th colname="col2" class="entry"> Il processore di espressioni regolari.. </th> 
-  </tr> 
+<table id="table_6A14333D6C264A48ADF1EBBAF687CADD">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Per questo metacarattero... </th>
+   <th colname="col2" class="entry"> Il processore di espressioni regolari.. </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Punto interrogativo (?) </td> 
-   <td colname="col2"> Non associare alcuna istanza o istanza del carattere immediatamente precedente il metacarattero (?). Ad esempio, l'area del pattern?d corrisponde al rosso e alla lettura. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Asterisco (*) </td> 
-   <td colname="col2"> Corrispondenza a zero o più occorrenze del carattere immediatamente precedente il metacarattero (*). Ad esempio, il pattern [0-9]* corrisponde a qualsiasi numero di caratteri da 0 a 9 (qualsiasi numero intero). </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Plus (+) </td> 
-   <td colname="col2"> Corrispondere a una o più occorrenze del carattere o dell'intervallo precedente. Ad esempio, il pattern thre+ corrisponde a tre ma non a. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> {n} </td> 
-   <td colname="col2"> <p>Corrispondere esattamente n volte al carattere o all'intervallo di procedimento. Il seguente pattern corrisponde ai numeri di telefono degli Stati Uniti: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Sebbene non sia un pattern ottimale, determina se la stringa di destinazione è nel formato corretto. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> {n,m} </td> 
-   <td colname="col2"> Corrispondere al carattere precedente almeno n volte e al massimo m volte. Ad esempio, per{1,2}d corrisponderebbe a alimenti e alimenti ma non a alimenti. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> Punto interrogativo (?) </td>
+   <td colname="col2"> Non associare alcuna istanza o istanza del carattere immediatamente precedente il metacarattero (?). Ad esempio, l'area del pattern?d corrisponde al rosso e alla lettura. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Asterisco (*) </td>
+   <td colname="col2"> Corrispondenza a zero o più occorrenze del carattere immediatamente precedente il metacarattero (*). Ad esempio, il pattern [0-9]* corrisponde a qualsiasi numero di caratteri da 0 a 9 (qualsiasi numero intero). </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Plus (+) </td>
+   <td colname="col2"> Corrispondere a una o più occorrenze del carattere o dell'intervallo precedente. Ad esempio, il pattern thre+ corrisponde a tre ma non a. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> {n} </td>
+   <td colname="col2"> <p>Corrispondere esattamente n volte al carattere o all'intervallo di procedimento. Il seguente pattern corrisponde ai numeri di telefono degli Stati Uniti: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Sebbene non sia un pattern ottimale, determina se la stringa di destinazione è nel formato corretto. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> {n,m} </td>
+   <td colname="col2"> Corrispondere al carattere precedente almeno n volte e al massimo m volte. Ad esempio, per{1,2}d corrisponderebbe a alimenti e alimenti ma non a alimenti. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Estrazione pattern {#section-4389779653b64f6cb7c47615b25c1a79}
@@ -172,39 +172,39 @@ La corrispondenza dei pattern è solo una parte della potenza delle espressioni 
 
 Prendi in considerazione i seguenti esempi di estrazione del pattern:
 
-<table id="table_BC8D471B966844049FFFCDEC0F183941"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Pattern </th> 
-   <th colname="col2" class="entry"> Stringa </th> 
-   <th colname="col3" class="entry"> Corrispondenza </th> 
-   <th colname="col4" class="entry"> Estrazione </th> 
-  </tr> 
+<table id="table_BC8D471B966844049FFFCDEC0F183941">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Pattern </th>
+   <th colname="col2" class="entry"> Stringa </th>
+   <th colname="col3" class="entry"> Corrispondenza </th>
+   <th colname="col4" class="entry"> Estrazione </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Win(9[58]) </td> 
-   <td colname="col2"> OS=Win95 </td> 
-   <td colname="col3"> Win95 </td> 
-   <td colname="col4"> %1% = 95 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> (Win)(95|8) </td> 
-   <td colname="col2"> OS=Win98 </td> 
-   <td colname="col3"> Win98 </td> 
-   <td colname="col4"> <p>%1% = Win </p> <p> %2% = 98 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Mozilla/([0-9]).([0-9]) </td> 
-   <td colname="col2"> Mozilla/3.0 </td> 
-   <td colname="col3"> Mozilla/3,03 </td> 
-   <td colname="col4"> <p>%1% = 3 </p> <p> %2% = 0 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Lezione([A-Z]) </td> 
-   <td colname="col2"> Lezione a </td> 
-   <td colname="col3"> Nessuna corrispondenza perché la A in minuscolo non è compresa nell'intervallo tra A in maiuscolo e Z </td> 
-   <td colname="col4"> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> Win(9[58]) </td>
+   <td colname="col2"> OS=Win95 </td>
+   <td colname="col3"> Win95 </td>
+   <td colname="col4"> %1% = 95 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> (Win)(95|8) </td>
+   <td colname="col2"> OS=Win98 </td>
+   <td colname="col3"> Win98 </td>
+   <td colname="col4"> <p>%1% = Win </p> <p> %2% = 98 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Mozilla/([0-9]).([0-9]) </td>
+   <td colname="col2"> Mozilla/3.0 </td>
+   <td colname="col3"> Mozilla/3,03 </td>
+   <td colname="col4"> <p>%1% = 3 </p> <p> %2% = 0 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Lezione([A-Z]) </td>
+   <td colname="col2"> Lezione a </td>
+   <td colname="col3"> Nessuna corrispondenza perché la A in minuscolo non è compresa nell'intervallo tra A in maiuscolo e Z </td>
+   <td colname="col4"> </td>
+  </tr>
+ </tbody>
 </table>

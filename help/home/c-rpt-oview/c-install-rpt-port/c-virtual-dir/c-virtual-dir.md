@@ -3,7 +3,7 @@ description: Per configurare Report Portal (Portale dei rapporti), è necessario
 title: Mappatura delle pagine del Report Portal (Portale dei rapporti) su directory virtuali
 uuid: 75ca85d5-d526-48f9-b2c4-ca77c903c6af
 exl-id: 13e457d4-7039-491a-a65d-f23ad7e9fe77
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 18%
@@ -18,7 +18,7 @@ Una directory virtuale definisce l&#39;indirizzo utilizzato dai client del brows
 
 Il nome della directory virtuale assegnata a [!DNL Report Portal] deve corrispondere al nome utilizzato per la cartella VSVirtualPortalName nel passaggio 3 della sezione precedente. Ad esempio, se desideri utilizzare &quot;Portal&quot; come nome del tuo [!DNL Report Portal], devi mappare i file del portale a una directory virtuale denominata &quot;Portal&quot;. L&#39;esempio seguente mostra l&#39;URI utilizzato dai client per accedere a una [!DNL Report Portal] assegnata alla directory virtuale [!DNL VisualReportPortal] su un server denominato myWebServer:
 
-[!DNL http://myWebServer/VisualReportPortal]
+[!DNL https://myWebServer/VisualReportPortal]
 
 Le procedure seguenti descrivono come mappare [!DNL Report Portal] a una directory virtuale in IIS 5.0, 6.0 e 7.0 o versione successiva.
 

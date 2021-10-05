@@ -3,7 +3,7 @@ description: Le sovrapposizioni di pagina sono configurate solo nell’applicazi
 title: Configurare una sovrapposizione pagina
 uuid: c4c612ed-5154-4b20-96ab-24b74fba19a2
 exl-id: 4e0dfce8-def2-49f3-93e8-41d82922fb88
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -16,7 +16,7 @@ Le sovrapposizioni di pagina sono configurate solo nell’applicazione Sito, ma 
 
 Per informazioni sulla configurazione della sovrapposizione pagina per un’altra applicazione, contattare Adobe Consulting Services.
 
-La visualizzazione sovrapposizione pagina è uno strumento per l’analisi dei collegamenti HTML. Quando si richiede una sovrapposizione per una pagina particolare, Data Workbench acquisisce un’istantanea della pagina effettiva come apparirebbe in un browser Web e analizza il codice HTML che rappresenta i collegamenti in base a un elenco di espressioni regolari definite dall’utente. Per ogni collegamento sulla pagina selezionata, il software tenta di trovare una corrispondenza di pattern di espressione regolare utilizzando l’elenco fino a quando non viene trovata la prima corrispondenza. In caso di corrispondenza, il collegamento viene evidenziato nella sovrapposizione pagina.
+La visualizzazione sovrapposizione pagina è uno strumento per l’analisi dei collegamenti di HTML. Quando si richiede una sovrapposizione per una pagina particolare, Data Workbench acquisisce un’istantanea della pagina effettiva come apparirebbe in un browser Web e analizza il codice HTML che rappresenta i collegamenti in base a un elenco di espressioni regolari definite dall’utente. Per ogni collegamento sulla pagina selezionata, il software tenta di trovare una corrispondenza di pattern di espressione regolare utilizzando l’elenco fino a quando non viene trovata la prima corrispondenza. In caso di corrispondenza, il collegamento viene evidenziato nella sovrapposizione pagina.
 
 La sovrapposizione pagina mostra i dati solo quando aggiungi una legenda colore all’area di lavoro contenente la sovrapposizione pagina.
 
@@ -54,11 +54,11 @@ Per configurare la sovrapposizione pagina per [!DNL Site], devi modificare due f
 1. Specifica il dominio (e l’altezza del browser, se necessario).
 
    ```
-   window = simpleBorderWindow: 
-     client = scrollWindow: 
-       client = PageOverlay: 
-         URI Template = string: http://%Domain%%Element%
-         URI Parameters = map: 
+   window = simpleBorderWindow:
+     client = scrollWindow:
+       client = PageOverlay:
+         URI Template = string: https://%Domain%%Element%
+         URI Parameters = map:
            Domain = string: domain name
            Element = ref: Element/Name
          Dim = ref: wdata/model/dim/URI
@@ -68,9 +68,9 @@ Per configurare la sovrapposizione pagina per [!DNL Site], devi modificare due f
          Browser Height = int: browser height
      pos = v3d: (518, 202, 0)
      size = v3d: (810, 610, 0)
-     titleBar = editor: 
+     titleBar = editor:
        size = v3d: (61, 19, 0)
-       text = string: 
+       text = string:
    ```
 
 1. Salvate il file.
@@ -88,27 +88,27 @@ Per configurare la sovrapposizione pagina per [!DNL Site], devi modificare due f
 1. Fai clic con il pulsante destro del mouse su **[!UICONTROL Link Templates]** e fai clic su **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
 1. Modifica i parametri del vettore LinkRegex in base alle esigenze:
 
-<table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Per questo parametro.. </th> 
-   <th colname="col2" class="entry"> Fornisci queste informazioni.. </th> 
+<table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Per questo parametro.. </th>
+   <th colname="col2" class="entry"> Fornisci queste informazioni.. </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Dimensione </p> </td> 
-   <td colname="col2"> <p>La dimensione (in genere la dimensione URI successivo) rappresentata dal collegamento. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Espressione </p> </td> 
-   <td colname="col2"> <p>L’espressione regolare utilizzata per selezionare la parte pertinente del collegamento HTML per trovare l’elemento successivo dal Dimension. L'espressione regolare deve essere una corrispondenza esatta e il pattern di output desiderato è raggruppato con parentesi. Per informazioni dettagliate sulle espressioni regolari, consulta la <i>Guida alla configurazione del set di dati</i>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Pattern di output </p> </td> 
-   <td colname="col2"> <p>Il pattern di output dell’espressione regolare utilizzato per estrarre l’elemento risultante del parametro di Dimension. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> <p>Dimensione </p> </td>
+   <td colname="col2"> <p>La dimensione (in genere la dimensione URI successivo) rappresentata dal collegamento. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Espressione </p> </td>
+   <td colname="col2"> <p>L’espressione regolare utilizzata per selezionare la parte pertinente del collegamento di HTML per trovare l’elemento successivo dal Dimension. L'espressione regolare deve essere una corrispondenza esatta e il pattern di output desiderato è raggruppato con parentesi. Per informazioni dettagliate sulle espressioni regolari, consulta la <i>Guida alla configurazione del set di dati</i>. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>Pattern di output </p> </td>
+   <td colname="col2"> <p>Il pattern di output dell’espressione regolare utilizzato per estrarre l’elemento risultante del parametro di Dimension. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 Il file di esempio seguente mostra tre espressioni regolari:

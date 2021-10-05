@@ -3,7 +3,7 @@ description: Il passaggio finale consiste nell’eseguire il dashboard per la pr
 title: Inizializzazione del dashboard
 uuid: 847ba63e-29d8-4950-aa74-22d825388e2b
 exl-id: 47098d73-d8c4-4d14-964f-108a731d3733
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 Il passaggio finale consiste nell’eseguire il dashboard per la prima volta per consentirne l’inizializzazione.
 
-1. Apri un browser web e immetti l’URL del sito appena distribuito (ad esempio, http://localhost/dashboard).
+1. Apri un browser web e immetti l’URL del sito appena distribuito (ad esempio, https://localhost/dashboard).
 1. La connessione per la prima volta configurerà le tabelle del database, in modo che si possa verificare un leggero ritardo.
 1. Le credenziali di accesso iniziali sono:
 

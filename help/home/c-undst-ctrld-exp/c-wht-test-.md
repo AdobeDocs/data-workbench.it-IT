@@ -4,7 +4,7 @@ solution: Analytics,Analytics
 title: Cosa dovrei verificare?
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -42,6 +42,6 @@ Per raggiungere questi obiettivi, Site supporta i seguenti tipi di metodologie p
 >
 >Gli esperimenti controllati si basano sulla sostituzione degli URI, non sulla sostituzione delle stringhe di query. L’URI all’interno di un particolare URL viene evidenziato nell’esempio seguente:
 >
->`http://www.omniture.com/index.asp?id=1`
+>`https://www.omniture.com/index.asp?id=1`
 >
 >Ad esempio, nell’esperimento controllato è possibile specificare la sostituzione dell’URI del gruppo di controllo [!DNL index.asp] con l’URI del gruppo di test [!DNL index2.asp] per determinare quale progetto di pagina risulterebbe in un valore maggiore.

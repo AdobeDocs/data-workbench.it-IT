@@ -3,7 +3,7 @@ description: Passaggi per mappare il Report Portal (Portale dei rapporti) in una
 title: Mappatura del Report Portal (Portale dei rapporti) a una directory virtuale (IIS 7.0 o versione successiva)
 uuid: 9d18fb85-f9d7-48b6-a19b-1e7b68a5adca
 exl-id: 2fa3439a-1fe5-4a20-83db-d233ae8b5263
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 5%
@@ -61,4 +61,4 @@ Attualmente, la maggior parte dei client Managed Service dispone di server con i
 * Non è più necessario il [!DNL ReportPortalSetup.xml], quindi può essere eliminato.
 * Per motivi di standardizzazione, inserisci il contenuto di questo file zip in [!DNL E:\Portal].
 * Per determinare il server SMTP Per i client di servizi gestiti, vedere qui.
-* Inserisci una richiesta con NetOps per modificare la voce del nome di dominio in IIS per il server di report in modo che sia più semplice, ad esempio [!DNL reports.clientname.insight.omniture.com], in modo che l&#39;URL del portale complessivo sia [!DNL http://reports.clientname.insight.omniture.com/Portal]. Configura il file [!DNL email.asa] una volta implementata questa modifica.
+* Inserisci una richiesta con NetOps per modificare la voce del nome di dominio in IIS per il server di report in modo che sia più semplice, ad esempio [!DNL reports.clientname.insight.omniture.com], in modo che l&#39;URL del portale complessivo sia [!DNL https://reports.clientname.insight.omniture.com/Portal]. Configura il file [!DNL email.asa] una volta implementata questa modifica.

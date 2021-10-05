@@ -3,7 +3,7 @@ description: Informazioni per generare rapporti come file Excel.
 title: Generazione di rapporti come file Microsoft Excel
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 4%
@@ -22,13 +22,13 @@ Devono essere soddisfatti i seguenti requisiti:
    >[!NOTE]
    >
    >
-   >    
-   >    
-   >    * Quando si generano rapporti come file Excel, si apre una nuova istanza di Excel. Per ulteriori informazioni su questo processo, consulta [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
-   >    * Sebbene Data Workbench supporti più di 256 colonne e 65.536 righe di dati, Microsoft Excel non lo supporta.
+   >
+   >
+   >    * Quando si generano rapporti come file Excel, si apre una nuova istanza di Excel. Per ulteriori informazioni su questo processo, consulta [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757).
+   >    * Anche se Data Workbench supporta più di 256 colonne e 65.536 righe di dati, Microsoft Excel non lo supporta.
 
 
-Se questi requisiti sono soddisfatti, [!DNL Report Server] avvia automaticamente Microsoft Excel e restituisce i dati da determinate visualizzazioni, legende di dimensioni e valori e annotazioni di testo a una nuova cartella di lavoro Excel con una visualizzazione per foglio di lavoro.
+Se questi requisiti sono soddisfatti, [!DNL Report Server] avvia automaticamente Microsoft Excel e restituisce dati da determinate visualizzazioni, legende di dimensioni e valori e annotazioni di testo a una nuova cartella di lavoro Excel con una visualizzazione per foglio di lavoro.
 
 >[!NOTE]
 >

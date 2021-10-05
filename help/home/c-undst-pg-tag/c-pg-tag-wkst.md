@@ -3,7 +3,7 @@ description: Tabelle contenenti l’elenco di variabili costanti e personalizzat
 title: Foglio di lavoro di mappatura variabile del tag pagina
 uuid: 1ecef047-5a04-401d-b3d5-f31fddb134e1
 exl-id: 647c6a14-58b4-4f87-bccf-fa7ac24811a5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 11%
@@ -42,12 +42,12 @@ Tabelle contenenti l’elenco di variabili costanti e personalizzate.
 | v_pe | Errore pagina | v_pe=&quot;Validation_Error&quot; |
 | v_c | Campagna Click-through | v_c=&quot;Campaign 1&quot; |
 | v_ca | Risorsa Campaign Click-through | v_ca=&quot;72890ab&quot; |
-| v_cr | Referente campagna di click-through | v_cr=http://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
+| v_cr | Referente campagna di click-through | v_cr=https://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
 | v_ic | Campagna di impression | v_c=&quot;Campaign 1&quot; |
 | v_ica | Risorsa campagna di impression | v_ca=&quot;72890ab&quot; |
-| v_icr | Referrer campagna di impression | v_cr=http://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
+| v_icr | Referrer campagna di impression | v_cr=https://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
 | v_ln | Nome collegamento | v_ln=&quot;Informazioni su%20Us&quot; |
-| v_eurl | URL di uscita | V_eurl=&quot;http://www.offsite.com/ |
+| v_eurl | URL di uscita | V_eurl=&quot;https://www.offsite.com/ |
 | v_1 | variabile personalizzata 1 |  |
 | v_2 | variabile personalizzata 2 |  |
 | v_3 | variabile personalizzata 3 |  |

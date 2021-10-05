@@ -4,10 +4,10 @@ title: Guida di Data Workbench
 feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 94%
 
 ![Banner](/help/home/assets/doc_banner_workbench.png)
 
-[Data Workbench](http://www.adobe.com/it/solutions/digital-analytics/data-workbench.html) fa parte di [Adobe Analytics](http://www.adobe.com/it/solutions/digital-analytics.html). Fornisce funzionalità multi-canale, potenti e altamente flessibili progettate per raccogliere, elaborare, analizzare e visualizzare dati da interazioni cliente online e offline in tutti i tipi di siti web CRM, POS, e altri tipi di dati. I rapporti interattivi in Data Workbench ti consentono di analizzare e rispondere secondo informazioni statistiche pertinenti in modo da monitorare l’attività e prevedere le tendenze dei clienti.
+[Data Workbench](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) fa parte di [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html). Fornisce funzionalità multi-canale, potenti e altamente flessibili progettate per raccogliere, elaborare, analizzare e visualizzare dati da interazioni cliente online e offline in tutti i tipi di siti web CRM, POS, e altri tipi di dati. I rapporti interattivi in Data Workbench ti consentono di analizzare e rispondere secondo informazioni statistiche pertinenti in modo da monitorare l’attività e prevedere le tendenze dei clienti.
 
-* ![icona analytics](assets/analytics-icon-24.png) [Documentazione di Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html)
+* ![icona analytics](assets/analytics-icon-24.png) [Documentazione di Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html?lang=it)
 * ![icona PDF](assets/pdf_icon.png) [Scarica tutta la documentazione di Data Workbench in PDF](/help/home/assets/data-workbench.pdf)
 
 ## Argomenti principali
