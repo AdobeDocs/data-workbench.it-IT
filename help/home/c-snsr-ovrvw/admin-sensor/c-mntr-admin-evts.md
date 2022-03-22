@@ -1,12 +1,12 @@
 ---
 description: Per rilevare gli errori del sensore il prima possibile e ripararli prima che causino problemi o interruzioni importanti, è necessario monitorare regolarmente i log eventi.
-title: Monitoraggio degli eventi amministrativi
+title: Monitoraggio degli eventi amministrativi (sensore)
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 1%
+source-wordcount: '1093'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 Per rilevare gli errori del sensore il prima possibile e ripararli prima che causino problemi o interruzioni importanti, è necessario monitorare regolarmente i log eventi.
 
-**Frequenza consigliata:** almeno ogni ora
+**Frequenza consigliata:** Almeno ogni ora
 
-È possibile monitorare questi eventi utilizzando il file Visualizzatore eventi di Windows o Unix Syslog e i file [!DNL *.sensor-log] che si trovano per impostazione predefinita nella cartella [!DNL Logs] all&#39;interno della directory di installazione [!DNL Sensor]. Questi file indicano la presenza di errori durante la raccolta dei dati, soprattutto se un [!DNL Sensor] non è in grado di connettersi alla destinazione [!DNL data workbench server] e avvia la coda dei dati.
+È possibile monitorare questi eventi utilizzando il file Visualizzatore eventi di Windows o Unix Syslog e [!DNL *.sensor-log] i file che si trovano per impostazione predefinita in [!DNL Logs] nella cartella [!DNL Sensor] directory di installazione. Questi file indicano la presenza di errori durante la raccolta dei dati, soprattutto se [!DNL Sensor] impossibile connettersi alla destinazione [!DNL data workbench server] e inizia a mettere in coda i dati.
 
 ## Monitoraggio degli eventi in Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
@@ -24,13 +24,13 @@ Il sensore registra gli errori nel Registro applicazioni del Visualizzatore even
 
 I messaggi vengono registrati come &quot;Informazioni&quot;, &quot;Avviso&quot; o &quot;Errore&quot; a seconda della loro gravità.
 
-**Per aprire il Visualizzatore** eventi di Windows:
+**Per aprire il Visualizzatore eventi di Windows**:
 
-* Fare clic su **Start > Pannello di controllo Campaign > Strumenti di amministrazione > Visualizzatore eventi**.
+* Fai clic su **Start > Pannello di controllo Campaign > Strumenti di amministrazione > Visualizzatore eventi**.
 
 ## Monitoraggio di eventi su Unix {#section-5de3947891fb47ac88b7c855e545d54a}
 
-Il sensore registra gli errori nel daemon [!DNL syslog].
+Il sensore registra gli errori nel [!DNL syslog] daemon.
 
 Il daemon syslog scrive i messaggi di errore nei file di log in base alle regole specificate nel file syslog.conf. Gli errori vengono registrati con i flag &quot;LOG_DAEMON&quot; e &quot;LOG_NOTICE&quot; o &quot;LOG_ERR&quot;, a seconda della gravità.
 
@@ -62,9 +62,9 @@ Il tuo strumento di gestione della rete può essere impostato per monitorare i t
 
 All’interno dei registri eventi, devi prestare particolare attenzione ai messaggi relativi alle dimensioni della coda e inviarli immediatamente.
 
-Ad esempio, i messaggi come &quot;[!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; richiedono attenzione.
+Ad esempio, messaggi come &quot; [!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot;Ho bisogno di attenzione.
 
-## Risposta ai messaggi evento sensore {#section-0004c4a169dc4a8882d9bd87dd326ad4}
+## Risposta ai messaggi evento del sensore {#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
 Tabelle che descrivono gli eventi Sensor e le azioni suggerite per le piattaforme web server supportate.
 
@@ -91,7 +91,7 @@ Tabelle che descrivono gli eventi Sensor e le azioni suggerite per le piattaform
    <td colname="col2"> Questo messaggio viene registrato ogni volta che l'utilizzo della coda del disco supera una soglia del 10%. Se questa percentuale continua a crescere, è necessario intervenire prima che la coda sia piena e i dati vadano persi. Il problema più probabile è che il sensore abbia smesso di comunicare con Insight Server. Contatta l’Assistenza clienti Adobe. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Informazioni sensore 1013: Configurazione del sensore modificata </td> 
+   <td colname="col1"> Info sensore 1013: Configurazione del sensore modificata </td> 
    <td colname="col2"> Non è richiesta alcuna azione. Il sensore ha rilevato una modifica in uno dei suoi file di configurazione e si ricaricherà. </td> 
   </tr> 
   <tr> 
@@ -139,7 +139,7 @@ Tabelle che descrivono gli eventi Sensor e le azioni suggerite per le piattaform
    <td colname="col2"> Contatta l’Assistenza clienti Adobe. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Errore sensore 4022: Impossibile mappare il blocco di memoria di lunghezza &lt;x&gt; all'offset &lt;y&gt; </td> 
+   <td colname="col1"> Errore sensore 4022: Impossibile mappare il blocco di memoria di lunghezza &lt;x&gt; offset &lt;y&gt; </td> 
    <td colname="col2"> Contatta l’Assistenza clienti Adobe. </td> 
   </tr> 
   <tr> 
@@ -193,10 +193,10 @@ Tabelle che descrivono gli eventi Sensor e le azioni suggerite per le piattaform
 
 | Messaggio evento | Azione consigliata |
 |---|---|
-| Errore sensore 3015: la sezione ns/server/[server]/module/[module] è mancante nel file di configurazione di AOLServer. | Errore di configurazione. Correggi come indicato in errore. |
+| Errore sensore 3015: ns/server/[server]/module/[modulo] sezione mancante nel file di configurazione AOLServer. | Errore di configurazione. Correggi come indicato in errore. |
 | Errore sensore 3019: vys-cookie non chiamato prima di vys-log. Contattare il supporto tecnico. Contatta l’Assistenza clienti Adobe. | Contattare il supporto tecnico. Contatta l’Assistenza clienti Adobe. |
-| Errore sensore 3020: VisualSciencesConfig mancante come prima voce nella sezione [section] nel file di configurazione di AOLServer. | Errore di configurazione. Correggi come indicato in errore. |
-| Errore sensore 3021: Nella sezione [sezione] del file di configurazione di AOLServer manca un valore in VisualSciencesConfig. | Errore di configurazione. Correggi come indicato in errore. |
+| Errore sensore 3020: VisualSciencesConfig mancante come prima voce in [sezione] nel file di configurazione di AOLServer. | Errore di configurazione. Correggi come indicato in errore. |
+| Errore sensore 3021: Valore mancante in VisualSciencesConfig [sezione] nel file di configurazione di AOLServer. | Errore di configurazione. Correggi come indicato in errore. |
 
 **Server web di sistema iPlanet e Java**
 

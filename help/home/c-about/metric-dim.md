@@ -1,11 +1,11 @@
 ---
 description: Crea Dimension definiti dagli attributi delle metriche (Dimensioni metriche) tramite una procedura guidata dettagliata. Quindi testa, visualizza in anteprima e salva il nuovo Dim della metrica nell’elenco dei Dimension.
-title: Procedura guidata di attenuazione della metrica
+title: Procedura guidata di attenuazione della metrica (Dimension)
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '486'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Un’attenuazione della metrica converte una metrica in una nuova dimensione. Ad
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   Puoi aggiungere la tua [espressione metrica](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) oppure tagliare e incollare da un altro editor o visualizzazione di metriche. Nella procedura guidata vengono segnalati errori di sintassi, errori di formula, filtri non definiti e altri errori.
+   Puoi aggiungere il tuo [espressione metrica](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) o tagliare e incollare da un altro editor di metriche o visualizzazione. Nella procedura guidata vengono segnalati errori di sintassi, errori di formula, filtri non definiti e altri errori.
 
 1. Fai clic su **[!UICONTROL Next]**.
 
@@ -60,18 +60,18 @@ Un’attenuazione della metrica converte una metrica in una nuova dimensione. Ad
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Il formato definisce il modo in cui la metrica verrà presentata all’apertura in una visualizzazione. Questi formati sono selezionati [standard di stampa](https://www.cplusplus.com/reference/cstdio/printf/), definiti di seguito:
+   Il formato definisce il modo in cui la metrica verrà presentata all’apertura in una visualizzazione. Questi formati sono selezionati [standard printf](https://www.cplusplus.com/reference/cstdio/printf/), definito di seguito:
 
    ```
    %[flags][width][.precision][length][specifier]
    % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   Nel campo **[!UICONTROL Preview]** viene visualizzato un valore in base alla metrica e al formato selezionati.
+   In **[!UICONTROL Preview]** viene visualizzato un valore in base alla metrica e al formato selezionati.
 
 1. Aggiungi espressione Conteggio intervalli.
 
-   Puoi definire un’attenuazione della metrica con vari intervalli o periodi fissi. Questo restituisce sottoinsiemi di elementi in base alle dimensioni, ad esempio [0-4], [5-10],...). Gli elementi del livello di Dimension si riferiscono agli elementi il cui intervallo contiene il valore della metrica. Vedi la descrizione dell&#39;espressione del bucket in [Sintassi per le espressioni del Dimension](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
+   Puoi definire un’attenuazione della metrica con vari intervalli o periodi fissi. Restituisce sottoinsiemi di elementi in base alle dimensioni, ad esempio [0-4], [5-10]...). Gli elementi del livello di Dimension si riferiscono agli elementi il cui intervallo contiene il valore della metrica. Consulta la descrizione dell’espressione bucket in [Sintassi delle espressioni Dimension](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
 1. Fai clic su **[!UICONTROL Preview]** per aprire la tabella dei valori di attenuazione della metrica prima di salvare.
 
@@ -79,7 +79,7 @@ Un’attenuazione della metrica converte una metrica in una nuova dimensione. Ad
 
    La tabella descrive i valori delle metriche per attenuazione metrica.
 
-1. Fai clic su **[!UICONTROL Show in Dimension Menu]** per aggiungere la dimensione appena creata alla scheda **Dimension** nel **Finder**.
+1. Fai clic su **[!UICONTROL Show in Dimension Menu]** per aggiungere la nuova dimensione creata al **Dimension** nella scheda **Finder**.
 
 1. Fai clic su **[!UICONTROL Next]**.
 

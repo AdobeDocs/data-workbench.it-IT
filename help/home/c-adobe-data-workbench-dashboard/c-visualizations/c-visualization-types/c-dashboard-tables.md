@@ -1,12 +1,12 @@
 ---
 description: Tabelle
-title: Tabelle
+title: Tabelle del dashboard
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
 exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 1%
+source-wordcount: '212'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,6 @@ Le tabelle sono le visualizzazioni più dettagliate disponibili nell’applicazi
 
 L’ordine delle colonne può essere ridisposto facendo clic e trascinando un’intestazione di colonna in un’altra posizione nell’area di intestazione della colonna. L’ordinamento può essere eseguito in qualsiasi momento facendo clic sull’intestazione di colonna appropriata. Facendo nuovamente clic sull’intestazione della colonna, l’ordinamento viene invertito.
 
-Le selezioni possono essere effettuate nelle tabelle facendo clic su una riga specifica. Premendo e tenendo premuto il tasto **[!UICONTROL Control]** le selezioni verranno mantenute mentre fai clic su elementi aggiuntivi. Premendo e tenendo premuto il tasto **[!UICONTROL Control]** quando fai clic, viene attivato anche il valore di una selezione. Questa opzione è utile per rimuovere una sola selezione da un gruppo di elementi già selezionati. Per selezionare un intervallo di righe, fai clic prima su una riga per selezionarla, quindi premi il tasto **[!UICONTROL Shift]** facendo clic sull’ultima riga.
+Le selezioni possono essere effettuate nelle tabelle facendo clic su una riga specifica. Premendo e tenendo premuto il tasto **[!UICONTROL Control]** le selezioni vengono mantenute facendo clic su elementi aggiuntivi. Premendo e tenendo premuto il tasto **[!UICONTROL Control]** quando fai clic, il valore di una selezione viene anche attivato. Questa opzione è utile per rimuovere una sola selezione da un gruppo di elementi già selezionati. Per selezionare un intervallo di righe, fai prima clic su una riga per selezionarla, quindi premi il pulsante **[!UICONTROL Shift]** durante il clic sull&#39;ultima riga.
 
 ![](assets/table.png)

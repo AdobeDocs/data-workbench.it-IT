@@ -1,11 +1,11 @@
 ---
 description: Imposta il file insight.zbin per impostare la lingua dell'applicazione client.
-title: Impostazione delle lingue localizzate
+title: Impostazione delle lingue localizzate insight.zbin
 uuid: 7735e183-7ba3-4e11-bfe2-7f87e4c55fc8
 exl-id: bb57887f-f213-48a4-9a10-8da7ea33eda5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
@@ -14,21 +14,21 @@ ht-degree: 1%
 
 Imposta il file insight.zbin per impostare la lingua dell&#39;applicazione client.
 
-## Aggiornare i componenti del server di Data Workbench {#section-5d07a081befc4eaa8fdf7fea904e0d48}
+## Aggiornamento dei componenti del server di Data Workbench {#section-5d07a081befc4eaa8fdf7fea904e0d48}
 
 L’amministratore deve prima completare queste attività per aggiornare questi componenti server:
 
-1. **Aggiornamento al server di Data Workbench 6.x.** È necessario aggiornare il server di Data Workbench per la localizzazione aggiornando il  [!DNL base\localization\*.zbin] file . Questo file [!DNL insight.zbin] verrà quindi copiato nel client.
+1. **Aggiornamento al server di Data Workbench 6.x.** È necessario aggiornare il server di Data Workbench per la localizzazione aggiornando il [!DNL base\localization\*.zbin] file. Questo [!DNL insight.zbin] il file verrà quindi copiato nel client.
 
-   Un file [!DNL insight.zbin] è incluso nella cartella di installazione accanto al file [!DNL insight.exe]. Se ti connetti a un server che non ti fornisce file [!DNL .zbin] specifici per la lingua, Data Workbench procederà all’utilizzo di questo file.
+   Un [!DNL insight.zbin] è incluso nella cartella di installazione accanto al [!DNL insight.exe] file. Se ci si connette a un server che non fornisce informazioni specifiche per la lingua [!DNL .zbin] file, quindi Data Workbench procederà all’utilizzo di questo file.
 
-   Il file di backup [!DNL insight.zbin] può essere fornito in qualsiasi lingua. Di conseguenza, se utilizzi Data Workbench in cinese e ti connetti a un server che non supporta questa lingua, il client di Data Workbench sarà ancora in cinese, anche se il server modifica il tuo profilo di base e rimuove i file [!DNL .zbin] dalla cartella [!DNL Base/Localization].
+   Backup [!DNL insight.zbin] file può essere fornito in qualsiasi lingua. Di conseguenza, se utilizzi Data Workbench in cinese e ti connetti a un server che non supporta questa lingua, il client di Data Workbench sarà ancora in cinese, anche se il server modifica il tuo profilo di base e rimuove il tuo [!DNL .zbin] file dal [!DNL Base/Localization] cartella.
 
-1. **Aggiorna il server di rapporto di Data Workbench.** Per impostazione predefinita, la cartella principale  [!DNL insight.zbin] del server di report di Data Workbench è in inglese. In qualità di amministratore, ti verrà richiesto di selezionare e copiare il file [!DNL .zbin] dal pacchetto del server di rapporto aggiornato e inserirlo nella directory principale del server di rapporto di Data Workbench. Come il client, anche il server di report richiede gli argomenti appropriati per la lingua selezionata, ad esempio [!DNL Insight.exe -zh-cn]
+1. **Aggiorna il server di rapporto di Data Workbench.** La [!DNL insight.zbin] per impostazione predefinita, nella cartella principale del server di rapporti di Data Workbench è disponibile l’inglese. In qualità di amministratore, dovrai selezionare e copiare il [!DNL .zbin] dal pacchetto del server di rapporto aggiornato e inseriscilo nella directory principale del server di rapporto di Data Workbench. Come il client, anche il server di report richiede gli argomenti appropriati per la lingua selezionata, ad esempio [!DNL Insight.exe -zh-cn]
 
    1. Arresta i servizi del server di rapporto.
-   1. Copia la cartella [!DNL Localization] dal nuovo pacchetto del server di report.
-   1. Dalla cartella [!DNL Localization], copia il file [!DNL Insight.zbin] e inseriscilo nella directory principale del server di report in cui si trova il percorso [!DNL Insight.exe].
+   1. Copia il [!DNL Localization] dal nuovo pacchetto del server di report.
+   1. Da [!DNL Localization] cartella, copia [!DNL Insight.zbin] e posizionarlo nella directory principale del server di report dove [!DNL Insight.exe] si trova.
 
    1. Aggiungi eventuali argomenti richiesti, ad esempio [!DNL insight.exe -zh-cn]
    1. Riavvia il server di rapporto.
@@ -37,18 +37,18 @@ L’amministratore deve prima completare queste attività per aggiornare questi 
 
 Dopo aver aggiornato il server, segui questi passaggi per aggiornare ogni client.
 
-1. Per assicurarti che il client non venga aggiornato dal server durante questo aggiornamento, imposta l&#39;argomento [!DNL Insight.cfg] su False.
+1. Per assicurarti che il client non venga aggiornato dal server durante questo aggiornamento, imposta la [!DNL Insight.cfg] argomento su False.
 
    ```
    Update Software = bool: false
    ```
 
 1. Riavvia il client.
-1. Passa al profilo Software e Documenti (profilo SoftDocs) e scarica il file **[!UICONTROL insight.zbin]** richiesto dal pacchetto client: [!DNL Software\Insight Client\Insight_6.1.zip]
+1. Passa al profilo Software e Documenti (profilo SoftDocs) e scarica il **[!UICONTROL insight.zbin]** file dal pacchetto client: [!DNL Software\Insight Client\Insight_6.1.zip]
 
-1. Sposta il file [!DNL insight.zbin] nella cartella in cui si trova [!DNL insight.exe].
+1. Sposta la [!DNL insight.zbin] nella cartella in cui [!DNL insight.exe] si trova.
 
-1. Per assicurarti che i file client ora vengano aggiornati dal server, modifica l&#39;argomento del file [!DNL Insight.cfg] in True:
+1. Per essere certi che i file client vengano aggiornati dal server, modifica il [!DNL Insight.cfg] argomento file su True:
 
    ```
    Update Software = bool: true
@@ -60,9 +60,9 @@ Dopo aver aggiornato il server, segui questi passaggi per aggiornare ogni client
    >
    >Il client si sincronizzerà con il server e verrà visualizzato un messaggio che indica che si sta aggiornando. Al termine del download, verrà visualizzato un messaggio in cui si chiede se si desidera riavviare il client.
 
-1. Fare clic su **OK** per riavviare il client.
+1. Fai clic su **OK** per riavviare il client.
 
-Se ricevi il seguente messaggio, significa che il file [!DNL zbin] non è stato inserito nella stessa posizione del file [!DNL Insight.exe].
+Se ricevi il seguente messaggio, significa che [!DNL zbin] il file non è stato inserito nella stessa posizione del [!DNL Insight.exe].
 
 ```
 Insight Terminated: The backup dictionary file insight.zbin 

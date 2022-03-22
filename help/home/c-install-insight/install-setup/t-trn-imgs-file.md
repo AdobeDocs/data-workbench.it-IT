@@ -1,12 +1,12 @@
 ---
 description: Installate il file Terrain Images.cfg solo se desiderate creare nuovi livelli immagine del terreno da visualizzare sulla visualizzazione globale.
-title: Installazione del file Terrain Images.cfg
+title: Installazione del file Terrain Images.cfg (Globes)
 uuid: eba5eb17-2161-43a9-8df2-74058b9b636b
 exl-id: e73490ff-583a-4d50-9c3f-a289f1e7b209
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 8%
+source-wordcount: '115'
+ht-degree: 4%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 8%
 
 Installate il file Terrain Images.cfg solo se desiderate creare nuovi livelli immagine del terreno da visualizzare sulla visualizzazione globale.
 
-Vedere [Globi](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html).
+Vedi [Globi](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html).
 
 **Per installare il file Terrain Images.cfg su Insight Server**
 
-1. Copia il file [!DNL Terrain Images.cfg] dal file [!DNL .zip] fornito dall&#39;Adobe.
-1. Incolla il file nella cartella [!DNL Components] nella directory di installazione di Insight Server.
+1. Copia il [!DNL Terrain Images.cfg] dal [!DNL .zip] file fornito dall’Adobe.
+1. Incolla il file nel [!DNL Components] nella directory di installazione di Insight Server.
 
-   Per informazioni sulla configurazione di [!DNL Terrain Images.cfg], consulta [Livelli immagine del terreno](https://experienceleague.adobe.com/docs/data-workbench/using/geography/imagery-layers/terrain-image-layers/c-trn-img-lyrs.html).
+   Per informazioni sulla configurazione [!DNL Terrain Images.cfg], vedi [Livelli immagine del terreno](https://experienceleague.adobe.com/docs/data-workbench/using/geography/imagery-layers/terrain-image-layers/c-trn-img-lyrs.html).
