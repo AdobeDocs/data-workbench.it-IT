@@ -1,10 +1,10 @@
 ---
 description: Dopo aver implementato l'esperimento, verifica che l'esperimento funzioni correttamente.
-solution: Analytics,Analytics
+solution: Analytics
 title: Convalida dell’esperimento
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 exl-id: 6dfd01ca-288d-40fd-aad4-75a588902ebd
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 2%
@@ -15,9 +15,9 @@ ht-degree: 2%
 
 Dopo aver implementato l&#39;esperimento, verifica che l&#39;esperimento funzioni correttamente.
 
-Come descritto in [Modifica del parametro ExpCookieURL (facoltativo)](../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md#concept-215bf86bab4e4ec0b0cc803ec48a8fcf), la pagina specificata nel parametro ExpCookieURL nel file di configurazione [!DNL Sensor] può essere utilizzata per inserirsi in un gruppo di esperimenti specifico.
+Come discusso in [Modifica del parametro ExpCookieURL (facoltativo)](../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md#concept-215bf86bab4e4ec0b0cc803ec48a8fcf), la pagina specificata nel parametro ExpCookieURL nel [!DNL Sensor] il file di configurazione può essere utilizzato per collocarsi in un gruppo sperimentale specifico.
 
-La pagina virtuale predefinita è [!DNL /setcookie.htm], ma è necessario utilizzare il valore impostato nel parametro ExpCookieURL .
+La pagina virtuale predefinita è [!DNL /setcookie.htm], ma devi utilizzare il valore impostato nel parametro ExpCookieURL .
 
 ## Richiesta della pagina di test {#section-8aed3b48d47f4e6c8869c0216f8781b1}
 
@@ -29,11 +29,11 @@ Per inserirsi in un gruppo specifico all’interno di un esperimento specifico, 
 
 [!DNL https://] *&lt; [!DNL sitename/?Experiment Name=Group Name]>*
 
-Ad esempio:
+Esempio:
 
 [!DNL https://www.omniture.com/setcookie.htm?New_Homepage=index2]
 
-Quando la richiesta di URL virtuale viene inviata al server, [!DNL Sensor] ti identifica come membro del gruppo specificato all’interno dell’esperimento specificato e quindi ti reindirizzerà alla directory principale del sito web. Ora puoi passare alla posizione appropriata sul sito web per verificare se viene visualizzato il contenuto corretto per l’esperimento e il gruppo.
+Quando la richiesta di URL virtuale viene inviata al server, [!DNL Sensor] identifica l&#39;utente come membro del gruppo specificato all&#39;interno dell&#39;esperimento specificato e quindi reindirizzato alla directory principale del sito web. Ora puoi passare alla posizione appropriata sul sito web per verificare se viene visualizzato il contenuto corretto per l’esperimento e il gruppo.
 
 Se doveste digitare quanto segue nel browser, il browser mostrerebbe la home page del sito web e vi inserirebbe nel gruppo index2 all&#39;interno dell&#39;esperimento New_Homepage:
 

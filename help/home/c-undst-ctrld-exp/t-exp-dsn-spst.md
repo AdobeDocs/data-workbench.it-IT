@@ -1,10 +1,10 @@
 ---
 description: Questo file funziona non solo come foglio di lavoro ma anche come record delle tue decisioni sull'esperimento.
-solution: Analytics,Analytics
+solution: Analytics
 title: Foglio di calcolo di progettazione di esperimenti
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
 exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Il foglio di calcolo della progettazione dell’esperimento può fornire utili i
 
 **Per progettare l&#39;esperimento utilizzando il file di progettazione dell&#39;esperimento**
 
-1. Se disponi dell&#39;accesso dell&#39;amministratore ai server Web o applicazioni, passa alla cartella di installazione [!DNL Sensor] in qualsiasi computer [!DNL Sensor] del cluster Web. Se non disponi dell&#39;accesso di amministratore, contatta il tuo account manager Adobe per richiedere il file.
+1. Se disponi dell&#39;accesso amministratore ai server web o applicativi, passa alla [!DNL Sensor] cartella di installazione su qualsiasi [!DNL Sensor] nel cluster web. Se non disponi dell&#39;accesso di amministratore, contatta il tuo account manager Adobe per richiedere il file.
 1. Apri il file VS Controlled Experiment Design.xls . Se lo desideri, puoi rinominare il file.
 
    Il foglio di calcolo nella pagina seguente è un esempio di come si completa il foglio di calcolo quando si prepara a testare l’ipotesi di esempio utilizzata in questa guida.
@@ -129,7 +129,7 @@ Il foglio di calcolo della progettazione dell’esperimento può fornire utili i
  </tbody> 
 </table>
 
-I campi rimanenti vengono calcolati in base ai valori immessi e sono descritti nella tabella seguente.
+I campi rimanenti vengono calcolati in base ai valori immessi e descritti nella tabella seguente.
 
 | Campo | Descrizione |
 |---|---|
@@ -154,7 +154,7 @@ I campi rimanenti vengono calcolati in base ai valori immessi e sono descritti n
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
-e confrontalo con il valore nel campo Totale della colonna [!DNL Visitors] .
+e confrontalo con il valore nel campo Totale nel [!DNL Visitors] colonna.
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 
@@ -164,4 +164,4 @@ Dati gli input forniti, ciò che il foglio di lavoro di esempio mostra è che 10
 
 Se mantieni lo stesso numero di giorni, puoi aumentare il livello di affidabilità purché il numero totale di visitatori continui a soddisfare o superare il minimo richiesto.
 
-1. Salva il file per i record e quindi utilizza le informazioni del file per configurare l’esperimento utilizzando il foglio di calcolo per la configurazione dell’esperimento. Per ulteriori informazioni su questo foglio di calcolo, consulta [Configurazione e distribuzione dell&#39;esperimento](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429).
+1. Salva il file per i record e quindi utilizza le informazioni del file per configurare l’esperimento utilizzando il foglio di calcolo per la configurazione dell’esperimento. Per ulteriori informazioni su questo foglio di calcolo, consulta [Configurazione e distribuzione dell’esperimento](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429).

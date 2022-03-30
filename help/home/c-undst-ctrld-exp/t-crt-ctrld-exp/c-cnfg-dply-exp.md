@@ -1,10 +1,10 @@
 ---
 description: Dopo aver definito l’obiettivo, l’ipotesi e i dettagli dell’esperimento e aver creato il contenuto del test, devi configurare Sensor per implementare l’esperimento controllato.
-solution: Analytics,Analytics
+solution: Analytics
 title: Configurazione e distribuzione dell’esperimento
 uuid: 460d3ea4-a6c8-4ac4-9a3f-eab71f65b096
 exl-id: 957c2ea2-72a5-4bb2-af1d-65187613c26d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 1%
@@ -35,9 +35,9 @@ Devi completare questo file prima dell&#39;inizio dell&#39;esperimento e non mod
 >
 >Qualsiasi esperimento è prontamente nullo se la definizione dell&#39;esperimento cambia dopo l&#39;inizio dell&#39;esperimento.
 
-1. Se disponi dell&#39;accesso dell&#39;amministratore ai server Web o applicazioni, passa alla cartella di installazione [!DNL Sensor] in qualsiasi computer [!DNL Sensor] del cluster Web per accedere al file [!DNL TestExperiment.xls]. Se non disponi dell&#39;accesso di amministratore, contatta il tuo account manager Adobe per richiedere il file [!DNL TestExperiment.xls] .
+1. Se disponi dell&#39;accesso amministratore ai server web o applicativi, passa alla [!DNL Sensor] cartella di installazione su qualsiasi [!DNL Sensor] nel cluster Web per accedere al [!DNL TestExperiment.xls] file. Se non disponi dell&#39;accesso di amministratore, contatta il tuo account manager di Adobe per richiedere al [!DNL TestExperiment.xls] file.
 
-1. Apri il file [!DNL TestExperiment.xls] (se lo desideri puoi rinominare) e completa i campi seguenti:
+1. Apri [!DNL TestExperiment.xls] (se lo desideri, puoi rinominare il file) e completare i campi seguenti:
 
 <table id="table_FDD6AE631C614F97AD7AE8829E53CCAC"> 
  <thead> 
@@ -63,19 +63,19 @@ Devi completare questo file prima dell&#39;inizio dell&#39;esperimento e non mod
   </tr> 
   <tr> 
    <td colname="col1"> Stop </td> 
-   <td colname="col2"> <p>Data e ora in cui si desidera terminare l'esperimento. Quando si verifica la data e l’ora di arresto, <span class="wintitle"> Sensor </span> smetterà di inviare i valori dei cookie identificati come gruppo di test agli URI del test e invierà tutti i cookie agli URI del gruppo di controllo. </p> <p>Formato: MM/GG/AAAA H:MM </p> <p>Vedere le note del campo <span class="wintitle"> Start </span> . </p> </td> 
+   <td colname="col2"> <p>Data e ora in cui si desidera terminare l'esperimento. Quando si verifica la data e l'ora di arresto, <span class="wintitle"> Sensore </span> interromperà l’invio dei valori cookie identificati come gruppo di test agli URI di test e invierà tutti i cookie agli URI del gruppo di controllo. </p> <p>Formato: MM/GG/AAAA H:MM </p> <p>Consulta le note per <span class="wintitle"> Inizio </span> campo . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Gruppo </td> 
-   <td colname="col2"> <p>Un nome descrittivo per ciascun gruppo di visitatori nell'esperimento. I nomi dei gruppi non possono contenere spazi. </p> <p>I nomi dei gruppi vengono utilizzati per visualizzare i risultati degli esperimenti in <span class="keyword"> Insight </span>. Per ulteriori informazioni, consulta la descrizione del campo Esperimento . </p> <p>Un gruppo di controllo può essere definito in modo implicito o esplicito in base al valore immesso nel campo Percentuale. </p> <p> <p>Nota:  Per soddisfare il numero di visitatori necessari durante il periodo di tempo definito affinché l’esperimento sia statisticamente valido, potrebbe essere necessario ridurre il livello di affidabilità o aumentare il periodo di tempo. Ad esempio, se l’intervallo di tempo è di cinque giorni, il livello di affidabilità è del 98% e il numero di visitatori necessari supera il numero previsto per quel periodo di tempo, è necessario aumentare il periodo di tempo o ridurre il livello di affidabilità fino a quando il numero di visitatori previsto non supera il numero necessario per eseguire un esperimento statisticamente valido. </p> </p> </td> 
+   <td colname="col2"> <p>Un nome descrittivo per ciascun gruppo di visitatori nell'esperimento. I nomi dei gruppi non possono contenere spazi. </p> <p>I nomi dei gruppi vengono utilizzati per visualizzare i risultati degli esperimenti in <span class="keyword"> Insight </span>. Per ulteriori informazioni, consulta la descrizione del campo Esperimento . </p> <p>Un gruppo di controllo può essere definito in modo implicito o esplicito in base al valore immesso nel campo Percentuale. </p> <p> <p>Nota: Per soddisfare il numero di visitatori necessari durante il periodo di tempo definito affinché l’esperimento sia statisticamente valido, potrebbe essere necessario ridurre il livello di affidabilità o aumentare il periodo di tempo. Ad esempio, se l’intervallo di tempo è di cinque giorni, il livello di affidabilità è del 98% e il numero di visitatori necessari supera il numero previsto per quel periodo di tempo, è necessario aumentare il periodo di tempo o ridurre il livello di affidabilità fino a quando il numero di visitatori previsto non supera il numero necessario per eseguire un esperimento statisticamente valido. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Percentuale </td> 
-   <td colname="col2"> <p>La percentuale di visitatori del sito web da includere in ciascun gruppo definito. Questi valori possono essere espressi come percentuali o come valori decimali. Inoltre, entrambi i valori devono essere maggiori o minori di uno. </p> <p>Ad esempio: </p> <p>33,3% e 66,7% </p> <p>.99 e .01 </p> <p>Se la somma per tutti i gruppi è inferiore a 100, l'eccesso non definito viene impostato automaticamente su un gruppo di controllo. </p> </td> 
+   <td colname="col2"> <p>La percentuale di visitatori del sito web da includere in ciascun gruppo definito. Questi valori possono essere espressi come percentuali o come valori decimali. Inoltre, entrambi i valori devono essere maggiori o minori di uno. </p> <p>Esempio: </p> <p>33,3% e 66,7% </p> <p>.99 e .01 </p> <p>Se la somma per tutti i gruppi è inferiore a 100, l'eccesso non definito viene impostato automaticamente su un gruppo di controllo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> URL originale </td> 
-   <td colname="col2"> <p>URI del contenuto da rimappare, seguito da $. Questo valore è sensibile a maiuscole e minuscole. </p> <p>Formato: index.asp$ </p> <p>Gli URI originali possono essere specificati utilizzando un simbolo del dollaro ($) alla fine dell’URI per indicare che è necessaria una corrispondenza esatta del nome del file. Ad esempio, l'espressione <span class="filepath"> /product/product_view.asp$ </span> corrisponde solo alla pagina esatta, mentre <span class="filepath"> /product </span> corrisponde a qualsiasi pagina nella directory <span class="filepath"> /product </span> e può essere utilizzata per eseguire il mapping dell'intero sottoalbero. Le voci dell’URL originale che non specificano il carattere $ alla fine del nome del file vengono ignorate dall’esperimento, a meno che il parametro ExpPartialMatch non sia stato impostato su "on". Per ulteriori informazioni su questo parametro, consulta <a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> Modifica del parametro ExpPartialMatch (facoltativo) </a>. </p> <p>La funzionalità sperimentale controllata ignora eventuali stringhe di query aggiunte al gambo URI. Ad esempio, la pagina </p> <p> <span class="filepath"> /product/product_view.asp?productid=53982 non  </span> è un URI valido, ma la pagina  <span class="filepath"> /product/product_view.asp  </span> è un URI valido. </p> </td> 
+   <td colname="col2"> <p>URI del contenuto da rimappare, seguito da $. Questo valore è sensibile a maiuscole e minuscole. </p> <p>Formato: index.asp$ </p> <p>Gli URI originali possono essere specificati utilizzando un simbolo del dollaro ($) alla fine dell’URI per indicare che è necessaria una corrispondenza esatta del nome del file. Ad esempio, l’espressione <span class="filepath"> /product/product_view.asp$ </span> corrisponde solo alla pagina esatta, mentre <span class="filepath"> /product </span> corrisponde a qualsiasi pagina nel <span class="filepath"> /product </span> e può essere utilizzato per rimappare l’intero sottoalbero. Le voci dell’URL originale che non specificano il carattere $ alla fine del nome del file vengono ignorate dall’esperimento, a meno che il parametro ExpPartialMatch non sia stato impostato su "on". Per ulteriori informazioni su questo parametro, vedi <a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> Modifica del parametro ExpPartialMatch (facoltativo) </a>. </p> <p>La funzionalità sperimentale controllata ignora eventuali stringhe di query aggiunte al gambo URI. Ad esempio, la pagina </p> <p> <span class="filepath"> /product/product_view.asp?productid=53982 </span> non è un URI valido, ma la pagina <span class="filepath"> /product/product_view.asp </span> è un URI valido. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> URL rimosso </td> 
@@ -84,7 +84,7 @@ Devi completare questo file prima dell&#39;inizio dell&#39;esperimento e non mod
  </tbody> 
 </table>
 
-Di seguito è riportato un esempio di foglio di calcolo completato [!DNL TextExperiment.xls]:
+Esempio di completamento [!DNL TextExperiment.xls] foglio di calcolo:
 
 ![](assets/TestExperimentSpreadsheet.png)
 
@@ -99,7 +99,7 @@ Questo esempio indica che l’esperimento &quot;New_Homepage&quot; inizia il 1°
 >Anche se il file di esempio sopra ha un gruppo di controllo esplicito definito, non è necessario definire esplicitamente un gruppo di controllo: l&#39;esperimento crea automaticamente il gruppo di controllo. Se la somma delle percentuali per tutti i gruppi di un esperimento è inferiore al 100%, un gruppo di controllo implicito viene assegnato agli utenti che non rientrano in uno dei gruppi espliciti.
 
 1. Per inserire commenti per fornire ulteriori informazioni su esperimenti specifici, inizia la cella con un simbolo numerico (#) e segui i tuoi commenti. I commenti possono essere inseriti in qualsiasi punto del file.
-1. Dopo aver completato le variabili nel foglio di calcolo per la configurazione dell&#39;esperimento, salva le modifiche, quindi salva il file in formato testo delimitato da tabulazioni ( [!DNL *.txt]) utilizzando il nome specificato nel parametro ExpFile nel file di configurazione [!DNL Sensor]. Vedere [Modifica del parametro ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
+1. Dopo aver completato le variabili nel foglio di calcolo per la configurazione dell&#39;esperimento, salva le modifiche, quindi salva il file in formato testo delimitato da tabulazioni ( [!DNL *.txt]) utilizzando il nome specificato nel parametro ExpFile nel [!DNL Sensor] file di configurazione. Vedi [Modifica del parametro ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
 
    Di seguito è riportato un esempio di file di testo di configurazione di un esperimento:
 
@@ -111,15 +111,15 @@ Questo esempio indica che l’esperimento &quot;New_Homepage&quot; inizia il 1°
 
 Se hai definito i tempi di avvio e arresto, non c&#39;è motivo di eliminare mai un esperimento dal file di configurazione dell&#39;esperimento. Mantenere tutti gli esperimenti elencati nel file di configurazione dell&#39;esperimento è in realtà un buon modo per tenere traccia di come hai definito ciascuno dei tuoi esperimenti.
 
-## Distribuzione del file di configurazione e del contenuto di test {#section-34ff29649f584b93bc6129b75084b37c}
+## Distribuzione del file di configurazione e del contenuto di prova {#section-34ff29649f584b93bc6129b75084b37c}
 
-Devi distribuire il file di configurazione dell&#39;esperimento su ogni computer del cluster web che esegue un [!DNL Sensor] e servire le pagine coinvolte nell&#39;esperimento. È possibile farlo utilizzando una procedura manuale o il sistema di gestione dei contenuti esistente.
+È necessario distribuire il file di configurazione dell&#39;esperimento su ogni computer del cluster Web che esegue un [!DNL Sensor] e servendo le pagine coinvolte nell&#39;esperimento. È possibile farlo utilizzando una procedura manuale o il sistema di gestione dei contenuti esistente.
 
 **Per distribuire il contenuto del test**
 
-* Su ogni applicazione o server web che esegue un [!DNL Sensor] che serve le pagine coinvolte nell&#39;esperimento, utilizza il processo di pubblicazione esistente per distribuire il contenuto del test nella posizione appropriata.
+* Su ogni applicazione o server web che esegue un [!DNL Sensor] che serve le pagine interessate dall’esperimento, utilizza il processo di pubblicazione esistente per distribuire il contenuto del test nella posizione appropriata.
 
-   Ad esempio, se desideri pubblicare la pagina del gruppo di test [!DNL index2.asp] nella cartella di test del sito web ( [!DNL mysite.com]), devi pubblicare il file in [!DNL www.mysite.com/test].
+   Ad esempio, se desideri pubblicare la pagina del gruppo di test [!DNL index2.asp] alla cartella di test del sito web ( [!DNL mysite.com]), pubblicherai il file in [!DNL www.mysite.com/test].
 
    >[!NOTE]
    >
@@ -127,6 +127,6 @@ Devi distribuire il file di configurazione dell&#39;esperimento su ogni computer
 
 **Per implementare l&#39;esperimento**
 
-* Su ogni applicazione o server web che esegue un [!DNL Sensor] che serve le pagine coinvolte nell&#39;esperimento, posiziona il file di testo della configurazione sperimentale nella directory specificata nel parametro ExpFile nel file di configurazione [!DNL Sensor]. Vedere [Modifica del parametro ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
+* Su ogni applicazione o server web che esegue un [!DNL Sensor] che serve le pagine interessate dall&#39;esperimento, posiziona il file di testo della configurazione dell&#39;esperimento nella directory specificata nel parametro ExpFile nel [!DNL Sensor] file di configurazione. Vedi [Modifica del parametro ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
 
 [!DNL Sensor] seleziona in modo casuale i visitatori del sito web per ciascun gruppo in base alle percentuali definite nel file e trasmette loro il contenuto del test o del gruppo di controllo, a seconda delle necessità.
