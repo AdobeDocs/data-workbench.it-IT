@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Guida di Data Workbench
 user-guide-description: Scopri le funzionalità multicanale di Data Workbench. Include le guide di Data Workbench riguardanti client, installazione, configurazione dei set di dati e altro ancora.
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 290ce286a46b33e4f468aa5cfad7a2ef0198b437
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3493'
 ht-degree: 100%
 
 ---
