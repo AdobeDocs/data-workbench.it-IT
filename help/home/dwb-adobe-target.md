@@ -2,7 +2,7 @@
 description: Integra Data Workbench con Adobe Target. Esporta segmenti di dati e compila automaticamente i file di esportazione.
 title: Integrazione di Data Workbench con Adobe Target
 exl-id: e7c41e7a-aae6-4b5c-8b14-7ae97b62d70b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 1%
@@ -10,6 +10,8 @@ ht-degree: 1%
 ---
 
 # Integrazione di Data Workbench con Adobe Target
+
+{{eol}}
 
 L’integrazione di Adobe Data Workbench con Adobe Target è diventata più semplice grazie alle funzioni Data Workbench per esportare segmenti di dati e compilare automaticamente i file di esportazione.
 
@@ -19,11 +21,11 @@ Ad esempio, un visitatore cerca scarpe sul tuo sito web ma non si converte. Piut
 
 ## Configurare Data Workbench con Adobe Target
 
-1. Fare clic con il pulsante destro del mouse sull&#39;intestazione nella finestra [!UICONTROL Detail Table].
+1. Fai clic con il pulsante destro del mouse sull’intestazione nel [!UICONTROL Detail Table] finestra.
 
    ![](assets/insight-to-tnt.png)
 
-1. Selezionare **[!UICONTROL New Target Export]** e immettere il nome di un nuovo file di esportazione sotto il comando **[!UICONTROL Save As]** nel menu.
+1. Seleziona **[!UICONTROL New Target Export]** e immetti il nome di un nuovo file di esportazione nella sezione **[!UICONTROL Save As]** nel menu.
 
 1. Fai clic su **[!UICONTROL Save Export File]**.
 
@@ -31,27 +33,27 @@ Ad esempio, un visitatore cerca scarpe sul tuo sito web ma non si converte. Piut
 
    Tutte le informazioni di Adobe Target vengono compilate automaticamente. Genera l’elenco dei parametri in base a ciò che inserisci nell’esportazione del segmento. Al termine, Data Workbench invierà i dati al server Adobe Target.
 
-   **Nota:** il file Modello deve essere configurato da  [!UICONTROL Profile Architect]. È necessario immettere i valori [!UICONTROL Client Name], [!UICONTROL Domain Postfix], [!UICONTROL Mbox Host] e [!UICONTROL Mbox Name]. Se disponi di più siti, compila più modelli e salvalo sul server. I modelli di Profile Manager si trovano in `Context\FileNew\Detail Table\Export\Copy`.
+   **Nota:** Il file modello deve essere configurato dal [!UICONTROL Profile Architect]. La [!UICONTROL Client Name], [!UICONTROL Domain Postfix], [!UICONTROL Mbox Host]e [!UICONTROL Mbox Name] devono essere inseriti. Se disponi di più siti, compila più modelli e salvalo sul server. I modelli di Profile Manager si trovano in `Context\FileNew\Detail Table\Export\Copy`.
 
    ![](assets/insight-to-tnt1.png)
 
-1. Specifica il parametro di query [!UICONTROL mboxPC] .
+1. Specifica la [!UICONTROL mboxPC] parametro query.
 
-   Se il nome dell’attributo Data Workbench è diverso da [!UICONTROL mboxPC], è necessario modificare il parametro di query appropriato e rinominarlo in _mboxPC_.
+   Se il nome dell&#39;attributo Data Workbench è diverso da [!UICONTROL mboxPC], devi modificare il parametro di query appropriato e rinominarlo in _mboxPC_.
 
    ![](assets/insight-to-tnt2.png)
 
-   Quando salvi il file di esportazione nel server, l’esportazione avrà inizio. Una volta completata, l&#39;applicazione [!UICONTROL TnTSend.exe] avvierà e inizierà a inviare dati all&#39;account Target.
+   Quando salvi il file di esportazione nel server, l’esportazione avrà inizio. Una volta completato, il [!UICONTROL TnTSend.exe] l&#39;applicazione verrà avviata e inizierà a inviare dati all&#39;account Target.
 
 ## Configurazione di Data Workbench per Target
 
 Completa le seguenti attività in Adobe Target:
 
-Data Workbench sta passando i profili utente ad Adobe Target. Per configurare l’esportazione in Target, devi configurare e abilitare la relativa API e fornire i parametri **[!UICONTROL clientname]** e **[!UICONTROL domain postfix]** per il file di configurazione dell’esportazione (`export.cfg`).
+Data Workbench sta passando i profili utente ad Adobe Target. Per configurare per l’esportazione in Target, devi configurare e abilitare la relativa API e fornire le **[!UICONTROL clientname]** e **[!UICONTROL domain postfix]** parametri per il file di configurazione dell&#39;esportazione (`export.cfg`).
 
-È stata aggiunta una nuova opzione booleana denominata **[!UICONTROL Oneshot]** ai file di esportazione dei segmenti. Questa opzione è inclusa nel file modello distribuito con il nuovo profilo. Se [!UICONTROL Oneshot] è impostato su _true_, il file `.export` verrà rinominato in `.export.done-TIMESTAMP` al termine dell&#39;esportazione, assicurando che il segmento non venga mai esportato più di una volta. Questo è importante quando si esporta in Adobe Target.
+Nuova opzione booleana denominata **[!UICONTROL Oneshot]** è stato aggiunto ai file di esportazione del segmento. Questa opzione è inclusa nel file modello distribuito con il nuovo profilo. Se [!UICONTROL Oneshot] è impostato su _true_, quindi `.export` verrà rinominato in `.export.done-TIMESTAMP` una volta completata l’esportazione, assicurati che il segmento non venga mai esportato più di una volta. Questo è importante quando si esporta in Adobe Target.
 
-**Nota:** una chiamata da Data Workbench ad Adobe Target conta come  [!UICONTROL mbox] chiamata, che richiede una chiamata per ogni profilo inviato. Di conseguenza, se tra le due soluzioni sono necessarie più chiamate, i costi aumentano.
+**Nota:** Una chiamata da Data Workbench ad Adobe Target conta come [!UICONTROL mbox] chiamata , che richiede una chiamata per ogni profilo inviato. Di conseguenza, se tra le due soluzioni sono necessarie più chiamate, i costi aumentano.
 
 Una configurazione incompleta genera il seguente messaggio di errore nel registro:
 
@@ -63,7 +65,7 @@ ClientName,MboxHost,MboxName
 
 ## Configurazione di Adobe Target per Data Workbench
 
-All’interno di Adobe Target, non è necessaria alcuna configurazione speciale per consentire al cliente di inviare i dati del profilo. Le informazioni di profilo per un utente vengono in genere trasmesse nella normale richiesta [!UICONTROL mbox] e i server renderanno disponibili i parametri di profilo per una configurazione di campagna mirata come funzionalità standard senza alcuna configurazione aggiuntiva.
+All’interno di Adobe Target, non è necessaria alcuna configurazione speciale per consentire al cliente di inviare i dati del profilo. Le informazioni di profilo per un utente vengono in genere trasmesse nel [!UICONTROL mbox] e i server renderanno disponibili i parametri di profilo per una configurazione di campagna mirata come funzionalità standard senza alcuna configurazione aggiuntiva.
 
 Adobe Target ha integrato l’integrazione della Data Workbench, che può essere abilitata dalla pagina Dettagli del client super utente . L’abilitazione dell’opzione consente di far superficie ai segmenti condivisi da Data Workbench in Adobe Target per renderli disponibili per il targeting.
 
@@ -71,10 +73,10 @@ Adobe Target ha integrato l’integrazione della Data Workbench, che può essere
 
 Riduci i rapporti lunghi a [!UICONTROL HTTP.log] quando utilizzi [!UICONTROL ExportIntegration.exe] per esportare file di integrazione Adobe Target.
 
-Un nuovo file di configurazione [!UICONTROL httpLoggingEI.cfg] (che si trova in `server\Admin\Export\httpLoggingEI.cfg`) consente di ridurre la registrazione dettagliata nel file [!UICONTROL HTTP.log] per quando si esportano dati utilizzando [!UICONTROL ExportIntegration.exe]. Questo consente di interrompere la registrazione dettagliata di richieste/risposte.
+Nuovo [!UICONTROL httpLoggingEI.cfg] file di configurazione (situato in `server\Admin\Export\httpLoggingEI.cfg`) consente di ridurre la registrazione dettagliata nel [!UICONTROL HTTP.log] file per l&#39;esportazione di dati utilizzando [!UICONTROL ExportIntegration.exe]. Questo consente di interrompere la registrazione dettagliata di richieste/risposte.
 
-La registrazione dettagliata è già acquisita nei file [!UICONTROL TnTSend.log].
+Registrazione dettagliata già acquisita in [!UICONTROL TnTSend.log] file.
 
-__ Truesets registrazione dettagliata e  __ Falsestops registrazione dettagliata su  [!UICONTROL HTTP.log] file.
+_True_ imposta la registrazione dettagliata e _False_ interrompe la registrazione dettagliata su [!UICONTROL HTTP.log] file.
 
-Nell’impostazione False, al file [!UICONTROL HTTP.log] verrà inviato solo un messaggio di avviso (contenuto Info non inviato).
+Nell&#39;impostazione False, verrà inviato solo un messaggio di avviso al [!UICONTROL HTTP.log] file (contenuto informativo non inviato).

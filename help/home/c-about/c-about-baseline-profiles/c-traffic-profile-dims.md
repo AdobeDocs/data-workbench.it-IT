@@ -3,7 +3,7 @@ description: Il profilo Traffico contiene le seguenti dimensioni per identificar
 title: Dimensioni del profilo di traffico
 uuid: 9c0dabfc-67c9-4772-99ac-4c503c06ea78
 exl-id: 1e7d2904-aa5d-4848-a398-5d4669953be9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 8%
@@ -12,9 +12,11 @@ ht-degree: 8%
 
 # Dimensioni del profilo di traffico{#traffic-profile-dimensions}
 
+{{eol}}
+
 Il profilo Traffico contiene le seguenti dimensioni per identificare le azioni dei visitatori.
 
-Le dimensioni nella tabella seguente sono definite nel set di dati di trasformazione includono file nella Traffic\Dataset\Transformation directory.
+Le dimensioni nella tabella seguente sono definite nel set di dati di trasformazione includono file nella directory Traffic\Dataset\Transformation .
 
 | Nome | Tipo | Livello | Descrizione |
 |---|---|---|---|
@@ -25,8 +27,8 @@ Le dimensioni nella tabella seguente sono definite nel set di dati di trasformaz
 | Ora del giorno | Semplice | Sessione | Ora del giorno della prima voce di log di una sessione. |
 | Mese | Semplice | Sessione | Mese della prima voce di registro di una sessione. |
 | Visualizzazioni di pagina | Contabile | Sessione | Una voce di registro o &quot;Record dati evento&quot; che soddisfa la condizione di visualizzazione pagina. |
-| Referrer | Semplice | Sessione | Il secondo dominio di livello del referente della prima voce di registro della sessione (o Nessuno se si tratta di un dominio di riferimento interno). |
-| Sessione | Contabile | Visitatore | Un periodo di attività contigua correlata da un visitatore. È delimitato da un periodo di inattività di 30 minuti e da un dominio referente esterno o da una durata massima di sessione di 48 ore. Nel file [!DNL Transformation.cfg] è possibile configurare sia il timeout che il set di domini considerati interni. |
+| Destinatario che inoltra | Semplice | Sessione | Il secondo dominio di livello del referente della prima voce di registro della sessione (o Nessuno se si tratta di un dominio di riferimento interno). |
+| Sessione | Contabile | Visitatore | Un periodo di attività contigua correlata da un visitatore. È delimitato da un periodo di inattività di 30 minuti e da un dominio referente esterno o da una durata massima di sessione di 48 ore. È possibile configurare sia il timeout che il set di domini considerati interni nella variabile [!DNL Transformation.cfg] file. |
 | URI | Semplice | Visualizzazioni di pagina | L’URI di una visualizzazione di pagina. La dimensione URI può essere ridefinita utilizzando le trasformazioni ReplaceURI, PrependURI e AppendURI. |
 | Visitatore | Contabile | N/D | Un valore univoco di x-trackingid. Di solito corrisponde a un browser univoco se vengono utilizzati cookie persistenti. Il codice x-trackingid può essere altrimenti basato su un numero IP o su un altro identificatore univoco, ad esempio il nome comune x.509. |
 | Settimana | Semplice | Sessione | La settimana della prima voce di registro di una sessione. |
@@ -80,7 +82,7 @@ Le dimensioni nella tabella seguente sono definite nella directory di Dimension 
    <td colname="col3"> Nome di ogni pagina visitata durante una sessione. Inizialmente, il nome di ogni pagina è lo stesso dell’URI, ma può essere modificato per facilitarne l’interpretazione. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Referrer </td> 
+   <td colname="col1"> Destinatario che inoltra </td> 
    <td colname="col2"> Ereditato dalla dimensione referente incorporata </td> 
    <td colname="col03"> Sessione </td> 
    <td colname="col3"> Il nome di dominio di secondo livello del sito web che per la prima volta ha fatto riferimento a una sessione del sito (come fornito dal browser del visitatore). </td> 
