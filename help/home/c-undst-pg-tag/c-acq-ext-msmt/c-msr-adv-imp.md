@@ -3,7 +3,7 @@ description: Il marketing del tuo sito web può comportare il posizionamento di 
 title: Misurazione dell’impression pubblicitaria
 uuid: ca2bd6bf-4f49-406c-b47a-18d6abfb48a4
 exl-id: 77cd816e-63a4-4080-ac65-0661e1de4ec0
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 4%
@@ -12,11 +12,13 @@ ht-degree: 4%
 
 # Misurazione dell’impression pubblicitaria{#measuring-advertisement-impression}
 
+{{eol}}
+
 Il marketing del tuo sito web può comportare il posizionamento di annunci pubblicitari sotto forma di immagini o altri file rich media (serviti dal tuo server web) su siti web di terze parti.
 
 In questi casi, potrebbe essere utile misurare sia l’impressione dell’annuncio su un browser sia il successivo click-through, se si verifica, dell’URL di destinazione dell’annuncio sul sito web.
 
-Per gli annunci sotto forma di immagini, l&#39;aggiunta di [!DNL Log=1] alla stringa di query determina la richiesta di immagine e quindi l&#39;impression pubblicitaria, catturata da [!DNL Sensor] a scopo di analisi.
+Per annunci sotto forma di immagini, aggiunta [!DNL Log=1] nella stringa di query restituisce la richiesta di immagine e quindi l&#39;impression pubblicitaria, catturata da [!DNL Sensor] a fini di analisi.
 
 ```
 <!—REFERENCE IMPRESSION TAG->
@@ -30,7 +32,7 @@ Per gli annunci sotto forma di immagini, l&#39;aggiunta di [!DNL Log=1] alla str
 | v_ica= | Valore che indica la risorsa della campagna di impression | v_ica=&quot;72890ab&quot; |
 | v_icr= | Valore che indica il referente campagna di impression | v_icr=&quot;https://money.cnn.com/markets/ |
 
-Oltre a aggiungere [!DNL Log=1] alla richiesta di immagine, è necessario aggiungere un identificatore all&#39;URL che porta dall&#39;annuncio alla pagina di destinazione all&#39;interno del sito web per tenere traccia dell&#39;annuncio che ha portato al click-through e per monitorare il click-through alla campagna particolare per quell&#39;annuncio.
+Oltre ad aggiungere [!DNL Log=1] alla richiesta di immagine, è necessario aggiungere un identificatore all’URL che porta dall’annuncio alla pagina di destinazione all’interno del sito web per tenere traccia dell’annuncio che ha portato al click-through e per monitorare il click-through alla campagna particolare per quell’annuncio.
 
 ```
 <a href=”www.mysite.com/path/to/landingpage?Log=1&v_c=CAMPAIGN&v_ca=72890ab&v_cr=https://money.cnn.com/markets/”>

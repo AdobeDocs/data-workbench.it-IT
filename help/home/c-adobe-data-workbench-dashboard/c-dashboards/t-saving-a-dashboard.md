@@ -3,7 +3,7 @@ description: Salvataggio di un dashboard
 title: Salvataggio di un dashboard
 uuid: 50dd713a-f7ce-4b53-8ba6-398643d2eef2
 exl-id: 4affc287-470b-47c6-af55-c0b6919321b0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 4%
@@ -12,17 +12,19 @@ ht-degree: 4%
 
 # Salvataggio di un dashboard{#saving-a-dashboard}
 
-1. Per salvare un nuovo dashboard, selezionare **[!UICONTROL Save]** o **[!UICONTROL Save As…]** dal menu Dashboard nella parte superiore dell&#39;interfaccia del dashboard. Per un nuovo dashboard, entrambe le opzioni hanno lo stesso risultato.
+{{eol}}
 
-   Viene avviata la finestra **[!UICONTROL Save New Dashboard]** in cui è possibile inserire un titolo, una breve descrizione e una posizione in cui memorizzare il dashboard.
+1. Per salvare un nuovo dashboard, seleziona **[!UICONTROL Save]** o **[!UICONTROL Save As…]** dal menu Dashboard nella parte superiore dell&#39;interfaccia del dashboard. Per un nuovo dashboard, entrambe le opzioni hanno lo stesso risultato.
+
+   Viene avviato il **[!UICONTROL Save New Dashboard]** in cui è possibile inserire un titolo, una breve descrizione e una posizione in cui memorizzare il dashboard.
 
    >[!NOTE]
    >
-   >Le dashboard possono essere private o condivise. Se un dashboard è contrassegnato come **[!UICONTROL Private]** nel campo **[!UICONTROL Visibility]**, solo l&#39;utente (o un amministratore di sistema) può visualizzare e modificare il dashboard. Se un dashboard è contrassegnato come **[!UICONTROL Shared]** nel campo **[!UICONTROL Visibility]**, ogni utente del sistema può visualizzare e modificare il dashboard.
+   >Le dashboard possono essere private o condivise. Se un dashboard è etichettato **[!UICONTROL Private]** sulla **[!UICONTROL Visibility]** solo l&#39;utente (o un amministratore di sistema) può visualizzare e modificare il dashboard. Se un dashboard è etichettato **[!UICONTROL Shared]** sulla **[!UICONTROL Visibility]** Ogni utente del sistema può visualizzare e modificare il dashboard.
 
-1. Sotto il campo **[!UICONTROL Source]** , scegli una miniatura dell’immagine per rappresentare il dashboard. Per impostazione predefinita, una schermata del dashboard viene scattata e utilizzata come miniatura del dashboard.
+1. Sotto la **[!UICONTROL Source]** scegli una miniatura dell’immagine per rappresentare il dashboard. Per impostazione predefinita, una schermata del dashboard viene scattata e utilizzata come miniatura del dashboard.
 
-   Questa miniatura viene utilizzata se è selezionata l’opzione **[!UICONTROL Captured Screenshot]** . Se desideri utilizzare un altro file di immagine, seleziona l’opzione **[!UICONTROL Image File]** e scegli l’immagine da rappresentare nel dashboard.
+   Questa miniatura viene utilizzata se **[!UICONTROL Captured Screenshot]** è selezionata. Se desideri utilizzare un altro file di immagine, seleziona la **[!UICONTROL Image File]** e scegli l&#39;immagine che desideri rappresentare il dashboard.
 
    >[!NOTE]
    >

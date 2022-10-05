@@ -3,14 +3,16 @@ description: Informazioni sulla visualizzazione delle informazioni di identifica
 title: Visualizzare i dettagli nodo
 uuid: 2016a650-b021-4295-8313-d6287578ed10
 exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 # Visualizzare i dettagli nodo{#view-node-details}
+
+{{eol}}
 
 Informazioni sulla visualizzazione delle informazioni di identificazione su un componente del profilo.
 
@@ -24,7 +26,7 @@ Nome dell&#39;origine del registro e nome del file in cui è definita l&#39;orig
 
 **Campo**
 
-Nome del campo.
+Nome del campo 
 
 ![](assets/vis_DependencyMap_FieldID.png)
 
@@ -36,7 +38,7 @@ Il tipo e il nome della trasformazione, il nome del file in cui è definita la t
 
 >[!NOTE]
 >
->Le informazioni sulle prestazioni per la trasformazione vengono visualizzate solo se l&#39;opzione [!DNL Show Performance Data] è abilitata per la mappa di dipendenza. Per ulteriori informazioni, vedere [Visualizzazione dei dati sulle prestazioni](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
+>Le informazioni sulle prestazioni per la trasformazione vengono visualizzate solo se la [!DNL Show Performance Data] è abilitata per la mappa di dipendenza. Per ulteriori informazioni, consulta [Visualizzazione dei dati sulle prestazioni](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Dimensione estesa**
 
@@ -46,7 +48,7 @@ Nome e tipo della dimensione estesa, nome del file in cui è definita la dimensi
 
 >[!NOTE]
 >
->Le informazioni sulle prestazioni per la dimensione estesa vengono visualizzate solo se l’opzione [!DNL Show Performance Data] è abilitata per la mappa di dipendenza. Per ulteriori informazioni, vedere [Visualizzazione dei dati sulle prestazioni](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
+>Le informazioni sulle prestazioni per la dimensione estesa vengono visualizzate solo se la [!DNL Show Performance Data] è abilitata per la mappa di dipendenza. Per ulteriori informazioni, consulta [Visualizzazione dei dati sulle prestazioni](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Metrica**
 
@@ -68,7 +70,7 @@ Se definito nel set di dati, il percorso del file di configurazione in cui è de
 
 **Aree di lavoro e rapporti**
 
-Percorso dell’area di lavoro o del report nella directory Workspace o Report del profilo.
+Percorso dell’area di lavoro o del rapporto nella directory Workspace o Report del profilo.
 
 ![](assets/vis_DependencyMap_WorkspaceID.png)
 

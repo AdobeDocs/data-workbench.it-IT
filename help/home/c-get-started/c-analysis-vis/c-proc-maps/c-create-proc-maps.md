@@ -3,7 +3,7 @@ description: È possibile creare mappe del processo 2D e 3D trascinando gli elem
 title: Creare una mappa del processo
 uuid: dbcde637-0411-4296-99ca-5510e0285e4b
 exl-id: 2e417a8e-5b1c-4dce-9e4e-ac7ed044564c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 1%
@@ -12,9 +12,11 @@ ht-degree: 1%
 
 # Creare una mappa del processo{#create-a-process-map}
 
+{{eol}}
+
 È possibile creare mappe del processo 2D e 3D trascinando gli elementi da grafici a barre, tabelle e viste gerarchiche su una mappa vuota.
 
-Gli elementi che è possibile aggiungere devono essere elementi della dimensione di base della mappa di processo. Puoi anche trascinare i nodi da una mappa del processo a un&#39;altra, purché le mappe utilizzino la stessa dimensione di base. Inoltre, è possibile ingrandire o spostare l’intera mappa per concentrarla su un particolare nodo, oppure modificarla in altri tipi di visualizzazione. Consulta [Zoom in Visualizations](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
+Gli elementi che è possibile aggiungere devono essere elementi della dimensione di base della mappa di processo. Puoi anche trascinare i nodi da una mappa del processo a un&#39;altra, purché le mappe utilizzino la stessa dimensione di base. Inoltre, è possibile ingrandire o spostare l’intera mappa per concentrarla su un particolare nodo, oppure modificarla in altri tipi di visualizzazione. Vedi [Zoom nelle visualizzazioni](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
 
 **Per aggiungere elementi a una mappa del processo utilizzando una tabella o un grafico a barre**
 
@@ -39,9 +41,9 @@ Gli elementi che è possibile aggiungere devono essere elementi della dimensione
    >
    >Gli elementi che è possibile aggiungere devono essere elementi della dimensione di base della mappa di processo.
 
-   Se si trascina un singolo elemento su una mappa del processo, viene creato un nodo mappa solo per tale elemento, ma se si selezionano più elementi (un gruppo) o una cartella contenente più elementi, trascinando dalla gerarchia viene creato un singolo nodo per tale gruppo o cartella. Ad esempio, se lavori con i dati del sito web, trascinando una cartella denominata [!DNL site.com/cgi-bin] su una mappa viene creato un nodo denominato [!DNL site.com/cgi-bin/*], che rappresenta tutte le pagine e le directory figlie di tale cartella.
+   Se si trascina un singolo elemento su una mappa del processo, viene creato un nodo mappa solo per tale elemento, ma se si selezionano più elementi (un gruppo) o una cartella contenente più elementi, trascinando dalla gerarchia viene creato un singolo nodo per tale gruppo o cartella. Ad esempio, se lavori con i dati del sito web, trascina una cartella denominata [!DNL site.com/cgi-bin] su una mappa crea un nodo chiamato [!DNL site.com/cgi-bin/*], che rappresenta tutte le pagine e le directory figlie di tale cartella.
 
-Per ulteriori informazioni sulle visualizzazioni gerarchiche delle pagine, vedere [Applicazione delle visualizzazioni gerarchiche](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff).
+Per ulteriori informazioni sulle visualizzazioni gerarchiche delle pagine, consulta [Applicazione delle visualizzazioni gerarchiche](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff).
 
 **Per aggiungere nodi a una mappa del processo da un&#39;altra mappa del processo**
 

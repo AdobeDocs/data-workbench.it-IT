@@ -3,7 +3,7 @@ description: Come parte dei dati di misurazione della linea di base raccolti, Se
 title: Acquisizione dei dati di misurazione tramite cookie
 uuid: 34cd6baf-6317-4774-8165-58208698b53c
 exl-id: 37c7b5f6-33bf-4373-963a-e08a826e05df
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 2%
@@ -12,15 +12,17 @@ ht-degree: 2%
 
 # Acquisizione dei dati di misurazione tramite cookie{#acquiring-measurement-data-through-cookies}
 
+{{eol}}
+
 Come parte dei dati di misurazione della linea di base raccolti, Sensor raccoglie i cookie di dominio inviati dal computer di un visitatore quando effettua una richiesta dal server web.
 
 Questo include sia cookie persistenti che di sessione impostati dal sito web quando un visitatore interagisce con il sistema.
 
 Nella maggior parte dei casi, i siti web impostano cookie persistenti per identificare i visitatori o acquisire gli input degli utenti da utilizzare nelle sessioni dei visitatori successive. Tutte le informazioni scritte e memorizzate nei cookie persistenti possono essere acquisite e utilizzate insieme a tutti gli altri dati di misurazione all’interno del server di Data Workbench.
 
-Un esempio di cookie persistente di questo tipo potrebbe includere un identificatore del cliente sotto forma di una chiave numerica presente all’interno di un cookie specifico del dominio che risiede nel computer del visitatore. Oltre a identificare l’utente come visitatore di ritorno, il cookie persistente può anche essere utilizzato per identificare ulteriormente il visitatore come cliente di ritorno o per collegare il visitatore alle informazioni contenute in un database del cliente per consentire la visualizzazione offline delle informazioni demografiche dei clienti all’interno di [!DNL Site] e utilizzate per l’analisi interattiva.
+Un esempio di cookie persistente di questo tipo potrebbe includere un identificatore del cliente sotto forma di una chiave numerica presente all’interno di un cookie specifico del dominio che risiede nel computer del visitatore. Oltre a identificare l’utente come visitatore di ritorno, il cookie persistente può anche essere utilizzato per identificare ulteriormente il visitatore come cliente di ritorno o per collegare il visitatore alle informazioni contenute in un database del cliente per consentire la visualizzazione offline delle informazioni demografiche dei clienti all’interno di [!DNL Site] e utilizzati per l’analisi interattiva.
 
-I cookie di sessione possono essere un buon meccanismo per raccogliere l’input dell’utente tramite campi modulo o altri elementi dinamici interattivi all’interno del sito web. Nel caso di un sito web che implementa moduli per acquisire dati di input specifici dell’utente, le informazioni rimangono nel cookie di sessione solo per tutto il tempo in cui la sessione è attiva. Quando un utente abbandona il sito web o termina successivamente una sessione, le informazioni non vengono più memorizzate nel computer dell’utente. Tuttavia, le informazioni immesse vengono acquisite da [!DNL Sensor] e rese disponibili come dati di misurazione all&#39;interno di [!DNL Site].
+I cookie di sessione possono essere un buon meccanismo per raccogliere l’input dell’utente tramite campi modulo o altri elementi dinamici interattivi all’interno del sito web. Nel caso di un sito web che implementa moduli per acquisire dati di input specifici dell’utente, le informazioni rimangono nel cookie di sessione solo per tutto il tempo in cui la sessione è attiva. Quando un utente abbandona il sito web o termina successivamente una sessione, le informazioni non vengono più memorizzate nel computer dell’utente. Tuttavia, le informazioni inserite vengono acquisite da [!DNL Sensor] e resi disponibili come dati di misurazione all&#39;interno di [!DNL Site].
 
 Di seguito è riportato un esempio di utilizzo di un cookie di sessione per acquisire una singola variabile di modulo immessa da un visitatore.
 
@@ -56,7 +58,7 @@ testform.submit();
 </html> 
 ```
 
-In questo esempio, viene chiamata una funzione per impostare un cookie di sessione sul computer del visitatore con il nome del campo e il valore inserito nel campo modulo. Man mano che il modulo viene inviato e viene richiesta la pagina Web successiva, il set di cookie di sessione viene passato al server web e raccolto da [!DNL Sensor]. I seguenti dati sono quindi disponibili all’interno del server di Data Workbench per l’utilizzo nell’analisi dei dati:
+In questo esempio, viene chiamata una funzione per impostare un cookie di sessione sul computer del visitatore con il nome del campo e il valore inserito nel campo modulo. Quando il modulo viene inviato e viene richiesta la pagina Web successiva, il cookie di sessione viene passato al server web e raccolto da [!DNL Sensor]. I seguenti dati sono quindi disponibili all’interno del server di Data Workbench per l’utilizzo nell’analisi dei dati:
 
 | Dati raccolti | Spiegazione | Esempio |
 |---|---|---|

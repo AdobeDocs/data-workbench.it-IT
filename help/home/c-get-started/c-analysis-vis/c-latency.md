@@ -1,34 +1,38 @@
 ---
-description: La visualizzazione Latenza consente di analizzare il comportamento latente dei clienti entro un determinato numero di giorni prima o dopo che un evento si è verificato dopo una campagna o un altro tipo di evento o periodo di tempo.
+description: La visualizzazione Latenza consente di analizzare il comportamento latente del cliente entro un determinato numero di giorni prima o dopo che si è verificato un evento dopo una campagna o un altro tipo di evento o periodo di tempo.
 title: Analisi della latenza
 uuid: 80760420-0e21-420a-b585-9cf2d9a207bd
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 3b645ddc-6ba0-4cd5-89e6-737257d382b3
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 1%
 
 ---
 
-
 # Analisi della latenza{#latency-analysis}
 
-La visualizzazione Latenza consente di analizzare il comportamento latente dei clienti entro un determinato numero di giorni prima o dopo che si è verificato un evento dopo una campagna o un altro tipo di evento o periodo di tempo.
+{{eol}}
 
-La **[!UICONTROL Latency]** visualizzazione consente di impostare una metrica per identificare il comportamento prima, durante o dopo che si è verificato un evento per determinarne l&#39;effetto sul comportamento del cliente. Ad esempio, puoi identificare l’efficacia di una campagna di marketing visualizzando le entrate una settimana dopo l’evento. Oppure potete mostrare il comportamento dei clienti una settimana prima dell&#39;evento come riferimento per vedere l&#39;effetto di un evento sul comportamento.
+La visualizzazione Latenza consente di analizzare il comportamento latente del cliente entro un determinato numero di giorni prima o dopo che si è verificato un evento dopo una campagna o un altro tipo di evento o periodo di tempo.
 
-Utilizzando la visualizzazione Latenza, puoi modificare la dimensione Tempo da giorno, ora, settimana o altro periodo di tempo, per visitare, fare clic, toccare o altre dimensioni numerabili.
+La **[!UICONTROL Latency]** la visualizzazione ti consente di impostare una metrica per identificare il comportamento prima, durante o dopo che si è verificato un evento per determinarne l’effetto sul comportamento del cliente. Ad esempio, puoi identificare l’efficacia di una campagna di marketing visualizzando le entrate una settimana dopo l’evento. Oppure puoi mostrare il comportamento del cliente una settimana prima dell’evento come linea di base per vedere l’effetto di un evento sul comportamento.
+
+Utilizzando la visualizzazione Latenza, puoi modificare la dimensione Tempo da un giorno, un’ora, una settimana o un altro periodo di tempo per visitare, fare clic, hit o altre dimensioni numerabili.
 
 **Impostazione dell’analisi della latenza**
 
-1. Aprite un’area di lavoro e fate clic con il pulsante destro del mouse [!DNL Visualization] > [!DNL Latency].
+1. Apri un’area di lavoro e fai clic con il pulsante destro del mouse [!DNL Visualization] > [!DNL Latency].
 
-1. Dal menu, selezionate il numero di giorni da analizzare per gli eventi di latenza. ![](assets/latency_vis.png)
+1. Dal menu , seleziona il numero di giorni da analizzare per gli eventi di latenza. ![](assets/latency_vis.png)
 
-1. Fare clic con il pulsante destro del mouse sull&#39; **[!UICONTROL Latency]** etichetta per aprire il menu.
+1. Fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL Latency]** per aprire il menu.
 
-   * Utilizzando l’ **[!UICONTROL Set Countable]** opzione, impostare una dimensione numerabile come visita, clic, clic, clic e altri.
-   * Utilizzando l’ **[!UICONTROL Set Countable (Time)]** opzione, impostate una dimensione temporale come giorno, ora, settimana, giorno della settimana e ora del giorno.
+   * Utilizzo della **[!UICONTROL Set Countable]** imposta una dimensione numerabile, ad esempio visita, click-through, hit e altri.
+   * Utilizzo della **[!UICONTROL Set Countable (Time)]** imposta una dimensione temporale, ad esempio giorno, ora, settimana, giorno della settimana e ora del giorno.
+
    ![](assets/latency_vis_countable.png)
 
-1. Modificate la visualizzazione Latenza.
+1. Modifica la visualizzazione Latenza .
 
-   Fare clic con il pulsante destro del mouse sull&#39; **[!UICONTROL Latency]** intestazione per selezionare le opzioni di menu per modificare le tabelle di conteggio, le dimensioni, per etichettare nuovamente oppure per selezionare o modificare altre impostazioni.
-
+   Fai clic con il pulsante destro del mouse sul pulsante **[!UICONTROL Latency]** intestazione per selezionare le opzioni di menu per modificare le numerazioni, le dimensioni, per rietichettare o per selezionare o modificare altre impostazioni.

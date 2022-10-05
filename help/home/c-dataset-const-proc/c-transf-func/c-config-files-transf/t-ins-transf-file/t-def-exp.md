@@ -3,7 +3,7 @@ description: Gli esportatori forniscono le istruzioni per la trasmissione dei da
 title: Definizione degli esportatori
 uuid: 565d4482-6c25-407c-bda7-0d116180902a
 exl-id: 5de6266a-e959-414c-9512-5e9f4011881b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 2%
@@ -12,18 +12,20 @@ ht-degree: 2%
 
 # Definizione degli esportatori{#defining-exporters}
 
+{{eol}}
+
 Gli esportatori forniscono le istruzioni per la trasmissione dei dati dell’evento.
 
-La funzionalità di trasformazione fornisce tre tipi di esportatori per l&#39;esportazione di file [!DNL .vsl], file di registro, file XML e dati ODBC come file [!DNL .vsl], file di testo o file di testo delimitati che possono essere utilizzati dalle routine di caricamento del DataWarehouse, dalle agenzie di controllo o da altre destinazioni.
+La funzionalità di trasformazione fornisce tre tipi di esportatori per l&#39;esportazione [!DNL .vsl] file, file di registro, file XML e dati ODBC come [!DNL .vsl] file, file di testo o file di testo delimitati che possono essere utilizzati dalle routine di caricamento del DataWarehouse, dalle agenzie di controllo o da altre destinazioni.
 
 >[!NOTE]
 >
->Affinché un esportatore possa funzionare correttamente, l&#39;origine di registro deve soddisfare i requisiti appropriati descritti nella sezione [Origini di log](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea) di [File di configurazione dell&#39;elaborazione di log](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md).
+>Affinché un esportatore possa funzionare correttamente, la fonte di log deve soddisfare i requisiti appropriati discussi nel [Origini del registro](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea) sezione [File di configurazione dell’elaborazione del registro](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md).
 
 **Per definire un esportatore**
 
-1. Apri [!DNL Transform.cfg] in Data Workbench. Vedere [Per modificare il file Insight Transform.cfg](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13).
-1. Fai clic con il pulsante destro del mouse su **[!UICONTROL Exporters]**, quindi fai clic su **[!UICONTROL Add New]**.
+1. Apri [!DNL Transform.cfg] all’interno di Data Workbench. Vedi [Per modificare il file Insight Transform.cfg](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13).
+1. Fai clic con il pulsante destro del mouse **[!UICONTROL Exporters]**, quindi fai clic su **[!UICONTROL Add New]**.
 1. Selezionare una delle opzioni seguenti:
 
    * **[!UICONTROL ExportTextFile]**
@@ -32,7 +34,7 @@ La funzionalità di trasformazione fornisce tre tipi di esportatori per l&#39;es
 
    >[!NOTE]
    >
-   >Per l&#39;opzione [!DNL ExportVSLFile], tutti i campi estesi nel file di input e tutti i campi definiti dall&#39;utente del modulo cs(*header*) sono sempre scritti nel file di output VSL. Se si sovrascrive un campo esteso esistente, il nuovo valore viene scritto nel file di output, anche se il campo è vuoto.
+   >Per [!DNL ExportVSLFile] opzione , tutti i campi estesi nel file di input e tutti i campi definiti dall&#39;utente del modulo cs(*header*) vengono sempre scritti nel file di output VSL. Se si sovrascrive un campo esteso esistente, il nuovo valore viene scritto nel file di output, anche se il campo è vuoto.
 
 1. Modifica i parametri degli esportatori nel file di configurazione utilizzando la seguente tabella come guida:
 
@@ -46,23 +48,23 @@ La funzionalità di trasformazione fornisce tre tipi di esportatori per l&#39;es
     <tbody> 
       <tr> 
       <td colname="col1"> Formato dati </td> 
-      <td colname="col2"> <p>Solo per <span class="wintitle"> ExportTextFile</span>. Il formato di ciascuna riga di output, costituito da escape di nome campo (espresso come %<i>nomecampo</i>%) e qualsiasi altro testo fisso desiderato. Il formato deve includere un separatore di riga, in genere [CR] [LF]. </p> <p> Un segno di percentuale letterale (%) può essere incorporato nella stringa di formato escape dal carattere come mostrato di seguito: % </p> <p> Un esempio di voce per il parametro Data Format è <span class="filepath"> %x-timestring% %x-trackingid%[CR][LF]</span>. </p> </td> 
+      <td colname="col2"> <p>Per <span class="wintitle"> ExportTextFile</span> solo. Il formato di ciascuna linea di output, costituito da escape del nome del campo (espresso in %)<i>nomefile</i>%) e qualsiasi altro testo fisso desiderato. Il formato deve includere un separatore di riga, in genere [CR] [LF]. </p> <p> Un segno di percentuale letterale (%) può essere incorporato nella stringa di formato escape dal carattere come mostrato di seguito: % </p> <p> Un esempio di voce per il parametro Data Format è <span class="filepath"> %x-timestring% %x-trackingid%[CR][LF]</span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> Campi </td> 
-      <td colname="col2">Solo per <span class="wintitle"> ExportDelimitedTextFile</span>. Nomi dei campi da trasmettere. </td> 
+      <td colname="col2">Per <span class="wintitle"> ExportDelimitedTextFile</span> solo. Nomi dei campi da trasmettere. </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> Delimitatore </td> 
-      <td colname="col2"> <p>Facoltativo. Solo per <span class="wintitle"> ExportDelimitedTextFile</span>. Carattere utilizzato per separare i campi nel file di output. </p> <p> Il software non può eseguire l'escape dei delimitatori inclusi nei valori dei dati. Di conseguenza, per Adobe non è consigliabile utilizzare virgole come delimitatori. </p> <p> Se tieni premuto il tasto Ctrl e fai clic con il pulsante destro del mouse all'interno del parametro Delimitatore , viene visualizzato un menu <span class="wintitle"> Inserisci</span> . Questo menu contiene un elenco di caratteri speciali che vengono spesso utilizzati come delimitatori. </p> </td> 
+      <td colname="col1"> Delimiter (Delimitatore) </td> 
+      <td colname="col2"> <p>Facoltativo. Per <span class="wintitle"> ExportDelimitedTextFile</span> solo. Carattere utilizzato per separare i campi nel file di output. </p> <p> Il software non può eseguire l'escape dei delimitatori inclusi nei valori dei dati. Di conseguenza, per Adobe non è consigliabile utilizzare virgole come delimitatori. </p> <p> Se tieni premuto il tasto Ctrl e fai clic con il pulsante destro del mouse all’interno del parametro Delimitatore , un <span class="wintitle"> Inserisci</span> viene visualizzato il menu . Questo menu contiene un elenco di caratteri speciali che vengono spesso utilizzati come delimitatori. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> Separatore di riga </td> 
-      <td colname="col2">Facoltativo. Solo per <span class="wintitle"> ExportDelimitedTextFile</span>. I caratteri utilizzati per separare le righe nei file di output. Il valore predefinito è [CR] [LF]. </td> 
+      <td colname="col2">Facoltativo. Per <span class="wintitle"> ExportDelimitedTextFile</span> solo. I caratteri utilizzati per separare le righe nei file di output. Il valore predefinito è [CR] [LF]. </td> 
       </tr> 
       <tr> 
       <td colname="col1"> Nome </td> 
-      <td colname="col2"> <p>Facoltativo. Identificativo dell’esportatore. Questo nome viene visualizzato nell'interfaccia <span class="wintitle"> Detailed Status</span> (Stato dettagliato). </p> <p> Per informazioni sull'interfaccia <span class="wintitle"> Stato dettagliato</span>, vedere la <i>Guida utente Data Workbench</i>. </p> </td> 
+      <td colname="col2"> <p>Facoltativo. Identificativo dell’esportatore. Questo nome viene visualizzato nel <span class="wintitle"> Stato dettagliato</span> interfaccia. </p> <p> Per informazioni sulla <span class="wintitle"> Stato dettagliato</span> interfaccia, vedi <i>Guida utente di Data Workbench</i>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> Commenti </td> 
@@ -70,7 +72,7 @@ La funzionalità di trasformazione fornisce tre tipi di esportatori per l&#39;es
       </tr> 
       <tr> 
       <td colname="col1"> Percorso di output </td> 
-      <td colname="col2"> <p>Percorso in cui memorizzare i file di output. Il percorso è relativo alla cartella di installazione del server di Data Workbench. </p> <p> <p>Nota: Il server di Data Workbench che memorizza i dati di output elabora il server #0 nel file <span class="filepath"> profile.cfg</span> . </p> </p> </td> 
+      <td colname="col2"> <p>Percorso in cui memorizzare i file di output. Il percorso è relativo alla cartella di installazione del server di Data Workbench. </p> <p> <p>Nota: Il server di Data Workbench che memorizza i dati di output è il server di elaborazione n. 0 nel <span class="filepath"> profile.cfg</span> file. </p> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> Periodo di rotazione file </td> 
@@ -81,15 +83,15 @@ La funzionalità di trasformazione fornisce tre tipi di esportatori per l&#39;es
        <li id="li_91831283616C48DA8C8086776D181751"> SETTIMANA. Ogni file contiene dati per una settimana. Una settimana inizia lunedì. La settimana che inizia in uno dei primi sette giorni dell’anno è la settimana 1 e la settimana precedente (parziale), se presente, è la settimana 0. </li> 
        <li id="li_BDB7B4D779434B98935261B8B5C0AABB"> GIORNO. Ogni file contiene dati per un giorno di calendario. </li> 
        <li id="li_018F4133E03C42F29073FED1DB082ED5"> ORA. Ogni file contiene dati per un'ora. </li> 
-       <li id="li_EE8CF71BA12149F49D4B7F7108262CD0"> NESSUNO. Non viene eseguita alcuna rotazione. Tutti i dati vengono scritti nello stesso file (o in un insieme di file come determinato da altre impostazioni dei parametri). Vedere il parametro <span class="wintitle"> File Name Format</span> in questa tabella. </li> 
+       <li id="li_EE8CF71BA12149F49D4B7F7108262CD0"> NESSUNO. Non viene eseguita alcuna rotazione. Tutti i dati vengono scritti nello stesso file (o in un insieme di file come determinato da altre impostazioni dei parametri). Consulta la sezione <span class="wintitle"> Formato nome file</span> in questa tabella. </li> 
       </ul> <p>Il periodo di rotazione predefinito del file è DAY. </p> 
       <ul id="ul_0F3BC98275634F759E5022FF2C19715E"> 
-       <li id="li_24DC4D144DA94ED0B7B50E8BB39DB8E3"> Impostare la rotazione dei file su NONE solo quando si lavora in <span class="wintitle"> Modalità offline</span>. Vedi la descrizione del parametro <a href="../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13"> Modalità offline</a> . </li> 
+       <li id="li_24DC4D144DA94ED0B7B50E8BB39DB8E3"> Impostare la rotazione del file su NONE solo quando si lavora in <span class="wintitle"> Modalità offline</span>. Consulta la sezione <a href="../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13"> Modalità offline</a> descrizione del parametro. </li> 
       </ul> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> Formato nome file </td> 
-      <td colname="col2"> <p>Facoltativo. Formato del nome del file di output. </p> <p> Ogni voce di registro può essere memorizzata in un file il cui nome deriva dall'ora di inizio del periodo di rotazione e, facoltativamente, dai valori dei campi nelle righe in cui è contenuta. I campi da utilizzare nel nome del file vengono incorporati come escape del nome del campo (espresso come %<i>nomecampo</i>%). </p> <p>I componenti nome file relativi al periodo di rotazione sono incorporati nella stringa di formato utilizzando le seguenti sequenze di escape: 
+      <td colname="col2"> <p>Facoltativo. Formato del nome del file di output. </p> <p> Ogni voce di registro può essere memorizzata in un file il cui nome è derivato dall'ora di inizio del periodo di rotazione e, facoltativamente, dai valori dei campi nelle righe in esso contenute. I campi da utilizzare nel nome del file vengono incorporati come escape del nome del campo (espresso in %<i>nomefile</i>%). </p> <p>I componenti nome file relativi al periodo di rotazione sono incorporati nella stringa di formato utilizzando le seguenti sequenze di escape: 
       <ul id="ul_3C5C8C5DC9104070ABCFDD85F49BE596"> 
        <li id="li_B100AE13FEA84AB6A1138CF58440E29E"> %yyyy% (anno a quattro cifre) </li> 
        <li id="li_0583970798494A1795B03866DC717FB9"> %y% (anno a due cifre) </li> 
@@ -97,11 +99,11 @@ La funzionalità di trasformazione fornisce tre tipi di esportatori per l&#39;es
        <li id="li_E112E367F62147C49751D6894E47607C"> %ww% (settimana a due cifre, 01 - 52) </li> 
        <li id="li_C4B30E38C05942BB8CAA92F3C9B98A3C"> %dd% (giorno di due cifre, 01 - 31) </li> 
        <li id="li_0318CA8C4DC441B48C16B29A615F3293"> %HH% (ora a due cifre, 00 - 23) </li> 
-      </ul> </p> <p> Il formato predefinito del nome file è <span class="filepath"> %yyyy%%mm%%dd%-%x-mask%.txt</span> </p> 
+      </ul> </p> <p> Il formato predefinito del nome del file è <span class="filepath"> %yyyy%%mm%%gg%-%x-mask%.txt</span> </p> 
       <ul id="ul_07AE3624E7D74632AD5E5F164048196F"> 
        <li id="li_BA5C2BFBA73D4AAD8D729B30FF812759"> Le sequenze di escape distinguono tra maiuscole e minuscole. </li> 
        <li id="li_32CB9C98190D4B17B4DA84732CFB9E2F"> Quando il periodo di rotazione file è impostato su NONE, viene sostituita una stringa vuota per ciascuna delle sequenze di escape, se presenti. </li> 
-       <li id="li_C64731961ED6402FB92210A42854BA72"> Viene generato un errore se <span class="wintitle"> File Name Format</span> non restituisce un nome di file univoco per ogni periodo di rotazione (vedere il parametro File Rotation Period in questa tabella). Ad esempio, quando si utilizza il periodo di rotazione DAY, nel pattern devono essere presenti le sequenze di escape %dd%, %mm% e %yy% o %yyyy%% per evitare la perdita di dati. </li> 
+       <li id="li_C64731961ED6402FB92210A42854BA72"> Se <span class="wintitle"> Formato nome file</span> non genera un nome file univoco per ogni periodo di rotazione (vedere il parametro Periodo di rotazione file in questa tabella). Ad esempio, quando si utilizza il periodo di rotazione DAY, nel pattern devono essere presenti le sequenze di escape %dd%, %mm% e %yy% o %yyyy%% per evitare la perdita di dati. </li> 
        <li id="li_15CDA2ABE450418FA8D9C4BC581C4ADD"> Se si utilizzano sequenze di escape dei nomi di campi all'interno del pattern e il campo specificato presenta molti valori distinti, per ogni periodo di rotazione vengono scritti molti file di output. Tieni presente che questo scenario può causare prestazioni scadenti, pertanto devi utilizzare questa funzione con cautela. </li> 
        <li id="li_D0F75E4FFAFF47C4AA8A8D14A6E1C18A"> Tutti i calcoli sono in GMT. </li> 
       </ul> </td> 
@@ -118,7 +120,7 @@ La funzionalità di trasformazione fornisce tre tipi di esportatori per l&#39;es
       </tr> 
       <tr> 
       <td colname="col1"> Limite di memoria </td> 
-      <td colname="col2"> <p>Facoltativo. Quantità di memoria in byte utilizzata per il buffering dell'output dell'esportatore. Il valore predefinito è 10.000.000 byte. </p> <p> <p>Nota:  Se si dispone di molti file di output aperti contemporaneamente, è possibile aumentare questo valore, ma è possibile ridurre la quantità di memoria disponibile per l'utilizzo da parte di altri componenti del sistema. Tuttavia, una diminuzione di questo valore potrebbe rallentare il processo di esportazione. Per assistenza, contatta l'Adobe. </p> </p> </td> 
+      <td colname="col2"> <p>Facoltativo. Quantità di memoria in byte utilizzata per il buffering dell'output dell'esportatore. Il valore predefinito è 10.000.000 byte. </p> <p> <p>Nota: Se si dispone di molti file di output aperti contemporaneamente, è possibile aumentare questo valore, ma è possibile ridurre la quantità di memoria disponibile per l'utilizzo da parte di altri componenti del sistema. Tuttavia, una diminuzione di questo valore potrebbe rallentare il processo di esportazione. Per assistenza, contatta l'Adobe. </p> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> Limite file aperti </td> 
@@ -127,4 +129,4 @@ La funzionalità di trasformazione fornisce tre tipi di esportatori per l&#39;es
     </tbody> 
    </table>
 
-1. Dopo aver definito la funzione di esportazione (e apportato modifiche ad altri parametri) nel file [!DNL Transform.cfg], salva il file localmente e salvalo nel profilo appropriato nel computer server di Data Workbench.
+1. Dopo aver definito il tuo esportatore (e aver apportato modifiche ad altri parametri) nel [!DNL Transform.cfg] salvare il file localmente e salvarlo nel profilo appropriato nel computer server di Data Workbench.

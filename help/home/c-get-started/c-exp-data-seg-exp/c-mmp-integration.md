@@ -3,7 +3,7 @@ description: Data Workbench consente di esportare i file da integrare con l’es
 title: Esportazione del profilo di marketing principale
 uuid: bae0f0c5-a452-4afd-9f2c-5f3ab69a12d2
 exl-id: 9fc89815-d31d-41a7-a0c0-de1e84b24baa
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 2%
@@ -12,17 +12,19 @@ ht-degree: 2%
 
 # Esportazione del profilo di marketing principale{#master-marketing-profile-export}
 
+{{eol}}
+
 Data Workbench consente di esportare file da integrare con Profili e pubblico come parte di un Adobe Experience Cloud integrato.
 
 <!-- <a id="section_731922BC8628479198A41EF3EA72F2FF"></a> -->
 
-Profili e pubblico fa parte del [servizio Experience Cloud Identity](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=it), un servizio di base di [!DNL Adobe Experience Cloud]. L’esportazione Profili e pubblico consente ai tipi di pubblico di essere condivisi in tutto l’Experience Cloud utilizzando un ID Experience Cloud univoco (ECID) assegnato a ogni visitatore e quindi utilizzato da [Audience Manager](https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.translate.html). L’ applicazione [!DNL ExportIntegration.exe] ( [!DNL E:\Server\Scripts]) viene utilizzata per generare esportazioni MMP e Adobe Target.
+Profili e pubblico fa parte del [Servizio Experience Cloud Identity](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=it), un servizio fondamentale [!DNL Adobe Experience Cloud]. L’esportazione Profili e pubblico consente di condividere i tipi di pubblico nell’Experience Cloud utilizzando un ID Experience Cloud univoco (ECID) assegnato a ogni visitatore e quindi utilizzato da [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=it). La [!DNL ExportIntegration.exe] domanda ( [!DNL E:\Server\Scripts]) viene utilizzata per generare esportazioni MMP e Adobe Target.
 
 **Configurazione del server FSU per l’utilizzo di profili e pubblico**
 
 1. Accedi al tuo server FSU.
 1. Apri il file MMPExport.cfg . `Server/Admin/Export/MMPExport.cfg`.
-1. Immetti i valori desiderati in tutti i campi. Ad esempio:
+1. Immetti i valori desiderati in tutti i campi. Esempio:
 
    >[!NOTE]
    >
@@ -51,7 +53,7 @@ Profili e pubblico fa parte del [servizio Experience Cloud Identity](https://exp
 
    >[!NOTE]
    >
-   >Il file [!DNL MMPExport.cfg]consente inoltre di prendere tutti i record, suddividerli in set e creare blocchi di record. I blocchi di record vengono quindi esportati in Amazon S3. Per creare blocchi di record sono necessari tre parametri obbligatori: [!DNL numRecordsPerChunk], [!DNL numThreads] e [!DNL maxRetriesOnSendFailure].
+   >La [!DNL MMPExport.cfg]consente inoltre di prendere tutti i record, suddividerli in set e creare blocchi di record. I blocchi di record vengono quindi esportati in Amazon S3. Per creare blocchi di record sono necessari tre parametri obbligatori: [!DNL numRecordsPerChunk], [!DNL numThreads]e [!DNL maxRetriesOnSendFailure].
 
 **Definizione dei parametri**
 
@@ -69,11 +71,11 @@ Profili e pubblico fa parte del [servizio Experience Cloud Identity](https://exp
   </tr> 
   <tr> 
    <td colname="col1"> <i>Directory oggetti s3</i> </td> 
-   <td colname="col2"> Un percorso per salvare i file s3. Questo supporta le sottodirectory. <p> <p>Importante:  Lo spazio e i caratteri multibyte non sono consentiti nel percorso e creeranno errori nell’esportazione. (È consentita la penna). </p> </p> </td> 
+   <td colname="col2"> Un percorso per salvare i file s3. Questo supporta le sottodirectory. <p> <p>Importante: Lo spazio e i caratteri multibyte non sono consentiti nel percorso e creeranno errori nell’esportazione. (È consentita la penna). </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>Regione s3</i> </td> 
-   <td colname="col2"> L’area geografica AWS s3 a cui viene inviata l’esportazione. Es. us-east-1 </td> 
+   <td colname="col2"> L’area AWS s3 a cui viene inviata l’esportazione. Es. us-east-1 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>Tasto di accesso s3</i> </td> 
@@ -122,20 +124,20 @@ Profili e pubblico fa parte del [servizio Experience Cloud Identity](https://exp
 
 1. Dal client, apri un’area di lavoro e fai clic con il pulsante destro del mouse su **[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**.
 1. Aggiungi **Livello**.
-1. Fai clic con il pulsante destro del mouse sull&#39;intestazione e seleziona **Aggiungi attributi**.
-1. Fai clic con il pulsante destro del mouse sull&#39;intestazione e seleziona **Nuovo profilo marketing principale Esporta**. ![](assets/mmp_mmp_export.png)
+1. Fai clic con il pulsante destro del mouse sull’intestazione e seleziona **Aggiungi attributi**.
+1. Fai clic con il pulsante destro del mouse sull’intestazione e seleziona **Nuova esportazione del profilo di marketing principale**. ![](assets/mmp_mmp_export.png)
 1. Espandi **Query**.
 
    ![](assets/mmp_mmp_query.png)
 
 1. Espandi **Configurazione MMP**.
-1. (obbligatorio) Immetti il **Nome segmento MMP** e il **Campo ID visitatore MMP**. Questi parametri non possono essere lasciati vuoti.
-1. Il **Nome segmento MMP** deve corrispondere all&#39;ID segmento definito nell&#39;MMP.
-1. Il **ID visitatore MMP** è la colonna dell&#39;attributo definita nel passaggio 4 che corrisponde al **ID visitatore**.
-1. Una volta inseriti questi campi, puoi salvare l’esportazione facendo clic con il pulsante destro del mouse sull’intestazione dell’esportazione e scegliere **Salva** come &quot;Utente\.export&quot;.
-1. Apri **Amministratore** > **Profile Manager** e salva l’esportazione nel profilo.
+1. (obbligatorio) Inserisci il **Nome del segmento MMP** e **Campo ID visitatore MMP**. Questi parametri non possono essere lasciati vuoti.
+1. La **Nome del segmento MMP** deve corrispondere all’ID segmento definito in MMP.
+1. La **ID visitatore MMP** è la colonna dell&#39;attributo definita nel passaggio 4 che corrisponde al **ID visitatore**.
+1. Una volta inseriti questi campi, puoi salvare l’esportazione facendo clic con il pulsante destro del mouse sull’intestazione dell’esportazione e scegliendo **Salva** come &quot;User\.export&quot;.
+1. Apri **Amministratore** > **Profile Manager** e salva l’esportazione nel profilo .
 
-   Se tutti i dati sono immessi correttamente, questo genera un file di esportazione nella FSU ([!DNL Server/Exports]) e trasferisce anche l’esportazione in AWS utilizzando le informazioni in [!DNL MMPExport.cfg]. Il registro di questo viene fornito in [!DNL Server/Trace/]. es., [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
+   Se tutti i dati vengono immessi correttamente, verrà generato un file di esportazione nella FSU ([!DNL Server/Exports]) e trasferirà anche l’esportazione in AWS utilizzando le informazioni in [!DNL MMPExport.cfg]. Il registro di questo viene fornito in [!DNL Server/Trace/]. es. [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
 
 ```
 Query = SegmentExportQuery: 

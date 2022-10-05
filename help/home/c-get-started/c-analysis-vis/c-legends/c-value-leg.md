@@ -3,7 +3,7 @@ description: Una legenda valore visualizza gli eventi dei valori definiti.
 title: Legende di valore
 uuid: 7779f442-2f45-4bf8-a62a-585aaceaeb3a
 exl-id: b28ba604-93ef-4081-ae55-937fb537c068
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Legende di valore{#value-legends}
 
+{{eol}}
+
 Una legenda valore visualizza gli eventi dei valori definiti.
 
-La legenda del valore è configurata solo nelle applicazioni HBX e [!DNL Site] , ma può essere configurata per altre applicazioni. Per ulteriori informazioni, contattare Adobe Consulting Services.
+La legenda del valore è configurata solo nel HBX e [!DNL Site] , ma possono essere configurate per altre applicazioni. Per ulteriori informazioni, contattare Adobe Consulting Services.
 
 In HBX e [!DNL Site], un evento valore è definito come una sessione che ha generato valore aziendale. Ad esempio, i record di dati evento associati a particolari visualizzazioni di pagina (ad esempio, una pagina di ringraziamento dell’ordine o una pagina di completamento dell’applicazione) potrebbero rappresentare eventi di valore per un’organizzazione aziendale.
 
@@ -31,7 +33,7 @@ Nella tabella seguente sono elencate le metriche relative agli eventi di valore.
 |---|---|
 | Conversione | La percentuale di sessioni che ha generato valore aziendale |
 | Valore | Valore totale dell&#39;attività generato, in dollari |
-| Media della Valore | Valore medio dell’attività generato, in dollari, per sessione |
+| Media Valore | Valore medio dell’attività generato, in dollari, per sessione |
 
 Puoi definire facilmente qualsiasi cosa i visitatori facciano nel sito web come un evento di valore: registrazione di una richiesta di assistenza clienti, completamento di un&#39;applicazione, visualizzazione di un contenuto o completamento di un acquisto. Ogni evento value corrisponde a un utente che accede a una pagina o a un set di pagine particolari del sito web ed è associato a un valore aziendale in dollari. Ad esempio, supponi che ogni utente che raggiunge la pagina &quot;Grazie per l’acquisto&quot; generi in media un margine di contributo di 20 $. È possibile definire un evento value per la pagina con un valore di $20.
 
@@ -57,7 +59,7 @@ Quando crei un evento value , trascini pagine web che rappresentano un valore da
 
 1. Nella legenda valore, assegna un valore aziendale a ogni sessione per la quale si verifica l’evento:
 
-   1. Nella colonna [!DNL Value per Event] , fai clic sulla cella corrispondente alla pagina aggiunta come evento di valore.
+   1. In [!DNL Value per Event] fare clic sulla cella corrispondente alla pagina aggiunta come evento valore.
    1. Digitare l&#39;importo in dollari da assegnare al valore dell&#39;evento e premere Invio.
 
    ![](assets/lgd_ValueLegend_Value.png)
@@ -74,8 +76,8 @@ Dopo aver definito almeno un evento di valore, la dimensione Segmento di valore 
 
 >[!NOTE]
 >
->Il server Data Workbench calcola le metriche per l’intero set di dati accessibili al profilo in uso. Per impostazione predefinita, il [!DNL Data Workbench Server] calcola metriche quali Valore, Eventi di valore, Valore medio e Conversione in tutti i dati del set di dati di analisi, anche se i dati non provengono dalla stessa origine logica.
+>Il server Data Workbench calcola le metriche per l’intero set di dati accessibili al profilo in uso. Per impostazione predefinita, la [!DNL Data Workbench Server] calcola metriche quali Valore, Eventi di valore, Valore medio e Conversione in tutti i dati del set di dati di analisi, anche se i dati non provengono dalla stessa origine logica.
 
 ## Esportare in Microsoft Excel {#section-feaa7a8eb8124fafbc74169bebaed6d8}
 
-Per informazioni sull&#39;esportazione di finestre, vedere [Esportazione di dati di finestre](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Per informazioni sull&#39;esportazione di finestre, vedere [Esportazione dei dati delle finestre](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

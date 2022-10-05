@@ -3,7 +3,7 @@ description: Passaggi per installare il file Terrain Images.cfg sul server di Da
 title: Installazione del file Terrain Images.cfg (server)
 uuid: b692bff9-9356-4047-a2f7-f44310bf85fa
 exl-id: 4cc91839-ea36-4476-846a-59af4c5f684c
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Installazione del file Terrain Images.cfg{#installing-the-terrain-images-cfg-file}
+
+{{eol}}
 
 Passaggi per installare il file Terrain Images.cfg sul server di Data Workbench.
 

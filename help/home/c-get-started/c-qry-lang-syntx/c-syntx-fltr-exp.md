@@ -3,7 +3,7 @@ description: Un filtro è un’espressione che definisce un sottoinsieme di dati
 title: Sintassi delle espressioni filtro
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
 exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
@@ -12,13 +12,15 @@ ht-degree: 1%
 
 # Sintassi delle espressioni filtro{#syntax-for-filter-expressions}
 
+{{eol}}
+
 Un filtro è un’espressione che definisce un sottoinsieme di dati in un set di dati.
 
 Un filtro ammette o rifiuta ogni elemento di ciascuna dimensione in base alle relazioni tra le dimensioni.
 
-I filtri possono essere modificati utilizzando [!DNL Filter Editor]. Consulta [Editor filtri](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
+I filtri possono essere modificati utilizzando [!DNL Filter Editor]. Vedi [Editor filtri](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
 
-Nella tabella seguente, ogni descrizione della sintassi include un esempio di espressione metrica che utilizza tale filtro. Ad esempio, Sessions[True] è una metrica definita utilizzando il filtro &quot;True&quot;. La metrica Sessions[True] è la stessa della metrica Sessions, perché il filtro True ammette ogni elemento della dimensione Session.
+Nella tabella seguente, ogni descrizione della sintassi include un esempio di espressione metrica che utilizza tale filtro. Ad esempio, Sessions[True] è una metrica definita utilizzando il filtro &quot;True&quot;. Le sessioni[True] è uguale alla metrica Sessions perché il filtro True ammette ogni elemento della dimensione Session.
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 

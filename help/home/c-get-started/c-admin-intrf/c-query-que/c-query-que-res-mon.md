@@ -3,7 +3,7 @@ description: Il vettore del monitoraggio delle risorse contiene il Monitor del b
 title: Monitoraggio risorse coda query
 uuid: 6b516bed-7f9a-4821-869e-19e720f20313
 exl-id: 6d445a4d-a415-41ce-9d45-1bdd0e726edd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Monitoraggio risorse coda query{#query-queue-resource-monitors}
+
+{{eol}}
 
 Il vettore del monitoraggio delle risorse contiene il Monitor del budget della memoria e il Monitor del numero di query.
 
@@ -38,7 +40,7 @@ Nella tabella seguente sono descritti i campi di monitoraggio delle risorse util
   <tr> 
    <td colname="col1"> <p>Soglia bassa </p> </td> 
    <td colname="col2"> <p>double </p> </td> 
-   <td colname="col3"> <p>Soglia bassa per l'utilizzo della memoria (byte). Se il valore <span class="wintitle"> Monitor budget memoria</span> è inferiore a questo valore, è possibile pianificare nuovi bundle e consentire la crescita dei bundle pianificati. Ad esempio, quando un utente aggiunge una visualizzazione a un’area di lavoro i bundle aumentano. </p> </td> 
+   <td colname="col3"> <p>Soglia bassa per l'utilizzo della memoria (byte). Se <span class="wintitle"> Monitor a budget ridotto</span> Il valore è inferiore a questo valore, è consentito pianificare nuovi bundle e consentire l'aumento dei bundle pianificati. Ad esempio, quando un utente aggiunge una visualizzazione a un’area di lavoro i bundle aumentano. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Tempo di reazione </p> </td> 
@@ -58,7 +60,7 @@ Nella tabella seguente sono descritti i campi di monitoraggio delle risorse util
   <tr> 
    <td colname="col1"> <p>Soglia bassa </p> </td> 
    <td colname="col2"> </td> 
-   <td colname="col3"> <p>Soglia bassa per l'utilizzo della memoria (byte). Se il valore <span class="wintitle"> Monitor budget memoria</span> è inferiore a questo valore, è possibile pianificare nuovi bundle e aumentare i bundle pianificati. </p> </td> 
+   <td colname="col3"> <p>Soglia bassa per l'utilizzo della memoria (byte). Se <span class="wintitle"> Monitor a budget ridotto</span> Il valore è inferiore a questo valore, è possibile pianificare nuovi bundle e i bundle pianificati possono crescere. </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -3,7 +3,7 @@ description: Il browser del dashboard consente inoltre di eseguire ricerche per 
 title: Ricerca nel browser del dashboard
 uuid: b11b024e-3876-48f2-85e2-a4af047e4985
 exl-id: f6dd923c-f98b-4ca0-a109-88b3988b9c95
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 4%
@@ -12,9 +12,11 @@ ht-degree: 4%
 
 # Ricerca nel browser del dashboard{#searching-within-the-dashboard-browser}
 
+{{eol}}
+
 Il browser del dashboard consente inoltre di eseguire ricerche per trovare dashboard esistenti.
 
-Per eseguire una ricerca, utilizzate la casella di ricerca nella barra degli strumenti del browser del dashboard. I risultati della ricerca verranno visualizzati nel browser del dashboard durante la digitazione. È possibile cancellare una ricerca in qualsiasi momento eliminando il testo di ricerca o facendo clic sull&#39;icona **[!UICONTROL X]** nella casella di ricerca.
+Per eseguire una ricerca, utilizzate la casella di ricerca nella barra degli strumenti del browser del dashboard. I risultati della ricerca verranno visualizzati nel browser del dashboard durante la digitazione. È possibile cancellare una ricerca in qualsiasi momento eliminando il testo di ricerca o facendo clic sul **[!UICONTROL X]** nella casella di ricerca.
 
 ![](assets/search.png)
 
@@ -22,7 +24,7 @@ Puoi anche ordinare i risultati utilizzando le funzioni di ordinamento in ogni i
 
 ![](assets/sorting.png)
 
-Questo menu **[!UICONTROL Columns]** consente inoltre di modificare le colonne visibili nella vista a elenco del dashboard. Qui puoi attivare o disattivare la visibilità delle colonne selezionandole o deselezionandole.
+Questo **[!UICONTROL Columns]** consente inoltre di modificare le colonne visibili nella vista a elenco del dashboard. Qui puoi attivare o disattivare la visibilità delle colonne selezionandole o deselezionandole.
 
 ![](assets/sorting_columns.png)
 

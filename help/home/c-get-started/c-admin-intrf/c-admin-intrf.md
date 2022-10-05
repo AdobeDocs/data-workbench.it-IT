@@ -3,7 +3,7 @@ description: Informazioni sulle interfacce amministrative disponibili per gestir
 title: Interfacce amministrative
 uuid: bd587f01-7edc-44e8-b4d4-f74f94f5d60f
 exl-id: 109e30da-9ccb-4349-865a-dff9c05fe37a
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 23%
@@ -11,6 +11,8 @@ ht-degree: 23%
 ---
 
 # Interfacce amministrative{#administrative-interfaces}
+
+{{eol}}
 
 Informazioni sulle interfacce amministrative disponibili per gestire e monitorare l’implementazione di Data Workbench. Informazioni sull’apertura delle interfacce amministrative e su diverse altre interfacce.
 

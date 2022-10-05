@@ -3,7 +3,7 @@ description: Le pagine web sono spesso strutturate utilizzando il linguaggio di 
 title: Informazioni specifiche ASP
 uuid: 552288cb-b775-4121-8869-322f2a26932b
 exl-id: f73235e1-d44a-4056-b1f4-a86879c19483
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Informazioni specifiche ASP{#asp-specific-information}
+
+{{eol}}
 
 Le pagine web sono spesso strutturate utilizzando il linguaggio di programmazione ASP (Active Server Pages).
 
@@ -32,7 +34,7 @@ Response.AppendToLog("&v_3=" +  sState);
 Response.AppendToLog("&v_4=" +  sZip);
 ```
 
-Questo processo aggiunge i valori del modulo come definiti ai dati della richiesta per la pagina [!DNL Form Processing]. All&#39;interno dei dati di log, i valori aggiunti sarebbero disponibili come stringhe di query della pagina [!DNL Form Processing] come illustrato di seguito. Ad esempio, v_1, v_2, v_3 e v_4 sono stringhe di query contenenti i dati immessi nei campi modulo appropriati. La sintassi descritta nell’esempio sopra può essere duplicata per tutti i campi e i valori aggiuntivi del modulo che si desidera acquisire.
+Questo processo aggiunge i valori del modulo come definiti ai dati della richiesta per [!DNL Form Processing] pagina. All’interno dei dati di log, i valori aggiunti sarebbero disponibili come stringhe di query del [!DNL Form Processing] come illustrato di seguito. Ad esempio, v_1, v_2, v_3 e v_4 sono stringhe di query contenenti i dati immessi nei campi modulo appropriati. La sintassi descritta nell’esempio sopra può essere duplicata per tutti i campi e i valori aggiuntivi del modulo che si desidera acquisire.
 
 ```
 https://www.myserver.com/path/to/formprocessingpage.asp?v_1=John+Smith&v_2=Los+Angeles&v_3=California&v_4=90210
@@ -45,7 +47,7 @@ var formvalues = Response.Form;
 Response.AppendToLog(formvalues);
 ```
 
-Questo esempio prende tutti i campi modulo presenti all’interno di HTML insieme ai rispettivi valori e li aggiunge come stringhe di query alla voce di registro per la pagina [!DNL Form Processing]. Va notato che questo includerebbe tutti i campi nascosti presenti all’interno del modulo.
+Questo esempio prende tutti i campi modulo presenti all’interno di HTML insieme ai rispettivi valori e li aggiunge come stringhe di query alla voce di registro per [!DNL Form Processing] pagina. Va notato che questo includerebbe tutti i campi nascosti presenti all’interno del modulo.
 
 I dati del registro vengono aumentati come descritto nella tabella seguente:
 

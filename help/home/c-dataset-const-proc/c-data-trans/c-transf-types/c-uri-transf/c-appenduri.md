@@ -3,7 +3,7 @@ description: La trasformazione AppendURI consente di aggiungere informazioni al 
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -12,18 +12,20 @@ ht-degree: 1%
 
 # AppendURI{#appenduri}
 
+{{eol}}
+
 La trasformazione AppendURI consente di aggiungere informazioni al valore predefinito proveniente dalle voci di registro utilizzate per creare il set di dati.
 
-La trasformazione inserisce una coppia nome-valore alla fine del campo interno utilizzato per creare la dimensione URI. La coppia nome-valore viene creata utilizzando il parametro chiave stringa query come nome e il valore del parametro di input identificato come valore della coppia. Il comando [!DNL AppendURI] aggiunge eventuali valori appropriati ? e simboli &amp; necessari per separare le coppie nome-valore dallo stelo [!DNL URI] e da tutte le operazioni precedenti [!DNL AppendURI] che possono essere state applicate all’URI.
+La trasformazione inserisce una coppia nome-valore alla fine del campo interno utilizzato per creare la dimensione URI. La coppia nome-valore viene creata utilizzando il parametro chiave stringa query come nome e il valore del parametro di input identificato come valore della coppia. La [!DNL AppendURI] il comando aggiunge eventuali ? e &amp; simboli necessari per separare le coppie nome-valore dal [!DNL URI] stelo e da qualsiasi precedente [!DNL AppendURI] operazioni eventualmente applicate all’URI.
 
-La trasformazione [!DNL AppendURI] funziona solo se definita nel file [!DNL Transformation.cfg] o in un file [!DNL Transformation Dataset Include].
+La [!DNL AppendURI] la trasformazione funziona solo se definita nel [!DNL Transformation.cfg] file o [!DNL Transformation Dataset Include] file.
 
-| Parametro | Descrizione | impostazione predefinita |
+| Parametro | Descrizione | Impostazione predefinita |
 |---|---|---|
 | Nome | Nome descrittivo della trasformazione. È possibile inserire un nome qualsiasi qui. |  |
 | Commenti | Facoltativo. Note sulla trasformazione. |  |
 | Condizione | Le condizioni in cui viene applicata questa trasformazione. |  |
-| impostazione predefinita | Il valore predefinito da utilizzare se la condizione è soddisfatta e il valore specificato non è disponibile. |  |
+| Impostazione predefinita | Il valore predefinito da utilizzare se la condizione è soddisfatta e il valore specificato non è disponibile. |  |
 | Ingresso | Nome del campo il cui valore viene aggiunto all’URI. |  |
 | Chiave stringa di query | Nome da utilizzare nella creazione della coppia nome-valore da aggiungere. |  |
 
@@ -35,8 +37,8 @@ La pagina ASP della visualizzazione modelli riceve tutto il traffico e determina
 
 * [!DNL modelview.asp]
 
-Questo comporterebbe una mappatura piuttosto poco interessante del traffico attraverso il sito, in quanto tutto il traffico viene incanalato attraverso un singolo URI. Per risolvere questo particolare scenario e fornire una visualizzazione più informativa sull&#39;architettura sottostante del sito web, [!DNL AppendURI] può essere utilizzato per spostare alcune coppie nome-valore univoche dal campo cs-uri-query alla dimensione URI utilizzata per le visualizzazioni. La trasformazione mostrata di seguito fornisce i dettagli di tale trasformazione:
+Questo comporterebbe una mappatura piuttosto poco interessante del traffico attraverso il sito, in quanto tutto il traffico viene incanalato attraverso un singolo URI. Per affrontare questo particolare scenario e fornire una visione più informativa sull&#39;architettura sottostante del sito web, [!DNL AppendURI] può essere utilizzato per spostare alcune coppie nome-valore univoche dal campo cs-uri-query alla dimensione URI utilizzata per le visualizzazioni. La trasformazione mostrata di seguito fornisce i dettagli di tale trasformazione:
 
 ![](assets/cfg_TransformationType_AppendURI.png)
 
-In questo esempio, il sistema utilizza due pagine per gestire tutte le richieste: [!DNL modelview.asp] e [!DNL xmlmodelview.asp]. Una pagina viene utilizzata per il traffico del browser e l&#39;altra per le comunicazioni XML tra sistema. Il processo dell&#39;application server utilizza il nome id della query cs-uri per determinare quale azione intraprendere. Pertanto, puoi estrarre il valore dal campo id e aggiungerlo all’URI. Il risultato è una raccolta di URI con un intervallo di varianti che riflette il traffico dei visitatori attraverso il sito web. In questo caso, una condizione [!DNL String Match] determina le voci di registro a cui viene applicata la trasformazione ricercando il campo cs-uri-stem per le due pagine web di interesse e ignorando tutte le altre. L&#39;input (il valore della nostra coppia nome-valore) è il risultato di cs-uri-query(id), che è &quot;login&quot;. Come specificato dal parametro della chiave di stringa query, il nome aggiunto è &quot;id&quot;. Pertanto, per il valore cs-uri in entrata del nostro esempio, l’URI risultante utilizzato dalla dimensione [!DNL URI] è [!DNL /modelview.asp&id=login].
+In questo esempio, il sistema utilizza due pagine per gestire tutte le richieste: [!DNL modelview.asp] e [!DNL xmlmodelview.asp]. Una pagina viene utilizzata per il traffico del browser e l&#39;altra per le comunicazioni XML tra sistema. Il processo dell&#39;application server utilizza il nome id della query cs-uri per determinare quale azione intraprendere. Pertanto, puoi estrarre il valore dal campo id e aggiungerlo all’URI. Il risultato è una raccolta di URI con un intervallo di varianti che riflette il traffico dei visitatori attraverso il sito web. Qui, un [!DNL String Match] La condizione determina le voci di registro a cui viene applicata la trasformazione ricercando il campo cs-uri-stem per le due pagine web di interesse e ignorando tutte le altre. L&#39;input (il valore della nostra coppia nome-valore) è il risultato di cs-uri-query(id), che è &quot;login&quot;. Come specificato dal parametro della chiave di stringa query, il nome aggiunto è &quot;id&quot;. Pertanto, per il valore cs-uri in arrivo del nostro esempio, l&#39;URI risultante utilizzato dalla [!DNL URI] dimensione [!DNL /modelview.asp&id=login].

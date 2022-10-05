@@ -3,7 +3,7 @@ description: Passaggi per installare i file del programma del server di rapporto
 title: Installazione dei file del programma di rapporto
 uuid: 9c250783-7080-4c27-bd8c-add208b2b1bf
 exl-id: 8f871e5c-1267-4564-a168-398f9dc793a4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 10%
@@ -11,6 +11,8 @@ ht-degree: 10%
 ---
 
 # Installazione dei file del programma di rapporto{#installing-the-report-program-files}
+
+{{eol}}
 
 Passaggi per installare i file del programma del server di rapporto.
 
@@ -27,8 +29,8 @@ Report Server è un client di Data Workbench Server e viene concesso in licenza 
    Per Windows 2008 Server a 64 bit: [!DNL C:\Windows\SysWOW64\config\systemprofile\Desktop].
 
 1. Fai clic con il pulsante destro del mouse sulla cartella.
-1. Select **[!UICONTROL Properties]**.
-1. Selezionare **[!UICONTROL Security]**.
+1. Seleziona **[!UICONTROL Properties]**.
+1. Seleziona **[!UICONTROL Security]**.
 1. Fai clic su **[!UICONTROL Edit]**.
-1. Add **[!UICONTROL Everyone]**.
-1. Concedi il controllo completo per **[!UICONTROL Everyone]**.
+1. Aggiungi **[!UICONTROL Everyone]**.
+1. Concedere il controllo completo per **[!UICONTROL Everyone]**.

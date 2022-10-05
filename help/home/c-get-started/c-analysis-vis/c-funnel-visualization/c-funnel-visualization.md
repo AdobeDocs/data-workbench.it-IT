@@ -3,7 +3,7 @@ description: La visualizzazione funnel consente di identificare se i clienti abb
 title: Visualizzazione funnel
 uuid: 7973a7a9-ed17-4d3d-be14-37b3c17fa371
 exl-id: 2fc261fa-7c93-4de1-af32-ae5b9cbcdc0e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Visualizzazione funnel{#funnel-visualization}
+
+{{eol}}
 
 La visualizzazione funnel consente di identificare se i clienti abbandonano una campagna di marketing o se deviano da un percorso di conversione definito durante l’interazione con il sito web o una campagna su più canali.
 
@@ -20,7 +22,7 @@ La corretta comprensione della navigazione dei clienti consente agli architetti 
 
 ## Informazioni sull&#39;imbuto {#section-bf0ee36bb8ce47ec910ca23629e7c53a}
 
-La visualizzazione Funnel è molto simile al browser Percorsi, che consente di creare un percorso per analizzare la sequenza di hit del visitatore, per identificare chi sta perdendo il percorso o che lo sta attraversando (chi ha seguito il percorso). Inoltre, identifica dove sono andati i visitatori dopo ogni passaggio lungo il percorso della campagna e dove hanno navigato dopo l’abbandono o il passaggio nei passaggi definiti.
+La visualizzazione Funnel è molto simile al browser Percorsi, che consente di creare un percorso per analizzare la sequenza di hit del visitatore, per identificare chi ha abbandonato (che ha lasciato il percorso) o chi ha seguito il percorso. Inoltre, identifica dove sono andati i visitatori dopo ogni passaggio lungo il percorso della campagna e dove hanno navigato dopo l’abbandono o il passaggio nei passaggi definiti.
 
 ![](assets/funnel_visualization_capture_min.png)
 
@@ -30,7 +32,7 @@ La visualizzazione funnel fornisce vari livelli di dati:
 
 * **[!UICONTROL Funnel by Visit]**. Questo funnel si basa su un’interazione &quot;per visita&quot;.
 * **[!UICONTROL Funnel by Visitor]**. Questo funnel si basa su un&#39;interazione &quot;per visitatore&quot;. Questa visualizzazione mostra i dati in base alla visita organizzata dal visitatore.
-* La dimensione **Clip** e la dimensione **Livello**. Le dimensioni funnel possono essere modificate scegliendo le dimensioni Clickthrough, Hit, Prodotto, Visita o Livello visitatore.
+* La **Clip** dimensione e **Livello** dimensione. Le dimensioni funnel possono essere modificate scegliendo le dimensioni Clickthrough, Hit, Prodotto, Visita o Livello visitatore.
 
 * **Metriche**. Puoi cambiare le metriche sottostanti di Funnel da Visite utilizzate per creare il funnel in qualsiasi metrica nel tuo profilo. La visualizzazione funnel ti consente di analizzare in profondità i dati e i pattern di visitatori con più metriche di base.
 

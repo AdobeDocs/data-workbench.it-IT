@@ -3,7 +3,7 @@ description: È possibile utilizzare il menu Esporta area di lavoro per stampare
 title: Condivisione di un’area di lavoro
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
 exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Condivisione di un’area di lavoro{#share-a-workspace}
+
+{{eol}}
 
 È possibile utilizzare il menu Esporta area di lavoro per stampare ed esportare le aree di lavoro in file .png o in Excel.
 
@@ -45,15 +47,15 @@ In un’area di lavoro, fai clic su **[!UICONTROL Export]**.
   </tr> 
   <tr> 
    <td colname="col1"> Esporta PNG </td> 
-   <td colname="col2">Salva un'istantanea di un'area di lavoro in formato grafico a rete portatile (file .png). Consultare <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-f9fbe0f0a1c341e2b063cce106cac35e"> Esportazione delle aree di lavoro come file PNG</a>. </td> 
+   <td colname="col2">Salva un'istantanea di un'area di lavoro in formato grafico a rete portatile (file .png). Vedi <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-f9fbe0f0a1c341e2b063cce106cac35e"> Esportazione delle aree di lavoro come file PNG</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Excel </td> 
-   <td colname="col2"> Se Microsoft Excel è installato nel computer Data Workbench, avvia automaticamente Microsoft Excel ed esporta i dati da alcune visualizzazioni, alcune legende e annotazioni di testo in un nuovo file Excel (con estensione xls o xlsx). Consultare <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Esportazione di dati Workspace in Microsoft Excel</a>. </td> 
+   <td colname="col2"> Se Microsoft Excel è installato nel computer Data Workbench, avvia automaticamente Microsoft Excel ed esporta i dati da determinate visualizzazioni, legende e annotazioni di testo in un nuovo file Excel (con estensione xls o xlsx). Vedi <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Esportazione dei dati di Workspace in Microsoft Excel</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Esporta (Excel) dal modello </td> 
-   <td colname="col2"> Se Microsoft Excel è installato nel computer Data Workbench, avvia automaticamente Microsoft Excel ed esporta i dati da determinate visualizzazioni, legende e annotazioni di testo nel file Excel del modello (<span class="filepath"> .xls</span> o <span class="filepath"> .xlsx</span>) selezionato. Vedere <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Esportazione in un file Excel modello</a>. </td> 
+   <td colname="col2"> Se Microsoft Excel è installato sul computer Data Workbench, avvia automaticamente Microsoft Excel ed esporta i dati da determinate visualizzazioni, alcune legende e annotazioni di testo nel file Excel del modello (<span class="filepath"> .xls</span> o <span class="filepath"> xlsx</span>) selezionata. Vedi <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Esportazione in un file Excel modello</a>. </td> 
   </tr> 
  </tbody> 
 </table>

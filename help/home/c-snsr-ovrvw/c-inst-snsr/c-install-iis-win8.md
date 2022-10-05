@@ -3,7 +3,7 @@ description: Installa e configura Sensor per Microsoft IIS 7.x o 8.x in esecuzio
 title: Microsoft IIS su Windows Server 2008 o versione successiva
 uuid: 7fd8da68-1553-4395-b13e-b08a6ee1948e
 exl-id: cc909daa-60c0-4188-8e90-035c41bf3105
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1589'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Microsoft IIS su Windows Server 2008 o versione successiva{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 Installa e configura Sensor per Microsoft IIS 7.x o 8.x in esecuzione in Microsoft Windows Server 2008 o versione successiva.
 
@@ -75,7 +77,7 @@ Segui la procedura seguente per estrarre e installare i file di programma per Se
 
 >[!NOTE]
 >
->Il pacchetto di installazione contiene un file di foglio di calcolo denominato TestExperiment.xls. Questo foglio di calcolo è uno strumento utilizzato dagli architetti per configurare un esperimento controllato. Il sensore stesso non utilizza questo file, quindi non è necessario installare il file sul computer in cui è in esecuzione Sensor (anche se è possibile scegliere di farlo). È invece possibile copiare il file in un percorso in cui gli architetti possono accedervi o semplicemente estrarre il file dal pacchetto di installazione, in base alle esigenze. Per ulteriori informazioni sulla sperimentazione controllata, consulta la Guida agli esperimenti controllati da Insight.
+>Il pacchetto di installazione contiene un file di foglio di calcolo denominato TestExperiment.xls. Questo foglio di calcolo è uno strumento che gli architetti utilizzano per configurare un esperimento controllato. Il sensore stesso non utilizza questo file, quindi non è necessario installare il file sul computer in cui è in esecuzione Sensor (anche se è possibile scegliere di farlo). È invece possibile copiare il file in un percorso in cui gli architetti possono accedervi o semplicemente estrarre il file dal pacchetto di installazione, in base alle esigenze. Per ulteriori informazioni sulla sperimentazione controllata, consulta la Guida agli esperimenti controllati da Insight.
 
 ## Modifica il file di configurazione Sensor {#section-1e1590a92222430e92066292512ae0df}
 
@@ -83,20 +85,20 @@ Il file txlogd.conf contiene i parametri di configurazione per Sensor.
 
 È necessario modificare il file per specificare, tra l’altro, le dimensioni della coda del disco, l’indirizzo di Insight Server e l’ID che verrà allegato ai dati prodotti da questo sensore. Il file di configurazione contiene i parametri richiesti e i parametri facoltativi.
 
-* **I** parametri richiesti sono impostazioni che è necessario specificare quando si installa Sensor. Senza queste impostazioni, il sensore non viene eseguito correttamente.
-* **I** parametri facoltativi sono impostazioni predefinite per valori predefiniti (che è possibile modificare) o per l&#39;abilitazione di funzionalità facoltative.
+* **Parametri richiesti** sono impostazioni che è necessario specificare quando si installa Sensor. Senza queste impostazioni, il sensore non viene eseguito correttamente.
+* **Parametri opzionali** sono impostazioni predefinite per valori predefiniti (che è possibile modificare) o per l’abilitazione di funzionalità facoltative.
 
 **Per modificare il file di configurazione Sensor**
 
-1. Apri il file `<SensorDirectory>/txlogd.conf` in un editor di testo e imposta i parametri richiesti ed eventuali parametri facoltativi desiderati.
+1. Apri `<SensorDirectory>/txlogd.conf` in un editor di testo e imposta i parametri richiesti ed eventuali parametri facoltativi desiderati.
 
-   Per le descrizioni dei parametri [!DNL txlogd.conf], consulta [Parametri del file Sensor Txlogd.conf](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed).
+   Per la descrizione di [!DNL txlogd.conf] parametri, vedi [Parametri del file Sensor Txlogd.conf](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed).
 
 1. Salva e chiudi il file.
 
 ## Avviare il trasmettitore e creare la coda del disco {#section-2b8dfd06996d4ab49998eeb99bd9f5f0}
 
-Dopo aver configurato il file [!DNL txlogd.conf]è possibile avviare il programma del trasmettitore, registrarlo come servizio Windows e creare la coda del disco.
+Dopo aver configurato le [!DNL txlogd.conf]file, è possibile avviare il programma del trasmettitore, registrarlo come servizio Windows e creare la coda del disco.
 
 1. Dal menu Start in Windows, selezionare Accessori > Prompt dei comandi.
 1. Nella finestra del prompt dei comandi, passare alla directory in cui è stato installato Sensor ed eseguire il seguente comando:
@@ -147,13 +149,13 @@ Il trasmettitore è progettato per funzionare continuamente. Se si riavvia il co
 
 Per IIS, il raccoglitore è un filtro ISAPI aggiunto al server Web in IIS.
 
-1. Apri IIS Manager utilizzando **Start > Strumenti di amministrazione > Internet Information Services (IIS) Manager**.
-1. Espandi i nodi **Computer locale** e **Sites**.
-1. Seleziona il sito web e fai doppio clic su **Filtri ISAPI** nel riquadro a destra.
-1. Nel riquadro **Azioni** fare clic su **Aggiungi**.
+1. Apri IIS Manager utilizzando **Start > Strumenti di amministrazione > Gestione Internet Information Services (IIS)**.
+1. Espandi la **Computer locale** e **Sites** nodi.
+1. Seleziona il sito web e fai doppio clic nel riquadro a destra **Filtri ISAPI**.
+1. Sotto la **Azioni** riquadro, fai clic su **Aggiungi**.
 
-1. Nel campo **Nome filtro** , immetti un nome visualizzato per il filtro. Il nome del filtro suggerito è &quot;Sensor&quot;.
-1. Fare clic su **Sfoglia**, selezionare il file qlog.dll (che si trova nella directory in cui è installato Sensor), quindi fare clic su **OK**.
+1. In **Nome filtro** immettere un nome visualizzato per il filtro. Il nome del filtro suggerito è &quot;Sensor&quot;.
+1. Fai clic su **Sfoglia**, seleziona il file qlog.dll (che si trova nella directory in cui hai installato Sensor) e fai clic su **OK**.
 
 1. Fai clic su **OK** per aggiungere il filtro.
 
@@ -167,9 +169,9 @@ Se la freccia verde non viene visualizzata dopo il flusso del traffico verso il 
    >
    >Questa sequenza di comandi può variare a seconda della versione di Windows in uso.
 
-1. Nel riquadro a sinistra della finestra Visualizzatore eventi, selezionare il registro **Applicazione**.
-1. Nel riquadro a destra, cerca gli eventi con &quot;Adobe&quot; nella colonna **Origine**.
-1. Se si verifica un errore, fare doppio clic sull&#39;errore per visualizzare la finestra **Proprietà evento**.
+1. Nel riquadro a sinistra della finestra Visualizzatore eventi, selezionare la **Applicazione** registro.
+1. Nel riquadro a destra, cerca gli eventi con &quot;Adobe&quot; nel **Origine** colonna.
+1. Se trovi un errore, fai doppio clic sull’errore per visualizzare il **Proprietà evento** finestra.
 
 ## Acquisire dati aggiuntivi {#section-98db9625efdc4b60bfd76f7adf4af74d}
 

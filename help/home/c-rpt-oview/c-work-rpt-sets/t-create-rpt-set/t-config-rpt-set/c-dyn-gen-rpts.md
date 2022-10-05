@@ -3,7 +3,7 @@ description: Puoi generare rapporti in modo dinamico per gli elementi dimensiona
 title: Generazione dinamica di rapporti
 uuid: 87174fb5-e72f-4758-8e9d-1aaa784c1898
 exl-id: c14d93cd-212d-44a1-aff9-652e5c4fbda0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Generazione dinamica di rapporti{#dynamically-generating-reports}
+
+{{eol}}
 
 Puoi generare rapporti in modo dinamico per gli elementi dimensionali specificati in un file di ricerca o per un numero particolare di elementi dimensionali, ad esempio per gli utenti con i 10 conteggi d’ordine più elevati.
 
@@ -21,14 +23,14 @@ Puoi generare rapporti in modo dinamico per gli elementi dimensionali specificat
 * [Rapporti sugli elementi del Dimension di file di ricerca](../../../../../home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-dyn-gen-rpts.md#section-a5e8f38af06c42b4bfddec4bafbf03d6)
 * [Report principali sugli elementi del Dimension](../../../../../home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-dyn-gen-rpts.md#section-d8d75a6dfadd407bb18d6f32d70ebf8f)
 
-## Rapporti sugli elementi dei Dimension di ricerca {#section-a5e8f38af06c42b4bfddec4bafbf03d6}
+## Rapporti sugli elementi del Dimension di file di ricerca {#section-a5e8f38af06c42b4bfddec4bafbf03d6}
 
-Per configurare un set di rapporti per la generazione e (facoltativamente) la distribuzione dinamica di rapporti per gli elementi di una dimensione specificata in un file di ricerca, specifica i seguenti parametri nel file [!DNL Report.cfg] :
+Per configurare un set di rapporti in modo da generare e (facoltativamente) distribuire in modo dinamico i rapporti per gli elementi di una dimensione specificata in un file di ricerca, specifica i seguenti parametri nel [!DNL Report.cfg] file:
 
 * [!DNL Dimension Name]
 * [!DNL Lookup File]
 
-Per una descrizione dettagliata di questi parametri, consulta [Parametri Report.cfg](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
+Per una descrizione dettagliata di questi parametri, vedi [Parametri Report.cfg](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
 
 **Per creare un set di rapporti dinamico utilizzando un file di ricerca**
 
@@ -46,15 +48,13 @@ Per una descrizione dettagliata di questi parametri, consulta [Parametri Report.
       >    * Questo file può contenere righe vuote.
 
 
-
-
-1. Facoltativo. Per abilitare l’invio di rapporti per l’e-mail, è necessario effettuare le seguenti operazioni nella sezione [!DNL Mail Report] del file [!DNL Report.cfg] per quel particolare set di rapporti:
+1. Facoltativo. Per abilitare l’invio tramite e-mail dei rapporti, devi effettuare le seguenti operazioni nella [!DNL Mail Report] della sezione [!DNL Report.cfg] file per quel particolare set di rapporti:
 
    * Nel parametro del server SMTP, elencare il server SMTP appropriato da utilizzare per distribuire i rapporti tramite e-mail.
    * Nel parametro Recipients (Destinatari), elencare almeno un indirizzo e-mail per consentire la distribuzione dei rapporti tramite e-mail. I rapporti non vengono inviati all&#39;indirizzo indicato, è necessario impostare questo parametro solo per consentire l&#39;invio di messaggi e-mail. Può essere un indirizzo falso, ma deve essere in un formato consentito (ad esempio, [!DNL jsmith@company.com]).
 
 1. Salva il file di ricerca nella cartella del set di rapporti.
-1. Apri il file [!DNL Report.cfg] del set di rapporti.
+1. Apri [!DNL Report.cfg] per il set di rapporti.
 1. Nel parametro Nome Dimension digitare il nome della dimensione per la quale si desidera generare in modo dinamico un rapporto.
 1. Nel parametro File di ricerca digitare la posizione e il nome del file di ricerca contenente gli elementi dimensionali desiderati nel rapporto e gli indirizzi e-mail dei destinatari.
 1. Ripeti questi passaggi per ulteriori set di rapporti.
@@ -63,23 +63,23 @@ Per una descrizione dettagliata di questi parametri, consulta [Parametri Report.
 >
 >I rapporti dinamici non vengono inviati via e-mail ai destinatari fino al completamento dell’intero set di rapporti.
 
-## Rapporti principali sugli elementi del Dimension {#section-d8d75a6dfadd407bb18d6f32d70ebf8f}
+## Report principali sugli elementi del Dimension {#section-d8d75a6dfadd407bb18d6f32d70ebf8f}
 
-Per configurare un set di rapporti per la generazione dinamica di rapporti per gli elementi dimensionali principali, conteggiando per la metrica specificata, specifica i seguenti parametri nel file [!DNL Report.cfg] :
+Per configurare un set di rapporti per la generazione dinamica di rapporti per gli elementi dimensionali principali, conteggiando per la metrica specificata, specifica i seguenti parametri nella [!DNL Report.cfg] file:
 
 * Nome dimensione
 * Metrica N principale
 * Valore N superiore
 * (Facoltativo) Filtro query di precaricamento
 
-Per una descrizione dettagliata di questi parametri, consulta [Parametri Report.cfg](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
+Per una descrizione dettagliata di questi parametri, vedi [Parametri Report.cfg](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
 
 **Creazione di un set di rapporti dinamico per gli elementi principali**
 
-1. Apri il file [!DNL Report.cfg] del set di rapporti.
+1. Apri il set di rapporti [!DNL Report.cfg] file.
 1. Nel parametro Nome Dimension digitare il nome della dimensione per la quale si desidera generare in modo dinamico un set di rapporti.
 1. Nel parametro della metrica Top N , digita il nome della metrica in base alla quale desideri ordinare la dimensione.
 1. Nel parametro Top N Value digitare il numero di elementi dimensionali desiderati nel set di rapporti.
 1. (Facoltativo) Nel parametro Filtro query di precaricamento, digita il nome del filtro desiderato.
 1. Ripeti questi passaggi per ulteriori set di rapporti.
-1. Per informazioni sull&#39;utilizzo di una visualizzazione titolo dinamica con il rapporto, vedere la *Guida utente Data Workbench*.
+1. Per informazioni sull’utilizzo di una visualizzazione titolo dinamica con il rapporto, consulta *Guida utente di Data Workbench*.

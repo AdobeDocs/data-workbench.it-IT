@@ -3,7 +3,7 @@ description: Le espressioni di Dimension non vengono mai utilizzate da sole, ma 
 title: Sintassi delle espressioni dimensione
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 exl-id: 58609e31-8ad8-418b-9a9f-40462d6443f7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 0%
@@ -12,10 +12,12 @@ ht-degree: 0%
 
 # Sintassi delle espressioni dimensione{#syntax-for-dimension-expressions}
 
+{{eol}}
+
 Le espressioni di Dimension non vengono mai utilizzate da sole, ma possono essere utilizzate ovunque venga chiamata una dimensione in un’espressione metrica o filtro.
 
 1. Le parole sottolineate devono essere inserite letteralmente nel testo dell’espressione.
-1. Il modulo `{TEXT}?` rappresenta un testo facoltativo.
+1. Il modulo `{TEXT}?` rappresenta il testo facoltativo.
 1. Il modulo `{TEXT}*` rappresenta il testo che può verificarsi zero o più volte.
 1. Il modulo `{A | B | C |...}` rappresenta il testo costituito esattamente da una delle opzioni specificate, ad esempio A o B o C....
 1. Il modulo `[A,B)` rappresenta un intervallo di numeri, da A a B escluso.
@@ -24,7 +26,7 @@ Le espressioni di Dimension non vengono mai utilizzate da sole, ma possono esser
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Identificatore </p> </td> 
-   <td colname="col2"> <p>Un identificatore fa riferimento a una dimensione denominata. Per le regole che disciplinano gli identificatori legali, consulta <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Sintassi per gli identificatori </a>. </p> <p>Esempio: Sessions[ Session_Number = "1" ] è il numero di sessioni con un numero di sessione pari a "1". Numero sessione è una dimensione denominata a cui fa riferimento l’identificatore . </p> </td> 
+   <td colname="col2"> <p>Un identificatore fa riferimento a una dimensione denominata. Per le norme che disciplinano gli identificatori legali, vedi <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Sintassi per gli identificatori </a>. </p> <p>Esempio: Sessions[ Session_Number = "1" ] è il numero di sessioni con un numero di sessione pari a "1". Numero sessione è una dimensione denominata a cui fa riferimento l’identificatore . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Dimensione) </p> </td> 
@@ -48,15 +50,15 @@ Le espressioni di Dimension non vengono mai utilizzate da sole, ma possono esser
   </tr> 
   <tr> 
    <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Size}? }?) </p> </td> 
-   <td colname="col2"> <p>Definisce una dimensione i cui elementi sono intervalli di numeri (di dimensioni fisse, ad esempio [0-9], [10-19],...). Gli elementi di Livello si riferiscono all’elemento dell’attenuazione del bucket il cui intervallo contiene il valore di Metric per l’elemento di livello. Format è la stringa in formato printf utilizzata per formattare gli elementi di Metric. </p> <p>Esempio: Se Page_Duration_Minutes è una dimensione a livello di visualizzazione di pagina che rappresenta il numero di minuti trascorsi su ogni pagina, bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) è una dimensione a livello di sessione che rappresenta il numero di minuti trascorsi in ogni sessione; gli elementi sono intervalli di 5 minuti <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start è il valore iniziale del primo intervallo (impostazione predefinita: 0) e Dimensione è la dimensione dell'intervallo (impostazione predefinita: 1). </p> </td> 
+   <td colname="col2"> <p>Definisce una dimensione i cui elementi sono intervalli di numeri (di dimensioni fisse, ad esempio [0-9], [10-19],...). Gli elementi di Livello si riferiscono all’elemento dell’attenuazione del bucket il cui intervallo contiene il valore di Metric per l’elemento di livello. Format è la stringa in formato printf utilizzata per formattare gli elementi di Metric. </p> <p>Esempio: Se Page_Duration_Minutes è una dimensione a livello di visualizzazione di pagina che rappresenta il numero di minuti trascorsi su ogni pagina, bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) è una dimensione a livello di sessione che rappresenta il numero di minuti trascorsi in ogni sessione; i suoi elementi sono a intervalli di 5 minuti <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start è il valore iniziale del primo intervallo (impostazione predefinita: 0) e Dimensione è la dimensione dell'intervallo (impostazione predefinita: 1). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>prefix(Livello {,Nome elemento-&gt;(Prefisso{,Prefix}* )}* ) </p> </td> 
+   <td colname="col1"> <p>prefix(Level {,ElementName-&gt;(Prefix{,Prefix}* )}* ) </p> </td> 
    <td colname="col2"> <p>Definisce una dimensione i cui elementi sono le stringhe ElementName specificate e sono associati ai set corrispondenti di stringhe Prefix. Gli elementi di Livello si riferiscono all’elemento del prefisso dim, associato al prefisso più lungo corrispondente al nome dell’elemento di livello specificato. I prefissi che terminano con il carattere speciale '$' devono corrispondere esattamente. </p> <p>Ad esempio, prefisso(URI, "Products" -&gt; ("/products/"), "Services" -&gt; ("/services/", "/products/service/"), "Warranties" -&gt; ("/products/warranty.html$", "/services/warranty.html$", "Everything Else" -&gt; ("/")) crea una dimensione che classifica gli URI nelle quattro categorie elencate. L’effetto sulle varie pagine è il seguente: </p> <p>/products/warranty.html entra in garanzia, poiché corrisponde esattamente al prefisso /products/warranty.html$. </p> <p>/products/cars/specialcar.html Entra in Products, poiché corrisponde al prefisso /products/ e non utilizza più il prefisso . </p> <p>/products/service/something.html accede a Servizi, in quanto corrisponde al prefisso /products/service/ che è più lungo del prefisso /products/ . </p> <p>/companyinfo/aboutus.html Entra nella categoria "Tutto il resto", poiché l’unico prefisso che corrisponde è "/". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>latenza (Livello, Clip, Dim, Filtro, MaxBefore, MaxAfter, FormatString) </p> </td> 
-   <td colname="col2"> <p>Consulta <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Creazione di Dimension di latenza </a>. </p> </td> 
+   <td colname="col2"> <p>Vedi <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Creazione di Dimension di latenza </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>cartesian_product(Separator {,Dim}*) </p> </td> 

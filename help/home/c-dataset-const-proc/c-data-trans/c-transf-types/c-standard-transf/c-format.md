@@ -3,7 +3,7 @@ description: La trasformazione Format prende un set di input e li formatta per c
 title: Formato
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
 exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Formato{#format}
+
+{{eol}}
 
 La trasformazione Format prende un set di input e li formatta per creare un output corrispondente alla struttura specificata.
 
@@ -21,7 +23,7 @@ La trasformazione funziona su stringhe semplici o vettori di stringhe e produce 
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -47,11 +49,11 @@ La trasformazione funziona su stringhe semplici o vettori di stringhe e produce 
   </tr> 
   <tr> 
    <td colname="col1"> Ingressi </td> 
-   <td colname="col2"> <p>Campi contenenti stringhe semplici o vettori di stringhe. Nel caso dei vettori stringa come input, l'output sarà anche un vettore stringa risultante dall'applicazione del parametro <span class="wintitle"> Format</span> a ciascun set di valori di input. </p> <p> <p>Nota:  La numerazione degli input inizia a 0, ma la numerazione dei valori di sostituzione del formato inizia a %1%. </p> </p> </td> 
+   <td colname="col2"> <p>Campi contenenti stringhe semplici o vettori di stringhe. Nel caso di vettori di stringa come input, l'output sarà anche un vettore di stringa risultante dall'applicazione del <span class="wintitle"> Formato</span> a ogni insieme di valori di input. </p> <p> <p>Nota: La numerazione degli input inizia a 0, ma la numerazione dei valori di sostituzione del formato inizia a %1%. </p> </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Uscita </td> 
+   <td colname="col1"> Output </td> 
    <td colname="col2"> Nome del campo creato per contenere i risultati della trasformazione. Se gli input sono vettori di stringa, la lunghezza del vettore della stringa di output sarà la lunghezza del vettore di input più lungo. Se alcuni vettori della stringa di input hanno una lunghezza più breve, vengono utilizzate stringhe vuote per la loro posizione nella stringa di formato fino a raggiungere la lunghezza del vettore di output. </td> 
    <td colname="col3"></td> 
   </tr> 

@@ -3,7 +3,7 @@ description: Informazioni sulla valutazione e il monitoraggio del carico dello s
 title: Monitoraggio dell’utilizzo della memoria
 uuid: e7f1c51b-d874-43f4-a074-1c064b5f298a
 exl-id: b8c0b33b-dbec-4947-911b-11c8a83bbc9c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 2%
@@ -12,13 +12,15 @@ ht-degree: 2%
 
 # Monitoraggio dell’utilizzo della memoria{#monitoring-memory-usage}
 
+{{eol}}
+
 Informazioni sulla valutazione e il monitoraggio del carico dello spazio degli indirizzi.
 
 **Monitoraggio del caricamento dello spazio degli indirizzi**
 
-**Frequenza consigliata:** giornaliera
+**Frequenza consigliata:** Giornaliero
 
-Il caricamento Spazio indirizzo è una misura della frazione dello Spazio indirizzi massimo utilizzato da un [!DNL Insight Server] configurato correttamente. Anche se i parametri di configurazione vengono modificati per ridurre l&#39;utilizzo della memoria, di solito non diminuisce finché il servizio [!DNL Insight Server] non viene riavviato.
+Il carico dello spazio degli indirizzi è una misura della frazione dello spazio degli indirizzi massimo configurato correttamente [!DNL Insight Server] utilizza . Anche se i parametri di configurazione vengono modificati per ridurre l&#39;utilizzo della memoria, di solito non diminuisce fino a quando il [!DNL Insight Server] il servizio viene riavviato.
 
 Un margine di sicurezza è integrato nel valore massimo di caricamento Spazio indirizzo per tenere conto di incrementi imprevisti nell&#39;utilizzo dello spazio degli indirizzi. Non devi mai tagliare deliberatamente in questo margine di sicurezza. Esiste per le situazioni di emergenza e non per il supporto delle funzionalità aggiunte all&#39;applicazione Adobe.
 
@@ -26,7 +28,7 @@ Un margine di sicurezza è integrato nel valore massimo di caricamento Spazio in
 >
 >Per rendere disponibile più spazio di indirizzo ed evitare errori di esaurimento della memoria, assicurarsi che il sistema operativo disponga dello switch /3GB abilitato e che l&#39;heap a bassa frammentazione sia in funzione.
 
-Gli errori registrati nel registro dati dell&#39;evento [!DNL Insight Server] possono fornire un indizio che i problemi si stanno sviluppando con il caricamento dello spazio degli indirizzi:
+Errori registrati nel [!DNL Insight Server] il registro dati dell&#39;evento può fornire un indizio che i problemi si sviluppano con il caricamento dello spazio degli indirizzi:
 
 * Gli errori &quot;x byte block richiesto è troppo grande&quot; indicano che qualcosa può avere un impatto eccessivo sul caricamento dello spazio degli indirizzi, sulle prestazioni e sulla larghezza di banda della rete. Tali blocchi di grandi dimensioni possono contribuire notevolmente all&#39;utilizzo dello spazio di indirizzo, sia utilizzando molta memoria sia richiedendo blocchi contigui di ampio spazio di indirizzi.
 
@@ -39,19 +41,19 @@ Gli errori registrati nel registro dati dell&#39;evento [!DNL Insight Server] po
 
 **Valutazione del carico dello spazio degli indirizzi**
 
-Per valutare con precisione il carico di spazio degli indirizzi per il sistema, Adobe consiglia di rielaborare il set di dati, eseguire alcune query normali senza riavviare successivamente [!DNL Insight Server] e quindi visualizzare il carico misurato di spazio degli indirizzi seguendo questi passaggi.
+Per valutare con precisione il carico di spazio degli indirizzi per il sistema, Adobe consiglia di rielaborare il set di dati, eseguendo alcune query normali senza riavviare successivamente [!DNL Insight Server], quindi visualizzare il carico misurato dello spazio degli indirizzi seguendo questi passaggi.
 
-Se un [!DNL Insight Server] non è stato rielaborato e sottoposto a query in modo significativo dall&#39;ultimo riavvio, non è necessario trarre conclusioni dal caricamento Spazio indirizzi.
+Se [!DNL Insight Server] non è stato rielaborato e sottoposto a query in modo significativo dall&#39;ultimo riavvio, non è necessario trarre conclusioni dal caricamento Spazio indirizzi.
 
-1. In [!DNL Insight], nella scheda [!DNL Admin] > [!DNL Dataset and Profile] fare clic sulla miniatura **[!UICONTROL Servers Manager]** per aprire l&#39;area di lavoro di Server Manager.
-1. Fai clic con il pulsante destro del mouse sull&#39;icona del [!DNL Insight Server] da configurare e fai clic su **[!UICONTROL Detailed Status]**.
+1. In [!DNL Insight], sul [!DNL Admin] > [!DNL Dataset and Profile] fai clic sulla scheda **[!UICONTROL Servers Manager]** per aprire l&#39;area di lavoro Server Manager.
+1. Fai clic con il pulsante destro del mouse sull’icona [!DNL Insight Server] si desidera configurare e fare clic su **[!UICONTROL Detailed Status]**.
 1. Nell’interfaccia di Stato dettagliato, fai clic su **[!UICONTROL Memory Status]** per visualizzarne il contenuto. Nel parametro di caricamento dello spazio degli indirizzi è possibile visualizzare il carico dello spazio degli indirizzi espresso come percentuale e una descrizione tra parentesi che indica lo stato.
 
    Nella tabella seguente sono riportati gli intervalli e lo stato del caricamento dello spazio degli indirizzi. Per ogni intervallo è elencata un’azione consigliata.
 
    | Caricamento dello spazio degli indirizzi (%) | Stato | Azione consigliata |
    |---|---|---|
-   | 0-15 | magra e media | None. |
+   | 0-15 | magra e media | Nessuno. |
    | 15-33 | chiaro | Nessuno. |
    | 33-66 | moderato | Nessuno. |
    | 66-100 | pesante | Per evitare errori di esaurimento della memoria, non aggiungere funzionalità aggiuntive significative o tentare di elaborare più dati. |

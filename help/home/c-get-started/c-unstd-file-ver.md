@@ -3,14 +3,16 @@ description: Il Worktop consente di determinare facilmente dove viene memorizzat
 title: Controllo delle versioni file
 uuid: 5e7430f3-1425-41d2-828b-bc8f5786bf3b
 exl-id: 82a70d51-a95c-4ddd-8d3c-cd0364940693
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Controllo delle versioni file{#file-versioning}
+
+{{eol}}
 
 Il Worktop consente di determinare facilmente dove viene memorizzato ogni particolare workspace, sia sul server Data Workbench, sul computer locale o su entrambi.
 
@@ -30,11 +32,11 @@ Un’area di lavoro locale è la versione locale di un’area di lavoro server. 
 
 ![](assets/wsp_thumb_local.png)
 
-Le aree di lavoro locali vengono memorizzate per impostazione predefinita nella cartella [!DNL User\working profile name\Workspaces\tab] name all&#39;interno della directory di installazione di Data Workbench (o Insight).
+Le aree di lavoro locali vengono memorizzate per impostazione predefinita in [!DNL User\working profile name\Workspaces\tab] cartella name all’interno della directory di installazione di Data Workbench (o Insight).
 
 >[!NOTE]
 >
->Se si dispone di una versione locale di un&#39;area di lavoro server, è necessario ripristinare la versione del server prima di scaricare una versione aggiornata dell&#39;area di lavoro server. Per ripristinare la versione del server senza modifiche locali, fai clic con il pulsante destro del mouse sulla miniatura dell’area di lavoro locale e fai clic su **[!UICONTROL Revert to server version]**.
+>Se si dispone di una versione locale di un&#39;area di lavoro server, è necessario ripristinare la versione del server prima di scaricare una versione aggiornata dell&#39;area di lavoro server. Per ripristinare la versione del server senza modifiche locali, fare clic con il pulsante destro del mouse sulla miniatura dell&#39;area di lavoro locale e fare clic su **[!UICONTROL Revert to server version]**.
 
 **Utente**
 
@@ -42,4 +44,4 @@ Un&#39;area di lavoro utente è un&#39;area di lavoro creata su ed esiste solo n
 
 ![](assets/wsp_thumb_user.png)
 
-Le aree di lavoro utente sono memorizzate per impostazione predefinita nella cartella Nome profilo di lavoro*\Workspaces\*nome scheda* all’interno della directory di installazione di Insight.
+Le aree di lavoro utente sono memorizzate per impostazione predefinita nella cartella Nome profilo di lavoro utente\*Nome profilo di lavoro*\Workspace\*nome scheda* all’interno della directory di installazione di Insight.

@@ -3,7 +3,7 @@ description: Passaggi utilizzati per facilitare la raccolta di clic sui collegam
 title: Tracciamento dei clic dei collegamenti
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
 exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 3%
@@ -12,11 +12,13 @@ ht-degree: 3%
 
 # Tracciamento dei clic dei collegamenti{#tracking-link-clicks}
 
+{{eol}}
+
 Passaggi utilizzati per facilitare la raccolta di clic sui collegamenti tramite l’uso del tag della pagina di riferimento.
 
-Attraverso la distribuzione di [!DNL Reference Page Tag], è possibile raccogliere dati di misurazione che denotano i collegamenti (o valori href) su cui i visitatori fanno clic durante la visita a pagine particolari. In genere, questa raccolta non richiede l’implementazione di identificatori di collegamento aggiuntivi nelle pagine di HTML.
+Attraverso l&#39;installazione di [!DNL Reference Page Tag], è possibile raccogliere dati di misurazione che denotano i collegamenti (o valori href) su cui i visitatori fanno clic durante la visita a determinate pagine. In genere, questa raccolta non richiede l’implementazione di identificatori di collegamento aggiuntivi nelle pagine di HTML.
 
-Per facilitare la raccolta dei clic sui collegamenti tramite l’uso di [!DNL Reference Page Tag], completa i seguenti passaggi:
+Per facilitare la raccolta dei clic sui link attraverso l&#39;uso del [!DNL Reference Page Tag], completa i seguenti passaggi:
 
 1. Copia il seguente codice nel file esistente denominato [!DNL zig.js]:
 
@@ -77,12 +79,12 @@ Per facilitare la raccolta dei clic sui collegamenti tramite l’uso di [!DNL Re
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. Crea o inserisci il file immagine da 1 pixel per 1 pixel denominato [!DNL zag2.gif] in una directory presente sul server web.
-1. Modifica la variabile [!DNL lc.src] in modo che faccia riferimento al dominio appropriato del sito web da cui si fa riferimento al file [!DNL zag2.gif].
+1. Crea o posiziona il file immagine da 1 pixel per 1 pixel denominato [!DNL zag2.gif] in una directory presente sul server web.
+1. Modifica la [!DNL lc.src] per fare riferimento al dominio appropriato del sito web da cui [!DNL zag2.gif]file a cui si fa riferimento.
 
-1. Assicurati che le intestazioni di controllo della cache appropriate siano stabilite per i file [!DNL zag.gif] e [!DNL zig.js].
+1. Assicurati che le intestazioni di controllo della cache appropriate siano stabilite per [!DNL zag.gif] e [!DNL zig.js] file.
 
-1. Nei file HTML da cui desideri raccogliere i valori di clic del collegamento, è necessario modificare il [!DNL Reference Page Tag Execution Call] per informare il [!DNL Page Tag Execution Script] per acquisire i clic sul collegamento per tale pagina. A questo scopo, modifica il valore della variabile vlc in &quot;1&quot;, come evidenziato nel seguente esempio di codice:
+1. Nei file HTML da cui desideri raccogliere i valori di clic del collegamento, la [!DNL Reference Page Tag Execution Call] devono essere modificati per informare [!DNL Page Tag Execution Script] per acquisire i clic sul collegamento per la pagina. A questo scopo, modifica il valore della variabile vlc in &quot;1&quot;, come evidenziato nel seguente esempio di codice:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG-->

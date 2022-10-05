@@ -3,7 +3,7 @@ description: Data Workbench fornisce fogli di lavoro per la creazione di filtri 
 title: Fogli di lavoro
 uuid: 4e498150-3e44-4a19-8d8a-8be0d32693a6
 exl-id: 73f3e400-648c-4659-8e55-d3bd27ccceb6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Fogli di lavoro{#worksheets}
+
+{{eol}}
 
 Data Workbench fornisce fogli di lavoro per la creazione di filtri e metriche ad hoc per la visualizzazione corrente.
 
@@ -20,4 +22,4 @@ Un foglio di lavoro è simile a un foglio di calcolo comune, ma a differenza di 
 
 A differenza delle metriche create utilizzando [!DNL Metric Editor], le metriche definite utilizzando i fogli di lavoro non vengono visualizzate nei menu delle metriche, ma possono essere salvate e incluse in una qualsiasi delle aree di lavoro.
 
-Per informazioni su [!DNL Metric Editor], consulta [Creazione e modifica di metriche derivate](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40).
+Per informazioni sulla [!DNL Metric Editor], vedi [Creazione e modifica di metriche derivate](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40).

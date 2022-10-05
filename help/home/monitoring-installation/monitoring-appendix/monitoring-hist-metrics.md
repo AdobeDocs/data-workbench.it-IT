@@ -3,7 +3,7 @@ description: Di seguito sono elencate le metriche incluse nel profilo di monitor
 title: Metriche nel profilo di monitoraggio cronologico di Data Workbench
 uuid: 47b874f7-8acb-4593-9ac9-5997d5279e52
 exl-id: 65f0f605-f128-45bb-8f6c-95284b2da740
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Metriche nel profilo di monitoraggio cronologico di Data Workbench{#metrics-in-the-data-workbench-historical-monitoring-profile}
+
+{{eol}}
 
 Di seguito sono elencate le metriche incluse nel profilo di monitoraggio cronologico di Data Workbench e le relative modalità di derivazione.
 
@@ -41,7 +43,7 @@ Di seguito sono elencate le metriche incluse nel profilo di monitoraggio cronolo
 | **Memoria fisica** | La somma della dimensione Percentuale fisica memoria per ogni Ping, divisa per la metrica Pings. |
 | **Query di memoria** | La somma della percentuale di query di memoria per ogni ping, divisa per la metrica Pings. |
 | **Totale memoria GB** | La somma della dimensione Totale MegaByte fisici di memoria per ogni Ping, divisa per la metrica Pings. |
-| **Connessioni di rete** | È la somma delle connessioni di rete per ogni ping diviso per la metrica Pings. |
+| **Connessioni di rete** | Somma delle connessioni di rete per ogni ping divisa per la metrica Pings. |
 | **Ping x capacità complessiva** | La metrica Pings (Ping) moltiplicata per la metrica Capacity Total (Capacità complessiva). |
 | **Millisecondi di latenza del sondaggio** | La somma della dimensione Centisecondi di di latenza del sondaggio per ogni Ping, divisa per la metrica Pings (Ping), tutti moltiplicata per 10. |
 | **Query in esecuzione** | La somma di uno per ogni ping in cui i valori di Debugger stimati sono maggiori di &quot;0&quot;, divisa per la metrica Pings in cui Tipo di ping è uguale a &quot;server&quot;. |
@@ -49,6 +51,6 @@ Di seguito sono elencate le metriche incluse nel profilo di monitoraggio cronolo
 | **Righe di output** | La somma della dimensione Righe di output per ciascun ping diviso per la metrica Pings, moltiplicata per 100000. |
 | **Modalità in tempo reale** | Il numero di ping in cui la dimensione Modalità di elaborazione è uguale a &quot;tempo reale&quot;, diviso per la metrica Pings, tutto moltiplicato per 100. |
 | **Modalità di rielaborazione** | 100 meno il numero di ping in cui la modalità di elaborazione è uguale a &quot;tempo reale&quot; diviso per la metrica Pings, moltiplicato per 100. |
-| **In stallo** | La somma della dimensione di elaborazione bloccata nel profilo Insight [Stato profilo](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64). |
+| **In stallo** | La somma della dimensione di elaborazione bloccata nel Insight [Stato del profilo](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64) profilo. |
 | **DB temporaneo** | La somma della percentuale di spazio del database temporaneo per ogni ping, divisa per la metrica Pings. |
 | **Transformation (Trasformazione)** | La somma della percentuale di trasformazione per ogni Ping divisa per la metrica Pings (Ping) divisa per 10. |

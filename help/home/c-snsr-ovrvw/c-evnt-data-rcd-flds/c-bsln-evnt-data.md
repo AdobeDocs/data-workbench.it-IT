@@ -3,7 +3,7 @@ description: Informazioni sui campi di record dei dati dell’evento della linea
 title: Campi record dati evento linea di base
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Campi record dati evento linea di base{#baseline-event-data-record-fields}
+
+{{eol}}
 
 Informazioni sui campi di record dei dati dell’evento della linea di base registrati dal Sensor.
 
@@ -48,7 +50,7 @@ Informazioni sui campi di record dei dati dell’evento della linea di base regi
   </tr>
   <tr>
    <td colname="col1"> cs-uri-stem </td>
-   <td colname="col2"> <p>La parte di stelo dell’URI (stem + stringa di query = URI) </p> <p>Lo stelo è il percorso effettivo o logico della risorsa richiesta sul server. </p> <p>Esempio: /index.asp </p> </td>
+   <td colname="col2"> <p>La parte di stelo dell’URI (stelo + stringa di query = URI) </p> <p>Lo stelo è il percorso effettivo o logico della risorsa richiesta sul server. </p> <p>Esempio: /index.asp </p> </td>
   </tr>
   <tr>
    <td colname="col1"> sc(tipo di contenuto) </td>
@@ -72,13 +74,13 @@ Informazioni sui campi di record dei dati dell’evento della linea di base regi
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>Data e ora (GMT) in cui la richiesta è stata ricevuta dal server. </p> <p>Il tempo è espresso come numero di 100 nanosecondi dal 1° gennaio 1600. </p> <p>Esempio: 127710989320000000 è il valore x-timestamp per 11:28:52.0000000 di martedì 13 settembre 2005. </p> </td>
+   <td colname="col2"> <p>Data e ora (GMT) in cui la richiesta è stata ricevuta dal server. </p> <p>Il tempo è espresso come numero di 100 nanosecondi dal 1° gennaio 1600. </p> <p>Esempio: 127710989320000000 è il valore x-timestamp per 11:28:52.0000000 martedì 13 settembre 2005. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
-   <td colname="col2"> <p>Il valore esadecimale a 64 bit dell'identificatore univoco del browser trovato in un cookie persistente impostato da un <span class="wintitle"> Sensor </span> e fornito dal client con una richiesta a un server. </p> <p>Esempio: 42FDF66DE610CF36 </p> </td>
+   <td colname="col2"> <p>Il valore esadecimale a 64 bit dell'identificatore univoco del browser trovato in un cookie persistente impostato da un <span class="wintitle"> Sensore </span> e fornito dal client con una richiesta a un server. </p> <p>Esempio: 42FDF66DE610CF36 </p> </td>
   </tr>
  </tbody>
 </table>
 
-Il [!DNL data workbench server] può derivare una serie di variabili dai campi dei record dei dati dell’evento della linea di base. Per ulteriori informazioni, consulta la *Guida alla configurazione del set di dati*.
+La [!DNL data workbench server] può ricavare una serie di variabili dai campi dei record dei dati evento della linea di base. Per ulteriori informazioni, consulta la sezione *Guida alla configurazione del set di dati*.

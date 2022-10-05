@@ -3,7 +3,7 @@ description: È possibile creare un livello vettoriale che faccia riferimento a 
 title: Definire i livelli vettoriali che fanno riferimento a file vettoriali
 uuid: fe6639fb-98fb-4246-9cc1-1a928df6ae0a
 exl-id: d78fa7ea-e2a9-42b7-9071-5f72409c5b7a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 7%
@@ -12,25 +12,27 @@ ht-degree: 7%
 
 # Definire i livelli vettoriali che fanno riferimento a file vettoriali{#define-vector-layers-referencing-vector-files}
 
+{{eol}}
+
 È possibile creare un livello vettoriale che faccia riferimento a uno o più file vettoriali (.vec), contenente i dati che definiscono i vettori da disegnare sul globo.
 
-Per definire un livello vettoriale che faccia riferimento a uno o più file [!DNL .vec], è necessario disporre dei seguenti elementi:
+Per definire un livello vettoriale che faccia riferimento a uno o più [!DNL .vec] file, devi disporre dei seguenti elementi:
 
-* **Uno o più  [!DNL .vec]** file contenenti i dati utilizzati per disegnare i vettori sul globo.
-
-   >[!NOTE]
-   >
-   >Per ottenere i file [!DNL .vec] da utilizzare con i livelli vettoriali, contatta l’Adobe.
-
-* **File di livello** che specifica la posizione dei  [!DNL .vec] file. Per ulteriori informazioni sul formato richiesto del file di livello, vedere [Formato del file di livello vettoriale](../../../../home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md#section-83a0077cf0c8479b9e7b2939bc761af1).
+* **Uno o più [!DNL .vec] file** che contengono i dati utilizzati per disegnare i vettori sul globo.
 
    >[!NOTE]
    >
-   >Il file [!DNL Boundaries.layer] fornito con il profilo [!DNL Geography] è un livello vettoriale che fa riferimento ai file [!DNL mwnation.vec], [!DNL mwstate.vec], [!DNL mwcoast.vec], [!DNL mwlake.vec] e [!DNL mwisland.vec].
+   >Per ottenere [!DNL .vec] file da utilizzare con i livelli vettoriali, contattare Adobe.
+
+* **Un file di livello** specifica la posizione della [!DNL .vec] file. Per ulteriori informazioni sul formato richiesto del file di livello, vedi [Formato file livello vettoriale](../../../../home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md#section-83a0077cf0c8479b9e7b2939bc761af1).
+
+   >[!NOTE]
+   >
+   >La [!DNL Boundaries.layer] file, fornito con [!DNL Geography] è un livello vettoriale che fa riferimento a [!DNL mwnation.vec], [!DNL mwstate.vec], [!DNL mwcoast.vec], [!DNL mwlake.vec]e [!DNL mwisland.vec] file.
 
 ## Formato del file del livello vettoriale {#section-83a0077cf0c8479b9e7b2939bc761af1}
 
-Ogni file di livello vettoriale che fa riferimento a file [!DNL .vec] deve essere formattato utilizzando il seguente modello:
+Ciascun file vettoriale che fa riferimento a [!DNL .vec] i file devono essere formattati utilizzando il seguente modello:
 
 ```
 Layer = VectorLayer:
@@ -47,13 +49,13 @@ Layer = VectorLayer:
 
 | Parametro | Descrizione |
 |---|---|
-| File Vec | Percorso/i del file [!DNL .vec] contenente i dati vettoriali. |
+| File Vec | Percorso/i verso il [!DNL .vec] file contenenti i dati vettoriali. |
 | Colore | Il vettore del colore RGB, espresso come (rosso, verde, blu). Per ogni colore del vettore, è possibile immettere un valore compreso tra 0,0 e 1,0. Ad esempio, (1.0, 0.0, 0.0) è rosso chiaro e (0,5, 0,5, 0,5) è grigio. |
 | Alfa | Controlla la trasparenza dei vettori mostrati sul globo. L&#39;intervallo è compreso tra 0 e 1, mentre 0 è il più trasparente. |
 | Larghezza | Facoltativo. Imposta la larghezza dei dati in pixel. L&#39;intervallo consigliato è da 1 a 4. |
 | Fattore errore | Controlla la precisione con cui vengono disegnati i vettori. Per valori più grandi, i vettori vengono disegnati con minore precisione ma più velocemente. Il valore predefinito è 5. |
 
-Il file [!DNL Boundaries.layer] viene formattato come segue:
+La [!DNL Boundaries.layer] file formattato come segue:
 
 ```
  Boundaries.layer file is formatted as follows:

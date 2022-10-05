@@ -3,7 +3,7 @@ description: La visualizzazione funnel include funzioni per la creazione di un f
 title: Funzioni funnel
 uuid: 7d2f5ff9-95d3-41f5-931c-689f140714c2
 exl-id: e78dcefe-6f92-45de-9990-0beac09ad82f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Funzioni funnel{#funnel-features}
+
+{{eol}}
 
 La visualizzazione funnel include funzioni per la creazione di un funnel con più dimensioni, numeri di visitatori non elaborati, percentuale di visitatori in ogni passaggio e ambiti separati.
 
@@ -28,7 +30,7 @@ Di seguito sono elencate le funzioni di base della visualizzazione funnel.
   <tr> 
    <td colname="col01"> <img id="image_EF8AF94D833B4A249959B76F8FAF2318" src="assets/funnel_visualization_capture_2.png" /> </td> 
    <td colname="col1"> Terzo elemento </td> 
-   <td colname="col2">Terzo passaggio funnel nel processo. <p><p>Nota:  Gli elementi selezionati non devono necessariamente provenire dalla stessa dimensione. </p></p></td> 
+   <td colname="col2">Terzo passaggio funnel nel processo. <p><p>Nota: Gli elementi selezionati non devono necessariamente provenire dalla stessa dimensione. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col01"> <img id="image_F3C5130B52234FAC9DEB50279F94FF90" src="assets/funnel_visualization_capture_3.png" /> </td> 
@@ -38,7 +40,7 @@ Di seguito sono elencate le funzioni di base della visualizzazione funnel.
   <tr> 
    <td colname="col01"> <img id="image_3F030396CEB14528980F5B965113BD36" src="assets/funnel_visualization_capture_4.png" /> </td> 
    <td colname="col1"> Browser Fallout </td> 
-   <td colname="col2">Freccia di abbandono. Fai clic con il pulsante destro del mouse e seleziona <span class="uicontrol"> Aggiungi browser del percorso</span> per visualizzare il percorso seguito dagli altri visitatori. </td> 
+   <td colname="col2">Freccia di abbandono. Fai clic con il pulsante destro del mouse e seleziona <span class="uicontrol"> Aggiungi browser del percorso</span> per vedere cosa hanno fatto altri visitatori del percorso. </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <img id="image_0DA7567BDBDF4BEF9CA840D2F88A414E" src="assets/funnel_visualization_capture_5.png" /> </td> 
@@ -56,22 +58,22 @@ I dischi di un funnel rappresentano i passaggi della navigazione, i coni rappres
 >
 >La visualizzazione Funnel ha un limite di otto passaggi che possono essere applicati.
 
-## Funzionalità e funzionalità aggiuntive per funnel {#section-22a3582db8114ca8bce77f50bbbf296a}
+## Funzionalità e funzioni aggiuntive per funnel {#section-22a3582db8114ca8bce77f50bbbf296a}
 
 * **Regolare la clip e il livello dell&#39;imbuto**. Seleziona l’opzione Funnel dal menu Visualizzazione. Una volta creato l&#39;imbuto, è possibile fare clic con il pulsante destro del mouse sul titolo per regolare la clip e livellare qualsiasi metrica numerabile nel sistema.
 
    ![](assets/funnel_path_browser_9.png)
 
-* **Trascina altri elementi**. Aggiungi altri elementi all’imbuto trascinandoli dalla tabella del Dimension all’imbuto utilizzando i tasti `<Ctrl>` + `<Alt>`. Puoi trascinare più passaggi contemporaneamente dalla tabella del Dimension selezionando più elementi (utilizzando `<Ctrl>` + clic) e trascinandoli nella visualizzazione Funnel utilizzando i tasti `<Ctrl>` + `<Alt>`.
-* **Elimina un passaggio**: Elimina gli elementi facendo clic con il pulsante destro del mouse sul passaggio nella visualizzazione e facendo clic su  **Sì**.
+* **Trascina altri elementi**. Aggiungi altri elementi al funnel trascinandoli e rilasciandoli dalla tabella del Dimension al funnel utilizzando `<Ctrl>` + `<Alt>` chiavi. Puoi trascinare più passaggi contemporaneamente dalla tabella del Dimension selezionando più elementi (utilizzando `<Ctrl>` + clic) e quindi trascinarli nella visualizzazione Funnel utilizzando la `<Ctrl>` + `<Alt>` chiavi.
+* **Eliminare un passaggio**: Elimina gli elementi facendo clic con il pulsante destro del mouse sul passaggio nella visualizzazione e facendo clic su **Sì**.
 
    ![](assets/funnel_path_browser_4.png)
 
-* **Ridisponi i passaggi che hai trascinato nell’imbuto**. Fai clic sul passaggio per selezionarlo e trascinalo in un’altra posizione per ridisporre i passaggi.
-* **Apri un browser** del percorso. Puoi vedere più dettagli su dove i clienti subiscono o abbandonano il processo tramite la funzione [Aggiungi un browser del percorso](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) .
+* **Ridisporre i passaggi trascinati nell&#39;imbuto**. Fai clic sul passaggio per selezionarlo e trascinalo in un’altra posizione per ridisporre i passaggi.
+* **Aprire un browser del percorso**. Puoi vedere più dettagli su dove i clienti subiscono o abbandonano il processo attraverso [Aggiungere un browser del percorso](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) funzionalità.
 
 * **Aggiungi altri passaggi**. Puoi aggiungere un massimo di otto passaggi a ogni visualizzazione funnel.
-* **Modifica la metrica**. La metrica può essere modificata in modo che i passaggi conteggino le visite o qualche altra metrica in ogni passaggio. Le opzioni disponibili variano a seconda del set di dati.
-* **Visualizza in visualizzazione** tabulare. Fai clic con il pulsante destro del mouse sul titolo per visualizzare il menu Visualizzazione Funnel e fai clic su **[!UICONTROL Show Tabular View]**. Una volta nella visualizzazione a tabella, è possibile selezionare **[!UICONTROL Show Graph View]** per tornare alla rappresentazione grafica dell&#39;imbuto. Per aprire la Vista tabulare, fare clic con il pulsante destro del mouse sul titolo e selezionare Mostra vista tabulare dal menu.
+* **Modificare la metrica**. La metrica può essere modificata in modo che i passaggi conteggino le visite o qualche altra metrica in ogni passaggio. Le opzioni disponibili variano a seconda del set di dati.
+* **Visualizzazione in una visualizzazione a tabella**. Fai clic con il pulsante destro del mouse sul titolo per visualizzare il menu Visualizzazione Funnel e fai clic su **[!UICONTROL Show Tabular View]**. Una volta visualizzata la tabella, puoi selezionare **[!UICONTROL Show Graph View]** per tornare alla rappresentazione grafica dell&#39;imbuto. Per aprire la Vista tabulare, fare clic con il pulsante destro del mouse sul titolo e selezionare Mostra vista tabulare dal menu.
 
-* **Confrontare le sequenze**. Un modo efficiente per confrontare due sequenze simili è quello di visualizzare le due visualizzazioni affiancate. È inoltre possibile visualizzare sia la vista tabulare che la vista grafico affiancata utilizzando la funzione Duplica . Per aprire, fare clic con il pulsante destro del mouse sul titolo e selezionare Duplica dal menu.
+* **Confronto delle sequenze**. Un modo efficiente per confrontare due sequenze simili è quello di visualizzare le due visualizzazioni affiancate. È inoltre possibile visualizzare sia la vista tabulare che la vista grafico affiancata utilizzando la funzione Duplica . Per aprire, fare clic con il pulsante destro del mouse sul titolo e selezionare Duplica dal menu.

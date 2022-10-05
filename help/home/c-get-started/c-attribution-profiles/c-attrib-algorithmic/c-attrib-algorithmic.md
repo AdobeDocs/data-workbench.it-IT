@@ -1,113 +1,118 @@
 ---
-description: Attribuzione adattamento ottimale è un approccio di machine-learning per assegnare i valori di attribuzione tra i diversi canali di un evento di conversione di successo. Workbench dati valuta automaticamente i contributi al successo in una finestra di tempo per canale, quindi crea un modello di attribuzione basato sui pattern di interazione effettivi dei clienti.
+description: Attribuzione adattamento ottimale è un approccio di apprendimento automatico che consente di assegnare valori di attribuzione tra i diversi canali di un evento di conversione riuscito. Data Workbench valuta automaticamente i contributi al successo in una finestra di tempo per canale, quindi crea un modello di attribuzione basato sui pattern di interazione effettivi dei clienti.
 title: Attribuzione adattamento ottimale
 uuid: 0c51beb3-8f74-4f8e-9722-0c885140c8ce
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 225a54d0-370c-4274-8a87-dc287bbb8201
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 0%
 
 ---
 
-
 # Attribuzione adattamento ottimale{#best-fit-attribution}
 
-Attribuzione adattamento ottimale è un approccio di machine-learning per assegnare i valori di attribuzione tra i diversi canali di un evento di conversione di successo. Workbench dati valuta automaticamente i contributi al successo in una finestra di tempo per canale, quindi crea un modello di attribuzione basato sui pattern di interazione effettivi dei clienti.
+{{eol}}
 
-**[!UICONTROL Best Fit Attribution]** consente di confrontare le interazioni, o i tocchi, che hanno contribuito a una vendita di successo, l&#39;accesso alle e-mail o altri indicatori di prestazioni. L&#39;analisi di attribuzione assegna automaticamente peso ai tocchi più importanti e fornisce un modello di attribuzione per canale basato sui dati e reattivo al mercato e ai protocolli interni.
+Attribuzione adattamento ottimale è un approccio di apprendimento automatico che consente di assegnare valori di attribuzione tra i diversi canali di un evento di conversione riuscito. Data Workbench valuta automaticamente i contributi al successo in una finestra di tempo per canale, quindi crea un modello di attribuzione basato sui pattern di interazione effettivi dei clienti.
+
+**[!UICONTROL Best Fit Attribution]** ti consente di confrontare le interazioni, o i contatti, che hanno contribuito a una vendita con successo, l’iscrizione e-mail o altri indicatori di prestazioni. L’analisi di attribuzione assegna automaticamente importanza ai punti più importanti e fornisce un modello di attribuzione per canale basato sui dati e reattivo al mercato e ai protocolli interni.
 
 ![](assets/attrib_windows_5.png)
 
-Ad esempio, se un cliente visita il sito tramite una ricerca organica, si impegna con una campagna e quindi si registra un&#39;e-mail, Attribuzione [basata su](/help/home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md) regole identificherebbe il primo tocco o l&#39;ultimo tocco, o distribuisce uniformemente l&#39;attribuzione di successo a tutti i punti di contatto utilizzando modelli di attribuzione predefiniti. Quando l&#39;attribuzione basata su regole viene definita dall&#39;utente, gli attributi di adattamento ottimale impostano i valori attraverso un algoritmo calcolando la probabilità di una conversione in funzione dei punti di contatto osservati.
+Ad esempio, se un cliente visita il tuo sito tramite una ricerca organica, si impegna con una campagna e poi si iscrive a un’e-mail, [Attribuzione basata su regole](/help/home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md) identificherebbe il primo o l’ultimo contatto o distribuirebbe uniformemente l’attribuzione di successo su tutti i punti di contatto utilizzando modelli di attribuzione preimpostati. Laddove l’attribuzione basata su regole viene definita dall’utente, gli attributi Best Fit impostano i valori attraverso un algoritmo calcolando la probabilità di una conversione in funzione dei punti di contatto osservati.
 
 >[!NOTE]
 >
->Per eseguire l&#39;attribuzione **** Adatta [!DNL .pem file]ottimale in Workbench dati, è necessario aggiornare il certificato server () per supportare Adobe Analytics Premium. È inoltre necessario aggiungere **Premium** al client [!DNL Profile.cfg] personalizzato e ricevere nuovi certificati da Adobe ClientCare per server e server di report.
+>Per eseguire **Attribuzione adattamento ottimale** in Data Workbench, devi aggiornare il certificato del server ( [!DNL .pem file]) per supportare Adobe Analytics Premium. È inoltre necessario aggiungere **Premium** su misura [!DNL Profile.cfg] per il client e ricevere nuovi certificati da Adobe ClientCare per Server e Report Server.
 
 ## Configurazione di base {#section-db597eaee462412ea7280d1426366c61}
 
-Per istruzioni dettagliate, consultate [Creare un&#39;attribuzione](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md#concept-fede6fc4f592475fa8b351b1765a522d) di adattamento ottimale.
+Vedi [Creare un’attribuzione adattamento ottimale](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md#concept-fede6fc4f592475fa8b351b1765a522d) istruzioni dettagliate.
 
-**Impostate la metrica** Success (Success) Definite una metrica che rappresenta un evento di successo.
+**Impostare la metrica di successo**
+Definisci una metrica che rappresenta un evento di successo.
 
 ![](assets/attrib_windows_1.png)
 
-La metrica di successo è spesso *Ordini*, anche se è possibile utilizzare Workbench dati per definire una metrica di successo molto complicata insieme alla finestra di successo.
+La metrica di successo è spesso *Ordini*, anche se puoi sfruttare la Data Workbench per definire una metrica di successo molto complicata insieme alla finestra di successo.
 
-**Impostare la metrica** Touch (facoltativo)
+**Impostare la metrica Touch** (facoltativo)
 
-Identificare le interazioni per tenere traccia che hanno portato a una conversione di successo, quindi impostare la metrica Touch su cui verrà calcolata l&#39;attribuzione.
+Identifica le interazioni per tracciare che hanno portato a una conversione di successo, quindi imposta la metrica Touch su cui verrà calcolata l’attribuzione.
 
 >[!NOTE]
 >
->L’impostazione di una metrica Touch è necessaria solo se viene utilizzata per derivare le metriche del canale da elementi Dimensione drag and drop invece di utilizzare le metriche del canale esistenti.
+>L’impostazione di una metrica Touch è necessaria solo se la utilizzi per derivare le metriche del canale dal trascinamento degli elementi del Dimension invece di utilizzare le metriche del canale esistenti.
 
-Se non disponete di una metrica definita per campagne o canali, ma le dimensioni rappresentano i canali, la funzione Attribuzione adattamento ottimale può essere creata automaticamente in base alla metrica Tocco.
+Se non hai una metrica definita per campagne o canali, ma hai dimensioni che rappresentano canali, l’attribuzione adattamento ottimale può generarle automaticamente in base alla metrica Touch.
 
-Ad esempio, con la metrica Touch impostata come *Hits* e a cui è stata assegnata una dimensione denominata *Media Type* con elementi che includono *Email*, *Press Release*, *Print Ad***[!DNL Hits where Media Type = Email] e Social Media, la visualizzazione genererà metriche Channel del modulo quando si trascina e si rilasciano gli elementi sulla visualizzazione.
+Ad esempio, con la metrica Touch impostata come *Hit* e a una dimensione denominata *Tipo di supporto* con elementi che includono *E-mail*, *Comunicato stampa*, *Stampa annuncio* e *Social media*, la visualizzazione genererà le metriche Canale del modulo [!DNL Hits where Media Type = Email] quando trascini e rilascia gli elementi sulla visualizzazione.
 
 ![](assets/attrib_windows_2.png)
 
-La metrica Touch determina quindi l’allocazione dei punteggi di attribuzione per identificare le interazioni di marketing considerate importanti per il successo, consentendo di qualificare i tocchi di marketing per la popolazione identificata nella finestra Successo. Puoi impostare metriche quali Visualizzazioni *di* pagina o *Hit* oppure utilizzare metriche touch personalizzate in base alle tue esigenze.
+La metrica Touch determina quindi l’allocazione dei punteggi di attribuzione per identificare le interazioni di marketing considerate influenti per il successo, consentendoti di qualificare i contatti di marketing per la popolazione identificata nella finestra Successo . Puoi impostare metriche quali *Visualizzazioni pagina* o *Hit* oppure utilizza metriche di contatto personalizzate, specifiche per le tue esigenze.
 
-In molti casi, la finestra Tocco deve includere la finestra Successo per valutare un lungo periodo di lead time nel ciclo di vendita.
+In molti casi, la finestra Touch deve includere la finestra Success per valutare un lead time lungo nel ciclo di vendita.
 
-**Impostare la metrica Revenue (Entrate).**
+**Imposta la metrica Revenue (Entrate).**
 
-Puoi scegliere di identificare le entrate tra i punti di contatto impostando una metrica delle entrate appropriata. Se specificato, il modello mostrerà la distribuzione dei ricavi sui canali di input. ![](assets/attrib_windows_6.png)
+Puoi scegliere di identificare i ricavi tra i diversi punti di contatto impostando una metrica di ricavo appropriata. Se specificato, il modello visualizza la distribuzione dei ricavi sui canali di input. ![](assets/attrib_windows_6.png)
 
-Puoi impostare una metrica ricavi con tipi di dati valuta per allocare il successo a tutti i punti di contatto principali definiti e analizzati. Questa metrica ripartisce i ricavi di vendita finali e assegna in base alla ponderazione assegnata dall&#39;algoritmo.
+Puoi impostare una metrica ricavi con tipi di dati valuta per allocare il successo tra tutti i punti di contatto principali definiti e analizzati. Questa metrica suddivide i ricavi di vendita finali e li assegna in base alla ponderazione assegnata dall&#39;algoritmo.
 
-**Impostare le finestre di successo e di tocco.**
+**Imposta le finestre di dialogo di successo e touch.**
 
-La finestra Successo definisce la popolazione da esaminare e il periodo per gli eventi di successo, consentendo di indicare le finestre di tempo e l’ampiezza di popolazione da considerare per l’analisi attraverso una selezione di aree di lavoro. La finestra **Successo** definisce il periodo e la popolazione da esaminare per gli eventi di successo. La finestra **Touch** specifica il periodo di tempo storico da esaminare per le interazioni dei canali che conducono agli eventi di successo.
+La finestra Successo definisce la popolazione da esaminare e il periodo per gli eventi di successo, consentendoti di indicare le finestre di tempo e l’ampiezza di popolazione da considerare per l’analisi tramite una selezione dell’area di lavoro. La **Completato** La finestra definisce il periodo e la popolazione da esaminare per gli eventi di successo. La **Touch** window specifica il periodo di tempo storico da esaminare per le interazioni dei canali che precedono gli eventi di successo.
 
 >[!NOTE]
 >
->L’impostazione di una metrica touch è necessaria solo se si tenta di generare automaticamente metriche di successo trascinando gli elementi dimensionali sulla visualizzazione.
+>L’impostazione di una metrica di contatto è necessaria solo se si tenta di generare automaticamente le metriche di successo trascinando gli elementi dimensionali nella visualizzazione.
 
-Puoi impostare un giorno, un mese, un anno o qualsiasi intervallo di tempo disponibile per limitare la valutazione degli eventi di successo e di contatto nell’intero ciclo di vendita o per audience specifiche che entrano nel sito. La creazione di finestre per limitare l’attribuzione consente di focalizzare l’analisi sui periodi di tempo rilevanti per le esigenze specifiche.
+Puoi impostare un giorno, un mese, un anno o qualsiasi intervallo di tempo disponibile per limitare la valutazione degli eventi di successo e di contatto durante il ciclo di vendita o per tipi di pubblico specifici che accedono al sito. La creazione di finestre per limitare l’attribuzione consente di concentrare l’analisi sui periodi di tempo rilevanti per le esigenze specifiche.
 
 ![](assets/attrib_windows_4.png)
 
-In molti casi, la finestra Touch includerà la finestra Successo per consentire di estendere l&#39;analisi su un lungo periodo di tempo, in base alla finestra di vendita. Oppure puoi tenere traccia e analizzare i tocchi separatamente dall’evento di successo.
+In molti casi, desideri che la finestra Touch includa la finestra Successo per estendere l’analisi su un lungo periodo di lead in base alla finestra vendite. Oppure puoi tenere traccia e analizzare i contatti separatamente dall’evento di successo.
 
-**Selezionate i canali.**
+**Seleziona i canali.**
 
-Quando si immettono i canali, sono disponibili due opzioni.
+Quando si immettono i canali, è possibile scegliere tra due opzioni.
 
-**Aggiungere la metrica Touch e gli elementi dimensionali ai canali**
+**Aggiungi la metrica di contatto e aggiungi elementi di Dimension ai canali**
 
-In molti casi, è necessario suddividere i punti di contatto principali per elementi dimensionali per definire canali specifici. In base ai valori degli elementi, Attribuzione adattamento ottimale selezionerà automaticamente i primi esecutori e li classifica in base alla percentuale e li visualizzerà in una visualizzazione grafico.
+In molti casi, è utile suddividere i punti di contatto principali per elementi dimensionali per definire canali specifici. In base ai valori degli elementi, Attribuzione adattamento ottimale selezionerà automaticamente i primi esecutori e li classificherà in base alla percentuale, per poi visualizzarli in una visualizzazione grafico.
 
 ![](assets/attrib_windows_7.png)
 
-Un modello di attribuzione verrà creato disegnando i visitatori che hanno interagito durante la finestra Successo ed esaminando i tocchi del canale durante la finestra Tocco che ha prodotto o meno un evento di successo.
+Un modello di attribuzione verrà creato disegnando i visitatori che hanno interagito durante la finestra Successo ed esaminando i contatti del canale durante la finestra Touch che hanno prodotto o meno un evento di successo.
 
 ## Suddivisione per canali {#section-a30592b84bc84f57bd2b988824e852d4}
 
-Quando immettete i canali, avete due opzioni:
+Quando si immettono i canali, sono disponibili due opzioni:
 
-* Aggiungi una metrica **** Touch e quindi elementi **** dimensionali per i canali.
+* Aggiungi un **Metrica touch** e quindi aggiungere **Elementi Dimension** per i canali.
 
-   **o**
+   **oppure**
 
 * Crea metriche che filtrano gli elementi del canale che desideri valutare.
 
-**Opzione 1: Aggiungi una metrica touch e aggiungi elementi dimensione per canali**.
+**Opzione 1: Aggiungi una metrica di contatto e aggiungi elementi di Dimension per i canali**.
 
-Questo è l&#39;approccio più semplice. Attribuzione adattamento ottimale crea automaticamente le metriche da valutare per l’attribuzione. Nell’esempio seguente, la metrica touch è ***Hit*** e i canali sono: Consente di ***visualizzare campagne***, campagne ***e-mail*** e campagne ***SEM***.
+Questo è l&#39;approccio più semplice. Attribuzione adattamento ottimale crea automaticamente le metriche da valutare per l’attribuzione. Nell’esempio sotto la metrica touch è ***Hit*** e i canali sono: ***Visualizza campagne***, ***Campagne e-mail*** e ***Campagne SEM***.
 
-Con questo metodo, Attribuzione adattamento ottimale crea una metrica in background per la valutazione dell’attribuzione tra i canali (ma la metrica generata automaticamente non viene mai visualizzata e non viene salvata). Nell’esempio seguente, vengono create tre metriche in cui gli hit vengono filtrati per ciascuno dei tre canali (ad esempio, Campagne *di visualizzazione*, Campagne ** e-mail e Campagne *SEM*). Questo è il più semplice perché permette alla funzione Attribuzione adattamento ottimale di creare le metriche per voi.
+Utilizzando questo metodo, Best Fit Attribution crea una metrica in background per la valutazione dell’attribuzione tra i canali (ma la metrica generata automaticamente non viene mai visualizzata e non viene salvata). Nell’esempio seguente, vengono create tre metriche in cui gli hit vengono filtrati per ciascuno dei tre canali (ad esempio *Visualizza campagne*, *Campagne e-mail* e *Campagne SEM*). Questa è la più semplice perché hai permesso alla funzione Attribuzione adattamento ottimale di creare le metriche al tuo posto.
 
 ![](assets/attrib_touch_add_dims.png)
 
-**Opzione 2: Crea una metrica**.
+**Opzione 2: Creare una metrica**.
 
-Nella seconda opzione, potete creare e salvare le metriche per i canali che desiderate valutare filtrando un canale specifico. Di seguito è riportato un esempio di tale metrica.
+Nella seconda opzione, puoi creare e salvare le metriche per i canali da valutare filtrando un canale specifico. Di seguito è riportato un esempio di tale metrica.
 
 ![](assets/attrib_create_metric.png)
 
-Quindi, invece di immettere una metrica touch e elementi dimensione per i canali, puoi fare clic sulla barra dei menu nella visualizzazione e selezionare **Input** > **Aggiungi canale** , quindi selezionare le metriche create.
+Quindi, invece di inserire una metrica di contatto e gli elementi di Dimension per i canali, puoi fare clic sulla barra dei menu nella visualizzazione e selezionare **Ingressi** > **Aggiungi canale** quindi seleziona le metriche create.
 
 ![](assets/attrib_results_2.png)
 
-Vedere l&#39;esempio del secondo metodo riportato di seguito. I risultati di entrambe le opzioni sono identici.
+Vedi l&#39;esempio del secondo metodo qui sotto. I risultati di entrambe le opzioni sono identici.

@@ -3,7 +3,7 @@ description: Quando crei un livello di punto elemento utilizzando punti dinamici
 title: Definire i livelli dei punti di elemento utilizzando i punti dinamici
 uuid: f4b41969-329a-4c33-a8db-8d85597fa577
 exl-id: 5f6e264c-5804-47fa-a3ca-8608a3f7e9d3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 5%
@@ -12,17 +12,19 @@ ht-degree: 5%
 
 # Definire i livelli dei punti di elemento utilizzando i punti dinamici{#define-element-point-layers-using-dynamic-points}
 
+{{eol}}
+
 Quando crei un livello di punto elemento utilizzando punti dinamici, i dati di latitudine e longitudine vengono incorporati in ciascun elemento della dimensione.
 
 Per definire un livello di punto elemento utilizzando i punti dinamici, devi creare o disporre già dei seguenti elementi:
 
-* Una dimensione, definita nel file [!DNL Transformation.cfg] o in un file [!DNL transformation dataset include], in cui ogni elemento contiene la stringa &quot;latitudine, longitudine&quot; o &quot;latitudine, longitudine, nome&quot;.
+* Una dimensione, definita nel [!DNL Transformation.cfg] file o [!DNL transformation dataset include] file, in cui ogni elemento contiene la stringa &quot;latitude,longitude&quot; o &quot;latitude,longitude,name&quot;.
 
-   Per i passaggi necessari per creare una dimensione, consulta la *Guida alla configurazione del set di dati*.
+   Per i passaggi necessari per creare una dimensione, consulta la sezione *Guida alla configurazione del set di dati*.
 
 * File di livello che specifica la dimensione correlata.
 
-Per ulteriori informazioni sul formato richiesto del file di livello, consulta [Formato del file di livello del punto elemento](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#section-0645fbc761c14bb986f3d6f02df407a0).
+Per ulteriori informazioni sul formato richiesto del file di livello, vedi [Formato del file livello del punto elemento](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#section-0645fbc761c14bb986f3d6f02df407a0).
 
 >[!NOTE]
 >
@@ -86,7 +88,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Il file [!DNL IP Coordinates.layer] viene formattato come segue:
+La [!DNL IP Coordinates.layer] file formattato come segue:
 
 ```
 Layer = ElementPointLayer:

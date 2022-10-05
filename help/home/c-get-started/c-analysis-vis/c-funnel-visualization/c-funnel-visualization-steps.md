@@ -3,7 +3,7 @@ description: Segui questi passaggi per creare una nuova visualizzazione funnel
 title: Creazione di un funnel
 uuid: 88afa09d-42ff-4e3b-b5cc-d74e01f4fc39
 exl-id: 24b63998-3aad-4ddf-b2d2-78dd0df9a510
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Creazione di un funnel{#building-a-funnel}
+
+{{eol}}
 
 Segui questi passaggi per creare una nuova visualizzazione funnel
 
@@ -24,7 +26,7 @@ Segui questi passaggi per creare una nuova visualizzazione funnel
 
 1. Apri una visualizzazione funnel.
 
-   Ad esempio, fare clic con il pulsante destro del mouse sull&#39;area di lavoro e selezionare **[!UICONTROL Visualization > Funnel]**.
+   Ad esempio, fai clic con il pulsante destro del mouse sull’area di lavoro e seleziona **[!UICONTROL Visualization > Funnel]**.
 
    ![](assets/step2-funnel.png)
 
@@ -46,6 +48,6 @@ Segui questi passaggi per creare una nuova visualizzazione funnel
 
    ![](assets/last-image-funnel.png)
 
-Da Funnel, puoi identificare i tassi di abbandono e di diminuzione e la percentuale di clienti che convertono le vendite e seguono campagne o percorsi di contenuto. Per ulteriori informazioni, è possibile aprire un [Browser percorsi](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) per visualizzare un elenco dettagliato delle pagine prese prima di arrivare alla pagina selezionata e dei percorsi seguiti dopo che sono state lasciate.
+Da Funnel, puoi identificare i tassi di abbandono e di diminuzione e la percentuale di clienti che convertono le vendite e seguono campagne o percorsi di contenuto. Per ulteriori informazioni, puoi aprire una [Browser Percorsi](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) per visualizzare un elenco dettagliato delle pagine acquisite prima di arrivare alla pagina selezionata e dei percorsi seguiti dopo la loro uscita.
 
-Consulta le funzioni [Funnel aggiuntive](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3).
+Vedi le informazioni aggiuntive [Funzioni funnel](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3).

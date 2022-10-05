@@ -3,7 +3,7 @@ description: È necessario assicurarsi che i computer su cui sono installati i p
 title: Conferma dell’integrità dei sistemi
 uuid: 6d132865-36ab-40fc-be24-e031f356fce2
 exl-id: 543f7592-dd3c-47ba-b174-5f12e9586378
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
@@ -12,9 +12,11 @@ ht-degree: 5%
 
 # Conferma dell’integrità dei sistemi{#confirming-your-systems-are-healthy}
 
+{{eol}}
+
 È necessario assicurarsi che i computer su cui sono installati i prodotti server Adobe soddisfino i requisiti minimi di sistema definiti nel documento Requisiti minimi di sistema.
 
-**Frequenza consigliata:** ogni 5-10 minuti
+**Frequenza consigliata:** Ogni 5-10 minuti
 
 È inoltre necessario monitorare i sistemi in base alle best practice per il funzionamento di quel particolare hardware, incluso, ma non limitato, il monitoraggio dei seguenti elementi:
 
@@ -28,4 +30,4 @@ ht-degree: 5%
 
 Adobe consiglia di configurare lo strumento di gestione per avvisare gli amministratori quando un parametro di sistema su un computer server supera la soglia impostata.
 
-Per i computer [!DNL Insight Server], l&#39;Adobe consiglia inoltre di configurare ogni [!DNL Insight Server] per indicare quando raggiunge il limite minimo di spazio su disco impostato. Per ulteriori informazioni su questi avvisi, consulta [Configurazione di avvisi amministrativi](../../../home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md#task-0858f588da4941aa9d4952f6592681aa).
+Per [!DNL Insight Server] computer, l&#39;Adobe consiglia inoltre di configurare ogni [!DNL Insight Server] per indicare quando raggiunge il limite minimo di spazio su disco impostato. Per ulteriori informazioni su questi avvisi, consulta [Configurazione degli avvisi amministrativi](../../../home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md#task-0858f588da4941aa9d4952f6592681aa).

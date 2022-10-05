@@ -1,48 +1,50 @@
 ---
-description: Effettuare l'aggiornamento a Workbench dati v6.4.
-title: Aggiornamento da 6.3 a 6.4
+description: Segui questi passaggi per eseguire l’aggiornamento alla versione v6.4 di Data Workbench.
+title: Upgrading 6.3 a 6.4
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
-translation-type: tm+mt
-source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+exl-id: 540deb86-2463-4820-b67a-a32d68b4346e
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
+# Upgrading 6.3 a 6.4{#upgrading-to}
 
-# Upgrading 6.3 to 6.4{#upgrading-to}
+{{eol}}
 
-Effettuare l&#39;aggiornamento a Workbench dati v6.4.
+Segui questi passaggi per eseguire l’aggiornamento alla versione v6.4 di Data Workbench.
 
-## Requisiti e raccomandazioni per l&#39;aggiornamento {#section-8704a9ac358246cd81233dd0982d534f}
+## Requisiti di aggiornamento e Recommendations {#section-8704a9ac358246cd81233dd0982d534f}
 
-Per effettuare l&#39;aggiornamento a Workbench dati 6.4, attenersi ai seguenti requisiti e consigli.
+Segui questi requisiti e consigli durante l’aggiornamento alla Data Workbench 6.4.
 
 >[!IMPORTANT]
 >
->È consigliabile utilizzare i file di configurazione predefiniti appena installati e personalizzarli, anziché spostare i file da un&#39;installazione precedente, con le seguenti eccezioni:
+>È consigliabile utilizzare i file di configurazione predefiniti appena installati e personalizzarli, anziché spostare i file da un’installazione precedente, con le seguenti eccezioni:
 
-* **Aggiungi** processi ****** esclusi per *MS System Center Endpoint Protection nei server* Windows 2012 per i seguenti eseguibili:
+* **Aggiungi** ***Processi esclusi*** per *MS System Center Endpoint Protection nei server Windows 2012* per i seguenti eseguibili:
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   In questo modo verranno abilitati i diritti di elenco per questi eseguibili di interfaccia.
 
-* **Aggiornate il certificato *Trust_ca_cert.pem*sui server**.
-* **Riorganizzazione dei profili** di attribuzione.
+   In questo modo verranno abilitati i diritti inserire nell&#39;elenco Consentiti per questi eseguibili di interfaccia.
 
-   * La cartella *Attribution* è stata rinominata in ***Attribution - Premium*** (disponibile nell&#39;installazione predefinita in *Profiles*\*Attribution - Premium*).
+* **Aggiorna *Trust_ca_cert.pem* certificato sui server**.
+* **Riorganizzazione dei profili di attribuzione**.
 
-   * Il profilo *Premium* è stato rimosso e l&#39;area di lavoro è stata spostata nella nuova cartella ***Attribution - Premium*** .
+   * La *Attribuzione* la cartella è stata rinominata in ***Attribuzione - Premium*** (nell&#39;installazione predefinita in *Profili*\*Attribution - Premium*).
 
-* **Aggiornate le impostazioni *Attribution-Premium***. Se disponete di profili personalizzati con impostazioni di parametro che ignorano il profilo predefinito di *Adobe SC* , dovete aggiornare i campi personalizzati nei seguenti file di configurazione:
+   * La *Premium* il profilo è stato rimosso e l’area di lavoro è stata spostata nel nuovo ***Attribuzione - Premium*** cartella.
+
+* **Aggiorna *Attribution-Premium* impostazioni**. Se hai profili personalizzati con impostazioni di parametro che sostituiscono quelle predefinite *Adobe SC* quindi devi aggiornare i campi personalizzati nei seguenti file di configurazione:
 
    * **[!DNL Decoding Instructions.cfg]**
    * **[!DNL SC Fields.cfg]**
 
-* A causa di questa riorganizzazione, si desidera rimuovere le vecchie cartelle *Attribuzione* e *Premium* dall&#39;installazione del server.
+* A causa di questa riorganizzazione, si desidera rimuovere il vecchio *Attribuzione* e *Premium* cartelle dall&#39;installazione del server.
 
    **Modificare queste impostazioni**
 
@@ -72,11 +74,11 @@ Per effettuare l&#39;aggiornamento a Workbench dati 6.4, attenersi ai seguenti r
        4 = string: Attribution - Premium\\
    ```
 
-* **Aggiornate i file** Meta.cfg personalizzati (se necessario).
+* **Aggiorna file Meta.cfg personalizzati** (se necessario).
 
-   I **[!DNL Meta.cfg]** file nelle **[!DNL Base\Context and AdobeSC\Context]** cartelle sono stati aggiornati in questa versione.
+   La **[!DNL Meta.cfg]** file in **[!DNL Base\Context and AdobeSC\Context]** le cartelle sono state aggiornate in questa versione.
 
-   Se durante l’installazione si sostituisce il file **meta.cfg** , la copia del profilo deve essere aggiornata con i seguenti parametri e il vettore **di** metadati immesso correttamente:
+   Se sovrascrivi **meta.cfg** durante l’installazione, la copia del profilo deve essere aggiornata con questi parametri e la **vettore metadati** inserito in modo appropriato:
 
    ```
    94 = meta: 
@@ -97,11 +99,11 @@ Per effettuare l&#39;aggiornamento a Workbench dati 6.4, attenersi ai seguenti r
          value = string:
    ```
 
-* **Impostare le autorizzazioni** del server di report per generare rapporti di Microsoft Excel sui server Windows 2012.
+* **Impostare le autorizzazioni del server di rapporto** per generare rapporti di Microsoft Excel Sui server Windows 2012.
 
-   1. Impostate l&#39;autorizzazione della cartella principale (**[!DNL E:\ReportServer\]**) su *Everyone = full control*.
+   1. Imposta l&#39;autorizzazione della cartella principale (**[!DNL E:\ReportServer\]**) a *Tutti = controllo completo*.
 
-   1. Create le seguenti cartelle con le autorizzazioni appropriate:
+   1. Crea le seguenti cartelle con le autorizzazioni appropriate:
 
       ```
       C:\Windows\SysWOW64\config\systemprofile\AppData\Local\Microsoft\Windows\INetCac‌he 
@@ -114,9 +116,9 @@ Per effettuare l&#39;aggiornamento a Workbench dati 6.4, attenersi ai seguenti r
       >
       >Se si esegue Report Server su Windows Server 2012, è necessario che sia installato Windows Server 2012 R2.
 
-   1. Assegnate &quot;SYSTEM&quot; come proprietario di queste cartelle.
+   1. Assegnare &quot;SYSTEM&quot; come proprietario di queste cartelle.
 
-* **Aggiungete i font al server di report.** Nel file **[!DNL ReportServer.cfg]**aggiungere i seguenti font (per tutte le lingue):
+* **Aggiungi font al server di rapporto.** Nel **[!DNL ReportServer.cfg]**file, aggiungi questi font (per tutte le lingue):
 
    ```
    Fonts = vector: 3 items 
@@ -125,30 +127,30 @@ Per effettuare l&#39;aggiornamento a Workbench dati 6.4, attenersi ai seguenti r
      2 = string: MS Mincho
    ```
 
-* **Aggiornare la versione di Microsoft Excel ** (se necessario).
+* **Aggiorna la tua versione di Microsoft Excel ** (se necessario).
 
-   Con il rilascio di Workbench dati 6.4, il supporto per Excel 2007 è stato interrotto. Inoltre, poiché Workbench dati viene eseguito solo su Microsoft Windows per l&#39;architettura a 64 bit, è consigliabile installare anche una versione a 64 bit di Microsoft Excel.
+   Con il rilascio della Data Workbench 6.4, il supporto per Excel 2007 è stato interrotto. Anche perché Data Workbench viene eseguito solo su Microsoft Windows per l&#39;architettura a 64 bit, si consiglia di installare anche una versione a 64 bit di Microsoft Excel.
 
-* **Architettura** a 64 bit necessaria per l&#39;installazione di Workstation (Client).
-* **Eseguire la procedura guidata** di impostazione della workstation.
+* **Architettura a 64 bit** richiesto per l&#39;installazione di Workstation (Client).
+* **Eseguire la procedura guidata di installazione della workstation**.
 
-   Installa la nuova versione della workstation (client) scaricando e avviando ***InsightSetup.exe*** e analizzando le istruzioni di configurazione. Per impostazione predefinita, i file vengono installati in una nuova posizione:
+   Installa la nuova versione della workstation (client) scaricando e avviando ***InsightSetup.exe*** ed esaminare le istruzioni di configurazione. Per impostazione predefinita, i file verranno installati in una nuova posizione:
 
-   I file di programma ora vengono salvati per impostazione predefinita in:
+   I file di programma vengono ora salvati per impostazione predefinita in:
 
    ```
    C:\Program Files\Adobe\Adobe Analytics\Data Workbench
    ```
 
-   I file di dati (profili, certificati, registri di traccia e file utente) ora vengono salvati per impostazione predefinita in:
+   I file di dati (profili, certificati, registri di traccia e file utente) vengono ora salvati per impostazione predefinita in:
 
    ```
    C:\Users\<username>\AppData\Local\Adobe\Adobe Analytics\Data Workbench\
    ```
 
-* **Aggiungere i font alla workstation**.
+* **Aggiungi font alla workstation**.
 
-   Nel **[!DNL Insight.cfg]** file, aggiungete i seguenti font (per tutte le lingue):
+   In **[!DNL Insight.cfg]** aggiungi i seguenti font (per tutte le lingue):
 
    ```
    Fonts = vector: 3 items 
@@ -156,4 +158,3 @@ Per effettuare l&#39;aggiornamento a Workbench dati 6.4, attenersi ai seguenti r
      1 = string: SimSun 
      2 = string: MS Mincho
    ```
-

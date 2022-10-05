@@ -3,7 +3,7 @@ description: Questo documento descrive i profili con i relativi campi, dimension
 title: Dimensioni e metriche del profilo di Data Workbench
 uuid: 42ef154f-fd8b-4609-8685-96d9dbf32a3d
 exl-id: cfad9897-2ea3-47e4-aa36-416e0fde9358
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Dimensioni e metriche del profilo di Data Workbench{#data-workbench-profile-dimensions-and-metrics}
+
+{{eol}}
 
 Questo documento descrive i profili con i relativi campi, dimensioni e metriche utilizzati dal profilo di monitoraggio di Data Workbench.
 
@@ -25,6 +27,6 @@ Questi profili forniscono dimensioni e metriche che ti consentono di visualizzar
 * [Dimension nel profilo di Insight Historic](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
 * [Metriche nel profilo di monitoraggio cronologico di Insight](../../../home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md#concept-8fece88b1f014637bbc7c8372ee93203)
 
-I profili di stato ti consentono di visualizzare le prestazioni di Data Workbench da un punto di vista operativo. Il profilo **Stato profilo** e il profilo **Stato server** raccolgono i dati dallo stato dettagliato e dai server di Data Workbench. Tutti i dati raccolti vengono inseriti nel campo `cs-uri-query` da utilizzare.
+I profili di stato ti consentono di visualizzare le prestazioni di Data Workbench da un punto di vista operativo. La **Stato del profilo** il profilo e **Stato del server** raccogliere i dati dal profilo Detailed Status (Stato dettagliato) e dai server di Data Workbench. Tutti i dati raccolti vengono inseriti nel `cs-uri-query` campo da utilizzare.
 
-I **Profili storici** consentono di valutare l&#39;impatto delle modifiche di configurazione e hardware utilizzando i dati storici. Il profilo storico può essere il più utile perché consente di valutare l’impatto delle modifiche alla configurazione e all’hardware nel tempo.
+La **Profili storici** consente di valutare l’impatto delle modifiche di configurazione e hardware utilizzando dati storici. Il profilo storico può essere il più utile perché consente di valutare l’impatto delle modifiche alla configurazione e all’hardware nel tempo.

@@ -4,7 +4,7 @@ solution: Analytics
 title: Modifica del registro Processing.cfg
 uuid: 9105b09b-e3d5-4922-a205-b459553a4bec
 exl-id: 23c7873f-8ffd-422f-896b-d6c7e16aabbd
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 4%
@@ -12,6 +12,8 @@ ht-degree: 4%
 ---
 
 # Modifica del registro Processing.cfg{#modifying-log-processing-cfg}
+
+{{eol}}
 
 È necessario aggiungere il campo x-Experts al file Log Processing.cfg, utilizzato per creare una dimensione estesa.
 

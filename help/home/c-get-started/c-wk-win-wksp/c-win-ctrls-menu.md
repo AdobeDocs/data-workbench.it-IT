@@ -3,7 +3,7 @@ description: Il menu Controlli finestra consente di controllare una singola fine
 title: Menu dei controlli delle finestre
 uuid: 9a7c24a7-c591-4d73-94f5-bba79b2aa848
 exl-id: abbd6545-0b80-45a2-88d7-f0687249583d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Menu dei controlli delle finestre{#window-controls-menu}
+
+{{eol}}
 
 Il menu Controlli finestra consente di controllare una singola finestra.
 
@@ -34,19 +36,19 @@ Queste opzioni di menu variano a seconda del tipo di finestra. Nella tabella rip
   </tr> 
   <tr> 
    <td colname="col1"> Salva </td> 
-   <td colname="col2">Salva la visualizzazione (come file <span class="filepath"> .vw</span>) nello stato corrente. La finestra di dialogo visualizzata consente di salvare la visualizzazione con un nome diverso o in un percorso diverso. Il percorso predefinito è la cartella User\<i>profile name</i>\Work all'interno della directory di installazione Data Workbench. </td> 
+   <td colname="col2">Salva la visualizzazione (come <span class="filepath"> .vw</span> file) nello stato corrente. La finestra di dialogo visualizzata consente di salvare la visualizzazione con un nome diverso o in un percorso diverso. Il percorso predefinito è Utente\<i>nome profilo</i>\Cartella di lavoro nella directory di installazione di Data Workbench. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Visualizza come </td> 
-   <td colname="col2">(Disponibile solo per le tabelle). Visualizza i dati di una tabella come numeri, barre o contemporaneamente. Vedere <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-chg-tbl-disp.md#concept-c515caeefce9495f88873a10dc112770"> Modifica della visualizzazione della tabella</a>. </td> 
+   <td colname="col2">(Disponibile solo per le tabelle). Visualizza i dati di una tabella come numeri, barre o contemporaneamente. Vedi <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-chg-tbl-disp.md#concept-c515caeefce9495f88873a10dc112770"> Modifica della visualizzazione della tabella</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Visualizzazione </td> 
-   <td colname="col2">(Disponibile solo per grafici). Visualizza i dati sotto forma di linee o barre. Vedere <a href="../../../home/c-get-started/c-analysis-vis/c-graphs/c-chg-graph-disp.md#concept-eaba669d90f64cfa872f1397205fe2f7"> Modifica della visualizzazione del grafico</a>. </td> 
+   <td colname="col2">(Disponibile solo per grafici). Visualizza i dati sotto forma di linee o barre. Vedi <a href="../../../home/c-get-started/c-analysis-vis/c-graphs/c-chg-graph-disp.md#concept-eaba669d90f64cfa872f1397205fe2f7"> Modifica della visualizzazione del grafico</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Adatta a finestra </td> 
-   <td colname="col2">Consente al contenuto della finestra di espandersi o ridursi automaticamente per adattarsi alla finestra ogni volta che la si ridimensiona. Consulta <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> Utilizzo delle annotazioni immagine</a> e <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> Dati di raccordo per la finestra</a>. </td> 
+   <td colname="col2">Consente al contenuto della finestra di espandersi o ridursi automaticamente per adattarsi alla finestra ogni volta che la si ridimensiona. Vedi <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> Utilizzo delle annotazioni immagine</a> e <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> Adatta dati alla finestra</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Ordine </td> 
@@ -58,8 +60,8 @@ Queste opzioni di menu variano a seconda del tipo di finestra. Nella tabella rip
      </ul> </p> <p>Una X viene visualizzata a sinistra dell'opzione attiva. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Copia </td> 
-   <td colname="col2">Copia negli Appunti singole finestre da utilizzare in applicazioni di terze parti. Dopo aver copiato una finestra negli Appunti, è possibile incollarla nelle applicazioni comuni di Office, inclusi Microsoft Word, Microsoft PowerPoint o un messaggio di posta elettronica di Microsoft Outlook. Per copiare una finestra, fare clic con il pulsante destro del mouse sul relativo bordo superiore, fare clic su <span class="uicontrol"> Copia</span> e selezionare l'opzione appropriata: 
+   <td colname="col1"> Copy (Copia) </td> 
+   <td colname="col2">Copia negli Appunti singole finestre da utilizzare in applicazioni di terze parti. Dopo aver copiato una finestra negli Appunti, è possibile incollarla nelle applicazioni comuni di Office, tra cui Microsoft Word, Microsoft PowerPoint o un messaggio e-mail di Microsoft Outlook. Per copiare una finestra, fare clic con il pulsante destro del mouse sul relativo bordo superiore, quindi fare clic su <span class="uicontrol"> Copia</span>, quindi fai clic sull’opzione appropriata: 
     <ul id="ul_ECCD6A70729E40998C64714E01504995"> 
      <li id="li_21D375DAE7BC4F449C8A3225296A6D26">Lo sfondo nero copia l’area di lavoro come visualizzata. </li> 
      <li id="li_1B08C688678F42948E0952EEE0BF2B30">Lo sfondo bianco copia gli elementi dell’area di lavoro a colori e li visualizza su uno sfondo bianco. </li> 

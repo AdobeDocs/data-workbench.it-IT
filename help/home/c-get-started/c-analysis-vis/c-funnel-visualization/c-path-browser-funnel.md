@@ -3,7 +3,7 @@ description: Dalla visualizzazione Funnel , puoi aprire un browser del percorso 
 title: Aggiunta di un browser del percorso
 uuid: 6b6879bf-81e5-4c6f-a4a6-eecac1ab0a29
 exl-id: d9ecb982-3b9d-497f-9cae-5c4220a5204f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Aggiunta di un browser del percorso{#adding-a-path-browser}
+
+{{eol}}
 
 Dalla visualizzazione Funnel , puoi aprire un browser del percorso per identificare un abbandono dettagliato aggiuntivo dei visitatori e i percorsi che passano attraverso i percorsi.
 
@@ -29,6 +31,6 @@ Puoi identificare dove sono i visitatori &quot;Abbandono&quot; (che hanno abband
    Nella visualizzazione Browser percorsi , la larghezza delle linee che entrano ed escono dalla dimensione selezionata identifica il volume di traffico. Ad esempio, prima di visitare la pagina Uomini, alcuni visitatori sono entrati attraverso altri percorsi, ma la maggior parte è arrivata attraverso la home page. Alla partenza, la maggior parte è andato alla pagina Uomini Surfing.
 
 1. Apri il browser Percorsi per i visitatori &quot;fall-through&quot;. Fai clic con il pulsante destro del mouse sul cono nell’imbuto per identificare il percorso dei visitatori che hanno attraversato l’imbuto o sono passati al passaggio successivo.
-1. Fai clic sul pulsante **Altro** nella parte inferiore della visualizzazione Browser percorsi per aprire una tabella con tutte le visite elencate in una visualizzazione tabulare per le visite precedenti e correnti.
+1. Fai clic sul pulsante **Altro** nella parte inferiore della visualizzazione Browser percorso per aprire una tabella con tutte le visite elencate in una vista a tabella per le visite precedenti e correnti.
 
    ![](assets/path_browser_more.png)

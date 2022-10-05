@@ -3,7 +3,7 @@ description: È possibile ingrandire o ridurre i dati in grafici, globi, mappe d
 title: Ingrandire o ridurre una visualizzazione
 uuid: bc28f759-c4d3-4340-8ec7-27cf6aaf21e6
 exl-id: 27072e6b-3102-40b2-a617-3cd26bf6e840
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 3%
@@ -12,9 +12,11 @@ ht-degree: 3%
 
 # Ingrandire o ridurre una visualizzazione{#zoom-in-or-out-in-a-visualization}
 
+{{eol}}
+
 È possibile ingrandire o ridurre i dati in grafici, globi, mappe del processo e grafici a dispersione.
 
-## Zoom su oggetti nelle mappe del processo e nei globi {#section-be293f50337f49ee8f0f1ee3e613e4a1}
+## Zoom sugli oggetti nelle mappe del processo e nei globi {#section-be293f50337f49ee8f0f1ee3e613e4a1}
 
 **Per ingrandire un&#39;area**
 
@@ -30,9 +32,9 @@ Entrambi i grafici e i grafici a dispersione hanno assi su cui è possibile ingr
 
 >[!NOTE]
 >
->Per l’asse y in un grafico a linee e l’asse x o y in un grafico a dispersione, lo zoom viene reimpostato ogni volta che i dati sottostanti cambiano. Poiché questo accade molto spesso quando si lavora online, Adobe consiglia di lavorare offline quando è necessario ingrandire questi assi. Consulta [Funzionamento offline e online](../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
+>Per l’asse y in un grafico a linee e l’asse x o y in un grafico a dispersione, lo zoom viene reimpostato ogni volta che i dati sottostanti cambiano. Poiché questo accade molto spesso quando si lavora online, Adobe consiglia di lavorare offline quando è necessario ingrandire questi assi. Vedi [Utilizzo offline e online](../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
 
-**Per ingrandire l&#39;asse x o y di un** graficoQuando si esegue lo zoom verticale (lungo l&#39;asse y), l&#39;asse x rimane fisso e i dati si estendono verso l&#39;alto.
+**Ingrandire l’asse x o y di un grafico** Quando si esegue lo zoom in verticale (lungo l’asse y), l’asse x rimane fisso e i dati si estendono verso l’alto.
 
 1. Posizionare il puntatore del mouse sull&#39;area della metrica o dell&#39;etichetta della dimensione dell&#39;asse x o y del grafico.
 1. Premere entrambi i tasti del mouse e spostare il mouse in avanti (lontano da voi). Sull’asse vengono visualizzate delle frecce che indicano che più dati sono disponibili oltre la parte della visualizzazione attualmente visualizzata.
@@ -42,7 +44,7 @@ Entrambi i grafici e i grafici a dispersione hanno assi su cui è possibile ingr
 1. Posizionare il puntatore del mouse sull&#39;area della metrica o dell&#39;etichetta della dimensione dell&#39;asse x o y del grafico.
 1. Premere entrambi i tasti del mouse e spostare il mouse indietro (verso di voi).
 
-**Per ingrandire tutti i dati sull&#39;asse x o y di un** graficoIl comando di  [!DNL Zoom to All] menu ritorna alla visualizzazione di tutti i dati sull&#39;asse selezionato.
+**Ingrandimento di tutti i dati sull’asse x o y di un grafico** La [!DNL Zoom to All] il comando menu ritorna a una visualizzazione di tutti i dati sull&#39;asse selezionato.
 
 * Fare clic con il pulsante destro del mouse sulle aree dei bordi dell’asse x o y (vicino alle etichette dei dati) e fare clic su **[!UICONTROL Zoom to All]**.
 

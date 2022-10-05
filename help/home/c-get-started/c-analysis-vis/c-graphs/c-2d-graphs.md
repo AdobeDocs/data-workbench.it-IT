@@ -3,7 +3,7 @@ description: I grafici bidimensionali (2D) presentano una metrica su due dimensi
 title: Grafici 2D
 uuid: f8860fff-4614-4b1a-b217-760bf4d48f20
 exl-id: 9767124b-8507-4b25-842b-8e2729e57461
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Grafici 2D{#d-graphs}
+
+{{eol}}
 
 I grafici bidimensionali (2D) presentano una metrica su due dimensioni.
 
@@ -31,4 +33,4 @@ Vedi il seguente esempio:
 1. Spostate il mouse sull&#39;asse verticale per evidenziare un piano del grafico.
 1. Mentre il piano è evidenziato, fate clic e trascinate il mouse verso l&#39;alto o verso il basso per ridimensionare l&#39;asse verticale del grafico.
 
-Consulta [Zoom in Visualizations](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
+Vedi [Zoom nelle visualizzazioni](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).

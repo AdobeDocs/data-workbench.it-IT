@@ -3,7 +3,7 @@ description: Visualizza un elenco di azioni e tasti di scelta rapida dell’inte
 title: Riferimento rapido
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
 exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 6%
@@ -12,9 +12,11 @@ ht-degree: 6%
 
 # Riferimento rapido{#quick-reference}
 
+{{eol}}
+
 Visualizza un elenco di azioni e tasti di scelta rapida dell’interfaccia utente client di Data Workbench.
 
-Vedere anche [Scelte rapide da tastiera](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a).
+Vedi anche [Scelte rapide da tastiera](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a).
 
 ## Azioni per il client Data Workbench {#section-dfea35452c2e4f0b92229a4974bc24fa}
 
@@ -105,7 +107,7 @@ Utilizzare questi tasti di scelta rapida per le aree di lavoro e i file di confi
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><b>Visualizzazione</b> a schermo intero. Workspace riempie lo schermo e si limita alle nuove dimensioni. </td> 
+   <td colname="col1"><b>Vista a schermo intero</b>. Workspace riempie lo schermo e si limita alle nuove dimensioni. </td> 
    <td colname="col2"><b>Ctrl+</b> <p>Ctrl + (sul tastierino) </p> <p><i>oppure</i> </p> <p>Ctrl Maiusc + (sulla tastiera) </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
@@ -144,11 +146,11 @@ Utilizzare questi tasti di scelta rapida per le aree di lavoro e i file di confi
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Fai clic con il pulsante destro del mouse su un nodo e fai clic su <span class="uicontrol"> Incolla</span> </p> </td> 
-   <td colname="col2"> <p>Incolla un nodo in un file <span class="filepath"> .cfg</span> </p> </td> 
+   <td colname="col2"> <p>Incolla un nodo in un <span class="filepath"> .cfg</span> file </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1">Fai clic con il pulsante destro del mouse sul vettore e fai clic su <span class="uicontrol"> Incolla come figlio</span> </td> 
-   <td colname="col2">Incolla un vettore in un file <span class="filepath"> .cfg</span> a livello di vettore </td> 
+   <td colname="col2">Incolla un vettore in un <span class="filepath"> .cfg</span> file a livello vettoriale </td> 
   </tr> 
  </tbody> 
 </table>

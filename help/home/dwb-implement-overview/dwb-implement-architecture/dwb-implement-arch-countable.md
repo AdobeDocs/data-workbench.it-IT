@@ -3,7 +3,7 @@ description: Spiegazione di Countables in Dataworkbench (DWB) per la progettazio
 title: Struttura dello schema delle strutture conteggiate
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
 exl-id: 4f2a2f8a-7b42-42bb-8ba1-2675ffe6b2c2
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Struttura dello schema delle strutture conteggiate{#schema-design-countable-structures}
+
+{{eol}}
 
 Spiegazione di Countables in Dataworkbench (DWB) per la progettazione e l’implementazione dello schema.
 
@@ -35,7 +37,7 @@ Le dimensioni conteggiate sono definite dai seguenti parametri:
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr>
  </thead>
  <tbody> 
@@ -93,4 +95,4 @@ Esegui i seguenti passaggi per creare la tabella conteggiata in Workbench dati:
 
    Se il Conteggio non è quello di primo livello, assegnare al campo padre il nome della tabella Conteggiata padre. Nell&#39;esempio seguente viene creata la tabella Conteggio di coinvolgimento e il padre per questa tabella numerata è Cliente. ![](assets/dwb_impl_arch_5.png)
 
-Per ulteriori informazioni sull&#39;architettura Data Workbench per la progettazione dello schema, le strutture numerabili e le configurazioni dei feed di dati offline, consulta l&#39; [Interfaccia schema set di dati](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).
+Per ulteriori informazioni sull’architettura Data Workbench per la progettazione dello schema, le strutture numerabili e le configurazioni del feed di dati offline, consulta la sezione [Interfaccia schema set di dati](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).

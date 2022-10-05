@@ -3,7 +3,7 @@ description: Questa sezione spiega i diversi tipi di Dimension e come configurar
 title: Impostazione della dimensione
 uuid: 5b40cb43-7790-4b87-a0bb-be395a420157
 exl-id: 04afd773-e938-49f7-83c9-1d706a6dc525
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Impostazione della dimensione{#dimension-setup}
+
+{{eol}}
 
 Questa sezione spiega i diversi tipi di Dimension e come configurarli in DWB.
 
@@ -20,7 +22,7 @@ Al livello più semplice, le dimensioni sono categorie in cui i dati nel set di 
 
 Best practice: È possibile assegnare qualsiasi nome ai Dimension dello schema dati. I nomi dei Dimension utilizzati e spiegati in questo corso sono considerati una best practice. I Dimension possono essere denominati in modo diverso. Man mano che aumenti l’esposizione ad altri set di dati, inizierai a vedere le differenze nei set di dati. È importante comprendere lo scopo delle dimensioni piuttosto che il loro nome. Ad esempio, sia che si chiami &quot;Visitatore&quot;, &quot;Cliente&quot;, &quot;Persona&quot;, &quot;Consumatore&quot; o &quot;Utente&quot;, è importante comprendere che si tratta di termini comunemente utilizzati per fare riferimento alla dimensione conteggiata di livello più alto che viene utilizzata per raccogliere informazioni su una singola persona.
 
-Per informazioni complete, consulta la guida [Configurazione set di dati](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html) .
+Per informazioni complete, consulta la sezione [Configurazione set di dati](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html) guida.
 
 ## Tipi di Dimension in DWB {#section-a4fbb7bf2bde44528ac0f94a96465862}
 
@@ -69,7 +71,7 @@ Le dimensioni da molti a molti hanno una relazione da molti a molti con una dime
 **4) Dimension numerici**
 
 Le dimensioni numeriche sono un tipo di dimensione semplice con un valore numerico. Le dimensioni numeriche vengono spesso create per essere utilizzate nelle metriche. Esempi di dimensioni numeriche includono &quot;Entrate&quot;, &quot;Ordini&quot; e &quot;Unità&quot;. Nell’esempio precedente, &quot;Ordini cliente&quot; è una dimensione numerica.
-**5)** Dimensioni normaliLe dimensioni normali sono dimensioni che hanno una relazione uno-a-uno con una dimensione conteggiata superiore. Le dimensioni denormali vengono spesso utilizzate con dimensioni che presentano un’elevata cardinalità (molti elementi unici) come i dati di identificazione. Ad esempio, un visitatore può avere un solo ID utente e un ID utente può appartenere a un solo visitatore. Quindi, questa è una relazione uno-a-uno e può essere una dimensione denormale.
+**5) Dimension denormali** Le dimensioni normali sono dimensioni che hanno una relazione uno-a-uno con una dimensione conteggiata superiore. Le dimensioni denormali vengono spesso utilizzate con dimensioni che presentano un’elevata cardinalità (molti elementi unici) come i dati di identificazione. Ad esempio, un visitatore può avere un solo ID utente e un ID utente può appartenere a un solo visitatore. Quindi, questa è una relazione uno-a-uno e può essere una dimensione denormale.
 
 Ad esempio, Geometrixx Web User ID è una dimensione standard a livello di cliente. Poiché è normale, ha una relazione uno-a-uno con la dimensione padre, il che significa che ogni ID utente web ha un cliente e ogni cliente ha un solo ID utente web. Pertanto, la metrica &quot;Clienti&quot; può essere solo &quot;1&quot; per ogni elemento di Geometrixx Web User ID.
 
@@ -79,7 +81,7 @@ Le dimensioni temporali consentono di creare un set di dimensioni locali periodi
 
 >[!NOTE]
 >
->Gli escape % utilizzati per la formattazione della visualizzazione sono gli stessi della libreria C standard *strftime*.
+>Gli escape % utilizzati per la formattazione della visualizzazione sono gli stessi della libreria C standard *frecciata*.
 
 ## Definizione delle dimensioni estese {#section-38ee124ec74b43fb95f13194a9582b97}
 
@@ -97,7 +99,7 @@ Passaggi per definire il Dimension esteso:
    * [Dimensioni anomale](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-denormal-dim.html)
    * [Dimensioni temporali](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-time-dim.html)
 
-1. Per qualsiasi dimensione estesa definita, è possibile aggiungere una o più righe di commento al parametro Comments per descrivere ulteriormente la dimensione o aggiungere note sul suo utilizzo. Per aggiungere un commento, fai clic con il pulsante destro del mouse sull&#39;etichetta *Commenti* e fai clic su* Aggiungi nuovo > Riga commento*.
+1. Per qualsiasi dimensione estesa definita, è possibile aggiungere una o più righe di commento al parametro Comments per descrivere ulteriormente la dimensione o aggiungere note sul suo utilizzo. Per aggiungere un commento, fai clic con il pulsante destro del mouse sul pulsante *Commenti* e fai clic su* Aggiungi nuovo > Riga commento*.
 
 1. Dopo aver definito le dimensioni estese nel file di configurazione, salva il file localmente e salvalo nel profilo del set di dati sul server DWB.
 

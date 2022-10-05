@@ -3,14 +3,16 @@ description: La trasformazione Merge prende i valori dal campo di input (in gene
 title: Unione
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
 exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '253'
 ht-degree: 4%
 
 ---
 
 # Unione{#merge}
+
+{{eol}}
 
 La trasformazione Merge prende i valori dal campo di input (in genere un vettore di stringhe), li combina in una singola stringa separata dal delimitatore specificato e inserisce la stringa risultante nel campo di output specificato.
 
@@ -19,7 +21,7 @@ La trasformazione Merge prende i valori dal campo di input (in genere un vettore
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -39,13 +41,13 @@ La trasformazione Merge prende i valori dal campo di input (in genere un vettore
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> impostazione predefinita </td> 
+   <td colname="col1"> Impostazione predefinita </td> 
    <td colname="col2"> Il valore predefinito da utilizzare se la condizione è soddisfatta e il valore specificato non è disponibile. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Delimitatore </td> 
-   <td colname="col2"> <p>Stringa utilizzata per separare i singoli elementi del vettore della stringa di input nella singola stringa di output. </p> <p> Se tieni premuto il tasto Ctrl e fai clic con il pulsante destro del mouse all'interno del parametro Delimitatore , viene visualizzato un menu <span class="wintitle"> Inserisci</span> . Questo menu contiene un elenco di caratteri speciali che vengono spesso utilizzati come delimitatori. </p> </td> 
+   <td colname="col1"> Delimiter (Delimitatore) </td> 
+   <td colname="col2"> <p>Stringa utilizzata per separare i singoli elementi del vettore della stringa di input nella singola stringa di output. </p> <p> Se tieni premuto il tasto Ctrl e fai clic con il pulsante destro del mouse all’interno del parametro Delimitatore , un <span class="wintitle"> Inserisci</span> viene visualizzato il menu . Questo menu contiene un elenco di caratteri speciali che vengono spesso utilizzati come delimitatori. </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -54,7 +56,7 @@ La trasformazione Merge prende i valori dal campo di input (in genere un vettore
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Uscita </td> 
+   <td colname="col1"> Output </td> 
    <td colname="col2"> Nome della stringa di output. </td> 
    <td colname="col3"></td> 
   </tr> 

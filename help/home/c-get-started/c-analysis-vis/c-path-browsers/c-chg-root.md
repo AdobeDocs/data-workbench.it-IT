@@ -3,7 +3,7 @@ description: Puoi modificare la directory principale di un browser del percorso 
 title: Modifica della directory principale del browser del percorso
 uuid: 0bb9b004-9736-411b-bd22-cac04f4733a6
 exl-id: 09842b93-af26-42b9-9395-a02b86978b21
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Modifica della directory principale del browser del percorso{#change-the-path-browser-s-root}
+
+{{eol}}
 
 Puoi modificare la directory principale di un browser del percorso designando un elemento visualizzato come principale o aggiungendo un nuovo elemento alla visualizzazione.
 
@@ -38,4 +40,4 @@ Puoi modificare la directory principale di un browser del percorso designando un
 
    >[!NOTE]
    >
-   >Trascinando un elemento in un browser percorsi, è possibile modificare la dimensione di base associata al browser percorsi, ma non la dimensione di livello, la dimensione di gruppo o la metrica. Pertanto, devi prestare attenzione nella scelta di una dimensione di base che abbia senso quando viene utilizzata con la dimensione di livello, la dimensione di gruppo e la metrica del browser del percorso. Per modificare la dimensione del livello, la dimensione del gruppo o la metrica, è necessario modificare il file [!DNL *.vw] del browser del percorso in un editor di testo come Blocco note. Consulta [Configurazione dei browser del percorso](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+   >Trascinando un elemento in un browser percorsi, è possibile modificare la dimensione di base associata al browser percorsi, ma non la dimensione di livello, la dimensione di gruppo o la metrica. Pertanto, devi prestare attenzione nella scelta di una dimensione di base che abbia senso quando viene utilizzata con la dimensione di livello, la dimensione di gruppo e la metrica del browser del percorso. Per modificare la dimensione del livello, la dimensione del gruppo o la metrica, devi modificare la proprietà del browser del percorso [!DNL *.vw] in un editor di testo come Blocco note. Vedi [Configurazione dei browser dei percorsi](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).

@@ -3,7 +3,7 @@ description: Segui questi passaggi per utilizzare la visualizzazione Punteggio t
 title: Impostazione del punteggio tendenza
 uuid: afc9aada-3bf9-4ce6-8c43-a955771065b4
 exl-id: e16a7062-636e-44a9-a07d-343d48bf1b4c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 2%
@@ -12,25 +12,27 @@ ht-degree: 2%
 
 # Impostazione del punteggio tendenza{#setting-up-propensity-scoring}
 
+{{eol}}
+
 Segui questi passaggi per utilizzare la visualizzazione Punteggio tendenza .
 
 1. Apri una nuova area di lavoro e fai clic su **[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Predictive Analytics]** > **[!UICONTROL Scoring]** > **[!UICONTROL Propensity Score]**.
 
    ![](assets/propensity_visualization.png)
 
-1. Imposta la variabile **[!UICONTROL Target]** (la variabile dipendente).
+1. Imposta la **[!UICONTROL Target]** (la variabile dipendente).
 
    Imposta la variabile dipendente selezionando:
 
-* **Elementi** Dimension: Fai clic con il pulsante destro del mouse nell’area di lavoro e seleziona  **[!UICONTROL Table]**. Quindi seleziona un elemento di Dimension come variabile dipendente.
+* **Elementi del Dimension**: Fai clic con il pulsante destro del mouse nell’area di lavoro e seleziona **[!UICONTROL Table]**. Quindi seleziona un elemento di Dimension come variabile dipendente.
 
    O
 
-* **[!UICONTROL Filter Editor]**. Fai clic su **[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Filter Editor]** per aprire la visualizzazione Editor filtro.
+* **[!UICONTROL Filter Editor]**. Fai clic su **[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Filter Editor]** per aprire la visualizzazione Editor filtri .
 
    ![](assets/propensity_visualization_filter_editor.png)
 
-   Dopo aver selezionato un elemento di Dimension o Filtro come variabile dipendente, fare clic su **[!UICONTROL Set Target]**, immettere un nome per descrivere la variabile dipendente. Quindi fai clic su **[!UICONTROL OK]** (e assicurati che la casella del filtro sia evidenziata) per impostare Target.
+   Dopo aver selezionato un elemento di Dimension o Filtro come variabile dipendente, fai clic su **[!UICONTROL Set Target]**, immetti un nome per descrivere la variabile dipendente. Quindi fai clic su **[!UICONTROL OK]** (e accertati che la casella del filtro sia evidenziata) per impostare Target.
 
    ![](assets/propensity_visualization_setTarget.png)
 
@@ -41,15 +43,15 @@ Segui questi passaggi per utilizzare la visualizzazione Punteggio tendenza .
 
    ![](assets/propensity_visualization_metrics.png)
 
-* **Metriche**. Dalla barra degli strumenti Punteggio tendenza , seleziona una metrica dal menu **[!UICONTROL Metrics]** .
+* **Metriche**. Dalla barra degli strumenti Punteggio tendenza , seleziona una metrica dal **[!UICONTROL Metrics]** menu.
 
-* **Elementi** Dimension: Fai clic con il pulsante destro del mouse nell’area di lavoro e seleziona  **[!UICONTROL Table]**. Seleziona uno o più elementi del Dimension e trascina sulla colonna a sinistra sotto **[!UICONTROL Independent Variables]** o nella casella **[!UICONTROL Element]** utilizzando i tasti `<Ctrl>` + `<Alt>`.
+* **Elementi del Dimension**: Fai clic con il pulsante destro del mouse nell’area di lavoro e seleziona **[!UICONTROL Table]**. Seleziona uno o più elementi del Dimension e trascina sulla colonna di sinistra sotto **[!UICONTROL Independent Variables]** o **[!UICONTROL Element]** utilizzando `<Ctrl>` + `<Alt>` chiavi.
 
-1. Imposta **[!UICONTROL Training Filter]**. Puoi definire il set di visitatori che desideri valutare facendo clic su **[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]** nella barra degli strumenti Propensity Scoring (Punteggio tendenza). Questo fornirà un sottoinsieme di dati generati utilizzando solo i visitatori che desideri valutare. Ad esempio, chi ha visitato l’ultimo mese, i visitatori che risiedono in Australia o i visitatori che hanno visualizzato prodotti specifici.
+1. Impostare **[!UICONTROL Training Filter]**. Puoi definire il set di visitatori che desideri valutare facendo clic su **[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]** dalla barra degli strumenti Punteggio tendenza . Questo fornirà un sottoinsieme di dati generati utilizzando solo i visitatori che desideri valutare. Ad esempio, chi ha visitato l’ultimo mese, i visitatori che risiedono in Australia o i visitatori che hanno visualizzato prodotti specifici.
 
-   Il filtro predefinito è **[!UICONTROL Train on Everyone]**, ma puoi modificarlo attivando **[!UICONTROL Dimension Elements]** in una tabella o creando un filtro utilizzando **[!UICONTROL Filter Editor]**.
+   Il filtro predefinito è **[!UICONTROL Train on Everyone]**, ma puoi modificarlo attivando **[!UICONTROL Dimension Elements]** in una tabella o nella creazione di un filtro utilizzando **[!UICONTROL Filter Editor]**.
 
-   Dopo aver selezionato un elemento di Dimension o creato un filtro e durante l&#39;attivazione, fare clic su **Opzioni** > **Imposta filtro di formazione**, immettere un nome per descrivere il filtro, quindi fare clic su **[!UICONTROL OK]**.
+   Dopo aver selezionato un elemento di Dimension o creato un filtro e durante l&#39;attivazione, fai clic su **Opzioni** > **Imposta filtro di formazione**, immetti un nome per descrivere il filtro, quindi fai clic su **[!UICONTROL OK]**.
 1. Una volta identificati tutti gli input, premere **[!UICONTROL Go]**.
 
    ![](assets/propensity_visualization_GO.png)
@@ -71,9 +73,9 @@ Segui questi passaggi per utilizzare la visualizzazione Punteggio tendenza .
    La metrica derivata è la metrica del punteggio medio associata.
 1. Verifica la precisione.
 
-   Il sistema visualizza **[!UICONTROL Model Complete]** e genera un modello di punteggio al termine del processo.
+   Verrà visualizzato il sistema **[!UICONTROL Model Complete]** e genera un modello di punteggio al termine del processo.
 
-   Fai clic con il pulsante destro del mouse su **[!UICONTROL Model Complete]** per identificare la precisione del modello di punteggio come definito dal sistema. Valori compresi tra lo 0% e il 100% identificano la probabilità che i visitatori corrispondano alla variabile **[!UICONTROL Target]**.
+   Clic con il pulsante destro del mouse **[!UICONTROL Model Complete]** identificano la precisione del modello di punteggio come definito dal sistema. Valori compresi tra lo 0% e il 100% identificano la probabilità che i visitatori corrispondano alla variabile **[!UICONTROL Target]** variabile.
 
    La matrice di confusione fornisce quattro conteggi per combinazione di Positivo Effettivo (AP), Negativo Effettivo (AN), Positivo Previsto (PP) e Negativo Predetto (PN). Questi numeri si ottengono applicando il modello di punteggio ottenuto al 20% dei dati di test trattenuti di cui conosciamo la vera risposta. Se il punteggio è maggiore del 50%, viene previsto come caso positivo (corrispondente all’evento definito).
 
@@ -96,6 +98,6 @@ Segui questi passaggi per utilizzare la visualizzazione Punteggio tendenza .
  </tbody> 
 </table>
 
-1. Apri un [Grafico di incremento o guadagno](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a) o un [Visualizzatore modelli](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9).
+1. Apri un [Grafico di incremento o guadagno](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a)o [Visualizzatore modelli](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9).
 
-   Fai clic con il pulsante destro del mouse sulla visualizzazione **Modello completo** e seleziona **[!UICONTROL Lift Chart]**, **[!UICONTROL Gain Chart]** o **[!UICONTROL Model Viewer.]**
+   Fai clic con il pulsante destro del mouse sul pulsante **Modello completo** visualizzazione e selezione **[!UICONTROL Lift Chart]**, **[!UICONTROL Gain Chart]** oppure **[!UICONTROL Model Viewer.]**

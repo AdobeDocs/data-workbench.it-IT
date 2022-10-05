@@ -1,36 +1,39 @@
 ---
-description: Effettuare l'aggiornamento a Workbench dati v6.5.
+description: Segui questi passaggi per eseguire l’aggiornamento a Data Workbench v6.5.
 title: Aggiornamento da 6.4 a 6.5
 uuid: b90b7b0c-7467-405f-a5ca-c40e69975d49
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: bcfd1ab1-2fb8-4bcd-b6c9-329143274ca4
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 2%
 
 ---
 
+# Aggiornamento da 6.4 a 6.5{#upgrading-to}
 
-# Upgrading 6.4 to 6.5{#upgrading-to}
+{{eol}}
 
-Effettuare l&#39;aggiornamento a Workbench dati v6.5.
+Segui questi passaggi per eseguire l’aggiornamento a Data Workbench v6.5.
 
-## Requisiti e raccomandazioni per l&#39;aggiornamento {#section-8704a9ac358246cd81233dd0982d534f}
+## Requisiti di aggiornamento e Recommendations {#section-8704a9ac358246cd81233dd0982d534f}
 
-Per effettuare l&#39;aggiornamento a Workbench dati 6.5, attenersi ai seguenti requisiti e consigli.
+Segui questi requisiti e consigli durante l’aggiornamento alla Data Workbench 6.5.
 
-* Le modifiche nel **[!DNL Components for Processing Servers\Communications.cfg]** file richiedono l’aggiornamento di questo file per la release DWB 6.5. Le voci *SourceListServer*, *SegmentExportServer* e *NormalizeServer* sono state rimosse. (DPU non deve eseguire server *sourcelist*, di esportazione *di* segmenti o di *normalizzazione*. )
+* Modifiche nel **[!DNL Components for Processing Servers\Communications.cfg]** è necessario aggiornare questo file per la versione DWB 6.5. La *SourceListServer*, *SegmentExportServer* e *NormalizeServer* le voci sono state rimosse. ( Le DPU non devono essere in esecuzione *secolare*, *esportazione di segmenti* oppure *normalizzazione dei server*. )
 
-* Le visualizzazioni Correlazione, Matrice di correlazione, Accordo di associazione, Matrice di associazione, Punteggio tendenza e Attribuzione adattamento ottimale sono ora visualizzazioni a più passaggi.
+* Le visualizzazioni Correlazione Chord (Corda correlazione), Matrice di correlazione, Accordi associazione, Matrice di associazione, Punteggio tendenza e Attribuzione adattamento ottimale sono ora visualizzazioni a più passaggi.
 
-   Se in un’area di lavoro sono presenti più visualizzazioni passate multiple, per impostazione predefinita il server di report non genera i report con l’errore:
+   Se in un’area di lavoro sono presenti più visualizzazioni con più passaggi, per impostazione predefinita il server di rapporto non genera rapporti con l’errore:
 
    ```
    Too many Multipass visualizations in workspace ....... (has #, 1 allowed).
    ```
 
-   Evitate questo errore aggiornando il [!DNL ReportServer.cfg] file o aggiungendo questa riga al file esistente nella sezione *Reporting* .
+   Evita questo errore aggiornando il tuo [!DNL ReportServer.cfg] o aggiungi questa riga al file esistente nel *Reporting* sezione .
 
    ```
    Max Multipass Per Slice = int: n
    ```
 
-   dove n è il numero massimo di visualizzazioni con più passaggi supportate dal server di report in un&#39;area di lavoro.
-
+   dove n è il numero massimo di visualizzazioni con più passaggi supportate dal server di rapporto in un’area di lavoro.

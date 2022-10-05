@@ -3,7 +3,7 @@ description: Quando crei un livello di punto elemento utilizzando punti dinamici
 title: Definizione dei livelli del punto elemento utilizzando i punti dinamici
 uuid: 5f1b4638-fe45-40be-b963-18dcd5d09afa
 exl-id: ad849fe7-b909-40ef-835f-f1764e008de9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 6%
@@ -12,17 +12,19 @@ ht-degree: 6%
 
 # Definizione dei livelli del punto elemento utilizzando i punti dinamici{#defining-element-point-layers-using-dynamic-points}
 
+{{eol}}
+
 Quando crei un livello di punto elemento utilizzando punti dinamici, i dati di latitudine e longitudine vengono incorporati in ciascun elemento della dimensione.
 
 Per definire un livello di punto elemento utilizzando i punti dinamici, devi creare o disporre già dei seguenti elementi:
 
-* **Una dimensione**, definita nel  [!DNL Transformation.cfg] file o in un set di dati di trasformazione include un file, in cui ogni elemento contiene la stringa &quot;latitudine, longitudine&quot; o &quot;latitudine, longitudine, nome&quot;.
+* **Una dimensione**, definito in [!DNL Transformation.cfg] file o set di dati di trasformazione includono file, in cui ogni elemento contiene la stringa &quot;latitudine, longitudine&quot; o &quot;latitudine, longitudine, nome&quot;.
 
-   Per i passaggi necessari per creare una dimensione, consulta la *Guida alla configurazione del set di dati*.
+   Per i passaggi necessari per creare una dimensione, consulta la sezione *Guida alla configurazione del set di dati*.
 
-* **Un** file di livello che specifica la dimensione correlata.
+* **Un file di livello** specifica la dimensione correlata.
 
-   Per ulteriori informazioni sul formato richiesto del file di livello, consulta [Formato del file di livello del punto elemento](../../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-elmt-pt-lyr-file-frmt.md#concept-678a95cb69644105a7af1b86ad5a5981).
+   Per ulteriori informazioni sul formato richiesto del file di livello, vedi [Formato del file livello del punto elemento](../../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-elmt-pt-lyr-file-frmt.md#concept-678a95cb69644105a7af1b86ad5a5981).
 
 >[!NOTE]
 >
@@ -86,7 +88,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Il file [!DNL IP Coordinates.layer] viene formattato come segue:
+La [!DNL IP Coordinates.layer] file formattato come segue:
 
 ```
 Layer = ElementPointLayer:

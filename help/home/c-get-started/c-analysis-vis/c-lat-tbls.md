@@ -3,7 +3,7 @@ description: Le visualizzazioni della tabella di latenza sono tabelle che includ
 title: Tabelle di latenza
 uuid: 8081540c-f96c-424e-802d-05d1be5a728d
 exl-id: 22f6d52f-e1c2-430a-9e69-3440be0ecdea
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # Tabelle di latenza{#latency-tables}
 
+{{eol}}
+
 Le visualizzazioni della tabella di latenza sono tabelle che includono una dimensione di latenza, un tipo di dimensione derivata che misura il tempo trascorso dal verificarsi di un particolare evento.
 
 Puoi definire l’evento effettuando selezioni all’interno di una o più visualizzazioni e impostando tali selezioni come evento utilizzando l’opzione del menu di scelta rapida Imposta evento . Le tabelle di latenza sono particolarmente utili per monitorare l’attività relativa a una campagna o a un particolare ordine cliente in cui stai cercando una correlazione temporale.
 
-In [!DNL Site] le tabelle di latenza forniscono informazioni sulle sessioni dei visitatori che si sono verificate fino a sette giorni prima o dopo l’evento, ma è possibile configurare tabelle di latenza per fornire informazioni su diverse dimensioni conteggiate e temporali. Consulta [Configurazione delle tabelle di latenza](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/c-config-ltcy-tbls.md#concept-7175c3defec64556994f0dfcccb7d15c).
+In [!DNL Site], le tabelle di latenza forniscono informazioni sulle sessioni del visitatore che si sono verificate fino a sette giorni prima o dopo l’evento, ma possono essere configurate tabelle di latenza per fornire informazioni su diverse dimensioni conteggiate e temporali. Vedi [Configurazione delle tabelle di latenza](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/c-config-ltcy-tbls.md#concept-7175c3defec64556994f0dfcccb7d15c).
 
 Gli elementi della dimensione padre, ad esempio una sessione, che fanno parte dell’evento specifico selezionato, hanno una latenza di zero. A tutti gli altri elementi vengono assegnate delle latenze che riflettono la distanza (nella dimensione temporale appropriata) dall’evento.
 
@@ -54,7 +56,7 @@ Per creare una tabella di latenza, inizia effettuando una selezione, quindi impo
 
 >[!NOTE]
 >
->Gli eventi selezionati non persistono a meno che non si salvino le selezioni come dimensione di latenza. Per i passaggi, consulta [Riutilizzo di un Dimension di latenza](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46).
+>Gli eventi selezionati non persistono a meno che non si salvino le selezioni come dimensione di latenza. Per i passaggi, vedi [Riutilizzo di un Dimension di latenza](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46).
 
 ## Riutilizzare una tabella di latenza {#section-05f741169d204213b6537dce553e4f73}
 
@@ -62,12 +64,12 @@ Se desideri utilizzare nuovamente la stessa tabella di latenza, puoi salvare la 
 
 **Salvataggio della tabella di latenza da utilizzare in altre aree di lavoro**
 
-1. Fai clic con il pulsante destro del mouse sul bordo superiore della visualizzazione e fai clic su **[!UICONTROL Save]**. Viene visualizzata la finestra [!DNL Save]. Il percorso di salvataggio predefinito è la cartella User\*profile name*\Work.
-1. Nel campo [!DNL File name] , digita un nome descrittivo per la visualizzazione e fai clic su **[!UICONTROL Save]**.
+1. Fai clic con il pulsante destro del mouse sul bordo superiore della visualizzazione e fai clic su **[!UICONTROL Save]**. La [!DNL Save] viene visualizzata la finestra . Il percorso di salvataggio predefinito è la cartella User\*profile name*\Work.
+1. In [!DNL File name] campo , digita un nome descrittivo per la visualizzazione e fai clic su **[!UICONTROL Save]**.
 
 **Per recuperare la tabella di latenza salvata**
 
-1. Fai clic con il pulsante destro del mouse nell’area di lavoro e fai clic su **[!UICONTROL Open]** > **[!UICONTROL File]**. Viene visualizzata la finestra [!DNL Open Visualization].
+1. Fai clic con il pulsante destro del mouse nell’area di lavoro e fai clic su **[!UICONTROL Open]** > **[!UICONTROL File]**. La [!DNL Open Visualization] viene visualizzata la finestra .
 1. Passa alla tabella di latenza salvata.
 1. Seleziona il file di visualizzazione della tabella di latenza ( [!DNL *.vw]) e fai clic su **[!UICONTROL Open]**.
 
@@ -75,24 +77,24 @@ Se desideri utilizzare nuovamente la stessa tabella di latenza, puoi salvare la 
 
 Se desideri utilizzare nuovamente la stessa dimensione di latenza, puoi salvare la dimensione di latenza localmente oppure, se disponi delle autorizzazioni appropriate, puoi salvarla sul server affinché tutti gli utenti di un particolare profilo possano accedervi.
 
-Le dimensioni di latenza create vengono salvate nella directory dei Dimension del profilo e sono disponibili nell’elenco a discesa [!DNL Change Dimension] all’interno di Data Workbench.
+Le eventuali dimensioni di latenza create vengono salvate nella directory dei Dimension del profilo e sono disponibili nella [!DNL Change Dimension] elenco a discesa in Data Workbench.
 
 **Salvataggio della dimensione di latenza da utilizzare in altre aree di lavoro**
 
-1. Fai clic con il pulsante destro del mouse sull’etichetta di colonna [!DNL Latency] o su uno dei relativi elementi e fai clic su **[!UICONTROL Save Dimension]**. Viene visualizzata la finestra [!DNL Save Dimension As].
+1. Fai clic con il pulsante destro del mouse sul pulsante [!DNL Latency] etichetta di colonna o uno dei relativi elementi e fai clic su **[!UICONTROL Save Dimension]**. La [!DNL Save Dimension As] viene visualizzata la finestra .
 1. Seleziona o crea la sottodirectory appropriata all’interno della directory dei Dimension.
-1. Nel campo [!DNL File name] , digita un nome descrittivo per la dimensione (ad esempio, [!DNL Latency for Campaign 11565.dim]) e fai clic su **[!UICONTROL Save]**.
+1. In [!DNL File name] campo , digita un nome descrittivo per la dimensione (ad esempio, [!DNL Latency for Campaign 11565.dim]) e fai clic su **[!UICONTROL Save]**.
 
 **Per recuperare la dimensione di latenza salvata**
 
-1. Fai clic con il pulsante destro del mouse nell’area di lavoro e fai clic su **[!UICONTROL Open]** > **[!UICONTROL File]**. Viene visualizzata la finestra [!DNL Open Visualization].
+1. Fai clic con il pulsante destro del mouse nell’area di lavoro e fai clic su **[!UICONTROL Open]** > **[!UICONTROL File]**. La [!DNL Open Visualization] viene visualizzata la finestra .
 1. Passa alla visualizzazione della latenza salvata nella cartella User\*profile name*\Dimension .
 1. Seleziona il file della dimensione di latenza ( [!DNL *.dim]) e fai clic su **[!UICONTROL Open]**.
 
 ## Esportare in Microsoft Excel {#section-3dffa5c3aab14cdaa40c78b81b08fe53}
 
-Per informazioni sull&#39;esportazione di finestre, vedere [Esportazione di dati di finestre](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Per informazioni sull&#39;esportazione di finestre, vedere [Esportazione dei dati delle finestre](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
 
 ## Esportare in un file TSV {#section-fd921f351c994ed0a94f63d3bd5b5a87}
 
-Per informazioni sull&#39;esportazione di finestre, vedere [Esportazione di dati di finestre](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Per informazioni sull&#39;esportazione di finestre, vedere [Esportazione dei dati delle finestre](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

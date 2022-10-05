@@ -3,7 +3,7 @@ description: Il file di indirizzo installato in Insight Server contiene quattro 
 title: Il file degli indirizzi installato su Insight Server
 uuid: a58d36d8-e1a3-43e7-91c5-c57351e1be49
 exl-id: 12e9bfa2-99ac-4584-b761-38401d1bc3d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Il file degli indirizzi installato su Insight Server{#the-address-file-installed-on-insight-server}
+
+{{eol}}
 
 Il file di indirizzo installato in Insight Server contiene quattro posizioni di rete predefinite.
 
@@ -39,23 +41,23 @@ Locations = vector: 4 items
     Parent = string:
 ```
 
-* NetworkLocation 0 è un percorso di rete vuoto e senza nome che si modifica per associare il nome comune del [!DNL Insight Server] al relativo indirizzo IP. Se il server dispone di più indirizzi IP, è possibile creare ulteriori NetworkLocations.
-* NetworkLocation 1 è il percorso di rete [!DNL Insight]. Se non si imposta esplicitamente il parametro NetworkLocation, [!DNL Insight] risolve i nomi comuni attraverso questo percorso di rete.
+* NetworkLocation 0 è un percorso di rete vuoto e senza nome che si modifica per associare il nome comune del proprio [!DNL Insight Server] al suo indirizzo IP. Se il server dispone di più indirizzi IP, è possibile creare ulteriori NetworkLocations.
+* NetworkLocation 1 è la variabile [!DNL Insight] posizione di rete. Se non si imposta esplicitamente il parametro NetworkLocation, [!DNL Insight] risolve i nomi comuni attraverso questo percorso di rete.
 
-* NetworkLocation 2 è il percorso di rete [!DNL Insight Server]. Quando [!DNL Insight Servers] funziona in un cluster, utilizza questo percorso di rete per risolvere i nomi comuni per le comunicazioni tra server.
+* NetworkLocation 2 è la variabile [!DNL Insight Server] posizione di rete. Quando [!DNL Insight Servers] operano in un cluster, utilizzano questo percorso di rete per risolvere i nomi comuni per le comunicazioni tra server.
 
-* NetworkLocation 3 è il percorso di rete [!DNL Report] del server. Se non si imposta esplicitamente il parametro NetworkLocation, [!DNL Report] risolve i nomi comuni attraverso questo percorso di rete.
+* NetworkLocation 3 è la variabile [!DNL Report] Percorso di rete del server. Se non si imposta esplicitamente il parametro NetworkLocation, [!DNL Report] risolve i nomi comuni attraverso questo percorso di rete.
 
 ## Per configurare il file degli indirizzi {#section-10caab9854a244e39b09071946f7bd27}
 
 La procedura seguente descrive come configurare il file dell&#39;indirizzo per definire un percorso di rete (o percorsi di rete) per il [!DNL Insight Server].
 
-1. Passa alla cartella [!DNL Addresses] nella directory in cui è stato installato [!DNL Insight Server] (ad esempio, [!DNL C:\Adobe\Server\Addresses)].
+1. Passa a [!DNL Addresses] nella directory in cui è stata installata [!DNL Insight Server] (ad esempio, [!DNL C:\Adobe\Server\Addresses)].
 
-1. Individua il file [!DNL server.address] e rinomina il file in modo che rifletta il nome comune del server. Ad esempio, se il nome comune è [!DNL server.mycompany.com], è necessario rinominare il file [!DNL server.mycompany.com.address].
+1. Individua il [!DNL server.address] e rinominare il file in modo che rifletta il nome comune del server. Ad esempio, se il nome comune era [!DNL server.mycompany.com], rinomina il file [!DNL server.mycompany.com.address].
 
 1. Apri il file rinominato in un editor di testo come Blocco note.
-1. Modifica NetworkLocation 0 per specificare il nome comune e l&#39;indirizzo IP del [!DNL Insight Server] come mostrato di seguito. Se il server dispone di più indirizzi IP, utilizzare NetworkLocation 0 per specificare l’indirizzo IP del server sulla rete locale non router (ad esempio, la posizione sulla rete interna).
+1. Modifica NetworkLocation 0 per specificare il nome comune e l&#39;indirizzo IP della [!DNL Insight Server] come mostrato di seguito. Se il server dispone di più indirizzi IP, utilizzare NetworkLocation 0 per specificare l’indirizzo IP del server sulla rete locale non router (ad esempio, la posizione sulla rete interna).
 
    ```
    Locations = vector: 3 items 
@@ -78,22 +80,22 @@ La procedura seguente descrive come configurare il file dell&#39;indirizzo per d
  <tbody> 
   <tr> 
    <td colname="col1"> <i>Indirizzo IP</i> </td> 
-   <td colname="col2"> <p>L'indirizzo IP numerico del computer <span class="keyword"> Insight Server </span>. </p> <p>Esempio: 192.168.124.176 </p> </td> 
+   <td colname="col2"> <p>L'indirizzo IP numerico della <span class="keyword"> Insight Server </span> macchina. </p> <p>Esempio: 192.168.124.176 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>Nome comune  </i> </td> 
+   <td colname="col1"> <i>Nome comune </i> </td> 
    <td colname="col2"> <p>Nome comune assegnato al certificato digitale per <span class="keyword"> Insight Server </span>. </p> <p>Esempio: <span class="filepath"> server.mycompany.com </span></p> <p>Nota: Assicurati di digitare questo nome esattamente come appare sul certificato. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>Nome percorso di rete  </i> </td> 
+   <td colname="col1"> <i>Nome percorso di rete </i> </td> 
    <td colname="col2"> <p>Nome che si desidera assegnare alla raccolta di nomi comuni e indirizzi IP rappresentati da questo NetworkLocation. Il nome deve essere univoco all'interno del file dell'indirizzo. </p> <p>Esempio: Intranet aziendale </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Se il tuo [!DNL Insight Server] dispone di indirizzi IP aggiuntivi, crea un percorso di rete aggiuntivo per ogni indirizzo. (Un modo semplice per farlo è creare una copia della NetworkLocation creata in precedenza e aggiornare l&#39;indirizzo IP nella copia.)
+1. Se [!DNL Insight Server] dispone di indirizzi IP aggiuntivi e crea un percorso di rete aggiuntivo per ogni indirizzo. (Un modo semplice per farlo è creare una copia della NetworkLocation creata in precedenza e aggiornare l&#39;indirizzo IP nella copia.)
 
-   È possibile aggiungere il nuovo NetworkLocation alla fine del file dell&#39;indirizzo o inserirlo tra le definizioni esistenti di NetworkLocation. (La posizione di un NetworkLocation all&#39;interno del file dell&#39;indirizzo non è significativa; tuttavia, le [!DNL Insight], [!DNL Insight Server] e [!DNL Report] NetworkLocations del server si trovano in genere alla fine del file.)
+   È possibile aggiungere il nuovo NetworkLocation alla fine del file dell&#39;indirizzo o inserirlo tra le definizioni esistenti di NetworkLocation. (La posizione di un NetworkLocation all&#39;interno del file dell&#39;indirizzo non è significativa; tuttavia, [!DNL Insight], [!DNL Insight Server]e [!DNL Report] NetworkLocations server si trovano in genere alla fine del file.)
 
    Dopo aver aggiunto le NetworkLocations necessarie, procedi come segue per rinumerare gli elementi nel file:
 
@@ -104,9 +106,9 @@ La procedura seguente descrive come configurare il file dell&#39;indirizzo per d
       ```
 
    1. Aggiornare i numeri degli elementi NetworkLocation in modo che NetworkLocations sia numerato consecutivamente (a partire da 0).
-   Per un esempio di file di indirizzo che definisce un [!DNL Insight Server] con due indirizzi IP, consulta l’esempio in questa sezione.
+   Per un esempio di file di indirizzo che definisce un [!DNL Insight Server] con due indirizzi IP, vedi l’esempio in questa sezione.
 
-1. Nelle posizioni di rete [!DNL Insight] e [!DNL Report] Server, modificare il parametro Parent come mostrato di seguito per specificare il nome di NetworkLocation che [!DNL Insight] e [!DNL Report] utilizzano come posizioni di rete predefinite. (Per un esempio dell&#39;aspetto del parametro Parent quando è configurato, consulta l&#39;esempio in questa sezione.)
+1. In [!DNL Insight] e [!DNL Report] Posizioni di rete del server, modificare il parametro Parent come mostrato di seguito per specificare il nome di NetworkLocation che [!DNL Insight] e [!DNL Report] utilizzare come posizioni di rete predefinite. (Per un esempio dell&#39;aspetto del parametro Parent quando è configurato, consulta l&#39;esempio in questa sezione.)
 
    ```
    1 = NetworkLocation:  
@@ -120,9 +122,9 @@ La procedura seguente descrive come configurare il file dell&#39;indirizzo per d
      Parent = string: ClientDefaultNetworkLocation
    ```
 
-   Se il tuo [!DNL Insight Server] ha un singolo indirizzo IP e, di conseguenza, dispone di un solo NetworkLocation, puntare il parametro Parent a tale NetworkLocation. Se il [!DNL Insight Server] dispone di più indirizzi IP, puntare il parametro Parent a NetworkLocation che definisce l&#39;indirizzo a cui i client [!DNL Insight] e [!DNL Report] si connettono più frequentemente.
+   Se [!DNL Insight Server] dispone di un indirizzo IP singolo e, pertanto, dispone di un solo NetworkLocation, punta il parametro Parent su tale NetworkLocation. Se [!DNL Insight Server] dispone di più indirizzi IP, puntare il parametro Parent a NetworkLocation che definisce l&#39;indirizzo a cui [!DNL Insight] e [!DNL Report] i client si connettono più frequentemente.
 
-1. Nel percorso di rete [!DNL Insight Server], modificare il parametro Parent come mostrato di seguito per puntare a NetworkLocation che il server utilizza per risolvere i nomi comuni di altri [!DNL Insight Servers] quando opera in un cluster. (Anche se questo percorso di rete non viene utilizzato a meno che un [!DNL Insight Server] non funzioni in un cluster, è buona prassi, anche in una singola configurazione del server, puntare il parametro Parent a un percorso di rete che identifichi l&#39;indirizzo IP interno del server.)
+1. In [!DNL Insight Server] posizione di rete, modificare il parametro Parent come mostrato di seguito per puntare a NetworkLocation che il server utilizza per risolvere i nomi comuni di altri [!DNL Insight Servers] quando opera in un cluster. (Anche se questo percorso di rete non viene utilizzato a meno che un [!DNL Insight Server] opera in un cluster, è buona prassi, anche in una singola configurazione del server, puntare il parametro Parent a una posizione di rete che identifica l&#39;indirizzo IP interno del server.)
 
    ```
    2 = NetworkLocation:  
@@ -134,11 +136,11 @@ La procedura seguente descrive come configurare il file dell&#39;indirizzo per d
 L’esempio seguente mostra un file di indirizzo completato. Questo file definisce cinque posizioni di rete.
 
 * Le voci 0 e 1 di NetworkLocation definiscono le posizioni di rete denominate &quot;MyCorporateIntranet&quot; e &quot;Internet&quot;. Queste posizioni di rete definiscono due indirizzi IP diversi per un server denominato [!DNL VS01.myCompany.com].
-* NetworkLocation item 2 è il percorso di rete [!DNL Insight]. Si tratta del percorso di rete predefinito utilizzato da [!DNL Insight]. In questo esempio, il percorso di rete [!DNL Insight] eredita le definizioni degli indirizzi da NetworkLocation &quot;Internet&quot;.
+* L&#39;elemento 2 di NetworkLocation è il [!DNL Insight] posizione di rete. Si tratta del percorso di rete predefinito utilizzato da [!DNL Insight]. In questo esempio, la [!DNL Insight] il percorso di rete eredita le definizioni degli indirizzi da NetworkLocation &quot;Internet&quot;.
 
-* NetworkLocation item 3 è il percorso di rete [!DNL Insight Server]. Questo è il percorso di rete predefinito utilizzato da [!DNL Insight Server] quando comunica con altri server in un cluster. In questo esempio, il percorso di rete [!DNL Insight Server] eredita le definizioni degli indirizzi dal NetworkLocation &quot;Intranet aziendale&quot;.
+* L&#39;elemento 3 di NetworkLocation è il [!DNL Insight Server] posizione di rete. Percorso di rete predefinito [!DNL Insight Server] utilizza quando comunica con altri server in un cluster. In questo esempio, la [!DNL Insight Server] la posizione di rete eredita le relative definizioniIndirizzo dalla NetworkLocation Intranet &quot;MyCorporate&quot;.
 
-* NetworkLocation item 4 è il percorso di rete [!DNL Report] del server. Si tratta del percorso di rete predefinito utilizzato da [!DNL Report]. In questo esempio, il percorso di rete [!DNL Report] del server eredita le definizioni degli indirizzi da NetworkLocation &quot;Internet&quot;.
+* L&#39;elemento 4 di NetworkLocation è il [!DNL Report] Percorso di rete del server. Si tratta del percorso di rete predefinito utilizzato da [!DNL Report]. In questo esempio, la [!DNL Report] Il percorso di rete del server eredita le definizioni degli indirizzi da NetworkLocation &quot;Internet&quot;.
 
    ```
    Locations = vector: 5 items 

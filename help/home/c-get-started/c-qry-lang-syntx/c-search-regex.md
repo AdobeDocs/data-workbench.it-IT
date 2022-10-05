@@ -3,7 +3,7 @@ description: Data Workbench utilizza espressioni regolari (regex) per le operazi
 title: Espressioni regolari
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 3%
@@ -12,9 +12,11 @@ ht-degree: 3%
 
 # Espressioni regolari{#regular-expressions}
 
+{{eol}}
+
 Data Workbench utilizza espressioni regolari (regex) per le operazioni di ricerca e ordinamento.
 
-All&#39;interno del campo **[!UICONTROL Search]** è possibile eseguire una ricerca seguendo l&#39;istruzione &quot;re:&quot; utilizzando espressioni comuni, ad esempio:
+All&#39;interno di **[!UICONTROL Search]** è possibile eseguire una ricerca seguendo l&#39;istruzione &quot;re:&quot; utilizzando espressioni comuni, ad esempio:
 
 ```
 <b>re: *.s</b>
@@ -38,7 +40,7 @@ All&#39;interno del campo **[!UICONTROL Search]** è possibile eseguire una rice
   </tr> 
   <tr> 
    <td colname="col1"> <p>? (carattere jolly) </p> </td> 
-   <td colname="col2"> <p>Corrisponde a 0 o 1 dell'espressione precedente per forzare la corrispondenza minima, ad esempio: <span class="filepath"> xy?z </span> corrisponde a "xy" e "xyz". </p> </td> 
+   <td colname="col2"> <p>Corrisponde a 0 o 1 dell'espressione precedente per forzare la corrispondenza minima, ad esempio: <span class="filepath"> xy? z </span> corrisponde a "xy" e "xyz". </p> </td> 
   </tr> 
  </tbody> 
 </table>

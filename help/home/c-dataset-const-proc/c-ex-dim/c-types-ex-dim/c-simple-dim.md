@@ -3,7 +3,7 @@ description: Una dimensione semplice ha una relazione uno-a-molti con la dimensi
 title: Dimensioni semplici
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
 exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Dimensioni semplici{#simple-dimensions}
+
+{{eol}}
 
 Una dimensione semplice ha una relazione uno-a-molti con la dimensione conteggiata padre.
 
@@ -23,7 +25,7 @@ Le dimensioni semplici sono definite dai seguenti parametri:
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -69,7 +71,7 @@ Le dimensioni semplici sono definite dai seguenti parametri:
       <li id="li_0FBE7F0B7B9744D994ECEDAA08F0045C"> PRIMA RIGA: Viene utilizzato il valore della prima voce di registro relativa all’elemento dimensione padre, anche se l’input è vuoto. Se Input è un campo vettoriale, viene utilizzata la prima riga nel vettore per la voce di registro pertinente. Se questo valore è vuoto o non è un numero, o se la voce di registro pertinente non soddisfa la condizione della dimensione, non viene utilizzato alcun valore. </li> 
       <li id="li_C17190BC699D4A099DC5326C07D1044D"> ULTIMO NONBLANK: Viene utilizzato l’ultimo valore di input non vuoto, indipendentemente dal fatto che provenga dall’ultima voce di registro. Se Input è un campo vettoriale, viene utilizzata la prima riga nel vettore per la voce di registro pertinente. </li> 
       <li id="li_00BAE86F12004C098F6A455908DB7062"> ULTIMA RIGA: Viene utilizzato il valore per l’ultima voce di registro relativa all’elemento dimensione padre, anche se l’input è vuoto. Se Input è un campo vettoriale, viene utilizzata la prima riga nel vettore per la voce di registro pertinente. Se questo valore è vuoto o non è un numero, o se la voce di registro pertinente non soddisfa la condizione della dimensione, non viene utilizzato alcun valore. </li> 
-     </ul> </p> <p> <p>Nota:  Se Operation non restituisce alcun valore o un valore vuoto per una particolare voce di registro, l’elemento corrispondente della dimensione padre si relazionerà all’elemento "None" della dimensione semplice. </p> </p> <p> È necessario specificare un’operazione per garantire che la dimensione sia definita come previsto. </p> </td> 
+     </ul> </p> <p> <p>Nota: Se Operation non restituisce alcun valore o un valore vuoto per una particolare voce di registro, l’elemento corrispondente della dimensione padre si relazionerà all’elemento "None" della dimensione semplice. </p> </p> <p> È necessario specificare un’operazione per garantire che la dimensione sia definita come previsto. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -84,7 +86,7 @@ Questo esempio illustra la definizione di una dimensione semplice utilizzando i 
 
 Considera l&#39;esempio di un sondaggio dei cookie di Scout delle ragazze preferiti dei visitatori del sito. Una pagina web acquisisce questo voto e lo restituisce al server web nel cookie della coppia nome-valore favoritecookie. Viene conteggiato un solo voto per visitatore, ma i visitatori possono cambiare idea e votare di nuovo se lo desiderano. Si tratta di una relazione uno-a-molti: un visitatore può avere molti voti, ma ogni voto è associato a un solo visitatore. Pertanto, il genitore della dimensione è il visitatore (un solo voto per visitatore) e l’operazione è LAST ROW (in modo che possano cambiare idea e votare di nuovo).
 
-I segnaposto devono esistere per tutti i tipi di cookie in modo che i tipi di cookie che non ricevono voti siano visualizzati nella visualizzazione di Data Workbench. Per questi motivi, è stato definito un file di caricamento che contiene l’elenco dei tipi di cookie che possono essere selezionati. Il contenuto di questo file, salvato in un file denominato [!DNL cookietypes.txt], ha un aspetto simile al seguente:
+I segnaposto devono esistere per tutti i tipi di cookie in modo che i tipi di cookie che non ricevono voti siano visualizzati nella visualizzazione di Data Workbench. Per questi motivi, è stato definito un file di caricamento che contiene l’elenco dei tipi di cookie che possono essere selezionati. Contenuto del file salvato in un file denominato [!DNL cookietypes.txt], ha un aspetto simile al seguente:
 
 Tesori animali
 

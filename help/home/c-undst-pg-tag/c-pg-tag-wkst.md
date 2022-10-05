@@ -3,7 +3,7 @@ description: Tabelle contenenti l’elenco di variabili costanti e personalizzat
 title: Foglio di lavoro di mappatura variabile del tag pagina
 uuid: 1ecef047-5a04-401d-b3d5-f31fddb134e1
 exl-id: 647c6a14-58b4-4f87-bccf-fa7ac24811a5
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 11%
@@ -12,11 +12,13 @@ ht-degree: 11%
 
 # Foglio di lavoro di mappatura variabile del tag pagina{#page-tag-variable-mapping-worksheet}
 
+{{eol}}
+
 Tabelle contenenti l’elenco di variabili costanti e personalizzate.
 
 ## Variabili costanti {#section-d28c9bc798314c25b4f9c9a64534b317}
 
-| Nome variable | Descrizione breve della variabile | Informazioni aggiuntive |
+| Nome variabile | Descrizione breve della variabile | Informazioni aggiuntive |
 |---|---|---|
 | ct | tag costante | MODIFICATO ALL’INTERNO DEL FILE JS |
 | cd | dominio costante | MODIFICATO ALL’INTERNO DEL FILE JS |
@@ -35,7 +37,7 @@ Tabelle contenenti l’elenco di variabili costanti e personalizzate.
 
 ## Variabili personalizzate {#section-a730871392bd4c458b00241b4c0e841f}
 
-| Nome variable | Descrizione breve della variabile | Informazioni aggiuntive |
+| Nome variabile | Descrizione breve della variabile | Informazioni aggiuntive |
 |---|---|---|
 | v_pn | Nome pagina | v_pn=&quot;Modulo_applicazione&quot; |
 | v_pc | Categoria pagina | v_pc=&quot;Application_Process&quot; |

@@ -1,81 +1,84 @@
 ---
-description: Guida rapida per l'impostazione di un'API di query.
+description: Guida rapida per l’impostazione di un’API di query.
 title: Impostazione API query
 uuid: 521f06a4-65ee-4206-b769-4c1ce6e5fe7d
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 8b9dace8-4dad-434c-aec3-2f6ca872a5f6
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 2%
 
 ---
 
-
 # Impostazione API query{#query-api-setup}
 
-Guida rapida per l&#39;impostazione di un&#39;API di query.
+{{eol}}
 
-Per impostare l&#39;API Query, effettuate le operazioni seguenti:
+Guida rapida per l’impostazione di un’API di query.
+
+Per impostare l’API di query, effettua le seguenti operazioni:
 
 1. Acquisizione certificato API query
 
-   Invia un&#39;e-mail al team Tech Ops di Adobe Email - `Dataworkbench@adobe.com`.
+   Invia un&#39;e-mail al team Tech Ops di Adobe - `Dataworkbench@adobe.com`.
 
-   Specificare il nome CN da utilizzare per l&#39;API Query( fornire un nome generico come API `<Client>` Query).
+   Fornisci il nome NC che desideri utilizzare per l’API di query( fornisci un nome generico come `<Client>` API di query).
 
    >[!NOTE]
    >
-   >Tech Ops genererà il certificato e lo caricerà in un URL. Dopo aver ricevuto la notifica da Tech Ops relativa alla generazione del ticket, i consulenti Adobe sono invitati a informarvi che il ticket verrà inviato nuovamente.
+   >Tech Ops genera il certificato e lo carica in un URL. Dopo aver ricevuto la notifica da Tech Ops relativa alla generazione di successo del ticket, fai sapere ai Consulenti Adobi in modo che il ticket ti venga inviato di nuovo.
 
-1. Download ed estrazione di API Stunnel. Ricevi il file api-stunnel da un consulente.
+1. Download ed estrazione dello stunnel API. Ricevi il file api-stunnel dal tuo consulente.
 
-   Verificare che Perl sia installato nel computer.
+   Assicurarsi che Perl sia installato sul computer.
 
-   Nella cartella estratta (il percorso della cartella in cui copiate il file), copiate il certificato API di query all&#39;interno della cartella *stunnel* .
+   Nella cartella estratta (il percorso della cartella in cui si copia il file), copia il certificato API di query all’interno del *stordimento* cartella.
 
 1. Configurare Stunnel.conf
 
-   All’interno della cartella *Stunnel* (in cui è stato copiato il certificato) dovrebbe essere presente un file denominato *stunnel.conf* .
+   Deve essere presente un file denominato *stunnel.conf* all&#39;interno del *Stunnel* (in cui è stato copiato il certificato).
 
-   Modificate il file in Blocco note.
+   Modifica il file in Blocco note.
 
    ![](assets/dwb_impl_API1.png)
 
    Modificate i parametri come segue: ![](assets/dwb_impl_API2.png)
 
-   In questo file è necessario modificare due parametri.
+   È necessario modificare due parametri in questo file.
 
-   * *Cert* = nome sul certificato. In questo esempio è Aadhithiya Ramani QAPI Client.pem.
-   * *Connect* = nome del server per l’unità di elaborazione dati principale.
+   * *Cert* = Nome sul certificato. In questo esempio è Aadhithiya Ramani QAPI Client.pem.
+   * *Connetti* =Il nome del server per la DPU principale.
 
-1. Copia di *Query.pm*.
+1. Copia del *Query.pm*.
 
-   Il file *Query.pm* sarà disponibile nella cartella delle API di Insight.
+   La *Query.pm* Il file sarà disponibile nella cartella delle API di Insight.
 
-   Copiate il file *Query.pm* e incollatelo nella cartella Perl Library (in genere sarà *C:\Perl64\lib *, ma verificate dove è installato Perl nel computer).
+   Copia il *Query.pm* archivialo e incollalo nella cartella Perl Library (in genere sarà *C:\Perl64\lib *, ma controlla dove è installato Perl nel computer).
 
-1. Modificare il file *api-http.pl*
+1. Modifica la *api-http.pl* file
 
    Il file api-http.pl sarà disponibile nella cartella api-stunnel.
 
    Solo un parametro da modificare
 
-   *My $profile* = nome profilo per il quale state configurando l&#39;API Query.
+   *My $profile* = Nome del profilo per il quale stai configurando l’API query.
 
-1. Installate l&#39;API Query.
+1. Installa l’API di query.
 
-   Aprite il prompt dei comandi nel sistema come &quot;Amministratore&quot; e andate alla directory in cui è stato estratto lo *stunnel* come illustrato: ![](assets/dwb_impl_API3.png)
+   Apri il prompt dei comandi nel sistema come &quot;Amministratore&quot; e passa alla directory in cui è stato estratto il *stordimento* come mostrato: ![](assets/dwb_impl_API3.png)
 
    Esegui il comando seguente *.\stunnel -install*. ![](assets/dwb_impl_API4.png)
 
-   Dopo l&#39;esecuzione del comando, compare una finestra in cui viene indicato che è installato lo *stunnel* .
+   Dopo aver eseguito il comando, viene visualizzata una finestra in cui viene indicato che la *stordimento* è installato.
 
    >[!NOTE]
    >
-   >Dopo l&#39;esecuzione del comando, compare una finestra in cui viene indicato che è installato lo *stunnel* .
+   >Dopo aver eseguito il comando, viene visualizzata una finestra in cui viene indicato che la *stordimento* è installato.
 
-1. Verifica della configurazione dello stunnel dell&#39;API Query
+1. Verifica della configurazione dello stunnel dell’API query
 
-   Il passaggio finale di questo processo sarà quello di verificare la configurazione dell&#39;API Query. Nel prompt dei comandi utilizzato per installare la directory api-stunnel. ![](assets/dwb_impl_API5.png)
+   L’ultimo passaggio di questo processo consiste nel testare la configurazione dell’API di query. Nel prompt dei comandi utilizzato per installare la directory api-stunnel. ![](assets/dwb_impl_API5.png)
 
-   Eseguite lo script Perl disponibile in quella cartella utilizzando il seguente comando* perl api-http.pl*. ![](assets/dwb_impl_API6.png)
+   Esegui lo script Perl disponibile in quella cartella utilizzando il seguente comando* perl api-http.pl*. ![](assets/dwb_impl_API6.png)
 
-   Dopo aver eseguito lo script, i risultati devono essere come lo screenshot di seguito (l&#39;ora e i valori di data nel risultato variano a seconda del tempo e di altri parametri nel profilo in cui hai configurato l&#39;API Query (nel passaggio 6). ![](assets/dwb_impl_API7.png)
-
+   Dopo aver eseguito lo script i risultati dovrebbero essere come la schermata sottostante (l’ora e i valori della data nel risultato variano a seconda del tempo e degli altri parametri nel profilo in cui hai configurato l’API query (al passaggio 6). ![](assets/dwb_impl_API7.png)

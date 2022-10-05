@@ -2,16 +2,17 @@
 description: L’archivio certificati di Windows consente di memorizzare il certificato e la chiave privata del client nell’archivio certificati di Windows per la comunicazione SSL con i server.
 title: Archivio certificati di Windows
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
-translation-type: ht
-source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
-workflow-type: ht
+exl-id: 8613a941-6213-4bfa-9c35-dccc2acb6c17
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 100%
 
 ---
 
+# Archivio certificati di Windows{#windows-certificate-store}
 
-# Archivio certificati di Windows {#windows-certificate-store}
+{{eol}}
 
 L’archivio certificati di Windows consente di memorizzare il certificato e la chiave privata del client nell’archivio certificati di Windows per la comunicazione SSL con i server.
 

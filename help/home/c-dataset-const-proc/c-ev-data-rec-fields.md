@@ -3,7 +3,7 @@ description: Informazioni sui campi di dati che il server di Data Workbench può
 title: Campi record dati evento
 uuid: b0232bfa-0a3b-4e3d-876e-6a15a3764eae
 exl-id: 35433b87-991a-4fb9-ba6a-3217e89eb769
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Campi record dati evento{#event-data-record-fields}
+
+{{eol}}
 
 Informazioni sui campi di dati che il server di Data Workbench può elaborare per creare un set di dati.
 
@@ -22,9 +24,9 @@ Informazioni sui campi di dati che il server di Data Workbench può elaborare pe
 
 I dati evento utilizzati per creare un set di dati risiedono in file denominati origini di registro. I dati disponibili nelle origini di registro sono chiamati dati evento perché ogni record di dati rappresenta un record di transazione o una singola istanza di un evento con una marca temporale associata.
 
-I dati evento di un’origine di registro vengono raccolti in tempo reale da [!DNL Sensors]. I dati evento raccolti da [!DNL Sensors] dai server HTTP e application vengono trasmessi ai server di Data Workbench, che convertono i dati in file di log compressi ( [!DNL .vsl]). I dati evento contenuti in un file flat, in un file XML o in un’origine dati ODBC vengono letti dal server di Data Workbench, che fornisce decodificatori definiti per estrarre un set comune di campi dati da questi diversi formati.
+I dati dell’evento di un’origine di registro vengono raccolti in tempo reale da [!DNL Sensors]. Dati evento raccolti da [!DNL Sensors] dai server HTTP e application viene trasmesso ai server di Data Workbench, che convertono i dati in un registro compresso ( [!DNL .vsl]). I dati evento contenuti in un file flat, in un file XML o in un’origine dati ODBC vengono letti dal server di Data Workbench, che fornisce decodificatori definiti per estrarre un set comune di campi dati da questi diversi formati.
 
-Le sezioni seguenti forniscono informazioni sui campi dati (denominati campi record dati evento o campi voce registro ) raccolti da [!DNL Sensors] oppure letti e resi disponibili al server di Data Workbench.
+Le sezioni seguenti forniscono informazioni sui campi di dati (denominati campi record dati evento o campi voce registro ) raccolti da [!DNL Sensors] oppure letto e reso disponibile al server di Data Workbench.
 
 >[!NOTE]
 >
@@ -38,7 +40,7 @@ Le sezioni seguenti forniscono informazioni sui campi dati (denominati campi rec
 
 ## Campi record dati evento linea di base {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
 
-I file di registro ( [!DNL .vsl]) contengono i campi dei dati evento raccolti dai server da [!DNL Sensors] e utilizzati dal server di Data Workbench nel processo di costruzione del set di dati. Nella tabella seguente sono elencati i campi di un record di dati evento tipico registrato da [!DNL Sensor]:
+Log ( [!DNL .vsl]) i file contengono i campi dei dati evento raccolti dai server tramite [!DNL Sensors] e utilizzato dal server di Data Workbench nel processo di costruzione del set di dati. Nella tabella seguente sono elencati i campi di un record di dati evento tipico registrato da [!DNL Sensor]:
 
 <table id="table_98E135FE4EAF44D6ADEB3C6C1C0BF6A4">
  <thead>
@@ -98,11 +100,11 @@ I file di registro ( [!DNL .vsl]) contengono i campi dei dati evento raccolti da
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>Data e ora (GMT) in cui la richiesta è stata ricevuta dal server. Il tempo è espresso come numero di 100 nanosecondi dal 1° gennaio 1600. </p> <p> Esempio: 127710989320000000 è il valore x-timestamp per 11:28:52.0000000 di martedì 13 settembre 2005. </p> </td>
+   <td colname="col2"> <p>Data e ora (GMT) in cui la richiesta è stata ricevuta dal server. Il tempo è espresso come numero di 100 nanosecondi dal 1° gennaio 1600. </p> <p> Esempio: 127710989320000000 è il valore x-timestamp per 11:28:52.0000000 martedì 13 settembre 2005. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
-   <td colname="col2"> <p>Il valore esadecimale a 64 bit dell'identificatore univoco del browser trovato in un cookie persistente impostato da un <span class="wintitle"> Sensor </span> e fornito dal client con una richiesta a un server. </p> <p> Esempio: 42FDF66DE610CF36 </p> </td>
+   <td colname="col2"> <p>Il valore esadecimale a 64 bit dell'identificatore univoco del browser trovato in un cookie persistente impostato da un <span class="wintitle"> Sensore </span> e fornito dal client con una richiesta a un server. </p> <p> Esempio: 42FDF66DE610CF36 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -125,7 +127,7 @@ Nella tabella seguente sono riportati alcuni esempi di campi derivati dal server
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-domain) </td>
-   <td colname="col2"> <p>Nome di dominio o indirizzo IP dell’URI di riferimento HTTP. </p> <p> <p>Nota:  Questo campo è di sola lettura. </p> </p> </td>
+   <td colname="col2"> <p>Nome di dominio o indirizzo IP dell’URI di riferimento HTTP. </p> <p> <p>Nota: Questo campo è di sola lettura. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-host) </td>
@@ -133,7 +135,7 @@ Nella tabella seguente sono riportati alcuni esempi di campi derivati dal server
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-query)(name) </td>
-   <td colname="col2"> <p>Il valore di una stringa di query referrer. </p> <p> <p>Nota:  Non è possibile accedere a un valore della stringa di query referrer utilizzando il campo cs(referrer)(name) . </p> </p> </td>
+   <td colname="col2"> <p>Il valore di una stringa di query referrer. </p> <p> <p>Nota: Non è possibile accedere a un valore della stringa di query referrer utilizzando il campo cs(referrer)(name) . </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs-uri </td>
@@ -143,8 +145,8 @@ Nella tabella seguente sono riportati alcuni esempi di campi derivati dal server
    <td colname="col1"> cs-uri-query(name) </td>
    <td colname="col2"> <p>Il valore associato al nome specificato. Se esistono più valori per il nome specificato, questo campo restituisce l'ultimo di tali valori. </p> Esempi:
     <ul id="ul_47BBB2E3076A46629BFCDB2A460F700B">
-     <li id="li_AC9BB29505A54AE4AFF49438530C9EA4"> Per l’URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span>, cs-uri-query(product3) restituirà cd. </li>
-     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> Per l’URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span>, <span class="wintitle"> cs-uri-query(product1) </span> restituirebbe una casetta. </li>
+     <li id="li_AC9BB29505A54AE4AFF49438530C9EA4"> Per l’URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span>, cs-uri-query(product3) restituisce cd. </li>
+     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> Per l’URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span>, <span class="wintitle"> cs-uri-query(product1) </span> restituirebbe casette. </li>
     </ul> <p> </p> </td>
   </tr>
   <tr>
@@ -161,19 +163,19 @@ Nella tabella seguente sono riportati alcuni esempi di campi derivati dal server
   </tr>
   <tr>
    <td colname="col1"> x-local-timestring </td>
-   <td colname="col2"> <p>x-timestamp convertito nel fuso orario locale specificato nel file <span class="filepath"> Transformation.cfg </span> per il set di dati. Il formato è AAAA-MM-GG HH:MM:SS.mmm. </p> <p> <p>Nota:  Puoi anche definire conversioni temporali come x-local-timestring nel file <span class="filepath"> Log Processing.cfg </span> . Per informazioni, vedere <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> File di configurazione dell’elaborazione del registro </a>. </p> </p> </td>
+   <td colname="col2"> <p>x-timestamp convertito nel fuso orario locale specificato nel <span class="filepath"> Transformation.cfg </span> file per il set di dati. Il formato è AAAA-MM-GG HH:MM:SS.mmm </p> <p> <p>Nota: Puoi anche definire conversioni temporali come x-local-timestring nel <span class="filepath"> Log Processing.cfg </span> file. Per informazioni, consulta <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> File di configurazione dell’elaborazione del registro </a>. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-log-source-id </td>
-   <td colname="col2"> <p>Identificatore corrispondente all'origine del registro per una particolare voce di registro. Affinché l'identificatore possa essere registrato, è necessario specificarlo nel campo <span class="wintitle"> ID origine registro </span> del file <span class="filepath"> Log Processing.cfg </span> quando si definisce <span class="wintitle"> Sensore </span>, file di registro o origini dati ODBC. Per ulteriori informazioni, vedere <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> File di configurazione dell’elaborazione del registro </a>. </p> <p> Esempio: da VSensor01. </p> </td>
+   <td colname="col2"> <p>Identificatore corrispondente all'origine del registro per una particolare voce di registro. Affinché l'identificatore possa essere registrato, è necessario specificarlo nel <span class="wintitle"> ID origine registro </span> campo <span class="filepath"> Log Processing.cfg </span> file durante la definizione <span class="wintitle"> Sensore </span>, file di registro o origini dati ODBC. Per ulteriori informazioni, consulta <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> File di configurazione dell’elaborazione del registro </a>. </p> <p> Esempio: da VSensor01. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-mask </td>
-   <td colname="col2"> Il pattern della maschera delle origini dati <span class="wintitle"> Sensor </span> (derivate dai nomi di file <span class="filepath"> .vsl </span>). Per un file il cui nome è del formato <span class="filepath"> YYYYMMDD-SENSORID.VSL </span>, x-mask è SENSORID. </td>
+   <td colname="col2"> Il modello maschera del <span class="wintitle"> Sensore </span> fonti di dati (derivate <span class="filepath"> .vsl </span> nomi di file). Per un file il cui nome è del formato <span class="filepath"> YYYMMDD-SENSORID.VSL </span>, x-mask è SENSORID. </td>
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> x-timestamp in formato AAAA-MM-GG HH:MM:SS.mmm. </td>
+   <td colname="col2"> x-timestamp in formato AAAA-MM-GG HH:MM:SS.mmm </td>
   </tr>
   <tr>
    <td colname="col1"> x-unixtime </td>
@@ -182,4 +184,4 @@ Nella tabella seguente sono riportati alcuni esempi di campi derivati dal server
  </tbody>
 </table>
 
-[!DNL Sensor], se utilizzato su un server, può raccogliere i campi dei dati evento da qualsiasi intestazione o variabile di richiesta o risposta HTTP valida disponibile tramite l’API del server. Per raccogliere tali campi di dati, devi specificare i campi di intestazione o le variabili desiderate nel file di configurazione [!DNL txlogd.conf]per [!DNL Sensor]. Per ulteriori informazioni, vedere la *Guida alla Data Workbench [!DNL Sensor]*.
+[!DNL Sensor], se utilizzato su un server, può raccogliere i campi dei dati evento da qualsiasi intestazione o variabile di richiesta o risposta HTTP valida disponibile tramite l’API del server. Per raccogliere tali campi di dati, devi specificare i campi di intestazione o le variabili desiderate nel [!DNL txlogd.conf]file di configurazione per [!DNL Sensor]. Per ulteriori informazioni, consulta la sezione *Data Workbench [!DNL Sensor] Guida*.

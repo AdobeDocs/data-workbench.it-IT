@@ -3,7 +3,7 @@ description: Genera rapporti elaborando le aree di lavoro e specificandole come 
 title: Generazione di rapporti
 uuid: 90bc42b3-d7f2-46f2-8c68-5c682d163f3c
 exl-id: 8e5765e8-71b6-4716-96fe-5c7f69407295
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 1%
@@ -12,19 +12,21 @@ ht-degree: 1%
 
 # Generazione di rapporti{#generating-reports}
 
+{{eol}}
+
 Genera rapporti elaborando le aree di lavoro e specificandole come rapporti.
 
-[!DNL Report] genera i rapporti in base all’intervallo impostato nel  [!DNL Every] parametro nel  [!DNL Report.cfg] file (ad esempio  [!DNL "day]&quot;, che elabora il rapporto su base giornaliera) e in base alle altre impostazioni di  [!DNL Report.cfg] file.
+[!DNL Report] genera i rapporti in base all&#39;intervallo impostato nel [!DNL Every] nel [!DNL Report.cfg] (ad esempio [!DNL "day],&quot; che elabora il rapporto su base giornaliera) e basato sull&#39;altro [!DNL Report.cfg] impostazioni file.
 
-Durante la generazione dei rapporti, la percentuale di completamento viene visualizzata nella scheda [!DNL Reports] sotto la miniatura del rapporto specifico. Se [!DNL Report] rileva un problema durante la generazione del rapporto, il messaggio di errore più recente viene visualizzato nella scheda [!DNL Reports] della cartella del set di rapporti. Se [!DNL Report] rileva un errore per un particolare rapporto, continua a elaborare gli altri rapporti del set.
+Durante la generazione dei rapporti, la percentuale di completamento viene visualizzata nella sezione [!DNL Reports] sotto la miniatura del rapporto specifico. Se [!DNL Report] rileva un problema durante la generazione del rapporto; il messaggio di errore più recente viene visualizzato in [!DNL Reports] nella cartella del set di rapporti. Se [!DNL Report] rileva un errore per un particolare report e continua a elaborare gli altri report nel set.
 
-Puoi generare i rapporti in un set di rapporti in uno o tutti i formati seguenti utilizzando il parametro [!DNL Report Types] nel file [!DNL Report.cfg] :
+Puoi generare i rapporti in un set di rapporti in uno o tutti i formati seguenti utilizzando [!DNL Report Types] nel [!DNL Report.cfg] file:
 
-* File Microsoft Excel ( [!DNL .xls] o [!DNL .xlsx])
+* File Excel Microsoft ( [!DNL .xls] o [!DNL .xlsx])
 * File grafico di rete portatile ( [!DNL .png])
 * Miniatura ( [!DNL .jpg])
 
-Insieme ai tipi di output specificati, [!DNL Report] crea un file [!DNL .xml] denominato uguale al rapporto. Questo file *`<report name>`*.xml contiene la descrizione del rapporto che viene visualizzata in Data Workbench nella scheda [!DNL Reports] sotto la miniatura del rapporto. In questo modo la descrizione diventa disponibile per la distribuzione dei rapporti tramite un portale di reporting. Per informazioni su [!DNL Report Portal], consulta [Utilizzo del Report Portal (Portale dei rapporti)](../../home/c-rpt-oview/c-rpt-portal/c-rpt-portal.md#concept-f692210cad494c00865dbf325eb5ed35).
+Insieme ai tipi di output specificati, [!DNL Report] crea un [!DNL .xml] file con lo stesso nome del report. Questo *`<report name>`* Il file .xml contiene la descrizione del report che viene visualizzata in Data Workbench sul [!DNL Reports] sotto la miniatura del rapporto. In questo modo la descrizione diventa disponibile per la distribuzione dei rapporti tramite un portale di reporting. Per informazioni sulla [!DNL Report Portal], vedi [Utilizzo del Report Portal (Portale dei rapporti)](../../home/c-rpt-oview/c-rpt-portal/c-rpt-portal.md#concept-f692210cad494c00865dbf325eb5ed35).
 
 >[!NOTE]
 >

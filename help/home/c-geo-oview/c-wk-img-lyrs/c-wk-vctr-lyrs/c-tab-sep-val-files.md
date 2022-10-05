@@ -2,8 +2,8 @@
 description: Quando si crea un livello vettoriale che fa riferimento a un file di valori separati da tabulazioni (.tsv), i dati vettoriali vengono ottenuti recuperando le istruzioni di disegno, nonché i dati di longitudine e latitudine dal file .tsv .
 title: Livelli vettoriali che fanno riferimento a file di valori separati da tabulazioni
 uuid: 42607b34-e9f2-420a-ba5a-05562598b480
-exl-id: be16ba73-4a98-472b-98f1-1b32e671b763,7b0b0286-072b-4b31-b6ec-ced322da5236
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+exl-id: be16ba73-4a98-472b-98f1-1b32e671b763
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 6%
@@ -12,17 +12,19 @@ ht-degree: 6%
 
 # Livelli vettoriali che fanno riferimento a file di valori separati da tabulazioni{#vector-layers-referencing-tab-separated-values-files}
 
+{{eol}}
+
 Quando si crea un livello vettoriale che fa riferimento a un file di valori separati da tabulazioni (.tsv), i dati vettoriali vengono ottenuti recuperando le istruzioni di disegno, nonché i dati di longitudine e latitudine dal file .tsv .
 
-Per definire un livello vettoriale che fa riferimento a un file [!DNL .tsv], è necessario disporre dei seguenti elementi:
+Per definire un livello vettoriale che fa riferimento a un [!DNL .tsv] file, devi disporre dei seguenti elementi:
 
-* **File  [!DNL .tsv]** contenente i dati utilizzati per disegnare i vettori sul globo, inclusi i dati di longitudine e latitudine. Per ulteriori informazioni sul formato richiesto del file [!DNL .tsv], consulta [Formato file Vector TSV](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e).
+* **A [!DNL .tsv] file** che contiene i dati utilizzati per disegnare i vettori sul globo, compresi i dati di longitudine e latitudine. Per ulteriori informazioni sul formato richiesto del [!DNL .tsv] file, vedi [Formato file TSV vettoriale](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e).
 
-* **File di livello** che specifica la posizione del  [!DNL .tsv] file. Per ulteriori informazioni sul formato richiesto del file di livello, vedere [Formato del file di livello vettoriale](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf).
+* **Un file di livello** specifica la posizione della [!DNL .tsv] file. Per ulteriori informazioni sul formato richiesto del file di livello, vedi [Formato file livello vettoriale](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf).
 
-## Formato del file Vector TSV {#section-a29012c9ff4444ac8a6d41c68482828e}
+## Formato file TSV vettoriale {#section-a29012c9ff4444ac8a6d41c68482828e}
 
-Il file [!DNL .tsv] deve contenere le seguenti tre colonne separate da tabulazioni:
+La [!DNL .tsv] il file deve contenere le tre colonne separate da tabulazioni seguenti:
 
 * **[!DNL Begin]:** Questa colonna deve indicare se iniziare una nuova riga. I valori in questa colonna possono essere 0 (non iniziare una nuova riga) o 1 (iniziare una nuova riga).
 * **[!DNL Longitude]:** Questa colonna deve contenere valori di longitudine.
@@ -32,13 +34,13 @@ Il file [!DNL .tsv] deve contenere le seguenti tre colonne separate da tabulazio
 >
 >Tutte le colonne aggiuntive vengono ignorate.
 
-Di seguito è riportato un file di esempio [!DNL .tsv] contenente dati per un livello vettoriale:
+Di seguito è riportato un esempio [!DNL .tsv] file che contiene dati per un livello vettoriale:
 
 ![](assets/tsv_vectorlayer.png)
 
 ## Formato del file del livello vettoriale {#section-c430923f341f4c93852e9f24b61e82bf}
 
-Ogni file di livello vettoriale che fa riferimento a file [!DNL .tsv] deve essere formattato utilizzando il seguente modello:
+Ciascun file vettoriale che fa riferimento a [!DNL .tsv] i file devono essere formattati utilizzando il seguente modello:
 
 ```
 Layer = VectorLayer:
@@ -63,7 +65,7 @@ Layer = VectorLayer:
  <tbody> 
   <tr> 
    <td colname="col1"> File TSV </td> 
-   <td colname="col2"> <p>Percorso/i del file <span class="filepath"> .tsv</span> contenente i dati vettoriali. </p> <p>Esempio: <span class="filepath"> Mappe\\USVectorData.tsv</span> </p> </td> 
+   <td colname="col2"> <p>Percorso/i verso il <span class="filepath"> .tsv</span> file contenenti i dati vettoriali. </p> <p>Esempio: <span class="filepath"> Mappe\\USVectorData.tsv</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Colore </td> 

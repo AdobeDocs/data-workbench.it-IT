@@ -3,7 +3,7 @@ description: Il grafico a barre nella Data Workbench ora include un confronto di
 title: Grafico analisi di regressione
 uuid: 8512890e-f42b-4dce-826a-2b4bf2a215f4
 exl-id: bfc76c4a-edd5-41fe-b875-c199ea3beab5
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Grafico analisi di regressione{#regression-analysis-graph}
 
+{{eol}}
+
 Il grafico a barre nella Data Workbench ora include un confronto di regressione per più metriche su più grafici.
 
-[I grafici a barre ](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html) nella Data Workbench consentono di riportare le metriche in un grafico a metriche in un altro grafico. Se disponi di più grafici, puoi confrontare una metrica (come variabile indipendente) con un grafico che valuta altre metriche (come variabili dipendenti). Ciò ti consente di determinare l’intensità della relazione tra una variabile dipendente (la metrica stabilita per prima) e una serie di altre metriche mutevoli (regressioni con la metrica dipendente stabilita).
+[Grafici a barre](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html) in Data Workbench consente di riportare le metriche in un grafico alle metriche in un altro grafico. Se disponi di più grafici, puoi confrontare una metrica (come variabile indipendente) con un grafico che valuta altre metriche (come variabili dipendenti). Ciò ti consente di determinare l’intensità della relazione tra una variabile dipendente (la metrica stabilita per prima) e una serie di altre metriche mutevoli (regressioni con la metrica dipendente stabilita).
 
 L’analisi di regressione su una visualizzazione grafico consente agli analisti di eseguire scenari &quot;what-if&quot;. Ad esempio, se le visite aumentano a questo livello, quale impatto avrà questo aumento sui ricavi?
 

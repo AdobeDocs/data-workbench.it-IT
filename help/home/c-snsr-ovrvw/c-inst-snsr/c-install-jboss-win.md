@@ -1,22 +1,26 @@
 ---
-description: Istruzioni dettagliate per l'installazione e la configurazione del sensore per JBoss Server 4.0.5 o versione successiva in esecuzione in Microsoft Windows Server 2000 o versione successiva.
+description: Istruzioni dettagliate per l'installazione e la configurazione di Sensor per JBoss Server 4.0.5 o versione successiva in esecuzione in Microsoft Windows Server 2000 o versione successiva.
 title: Server JBoss su Windows Server 2000 o versione successiva
 uuid: b0501749-9479-484b-8876-fe3001825f8d
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: d9001bc4-f3ef-4d26-9190-807194d20ada
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1190'
+ht-degree: 1%
 
 ---
 
-
 # Server JBoss su Windows Server 2000 o versione successiva{#jboss-server-on-windows-server-or-later}
 
-Istruzioni dettagliate per l&#39;installazione e la configurazione del sensore per JBoss Server 4.0.5 o versione successiva in esecuzione in Microsoft Windows Server 2000 o versione successiva.
+{{eol}}
 
-I file di programma per Sensor vengono assemblati in un file di installazione ottenuto dal sito di download di Adobe. Se non disponete già del file di installazione Sensor per il vostro particolare server Web, scaricatelo (o ottenetelo dal rappresentante Adobe) prima di iniziare le seguenti procedure.
+Istruzioni dettagliate per l&#39;installazione e la configurazione di Sensor per JBoss Server 4.0.5 o versione successiva in esecuzione in Microsoft Windows Server 2000 o versione successiva.
+
+I file di programma per Sensor vengono assemblati in un file di installazione ottenuto dal sito di download di Adobe. Se non disponi già del file di installazione di Sensor per il tuo particolare server web, scaricalo (o ottenerlo dal tuo rappresentante di Adobe) prima di iniziare le seguenti procedure.
 
 Le implementazioni J2EE supportate includono:
 
-* JBoss Server 4.0.5 o versione successiva in esecuzione su Microsoft Windows Server 2000 o versione successiva.
+* JBoss Server 4.0.5 o successivo in esecuzione su Microsoft Windows Server 2000 o versione successiva.
 
 Per installare e configurare Sensor, devi eseguire le seguenti operazioni:
 
@@ -24,13 +28,13 @@ Per installare e configurare Sensor, devi eseguire le seguenti operazioni:
 
 Procedura per estrarre e installare i file di programma per Sensor.
 
-1. Sul server JBoss, create una directory in cui installare i file del programma Sensor. Tenere presente che la coda del disco si trova in questa directory, quindi assicurarsi che il dispositivo scelto disponga di spazio sufficiente per contenere una coda delle dimensioni necessarie.
+1. Sul server JBoss, crea una directory in cui installare i file del programma Sensor. Tenere presente che la coda del disco si trova in questa directory, quindi assicurarsi che il dispositivo scelto abbia spazio sufficiente per contenere una coda delle dimensioni necessarie.
 
    ```
    C:\VisualSensor
    ```
 
-1. Estrarre il contenuto del file di installazione nella directory appena creata. Durante questo passaggio, Sensor installa i file seguenti:
+1. Estrai il contenuto del file di installazione nella directory appena creata. Durante questo passaggio, Sensor installa i seguenti file:
 
 <table id="table_ABFF5F92271B4F3CB0AC68DAB6A5709F"> 
  <thead> 
@@ -44,12 +48,12 @@ Procedura per estrarre e installare i file di programma per Sensor.
   <tr> 
    <td colname="col1"> mod_visual_sciences.so </td> 
    <td colname="col2"> Modulo di caricamento del raccoglitore. </td> 
-   <td colname="col3"> <i> IBMHttpServer/module</i> </td> 
+   <td colname="col3"> <i> IBMHttpServer/modules</i> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>txlogd </p> </td> 
    <td colname="col2"> Il programma del trasmettitore. </td> 
-   <td colname="col3"> <p><i>/usr/local/bin</i> </p> <p><i>—OR—</i> </p> <p><i>/usr/local/sbin</i> </p> </td> 
+   <td colname="col3"> <p><i>/usr/local/bin</i> </p> <p><i>—OPPURE—</i> </p> <p><i>/usr/local/sbin</i> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> txlogd.conf </td> 
@@ -66,35 +70,35 @@ Procedura per estrarre e installare i file di programma per Sensor.
 
 >[!NOTE]
 >
->Il pacchetto di installazione contiene un foglio di calcolo denominato [!DNL TestExperiment.xls]. Questo foglio di calcolo è uno strumento che gli architetti usano per configurare un esperimento controllato. Il sensore stesso non utilizza questo file, quindi non è necessario installare il file sul computer in cui è in esecuzione Sensor (anche se potete scegliere di farlo). Potreste desiderare, invece, copiare il file in una posizione in cui gli architetti possano accedervi o semplicemente estrarre il file dal pacchetto di installazione in base alle esigenze. Per ulteriori informazioni sulla sperimentazione controllata, consulta la Guida agli esperimenti controllati di Insight.
+>Il pacchetto di installazione contiene un file di foglio di calcolo denominato [!DNL TestExperiment.xls]. Questo foglio di calcolo è uno strumento che gli architetti utilizzano per configurare un esperimento controllato. Il sensore stesso non utilizza questo file, quindi non è necessario installare il file sul computer in cui è in esecuzione Sensor (anche se è possibile scegliere di farlo). È invece possibile copiare il file in un percorso in cui gli architetti possono accedervi o semplicemente estrarre il file dal pacchetto di installazione, in base alle esigenze. Per ulteriori informazioni sulla sperimentazione controllata, consulta la Guida agli esperimenti controllati da Insight.
 
-## Modificare il file di configurazione Sensor {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
+## Modificare il file di configurazione del sensore {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
-Il [!DNL txlogd.conf] file contiene i parametri di configurazione per Sensor.
+La [!DNL txlogd.conf] il file contiene i parametri di configurazione per Sensor.
 
-È necessario modificare questo file per specificare, tra le altre cose, le dimensioni e la posizione del file della coda del disco, l&#39;indirizzo del server di Insight e l&#39;ID che verrà allegato ai dati dell&#39;evento prodotti da questo sensore.
+È necessario modificare questo file per specificare, tra l’altro, le dimensioni e la posizione del file della coda del disco, l’indirizzo di Insight Server e l’ID che verrà allegato ai dati dell’evento prodotti da questo sensore.
 
-Il file di configurazione contiene i parametri obbligatori e i parametri facoltativi.
+Il file di configurazione contiene i parametri richiesti e i parametri facoltativi.
 
-* **I parametri** richiesti sono impostazioni che dovete specificare quando installate Sensor. Senza queste impostazioni, il sensore non viene eseguito correttamente.
-* **I parametri** facoltativi sono impostazioni predefinite per valori predefiniti (che è possibile modificare) o per abilitare funzioni facoltative.
-
-**Per modificare il file di configurazione Sensor**
-
-* Aprite il [!DNL /etc/txlogd.conf] file in un editor di testo e impostate i parametri richiesti, nonché eventuali parametri opzionali desiderati.
-* Salvate e chiudete il file.
+* **Parametri richiesti** sono impostazioni che è necessario specificare quando si installa Sensor. Senza queste impostazioni, il sensore non viene eseguito correttamente.
+* **Parametri opzionali** sono impostazioni predefinite per valori predefiniti (che è possibile modificare) o per l’abilitazione di funzionalità facoltative.
 
 **Per modificare il file di configurazione Sensor**
 
-1. Aprite il [!DNL /etc/txlogd.conf] file in un editor di testo e impostate i parametri richiesti, nonché eventuali parametri opzionali desiderati.
-1. Salvate e chiudete il file.
+* Apri [!DNL /etc/txlogd.conf] in un editor di testo e imposta i parametri richiesti ed eventuali parametri facoltativi desiderati.
+* Salva e chiudi il file.
+
+**Per modificare il file di configurazione Sensor**
+
+1. Apri [!DNL /etc/txlogd.conf] in un editor di testo e imposta i parametri richiesti ed eventuali parametri facoltativi desiderati.
+1. Salva e chiudi il file.
 
 ## Avviare il trasmettitore e creare la coda del disco {#section-55630de65f264274aefd771da2002852}
 
-Dopo aver configurato il file txlogd.conf, potete avviare il programma di trasmettitore, registrarlo come servizio Windows e creare la coda del disco.
+Dopo aver configurato il file txlogd.conf, è possibile avviare il programma del trasmettitore, registrarlo come servizio Windows e creare la coda del disco.
 
-1. Dal menu Start in Windows, selezionate Accessori > Prompt dei comandi.
-1. Nella finestra del prompt dei comandi, andate alla directory in cui avete installato Sensor ed eseguite il seguente comando:
+1. Dal menu Start in Windows, selezionare Accessori > Prompt dei comandi.
+1. Nella finestra del prompt dei comandi, passare alla directory in cui è stato installato Sensor ed eseguire il seguente comando:
 
    ```
    txlog /regserver
@@ -102,46 +106,46 @@ Dopo aver configurato il file txlogd.conf, potete avviare il programma di trasme
 
    Questo comando avvia il trasmettitore, crea la coda del disco e registra Sensor come servizio Windows.
 
-1. Per confermare che il trasmettitore funziona correttamente, fate clic su Start > Pannello di controllo > Strumenti di amministrazione > Servizi.
+1. Per confermare che il trasmettitore è in esecuzione correttamente, fai clic su Start > Pannello di controllo Campaign > Strumenti di amministrazione > Servizi.
 
    >[!NOTE]
    >
    >Questa sequenza di comandi può variare a seconda della versione di Windows in uso.
 
-   1. Nell&#39;elenco dei servizi, individuare la voce per Sensor e confermare che il suo stato è Avviato e il suo tipo di avvio è Automatico.
+   1. Nell&#39;elenco dei servizi, individuare la voce per Sensor e confermare che il suo stato è Avviato e che il suo tipo di avvio è Automatico.
    1. Chiudere il pannello di controllo Servizi.
 
-1. Per verificare se il trasmettitore ha riscontrato degli errori durante l’avvio, fate clic su Start > Pannello di controllo > Strumenti di amministrazione > Visualizzatore eventi per aprire il visualizzatore eventi.
+1. Per verificare se il trasmettitore ha riscontrato errori durante l&#39;avvio, fai clic su Start > Pannello di controllo Campaign > Strumenti di amministrazione > Visualizzatore eventi per aprire il Visualizzatore eventi.
 
-   1. Nel riquadro a sinistra della finestra Visualizzatore eventi, selezionate il registro Applicazioni.
-   1. Nel riquadro a destra, cercate gli eventi con &quot;Adobe&quot; nella colonna Sorgente.
-   1. Se si verifica un errore in &quot;Adobe&quot;, fare doppio clic sull&#39;errore per visualizzare la finestra Proprietà evento. Questa finestra fornisce informazioni dettagliate sull&#39;errore.
+   1. Nel riquadro a sinistra della finestra Visualizzatore eventi selezionare il registro Applicazioni.
+   1. Nel riquadro a destra, cerca gli eventi con &quot;Adobe&quot; nella colonna Origine.
+   1. Se si trova un errore da &quot;Adobe&quot;, fare doppio clic sull&#39;errore per visualizzare la finestra Proprietà evento. Questa finestra fornisce informazioni dettagliate sull’errore.
 
-1. Al termine dell&#39;esame del registro Applicazioni, chiudete il visualizzatore eventi.
+1. Al termine dell&#39;esame del registro Applicazioni, chiudere il Visualizzatore eventi.
 1. Verificare che il trasmettitore abbia creato la coda del disco (Diskq2000.log) nella directory in cui sono stati installati i file del programma Sensor e che si tratti della dimensione specificata nel parametro QueueSize nel file txlogd.conf.
 
    Se la coda non è stata creata correttamente:
 
-   1. Esaminate il file txtlogd.conf e verificate che il parametro QueueSize sia impostato correttamente.
+   1. Esamina il file txtlogd.conf e verifica che il parametro QueueSize sia impostato correttamente.
    1. Verificare che il dispositivo su cui è installato Sensor disponga di spazio sufficiente per contenere un file delle dimensioni specificate nel parametro QueueSize.
-   1. Con il pannello di controllo Servizi in Windows, arrestare il trasmettitore.
-   1. Eliminare il file della coda.
-   1. Registrare nuovamente il sensore come servizio Windows: dal menu Start in Windows, selezionate Accessori > Prompt dei comandi. Nella finestra del prompt dei comandi, andate alla directory in cui avete installato Sensor ed eseguite il seguente comando:
+   1. Utilizzando il pannello di controllo Servizi in Windows, arrestare il trasmettitore.
+   1. Elimina il file della coda.
+   1. Registra nuovamente Sensor come servizio Windows: dal menu Start in Windows, selezionare Accessori > Prompt dei comandi. Nella finestra del prompt dei comandi, passare alla directory in cui è stato installato Sensor ed eseguire il seguente comando:
 
       ```
       txlog /regserver
       ```
 
-Il trasmettitore è progettato per funzionare in modo continuo. Se si riavvia il computer, il trasmettitore si riavvia automaticamente. Se è necessario avviare e arrestare manualmente il trasmettitore, è possibile farlo utilizzando il pannello di controllo Servizi in Windows.
+Il trasmettitore è progettato per funzionare continuamente. Se si riavvia il computer, il trasmettitore si riavvia automaticamente. Se è necessario avviare e arrestare il trasmettitore manualmente, è possibile farlo utilizzando il pannello di controllo Servizi di Windows.
 
 ## Aggiungere l&#39;agente di raccolta al server Web {#section-c5b83ae4ebce430aa764f951e849b333}
 
-Per i server JBoss, l&#39;agente di raccolta funziona come un filtro nel contenitore servlet.
+Per i server JBoss, il raccoglitore funziona come filtro nel contenitore servlet.
 
-Per aggiungere l’agente di raccolta al server Web, è necessario modificare il [!DNL web.xml] file come descritto di seguito e riavviare l’applicazione Web.
+Per aggiungere il raccoglitore al server web, devi modificare il [!DNL web.xml] come descritto di seguito e riavvia l&#39;applicazione web.
 
-1. Utilizzando un editor di testo, aprite il [!DNL web.xml] file per il server Web i cui eventi Sensor acquisisce.
-1. Aggiungete i seguenti `<filter>` elementi e `<filter-mapping>` elementi al file descrittore. Se non avete installato txlogd.conf nella directory /etc, dovete immettere il percorso corretto per questo file nell&#39; `<param-value>` elemento:
+1. Utilizzando un editor di testo, apri le [!DNL web.xml] file per il server web i cui eventi acquisisce Sensor.
+1. Aggiungi quanto segue `<filter>` e `<filter-mapping>` al file descrittore. Se non hai installato txlogd.conf nella directory /etc, devi immettere il percorso corretto di questo file nel `<param-value>` elemento:
 
    ```
    <filter>
@@ -165,15 +169,15 @@ Per aggiungere l’agente di raccolta al server Web, è necessario modificare il
 
    >[!NOTE]
    >
-   >Queste righe sono con distinzione tra maiuscole e minuscole. Digitate esattamente come appaiono sopra.
+   >Queste righe sono sensibili all’uso di maiuscole e minuscole. Digitali esattamente come appaiono sopra.
 
-1. Riavviate il processo del server Web (non è necessario riavviare l&#39;intero computer del server, ma è sufficiente riavviare il processo del server Web). L&#39;agente di raccolta viene caricato con il server Web e inizia a raccogliere i dati dell&#39;evento e a scriverli nella coda del disco.
+1. Riavviare il processo del server Web (non è necessario riavviare l&#39;intero computer server, è sufficiente riavviare il processo del server Web). Il raccoglitore viene caricato con il server Web e inizia a raccogliere i dati dell&#39;evento e a scriverli nella coda del disco.
 
 ## Modificare lo script di avvio {#section-0dae181ef8884f10a57f6cfda8500969}
 
-Prima di modificare lo script di avvio, assicurarsi che la variabile JAVA_HOME sia definita nell&#39;ambiente Windows.
+Prima di modificare lo script di avvio, assicurati che la variabile JAVA_HOME sia definita nell’ambiente Windows.
 
-Nel [!DNL run.bat] file (ad esempio, C:\jboss-4.0.5.GA\bin\run.bat), aggiungete le seguenti righe accanto alla fine del file subito prima delle righe &quot;echo&quot; che precedono il comando di avvio del server JBoss:
+In [!DNL run.bat] file (ad esempio, C:\jboss-4.0.5.GA\bin\run.bat), aggiungi le seguenti righe vicino alla fine del file poco prima delle righe &quot;echo&quot; che precedono il comando di avvio del server JBoss:
 
 ```
 set JBOSS_CLASSPATH=%JBOSS_CLASSPATH%;C:\jboss-4.0.5.GA\server\default\lib\javax.servlet.jar;C:\VisualSciences\J2EECollector.jar 
@@ -182,15 +186,15 @@ set JAVA_OPTS=%JAVA_OPTS% -Djava.library.path=C:\VisualSciences
 
 ## Acquisizione di dati aggiuntivi {#section-9483b663cbd0432daaca50c1089c7fca}
 
-È possibile acquisire dati di misurazione aggiuntivi dalle applicazioni Web basate su J2EE utilizzando la funzionalità appendToLog().
+È possibile acquisire dati di misurazione aggiuntivi da applicazioni web basate su J2EE utilizzando la funzionalità appendToLog() .
 
-1. Aggiungi il codice seguente nella parte superiore della pagina .jsp da cui vuoi acquisire i dati:
+1. Aggiungi il codice seguente nella parte superiore della pagina .jsp da cui desideri acquisire i dati:
 
    ```
    <%@ page import="com.visualsciences.collector.VSCollector" %> 
    ```
 
-1. Utilizzare il metodo appendToLog() dell&#39;oggetto Collector per aggiungere le coppie nome-valore desiderate alla stringa di query della pagina .jsp richiesta. L’esempio seguente aggiunge &quot;A=1&quot; e &quot;B=2&quot; alla stringa di query della pagina .jsp richiesta per la pagina /index.jsp:
+1. Utilizzare il metodo appendToLog() dell&#39;oggetto Collector per aggiungere le coppie nome-valore desiderate alla stringa di query della pagina .jsp richiesta. L’esempio seguente aggiunge &quot;A=1&quot; e &quot;B=2&quot; alla stringa di query della pagina richiesta .jsp per la pagina /index.jsp :
 
    ```
    <html> 
@@ -205,7 +209,6 @@ set JAVA_OPTS=%JAVA_OPTS% -Djava.library.path=C:\VisualSciences
    </html> 
    ```
 
-   L&#39;URI della richiesta risultante è /index.jsp?A=1&amp;B=2.
+   L’URI di richiesta risultante è /index.jsp?A=1&amp;B=2.
 
-1. Ripetete questa procedura per ogni pagina .jsp da cui desiderate acquisire dati aggiuntivi.
-
+1. Ripeti questa procedura per ogni pagina .jsp da cui desideri acquisire dati aggiuntivi.

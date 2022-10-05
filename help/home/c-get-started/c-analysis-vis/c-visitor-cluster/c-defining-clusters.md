@@ -3,7 +3,7 @@ description: Seleziona le variabili di input, il numero di cluster e una popolaz
 title: Creazione di cluster
 uuid: f8462445-b7d2-48ae-aed7-2a3abc491cfb
 exl-id: 60bc75bf-2f89-455b-8be9-aa20bb837752
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
@@ -12,29 +12,31 @@ ht-degree: 1%
 
 # Creazione di cluster{#building-clusters}
 
+{{eol}}
+
 Seleziona le variabili di input, il numero di cluster e una popolazione target (se desiderato) per definire i cluster nel set di dati.
 
 **Creazione di cluster**
 
 1. Apri **[!UICONTROL Cluster Builder]**.
 
-   Fai clic su **Visualizzazione** > **Analisi predittiva** > **Clustering** > **Generatore di cluster**.
+   Fai clic su **Visualizzazione** > **Analisi predittiva** > **Clustering** > **Cluster Builder**.
 
    ![](assets/cluster-builder-step1.png)
 
 1. Seleziona le variabili di input.
 
-   * Aggiungi le metriche all’elenco **[!UICONTROL Input Variables]** selezionando dal menu **[!UICONTROL Metric]** nella barra degli strumenti.
+   * Aggiungi metriche al **[!UICONTROL Input Variables]** selezionando dalla **[!UICONTROL Metric]** nella barra degli strumenti.
 
       ![](assets/cluster_metric_select.png)
 
-   * Aggiungi elementi dimensionali all&#39;elenco **[!UICONTROL Input Variables]** trascinandoli da una tabella del Dimension.
+   * Aggiungi elementi dimensionali al **[!UICONTROL Input Variables]** trascinandoli dalla tabella di un Dimension.
 
-      Premi **[!UICONTROL Ctrl + Alt]** e trascina gli elementi dimensionali selezionati nell’elenco **[!UICONTROL Input Variables]** o nella casella **[!UICONTROL Element]** della barra degli strumenti.
+      Press **[!UICONTROL Ctrl + Alt]** e trascina gli elementi dimensionali selezionati **[!UICONTROL Input Variables]** o **[!UICONTROL Element]** nella barra degli strumenti.
 
       ![](assets/cluster_dim_select.png)
-   Per impostazione predefinita, il clustering viene eseguito sull&#39;intero set di dati. Puoi visualizzare tutte le variabili di input nel riquadro a sinistra **[!UICONTROL Preprocessing]**.
-1. Utilizza il menu **[!UICONTROL Options]** per selezionare il numero desiderato di cluster.
+   Per impostazione predefinita, il clustering viene eseguito sull&#39;intero set di dati. Puoi visualizzare tutte le variabili di input a sinistra **[!UICONTROL Preprocessing]** riquadro.
+1. Utilizza la **[!UICONTROL Options]** per selezionare il numero desiderato di cluster.
 
    ![](assets/build_cluster_2.png)
 
@@ -42,11 +44,11 @@ Seleziona le variabili di input, il numero di cluster e una popolazione target (
 
    ![](assets/build_cluster_3.png)
 
-   Per iniziare, definisci il sottoinsieme desiderato utilizzando le selezioni nell’area di lavoro o utilizzando il simbolo **[!UICONTROL Filter Editor]**. Dopo aver selezionato il sottoinsieme desiderato, impostate Popolazione di destinazione nel menu **[!UICONTROL Options]** . Si consiglia di assegnare al gruppo di destinazione un nome di identificazione.
+   Per iniziare, definisci il sottoinsieme desiderato utilizzando le selezioni in Workspace o utilizzando la **[!UICONTROL Filter Editor]**. Una volta selezionato il sottoinsieme desiderato, imposta la popolazione target nel **[!UICONTROL Options]** menu. Si consiglia di assegnare al gruppo di destinazione un nome di identificazione.
 
-   Il menu **[!UICONTROL Options]** dispone anche di impostazioni per controllare il numero massimo di passate e la soglia accettabile per la convergenza centrale.
+   La **[!UICONTROL Options]** Il menu dispone inoltre di impostazioni per controllare il numero massimo di passate e la soglia accettabile per la convergenza centrale.
 
-1. Dopo aver configurato gli input e le opzioni, fai clic sul pulsante **Vai** per eseguire il clustering localmente oppure premi **[!UICONTROL Submit]** per inviare l&#39;attività al server Predictive Analytics. Le invii al server salveranno la dimensione risultante nel set di dati al termine della convergenza.
+1. Dopo aver configurato gli input e le opzioni, fai clic sul pulsante **Vai** per eseguire il clustering localmente o premere **[!UICONTROL Submit]** per inviare l&#39;attività al server Predictive Analytics. Le invii al server salveranno la dimensione risultante nel set di dati al termine della convergenza.
 
    Quando viene eseguito localmente, verrà visualizzato il Generatore cluster che si sposta attraverso quattro fasi di clustering canoy mentre definisce centri intelligenti basati sugli input.
 
@@ -62,7 +64,7 @@ Seleziona le variabili di input, il numero di cluster e una popolazione target (
 
    >[!NOTE]
    >
-   >Se aggiungi o rimuovi gli input durante la convergenza, il processo verrà messo in pausa fino a quando non premi nuovamente **Go**.
+   >Se si aggiungono o rimuovono input durante la convergenza, il processo verrà messo in pausa fino a quando non si preme **Vai** di nuovo.
 
    Dopo aver creato i cluster, puoi aprire il selettore colore per assegnare i colori per diversi risultati di distribuzione.
 
@@ -72,10 +74,10 @@ Seleziona le variabili di input, il numero di cluster e una popolazione target (
 
    ![](assets/build_cluster_6.png)
 
-1. Se desideri utilizzare questa dimensione cluster in altre visualizzazioni, puoi **[!UICONTROL Save]** localmente o **[!UICONTROL Submit]** sul server.
+1. Se desideri utilizzare questa dimensione cluster in altre visualizzazioni, puoi **[!UICONTROL Save]** localmente o **[!UICONTROL Submit]** al server.
 
 Se desideri eseguire nuovamente la convergenza o vedere la pertinenza degli input, Cluster Builder può anche caricare le dimensioni cluster esistenti.
 
 >[!TIP]
 >
->Quando questa opzione è selezionata, **[!UICONTROL Reset]** rilascerà completamente tutte le variabili di input e fornirà una visualizzazione vuota del generatore di cluster per definire nuovi cluster.
+>Se selezionato, **[!UICONTROL Reset]** rilascerà completamente tutte le variabili di input e ti darà una visualizzazione vuota del generatore di cluster per definire nuovi cluster.

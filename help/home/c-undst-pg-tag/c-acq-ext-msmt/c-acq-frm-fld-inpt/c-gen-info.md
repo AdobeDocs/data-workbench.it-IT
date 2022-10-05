@@ -3,7 +3,7 @@ description: I valori immessi in un modulo in una pagina web possono essere racc
 title: Informazioni generali
 uuid: 401816a5-1d95-48e6-bedf-ee2a5dbd2d50
 exl-id: 9effc72b-e75f-423c-87ec-6ac25edee8d6
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Informazioni generali{#general-information}
+
+{{eol}}
 
 I valori immessi in un modulo in una pagina web possono essere raccolti e aggiunti nella stringa di interrogazione della pagina successivamente richiesta (all’invio del modulo) tramite l’uso di JavaScript.
 
@@ -53,7 +55,7 @@ Questo esempio aggiunge i valori immessi nel modulo dall&#39;utente del browser 
 https://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
 ```
 
-Le seguenti misurazioni estese sono acquisite con questa richiesta in aggiunta alle misurazioni di base raccolte da [!DNL Sensor]:
+Le seguenti misurazioni estese saranno acquisite con questa richiesta in aggiunta alle misurazioni della linea di base raccolte da [!DNL Sensor]:
 
 | Dati raccolti | Spiegazione | Esempio |
 |---|---|---|

@@ -3,7 +3,7 @@ description: La funzionalità di trasformazione include tre file di configurazio
 title: File di configurazione per la trasformazione
 uuid: abb5b7a4-ade6-4658-b3a1-7ce4c2c17507
 exl-id: 9cd5ae3a-e3fc-466f-a6ab-20582001fb4a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 12%
@@ -11,6 +11,8 @@ ht-degree: 12%
 ---
 
 # File di configurazione per la trasformazione{#configuration-files-for-transform}
+
+{{eol}}
 
 La funzionalità di trasformazione include tre file di configurazione che contengono i parametri necessari per leggere ed esportare i dati.
 
@@ -20,4 +22,4 @@ La funzionalità di trasformazione include tre file di configurazione che conten
 
 >[!NOTE]
 >
->Prima di iniziare a configurare l’implementazione della funzionalità di trasformazione, verifica di aver installato correttamente i file di Data Workbench [!DNL Transform.cfg] e Data Workbench T [!DNL ransform Mode.cfg] e tutti i prodotti software e le applicazioni Adobe necessari per l’implementazione. Per le istruzioni di installazione, vedere la *Guida all&#39;installazione e all&#39;amministrazione dei prodotti server*.
+>Prima di iniziare a configurare l’implementazione della funzionalità di trasformazione, verifica di aver installato correttamente Data Workbench [!DNL Transform.cfg] e data workbench T [!DNL ransform Mode.cfg] file e tutti i prodotti software e le applicazioni Adobe necessari per la tua implementazione. Per le istruzioni di installazione, consulta la sezione *Guida all’installazione e all’amministrazione dei prodotti server*.

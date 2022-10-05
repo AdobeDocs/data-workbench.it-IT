@@ -3,29 +3,31 @@ description: La trasformazione RETransform (espressione regolare) è una trasfor
 title: RETransform
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
 exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # RETransform{#retransform}
 
+{{eol}}
+
 La trasformazione RETransform (espressione regolare) è una trasformazione corrispondente a pattern che utilizza espressioni regolari per specificare un pattern da cercare e acquisire nell’input e memorizza la stringa acquisita in un campo di output designato.
 
-Le espressioni regolari vengono valutate rispetto all&#39;intera stringa di input. Se l’input non corrisponde al pattern specificato nell’espressione regolare, non vengono acquisiti dati. Per una breve guida all&#39;utilizzo delle espressioni regolari, consulta [Espressioni regolari](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
+Le espressioni regolari vengono valutate rispetto all&#39;intera stringa di input. Se l’input non corrisponde al pattern specificato nell’espressione regolare, non vengono acquisiti dati. Per una breve guida all’utilizzo delle espressioni regolari, consulta [Espressioni regolari](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
 >[!NOTE]
 >
->La trasformazione [!DNL RETransform] opera in modo simile alla trasformazione [!DNL REMatch] (vedere [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)), che crea un campo di output per ogni sottopattern di acquisizione nell’espressione regolare. È possibile considerare [!DNL RETransform] come una combinazione di [!DNL REMatch] e [!DNL Format] trasformazioni. Se il parametro Azione (vedi Azione nella tabella seguente) è impostato su &quot;RESULTS&quot;, allora [!DNL RETransform] funziona come una combinazione di trasformazioni [!DNL REMatch] e [!DNL Union].
+>La [!DNL RETransform] la trasformazione funziona in modo simile al [!DNL REMatch] trasformazione (vedere [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)), che crea un campo di output per ogni sottopattern di acquisizione nell’espressione regolare. Potete pensare a [!DNL RETransform] come combinazione di [!DNL REMatch] e [!DNL Format] trasformazioni. Se il parametro Action (vedi Azione nella tabella seguente) è impostato su &quot;RESULTS&quot;, allora [!DNL RETransform] funziona come una combinazione di [!DNL REMatch] e [!DNL Union] trasformazioni.
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -45,7 +47,7 @@ Le espressioni regolari vengono valutate rispetto all&#39;intera stringa di inpu
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> impostazione predefinita </td> 
+   <td colname="col1"> Impostazione predefinita </td> 
    <td colname="col2"> Il valore predefinito da utilizzare se la condizione è soddisfatta e il valore di input non è disponibile oppure se l’espressione regolare non corrisponde al valore di input. </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -65,7 +67,7 @@ Le espressioni regolari vengono valutate rispetto all&#39;intera stringa di inpu
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Uscita </td> 
+   <td colname="col1"> Output </td> 
    <td colname="col2"> Nome della stringa di output. </td> 
    <td colname="col3"></td> 
   </tr> 

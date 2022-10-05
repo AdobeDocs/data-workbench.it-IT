@@ -3,7 +3,7 @@ description: Istruzioni dettagliate per l'installazione e la configurazione di S
 title: WebSphere su AIX
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 0%
@@ -12,15 +12,17 @@ ht-degree: 0%
 
 # WebSphere su AIX{#websphere-on-aix}
 
+{{eol}}
+
 Istruzioni dettagliate per l&#39;installazione e la configurazione di Sensor per WebSphere 5.x in esecuzione su AIX 5.1 o versione successiva.
 
-I file di programma per [!DNL Sensor] vengono assemblati in un file di installazione ottenuto dal sito di download di Adobe. Se non disponi già del file di installazione [!DNL Sensor] per un particolare server Web, scaricalo (o ottienilo dal rappresentante di Adobe) prima di iniziare le procedure seguenti.
+I file di programma per [!DNL Sensor] vengono assemblati in un file di installazione ottenuto dal sito di download di Adobe. Se non disponi già del [!DNL Sensor] file di installazione per il server Web specifico, scaricarlo (o ottenerlo dal rappresentante di Adobe) prima di iniziare le procedure seguenti.
 
 >[!NOTE]
 >
->I server [!DNL Sensor] per WebSphere non supportano la sperimentazione controllata. Per informazioni sulla sperimentazione controllata, vedere la *Guida agli esperimenti controllati da Data Workbench.*
+>La [!DNL Sensor] per i server WebSphere non supporta la sperimentazione controllata. Per informazioni sulla sperimentazione controllata, consulta la sezione *Guida agli esperimenti controllati da Data Workbench.*
 
-## Installa i file di programma {#section-86f69127278c41bc90b97b68bb40bc6e}
+## Installare i file del programma {#section-86f69127278c41bc90b97b68bb40bc6e}
 
 Procedura per estrarre e installare i file di programma per Sensorto nel computer server.
 
@@ -73,7 +75,7 @@ Procedura per estrarre e installare i file di programma per Sensorto nel compute
 
 >[!NOTE]
 >
->Il pacchetto di installazione contiene un file di foglio di calcolo denominato TestExperiment.xls. Questo foglio di calcolo è uno strumento utilizzato dagli architetti per configurare un esperimento controllato. Il sensore stesso non utilizza questo file, quindi non è necessario installare il file sul computer in cui è in esecuzione Sensor (anche se si può scegliere di farlo). È invece possibile copiare il file in un percorso in cui gli architetti possono accedervi o semplicemente estrarre il file dal pacchetto di installazione, in base alle esigenze. Per ulteriori informazioni sulla sperimentazione controllata, consulta la Guida agli esperimenti controllati da Insight.
+>Il pacchetto di installazione contiene un file di foglio di calcolo denominato TestExperiment.xls. Questo foglio di calcolo è uno strumento che gli architetti utilizzano per configurare un esperimento controllato. Il sensore stesso non utilizza questo file, quindi non è necessario installare il file sul computer in cui è in esecuzione Sensor (anche se si può scegliere di farlo). È invece possibile copiare il file in un percorso in cui gli architetti possono accedervi o semplicemente estrarre il file dal pacchetto di installazione, in base alle esigenze. Per ulteriori informazioni sulla sperimentazione controllata, consulta la Guida agli esperimenti controllati da Insight.
 
 **Autorizzazioni sui file del programma**
 
@@ -145,7 +147,7 @@ Per i server WebSphere, il raccoglitore funziona come filtro nel contenitore ser
 Per aggiungere il raccoglitore all&#39;applicazione Web, aggiungi il filtro al descrittore di distribuzione web.xml dell&#39;applicazione Web e riavvia l&#39;applicazione Web.
 
 1. Utilizzando un editor di testo, apri il file web.xml per il server web i cui eventi vengono acquisiti da Sensor.
-1. Aggiungi i seguenti elementi `<filter>` e `<filter-mapping>` al file descrittore. Se non hai installato txlogd.conf nella directory /etc, devi immettere il percorso corretto di questo file nell&#39;elemento `<param-value>` .
+1. Aggiungi quanto segue `<filter>` e `<filter-mapping>` al file descrittore. Se non hai installato txlogd.conf nella directory /etc, devi immettere il percorso corretto di questo file nel `<param-value>` elemento.
 
    ```
    <filter>
@@ -173,7 +175,7 @@ Per aggiungere il raccoglitore all&#39;applicazione Web, aggiungi il filtro al d
 
 1. Riavvia l&#39;applicazione Web. Il raccoglitore viene caricato con l&#39;applicazione e inizierà a raccogliere i dati dell&#39;evento e a scriverli nella coda del disco.
 
-## Dichiarare la posizione dell&#39;agente di raccolta e dei file di oggetto condiviso {#section-e641f08999d34a648aaee2111b69ca25}
+## Dichiarare la posizione dell’agente di raccolta e dei file di oggetto condiviso {#section-e641f08999d34a648aaee2111b69ca25}
 
 Procedura per modificare lo script di avvio di Websphere per dichiarare la posizione dei file J2EECollector.jar e libvisual_sciences.so.
 
@@ -190,7 +192,7 @@ Procedura per modificare lo script di avvio di Websphere per dichiarare la posiz
    WAS_LIBPATH="$WAS_LIBPATH":/usr/local/visual_sciences
    ```
 
-1. Salva il file [!DNL setupCmdLine.sh].
+1. Salva il [!DNL setupCmdLine.sh] file.
 
 ## Test del sensore {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
 
@@ -240,7 +242,7 @@ Ad esempio, il raccoglitore J2EE può essere utilizzato per acquisire i dati di 
 
 Quando un sensore per la piattaforma J2EE riceve una richiesta, richiama una classe di raccolta che importa la funzione appendToLog. La funzione appendToLog aggiunge alla richiesta iniziale i parametri della stringa di query specificati nella funzione appendToLog . Questo determina l’URI della richiesta iniziale contenente coppie nome-valore della stringa di query aggiuntive corrispondenti ai nomi e ai valori dei dati che vengono acquisiti. Ad esempio, CPC=20 verrebbe aggiunto alla richiesta iniziale quando il valore di un particolare posizionamento di annunci o collegamento click-through è di 20 centesimi. Insight Server elabora questi valori nel set di dati per l’analisi. Un ulteriore vantaggio di questa metodologia di raccolta è che consente la raccolta di dati aggiuntivi senza creare voci di registro aggiuntive, come potrebbe essere creato utilizzando le metodologie di assegnazione tag delle pagine.
 
-Per ulteriori informazioni sull&#39;elaborazione, vedere la *Guida alla configurazione del set di dati*.
+Per ulteriori informazioni sull’elaborazione, consulta la sezione *Guida alla configurazione del set di dati*.
 
 1. Aggiungi il codice seguente nella parte superiore della pagina .jsp da cui desideri acquisire i dati:
 

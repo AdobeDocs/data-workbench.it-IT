@@ -3,7 +3,7 @@ description: La trasformazione Split divide una stringa in un vettore di sottost
 title: Dividere
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
 exl-id: ea85b095-1306-4938-906d-35d421db6c98
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Dividere{#split}
+
+{{eol}}
 
 La trasformazione Split divide una stringa in un vettore di sottostringhe in base a un carattere di delimitazione specificato.
 
@@ -21,7 +23,7 @@ La trasformazione Split divide una stringa in un vettore di sottostringhe in bas
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -41,7 +43,7 @@ La trasformazione Split divide una stringa in un vettore di sottostringhe in bas
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Delimitatore </td> 
+   <td colname="col1"> Delimiter (Delimitatore) </td> 
    <td colname="col2"> <p>Stringa utilizzata per separare la stringa di input in sottostringhe. Deve essere un singolo carattere di lunghezza. </p> <p> Se si tiene premuto il tasto Ctrl e si fa clic con il pulsante destro del mouse all'interno del parametro Delimitatore, viene visualizzato un menu Inserisci. Questo menu contiene un elenco di caratteri speciali che vengono spesso utilizzati come delimitatori. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -51,7 +53,7 @@ La trasformazione Split divide una stringa in un vettore di sottostringhe in bas
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Uscita </td> 
+   <td colname="col1"> Output </td> 
    <td colname="col2"> Nome del campo di output. </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -62,7 +64,7 @@ Considera un sito web in cui i prodotti acquistati da un cliente vengono elencat
 
 * /checkout/confirmed.asp?prod_selected=B57481,C46355,Z97123
 
-Il campo cs-uri-stem viene utilizzato per determinare se la pagina richiesta dalla voce di log è la pagina di conferma. I codici per i prodotti acquistati dal cliente sono elencati come valori separati da virgole del nome prod_selected nella query cs-uri. La trasformazione [!DNL Split] può essere utilizzata per estrarre queste informazioni suddividendo i codici prodotto in base alla virgola se il valore di cs-uri-stem corrisponde al valore specificato nella condizione [!DNL String Match]. Vedere [Corrispondenza stringa](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). La seguente trasformazione descrive la soluzione a questo problema.
+Il campo cs-uri-stem viene utilizzato per determinare se la pagina richiesta dalla voce di log è la pagina di conferma. I codici per i prodotti acquistati dal cliente sono elencati come valori separati da virgole del nome prod_selected nella query cs-uri. La [!DNL Split] La trasformazione può essere utilizzata per estrarre queste informazioni suddividendo i codici prodotto in base alla virgola se il valore di cs-uri-stem corrisponde al valore specificato nel [!DNL String Match] condizione. Vedi [Corrispondenza stringa](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). La seguente trasformazione descrive la soluzione a questo problema.
 
 ![](assets/cfg_TransformationType_Split.png)
 

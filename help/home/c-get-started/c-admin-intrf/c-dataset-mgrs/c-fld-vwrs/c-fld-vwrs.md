@@ -3,7 +3,7 @@ description: Un visualizzatore di campi è una tabella contenente i valori di un
 title: Visualizzatore di campi
 uuid: 1227b0de-6ae8-4f97-ad3e-5c9ead818ba5
 exl-id: 53ede4aa-4865-4e67-b3b1-e3e6287f29d7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 1%
@@ -12,15 +12,17 @@ ht-degree: 1%
 
 # Visualizzatore di campi{#field-viewer}
 
+{{eol}}
+
 Un visualizzatore di campi è una tabella contenente i valori di uno o più campi di dati.
 
 I campi i cui valori vengono visualizzati sono input o output delle origini di registro di un set di dati, trasformazioni o dimensioni estese. Il nome del campo viene visualizzato nell’intestazione della colonna e ogni riga contiene il valore del campo per una singola riga di dati di origine. Poiché i visualizzatori di campi consentono di visualizzare i valori di un campo, sono utili per scrivere e testare [espressioni regolari](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
-È possibile aprire un visualizzatore di campi come callout da una mappa [!DNL Transformation Dependency] o come visualizzazione autonoma dal menu [!DNL Admin]:
+È possibile aprire un visualizzatore di campi come callout da un [!DNL Transformation Dependency] mappa o come visualizzazione autonoma da [!DNL Admin] menu:
 
-* Creazione di un visualizzatore di campi da una mappa [!DNL Transformation Dependency]. Quando apri un visualizzatore di campi da una mappa [!DNL Transformation Dependency], il visualizzatore viene compilato automaticamente in base all’origine del registro, alla trasformazione o alla dimensione su cui fai clic con il pulsante destro del mouse. Per un’origine di registro o una trasformazione, i campi nel visualizzatore sono input o output dell’origine di registro o della trasformazione. Per una dimensione, i campi sono input della dimensione. Puoi aggiungere e rimuovere i campi desiderati.
+* Creazione di un visualizzatore di campi da un [!DNL Transformation Dependency] mappa. Quando si apre un visualizzatore di campi da un [!DNL Transformation Dependency] mappa, il visualizzatore viene compilato automaticamente in base all’origine del registro, alla trasformazione o alla dimensione su cui fai clic con il pulsante destro del mouse. Per un’origine di registro o una trasformazione, i campi nel visualizzatore sono input o output dell’origine di registro o della trasformazione. Per una dimensione, i campi sono input della dimensione. Puoi aggiungere e rimuovere i campi desiderati.
 
-* Creazione di un visualizzatore di campi come visualizzazione autonoma. Quando apri un visualizzatore di campi come visualizzazione indipendente, puoi creare un [!DNL Log Processing Field Viewer] o un [!DNL Transformation Field Viewer]. Il visualizzatore è vuoto e devi aggiungere i campi desiderati al visualizzatore. Per un file [!DNL Log Processing Field Viewer], è possibile aggiungere campi dal file [!DNL Log Processing.cfg] o da qualsiasi file [!DNL Log Processing Dataset Include]. Per un file [!DNL Transformation Field Viewer], è possibile aggiungere campi dal file [!DNL Transformation.cfg] o da qualsiasi file [!DNL Transformation Dataset Include].
+* Creazione di un visualizzatore di campi come visualizzazione autonoma. Quando apri un visualizzatore di campi come visualizzazione autonoma, puoi creare una [!DNL Log Processing Field Viewer] o [!DNL Transformation Field Viewer]. Il visualizzatore è vuoto e devi aggiungere i campi desiderati al visualizzatore. Per [!DNL Log Processing Field Viewer], puoi aggiungere campi dalla sezione [!DNL Log Processing.cfg] o qualsiasi [!DNL Log Processing Dataset Include] file. Per [!DNL Transformation Field Viewer], puoi aggiungere campi dalla sezione [!DNL Transformation.cfg] o qualsiasi [!DNL Transformation Dataset Include] file.
 
 ![](assets/vis_FieldViewer_OneField.png)
 

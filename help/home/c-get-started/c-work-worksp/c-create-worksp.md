@@ -3,7 +3,7 @@ description: Puoi personalizzare le aree di lavoro esistenti aggiungendo o modif
 title: Creare un’area di lavoro
 uuid: 8669b70f-5ddf-4424-9269-0e4860eac498
 exl-id: 9c1fb9e6-6cc8-4894-800b-187b047c41d2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%
@@ -12,9 +12,11 @@ ht-degree: 1%
 
 # Creare un’area di lavoro{#create-a-workspace}
 
+{{eol}}
+
 Puoi personalizzare le aree di lavoro esistenti aggiungendo o modificando visualizzazioni esistenti o creando nuove aree di lavoro.
 
-È quindi possibile salvare queste aree di lavoro per un utilizzo successivo. Consulta [Creazione di aree di lavoro](../../../home/c-get-started/c-work-worksp/c-create-worksp.md#concept-d8bc99d7739e4eaeab2a02b022394a31).
+È quindi possibile salvare queste aree di lavoro per un utilizzo successivo. Vedi [Creazione di aree di lavoro](../../../home/c-get-started/c-work-worksp/c-create-worksp.md#concept-d8bc99d7739e4eaeab2a02b022394a31).
 
 È possibile creare nuove aree di lavoro creando un’area di lavoro vuota, copiando e incollando un’area di lavoro esistente o salvando un’area di lavoro in un’altra posizione o utilizzando un altro nome.
 
@@ -26,11 +28,11 @@ Questa sezione descrive le seguenti attività:
 
 ## Aggiunta di nuove aree di lavoro {#section-4236ae30e2884ea08f0885bf329f0778}
 
-Nella scheda [!DNL Worktop] desiderata, fai clic con il pulsante destro del mouse su un’area vuota nella scheda e fai clic su una delle opzioni seguenti:
+A piacere [!DNL Worktop] fare clic con il pulsante destro del mouse su un&#39;area vuota della scheda e scegliere una delle opzioni seguenti:
 
 * **[!UICONTROL New]** > **[!UICONTROL Blank Workspace]**. Questa opzione visualizza un&#39;area di lavoro vuota di dimensioni standard.
 
-* **[!UICONTROL New]** >  **[!UICONTROL Report Template]**. Questa opzione visualizza un modello di dimensione standard che è possibile utilizzare per creare rapporti.
+* **[!UICONTROL New]** > **[!UICONTROL Report Template]**. Questa opzione visualizza un modello di dimensione standard che è possibile utilizzare per creare rapporti.
 
 ![](assets/mnu_workspaceManager.png)
 
@@ -48,7 +50,7 @@ La miniatura del nuovo tipo di area di lavoro viene visualizzata nella scheda .
 
 **Per copiare e incollare un’area di lavoro esistente**
 
-1. Nella scheda [!DNL Worktop] desiderata, fai clic con il pulsante destro del mouse sull’area di lavoro da copiare e fai clic su **[!UICONTROL Copy]**.
+1. A piacere [!DNL Worktop] fare clic con il pulsante destro del mouse sull&#39;area di lavoro da copiare e fare clic su **[!UICONTROL Copy]**.
 
    ![](assets/mnu_workspaceManager_Copywksp.png)
 
@@ -62,15 +64,15 @@ L’esempio seguente è un’area di lavoro incollata in una scheda dell’area 
 
 ![](assets/mnu_workspaceManager_Copywksp_PasteSameNameLocalWks.png)
 
-## Modifica del nome di un&#39;area di lavoro {#section-ca7edb913e4e4630a856f45a2536ffad}
+## Modifica del nome di un’area di lavoro {#section-ca7edb913e4e4630a856f45a2536ffad}
 
 **Per modificare il nome di un’area di lavoro**
 
-1. Nella scheda [!DNL Worktop] desiderata, fai clic sulla miniatura dell’area di lavoro da visualizzare.
+1. A piacere [!DNL Worktop] fare clic sulla miniatura dell&#39;area di lavoro che si desidera visualizzare.
 1. Nell’area di lavoro, fai clic sul testo del titolo nella barra del titolo e digita il nuovo titolo, come illustrato nell’esempio seguente:
 
    ![](assets/wsp_changeTitle.png)
 
-## Eliminazione di un&#39;area di lavoro {#section-fb04cc195e1a4a5491ff634f5f3ca972}
+## Eliminazione di un’area di lavoro {#section-fb04cc195e1a4a5491ff634f5f3ca972}
 
 **Per modificare il nome di un’area di lavoro**

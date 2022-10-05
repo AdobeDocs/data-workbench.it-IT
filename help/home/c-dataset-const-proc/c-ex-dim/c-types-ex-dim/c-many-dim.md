@@ -3,7 +3,7 @@ description: Una dimensione da molti a molti ha una relazione da molti a molti c
 title: Dimensioni Many-to-Many (Da molte-a-molte)
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
 exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Dimensioni Many-to-Many (Da molte-a-molte){#many-to-many-dimensions}
+
+{{eol}}
 
 Una dimensione da molti a molti ha una relazione da molti a molti con la sua dimensione conteggiata padre.
 
@@ -23,7 +25,7 @@ Le dimensioni da molti a molti sono definite dai seguenti parametri:
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -49,7 +51,7 @@ Le dimensioni da molti a molti sono definite dai seguenti parametri:
   </tr> 
   <tr> 
    <td colname="col1"> Ingresso </td> 
-   <td colname="col2"> <p>Valore correlato alla dimensione padre (Parent). Se questo campo è un vettore di stringhe, ogni elemento del vettore ha una propria relazione con l’elemento padre. </p> <p> <p>Nota:  Se il valore di input per ogni voce di registro per un elemento della dimensione padre è vuoto, nessun elemento della dimensione molti-a-molti si relazionerà a tale elemento della dimensione padre. </p> </p> </td> 
+   <td colname="col2"> <p>Valore correlato alla dimensione padre (Parent). Se questo campo è un vettore di stringhe, ogni elemento del vettore ha una propria relazione con l’elemento padre. </p> <p> <p>Nota: Se il valore di input per ogni voce di registro per un elemento della dimensione padre è vuoto, nessun elemento della dimensione molti-a-molti si relazionerà a tale elemento della dimensione padre. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

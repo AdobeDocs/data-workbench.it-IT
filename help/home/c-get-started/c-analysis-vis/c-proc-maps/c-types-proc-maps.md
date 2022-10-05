@@ -3,7 +3,7 @@ description: Informazioni sui diversi tipi di mappe del processo.
 title: Tipi di mappe del processo
 uuid: 19473b77-13c1-4829-b018-d3316e434ba4
 exl-id: 8bac7036-c7fe-4566-8e59-08e1ddc7ddb7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Tipi di mappe del processo{#types-of-process-maps}
+
+{{eol}}
 
 Informazioni sui diversi tipi di mappe del processo.
 
@@ -32,9 +34,9 @@ La mappa del processo 2D nell&#39;esempio seguente mostra i nodi corrispondenti 
 
 ![](assets/vis_2DProcessMap_MovieNodes.png)
 
-Nell’esempio, le dimensioni di ciascun nodo e lo spessore e l’intensità di ciascuna freccia sono proporzionali alla metrica Valutazioni, che è un conteggio delle valutazioni ricevute da un filmato. Pertanto, un filmato con un nodo di grandi dimensioni, ad esempio *Giorno di indipendenza*, ha più valutazioni di un filmato con un nodo piccolo, ad esempio *Orizzonte evento*. È inoltre possibile vedere che più visualizzatori di film classificati *Giorno di indipendenza* prima *Montagna fredda* rispetto agli stessi film classificati nell&#39;ordine opposto. Le frecce non indicano che i visualizzatori hanno valutato *Giorno di indipendenza* e poi hanno valutato *Montagna fredda* immediatamente dopo, o viceversa. I visualizzatori potrebbero aver valutato altri film nel mezzo, ma questi film non vengono mostrati su questa mappa.
+Nell’esempio, le dimensioni di ciascun nodo e lo spessore e l’intensità di ciascuna freccia sono proporzionali alla metrica Valutazioni, che è un conteggio delle valutazioni ricevute da un filmato. Pertanto, un filmato con un nodo grande, come *Giorno dell&#39;indipendenza* ha più valutazioni di un filmato con un nodo piccolo, ad esempio *Orizzonte evento*. È inoltre possibile vedere che più visualizzatori di film classificati *Giorno dell&#39;indipendenza* prima *Montagna fredda* Ho votato gli stessi film nell&#39;ordine opposto. Le frecce non indicano che i visualizzatori hanno votato *Giorno dell&#39;indipendenza* e quindi valutato *Montagna fredda* immediatamente dopo, o viceversa. I visualizzatori potrebbero aver valutato altri film nel mezzo, ma questi film non vengono mostrati su questa mappa.
 
-## Mappe della metrica 2D {#section-a9b846fc71224058918fbc378315effe}
+## Mappe metriche 2D {#section-a9b846fc71224058918fbc378315effe}
 
 Le mappe metriche bidimensionali sono un tipo di mappa del processo 2D che posiziona i nodi in base al valore di una particolare metrica. In molti casi, la metrica utilizzata con la mappa metrica 2D è Conversione o Mantenimento. Le mappe di conversione e fidelizzazione consentono di comprendere quali passaggi nei processi dei canali rivolti al cliente influenzano la conversione e la fidelizzazione dei clienti.
 
@@ -68,4 +70,4 @@ La mappa del processo 3D nell&#39;esempio seguente mostra i nodi corrispondenti 
 
 ![](assets/vis_3DProcessMap_PageNodes.png)
 
-Nell’esempio, l’altezza di ciascuna barra e lo spessore e l’intensità di ciascun connettore sono proporzionali alla metrica Sessions, un conteggio delle sessioni in cui sono state visualizzate le pagine. Pertanto, una pagina con barra alta, come /faq/all/FAQ, è stata visualizzata durante più sessioni di una pagina con una barra breve, come /vs/demo. Le connessioni tra due pagine non indicano che una pagina è stata visualizzata immediatamente prima o dopo un’altra durante una determinata sessione. È possibile che altre pagine siano state visualizzate durante la stessa sessione, ma queste non vengono visualizzate su questa mappa.
+Nell’esempio, l’altezza di ciascuna barra e lo spessore e l’intensità di ciascun connettore sono proporzionali alla metrica Sessions, un conteggio delle sessioni in cui sono state visualizzate le pagine. Pertanto, una pagina con barra alta, come /faq/all/FAQ, è stata visualizzata durante più sessioni di una pagina con una barra breve, come /vs/demo. Le connessioni tra due pagine non indicano che una pagina è stata visualizzata immediatamente prima o dopo un’altra durante una determinata sessione. È possibile che altre pagine siano state visualizzate durante la stessa sessione, ma queste pagine non vengono visualizzate su questa mappa.

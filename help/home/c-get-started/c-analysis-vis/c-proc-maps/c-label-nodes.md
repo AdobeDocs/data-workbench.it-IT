@@ -3,7 +3,7 @@ description: Informazioni su come visualizzare, nascondere e modificare l'etiche
 title: Etichettare un nodo
 uuid: ded00cc8-2958-4aca-9d45-92afc441e9e2
 exl-id: e234aa1b-2f5d-42ec-bad7-2ada0db38702
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Etichettare un nodo{#label-a-node}
+
+{{eol}}
 
 Informazioni su come visualizzare, nascondere e modificare l&#39;etichetta di un nodo.
 

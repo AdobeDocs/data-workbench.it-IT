@@ -3,7 +3,7 @@ description: I tipi di finestre disponibili dipendono dal profilo e dall’appli
 title: Manipolare le finestre in un’area di lavoro
 uuid: a7f9b132-999a-4ba8-9e34-1d41075f9e13
 exl-id: 0bedc792-c05b-4f7c-ac1e-f2d5c66e440d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Manipolare le finestre in un’area di lavoro{#manipulate-windows-in-a-workspace}
+
+{{eol}}
 
 I tipi di finestre disponibili dipendono dal profilo e dall’applicazione con cui stai lavorando.
 

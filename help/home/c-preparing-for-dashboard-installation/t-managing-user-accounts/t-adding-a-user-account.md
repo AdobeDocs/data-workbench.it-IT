@@ -3,7 +3,7 @@ description: Aggiunta di un account utente
 title: Aggiunta di un account utente
 uuid: c322eeaa-a3f4-41e8-b38c-dd892ec29a87
 exl-id: c99f3189-4d89-443a-be5b-84352c4ec6e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 8%
@@ -12,7 +12,9 @@ ht-degree: 8%
 
 # Aggiunta di un account utente{#adding-a-user-account}
 
-1. Fai clic su **[!UICONTROL Add User]** per visualizzare il prompt **[!UICONTROL New User]**.
+{{eol}}
+
+1. Fai clic su **[!UICONTROL Add User]** per richiamare **[!UICONTROL New User]** richiesta.
 
    ![](assets/add_user_account.png)
 
@@ -28,6 +30,6 @@ ht-degree: 8%
       | **Windows** | Selezionare se l&#39;utente deve essere autenticato utilizzando l&#39;autenticazione Windows (l&#39;utente deve esistere già nella directory Windows). |
 
 1. **[!UICONTROL Assigned Groups]**: Scegli tra il gruppo Administrators predefinito e tutti gli altri gruppi creati. Al momento non sono necessari gruppi e l’iscrizione al gruppo dell’utente può essere modificata in qualsiasi momento.
-1. Una volta configurato correttamente il modulo, fai clic su **[!UICONTROL Add User]** per aggiungere l’utente al sistema.
+1. Una volta configurato correttamente il modulo, fai clic su **[!UICONTROL Add User]** per aggiungere l&#39;utente al sistema.
 
    Se l’operazione ha avuto esito positivo, viene visualizzato un messaggio che indica che l’utente è stato creato.

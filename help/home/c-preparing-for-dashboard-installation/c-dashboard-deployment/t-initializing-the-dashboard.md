@@ -3,7 +3,7 @@ description: Il passaggio finale consiste nell’eseguire il dashboard per la pr
 title: Inizializzazione del dashboard
 uuid: 847ba63e-29d8-4950-aa74-22d825388e2b
 exl-id: 47098d73-d8c4-4d14-964f-108a731d3733
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Inizializzazione del dashboard{#initializing-the-dashboard}
+
+{{eol}}
 
 Il passaggio finale consiste nell’eseguire il dashboard per la prima volta per consentirne l’inizializzazione.
 
@@ -21,18 +23,18 @@ Il passaggio finale consiste nell’eseguire il dashboard per la prima volta per
    * **[!UICONTROL Username]**: admin
    * **[!UICONTROL Password]**: password
 
-1. Al primo accesso, vai su **[!UICONTROL User]** > **[!UICONTROL Account Settings]** e seleziona **[!UICONTROL Change Password]** per modificare la password dell&#39;amministratore.
+1. Al primo accesso, vai a **[!UICONTROL User]** > **[!UICONTROL Account Settings]** e seleziona **[!UICONTROL Change Password]** per modificare la password dell&#39;amministratore.
 
 Installazione del dashboard completata. Se non lo hai già fatto, utilizza le istruzioni descritte nella sezione Preparazione Data Workbench di questa guida per configurare la comunicazione con i server di Data Workbench e per gestire utenti e gruppi.
 
 >[!NOTE]
 >
->Gli errori del dashboard e i registri di controllo si trovano nella directory [!DNL logs] all&#39;interno del percorso di installazione.
+>Gli errori del dashboard e i registri di controllo si trovano nella [!DNL logs] all&#39;interno del percorso di installazione.
 
 >[!NOTE]
 >
->Se devi modificare l&#39;identità del pool di applicazioni in un account diverso, assicurati di concedere l&#39;accesso al database e di consentire l&#39;accesso in lettura/scrittura dell&#39;identità alla cartella [!DNL logs] nel percorso di installazione.
+>Se devi modificare l&#39;identità del pool di applicazioni in un account diverso, assicurati di concedere l&#39;accesso al database e di consentire all&#39;identità l&#39;accesso in lettura/scrittura al [!DNL logs] nel percorso di installazione.
 
 >[!NOTE]
 >
->Per modificare la stringa di connessione per il database, è sufficiente modificare il valore utilizzando il simbolo **[!UICONTROL IIS Management Console]**.
+>Se devi modificare la stringa di connessione per il database, è sufficiente modificare il valore utilizzando il **[!UICONTROL IIS Management Console]**.

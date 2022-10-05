@@ -3,7 +3,7 @@ description: I grafici Incremento e Guadagno offrono visualizzazioni per la valu
 title: Guadagno tendenza e grafici di accuratezza
 uuid: 4f08277e-deea-48d3-ab15-214c43ad6664
 exl-id: 5ac08512-ac9c-4e85-a4f9-ea6d819095d8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 1%
@@ -12,25 +12,27 @@ ht-degree: 1%
 
 # Guadagno tendenza e grafici di accuratezza{#propensity-gain-and-lift-charts}
 
+{{eol}}
+
 I grafici Incremento e Guadagno offrono visualizzazioni per la valutazione delle prestazioni potenziali di un modello con punteggio, al fine di valutare le prestazioni su parti definite del pubblico.
 
 I grafici di incremento e guadagno sono visualizzazioni create per valutare le prestazioni potenziali del modello con punteggio. Questi grafici valutano le prestazioni su ogni parte della popolazione.
 
 **Apertura di un grafico ad incremento o guadagno**
 
-1. Select [!DNL Add Visualization > Predictive Analytics > Scoring] .
-1. Passa il puntatore del mouse sopra **[!UICONTROL Model Complete]** di un punteggio salvato.
+1. Seleziona [!DNL Add Visualization > Predictive Analytics > Scoring] .
+1. Passa il cursore **[!UICONTROL Model Complete]** di un punteggio salvato.
 
 ![](assets/propensity_lift_gain_1.png)
 
 **Informazioni su grafici di incremento e guadagno**
 
-I grafici di incremento e guadagno sono strumenti visivi utili per misurare il valore di un modello predittivo. Entrambi i grafici sono costituiti da una curva di incremento (verde) e una linea di base (rosa). Per il **Grafico guadagno**, la distanza tra la curva di incremento e la linea di base rappresenta quanto è possibile migliorare le prestazioni nelle risposte (o il &quot;guadagno&quot;) utilizzando la modalità predittiva. Il guadagno si ottiene assegnando priorità e rivolgendo il targeting ai potenziali (clienti/visitatori) che hanno più probabilità di effettuare la conversione, anziché commercializzare a clienti/visitatori in modo casuale. In questo modo, puoi quantificare il valore previsto dell&#39;utilizzo del modello predittivo per scegliere quali potenziali contatti.
+I grafici di incremento e guadagno sono strumenti visivi utili per misurare il valore di un modello predittivo. Entrambi i grafici sono costituiti da una curva di incremento (verde) e una linea di base (rosa). Per **Grafico a guadagno**, la distanza tra la curva di incremento e la linea di base rappresenta quanto è possibile migliorare le prestazioni nelle risposte (o il &quot;guadagno&quot;) utilizzando la modalità predittiva. Il guadagno si ottiene assegnando priorità e rivolgendo il targeting ai potenziali (clienti/visitatori) che hanno più probabilità di effettuare la conversione, anziché commercializzare a clienti/visitatori in modo casuale. In questo modo, puoi quantificare il valore previsto dell&#39;utilizzo del modello predittivo per scegliere quali potenziali contatti.
 
-Simile al grafico del guadagno, il **Grafico di incremento** mostra quanto è più probabile ricevere risposte positive rispetto a quando si contattano i potenziali clienti a caso. Si desidera che la distanza tra la curva di incremento e la linea di base sia il più grande possibile, rappresentando guadagni attesi maggiori utilizzando il modello predittivo per contattare i clienti. I grafici di guadagno e di incremento sono definiti matematicamente come segue:
+Simile al grafico del guadagno, il **Grafico di incremento** mostra quanto è più probabile ricevere risposte positive rispetto a se hai contattato i potenziali clienti a caso. Si desidera che la distanza tra la curva di incremento e la linea di base sia il più grande possibile, rappresentando guadagni attesi maggiori utilizzando il modello predittivo per contattare i clienti. I grafici di guadagno e di incremento sono definiti matematicamente come segue:
 
 * **Guadagno** = (Risposta prevista utilizzando il modello predittivo per le prospettive di contatto) / (Risposta prevista da prospettive di contatto casuali)
-* **Incremento**  = (Risposta prevista tra una dimensione specifica del gruppo di prospettive identificata utilizzando il modello predittivo) / (Risposta prevista tra le stesse dimensioni specifiche del gruppo di prospettive identificate casualmente)
+* **Lift** = (Risposta prevista tra una dimensione specifica del gruppo di prospettive identificata utilizzando il modello predittivo) / (Risposta prevista tra le stesse dimensioni specifiche del gruppo di prospettive identificate casualmente)
 
 **Esempio di grafici di incremento e guadagno**
 

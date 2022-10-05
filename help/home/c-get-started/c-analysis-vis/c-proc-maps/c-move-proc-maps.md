@@ -3,7 +3,7 @@ description: Informazioni sullo spostamento di una mappa del processo all'intern
 title: Spostamento e rotazione di una mappa del processo
 uuid: c9d42955-a3c6-4d35-9d4a-83fd3b5332b8
 exl-id: f8a0902f-b0f9-494f-aeb5-51b627651c95
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 14%
@@ -11,6 +11,8 @@ ht-degree: 14%
 ---
 
 # Spostamento e rotazione di una mappa del processo{#move-and-rotate-a-process-map}
+
+{{eol}}
 
 Informazioni sullo spostamento di una mappa del processo all&#39;interno di una finestra e su come ruotare una mappa del processo 3D.
 

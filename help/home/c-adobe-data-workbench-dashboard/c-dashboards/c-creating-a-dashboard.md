@@ -3,7 +3,7 @@ description: La creazione di un dashboard è consigliata anche per esigenze anal
 title: Creazione di un dashboard
 uuid: 5b9e9db2-d7ac-4c97-8df0-74a9e5a0c496
 exl-id: bd51d4c0-bcf2-4ba6-8b32-de06c74f359f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Creazione di un dashboard{#creating-a-dashboard}
+
+{{eol}}
 
 La creazione di un dashboard è consigliata anche per esigenze analitiche a breve termine e ad hoc.
 
@@ -26,9 +28,9 @@ Gli utenti possono decidere di creare dashboard per diversi motivi:
 
 >[!NOTE]
 >
->Prima di iniziare a creare il dashboard, è consigliabile ridurre la percentuale di query a un livello inferiore, ad esempio il 10% o il 25%. Questo consente di estrarre campioni di dati da Data Workbench molto più rapidamente rispetto all’esecuzione di una query completa. Poiché questi risultati campionati restituiscono molto più rapidamente, offre una risposta ideale durante la definizione del dashboard e dell’analisi. Quando sei pronto per eseguire le query per il completamento, puoi aggiornare il parametro query-to al 100%. Per regolare il completamento della query, vedere il parametro [Query-to](../../../home/c-adobe-data-workbench-dashboard/c-dashboards/c-query-to-parameter.md#concept-33db106e28bc4108bca9e8d0a440d323).
+>Prima di iniziare a creare il dashboard, è consigliabile ridurre la percentuale di query a un livello inferiore, ad esempio il 10% o il 25%. Questo consente di estrarre campioni di dati da Data Workbench molto più rapidamente rispetto all’esecuzione di una query completa. Poiché questi risultati campionati restituiscono molto più rapidamente, offre una risposta ideale durante la definizione del dashboard e dell’analisi. Quando sei pronto per eseguire le query per il completamento, puoi aggiornare il parametro query-to al 100%. Per regolare il completamento della query, consulta la sezione [Parametro query-to](../../../home/c-adobe-data-workbench-dashboard/c-dashboards/c-query-to-parameter.md#concept-33db106e28bc4108bca9e8d0a440d323).
 
-Per creare un nuovo dashboard, selezionate **[!UICONTROL New]** nel menu Dashboard.
+Per creare un nuovo dashboard, seleziona **[!UICONTROL New]** nel menu Dashboard.
 
 ![](assets/new_dashboard.png)
 
@@ -38,4 +40,4 @@ Quindi, decidi quale tipo di dati vuoi visualizzare e come desideri visualizzarl
 
 ![](assets/after_configure.png)
 
-Da questo punto è sufficiente eseguire l&#39;analisi ed eliminare il dashboard, oppure è possibile scegliere di salvare il dashboard sul server per riutilizzarlo e/o condividerlo. Per informazioni su come interagire con un dashboard per eseguire l&#39;analisi, consulta la sezione [Effettuare selezioni all&#39;interno del dashboard](../../../home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-making-selections-within-the-dashboard.md#concept-0989862de0044cc4bbfd7f4441275fc4).
+Da questo punto è sufficiente eseguire l&#39;analisi ed eliminare il dashboard, oppure è possibile scegliere di salvare il dashboard sul server per riutilizzarlo e/o condividerlo. Per informazioni su come interagire con un dashboard per eseguire l’analisi, consulta la sezione . [Effettuare le selezioni all’interno del dashboard](../../../home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-making-selections-within-the-dashboard.md#concept-0989862de0044cc4bbfd7f4441275fc4).

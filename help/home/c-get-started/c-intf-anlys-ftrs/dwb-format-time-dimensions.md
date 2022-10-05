@@ -1,32 +1,36 @@
 ---
-description: Configurare le dimensioni dell'ora in modo che vengano visualizzate correttamente per le impostazioni internazionali.
-title: Localizzazione delle dimensioni di ora
+description: Configura le dimensioni ora da visualizzare correttamente per le impostazioni internazionali.
+title: Localizzazione delle dimensioni orarie
 uuid: a2098522-bf05-4680-9b78-6fb284695a0a
-translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+exl-id: 950fe70b-a687-4b9c-b29f-555139740809
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 2%
 
 ---
 
+# Localizzazione delle dimensioni orarie{#localizing-time-dimensions}
 
-# Localizzazione delle dimensioni di ora{#localizing-time-dimensions}
+{{eol}}
 
-Configurare le dimensioni dell&#39;ora in modo che vengano visualizzate correttamente per le impostazioni internazionali.
+Configura le dimensioni ora da visualizzare correttamente per le impostazioni internazionali.
 
-È possibile configurare il formato visualizzato delle dimensioni temporali in base alle impostazioni internazionali nel **[!DNL Standard Time Dimensions.cfg]** file (per impostazione predefinita, in **[!DNL Server/Profiles/`<my profile>`/Dataset/Transformation/Time/Standard Time Dimensions.cfg]**).
+Puoi configurare il formato visualizzato delle dimensioni temporali in base alle impostazioni internazionali nella **[!DNL Standard Time Dimensions.cfg]** file (per impostazione predefinita in **[!DNL Server/Profiles/`<my profile>`/Dataset/Transformation/Time/Standard Time Dimension.cfg]**).
 
-Ad esempio, in America del Nord è possibile indicare la data del 3 maggio 2015 come 5/3/15 oppure **`%m/%d/%y`**. Tuttavia, in altre parti del mondo questo potrebbe essere interpretato come `%d/%m/%y`, o 5 Marzo 2015, a causa di un&#39;ambiguità nei valori. Per evitare questa situazione, un amministratore potrebbe desiderare modificare il formato visualizzato in modo che corrisponda alle aspettative degli utenti in una lingua.
+Ad esempio, in Nord America è possibile indicare la data del 3 maggio 2015 come 3/5/15, oppure **`%m/%d/%y`**. Tuttavia, in altre parti del mondo questo potrebbe essere interpretato come `%d/%m/%y`, o 5 marzo 2015 a causa di un’ambiguità nei valori. Per evitare questa situazione, un amministratore potrebbe voler modificare il formato visualizzato in modo che corrisponda alle aspettative degli utenti in un’impostazione internazionale.
 
-## 1. Sovrascrivi dimensioni tempo predefinito in dimensioni ora standard.cfg {#section-7d0b24657bef4b15abb3cbea66cb617f}
+## 1. Ignorare i Dimension di ora predefiniti in Dimension di ora standard.cfg {#section-7d0b24657bef4b15abb3cbea66cb617f}
 
-Per abilitare questa funzione, l’amministratore deve ignorare le impostazioni predefinite modificando le dimensioni dell’ora esistenti o creando nuove dimensioni temporali con parametri aggiuntivi.
+Per abilitare questa funzione, l’amministratore deve ignorare i valori predefiniti modificando le dimensioni temporali esistenti o creando nuove dimensioni temporali con parametri aggiuntivi.
 
 Segue un esempio di dimensione temporale modificata.
 
-I valori **Formato** per Settimana, Ora, Giorno, Mese e Ora del giorno sono impostati sui valori predefiniti nell&#39;esempio.
+La **Formato** I valori per Settimana, Ora, Giorno, Mese e Ora del giorno sono impostati sui valori predefiniti nell’esempio.
 
 >[!NOTE]
 >
->Se queste righe vengono omesse, il comportamento di Workbench dati non subirà modifiche e la dimensione verrà compilata utilizzando le impostazioni predefinite.
+>Se queste righe vengono omesse, il comportamento della Data Workbench non viene modificato e la dimensione viene compilata utilizzando i valori predefiniti.
 
 ```
 Transformation Include = TransformationInclude:  
@@ -60,11 +64,11 @@ Transformation Include = TransformationInclude:
 
 ![](assets/6_4_time_format.png)
 
-## 2. Configurare il file meta.cfg {#section-5e077d3298dd48fda7f7bb16af9ea00c}
+## 2. Configura il file meta.cfg {#section-5e077d3298dd48fda7f7bb16af9ea00c}
 
-Inoltre, è necessario che l&#39;amministratore del pacchetto aggiunga questi parametri e le relative impostazioni predefinite al **[!DNL meta.cfg]** file del profilo. Questo consente l&#39;editing dalla workstation.
+Inoltre, è necessario che l’amministratore del pacchetto aggiunga questi parametri e le relative impostazioni predefinite a **[!DNL meta.cfg]** file. Questo consente l&#39;editing dalla workstation.
 
-Ecco un estratto da un **[!DNL meta.cfg]** file configurato.
+Ecco un estratto da una configurazione **[!DNL meta.cfg]** file.
 
 ```
 dimensions = vector: 6 items 
@@ -95,8 +99,8 @@ dimensions = vector: 6 items
         Month = string: Month
 ```
 
-Esempio di un **[!DNL meta.cfg]** file nella workstation:
+Ecco un esempio di **[!DNL meta.cfg]** file nella workstation:
 
 ![](assets/dwb_time_format.png)
 
-L&#39;amministratore può quindi accedere al **File Manager**, aprire i file in cui sono configurate le dimensioni dell&#39;ora (ad es., **[!DNL Standard Time Dimensions.cfg]**) e modificarli utilizzando la workstation.
+L’amministratore può quindi accedere al **Gestione file**, apri i file in cui sono configurate le dimensioni temporali (ad esempio, **[!DNL Standard Time Dimensions.cfg]**) e modificali utilizzando nella workstation.

@@ -3,7 +3,7 @@ description: Inizializzazione e aggiornamento della definizione dello schema di 
 title: Inizializzazione e aggiornamento della definizione dello schema di un profilo
 uuid: 38e47ded-340e-4f65-b06c-f2e2254f0863
 exl-id: e8190909-4416-4d4a-8901-130d01906773
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 7%
@@ -12,9 +12,11 @@ ht-degree: 7%
 
 # Inizializzazione e aggiornamento della definizione dello schema di un profilo{#initializing-and-updating-a-profile-s-schema-definition}
 
-1. Apri il **[!UICONTROL Schema Builder]** per il profilo da configurare.
-1. Durante il recupero dello schema dal profilo Insight viene visualizzato un messaggio **[!UICONTROL Loading]** . Il tempo necessario per caricare lo schema dipende dalla complessità del profilo caricato.
-1. Al termine, verrà visualizzato un riepilogo delle differenze tra **[!UICONTROL Insight Schema]** nel riquadro a sinistra e **[!UICONTROL Dashboard Schema]** nel riquadro a destra. Questo riepilogo verrà visualizzato nella parte in basso a sinistra della finestra **[!UICONTROL Schema Builder]**.
+{{eol}}
+
+1. Apri **[!UICONTROL Schema Builder]** per il profilo che desideri impostare.
+1. A **[!UICONTROL Loading]** il messaggio verrà visualizzato durante il recupero dello schema dal profilo Insight. Il tempo necessario per caricare lo schema dipende dalla complessità del profilo caricato.
+1. Al termine, verrà visualizzato un riepilogo delle differenze tra i **[!UICONTROL Insight Schema]** nel riquadro a sinistra e **[!UICONTROL Dashboard Schema]** nel riquadro a destra. Questo riepilogo verrà visualizzato nella parte in basso a sinistra del **[!UICONTROL Schema Builder]** finestra.
 
    >[!NOTE]
    >
@@ -31,7 +33,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >Puoi rimuovere in modo selettivo dagli utenti finali del dashboard le metriche, le dimensioni o i filtri che non desideri mostrare agli utenti finali. **[!UICONTROL Dashboard Schema]** Riceverai un avviso che segnala che gli elementi non sono presenti nello schema del dashboard, ma questo non impedisce il salvataggio.
+   >Puoi rimuovere in modo selettivo metriche, dimensioni o filtri dalla **[!UICONTROL Dashboard Schema]** che non desideri mostrare agli utenti finali del dashboard. Riceverai un avviso che segnala che gli elementi non sono presenti nello schema del dashboard, ma questo non impedisce il salvataggio.
 
 1. Quando è pronto, fai clic su **[!UICONTROL Save]** per salvare le modifiche allo schema del dashboard.
 1. Il sistema del dashboard utilizzerà questa definizione dello schema per compilare le dimensioni, le metriche e i filtri disponibili per gli utenti finali dell’interfaccia del dashboard.

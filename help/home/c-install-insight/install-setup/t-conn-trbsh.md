@@ -1,27 +1,31 @@
 ---
-description: Se Insight non è in grado di connettersi ai server di Insight utilizzando le impostazioni specificate, in Server Manager viene visualizzato un nodo rosso.
+description: Se Insight non è in grado di connettersi a Insight Server utilizzando le impostazioni specificate, in Server Manager viene visualizzato un nodo rosso.
 title: Risoluzione dei problemi di connessione
 uuid: 17190cee-da5c-449f-aca5-8e9e35e0a5fd
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 7938d4d6-e1ab-46d9-9ccb-cf79677c5688
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 2%
 
 ---
 
-
 # Risoluzione dei problemi di connessione{#connection-troubleshooting}
 
-Se Insight non è in grado di connettersi ai server di Insight utilizzando le impostazioni specificate, in Server Manager viene visualizzato un nodo rosso.
+{{eol}}
 
-Ciò potrebbe verificarsi, ad esempio, se la connessione viene configurata in modo errato o se non si dispone dell&#39;autorizzazione per visualizzare lo [!DNL Insight Server’s] stato.
+Se Insight non è in grado di connettersi a Insight Server utilizzando le impostazioni specificate, in Server Manager viene visualizzato un nodo rosso.
+
+Ciò potrebbe verificarsi, ad esempio, se la connessione viene configurata in modo errato o se non si dispone dell&#39;autorizzazione per visualizzare il [!DNL Insight Server’s] stato.
 
 **Per determinare il motivo per cui Insight non è in grado di stabilire una connessione**
 
-1. Fare clic con il pulsante destro del mouse sul nodo del server rosso e scegliere **[!UICONTROL Detailed Status]**.
-1. Nell&#39; [!DNL Detailed Status] interfaccia, fare clic **[!UICONTROL Network Connections]** ed espandere gli elementi numerati. Il [!DNL Status] parametro fornisce informazioni sul motivo per cui Insight non è in grado di stabilire una connessione:
+1. Fai clic con il pulsante destro del mouse sul nodo del server rosso e fai clic su **[!UICONTROL Detailed Status]**.
+1. In [!DNL Detailed Status] interfaccia, fai clic su **[!UICONTROL Network Connections]** ed espandere gli elementi numerati. La [!DNL Status] Il parametro fornisce informazioni sul motivo per cui Insight non è in grado di stabilire una connessione:
 
-   * Un codice di stato negli anni 500 indica un errore di configurazione.
-   * Un codice di stato 403 in genere indica che non disponete dell&#39;autorizzazione per visualizzare lo stato del server.
+   * Un codice di stato nel 500 indica un errore di configurazione.
+   * Un codice di stato 403 in genere indica che non si dispone dell&#39;autorizzazione per visualizzare lo stato del server.
 
-Potete visualizzare informazioni di stato aggiuntive nel [!DNL insight.log] file. Questo file di registro si trova nella [!DNL Trace] cartella nella directory in cui è installato Insight. Per visualizzare il file, apritelo in un editor di testo come Blocco note.
+È possibile visualizzare informazioni aggiuntive sullo stato nel [!DNL insight.log] file. Questo file di log si trova nella [!DNL Trace] nella directory in cui è stato installato Insight. Per visualizzare il file, aprilo in un editor di testo come Blocco note.
 
-Per assistenza nella comprensione delle informazioni contenute nel [!DNL insight.log] file, contattate prima l&#39;amministratore di sistema. Per ulteriore assistenza, contatta l’Assistenza clienti Adobe.
+Se hai bisogno di assistenza per comprendere le informazioni nel [!DNL insight.log] prima di tutto contattare l&#39;amministratore di sistema. Se hai bisogno di ulteriore assistenza, contatta l’Assistenza clienti Adobe.

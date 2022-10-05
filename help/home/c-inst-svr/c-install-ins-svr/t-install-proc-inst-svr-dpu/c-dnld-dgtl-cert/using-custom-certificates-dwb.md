@@ -1,50 +1,54 @@
 ---
-description: Istruzioni per l'uso dei certificati personalizzati.
-title: Uso di certificati personalizzati in Workbench dati
+description: Istruzioni per l’utilizzo di certificati personalizzati.
+title: Utilizzo di certificati personalizzati in Data Workbench
 uuid: c3a2db27-bdb2-44b3-95dd-65eedd05c957
-translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+exl-id: f813d599-723f-4b5d-a0b5-f4d71c1b1a22
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 1%
 
 ---
 
+# Utilizzo di certificati personalizzati in Data Workbench{#using-custom-certificates-in-data-workbench}
 
-# Uso di certificati personalizzati in Workbench dati{#using-custom-certificates-in-data-workbench}
+{{eol}}
 
-Istruzioni per l&#39;uso dei certificati personalizzati.
+Istruzioni per l’utilizzo di certificati personalizzati.
 
-Un certificato utilizzato dal client o dal server di Workbench dati deve essere firmato da un&#39;autorità di certificazione (Certificate Authority) affidabile. I clienti di Workbench dati ricevono i certificati firmati da Visual Sciences CA. Questi certificati sono affidabili dal software Workbench dati, dal momento che [!DNL trust_ca_cert.pem] (fornito insieme al software Insight e memorizzato nella directory **Certificates** di server e client) contiene un certificato *CA* Root per Visual Sciences CA. Questi certificati vengono utilizzati sia per la licenza del software che per l&#39;autenticazione quando client e server comunicano tra loro utilizzando SSL. Solo i certificati rilasciati dalla CA di Visual Sciences possono essere utilizzati per la licenza, ma altri certificati possono essere utilizzati per la comunicazione e l&#39;autenticazione. I certificati rilasciati da CA diverse da Visual Sciences sono indicati di seguito come certificati *personalizzati.*
+Un certificato utilizzato dal client o dal server di Data Workbench deve essere firmato da una CA attendibile (Certificate Authority). Data Workbench ai clienti di ricevere certificati firmati da Visual Sciences CA. Questi certificati sono considerati attendibili dal software Data Workbench, in quanto [!DNL trust_ca_cert.pem] (fornito insieme al software Insight e memorizzato nel **Certificati** directory sia dei server che dei client) contiene un *Certificato CA radice* per Visual Sciences CA. Questi certificati vengono utilizzati sia per la concessione di licenze del software che per l’autenticazione quando client e server comunicano tra loro utilizzando SSL. È possibile utilizzare solo i certificati rilasciati da Visual Sciences CA per le licenze, ma altri certificati possono essere utilizzati per la comunicazione e l’autenticazione. I certificati rilasciati da CA diverse da Visual Sciences sono indicati di seguito come *certificati personalizzati.*
 
-**Nota importante:** Per server e client, il software Workbench dati utilizza i file di certificato installati nella directory **Certificati** del client o del server o i certificati esplicitamente identificati nella relativa configurazione. Tuttavia, potete anche utilizzare l&#39;archivio [certificati di](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/crypto-api.md#concept-4acb13b7de9340ea8cde8ad84b93358d) Windows per i client.
+**Nota importante:** Per server e client, il software Data Workbench utilizza i file di certificato installati nel client o nel server **Certificati** directory o certificati esplicitamente identificati nella relativa configurazione. Tuttavia, puoi anche utilizzare il [Archivio certificati di Windows](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/crypto-api.md#concept-4acb13b7de9340ea8cde8ad84b93358d) per i clienti.
 
-Le istruzioni seguenti descrivono le procedure da seguire per utilizzare i certificati personalizzati per la comunicazione tra client e server di Workbench dati. Non ogni dettaglio è un requisito difficile e si possono utilizzare diverse variazioni nel processo. Tuttavia, le procedure riportate di seguito sono state collaudate per funzionare.
+Le istruzioni seguenti descrivono le procedure da seguire per utilizzare certificati personalizzati per la comunicazione tra client e server Data Workbench. Non tutti i dettagli sono un requisito difficile e possono essere utilizzate diverse variazioni nel processo. Tuttavia, le procedure seguenti sono state collaudate per funzionare.
 
 ## Configurazione di certificati client personalizzati {#section-2083fd41973e451fa404e7a4ae4da591}
 
-1. Aggiungere il certificato della CA emittente al [!DNL trust_cert_ca.pem], che viene installato nella directory **Certificati** del client e di ogni server in ogni cluster a cui si accede utilizzando questo certificato personalizzato.
+1. Aggiungere il certificato della CA emittente al [!DNL trust_cert_ca.pem], che è installato nel **Certificati** directory del client e di ogni server in ogni cluster a cui si accede utilizzando questo certificato personalizzato.
 
-1. Ottenete un certificato personalizzato per ciascun server del cluster, alle seguenti condizioni:
+1. Ottieni un certificato personalizzato per ogni server del cluster con le seguenti condizioni:
 
    1. Il certificato è formattato come [!DNL .pem] certificato.
-   1. Il certificato contiene la sua chiave e non è crittografato (ovvero non ha una password/frase di autorizzazione).
+   1. Il certificato contiene la sua chiave e non è crittografato (ovvero non ha una frase di password/pass).
 
-      Un certificato contiene la chiave con una delle seguenti righe:
+      Un certificato contiene la relativa chiave con una delle seguenti righe:
 
       ```
       BEGIN PRIVATE KEY 
       BEGIN RSA PRIVATE KEY
       ```
 
-      Un modo per rimuovere la frase della password da un [!DNL .pem] certificato:
+      Un modo per rimuovere la frase password da un [!DNL .pem] certificato:
 
       ```
       openssl rsa  -in password-protected-cert.pem -out no-password-cert.pem 
       openssl x509 -in password-protected-cert.pem >> no-password.pem
       ```
 
-   1. Il certificato ha la NC, O, OU, ecc. come richiesto per questo client nel [!DNL Access Control.cfg] file dei server.
-   1. Il certificato è stato rilasciato con uno *scopo **** di *client* (o sia *server* che **** *client*).
+   1. Il certificato ha la NC, O, OU, ecc. come richiesto per questo client nei server [!DNL Access Control.cfg] file.
+   1. Il certificato è stato rilasciato con un *scopo&#42;&#42;&#42;* di *client* o *server* **e** *client*).
 
-      Per verificare che un certificato disponga di un codice scopo di server e/o client, è possibile utilizzare i comandi seguenti:
+      Per verificare che un certificato abbia un codice di scopo del server e/o del client, è possibile utilizzare i seguenti comandi:
 
       ```
       openssl verify -CAfile trust_ca_cert.pem -purpose sslserver -x509_strict custom_communications_cert.pem 
@@ -57,10 +61,10 @@ Le istruzioni seguenti descrivono le procedure da seguire per utilizzare i certi
       custom_communications_cert.pem: OK
       ```
 
-      Per un certificato client, è necessario solo il secondo comando per ottenere [!DNL OK].
+      Per un certificato client, è necessario solo il secondo comando per restituire [!DNL OK].
 
-1. Posizionare il certificato nella directory **Certificati** del client.
-1. In [!DNL Insight.cfg]*serverInfo* per ciascun cluster che desideri utilizzare questo certificato, accertati che il certificato client *personalizzato* sia denominato, ad esempio:
+1. Posiziona il certificato nel **Certificati** directory.
+1. In [!DNL Insight.cfg] in *serverInfo* per ogni cluster che desideri utilizzare questo certificato, assicurati che il *certificato client personalizzato* viene denominato, ad esempio:
 
    ```
    Servers = vector: 1 items 
@@ -71,32 +75,32 @@ Le istruzioni seguenti descrivono le procedure da seguire per utilizzare i certi
 
 ## Configurazione di certificati server personalizzati {#setting-up-custom-server-certificates}
 
-Questa sezione presuppone che sia installato e in esecuzione un cluster che utilizza certificati rilasciati da Visual Sciences e che la configurazione segua le pratiche comuni (come la directory *Components for Processing Servers* nel master viene sincronizzata con le directory *Components* di tutti i DPU).
+Questa sezione presuppone che sia attivo un cluster in esecuzione, utilizzando i certificati rilasciati da Visual Sciences, e che la configurazione segua le pratiche comuni (ad esempio *Componenti per i server di elaborazione* la directory sul master viene sincronizzata con il *Componenti* directory di tutte le DPU).
 
-1. Aggiungete il certificato della CA emittente al [!DNL trust_cert_ca.pem] quale viene installato su ogni server del cluster e su ogni client che deve comunicare con questo cluster.
-1. Ottenete un certificato personalizzato per ciascun server del cluster, con i seguenti requisiti:
+1. Aggiungere il certificato della CA emittente al [!DNL trust_cert_ca.pem] che viene installato su ogni server del cluster e su ogni client che deve comunicare con questo cluster.
+1. Ottieni un certificato personalizzato per ogni server del cluster con i seguenti requisiti:
 
    1. Il certificato personalizzato è formattato come [!DNL .pem] certificato.
-   1. Il certificato contiene la sua chiave e non è crittografato (ovvero non ha una password/frase di autorizzazione).
+   1. Il certificato contiene la sua chiave e non è crittografato (ovvero non ha una frase di password/pass).
 
-      Un certificato contiene la sua chiave se contiene una riga come:
+      Un certificato contiene la relativa chiave se presenta una riga come:
 
       ```
       BEGIN PRIVATE KEY 
       BEGIN RSA PRIVATE KEY
       ```
 
-      Un modo per rimuovere la frase della password da un [!DNL .pem] certificato:
+      Un modo per rimuovere la frase password da un [!DNL .pem] certificato:
 
       ```
       openssl rsa  -in password-protected-cert.pem -out no-password-cert.pem 
       openssl x509 -in password-protected-cert.pem >> no-password.pem
       ```
 
-   1. Il certificato ha lo stesso CN [!DNL server_cert.pem] attualmente installato sul server.
-   1. Il certificato è stato rilasciato con uno scopo di *server* e *client*.
+   1. Il certificato ha la stessa NC del certificato [!DNL server_cert.pem] attualmente installato sul server.
+   1. Il certificato è stato rilasciato a fini di *server* e *client*.
 
-      Per verificare che un certificato disponga di un codice scopo di server e/o client, è possibile utilizzare i comandi seguenti:
+      Per verificare che un certificato abbia un codice di scopo del server e/o del client, è possibile utilizzare i seguenti comandi:
 
       ```
       openssl verify -CAfile trust_ca_cert.pem -purpose sslserver -x509_strict custom_communications_cert.pem 
@@ -109,21 +113,21 @@ Questa sezione presuppone che sia installato e in esecuzione un cluster che util
       custom_communications_cert.pem: OK
       ```
 
-      Per un certificato client, è necessario solo il secondo comando per ottenere [!DNL OK].
+      Per un certificato client, è necessario solo il secondo comando per restituire [!DNL OK].
 
-1. Installate il certificato personalizzato di ciascun server nella directory **Certificati** del server come [!DNL custom_communications_cert.pem].
+1. Installa il certificato personalizzato di ogni server nel **Certificati** directory del server come [!DNL custom_communications_cert.pem].
 
-1. Utilizzando un editor di testo, aggiungi la riga seguente al file **Communications.cfg** sia in directory *Components* che *Components for Processing Servers* , direttamente sotto la prima riga ([!DNL component = CommServer]):
+1. Utilizzando un editor di testo, aggiungi la seguente riga a **Communications.cfg** in entrambi i *Componenti* e *Componenti per i server di elaborazione* directory, direttamente sotto la prima riga ([!DNL component = CommServer]):
 
    ```
    Certificate = string: Certificates\\custom_communications_cert.pem
    ```
 
-1. Riavviate tutti i server.
+1. Riavvia tutti i server.
 
-**Avviso di errore certificato**
+**Informazioni sull’avviso di errore del certificato**
 
-Quando il server o il client Insight sta cercando un certificato di **licenza** nella directory **Certificates** , tenta di convalidare tutti i certificati (tranne [!DNL trust_ca_cert.pem]), rispetto a una copia hardcoded del certificato Insight CA, che non riesce su qualsiasi certificato personalizzato presente nella directory. Il server visualizza questo avviso:
+Quando il server o il client Insight cerca un **licenza** nel certificato **Certificati** cerca di convalidare tutti i certificati (tranne [!DNL trust_ca_cert.pem]), rispetto a una copia hardcoded del certificato Insight CA, che non riesce su alcun certificato personalizzato presente nella directory. Il server invia questo avviso:
 
 ```
 Certificate failed to verify. Error 20 at 0 depth. Desc: unable to get local issuer certificate. Cert details:

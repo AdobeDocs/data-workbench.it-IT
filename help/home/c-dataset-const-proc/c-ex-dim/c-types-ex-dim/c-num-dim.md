@@ -3,7 +3,7 @@ description: Una dimensione numerica è costituita da elementi numerici ordinati
 title: Dimensioni numeriche
 uuid: 19fab770-1535-41b2-bad1-811eba5f3575
 exl-id: 69a4dfa6-8402-4c2b-8b04-e6e1a0fd5ccb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Dimensioni numeriche{#numeric-dimensions}
+
+{{eol}}
 
 Una dimensione numerica è costituita da elementi numerici ordinati e presenta una relazione uno-a-molti con la dimensione conteggiata superiore.
 
@@ -27,7 +29,7 @@ Le dimensioni numeriche sono definite dai seguenti parametri:
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -85,14 +87,14 @@ Le dimensioni numeriche sono definite dai seguenti parametri:
    <td colname="col1"> Funzionamento </td> 
    <td colname="col2"> <p>Le operazioni disponibili sono le seguenti: </p> <p> 
      <ul id="ul_E04733E5E8824A2BAAB90D9356078D99"> 
-      <li id="li_CAEE9167D45540BEAC538345F250B509"> CONTEGGIO: Viene utilizzato il numero totale di valori non vuoti nel campo <span class="wintitle"> Input</span> in tutte le voci di registro che soddisfano la condizione della dimensione. Se il campo <span class="wintitle"> Input</span> è un campo vettoriale, viene conteggiato il numero totale di valori non vuoti in ciascuna voce di registro. </li> 
-      <li id="li_64A4D671E78642BD9A9334F8098450B9"> PRIMO NONBLANK: Viene utilizzato il primo valore di input non vuoto, indipendentemente dal fatto che provenga dalla prima voce di registro. Se <span class="wintitle"> Input</span> è un campo vettoriale, viene utilizzata la prima riga del vettore per la voce di registro pertinente. Se il valore non è un numero, non viene utilizzato alcun valore. </li> 
-      <li id="li_C967964729BD4A638FF78D8883CE513F"> PRIMA RIGA: Viene utilizzato il valore della prima voce di registro relativa all’elemento dimensione padre, anche se l’input è vuoto. Se <span class="wintitle"> Input</span> è un campo vettoriale, viene utilizzata la prima riga del vettore per la voce di registro pertinente. Se questo valore è vuoto o non è un numero, o se la voce di registro pertinente non soddisfa la condizione della dimensione, non viene utilizzato alcun valore. </li> 
-      <li id="li_74171B17F480478B8547E1A361B22DA4"> ULTIMO NONBLANK: Viene utilizzato l’ultimo valore di input non vuoto, indipendentemente dal fatto che provenga dall’ultima voce di registro. Se <span class="wintitle"> Input</span> è un campo vettoriale, viene utilizzata la prima riga del vettore per la voce di registro pertinente. Se il valore non è un numero, non viene utilizzato alcun valore. </li> 
-      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> ULTIMA RIGA: Viene utilizzato il valore per l’ultima voce di registro relativa all’elemento dimensione padre, anche se l’input è vuoto. Se <span class="wintitle"> Input</span> è un campo vettoriale, viene utilizzata la prima riga del vettore per la voce di registro pertinente. Se questo valore è vuoto o non è un numero, o se la voce di registro pertinente non soddisfa la condizione della dimensione, non viene utilizzato alcun valore. </li> 
-      <li id="li_20819E3944544F98853D6A02814F47B2"> SOMMA: Viene utilizzato il totale di tutti i valori numerici nel campo <span class="wintitle"> Input</span> in tutte le voci di registro che soddisfano le condizioni della dimensione. Se non sono presenti voci di registro di questo tipo o non sono stati trovati valori numerici, viene utilizzato il valore numerico 0. </li> 
-      <li id="li_086C2E57604B4645A9203A984C6F9A04">MIN o MAX: Viene utilizzato il valore numerico minimo o massimo trovato nel campo <span class="wintitle"> Input</span> in tutte le voci di registro che soddisfano le condizioni della dimensione. Se non ci sono voci di registro di questo tipo o se non ci sono valori numerici, non viene utilizzato alcun valore. </li> 
-     </ul> </p> <p> <p>Nota:  È necessario specificare un’operazione per garantire che la dimensione sia definita come previsto. </p> </p> </td> 
+      <li id="li_CAEE9167D45540BEAC538345F250B509"> CONTEGGIO: Numero totale di valori non vuoti nel <span class="wintitle"> Ingresso</span> viene utilizzato in tutte le voci di registro che soddisfano la condizione della dimensione. Se la <span class="wintitle"> Ingresso</span> è un campo vettoriale, viene conteggiato il numero totale di valori non vuoti in ogni voce di registro. </li> 
+      <li id="li_64A4D671E78642BD9A9334F8098450B9"> PRIMO NONBLANK: Viene utilizzato il primo valore di input non vuoto, indipendentemente dal fatto che provenga dalla prima voce di registro. Se <span class="wintitle"> Ingresso</span> è un campo vettoriale, viene utilizzata la prima riga nel vettore per la voce di registro pertinente. Se il valore non è un numero, non viene utilizzato alcun valore. </li> 
+      <li id="li_C967964729BD4A638FF78D8883CE513F"> PRIMA RIGA: Viene utilizzato il valore della prima voce di registro relativa all’elemento dimensione padre, anche se l’input è vuoto. Se <span class="wintitle"> Ingresso</span> è un campo vettoriale, viene utilizzata la prima riga nel vettore per la voce di registro pertinente. Se questo valore è vuoto o non è un numero, o se la voce di registro pertinente non soddisfa la condizione della dimensione, non viene utilizzato alcun valore. </li> 
+      <li id="li_74171B17F480478B8547E1A361B22DA4"> ULTIMO NONBLANK: Viene utilizzato l’ultimo valore di input non vuoto, indipendentemente dal fatto che provenga dall’ultima voce di registro. Se <span class="wintitle"> Ingresso</span> è un campo vettoriale, viene utilizzata la prima riga nel vettore per la voce di registro pertinente. Se il valore non è un numero, non viene utilizzato alcun valore. </li> 
+      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> ULTIMA RIGA: Viene utilizzato il valore per l’ultima voce di registro relativa all’elemento dimensione padre, anche se l’input è vuoto. Se <span class="wintitle"> Ingresso</span> è un campo vettoriale, viene utilizzata la prima riga nel vettore per la voce di registro pertinente. Se questo valore è vuoto o non è un numero, o se la voce di registro pertinente non soddisfa la condizione della dimensione, non viene utilizzato alcun valore. </li> 
+      <li id="li_20819E3944544F98853D6A02814F47B2"> SOMMA: Il totale di tutti i valori numerici nel <span class="wintitle"> Ingresso</span> viene utilizzato in tutte le voci di registro che soddisfano la condizione della dimensione. Se non sono presenti voci di registro di questo tipo o non sono stati trovati valori numerici, viene utilizzato il valore numerico 0. </li> 
+      <li id="li_086C2E57604B4645A9203A984C6F9A04">MIN o MAX: Il valore numerico minimo o massimo trovato nella variabile <span class="wintitle"> Ingresso</span> viene utilizzato in tutte le voci di registro che soddisfano la condizione della dimensione. Se non ci sono voci di registro di questo tipo o se non ci sono valori numerici, non viene utilizzato alcun valore. </li> 
+     </ul> </p> <p> <p>Nota: È necessario specificare un’operazione per garantire che la dimensione sia definita come previsto. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -110,7 +112,7 @@ Le dimensioni numeriche sono definite dai seguenti parametri:
 
 >[!NOTE]
 >
->Se [!DNL Operation] non restituisce alcun valore, o [!DNL Clip Values] è false e il valore non è compreso tra [!DNL Min] e [!DNL Max], nessun elemento della dimensione numerica è correlato all’elemento della dimensione padre.
+>Se [!DNL Operation] non produce alcun valore, oppure [!DNL Clip Values] è false e il valore non è compreso tra [!DNL Min] e [!DNL Max], nessun elemento della dimensione numerica è correlato all’elemento della dimensione padre.
 
 Questo esempio illustra la definizione di una dimensione numerica utilizzando i dati evento raccolti dal traffico del sito web. Questa dimensione numerica, denominata &quot;Contatore visualizzazione annuncio&quot;, conta il numero di volte in cui il visitatore visualizza un annuncio durante una determinata sessione. Il presupposto è che tutte le risorse pubblicitarie siano richieste dal server web con ad= come parte della cs-uri-query. Nell’esempio, il numero di volte (COUNT) in cui al visitatore viene presentato un annuncio è il valore di interesse, non il valore effettivo nel campo .
 

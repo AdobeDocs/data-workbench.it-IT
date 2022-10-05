@@ -3,7 +3,7 @@ description: I filtri di profilo vincolano l’ambito dei dati disponibili da un
 title: Filtri di profilo incorporati
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Filtri di profilo incorporati{#built-in-profile-filters}
+
+{{eol}}
 
 I filtri di profilo vincolano l’ambito dei dati disponibili da un set di dati.
 
@@ -51,4 +53,4 @@ entity = derived_filter:
 
 Per impostazione predefinita, le aree di lavoro dispongono del filtro Sessione interrotta applicato sia alla selezione che ai relativi parametri di riferimento e può essere attivato facendo clic con il pulsante destro del mouse nell’area di lavoro e facendo clic su Dati > Filtro sessione interrotta.
 
-È possibile fare riferimento al filtro sessione interrotta nelle espressioni filtro come Broken_Session_Filter, anche se non è abilitato per l&#39;area di lavoro corrente. Per ulteriori informazioni, consulta [espressioni filtro](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) .
+È possibile fare riferimento al filtro sessione interrotta nelle espressioni filtro come Broken_Session_Filter, anche se non è abilitato per l&#39;area di lavoro corrente. Vedi [espressioni filtro](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) per ulteriori informazioni.

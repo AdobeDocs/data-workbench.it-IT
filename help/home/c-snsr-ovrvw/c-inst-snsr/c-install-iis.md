@@ -3,7 +3,7 @@ description: Istruzioni su come installare e configurare Sensor for Internet Inf
 title: Microsoft IIS su Windows Server 2000 o versione successiva
 uuid: 26da0638-82c8-424f-9f00-aab3a940e5a9
 exl-id: e4b5ac44-b0ac-43be-9b9c-180a64354081
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Microsoft IIS su Windows Server 2000 o versione successiva{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 Istruzioni su come installare e configurare Sensor for Internet Information Services (IIS) 5.x o 6.x in esecuzione in Microsoft Windows Server 2000 o versione successiva.
 
@@ -71,7 +73,7 @@ Segui la procedura seguente per estrarre e installare i file di programma per Se
 
 >[!NOTE]
 >
->Il pacchetto di installazione contiene un file di foglio di calcolo denominato TestExperiment.xls. Questo foglio di calcolo è uno strumento utilizzato dagli architetti per configurare un esperimento controllato. Il sensore stesso non utilizza questo file, quindi non è necessario installare il file sul computer in cui è in esecuzione Sensor (anche se è possibile scegliere di farlo). È invece possibile copiare il file in un percorso in cui gli architetti possono accedervi o semplicemente estrarre il file dal pacchetto di installazione, in base alle esigenze. Per ulteriori informazioni sulla sperimentazione controllata, consulta la Guida agli esperimenti controllati da Insight.
+>Il pacchetto di installazione contiene un file di foglio di calcolo denominato TestExperiment.xls. Questo foglio di calcolo è uno strumento che gli architetti utilizzano per configurare un esperimento controllato. Il sensore stesso non utilizza questo file, quindi non è necessario installare il file sul computer in cui è in esecuzione Sensor (anche se è possibile scegliere di farlo). È invece possibile copiare il file in un percorso in cui gli architetti possono accedervi o semplicemente estrarre il file dal pacchetto di installazione, in base alle esigenze. Per ulteriori informazioni sulla sperimentazione controllata, consulta la Guida agli esperimenti controllati da Insight.
 
 ## 2. Modifica il file di configurazione {#section-206daf855e664f16af9a96a5cd3e62b1}
 
@@ -79,12 +81,12 @@ Il file txlogd.conf contiene i parametri di configurazione per Sensor.
 
 È necessario modificare il file per specificare, tra l’altro, le dimensioni della coda del disco, l’indirizzo di Insight Server e l’ID che verrà allegato ai dati prodotti da questo sensore. Il file di configurazione contiene i parametri richiesti e i parametri facoltativi.
 
-* **I** parametri richiesti sono impostazioni che è necessario specificare quando si installa Sensor. Senza queste impostazioni, il sensore non viene eseguito correttamente.
-* **I** parametri facoltativi sono impostazioni predefinite per valori predefiniti (che è possibile modificare) o per l&#39;abilitazione di funzionalità facoltative.
+* **Parametri richiesti** sono impostazioni che è necessario specificare quando si installa Sensor. Senza queste impostazioni, il sensore non viene eseguito correttamente.
+* **Parametri opzionali** sono impostazioni predefinite per valori predefiniti (che è possibile modificare) o per l’abilitazione di funzionalità facoltative.
 
 **Per modificare il file di configurazione Sensor**
 
-1. Apri il file `<SensorDirectory>/txlogd.conf` in un editor di testo e imposta i parametri richiesti ed eventuali parametri facoltativi desiderati.
+1. Apri `<SensorDirectory>/txlogd.conf` in un editor di testo e imposta i parametri richiesti ed eventuali parametri facoltativi desiderati.
 
    Per una descrizione dei parametri txlogd.conf, consulta Parametri del file Sensor Txlogd.conf .
 

@@ -3,7 +3,7 @@ description: Utilizzando il modello di oggetto documento JavaScript, è possibil
 title: Acquisizione di oggetti documento
 uuid: 7681c337-b147-4937-9d9c-0ff48d9bdd00
 exl-id: eae6609c-be86-44cf-a1a1-69ffb43231fa
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Acquisizione di oggetti documento{#acquiring-document-objects}
+
+{{eol}}
 
 Utilizzando il modello di oggetto documento JavaScript, è possibile utilizzare metodi di script aggiuntivi per incrementare la richiesta del file zig.js.
 

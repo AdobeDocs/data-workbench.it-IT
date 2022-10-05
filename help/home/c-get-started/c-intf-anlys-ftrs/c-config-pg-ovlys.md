@@ -3,7 +3,7 @@ description: Le sovrapposizioni di pagina sono configurate solo nell’applicazi
 title: Configurare una sovrapposizione pagina
 uuid: c4c612ed-5154-4b20-96ab-24b74fba19a2
 exl-id: 4e0dfce8-def2-49f3-93e8-41d82922fb88
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Configurare una sovrapposizione pagina{#configure-a-page-overlay}
+
+{{eol}}
 
 Le sovrapposizioni di pagina sono configurate solo nell’applicazione Sito, ma possono essere configurate per altre applicazioni.
 
@@ -26,13 +28,13 @@ La sovrapposizione pagina mostra i dati solo quando aggiungi una legenda colore 
 
 La sovrapposizione pagina, per sua natura, suggerisce all&#39;utente il modello mentale che mostra &quot;dove le persone cliccano&quot;. Se i dati che supportano la visualizzazione non corrispondono a questo modello, il rischio di confusione è elevato.
 
-In [!DNL Site], un collegamento rappresenta in genere un elemento dalla dimensione URI successivo o Collegamento successivo, ma puoi mappare un collegamento a qualsiasi dimensione utile per l’analisi. Per informazioni sulla configurazione della sovrapposizione pagina per altre dimensioni, contatta Adobe Consulting Services.
+In [!DNL Site], un collegamento rappresenta in genere un elemento dalla dimensione URI successivo o Collegamento successivo , ma puoi mappare un collegamento a qualsiasi dimensione utile per l’analisi. Per informazioni sulla configurazione della sovrapposizione pagina per altre dimensioni, contatta Adobe Consulting Services.
 
 >[!NOTE]
 >
 >Si sconsiglia di utilizzare la dimensione Pagina per la sovrapposizione pagina. Gli utenti possono rinominare gli elementi delle dimensioni Pagina, modificando in tal modo la sintassi di collegamento su cui si basa la funzionalità di sovrapposizione pagina.
 
-Per configurare la sovrapposizione pagina per [!DNL Site], devi modificare due file:
+Per configurare la sovrapposizione pagina per [!DNL Site], è necessario modificare due file:
 
 * **[!DNL Page Overlay.vw]:** Questo file è un file modello per la creazione di visualizzazioni di sovrapposizione pagina. Almeno un file modello deve essere presente nel profilo per il quale stai configurando la sovrapposizione pagina.
 * **[!DNL Page Overlay Link Templates.cfg]:** Quando la visualizzazione sovrapposizione pagina carica una pagina, identifica automaticamente i collegamenti nella pagina e le relative destinazioni. Per collegare questi collegamenti agli elementi dei dati, devi definire un set di espressioni regolari in questo file.
@@ -43,13 +45,13 @@ Per configurare la sovrapposizione pagina per [!DNL Site], devi modificare due f
 
 1. I
 
-   In [!DNL Profile Manager], passa a **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**.
+   n [!DNL Profile Manager], passa a **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**.
 
    >[!NOTE]
    >
    >La directory Elemento Dimension contiene le voci del menu di scelta rapida visualizzate quando fate clic con il pulsante destro del mouse su un elemento di dimensione. Ad esempio, apri una tabella URI, quindi seleziona un elemento URI. Fai clic con il pulsante destro del mouse sull’URI e viene visualizzata la sovrapposizione pagina.
 
-1. Nella cartella URI, fare clic con il pulsante destro del mouse sul segno di spunta accanto al file [!DNL Page Overlay.vw] e fare clic su **[!UICONTROL Make Local]**. Un segno di spunta per questo file viene visualizzato nella colonna [!DNL User].
+1. Nella cartella URI, fai clic con il pulsante destro del mouse sul segno di spunta accanto al [!DNL Page Overlay.vw] e fai clic su **[!UICONTROL Make Local]**. Un segno di spunta per questo file viene visualizzato nel [!DNL User] colonna.
 1. Fai clic con il pulsante destro del mouse sul segno di spunta appena creato e fai clic su **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Specifica il dominio (e l’altezza del browser, se necessario).
 
@@ -74,18 +76,18 @@ Per configurare la sovrapposizione pagina per [!DNL Site], devi modificare due f
    ```
 
 1. Salvate il file.
-1. Per rendere questa modifica disponibile a tutti gli utenti del profilo di lavoro, nella sezione [!DNL Profile Manager] fare clic con il pulsante destro del mouse sul segno di spunta del file [!DNL .vw] nella colonna [!DNL User] e fare clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. Per rendere questa modifica disponibile a tutti gli utenti del profilo di lavoro, nella [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta per [!DNL .vw] nel [!DNL User] e fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
 
    >[!NOTE]
    >
-   >Puoi creare file modello aggiuntivi per altri siti o sottodomini. Ogni modello creato viene visualizzato in [!DNL Page Overlay menu].
+   >Puoi creare file modello aggiuntivi per altri siti o sottodomini. Ogni modello creato viene visualizzato nel [!DNL Page Overlay menu].
 
-1. Nella cartella Contesto di [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta accanto al file [!DNL Page Overlay Link Templates.cfg] e fai clic su **[!UICONTROL Make Local]**.
+1. Nella cartella Contesto della [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta accanto al [!DNL Page Overlay Link Templates.cfg] e fai clic su **[!UICONTROL Make Local]**.
 
-   Un segno di spunta per questo file viene visualizzato nella colonna [!DNL User].
+   Un segno di spunta per questo file viene visualizzato nel [!DNL User] colonna.
 
 1. Fai clic con il pulsante destro del mouse sul segno di spunta appena creato e fai clic su **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
-1. Fai clic con il pulsante destro del mouse su **[!UICONTROL Link Templates]** e fai clic su **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
+1. Fai clic con il pulsante destro del mouse **[!UICONTROL Link Templates]** e fai clic su **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
 1. Modifica i parametri del vettore LinkRegex in base alle esigenze:
 
 <table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B">
@@ -102,7 +104,7 @@ Per configurare la sovrapposizione pagina per [!DNL Site], devi modificare due f
   </tr>
   <tr>
    <td colname="col1"> <p>Espressione </p> </td>
-   <td colname="col2"> <p>L’espressione regolare utilizzata per selezionare la parte pertinente del collegamento di HTML per trovare l’elemento successivo dal Dimension. L'espressione regolare deve essere una corrispondenza esatta e il pattern di output desiderato è raggruppato con parentesi. Per informazioni dettagliate sulle espressioni regolari, consulta la <i>Guida alla configurazione del set di dati</i>. </p> </td>
+   <td colname="col2"> <p>L’espressione regolare utilizzata per selezionare la parte pertinente del collegamento di HTML per trovare l’elemento successivo dal Dimension. L'espressione regolare deve essere una corrispondenza esatta e il pattern di output desiderato è raggruppato con parentesi. Per informazioni dettagliate sulle espressioni regolari, consulta la sezione <i>Guida alla configurazione del set di dati</i>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Pattern di output </p> </td>
@@ -115,5 +117,5 @@ Il file di esempio seguente mostra tre espressioni regolari:
 
 ![](assets/cfg_PageOverlayLinkTemplates_Example.png)
 
-1. Per salvare il file, fai clic con il pulsante destro del mouse su **[!UICONTROL (modified)]** nella parte superiore della finestra e fai clic su **[!UICONTROL Save]**.
-1. Per rendere questa modifica disponibile a tutti gli utenti del profilo di lavoro, fai clic con il pulsante destro del mouse sul segno di spunta [!DNL Page Overlay Link Templates.cfg] nella colonna [!DNL User] e fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. Per salvare il file, fare clic con il pulsante destro del mouse **[!UICONTROL (modified)]** nella parte superiore della finestra e fai clic su **[!UICONTROL Save]**.
+1. Per rendere questa modifica disponibile a tutti gli utenti del profilo di lavoro, fai clic con il pulsante destro del mouse sul segno di spunta per [!DNL Page Overlay Link Templates.cfg] in [!DNL User] e fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

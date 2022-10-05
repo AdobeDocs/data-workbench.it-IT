@@ -3,7 +3,7 @@ description: Mostra come configurare Titolo, Profilo, Dimension, Metrica, Filtro
 title: Configurazione delle visualizzazioni
 uuid: aca77188-8f28-4554-8913-412b252f688c
 exl-id: 153adf94-5689-4917-9d71-625caef49903
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Configurazione delle visualizzazioni{#configuring-visualizations}
+
+{{eol}}
 
 Mostra come configurare Titolo, Profilo, Dimension, Metrica, Filtro, Visualizza in alto, Ordina per e Periodo di tempo.
 
@@ -22,7 +24,7 @@ Ogni visualizzazione nell’area di lavoro del dashboard presenta una propria co
 
 ## Titolo visualizzazione {#section-0414844283d745ae912e85f8ea14a51d}
 
-Questo campo ti consente di personalizzare il titolo visualizzato nella parte superiore della visualizzazione. Per impostazione predefinita, il titolo è impostato su **[!UICONTROL Automatic Title]**, che genera automaticamente un titolo per la finestra di visualizzazione. Deselezionando il pulsante **[!UICONTROL Automatic Title]** , puoi inserire un titolo in questo campo. Questo campo si applica a tutte le visualizzazioni.
+Questo campo ti consente di personalizzare il titolo visualizzato nella parte superiore della visualizzazione. Per impostazione predefinita, il titolo è impostato su **[!UICONTROL Automatic Title]**, che genera automaticamente un titolo per la finestra di visualizzazione. Cancellando la **[!UICONTROL Automatic Title]** è possibile inserire un titolo in questo campo. Questo campo si applica a tutte le visualizzazioni.
 
 ![](assets/title.png)
 
@@ -64,7 +66,7 @@ Fai clic sulle metriche desiderate e quindi fai clic su **[!UICONTROL Select]**.
 
 ## Filtri {#section-f8619ae2f8e54735a2c1b0fbb8bb1281}
 
-Seleziona i filtri da applicare alla visualizzazione. La finestra di selezione del filtro consente di selezionare più filtri dall’elenco dei filtri. L’elenco viene compilato dall’elenco dei filtri disponibili nel profilo selezionato nel campo Profilo . Fai clic sul filtro desiderato, quindi fai clic su **[!UICONTROL Select]**.
+Seleziona i filtri da applicare alla visualizzazione. La finestra di selezione del filtro consente di selezionare più filtri dall’elenco dei filtri. L’elenco viene compilato dall’elenco dei filtri disponibili nel profilo selezionato nel campo Profilo . Fai clic sul filtro desiderato e quindi fai clic su **[!UICONTROL Select]**.
 
 >[!NOTE]
 >
@@ -72,7 +74,7 @@ Seleziona i filtri da applicare alla visualizzazione. La finestra di selezione d
 
 ![](assets/filter.png)
 
-## Mostra punti massimi {#section-7ce71cb0fa6446998b710b427e68b133}
+## Mostra punti in alto {#section-7ce71cb0fa6446998b710b427e68b133}
 
 Le visualizzazioni nel dashboard non sono progettate per visualizzare tutti i dati. Consentono invece di specificare il numero di record di dimensioni da visualizzare sulla visualizzazione. In questo modo viene visualizzato il numero superiore di dimensioni in base al valore di ordinamento fornito di seguito. Questo campo non è applicabile alle visualizzazioni Tabelle, Legende metriche e Rich Text.
 
@@ -94,9 +96,9 @@ Ciò ti consente di specificare in che modo i dati devono essere ordinati quando
 
 Questa visualizzazione ti consente di specificare la data di inizio e/o di fine desiderate per i dati da visualizzare all’interno della visualizzazione.
 
-Selezionando **[!UICONTROL All Dates]**viene visualizzato l’intero intervallo di date disponibile nel profilo.
+Selezione **[!UICONTROL All Dates]**visualizza l’intero intervallo di date disponibile nel profilo.
 
-Selezionando **[!UICONTROL Range]** vengono visualizzati solo i dati che rientrano in un intervallo specificato. Per inserire l’intervallo di date, è possibile digitare la data di inizio e/o di fine oppure utilizzare un input del calendario selezionando l’icona del calendario.
+Selezione **[!UICONTROL Range]** visualizza solo i dati che rientrano in un intervallo specificato. Per inserire l’intervallo di date, è possibile digitare la data di inizio e/o di fine oppure utilizzare un input del calendario selezionando l’icona del calendario.
 
 Questo campo non è applicabile alle visualizzazioni Rich Text.
 

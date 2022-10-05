@@ -3,7 +3,7 @@ description: Per impostazione predefinita, le visualizzazioni grafico visualizza
 title: Modificare la visualizzazione di un grafico
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
 exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Modificare la visualizzazione di un grafico{#change-a-graph-display}
+
+{{eol}}
 
 Per impostazione predefinita, le visualizzazioni grafico visualizzano barre, ma è possibile visualizzare facilmente le barre come linee e viceversa.
 
@@ -26,7 +28,7 @@ Fai clic con il pulsante destro del mouse sull’etichetta della dimensione nell
 
 **Sovrapposizione sfumatura su un grafico**
 
-Per visualizzare meglio gli elementi grafici, fai clic con il pulsante destro del mouse e seleziona una **Sovrapposizione sfumatura** dal menu .
+Puoi fare clic con il pulsante destro del mouse e selezionare un **Sovrapposizione sfumatura** dal menu per visualizzare meglio gli elementi grafici.
 
 ![](assets/6_51_gradient_graph.png)
 

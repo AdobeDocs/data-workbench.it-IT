@@ -3,7 +3,7 @@ description: L’interfaccia Schema del set di dati visualizza le dimensioni est
 title: Dataset Schema (Schema del set di dati)
 uuid: 4ef5f14b-dc19-4118-a2f2-d680ded8092c
 exl-id: b80e6e8e-9147-46ec-8602-2d7e5d33f077
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Dataset Schema (Schema del set di dati){#dataset-schema}
 
+{{eol}}
+
 L’interfaccia Schema del set di dati visualizza le dimensioni estese (dimensioni numerabili, semplici, da molti a molti, numeriche, standard e temporali) definite in qualsiasi file Configurazione set di dati di trasformazione e le relazioni tra tali dimensioni.
 
-Inoltre, l&#39;interfaccia [!DNL Dataset Schema] mostra tutte le dimensioni derivate definite dall&#39;utente, nonché tutte le dimensioni estese configurate per essere nascoste.
+Inoltre, il [!DNL Dataset Schema] l’interfaccia mostra tutte le dimensioni derivate definite dall’utente, nonché tutte le dimensioni estese configurate per essere nascoste.
 
 ![](assets/vis_DatasetSchema_Example.png)
 
@@ -24,9 +26,9 @@ Questa sezione illustra i seguenti argomenti:
 * [Visualizzazione predefinita di una dimensione](../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md#section-1bbb73a5cbb34ffb844eb1932db85318)
 * [Visualizzazione di una visualizzazione specifica per una dimensione](../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md#section-d46626df90bc4c44ae60c4b71eaeac7f)
 
-## Per interpretare il tipo di Dimension utilizzando l&#39;interfaccia Dataset Schema (Schema del set di dati) {#section-16a0a12b11334c07bec558c0b7d260b1}
+## Per interpretare il tipo di Dimension utilizzando l’interfaccia Dataset Schema (Schema del set di dati) {#section-16a0a12b11334c07bec558c0b7d260b1}
 
-Nella tabella seguente sono elencati i tipi di dimensioni e i colori in cui i relativi nomi vengono visualizzati nell&#39;interfaccia [!DNL Dataset Schema]. Vengono inoltre indicati i genitori per le dimensioni del campione (dall’esempio precedente).
+Nella tabella seguente sono elencati i tipi di dimensioni e i colori in cui i relativi nomi vengono visualizzati nella tabella [!DNL Dataset Schema] interfaccia. Vengono inoltre indicati i genitori per le dimensioni del campione (dall’esempio precedente).
 
 <table id="table_20D1A9EAAED247338476C475C63255F5"> 
  <thead> 
@@ -82,12 +84,12 @@ Nella tabella seguente sono elencati i tipi di dimensioni e i colori in cui i re
 
 ## Visualizzazione della visualizzazione predefinita per un Dimension {#section-1bbb73a5cbb34ffb844eb1932db85318}
 
-* Nell’interfaccia [!DNL Dataset Schema] fai clic sulla dimensione desiderata. Viene visualizzata la visualizzazione predefinita. Ad esempio, se la visualizzazione predefinita è una tabella contenente sessioni e la dimensione selezionata e fai clic sulla dimensione URI, Data Workbench visualizza una tabella con URI per sessioni.
+* In [!DNL Dataset Schema] fai clic sulla dimensione desiderata. Viene visualizzata la visualizzazione predefinita. Ad esempio, se la visualizzazione predefinita è una tabella contenente sessioni e la dimensione selezionata e fai clic sulla dimensione URI, Data Workbench visualizza una tabella con URI per sessioni.
 
 >[!NOTE]
 >
->Per modificare la visualizzazione predefinita visualizzata, consulta il capitolo Configuring Interface and Analysis Features in *Data Workbench User Guide* (Configurazione delle funzioni di interfaccia e analisi).
+>Per modificare la visualizzazione predefinita visualizzata, consulta il capitolo Configurazione dell’interfaccia e delle funzioni di analisi in *Guida utente di Data Workbench*.
 
 ## Visualizzazione di una visualizzazione specifica per un Dimension {#section-d46626df90bc4c44ae60c4b71eaeac7f}
 
-* Nell’interfaccia [!DNL Dataset Schema] fai clic con il pulsante destro del mouse sulla dimensione desiderata e fai clic su **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.
+* In [!DNL Dataset Schema] , fai clic con il pulsante destro del mouse sulla dimensione desiderata e fai clic su **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.

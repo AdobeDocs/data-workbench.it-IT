@@ -3,7 +3,7 @@ description: Per rilevare gli errori del sensore il prima possibile e ripararli 
 title: Monitoraggio degli eventi amministrativi (sensore)
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Monitoraggio degli eventi amministrativi{#monitoring-administrative-events}
+
+{{eol}}
 
 Per rilevare gli errori del sensore il prima possibile e ripararli prima che causino problemi o interruzioni importanti, è necessario monitorare regolarmente i log eventi.
 

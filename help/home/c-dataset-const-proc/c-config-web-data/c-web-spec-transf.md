@@ -3,7 +3,7 @@ description: Informazioni sulle impostazioni specifiche per il Web definite in D
 title: Impostazioni specifiche per il web per la trasformazione
 uuid: 282f0f4d-43d7-41cf-bae8-5cac6b4d81a0
 exl-id: 737f5e7a-7ab3-4ff7-8d92-7ccd87c28743
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '2035'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Impostazioni specifiche per il web per la trasformazione{#web-specific-settings-for-transformation}
+
+{{eol}}
 
 Informazioni sulle impostazioni specifiche per il Web definite in Dataset Include file forniti con profili di Adobe per il sito.
 
@@ -21,39 +23,39 @@ Le condizioni, le dimensioni e i parametri definiti da queste impostazioni vengo
 * [Dimension di riferimento](../../../home/c-dataset-const-proc/c-config-web-data/c-web-spec-transf.md#section-8a97ec34d18b4814b5f95495ac4f8638)
 * [Parametri sessione](../../../home/c-dataset-const-proc/c-config-web-data/c-web-spec-transf.md#section-0a209b0c504041a5801f7f71a963c8b1)
 
-## Page View Condition (Condizione di Vista pagina){#section-cc2807a12a88492f8b64a43234a1f835}
+## Page View Condition (Condizione di Vista pagina) {#section-cc2807a12a88492f8b64a43234a1f835}
 
-L’ [!DNL Page View Condition] è un’operazione di condizione che determina se una particolare voce di registro (ovvero una richiesta di pagina) deve essere inclusa nei dati raccolti sulla cronologia di visualizzazione della pagina di un visitatore. Quando la voce di registro soddisfa il valore [!DNL Page View Condition], diventa un elemento della dimensione numerabile Visualizzazione pagina. Se una voce di registro non soddisfa il valore [!DNL Page View Condition], i relativi campi dati sono ancora accessibili da altre dimensioni. Oltre alla dimensione Visualizzazione pagina, i risultati di [!DNL Page View Condition] possono influenzare le seguenti dimensioni:
+La [!DNL Page View Condition] è un’operazione di condizione che determina se una particolare voce di registro (ovvero una richiesta di pagina) deve essere inclusa nei dati raccolti sulla cronologia di visualizzazione della pagina di un visitatore. Quando la voce del registro soddisfa le [!DNL Page View Condition], diventa un elemento della dimensione numerabile Visualizzazione pagina. Se una voce di registro non soddisfa le [!DNL Page View Condition], i relativi campi di dati sono ancora accessibili da altre dimensioni. Oltre alla dimensione Visualizzazione pagina, i risultati delle [!DNL Page View Condition]:
 
-* **[!DNL URI]e  [!DNL Page]:** queste dimensioni sono direttamente interessate dal  [!DNL Page View Condition]. Se la pagina specificata non supera il valore [!DNL Page View Condition,], non viene inclusa nelle dimensioni URI o Pagina.
+* **[!DNL URI]e [!DNL Page]:** Queste dimensioni sono direttamente influenzate dalle [!DNL Page View Condition]. Se la pagina specificata non passa il [!DNL Page View Condition,] non viene incluso nelle dimensioni URI o Pagina.
 
-* **[!DNL Visitor Page Views]e  [!DNL Session Page Views]:** le dimensioni Visualizzazioni pagina visitatore e Visualizzazioni pagina sessione sono un conteggio del numero di pagine visualizzate rispettivamente da un visitatore a o in una determinata sessione. Le pagine filtrate da [!DNL Page View Condition] non fanno parte di questo conteggio.
+* **[!DNL Visitor Page Views]e [!DNL Session Page Views]:** Le dimensioni Visualizzazioni pagina visitatore e Visualizzazioni pagina sessione sono un conteggio del numero di pagine visualizzate rispettivamente da un visitatore a o in una determinata sessione. Pagine filtrate da [!DNL Page View Condition] non fanno parte di questo conteggio.
 
-* **Numero sessione:** l’ [!DNL Page View Condition] ha un effetto indiretto sulla dimensione Numero sessione. La dimensione Numero sessione viene creata prima di [!DNL Page View Condition]; pertanto, quando si considera [!DNL Session Number] in relazione al [!DNL Page Views], è possibile avere sessioni senza visualizzazioni di pagina.
+* **Numero sessione:** La [!DNL Page View Condition] ha un effetto indiretto sulla dimensione Numero sessione. La dimensione Numero di sessione viene creata prima della [!DNL Page View Condition]; pertanto, quando [!DNL Session Number] in relazione al [!DNL Page Views], è possibile avere sessioni senza visualizzazioni di pagina.
 
-L’implementazione predefinita di [!DNL Site] include un file [!DNL Transformation Dataset Include] in cui sono definite la dimensione numerabile di Visualizzazione pagina e la relativa [!DNL Page View Condition].
+Implementazione predefinita di [!DNL Site] include [!DNL Transformation Dataset Include] file in cui la dimensione conteggiata della visualizzazione di pagina e la relativa [!DNL Page View Condition] sono definiti.
 
-Per informazioni sulle dimensioni conteggiate, vedere [Dimension estesi](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md).
+Per informazioni sulle dimensioni conteggiate, vedi [Dimension estesi](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md).
 
 **Per modificare le impostazioni di configurazione per Page View Condition**
 
-1. Apri il [!DNL Profile Manager] all’interno del profilo del set di dati e apri il file [!DNL Dataset\Transformation\Traffic\Page View.cfg] .
+1. Apri [!DNL Profile Manager] nel profilo del set di dati e apri la [!DNL Dataset\Transformation\Traffic\Page View.cfg] file.
 
    >[!NOTE]
    >
-   >Se hai personalizzato l&#39;implementazione di [!DNL Site], il file in cui esistono queste impostazioni di configurazione può essere diverso dalla posizione descritta.
+   >Se hai personalizzato la tua implementazione di [!DNL Site], il file in cui esistono queste impostazioni di configurazione può essere diverso dalla posizione descritta.
 
-1. Rivedi o modifica i valori dei parametri del [!DNL Page View Condition] in base alle esigenze. Utilizza il seguente esempio come guida. In questo file, la [!DNL Page View Condition] è definita da una trasformazione [!DNL Copy]. Tieni presente che questo file contiene anche la definizione della dimensione numerabile Visualizzazione pagina.
+1. Rivedere o modificare i valori dei parametri del [!DNL Page View Condition] se necessario. Utilizza il seguente esempio come guida. In questo file, la [!DNL Page View Condition] è definito da un [!DNL Copy] trasformazione. Tieni presente che questo file contiene anche la definizione della dimensione numerabile Visualizzazione pagina.
 
    ![](assets/cfg_WebParameters_PageView.png)
 
    >[!NOTE]
    >
-   >Per informazioni sulle dimensioni conteggiate, vedere [Dimension estesi](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md). Per informazioni sulla trasformazione [!DNL Copy], consulta [Trasformazioni dati](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md).
+   >Per informazioni sulle dimensioni conteggiate, vedi [Dimension estesi](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md). Per informazioni sulla [!DNL Copy] trasformazione, vedi [Trasformazioni dei dati](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md).
 
-1. Salva il file facendo clic con il pulsante destro del mouse su **[!UICONTROL (modified)]** nella parte superiore della finestra, quindi fai clic su **[!UICONTROL Save]**.
+1. Salva il file facendo clic con il pulsante destro del mouse **[!UICONTROL (modified)]** nella parte superiore della finestra, quindi fai clic su **[!UICONTROL Save]**.
 
-1. Per rendere effettive le modifiche apportate localmente, fai clic con il pulsante destro del mouse sul segno di spunta per il file nella colonna [!DNL User], quindi fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, dove nome profilo è il nome del profilo del set di dati o del profilo ereditato a cui appartiene il file del set di dati include.[!DNL Profile Manager]
+1. Per rendere effettive le modifiche apportate localmente, nella [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta per il file nel [!DNL User] , quindi fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, dove nome profilo è il nome del profilo di set di dati o del profilo ereditato a cui appartiene il file di set di dati include .
 
    >[!NOTE]
    >
@@ -61,17 +63,17 @@ Per informazioni sulle dimensioni conteggiate, vedere [Dimension estesi](../../.
 
 ## Dimension URI {#section-348f7e9099d049d197a7cdcbc8a6c234}
 
-Se lavori con [!DNL Site], devi definire la dimensione URI i cui elementi sono gli steli URI delle pagine del sito web visualizzate. L’implementazione predefinita include un file [!DNL Transformation Dataset Include] in cui è definita la dimensione semplice URI.
+Se si lavora con [!DNL Site], è necessario definire la dimensione URI i cui elementi sono gli steli URI delle pagine del sito web visualizzate. L’implementazione predefinita include un [!DNL Transformation Dataset Include] file in cui è definita la dimensione semplice URI.
 
-Per informazioni sulle dimensioni semplici, consulta [Dimension estesi](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md).
+Per informazioni sulle dimensioni semplici, vedi [Dimension estesi](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md).
 
 **Per modificare le impostazioni di configurazione per la dimensione URI**
 
-1. Apri il [!DNL Profile Manager] all’interno del profilo del set di dati e apri il file [!DNL Dataset\Transformation\Traffic\URI.cfg] .
+1. Apri [!DNL Profile Manager] nel profilo del set di dati e apri la [!DNL Dataset\Transformation\Traffic\URI.cfg] file.
 
    >[!NOTE]
    >
-   >Se hai personalizzato l&#39;implementazione di [!DNL Site], il file in cui esistono queste impostazioni di configurazione può essere diverso dalla posizione descritta.
+   >Se hai personalizzato la tua implementazione di [!DNL Site], il file in cui esistono queste impostazioni di configurazione può essere diverso dalla posizione descritta.
 
 1. Rivedi o modifica i valori dei parametri del file come desiderato. Utilizza l’esempio e le informazioni seguenti come guide.
 
@@ -79,16 +81,16 @@ Per informazioni sulle dimensioni semplici, consulta [Dimension estesi](../../..
 
 Le impostazioni di configurazione per la dimensione URI includono i due parametri seguenti:
 
-* **Sensibile alle maiuscole/minuscole:** True o false. Se true, la lettera maiuscola/minuscola viene considerata nell’identificazione di pagine univoche. Il valore predefinito è vero.
-* **Elementi massimi:** il numero massimo di elementi (cioè URI) per la dimensione URI. Il valore predefinito è 32768.
+* **Distintivo tra maiuscole e minuscole:** True o false. Se true, la lettera maiuscola/minuscola viene considerata nell’identificazione di pagine univoche. Il valore predefinito è vero.
+* **Elementi massimi:** Il numero massimo di elementi (URI) per la dimensione URI. Il valore predefinito è 32768.
 
    >[!NOTE]
    >
    >La modifica di questo valore può causare gravi problemi di prestazioni. Non modificare questo valore senza consultare un Adobe.
 
-* Salva il file [!DNL URI.cfg] facendo clic con il pulsante destro del mouse su **[!UICONTROL (modified)]** nella parte superiore della finestra, quindi fai clic su **[!UICONTROL Save]**.
+* Salva il [!DNL URI.cfg] facendo clic con il pulsante destro del mouse **[!UICONTROL (modified)]** nella parte superiore della finestra, quindi fai clic su **[!UICONTROL Save]**.
 
-* Per rendere effettive le modifiche apportate localmente, fai clic con il pulsante destro del mouse sul segno di spunta per il file nella colonna [!DNL User], quindi fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, dove nome profilo è il nome del profilo del set di dati o del profilo ereditato a cui appartiene il file del set di dati include.[!DNL Profile Manager]
+* Per rendere effettive le modifiche apportate localmente, nella [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta per il file nel [!DNL User] , quindi fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, dove nome profilo è il nome del profilo di set di dati o del profilo ereditato a cui appartiene il file di set di dati include .
 
    >[!NOTE]
    >
@@ -96,17 +98,17 @@ Le impostazioni di configurazione per la dimensione URI includono i due parametr
 
 ## Dimension di riferimento {#section-8a97ec34d18b4814b5f95495ac4f8638}
 
-Se lavori con [!DNL Site], devi definire la dimensione Referrer i cui elementi sono costituiti dai domini di secondo livello dei referrer delle prime voci di log in tutte le sessioni. L’implementazione predefinita include un file [!DNL Transformation Dataset Include] in cui è definita la dimensione semplice referente.
+Se si lavora con [!DNL Site], devi definire la dimensione Referrer i cui elementi sono costituiti dai domini di secondo livello dei referrer delle prime voci di log in tutte le sessioni. L’implementazione predefinita include un [!DNL Transformation Dataset Include] file in cui è definita la dimensione semplice referente.
 
-Per informazioni sulle dimensioni semplici, consulta [Dimension estesi](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md).
+Per informazioni sulle dimensioni semplici, vedi [Dimension estesi](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md).
 
 **Per modificare le impostazioni di configurazione per la dimensione Referente**
 
-1. Apri il [!DNL Profile Manager] all’interno del profilo del set di dati e apri il file [!DNL Dataset\Transformation\Traffic\Referrer.cfg] .
+1. Apri [!DNL Profile Manager] nel profilo del set di dati e apri la [!DNL Dataset\Transformation\Traffic\Referrer.cfg] file.
 
    >[!NOTE]
    >
-   >Se hai personalizzato l&#39;implementazione di [!DNL Site], il file in cui esistono queste impostazioni di configurazione può essere diverso dalla posizione descritta.
+   >Se hai personalizzato la tua implementazione di [!DNL Site], il file in cui esistono queste impostazioni di configurazione può essere diverso dalla posizione descritta.
 
 1. Rivedi o modifica i valori dei parametri del file come desiderato. Utilizza l’esempio e le informazioni seguenti come guide.
 
@@ -116,11 +118,11 @@ Per informazioni sulle dimensioni semplici, consulta [Dimension estesi](../../..
 
    >[!NOTE]
    >
-   >Nell’esempio precedente, il parametro [!DNL Maximum Elements] è impostato su 0. Quando questo parametro è impostato su 0, il server di Data Workbench utilizza il valore predefinito interno di 32768.
+   >Nell’esempio precedente, il [!DNL Maximum Elements] è impostato su 0. Quando questo parametro è impostato su 0, il server di Data Workbench utilizza il valore predefinito interno di 32768.
 
-1. Salva il file [!DNL Referrer.cfg] facendo clic con il pulsante destro del mouse su **[!UICONTROL (modified)]** nella parte superiore della finestra, quindi fai clic su **[!UICONTROL Save]**.
+1. Salva il [!DNL Referrer.cfg] facendo clic con il pulsante destro del mouse **[!UICONTROL (modified)]** nella parte superiore della finestra, quindi fai clic su **[!UICONTROL Save]**.
 
-1. Per rendere effettive le modifiche apportate localmente, fai clic con il pulsante destro del mouse sul segno di spunta per il file nella colonna [!DNL User], quindi fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, dove nome profilo è il nome del profilo del set di dati o del profilo ereditato a cui appartiene il file del set di dati include.[!DNL Profile Manager]
+1. Per rendere effettive le modifiche apportate localmente, nella [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta per il file nel [!DNL User] , quindi fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, dove nome profilo è il nome del profilo di set di dati o del profilo ereditato a cui appartiene il file di set di dati include .
 
    >[!NOTE]
    >
@@ -128,9 +130,9 @@ Per informazioni sulle dimensioni semplici, consulta [Dimension estesi](../../..
 
 ## Parametri sessione {#section-0a209b0c504041a5801f7f71a963c8b1}
 
-Se lavori con [!DNL Site], puoi specificare parametri che definiscono i limiti della sessione di un visitatore su un sito web. Questi parametri sono validi solo se definiti in un file [!DNL Transformation Dataset Include] all&#39;interno dell&#39;implementazione [!DNL Site].
+Se si lavora con [!DNL Site], puoi specificare parametri che definiscono i limiti della sessione di un visitatore su un sito web. Questi parametri sono validi solo se definiti in un [!DNL Transformation Dataset Include] all&#39;interno del [!DNL Site] implementazione.
 
-I seguenti parametri sono univoci in quanto possono essere membri del vettore [!DNL Parameters] del file [!DNL Transformation Dataset Include] oppure possono essere elencati come singoli parametri nel file [!DNL Transformation.cfg]. Un parametro può essere definito esattamente una volta, in modo che questi parametri siano definiti nel file [!DNL Transformation.cfg]o nel vettore [!DNL Parameters] del set di dati include file - non in entrambi i file.
+I seguenti parametri sono univoci in quanto possono essere membri di [!DNL Transformation Dataset Include] file [!DNL Parameters] vettoriale, oppure possono essere elencati come singoli parametri nel [!DNL Transformation.cfg]file. Un parametro può essere definito esattamente una volta, quindi questi parametri sono definiti nella [!DNL Transformation.cfg]o nel [!DNL Parameters] vettore del set di dati include file - non in entrambi i file.
 **Durata massima della sessione e timeout della sessione**
 
 Durata massima sessione e Timeout sessione sono parametri stringa che definiscono la lunghezza della sessione di un visitatore. Questi parametri funzionano con il parametro Domini interni per determinare la lunghezza di sessione.
@@ -143,25 +145,25 @@ Considera una situazione in cui un visitatore viene richiamato dal suo computer 
 
 >[!NOTE]
 >
->Anche la trasformazione [!DNL Sessionize] di [!DNL Timeout Condition] svolge un ruolo nel determinare la durata della sessione di un visitatore. Se il timeout della sessione e la durata massima della sessione non sono applicabili, viene controllato [!DNL Timeout Condition] per determinare se una voce di registro deve essere considerata l&#39;inizio di una nuova sessione. Per ulteriori informazioni, consulta [Trasformazioni dati](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md).
+>La [!DNL Sessionize] di trasformazione [!DNL Timeout Condition] svolge inoltre un ruolo nel determinare la durata della sessione di un visitatore. Se il timeout della sessione e la durata massima della sessione non sono applicabili, il [!DNL Timeout Condition] viene verificato per determinare se una voce di registro deve essere considerata l’inizio di una nuova sessione. Per ulteriori informazioni, consulta [Trasformazioni dei dati](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md).
 
 **Per modificare i parametri di Durata massima sessione e Timeout sessione**
 
-Se lavori con [!DNL Site], l&#39;implementazione predefinita probabilmente include un file [!DNL Transformation Dataset Include] in cui vengono specificati i nomi e i valori consigliati di questi parametri.
+Se si lavora con [!DNL Site], l’implementazione predefinita include probabilmente una [!DNL Transformation Dataset Include] file in cui vengono specificati i nomi e i valori consigliati di questi parametri.
 
-1. Apri il [!DNL Profile Manager] all’interno del profilo di set di dati e vai a [!DNL Dataset\Transformation\Traffic\Session Parameters.cfg].
+1. Apri [!DNL Profile Manager] nel profilo del set di dati e vai a [!DNL Dataset\Transformation\Traffic\Session Parameters.cfg].
 
    >[!NOTE]
    >
-   >Se hai personalizzato l’implementazione di [!DNL Site], il file in cui sono definiti questi parametri può essere diverso dalla posizione descritta.
+   >Se hai personalizzato la tua implementazione di [!DNL Site], il file in cui sono definiti questi parametri può differire dalla posizione descritta.
 
 1. Modifica i valori dei parametri come desiderato. Assicurati di specificare le unità desiderate (minuti, ore e così via).
 
    ![](assets/cfg_WebParameters_SessionParameters.png)
 
-1. Salva il file [!DNL Session Parameters.cfg] facendo clic con il pulsante destro del mouse su **[!UICONTROL (modified)]** nella parte superiore della finestra e facendo clic su **[!UICONTROL Save]**.
+1. Salva il [!DNL Session Parameters.cfg] facendo clic con il pulsante destro del mouse **[!UICONTROL (modified)]** nella parte superiore della finestra e facendo clic su **[!UICONTROL Save]**.
 
-1. Per rendere effettive le modifiche apportate localmente, fai clic con il pulsante destro del mouse sul segno di spunta del file nella colonna [!DNL User] , quindi fai clic su **[!UICONTROL Save to]** > **[!UICONTROL profile name]**, dove il nome del profilo è il nome del profilo di set di dati o il profilo ereditato a cui appartiene il file di set di dati.[!DNL Profile Manager]
+1. Per rendere effettive le modifiche apportate localmente, nella [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta per il file nel [!DNL User] , quindi fai clic su **[!UICONTROL Save to]** >  **[!UICONTROL profile name]**, dove nome profilo è il nome del profilo di set di dati o del profilo ereditato a cui appartiene il file di set di dati include .
 
    >[!NOTE]
    >
@@ -171,27 +173,27 @@ Se lavori con [!DNL Site], l&#39;implementazione predefinita probabilmente inclu
 
 [!DNL Internal Domains] è un parametro vettoriale che elenca gli host a livello di dominio (riferimenti interni) che devono essere trattati come parte di un particolare sito web. Questi host vengono rimossi dalla dimensione del referente (che è un elenco delle informazioni del referente esterno). Quando cs(referrer-domain) corrisponde a una delle stringhe elencate nel set di domini interni, il timeout della sessione viene ignorato e la durata massima della sessione viene utilizzata per determinare la lunghezza della sessione.
 
-Il parametro Domini interni può essere utilizzato anche per impedire l’inizio di una nuova sessione quando i visitatori si spostano tra i più domini associati di un’azienda in un modo che supera il timeout della sessione. Ad esempio, considera un’azienda con parti del sito suddivise in due domini: uno viene registrato ( [!DNL xyz.com]) e l&#39;altro non viene registrato ( [!DNL xyz-unlogged.com]). Se questi siti sono integrati in modo da facilitare lo spostamento fluido del traffico tra i due domini, non è consigliabile generare una sessione diversa ogni volta che il visitatore ritorna dal dominio [!DNL xyz-unlogged.com] al dominio [!DNL xyz.com]. L’elenco [!DNL xyz-unlogged.com] come dominio interno impedisce la suddivisione delle sessioni in più sessioni a causa del traffico tra questi due domini, purché l’impostazione Maximum Session Duration non venga raggiunta.
+Il parametro Domini interni può essere utilizzato anche per impedire l’inizio di una nuova sessione quando i visitatori si spostano tra i più domini associati di un’azienda in un modo che supera il timeout della sessione. Ad esempio, considera un’azienda con parti del sito suddivise in due domini: uno è registrato ( [!DNL xyz.com]) e l&#39;altro non è registrato ( [!DNL xyz-unlogged.com]). Se questi siti sono integrati in modo da facilitare lo spostamento fluido del traffico tra i due domini, non è opportuno generare una sessione diversa ogni volta che il visitatore si sposta da [!DNL xyz-unlogged.com] di nuovo al [!DNL xyz.com] dominio. Elenco [!DNL xyz-unlogged.com] poiché un dominio interno impedisce la suddivisione delle sessioni in più sessioni a causa del traffico tra questi due domini, purché l’impostazione Maximum Session Duration (Durata massima sessione) non venga raggiunta.
 
 **Per aggiungere un dominio interno**
 
-Se lavori con [!DNL Site], l’implementazione predefinita include un file [!DNL Transformation Dataset Include] per la definizione del parametro Domini interni. In questo file, il parametro è denominato; inserisci semplicemente i domini interni che desideri includere e salva il file aggiornato.
+Se si lavora con [!DNL Site], l’implementazione predefinita include [!DNL Transformation Dataset Include] file per la definizione del parametro Domini interni. In questo file, il parametro è denominato; inserisci semplicemente i domini interni che desideri includere e salva il file aggiornato.
 
 1. Apri [!DNL Profile Manager] nel profilo del set di dati e vai a [!DNL Dataset\Transformation\Traffic\Internal Domains.cfg.]
 
    >[!NOTE]
    >
-   >Se hai personalizzato l’implementazione di [!DNL Site], il file in cui è definito il parametro Domini interni può essere diverso dalla posizione descritta.
+   >Se hai personalizzato la tua implementazione di [!DNL Site], il file in cui è definito il parametro Domini interni può essere diverso dalla posizione descritta.
 
-1. Fai clic con il pulsante destro del mouse su **[!UICONTROL Value]** per il parametro vettoriale Domini interni e fai clic su **[!UICONTROL Add new]** > **[!UICONTROL Value]**.
+1. Fai clic con il pulsante destro del mouse **[!UICONTROL Value]** per il parametro vettoriale Domini interni e fai clic su **[!UICONTROL Add new]** > **[!UICONTROL Value]**.
 
 1. Modifica i valori desiderati.
 
    ![](assets/cfg_WebParameters_InternalDomains.png)
 
-1. Salva il file [!DNL Internal Domains.cfg] facendo clic con il pulsante destro del mouse su **[!UICONTROL (modified)]** nella parte superiore della finestra e facendo clic su **[!UICONTROL Save]**.
+1. Salva il [!DNL Internal Domains.cfg] facendo clic con il pulsante destro del mouse **[!UICONTROL (modified)]** nella parte superiore della finestra e facendo clic su **[!UICONTROL Save]**.
 
-1. Per rendere effettive le modifiche apportate localmente, fai clic con il pulsante destro del mouse sul segno di spunta per il file nella colonna [!DNL User], quindi fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, dove nome profilo è il nome del profilo del set di dati o del profilo ereditato a cui appartiene il file del set di dati include.[!DNL Profile Manager]
+1. Per rendere effettive le modifiche apportate localmente, nella [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta per il file nel [!DNL User] , quindi fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, dove nome profilo è il nome del profilo di set di dati o del profilo ereditato a cui appartiene il file di set di dati include .
 
    >[!NOTE]
    >

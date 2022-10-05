@@ -3,7 +3,7 @@ description: Se non si desidera ereditare un file di configurazione da un profil
 title: Nascondere i file di configurazione del set di dati
 uuid: eb33cf54-e067-4af2-a10e-7ffe43910e4f
 exl-id: 327847d1-421a-4ed1-9a5f-2491765a34bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Nascondere i file di configurazione del set di dati{#hiding-dataset-configuration-files}
+
+{{eol}}
 
 Se non si desidera ereditare un file di configurazione da un profilo interno o da un altro profilo ereditato (ovvero se si desidera che le istruzioni contenute nel file vengano ignorate durante la creazione del set di dati), ma non si desidera modificare il file, è possibile creare un file vuoto (zero byte) con lo stesso nome e archiviare il file in un altro profilo.
 
@@ -32,4 +34,4 @@ Quando rielabora il set di dati, il set di dati non contiene i componenti del se
 >
 >Se un file di configurazione a byte zero definisce una dimensione estesa utilizzata in una visualizzazione o una definizione di metrica, Data Workbench genera un errore per tale visualizzazione o metrica, rispettivamente.
 
-È inoltre possibile utilizzare file a byte zero per spostare una metrica, una dimensione o un filtro in un’altra posizione nel profilo o per nascondere le voci del menu. Per informazioni, vedere la *Guida utente Data Workbench*.
+È inoltre possibile utilizzare file a byte zero per spostare una metrica, una dimensione o un filtro in un’altra posizione nel profilo o per nascondere le voci del menu. Per informazioni, consulta la sezione *Guida utente di Data Workbench*.

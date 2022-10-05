@@ -3,22 +3,24 @@ description: Il Report Portal (Portale dei rapporti) fornisce una funzione di ri
 title: Ricerca avanzata nel Report Portal (Portale dei rapporti)
 uuid: 3b5262fb-ea42-449f-8ef9-897806a310a8
 exl-id: 891d51ad-8477-4a1a-9fe5-97e1210f11d5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 # Ricerca avanzata nel Report Portal (Portale dei rapporti){#advanced-search-in-the-report-portal}
 
+{{eol}}
+
 Il Report Portal (Portale dei rapporti) fornisce una funzione di ricerca per trovare i rapporti basati su una visualizzazione ad albero delle cartelle, una visualizzazione ad albero delle date dei rapporti e una ricerca ad hoc.
 
-1. Fai clic sulla scheda **[!UICONTROL Search]** nel riquadro a sinistra del Report Portal (Portale dei rapporti).
+1. Fai clic sul pulsante **[!UICONTROL Search]** nel riquadro a sinistra del Report Portal (Portale dei rapporti).
 
    ![](assets/report_portal_search_button.png)
 
-   Viene aperta una nuova pagina Web in cui viene visualizzata la pagina **[!UICONTROL Search]** con l’opzione **[!UICONTROL Folder Tree]** come visualizzazione predefinita.
+   Viene aperta una nuova pagina Web in cui viene visualizzata la **[!UICONTROL Search]** con **[!UICONTROL Folder Tree]** come visualizzazione predefinita.
 
    ![](assets/report_portal_search_headers.png)
 
@@ -41,11 +43,11 @@ Il Report Portal (Portale dei rapporti) fornisce una funzione di ricerca per tro
    <td colname="col2"> <p>Selezionare le cartelle in base a una gerarchia di date definita dal server di rapporto. I rapporti sono organizzati in base alla data (anno/mese/giorno) in cui sono stati eseguiti. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Cerca </p> </td> 
+   <td colname="col1"> <p>Ricerca </p> </td> 
    <td colname="col2"> <p>Esegui ricerche ad hoc in tutti i rapporti. Se conosci il nome completo del rapporto, puoi inserirlo direttamente nella casella di ricerca. </p> <p>Inoltre: </p> 
     <ul id="ul_EAE30AAA865942078D0C6C0AE527C07C"> 
-     <li id="li_F5213977442F4B89A62CA6BC315F95BE">Digita una chiave &lt;space&gt; per visualizzare un elenco a discesa di caratteri o nomi di inizio per tutti i rapporti esistenti. </li> 
-     <li id="li_C28799438777471290B424CAFFCAF810">Immetti il nome del rapporto e digita una chiave &lt;space&gt; per visualizzare un elenco a discesa che ti consenta di compilare automaticamente il nome di un rapporto esistente. </li> 
+     <li id="li_F5213977442F4B89A62CA6BC315F95BE">Tipo a &lt;space&gt; per visualizzare un elenco a discesa di caratteri o nomi iniziali per tutti i rapporti esistenti. </li> 
+     <li id="li_C28799438777471290B424CAFFCAF810">Immettere il nome del report e digitare un &lt;space&gt; per visualizzare un elenco a discesa che consente di compilare automaticamente il nome di un rapporto esistente. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -54,7 +56,7 @@ Il Report Portal (Portale dei rapporti) fornisce una funzione di ricerca per tro
   </tr> 
   <tr> 
    <td colname="col1"> <p>Mostra selezionati </p> </td> 
-   <td colname="col2">Fare clic su per visualizzare i rapporti selezionati nelle visualizzazioni Struttura cartelle o Struttura date. Il Report Portal (Portale dei rapporti) si apre in una nuova finestra e visualizza ogni report come file .png. Se sono selezionati più rapporti, è possibile selezionare ogni singolo rapporto da una scheda nella parte superiore della pagina. <p>Fai clic sul pulsante <span class="uicontrol"> Stampa</span> in questa pagina per stampare il rapporto selezionato oppure fai clic su <span class="uicontrol"> Scarica</span> per archiviare localmente. </p> </td> 
+   <td colname="col2">Fare clic su per visualizzare i rapporti selezionati nelle visualizzazioni Struttura cartelle o Struttura date. Il Report Portal (Portale dei rapporti) si apre in una nuova finestra e visualizza ogni report come file .png. Se sono selezionati più rapporti, è possibile selezionare ogni singolo rapporto da una scheda nella parte superiore della pagina. <p>Fai clic sul pulsante <span class="uicontrol"> Stampa</span> su questa pagina per stampare il report selezionato o fare clic su <span class="uicontrol"> Scarica</span> per memorizzare localmente. </p> </td> 
   </tr> 
  </tbody> 
 </table>

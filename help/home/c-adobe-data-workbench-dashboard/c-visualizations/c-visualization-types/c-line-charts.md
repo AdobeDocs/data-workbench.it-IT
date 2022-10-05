@@ -3,7 +3,7 @@ description: Grafici a linee
 title: Grafici a linee
 uuid: 6f525c49-6679-4234-886b-52a3c7df98ff
 exl-id: 75532aff-15ff-4be8-8000-f503b2bf60a2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Grafici a linee{#line-charts}
+
+{{eol}}
 
 Le visualizzazioni dei grafici a linee consentono di visualizzare i dati delle metriche e delle dimensioni con ciascun elemento dati rappresentato come un punto su un asse x-y e le linee che collegano i punti adiacenti. I grafici a linee consentono di visualizzare sul grafico contemporaneamente fino a 200 elementi di dati univoci. I valori di dimensione vengono etichettati lungo l’asse x, mentre gli incrementi di metrica vengono etichettati lungo l’asse y. Posizionando il mouse su un punto del grafico a linee, il valore della metrica verrà visualizzato in quel punto.
 

@@ -3,7 +3,7 @@ description: Come creare una cella di input.
 title: Creare una cella di input
 uuid: 9b2883e4-b12a-4279-9894-37a1df6c34b3
 exl-id: 1e55696e-fcc8-4521-b37b-f52409229e6d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 5%
@@ -12,9 +12,11 @@ ht-degree: 5%
 
 # Creare una cella di input{#create-an-input-cell}
 
+{{eol}}
+
 Come creare una cella di input.
 
-Quando la cella B1 viene formattata come cella di input (facendo clic con il pulsante destro del mouse sulla cella e facendo clic su **[!UICONTROL Format]** > **[!UICONTROL Input Cell]**) e si blocca la visualizzazione (facendo clic con il pulsante destro del mouse sul bordo superiore e facendo clic su **[!UICONTROL Locked]**), è possibile modificare il valore della cella di input per visualizzare i risultati &quot;al volo&quot;.
+Quando la cella B1 viene formattata come cella di input (facendo clic con il pulsante destro del mouse sulla cella e facendo clic su **[!UICONTROL Format]** > **[!UICONTROL Input Cell]**) e blocca la visualizzazione (facendo clic con il pulsante destro del mouse sul bordo superiore della visualizzazione e facendo clic su **[!UICONTROL Locked]**), è possibile modificare il valore della cella di input per visualizzare i risultati al volo.
 
 L&#39;esempio seguente mostra un foglio di lavoro che visualizza la formula per una cella di input.
 

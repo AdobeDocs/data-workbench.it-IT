@@ -3,7 +3,7 @@ description: Il profilo Stato profilo di Data Workbench fornisce informazioni co
 title: Area di lavoro di stato del profilo di Data Workbench
 uuid: b54713c8-863d-4376-8ebf-4a2985e28c76
 exl-id: 40b9b0bf-4fd9-48d8-875b-514921c520cd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 4%
@@ -12,13 +12,15 @@ ht-degree: 4%
 
 # Area di lavoro di stato del profilo di Data Workbench{#data-workbench-profile-status-workspace}
 
+{{eol}}
+
 Il profilo Stato profilo di Data Workbench fornisce informazioni correnti sullo stato del server di Data Workbench in base al profilo, anziché alle metriche del server o ai dati storici.
 
 ## Data Workbench stato profilo {#section-65d1fa393cfd450cbacef3cba823fcc1}
 
 Questo profilo di stato fornisce le informazioni correnti sul server di Data Workbench, ma non in tempo reale, perché l’agente viene controllato ogni dieci minuti e il reporting include sempre questa latenza di dieci minuti. Più precisamente, i set di dati generati da questo profilo forniscono l’ultima osservazione del server da parte dell’agente, che spesso ha un periodo di polling predefinito di dieci minuti.
 
-Per ulteriori informazioni di riferimento sulle dimensioni utilizzate nel profilo dello stato del profilo di Data Workbench, consulta [Profilo dello stato del profilo di Insight](../../../home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md#concept-d4cd7da41c8a42bab4aea25418264e64).
+Per ulteriori informazioni di riferimento sulle dimensioni utilizzate nel profilo dello stato del profilo di Data Workbench, consulta [Profilo di stato del profilo di Insight](../../../home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md#concept-d4cd7da41c8a42bab4aea25418264e64).
 
 ![](assets/Status_General_Status.png)
 

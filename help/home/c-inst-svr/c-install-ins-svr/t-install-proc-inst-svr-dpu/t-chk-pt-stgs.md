@@ -3,7 +3,7 @@ description: Per impostazione predefinita, Insight Server ascolta le porte 80 (p
 title: Controllo delle impostazioni della porta
 uuid: 1adad226-5891-4498-80b6-1bb4d67f5bbb
 exl-id: 924860e3-5afa-4c0f-bb7a-d38d5c1355b7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 7%
@@ -12,17 +12,19 @@ ht-degree: 7%
 
 # Controllo delle impostazioni della porta{#checking-the-port-settings}
 
+{{eol}}
+
 Per impostazione predefinita, Insight Server ascolta le porte 80 (per HTTP) e 443 (per HTTPS).
 
-Se queste porte sono già allocate da un altro processo nel computer in cui è installato [!DNL Insight Server], utilizzare la procedura seguente per modificare le assegnazioni di porte [!DNL Insight Server’s].
+Se queste porte sono già allocate da un altro processo nel computer in cui è installato [!DNL Insight Server], utilizza la seguente procedura per modificare [!DNL Insight Server’s] assegnazioni di porte.
 
 **Per modificare le assegnazioni delle porte**
 
-1. Passa alla cartella [!DNL Components] nella directory in cui hai installato [!DNL Insight Server].
+1. Passa a [!DNL Components] nella directory in cui è stata installata [!DNL Insight Server].
 
    Esempio: [!DNL C:\Adobe\Server\Components]
 
-1. Apri il file [!DNL Communications.cfg] in un editor di testo come Blocco note.
+1. Apri [!DNL Communications.cfg] in un editor di testo come Blocco note.
 1. Individua le voci Porta e Porta SSL, come illustrato di seguito:
 
    ```
@@ -39,4 +41,4 @@ Se queste porte sono già allocate da un altro processo nel computer in cui è i
      . . .
    ```
 
-1. Se non si tratta delle porte che si desidera utilizzare [!DNL Insight Server], modificare le assegnazioni delle porte, quindi salvare e chiudere il file.
+1. Se non si tratta delle porte desiderate [!DNL Insight Server] per utilizzare, modificare le assegnazioni delle porte, quindi salvare e chiudere il file.

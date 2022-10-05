@@ -3,7 +3,7 @@ description: Formattazione delle informazioni sul file di livello del punto elem
 title: Formato del file livello del punto elemento
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
 exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 5%
@@ -12,9 +12,11 @@ ht-degree: 5%
 
 # Formato del file livello del punto elemento{#element-point-layer-file-format}
 
+{{eol}}
+
 Formattazione delle informazioni sul file di livello del punto elemento.
 
-Ogni file di livello del punto elemento [!DNL .layer] che fa riferimento a un file di ricerca deve essere formattato utilizzando il seguente modello:
+Ogni livello di punto elemento [!DNL .layer] il file che fa riferimento a un file di ricerca deve essere formattato utilizzando il seguente modello:
 
 ```
 Layer = ElementPointLayer:
@@ -57,11 +59,11 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Colonna chiave </td> 
-   <td colname="col2"> <p>Il nome della colonna nel file di ricerca contenente i dati chiave comuni, che consente al server di Data Workbench di integrare i dati nel file di ricerca nel set di dati. Deve essere la prima colonna del file di ricerca. </p> <p>Ogni riga in questa colonna è un elemento di una dimensione. Questa dimensione deve essere definita nel file <span class="filepath"> Transformation.cfg</span> o in un set di dati di trasformazione deve includere un file e specificata nel parametro di Dimension di questo file. Per ulteriori informazioni sui file di configurazione della trasformazione, vedere la <i>Guida alla configurazione del set di dati</i>. </p> </td> 
+   <td colname="col2"> <p>Il nome della colonna nel file di ricerca contenente i dati chiave comuni, che consente al server di Data Workbench di integrare i dati nel file di ricerca nel set di dati. Deve essere la prima colonna del file di ricerca. </p> <p>Ogni riga in questa colonna è un elemento di una dimensione. Questa dimensione deve essere definita nel <span class="filepath"> Transformation.cfg</span> file o set di dati di trasformazione includono file e specificato nel parametro di Dimension di questo file. Per ulteriori informazioni sui file di configurazione della trasformazione, consulta la sezione <i>Guida alla configurazione del set di dati</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimensione </td> 
-   <td colname="col2">Nome della dimensione (definita in un file di configurazione della trasformazione) contenente elementi corrispondenti alle righe di dati nella colonna <span class="wintitle"> Chiave</span>. </td> 
+   <td colname="col2">Nome della dimensione (definita in un file di configurazione della trasformazione) contenente elementi corrispondenti alle righe di dati nel <span class="wintitle"> Chiave</span> colonna. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Metrica </td> 
@@ -87,7 +89,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Il file [!DNL Zip Points.layer] viene formattato come segue:
+La [!DNL Zip Points.layer] file formattato come segue:
 
 ```
 Layer = ElementPointLayer:

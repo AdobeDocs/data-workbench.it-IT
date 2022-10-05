@@ -3,7 +3,7 @@ description: I grafici a dispersione rappresentano gli elementi di una dimension
 title: Dispersioni 2D
 uuid: 73c23d22-3c3a-4535-b66b-0e3508bd904c
 exl-id: 340f8c18-ce47-4f3a-aba4-3d6124505313
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Dispersioni 2D{#d-scatter-plots}
+
+{{eol}}
 
 I grafici a dispersione rappresentano gli elementi di una dimensione dati (ad esempio Pagina o Città) in una griglia in cui gli assi x e y rappresentano metriche diverse.
 
@@ -24,7 +26,7 @@ I grafici a dispersione possono essere utilizzati anche per mostrare la coerenza
 
 ![](assets/vis_ScatterPlot_SessionDuration.png)
 
-La dimensione di ogni punto del grafico a dispersione è determinata dalla metrica del raggio. La metrica del raggio predefinito è diversa per ogni applicazione di Adobe. Ad esempio, in [!DNL Site], la metrica del raggio è basata su Sessioni per impostazione predefinita. Puoi modificare la metrica del raggio in modo che i punti nei grafici a dispersione rappresentino qualsiasi metrica disponibile. Per i passaggi necessari, consulta [Modifica delle metriche del raggio](../../../home/c-get-started/c-analysis-vis/c-scat-plots.md#section-fd80576d583c430cb469daf12e39aa2a) Il colore dei punti è basato sulla legenda del colore aperta nell’area di lavoro. Per ulteriori informazioni sulle legende a colori, consulta [Color Legends](../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
+La dimensione di ogni punto del grafico a dispersione è determinata dalla metrica del raggio. La metrica del raggio predefinito è diversa per ogni applicazione di Adobe. Ad esempio, in [!DNL Site], la metrica del raggio è basata su Sessions per impostazione predefinita. Puoi modificare la metrica del raggio in modo che i punti nei grafici a dispersione rappresentino qualsiasi metrica disponibile. Per i passaggi da seguire, vedi [Modifica delle metriche del raggio](../../../home/c-get-started/c-analysis-vis/c-scat-plots.md#section-fd80576d583c430cb469daf12e39aa2a) Il colore dei punti si basa sulla legenda del colore aperta nell’area di lavoro. Per ulteriori informazioni sulle legende a colori, consulta [Legende a colori](../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
 
 ## Seleziona punti {#section-4b4d45f39b884d54bb7407b3b2f4ea50}
 

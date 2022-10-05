@@ -3,7 +3,7 @@ description: Come altre trasformazioni, la trasformazione CrossRows viene applic
 title: CrossRows
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
 exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 1%
@@ -12,15 +12,17 @@ ht-degree: 1%
 
 # CrossRows{#crossrows}
 
+{{eol}}
+
 Come altre trasformazioni, la trasformazione CrossRows viene applicata alle righe di dati (voci di log) nelle origini di log.
 
-Per ogni riga di dati, la trasformazione prende il valore del campo di input specificato, esegue una serie di fasi di elaborazione e registra il risultato nel campo di output specificato. Tuttavia, quando la trasformazione [!DNL CrossRows] funziona su una riga di dati (questa riga è denominata riga di output), tiene conto di tale riga più una o più altre righe di dati (queste righe sono denominate righe di input) associate allo stesso ID di tracciamento. Pertanto, per un dato ID di tracciamento, il valore del campo di output per ogni riga di output è basato sui valori del campo di input per una o più righe di input.
+Per ogni riga di dati, la trasformazione prende il valore del campo di input specificato, esegue una serie di fasi di elaborazione e registra il risultato nel campo di output specificato. Tuttavia, quando [!DNL CrossRows] La trasformazione funziona su una riga di dati (questa riga è denominata riga di output), prende in considerazione tale riga più una o più altre righe di dati (queste righe sono denominate righe di input) associate allo stesso ID di tracciamento. Pertanto, per un dato ID di tracciamento, il valore del campo di output per ogni riga di output è basato sui valori del campo di input per una o più righe di input.
 
-La trasformazione fornisce condizioni e vincoli multipli che ti consentono di limitare le righe di input per la trasformazione. Puoi esprimere questi limiti in termini di condizioni del server di Data Workbench (vedi [Condizioni](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)), di un intervallo di righe di input relativo alla riga di output o di un intervallo di volte rispetto al tempo della riga di output. Per le righe di input che soddisfano le condizioni e i vincoli della trasformazione, è possibile applicare un&#39;operazione (ad esempio SUM) che determina il valore del campo di output.
+La trasformazione fornisce condizioni e vincoli multipli che ti consentono di limitare le righe di input per la trasformazione. Puoi esprimere questi limiti in termini di condizioni del server di Data Workbench (vedi [Condizioni](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)), un intervallo di righe di input relativo alla riga di output o un intervallo di volte relativo al tempo della riga di output. Per le righe di input che soddisfano le condizioni e i vincoli della trasformazione, è possibile applicare un&#39;operazione (ad esempio SUM) che determina il valore del campo di output.
 
 >[!NOTE]
 >
->Per funzionare, la trasformazione [!DNL CrossRows] richiede che i dati siano ordinati in tempo e raggruppati in base all’ID di tracciamento nei dati sorgente. Pertanto, [!DNL CrossRows] funziona solo se definito nel file [!DNL Transformation.cfg] o in un file [!DNL Transformation Dataset Include].
+>Per lavorare, [!DNL CrossRows] La trasformazione richiede che i dati siano ordinati in tempo e raggruppati in base all’ID di tracciamento nei dati di origine. Pertanto, [!DNL CrossRows] funziona solo quando è definito in [!DNL Transformation.cfg] o in un [!DNL Transformation Dataset Include] file.
 
 Quando rivedi le descrizioni dei parametri nella tabella seguente, ricorda quanto segue:
 
@@ -32,7 +34,7 @@ Quando rivedi le descrizioni dei parametri nella tabella seguente, ricorda quant
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -63,7 +65,7 @@ Quando rivedi le descrizioni dei parametri nella tabella seguente, ricorda quant
   </tr> 
   <tr> 
    <td colname="col1"> Chiave </td> 
-   <td colname="col2"> <p>Facoltativo. Nome del campo da utilizzare come chiave. </p> <p> Se viene specificata una chiave, le righe di input per una determinata riga di output sono limitate al blocco contiguo di righe che hanno lo stesso valore Key della riga di output. Questa restrizione si aggiunge a tutte le altre limitazioni inserite sulle righe di input da altri parametri della trasformazione <span class="wintitle"> CrossRows</span> . </p> <p> Ad esempio, se si lavora con i dati web e si imposta la chiave x-session del campo (che ha un valore univoco per ogni sessione), le righe di input per la trasformazione sono limitate alle righe con lo stesso valore x-session-key della riga di output. Pertanto, stai prendendo in considerazione solo le righe di input che rappresentano le visualizzazioni di pagina che si verificano durante la stessa sessione della riga di output. </p> </td> 
+   <td colname="col2"> <p>Facoltativo. Nome del campo da utilizzare come chiave. </p> <p> Se viene specificata una chiave, le righe di input per una determinata riga di output sono limitate al blocco contiguo di righe con lo stesso valore Key della riga di output. Questa restrizione è in aggiunta a tutte le altre limitazioni inserite sulle righe di input da altri parametri del <span class="wintitle"> CrossRows</span> trasformazione. </p> <p> Ad esempio, se si lavora con i dati web e si imposta la chiave x-session del campo (che ha un valore univoco per ogni sessione), le righe di input per la trasformazione sono limitate alle righe con lo stesso valore x-session-key della riga di output. Pertanto, stai prendendo in considerazione solo le righe di input che rappresentano le visualizzazioni di pagina che si verificano durante la stessa sessione della riga di output. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -78,7 +80,7 @@ Quando rivedi le descrizioni dei parametri nella tabella seguente, ricorda quant
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Uscita </td> 
+   <td colname="col1"> Output </td> 
    <td colname="col2"> Nome del campo di output. </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -103,10 +105,10 @@ Quando rivedi le descrizioni dei parametri nella tabella seguente, ricorda quant
  </tbody> 
 </table>
 
-La trasformazione [!DNL CrossRows] in questo esempio viene applicata alle righe di dati web per trovare per ogni visualizzazione di pagina l’ora della visualizzazione di pagina successiva. Poiché sappiamo che [!DNL CrossRows] viene applicato solo durante la fase di trasformazione del processo di costruzione del set di dati, le righe di dati vengono ordinate dal visitatore (ogni visitatore ha un ID di tracciamento univoco) e dal tempo.
+La [!DNL CrossRows] La trasformazione in questo esempio viene applicata alle righe di dati web da cercare per ogni visualizzazione di pagina al momento della visualizzazione di pagina successiva. Perché lo sappiamo [!DNL CrossRows] viene applicata solo durante la fase di trasformazione del processo di costruzione del set di dati, le righe di dati sono ordinate dal visitatore (ogni visitatore ha un ID di tracciamento univoco) e dal tempo.
 
-Il campo di input x-timestamp è considerato solo per le righe di input in cui il campo x-is-page-view è popolato (indicando che la riga di dati rappresenta una visualizzazione di pagina). Il campo x-session-key (che ha un valore univoco per ogni sessione) è specificato per il parametro Key. Pertanto, le righe di input (voci di registro) per la trasformazione sono limitate al blocco contiguo di righe che hanno lo stesso valore di x-session-key della riga di output. In altre parole, per essere considerata per la trasformazione, una riga di input deve rappresentare una visualizzazione di pagina che si verifica durante la stessa sessione della visualizzazione di pagina nella riga di output. La prima operazione di riga prende il valore del campo di output dalla prima riga di input che soddisfa la condizione [!DNL Input] e ha lo stesso valore chiave di sessione x della riga di output.
+Il campo di input x-timestamp è considerato solo per le righe di input in cui il campo x-is-page-view è popolato (indicando che la riga di dati rappresenta una visualizzazione di pagina). Il campo x-session-key (che ha un valore univoco per ogni sessione) è specificato per il parametro Key. Pertanto, le righe di input (voci di registro) per la trasformazione sono limitate al blocco contiguo di righe che hanno lo stesso valore di x-session-key della riga di output. In altre parole, per essere considerata per la trasformazione, una riga di input deve rappresentare una visualizzazione di pagina che si verifica durante la stessa sessione della visualizzazione di pagina nella riga di output. La prima operazione di riga prende il valore del campo di output dalla prima riga di input che soddisfa [!DNL Input] Condizione e con lo stesso valore chiave x-session della riga di output.
 
 ![](assets/cfg_TransformationType_CrossRows.png)
 
-[!DNL CrossRows] viene eseguito in un periodo di tempo proporzionale alle dimensioni dei suoi input e alle dimensioni dei suoi output. Ciò significa che per le operazioni SUM, FIRST ROW e LAST ROW, non è meno efficiente di altre trasformazioni. Per ALL, la situazione è più complessa perché è possibile configurare [!DNL CrossRows] per l&#39;output di una quantità di dati per ogni riga di dati (voce di registro) proporzionale al numero totale di righe (voci di registro) per un dato ID di tracciamento.
+[!DNL CrossRows] viene eseguito in un periodo di tempo proporzionale alle dimensioni dei suoi input e alle dimensioni dei suoi output. Ciò significa che per le operazioni SUM, FIRST ROW e LAST ROW, non è meno efficiente di altre trasformazioni. Per TUTTI, la situazione è più complessa perché è possibile configurare [!DNL CrossRows] per generare una quantità di dati per ogni riga di dati (voce di registro) proporzionale al numero totale di righe (voci di registro) per un dato ID di tracciamento.

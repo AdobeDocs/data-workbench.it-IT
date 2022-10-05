@@ -4,7 +4,7 @@ solution: Analytics
 title: Abilitazione della sperimentazione controllata
 uuid: 27d68fad-ae2d-4a2e-b449-fbaf88286cfa
 exl-id: 53c18524-6050-4708-af63-9e8ef8da389e
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 2%
@@ -12,6 +12,8 @@ ht-degree: 2%
 ---
 
 # Abilitazione della sperimentazione controllata{#enabling-controlled-experimentation}
+
+{{eol}}
 
 Per abilitare la sperimentazione controllata, un utente con accesso amministratore ai server web o applicativi deve modificare il parametro ExpFile nel file di configurazione Sensor (in genere denominato utilizzando txlogd.conf) su ogni server web o applicativo nel cluster web in cui è installato un Sensor.
 

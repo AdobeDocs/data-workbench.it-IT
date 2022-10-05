@@ -1,35 +1,39 @@
 ---
-description: Crittografare le password e altre stringhe durante la comunicazione tra il client e il server.
-title: Cifratura stringa
+description: Crittografa le password e altre stringhe durante la comunicazione tra il client e il server.
+title: Crittografia della stringa
 uuid: b2ec6a10-136c-4694-a425-04dbb41d43d1
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 43696ff1-3153-4d85-b9a9-c2752dd2c29a
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 1%
 
 ---
 
+# Crittografia della stringa{#string-encryption}
 
-# Cifratura stringa{#string-encryption}
+{{eol}}
 
-Crittografare le password e altre stringhe durante la comunicazione tra il client e il server.
+Crittografa le password e altre stringhe durante la comunicazione tra il client e il server.
 
-Durante la comunicazione tra il client Workbench dati (workstation) e il server, è possibile salvare un parametro Value (ad esempio una password) con il tipo di *EncryptedString*. Questo nasconde il parametro e salva la stringa in *Windows Credential Store* sul server con la chiave corrispondente restituita. Questo memorizza principalmente le credenziali utilizzate nelle esportazioni, ma può essere utilizzato per cifrare qualsiasi parametro.
+Quando comunichi tra il client Data Workbench (workstation) e il server, puoi salvare un parametro Value (come una password) con il tipo di *EncryptedString*. Questo nasconde il parametro e salva la stringa nel *Archivio credenziali Windows* sul server con la chiave corrispondente restituita. Memorizza principalmente le credenziali utilizzate nelle esportazioni, ma può essere utilizzato per crittografare qualsiasi parametro.
 
-* Una nuova cartella è stata aggiunta in Server\**EncryptStrings**.
+* È stata aggiunta una nuova cartella al server\**EncryptStrings**
 
-   In questa area è possibile impostare il file di configurazione per la cifratura delle stringhe.
+   In questo punto è possibile impostare il file di configurazione per crittografare le stringhe.
 
-* Un nuovo file di configurazione è stato aggiunto in Server\Component\**EncryptedStrings.cfg**.
+* Nuovo file di configurazione aggiunto in Server\Component\**EncryptedStrings.cfg**
 
    ```
    component = EncryptionComponent:
      Path = Path: EncryptStrings\\*.cfg
    ```
 
-   Questo file controlla la cartella *Server*\*EncryptStrings* per i file di configurazione della crittografia.
+   Questo file esegue il polling del *Server* Cartella \*EncryptStrings* per i file di configurazione della crittografia.
 
 **Per crittografare una stringa**:
 
-1. Creare un file di configurazione **EncryptedStrings.cfg** per una stringa con i campi impostati:
+1. Crea un **EncryptedStrings.cfg** file di configurazione per una stringa con questi campi impostati:
 
    ```
    Names = vector: 1 items
@@ -41,18 +45,19 @@ Durante la comunicazione tra il client Workbench dati (workstation) e il server,
 
    * *Valore* - Questo campo contiene la stringa di testo normale che deve essere crittografata.
 
-      Si tratta solo della cifratura sul lato server. L&#39;impostazione *Valore* è cifrata solo nel computer server.
+      Solo crittografia lato server. La *Valore* è crittografata solo nel computer server.
 
    * *Nome* - Questo campo contiene un valore che identifica la stringa crittografata.
    * *EncryptValue* - Questo campo viene lasciato vuoto nel file di configurazione di input. Il valore crittografato verrà restituito in questo campo.
-   È possibile aggiungere più valori **NameEncryptValuePair** per campi diversi per la cifratura.
+
+   È possibile aggiungere più **NameEncryptValuePair** valori per campi diversi per la crittografia.
 
    >[!NOTE]
    >
    >Tutti i campi Valore vuoti verranno rimossi.
 
-1. Salvate il file **EncryptedStrings.cfg** nella cartella Server\**EncryptStrings**.
+1. Salva il **EncryptedStrings.cfg** sul server\**EncryptStrings** cartella.
 
 **File di output**
 
-Viene generato un file di output con lo stesso nome del file di input con un &lt;*nomefile*>.*estensione crittografata* . Ad esempio, se il file di input è denominato *sample.cfg* , il file di output sarà denominato *sample.cfg.encrypt*.
+Verrà generato un file di output con lo stesso nome del file di input con un &lt;*nomefile*>*cifrato* estensione. Ad esempio, se il file di input è denominato *sample.cfg* quindi il file di output verrà denominato *sample.cfg.encryption*.

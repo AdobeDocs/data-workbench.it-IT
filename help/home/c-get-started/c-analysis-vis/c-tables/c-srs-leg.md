@@ -3,7 +3,7 @@ description: Gli elementi all’interno di una dimensione possono essere codific
 title: Abilitare una legenda di serie
 uuid: 7c9cb699-940b-47f3-ae6f-e9a8023b8501
 exl-id: c8c3f327-13b2-494d-b7d1-8a7a49e301c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # Abilitare una legenda di serie{#enable-a-series-legend}
+
+{{eol}}
 
 Gli elementi all’interno di una dimensione possono essere codificati in base al colore come serie, in modo che ogni elemento possa essere tracciato più facilmente tra le altre visualizzazioni all’interno dell’area di lavoro.
 

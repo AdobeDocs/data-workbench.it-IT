@@ -3,7 +3,7 @@ description: È possibile immettere testo o espressioni in qualsiasi cella di un
 title: Operazioni con i dati nei fogli di lavoro
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 2%
@@ -12,11 +12,13 @@ ht-degree: 2%
 
 # Operazioni con i dati nei fogli di lavoro{#work-with-data-in-worksheets}
 
+{{eol}}
+
 È possibile immettere testo o espressioni in qualsiasi cella di un foglio di lavoro.
 
-Tutte le espressioni in un foglio di lavoro sono precedute da un segno di uguale (=) a meno che non si utilizzi [!DNL eval( )], che tratta il testo nella cella a cui si fa riferimento come espressione.
+Tutte le espressioni in un foglio di lavoro sono precedute da un segno di uguale (=) a meno che non venga utilizzato [!DNL eval( )], che considera il testo nella cella a cui si fa riferimento come espressione.
 
-Per un elenco completo delle regole di sintassi della metrica, della dimensione e del filtro, consulta [Sintassi della lingua della query](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+Per un elenco completo delle regole di sintassi di metrica, dimensione e filtro, consulta [Sintassi della lingua query](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 **Per immettere dati in un foglio di lavoro**
 
@@ -25,7 +27,7 @@ Per un elenco completo delle regole di sintassi della metrica, della dimensione 
 
 **Per copiare e incollare da una cella all’altra**
 
-1. Fare clic con il pulsante destro del mouse sulla cella contenente i dati che si desidera copiare e fare clic su **[!UICONTROL Copy]**.
+1. Fai clic con il pulsante destro del mouse sulla cella contenente i dati da copiare e fai clic su **[!UICONTROL Copy]**.
 1. Fare clic con il pulsante destro del mouse sulla cella in cui si desidera incollare i dati copiati e fare clic su **[!UICONTROL Paste]**.
 
 Data Workbench aggiorna automaticamente i riferimenti nella nuova cella in modo che facciano riferimento alle colonne e alle righe appropriate.
@@ -44,7 +46,7 @@ Data Workbench aggiorna automaticamente i riferimenti nella nuova cella in modo 
 
 **Eliminazione di una colonna**
 
-* Fare clic con il pulsante destro del mouse sulla colonna da eliminare e fare clic su **[!UICONTROL Delete Column]**. La colonna viene rimossa.
+* Fai clic con il pulsante destro del mouse sulla colonna da eliminare e fai clic su **[!UICONTROL Delete Column]**. La colonna viene rimossa.
 
 **Inserimento di una riga**
 
@@ -77,30 +79,30 @@ Data Workbench aggiorna automaticamente i riferimenti nella nuova cella in modo 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Numero </p> </td> 
-   <td colname="col2"> <p>Applica ai dati il formato numerico selezionato, ad esempio ora, data, percentuale o decimale. </p> <p>Fare clic su <span class="uicontrol"> Default</span> per rimuovere la formattazione selezionata. </p> </td> 
+   <td colname="col2"> <p>Applica ai dati il formato numerico selezionato, ad esempio ora, data, percentuale o decimale. </p> <p>Fai clic su <span class="uicontrol"> Predefinito</span> per rimuovere la formattazione selezionata. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Giustifica </p> </td> 
-   <td colname="col2"> <p>Giustifica i dati all’interno della cella a sinistra, al centro o a destra. La giustificazione predefinita viene lasciata. </p> <p>Fare clic su <span class="uicontrol"> Default</span> per rimuovere la formattazione selezionata. </p> </td> 
+   <td colname="col2"> <p>Giustifica i dati all’interno della cella a sinistra, al centro o a destra. La giustificazione predefinita viene lasciata. </p> <p>Fai clic su <span class="uicontrol"> Predefinito</span> per rimuovere la formattazione selezionata. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Colore </p> </td> 
-   <td colname="col2"> <p>Applica il colore del font selezionato ai dati all’interno della cella. Il colore predefinito del font è il bianco. </p> <p>Fare clic su <span class="uicontrol"> Default</span> per rimuovere la formattazione selezionata. </p> </td> 
+   <td colname="col2"> <p>Applica il colore del font selezionato ai dati all’interno della cella. Il colore predefinito del font è il bianco. </p> <p>Fai clic su <span class="uicontrol"> Predefinito</span> per rimuovere la formattazione selezionata. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Indicatore </p> </td> 
-   <td colname="col2"> <p>Crea un indicatore di metrica utilizzando questa cella. Per ulteriori informazioni, consulta <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Creazione di indicatori di metrica</a>. </p> <p>Fare clic su <span class="uicontrol"> Default</span> per rimuovere la formattazione selezionata. </p> </td> 
+   <td colname="col2"> <p>Crea un indicatore di metrica utilizzando questa cella. Per ulteriori informazioni, consulta <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Creazione di indicatori di metrica</a>. </p> <p>Fai clic su <span class="uicontrol"> Predefinito</span> per rimuovere la formattazione selezionata. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Cella di ingresso </p> </td> 
-   <td colname="col2"> <p>Rende la cella selezionata una cella di input. Per ulteriori informazioni, vedere <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Creazione di celle di input</a>. </p> <p>Fare clic su <span class="uicontrol"> Default</span> per rimuovere la formattazione selezionata. </p> </td> 
+   <td colname="col2"> <p>Rende la cella selezionata una cella di input. Per ulteriori informazioni, consulta <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Creazione di celle di input</a>. </p> <p>Fai clic su <span class="uicontrol"> Predefinito</span> per rimuovere la formattazione selezionata. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Scelte rapide da tastiera {#section-05301f4d2c60418e86902635a7aeee20}
 
-Nei fogli di lavoro è possibile utilizzare molte delle scelte rapide da tastiera di base per la modifica che è possibile utilizzare in qualsiasi editor di testo, ad esempio Blocco note o Microsoft Word.
+Nei fogli di lavoro è possibile utilizzare molte delle scelte rapide da tastiera di base per la modifica che è possibile utilizzare in qualsiasi editor di testo, come Blocco note o Microsoft Word.
 
 Nella tabella seguente sono elencate le scelte rapide da tastiera di base che è possibile utilizzare quando si immettono dati in un foglio di lavoro.
 
@@ -129,7 +131,7 @@ Nella tabella seguente sono elencate le scelte rapide da tastiera di base che è
    <td colname="col2"> <p>Annulla la modifica della cella selezionata. Il cursore viene rimosso dalla cella e il contenuto della cella viene ripristinato a quello esistente prima di iniziare la modifica. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Elimina </p> </td> 
+   <td colname="col1"> <p>Delete (Elimina) </p> </td> 
    <td colname="col2"> <p>Elimina il contenuto delle celle. </p> </td> 
   </tr> 
   <tr> 

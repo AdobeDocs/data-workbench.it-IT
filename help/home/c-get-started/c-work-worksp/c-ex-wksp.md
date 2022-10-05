@@ -3,7 +3,7 @@ description: È possibile esportare un'area di lavoro come file di immagine .png
 title: Esportare un’area di lavoro
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
 exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -12,19 +12,21 @@ ht-degree: 1%
 
 # Esportare un’area di lavoro{#export-a-workspace}
 
+{{eol}}
+
 È possibile esportare un&#39;area di lavoro come file di immagine .png o esportare i dati da determinate finestre in un file Excel (.xls o .xlsx).
 
 ## Esportare le aree di lavoro come file PNG {#section-f9fbe0f0a1c341e2b063cce106cac35e}
 
-È possibile salvare un&#39;istantanea di un&#39;area di lavoro in formato grafico a rete portatile (`.png` file). Quando si salvano le aree di lavoro come file `.png` sono disponibili le seguenti opzioni di colore:
+È possibile salvare un&#39;istantanea di un&#39;area di lavoro in formato grafico a rete portatile (`.png` file). Quando si salvano le aree di lavoro come `.png` file:
 
-* **Lo** sfondo nero copia l’area di lavoro come visualizzata.
-* **Lo** sfondo bianco copia gli elementi dell’area di lavoro a colori e li visualizza su uno sfondo bianco.
-* **Lo sfondo bianco (bianco e nero)** copia gli elementi dell’area di lavoro in scala di grigi e li visualizza su uno sfondo bianco.
+* **Sfondo nero** copia l’area di lavoro come visualizzata.
+* **Sfondo bianco** copia gli elementi dell’area di lavoro a colori e li visualizza su uno sfondo bianco.
+* **Sfondo bianco (bianco e nero)** copia gli elementi dell’area di lavoro in scala di grigi e li visualizza su uno sfondo bianco.
 
 **Per esportare un’area di lavoro come file .png**
 
-Nel menu della barra del titolo di un’area di lavoro, fai clic su **[!UICONTROL Export]** > **[!UICONTROL Export PNG]** > *&lt;**[!UICONTROL color option]***.
+Nel menu della barra del titolo di un’area di lavoro, fai clic su **[!UICONTROL Export]** > **[!UICONTROL Export PNG]** > *&lt;**[!UICONTROL color option]**>*.
 
 Viene visualizzata la finestra di dialogo [!UICONTROL Save Image As].
 
@@ -50,22 +52,22 @@ Se questi requisiti sono soddisfatti, Data Workbench avvia automaticamente Micro
 
 ## Applica titoli personalizzati {#section-a332e157554546cb8e88922a8d7a4fa2}
 
-A meno che non sia stato specificato un titolo personalizzato per la finestra nel menu [!UICONTROL Export], il nome del foglio di lavoro viene utilizzato come [!UICONTROL Export title] elencato (ad esempio, Tabella città).
+A meno che non sia stato specificato un titolo personalizzato per la finestra nella [!UICONTROL Export] il menu [!UICONTROL Export title] (ad esempio, Tabella città) viene utilizzato come nome del foglio di lavoro.
 
-1. Fai clic con il pulsante destro del mouse sul bordo superiore della finestra e fai clic sul campo **[!UICONTROL Custom title]** .
+1. Fai clic con il pulsante destro del mouse sul bordo superiore della finestra e fai clic su nella **[!UICONTROL Custom title]** campo .
 1. Digitare il titolo da applicare alla finestra.
 
    ![](assets/mnu_window_TitleBar_Export.png)
 
 >[!NOTE]
 >
->Se immetti un trattino (-) nel campo [!UICONTROL Custom title] , questa visualizzazione non viene esportata con l’area di lavoro.
+>Se si immette un trattino (-) nel [!UICONTROL Custom title] Questa visualizzazione non viene esportata con l’area di lavoro.
 
-Quando si esporta l&#39;area di lavoro in Excel, il foglio di lavoro contenente i dati per questa finestra viene denominato utilizzando il titolo specificato al posto del titolo nel campo [!UICONTROL Export title].
+Quando si esporta l&#39;area di lavoro in Excel, il foglio di lavoro contenente i dati per questa finestra viene denominato utilizzando il titolo specificato al posto del titolo nel [!UICONTROL Export title] campo .
 
 ## Esportare un’area di lavoro o una barra laterale in Excel {#section-360438b66d5f4734826ab463b4a01a75}
 
-**Per esportare i dati dell’area di lavoro in un nuovo  [!DNL .xls] file o in un nuovo  [!DNL .xlsx] file**
+**Per esportare i dati di un’area di lavoro in una nuova [!DNL .xls] o [!DNL .xlsx] file**
 
 1. Nella barra del titolo dell’area di lavoro, fai clic su **[!UICONTROL Export]** > **[!UICONTROL Export]**.
 1. Specifica se esportare l’area di lavoro, la barra laterale o entrambi.
@@ -76,7 +78,7 @@ Puoi esportare i dati nell&#39;area di lavoro in un file Excel modello (`.xls` o
 
 >[!NOTE]
 >
->Questo file modello deve essere un file `.xls` o `.xlsx`, non un file `.xlt`.
+>Questo file modello deve essere un `.xls` o `.xlsx` file, non un `.xlt` file.
 
 Quando i dati vengono esportati, i fogli a schede esistenti nel modello (ciascuno dei quali rappresenta una visualizzazione) vengono ricompilati con i dati più recenti dell’area di lavoro, mentre le nuove finestre che non sono presenti nel modello come schede vengono ignorate. Tutti gli altri fogli a schede nel file modello rimangono invariati.
 
@@ -84,23 +86,23 @@ Inoltre, se nel file Excel del modello è definita una macro che si desidera ese
 
 Supponiamo che desideri utilizzare i dati della campagna esportati da una visualizzazione di tabella in un grafico a torta su un altro foglio a schede in un file Excel e desideri aggiornare tali informazioni ogni settimana. È possibile utilizzare un modello in modo da non dover ricreare i riferimenti dal foglio a schede della tabella al foglio a schede del grafico a torta ogni volta che si desidera aggiornare i dati. I dati della tabella vengono aggiornati al momento dell’esportazione, aggiornando automaticamente il grafico a torta.
 
-**Per esportare i dati dell’area di lavoro in un modello  [!DNL .xls] o in un  [!DNL .xlsx] file**
+**Per esportare i dati dell’area di lavoro in un modello [!DNL .xls] o [!DNL .xlsx] file**
 
 1. Fai clic con il pulsante destro del mouse sulla barra del titolo dell’area di lavoro e fai clic su **[!UICONTROL Export]** > **[!UICONTROL Export to Excel from Template]**.
 1. Specifica se esportare un’area di lavoro, una barra laterale o entrambi.
 
-   Viene visualizzata la finestra di dialogo [!UICONTROL Select a template worksheet].
+   La [!UICONTROL Select a template worksheet] viene visualizzata la finestra di dialogo.
 
 1. Completa uno dei seguenti passaggi, a seconda dei casi:
 
-   * Se utilizzi un file modello `.xls`:
+   * Se utilizzi un `.xls` file modello:
 
-      1. Individua e seleziona il file modello `.xls` .
+      1. Sfoglia e seleziona il modello `.xls` file.
       1. Fai clic su **[!UICONTROL Open]**.
-   * Se utilizzi un file modello `.xlsx`:
+   * Se utilizzi un `.xlsx` file modello:
 
-      1. Individua il percorso del file modello. Il nome del file `.xlsx` non viene visualizzato.
-      1. Nel campo [!UICONTROL File name], digita `.xlsx` e fai clic su **[!UICONTROL Open]**. Tutti i nomi dei file `.xlsx` vengono visualizzati nell’elenco dei file.
+      1. Individua il percorso del file modello. La `.xlsx` nome file non visualizzato.
+      1. In [!UICONTROL File name] campo, tipo `.xlsx` e fai clic su **[!UICONTROL Open]**. Tutto `.xlsx` i nomi dei file vengono visualizzati nell’elenco dei file.
 
-      1. Selezionare il file modello `.xlsx`.
+      1. Selezionare il modello `.xlsx` file.
       1. Fai clic su **[!UICONTROL Open]**.

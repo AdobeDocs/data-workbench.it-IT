@@ -3,7 +3,7 @@ description: Nel server di Data Workbench sono disponibili diversi tipi di dimen
 title: Tipi di dimensioni
 uuid: 07659373-8d9b-473d-8daa-ca8e7ac4afe8
 exl-id: cbc25504-2c1c-4622-adc1-c9bbac8e12fb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Tipi di dimensioni{#dimension-types}
+
+{{eol}}
 
 Nel server di Data Workbench sono disponibili diversi tipi di dimensioni. È quindi importante conoscere il tipo di dimensione quando si utilizza una dimensione per creare metriche, filtri o dimensioni derivate.
 
@@ -34,7 +36,7 @@ Insight Server può creare e gestire i seguenti tipi di dimensioni:
   </tr> 
   <tr> 
    <td colname="col1"> Numeriche </td> 
-   <td colname="col2">Una dimensione con valori numerici ordinati e una relazione uno-a-molti con una dimensione conteggiata superiore. Una dimensione numerica può essere considerata come rappresentativa di una proprietà numerica di elementi della dimensione padre. Le dimensioni numeriche vengono spesso utilizzate per definire le metriche “sum” (somma). <p>Esempio: La dimensione numerica Entrate sessione definisce i ricavi, in dollari, per ogni sessione. Ogni sessione dispone di una singola quantità di ricavi, ma qualsiasi numero di sessioni potrebbe avere gli stessi ricavi, quindi i ricavi della sessione sono "uno-a-molti" con la sessione. Una metrica "Ricavi" può essere definita come <span class="filepath"> sum(Session_Revenue, Session)</span>, indicando la quantità totale di ricavi per le sessioni selezionate. </p></td> 
+   <td colname="col2">Una dimensione con valori numerici ordinati e una relazione uno-a-molti con una dimensione conteggiata superiore. Una dimensione numerica può essere considerata come rappresentativa di una proprietà numerica di elementi della dimensione padre. Le dimensioni numeriche vengono spesso utilizzate per definire le metriche “sum” (somma). <p>Esempio: La dimensione numerica Entrate sessione definisce i ricavi, in dollari, per ogni sessione. Ogni sessione dispone di una singola quantità di ricavi, ma qualsiasi numero di sessioni potrebbe avere gli stessi ricavi, quindi i ricavi della sessione sono "uno-a-molti" con la sessione. Una metrica "Entrate" potrebbe essere definita come <span class="filepath"> sum(Session_Revenue, Session)</span>, con l’importo totale dei ricavi per le sessioni selezionate. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Many-to-Many (Da molti-a-molti) </td> 

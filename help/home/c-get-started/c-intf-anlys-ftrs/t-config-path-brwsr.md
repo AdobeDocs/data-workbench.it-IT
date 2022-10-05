@@ -3,7 +3,7 @@ description: I browser del percorso possono essere configurati in modo da funzio
 title: Configurare un browser del percorso
 uuid: 1ba3fb6e-b76f-428f-b6ec-077669c3b305
 exl-id: be6a68f7-e3e3-4207-a112-3a4fdd5c5f57
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 1%
@@ -12,16 +12,18 @@ ht-degree: 1%
 
 # Configurare un browser del percorso{#configure-a-path-browser}
 
+{{eol}}
+
 I browser del percorso possono essere configurati in modo da funzionare con qualsiasi combinazione di dimensione di base, dimensione di gruppo, dimensione di livello e metrica significativa per l’applicazione e il set di dati.
 
-Dopo aver configurato un browser del percorso, questo viene elencato con altri browser del percorso nel menu [!DNL Add Visualization] .
+Dopo aver configurato un browser del percorso, questo viene elencato con altri browser del percorso in [!DNL Add Visualization] menu.
 
-1. In [!DNL Profile Manager], fai clic su **[!UICONTROL Menu]**, quindi su **[!UICONTROL Add Visualization]** e **[!UICONTROL Path Browser]**.
+1. In [!DNL Profile Manager], fai clic su **[!UICONTROL Menu]**, quindi fai clic su **[!UICONTROL Add Visualization]** e **[!UICONTROL Path Browser]**.
 
-   Almeno un file [!DNL *.vw] risiede nella directory del browser del percorso.
+   Almeno uno [!DNL *.vw] Il file si trova nella directory del browser del percorso.
 
 1. Fai clic con il pulsante destro del mouse sul segno di spunta per il file desiderato e fai clic su **[!UICONTROL Make Local]**.
-1. Fai clic con il pulsante destro del mouse sul segno di spunta del file nella colonna [!DNL User] e fai clic su **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Fai clic con il pulsante destro del mouse sul segno di spunta per il file nel [!DNL User] e fai clic su **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Modifica i parametri del file utilizzando il file di esempio e la tabella seguenti come guide:
 
    ```
@@ -67,14 +69,14 @@ Dopo aver configurato un browser del percorso, questo viene elencato con altri b
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla dimensione di base, la dimensione di gruppo, la dimensione di livello e la metrica per un browser percorsi, consulta [Browser percorsi](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b).
+>Per ulteriori informazioni sulla dimensione di base, la dimensione di gruppo, la dimensione di livello e la metrica per un browser percorsi, vedi [Browser del percorso](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b).
 
-1. Nel Blocco note, fai clic su **[!UICONTROL File]** > **[!UICONTROL Save As]** per salvare il file con un nuovo nome basato sulla dimensione del gruppo, ovvero *Nome della dimensione del gruppo*.vw.
+1. In Blocco note, fai clic su **[!UICONTROL File]** > **[!UICONTROL Save As]** per salvare il file con un nuovo nome basato sulla dimensione del gruppo, ovvero: *Nome dimensione gruppo* vw.
 
    Assicurati di salvare il file nella directory del browser del percorso.
 
    >[!NOTE]
    >
-   >Per assicurarti che il browser percorsi sia salvato come file [!DNL *.vw], nella finestra [!DNL Save As] imposta il tipo Salva come su Tutti i file.
+   >Per assicurarti che il browser percorsi sia salvato come [!DNL *.vw] nel [!DNL Save As] impostare il tipo Salva con nome su Tutti i file.
 
-1. (Facoltativo) Per rendere le modifiche disponibili a tutti gli utenti del profilo di lavoro, nella sezione [!DNL Profile Manager] fai clic con il pulsante destro del mouse sul segno di spunta del file nella colonna [!DNL User] e fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. (Facoltativo) Per rendere le modifiche disponibili a tutti gli utenti del profilo di lavoro, nella [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta per il file nel [!DNL User] e fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

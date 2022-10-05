@@ -3,7 +3,7 @@ description: Se lavori con dati web, puoi utilizzare la trasformazione ExtractVa
 title: ExtractValue
 uuid: 305827a2-04e6-421f-82cb-923d62b02e70
 exl-id: 5bafe64f-081a-49ec-997e-68e8f6915a71
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # ExtractValue{#extractvalue}
+
+{{eol}}
 
 Se lavori con dati web, puoi utilizzare la trasformazione ExtractValue per estrarre un valore da una stringa di query, un cookie o un campo codificato in modo simile nei dati del tuo sito web.
 
@@ -21,7 +23,7 @@ In ogni voce di registro, i nomi corrispondenti al valore da estrarre possono es
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -42,7 +44,7 @@ In ogni voce di registro, i nomi corrispondenti al valore da estrarre possono es
   </tr> 
   <tr> 
    <td colname="col1"> Nome ingresso </td> 
-   <td colname="col2"> <p>Nome o nomi dei campi da estrarre dalla query di input. </p> <p> <p>Nota:  Se il Nome input è un vettore (ovvero sono presenti più nomi), viene estratto un solo valore. </p> </p> </td> 
+   <td colname="col2"> <p>Nome o nomi dei campi da estrarre dalla query di input. </p> <p> <p>Nota: Se il Nome input è un vettore (ovvero sono presenti più nomi), viene estratto un solo valore. </p> </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -58,8 +60,8 @@ In ogni voce di registro, i nomi corrispondenti al valore da estrarre possono es
  </tbody> 
 </table>
 
-Se si desidera estrarre una frase di ricerca, è possibile estrarre l&#39;intera frase e, se lo si desidera, suddividerla in termini di ricerca utilizzando una trasformazione [!DNL Tokenize]. Per informazioni sulla trasformazione [!DNL Tokenize], consulta [Token](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c).
+Se si desidera estrarre una frase di ricerca, è possibile estrarre l&#39;intera frase e, se lo si desidera, suddividerla in termini di ricerca utilizzando un [!DNL Tokenize] trasformazione. Per informazioni sulla [!DNL Tokenize] trasformazione, vedi [Token](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c).
 
-Questo esempio configura una trasformazione [!DNL ExtractValue] per estrarre i valori del campo x-v-search-querynames da cs(referrer-query) e memorizzarli nel campo x-search-phrase.
+Questo esempio configura un [!DNL ExtractValue] trasformazione per estrarre i valori del campo x-v-search-querynames da cs(referrer-query) e memorizzarli nel campo x-search-phrase.
 
 ![](assets/cfg_TransformationType_ExtractValue.png)

@@ -3,7 +3,7 @@ description: Vengono definiti i calcoli statistici per il Punteggio tendenza.
 title: Calcolo del punteggio tendenza
 uuid: 67270864-0468-4cc9-b48b-0e880f813555
 exl-id: 679e1363-fd10-4a44-a85a-ef0daefaf303
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # Calcolo del punteggio tendenza{#calculating-propensity-scoring}
 
+{{eol}}
+
 Vengono definiti i calcoli statistici per il Punteggio tendenza.
 
 Concettualmente, il punteggio calcolato per ogni visitatore è una probabilità stimata che l&#39;evento specificato (definito dal filtro target) possa verificarsi, con conseguente intervallo di valori del punteggio da 0 a 100%. La procedura di valutazione utilizza campioni esistenti come dati di formazione per trovare la relazione tra la probabilità dell’evento e le variabili indipendenti selezionate di interesse.
 
-Dal punto di vista matematico, tali relazioni si riflettono in ciascun valore quantitativo associato a ciascuna variabile indipendente. Questi valori sono chiamati coefficienti del modello. ScoreDim utilizza attualmente l&#39;algoritmo IRLS (Iterically Reweighted Least Squares) per stimare i coefficienti del modello. L&#39;IRLS passa attraverso i campioni più volte fino a quando la differenza dei coefficienti tra la passata di corrente e la passata precedente non è inferiore a 1,0e-6, in cui si chiama **converged**. Tuttavia, a seconda dei dati, gli IRLS potrebbero non essere in grado di raggiungere la convergenza.
+Dal punto di vista matematico, tali relazioni si riflettono in ciascun valore quantitativo associato a ciascuna variabile indipendente. Questi valori sono chiamati coefficienti del modello. ScoreDim utilizza attualmente l&#39;algoritmo IRLS (Iterically Reweighted Least Squares) per stimare i coefficienti del modello. L&#39;IRLS passa attraverso i campioni più volte fino a quando la differenza dei coefficienti tra la corrente passata e la passata precedente è inferiore a 1,0e-6, a cui si chiama **convergente**. Tuttavia, a seconda dei dati, gli IRLS potrebbero non essere in grado di raggiungere la convergenza.
 
 In tal caso, l&#39;iterazione di formazione del modello terminerà quando
 

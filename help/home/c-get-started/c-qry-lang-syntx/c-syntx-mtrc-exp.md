@@ -3,7 +3,7 @@ description: Le metriche possono essere modificate utilizzando l’Editor metric
 title: Sintassi delle espressioni metriche
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%
@@ -12,14 +12,16 @@ ht-degree: 1%
 
 # Sintassi delle espressioni metriche{#syntax-for-metric-expressions}
 
+{{eol}}
+
 Le metriche possono essere modificate utilizzando l’Editor metriche e salvate nella directory Metriche di un profilo.
 
-Per ulteriori informazioni, consulta [Creazione e modifica di metriche derivate](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Le espressioni metriche possono essere utilizzate anche nei fogli di lavoro. Per ulteriori informazioni, vedere [Fogli di lavoro](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). La sintassi seguente viene utilizzata per definire le espressioni metriche.
+Per ulteriori informazioni, consulta [Creazione e modifica di metriche derivate](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Le espressioni metriche possono essere utilizzate anche nei fogli di lavoro. Per ulteriori informazioni, consulta [Fogli di lavoro](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). La sintassi seguente viene utilizzata per definire le espressioni metriche.
 
 Note:
 
 1. Le parole sottolineate devono essere inserite letteralmente nel testo dell’espressione.
-1. Il modulo `{TEXT}?` rappresenta un testo facoltativo.
+1. Il modulo `{TEXT}?` rappresenta il testo facoltativo.
 1. Il modulo `{TEXT}*` rappresenta il testo che può verificarsi zero o più volte.
 1. Il modulo `{A | B | C |...}` rappresenta il testo costituito esattamente da una delle opzioni specificate, ad esempio A o B o C....
 1. Il modulo `[A,B)` rappresenta un intervallo di numeri, da A a B escluso.
@@ -28,7 +30,7 @@ Note:
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Identificatore </p> </td> 
-   <td colname="col2"> <p>Un identificatore fa riferimento a una metrica denominata. Per le regole che disciplinano gli identificatori legali, consulta <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Sintassi per gli identificatori </a>. </p> <p>Esempio: Entrate = Total_Price </p> </td> 
+   <td colname="col2"> <p>Un identificatore fa riferimento a una metrica denominata. Per le norme che disciplinano gli identificatori legali, vedi <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Sintassi per gli identificatori </a>. </p> <p>Esempio: Entrate = Total_Price </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Metrica) </p> </td> 
@@ -56,7 +58,7 @@ Note:
   </tr> 
   <tr> 
    <td colname="col1"> <p>affidabilità (metrica) </p> </td> 
-   <td colname="col2"> <p>Una stima della deviazione standard della metrica. Questo viene calcolato utilizzando una tecnica di campionamento nota come jackknifing. </p> <p>Questa metrica richiede un uso intensivo della memoria e non deve essere utilizzata in tabelle di grandi dimensioni. </p> <p>Per utilizzare questa sintassi, devi disporre di una dimensione del coltello a giacca (nome "coltello a giacca") con le proprietà appropriate. Per ulteriori informazioni, contattare Adobe Consulting Services. </p> <p>Esempio: trust(Average_Score) </p> <p> <p>Nota:  I tipi di metriche di affidabilità, tra cui affidabilità(metrica) e affidabilità(metrica,jacknife), sono particolarmente utili quando si utilizza la funzionalità di sperimentazione controllata di Adobe. Se una metrica salta dal 12% al 16% durante un esperimento controllato, puoi utilizzare un callout di affidabilità per calcolare le probabilità che il salto sia dovuto a una variazione casuale. Questo può aiutarti ad evitare di trarre conclusioni sbagliate da prove limitate e, al contrario, a garantire che un cambiamento discutibile sia effettivamente reale. </p> </p> </td> 
+   <td colname="col2"> <p>Una stima della deviazione standard della metrica. Questo viene calcolato utilizzando una tecnica di campionamento nota come jackknifing. </p> <p>Questa metrica richiede un uso intensivo della memoria e non deve essere utilizzata in tabelle di grandi dimensioni. </p> <p>Per utilizzare questa sintassi, devi disporre di una dimensione del coltello a giacca (nome "coltello a giacca") con le proprietà appropriate. Per ulteriori informazioni, contattare Adobe Consulting Services. </p> <p>Esempio: trust(Average_Score) </p> <p> <p>Nota: I tipi di metriche di affidabilità, tra cui affidabilità(metrica) e affidabilità(metrica,jacknife), sono particolarmente utili quando si utilizza la funzionalità di sperimentazione controllata di Adobe. Se una metrica salta dal 12% al 16% durante un esperimento controllato, puoi utilizzare un callout di affidabilità per calcolare le probabilità che il salto sia dovuto a una variazione casuale. Questo può aiutarti ad evitare di trarre conclusioni sbagliate da prove limitate e, al contrario, a garantire che un cambiamento discutibile sia effettivamente reale. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>affidabilità(metrica, coltello a giacca) </p> </td> 

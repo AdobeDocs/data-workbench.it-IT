@@ -3,7 +3,7 @@ description: Una mappa del processo 2D può visualizzare le quantità metriche c
 title: Visualizzare una quantità di metrica
 uuid: ec336af1-ff5b-4c0a-86a5-8186d76cdf07
 exl-id: fbe40dfa-0597-4d78-8673-4e9b63581c47
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Visualizzare una quantità di metrica{#display-a-metric-quantity}
+
+{{eol}}
 
 Una mappa del processo 2D può visualizzare le quantità metriche che rappresentano la quantità di attività da o verso un nodo sulla mappa.
 
@@ -27,7 +29,7 @@ La sequenza effettiva di attività potrebbe aver incluso nodi che non sono stati
 **Per scegliere la modalità di visualizzazione della quantità**
 
 1. Fai clic con il pulsante destro del mouse su un nodo e fai clic su **[!UICONTROL Options]** > **[!UICONTROL Quantify Links]**.
-1. Fare clic su **[!UICONTROL Percentage]**, **[!UICONTROL Absolute Value]** o **[!UICONTROL Off]**.
+1. Fai clic su **[!UICONTROL Percentage]**, **[!UICONTROL Absolute Value]** oppure **[!UICONTROL Off]**.
 
    ![](assets/mnu_2DProcessMap_quantifyLinks.png)
 

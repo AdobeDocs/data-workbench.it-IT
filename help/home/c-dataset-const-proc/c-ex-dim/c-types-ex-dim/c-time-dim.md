@@ -3,7 +3,7 @@ description: Una dimensione temporale consente di creare un set di dimensioni di
 title: Dimensioni temporali
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
 exl-id: f9534b24-3a16-4220-bac2-bc541e121005
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Dimensioni temporali{#time-dimensions}
+
+{{eol}}
 
 Una dimensione temporale consente di creare un set di dimensioni di ora locale periodiche o assolute (come Giorno, Giorno della settimana, Ora del giorno, Ora prenotazione e così via) in base a qualsiasi campo di marca temporale specificato per il parametro Ora di input (1970 epoch).
 
@@ -23,7 +25,7 @@ Le dimensioni temporali sono definite dai seguenti parametri:
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -57,7 +59,7 @@ Le dimensioni temporali sono definite dai seguenti parametri:
   </tr> 
   <tr> 
    <td colname="col1"> Tempo di ingresso (1970 epoch) </td> 
-   <td colname="col2"> <p>Nome del campo timestamp da utilizzare come input. </p> <p> <p>Nota:  I valori del campo devono rappresentare il numero di secondi dal 1° gennaio 1970 alle 00:00:01. Se il tempo di input non è un tempo valido (dal 1970 al 2037), il processo di trasformazione avrà esito negativo e il server di Data Workbench genererà un errore. </p> </p> </td> 
+   <td colname="col2"> <p>Nome del campo timestamp da utilizzare come input. </p> <p> <p>Nota: I valori del campo devono rappresentare il numero di secondi dal 1° gennaio 1970 a 00:00:01 Se il tempo di input non è un tempo valido (dal 1970 al 2037), il processo di trasformazione avrà esito negativo e il server di Data Workbench genererà un errore. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

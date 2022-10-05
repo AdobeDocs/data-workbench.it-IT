@@ -3,7 +3,7 @@ description: Dopo aver installato Data Workbench ed essere connesso al server, p
 title: Apertura di Data Workbench
 uuid: d1da143d-6302-4467-a989-842b54b87c2e
 exl-id: 898c9dc7-969c-4e62-be6b-1d2e0086b1d6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 4%
@@ -12,10 +12,12 @@ ht-degree: 4%
 
 # Apertura di Data Workbench{#opening-data-workbench}
 
+{{eol}}
+
 Dopo aver installato Data Workbench ed essere connesso al server, puoi utilizzarlo per analizzare i dati elaborati.
 
 1. Passa alla directory di installazione di Data Workbench.
-1. Fare doppio clic su [!DNL insight.exe] per avviare l&#39;applicazione.
+1. Fare doppio clic [!DNL insight.exe] per avviare l&#39;applicazione.
 1. Fai clic su **[!UICONTROL Login]**.
 
    ![](assets/dwb_login.png)
@@ -24,17 +26,17 @@ Dopo aver installato Data Workbench ed essere connesso al server, puoi utilizzar
 
    ![](assets/dwb_signin.png)
 
-   Al primo avvio, il sistema visualizza la pagina [!DNL Start] e inizia a scaricare i dati del profilo e la cache dei dati.
+   Al primo avvio, il sistema visualizza la [!DNL Start] e inizia a scaricare i dati del profilo e la cache dei dati.
 
 1. Una volta che la cache dei dati inizia a riempirsi, fai clic su **[!UICONTROL Start]**.
 
-   Il sistema visualizza il simbolo [!DNL Worktop].
+   Il sistema visualizza la [!DNL Worktop].
 
    ![](assets/wtp_open.png)
 
-   Al successivo avvio di Data Workbench, il sistema salta la pagina [!DNL Start] e visualizza la pagina [!DNL Worktop], a meno che non sia stato aggiunto un nuovo profilo al server.
+   La prossima volta che si avvia la Data Workbench, il sistema salta il [!DNL Start] visualizza la pagina [!DNL Worktop], a meno che non sia stato aggiunto un nuovo profilo al server.
 
-   Gli aggiornamenti del profilo e dei relativi dati vengono scaricati solo se si lavora online e si dispone di una connessione di rete al server Data Workbench. Per ulteriori informazioni sull&#39;utilizzo online, vedere [Modalità offline e online](../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
+   Gli aggiornamenti del profilo e dei relativi dati vengono scaricati solo se si lavora online e si dispone di una connessione di rete al server Data Workbench. Per ulteriori informazioni sull&#39;utilizzo online, consulta [Utilizzo offline e online](../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
 
    >[!NOTE]
    >

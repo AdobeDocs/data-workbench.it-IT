@@ -3,7 +3,7 @@ description: Acquisizione di attività tra collegamenti a siti web di terze part
 title: Tracciamento delle uscite sui collegamenti esterni
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
 exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 6%
@@ -11,6 +11,8 @@ ht-degree: 6%
 ---
 
 # Tracciamento delle uscite sui collegamenti esterni{#tracking-exits-to-external-links}
+
+{{eol}}
 
 Acquisizione di attività tra collegamenti a siti web di terze parti per abilitare l’analisi di Esci da Target.
 
@@ -20,7 +22,7 @@ Le pagine web possono contenere collegamenti a siti web di terze parti e l&#39;a
 <A HREF=”https://www.myserver.com/PageExit.htm?v_eurl=https://www.othersite.com”>
 ```
 
-Il file [!DNL PageExit.htm] a cui si fa riferimento deve essere creato e strutturato in modo da contenere il seguente script:
+Il riferimento [!DNL PageExit.htm] il file deve essere creato e strutturato in modo da contenere lo script seguente:
 
 ```
 <html>
@@ -51,7 +53,7 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-Facendo la richiesta per il file [!DNL PageExit.htm], il valore v_eurl viene raccolto a scopo di analisi. Inoltre, quando viene caricato [!DNL PageExit.htm], reindirizza immediatamente alla posizione di destinazione v_eurl specificata.
+Con la richiesta di [!DNL PageExit.htm] file, il valore v_eurl viene raccolto a scopo di analisi. Inoltre, quando [!DNL PageExit.htm] viene caricato, reindirizza immediatamente alla posizione di destinazione v_eurl specificata.
 
 | Dati raccolti | Spiegazione | Esempio |
 |---|---|---|

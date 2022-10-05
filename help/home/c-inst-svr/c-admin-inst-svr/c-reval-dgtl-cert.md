@@ -3,7 +3,7 @@ description: Dopo l’installazione, il certificato digitale rilasciato da Adobe
 title: Nuova convalida del certificato digitale
 uuid: 8cc6ec17-c565-4276-809a-a7c4fc9919f7
 exl-id: a5a24da2-d28f-402c-82db-f1046c525244
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 13%
@@ -12,9 +12,11 @@ ht-degree: 13%
 
 # Nuova convalida del certificato digitale{#re-validating-the-digital-certificate}
 
+{{eol}}
+
 Dopo l’installazione, il certificato digitale rilasciato da Adobe funge da chiave che consente di eseguire il prodotto Adobe.
 
-**Frequenza consigliata:** in base alle esigenze
+**Frequenza consigliata:** Se necessario
 
 Per funzionare correttamente, un certificato digitale deve essere corrente.
 

@@ -1,36 +1,40 @@
 ---
-description: Il Livello presentazione consente di contrassegnare e annotare le visualizzazioni dell’area di lavoro, quindi pubblicarle con le chiamate e i commenti. Aggiungete descrizioni di testo, oggetti grafici, frecce di callout, codifica dei colori, immagini e altre funzioni di una sovrapposizione per aggiungere annotazioni e chiarire punti dati importanti, quindi condividerli con gli interessati.
+description: Livello presentazione consente di contrassegnare e annotare le visualizzazioni dell’area di lavoro e quindi pubblicarle con le chiamate e i commenti. Aggiungi descrizioni di testo, oggetti grafici, frecce di callout, codifica dei colori, immagini e altre funzioni in una sovrapposizione per aggiungere annotazioni e chiarire punti di dati importanti e condividerli con le parti interessate.
 title: Annotazione delle visualizzazioni
 uuid: f296b04e-4c02-4ee3-93cb-dd1163b855de
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 6adb7971-ef09-4e90-873b-586ae1d55f96
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 0%
 
 ---
 
-
 # Annotazione delle visualizzazioni{#annotating-visualizations}
 
-Il Livello presentazione consente di contrassegnare e annotare le visualizzazioni dell’area di lavoro, quindi pubblicarle con le chiamate e i commenti. Aggiungete descrizioni di testo, oggetti grafici, frecce di callout, codifica dei colori, immagini e altre funzioni di una sovrapposizione per aggiungere annotazioni e chiarire punti dati importanti, quindi condividerli con gli interessati.
+{{eol}}
+
+Livello presentazione consente di contrassegnare e annotare le visualizzazioni dell’area di lavoro e quindi pubblicarle con le chiamate e i commenti. Aggiungi descrizioni di testo, oggetti grafici, frecce di callout, codifica dei colori, immagini e altre funzioni in una sovrapposizione per aggiungere annotazioni e chiarire punti di dati importanti e condividerli con le parti interessate.
 
 **Aggiungi annotazioni alle visualizzazioni:**
 
-1. Aprite un’area di lavoro.
-1. Vai a **File** > Livello **** presentazione.
-1. Fate clic su **Consenti livello** presentazione.
+1. Apri un’area di lavoro.
+1. Vai a **File** > **Livello presentazione**.
+1. Fai clic su **Consenti livello presentazione**.
 
-   Attivate o disattivate il comando in questo menu per consentire o disattivare la generazione di un livello di presentazione. Quando il livello della presentazione è consentito, viene visualizzato un segno di spunta.
+   Attiva o disattiva il comando in questo menu per consentire o disattivare la generazione di un livello di presentazione. Quando il livello di presentazione è consentito, viene visualizzato un segno di spunta.
 
    ![](assets/6_4_presentation_layer_select.png)
 
-   Quando consentite il livello di presentazione, viene visualizzata un’icona selezionabile sul lato destro della barra degli strumenti.
+   Quando si consente il livello di presentazione, viene visualizzata un’icona selezionabile sul lato destro della barra degli strumenti.
 
-   ![](assets/dwb_presentation_icon2.png) Questa icona selezionabile indica che siete in modalità **Nascondi livello** presentazione ma non potete visualizzare le annotazioni.
+   ![](assets/dwb_presentation_icon2.png) Questa icona cliccabile mostra che sei nel **Nascondi livello presentazione** ma non è possibile visualizzare le annotazioni.
 
-1. Fate clic sull&#39;icona per attivare o disattivare **Mostra livello** presentazione.
+1. Fai clic sull’icona per passare a **Mostra livello presentazione**.
 
-   Visualizzate le annotazioni nel livello della presentazione.
+   Visualizzare le annotazioni nel livello della presentazione.
 
-   ![](assets/dwb_presentation_icon3.png) Questa icona selezionabile indica che siete in modalità **Mostra livello** presentazione ma non potete modificarla.
+   ![](assets/dwb_presentation_icon3.png) Questa icona cliccabile mostra che sei nel **Mostra livello presentazione** ma non è possibile modificarla.
 
    >[!NOTE]
    >
@@ -38,36 +42,36 @@ Il Livello presentazione consente di contrassegnare e annotare le visualizzazion
 
    ![](assets/6_4_presentation_layer_right_menu.png)
 
-1. **Modificare e aggiungere le feature di callout.**
+1. **Modificare e aggiungere feature di callout.**
 
-   Fate nuovamente clic sull’icona per acquisire una rappresentazione statica della visualizzazione dell’area di lavoro e aprire una sovrapposizione per aggiungere o modificare le annotazioni.
+   Fai nuovamente clic sull’icona per acquisire una rappresentazione statica della visualizzazione dell’area di lavoro e aprire una sovrapposizione per aggiungere o modificare annotazioni.
 
-   ![](assets/dwb_presentation_icon1.png) Questa icona selezionabile indica che siete in modalità **Modifica livello** presentazione per aggiungere e modificare le annotazioni.
+   ![](assets/dwb_presentation_icon1.png) Questa icona cliccabile mostra che sei nel **Modifica livello presentazione** modalità per aggiungere e modificare annotazioni.
 
    In modalità di modifica viene visualizzata una sovrapposizione grigia.
 
-1. **Aggiungere le funzioni** di callout.
+1. **Aggiungi feature di callout**.
 
-   Fai clic con il pulsante destro del mouse sulla visualizzazione per aggiungere una nuova casella di testo. frecce e altre funzioni di callout per evidenziare e annotare la presentazione.
+   Fai clic con il pulsante destro del mouse sulla visualizzazione per aggiungere una nuova casella di testo. frecce e altre feature di callout per evidenziare e annotare la presentazione.
 
    ![](assets/6_4_presentation_layer_add_annotation.png)
 
-1. **Impostare le funzioni** grafiche.
+1. **Imposta le caratteristiche grafiche**.
 
-   Selezionare un oggetto grafico e fare clic con il pulsante destro del mouse per impostare le opzioni. È possibile impostare i colori per una casella o un altro oggetto grafico, regolare le impostazioni di testo in una casella di testo e aggiungere frecce o impostare i livelli per le righe.
+   Selezionare un oggetto grafico e fare clic con il pulsante destro del mouse per impostare le opzioni. È possibile impostare i colori di una casella o di un altro oggetto grafico, regolare le impostazioni del testo in una casella di testo e aggiungere frecce o impostare livelli per le linee.
 
    ![](assets/6_4_presentation_layer_options.png)
 
-1. **Aggiungete immagini all’area di lavoro**.
+1. **Aggiungere immagini all’area di lavoro**.
 
-   Fate clic con il pulsante destro del mouse per aggiungere e ridimensionare le immagini .png e .jpg alla sovrapposizione.
+   Fai clic con il pulsante destro del mouse per aggiungere e ridimensionare le immagini .png e .jpg alla sovrapposizione.
 
-1. **Assegnare colori agli oggetti** grafici.
+1. **Assegnare colori agli oggetti grafici**.
 
-   Potete selezionare gli oggetti nel livello della presentazione e assegnare i colori mediante il selettore colore. ![](assets/dwb_presentation_colorpicker.png)
+   È possibile selezionare gli oggetti nel livello della presentazione e assegnare i colori utilizzando il selettore colore. ![](assets/dwb_presentation_colorpicker.png)
 
-1. **Esportate e condividete il livello** della presentazione.
+1. **Esportare e condividere il livello di presentazione**.
 
-   Dopo aver annotato le visualizzazioni dell’area di lavoro, potete esportare il livello di presentazione con le visualizzazioni e condividerlo come file grafico .png.
+   Dopo aver annotato le visualizzazioni dell&#39;area di lavoro, puoi esportare il livello di presentazione con visualizzazioni e condividerlo come file grafico .png.
 
-   Fate clic su **Esporta** > **Esporta PNG**.
+   Fai clic su **Esporta** > **Esporta PNG**.

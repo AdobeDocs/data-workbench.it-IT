@@ -3,7 +3,7 @@ description: Utilizza il profilo di cronologia di Data Workbench per vedere in c
 title: Area di lavoro di cronologia di Data Workbench
 uuid: 61c45cae-f255-4d20-bb6b-f318c8dd8214
 exl-id: e6d7e924-641e-468c-a828-16ebe1c8724f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 2%
@@ -12,15 +12,17 @@ ht-degree: 2%
 
 # Area di lavoro di cronologia di Data Workbench{#data-workbench-historic-workspace}
 
+{{eol}}
+
 Utilizza il profilo di cronologia di Data Workbench per vedere in che modo la configurazione, l’hardware e altre modifiche influiscono sulle prestazioni, sulla stabilità e sulla capacità del server nel tempo.
 
-Il profilo di cronologia include un set di dati basato su profilo [Prestazioni profilo](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-184a86f9de054970bf68515bb9dea85d) e le [Prestazioni server](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5dad5870384b40e094d50173fcd90a09) nella scheda **[!UICONTROL Performance]**. Si tratta dei set di dati più comunemente utilizzati visualizzati per una prospettiva passata delle prestazioni del server di Data Workbench. Inoltre, è possibile visualizzare i [Componenti](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) e [Modalità di elaborazione](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) selezionando la scheda **[!UICONTROL Up Time]** .
+Il profilo Storico include un profilo basato su [Prestazioni del profilo](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-184a86f9de054970bf68515bb9dea85d) set di dati e basati su server [Prestazioni server](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5dad5870384b40e094d50173fcd90a09) set di dati **[!UICONTROL Performance]** scheda . Si tratta dei set di dati più comunemente utilizzati visualizzati per una prospettiva passata delle prestazioni del server di Data Workbench. Inoltre, puoi visualizzare il [Componenti](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) e [Modalità di elaborazione](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) selezionando la **[!UICONTROL Up Time]** scheda .
 
 ![](assets/Historic_Performance.png)
 
-Inoltre, è possibile visualizzare i [Componenti](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) e [Modalità di elaborazione](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) selezionando la scheda **[!UICONTROL Up Time]** .
+Inoltre, puoi visualizzare il [Componenti](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) e [Modalità di elaborazione](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) selezionando la **[!UICONTROL Up Time]** scheda .
 
-Per ulteriori informazioni di riferimento sulle dimensioni utilizzate nel profilo di cronologia di Data Workbench, consulta [Dimension nel profilo di cronologia di Insight.](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
+Per ulteriori informazioni di riferimento sulle dimensioni utilizzate nel profilo di cronologia di Data Workbench, consulta [Dimension nel profilo storico di Insight.](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
 
 ## Area di lavoro Prestazioni profilo {#section-184a86f9de054970bf68515bb9dea85d}
 

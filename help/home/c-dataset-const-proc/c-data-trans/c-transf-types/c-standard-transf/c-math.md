@@ -3,14 +3,16 @@ description: La trasformazione Math consente l'uso di operazioni aritmetiche sui
 title: Matematica
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
 exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '256'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 # Matematica{#math}
+
+{{eol}}
 
 La trasformazione Math consente l&#39;uso di operazioni aritmetiche sui campi all&#39;interno delle voci di registro.
 
@@ -21,7 +23,7 @@ Le operazioni possono includere numeri interi decimali e costanti a virgola mobi
   <tr> 
    <th colname="col1" class="entry"> Campo </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -63,7 +65,7 @@ Le operazioni possono includere numeri interi decimali e costanti a virgola mobi
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Uscita </td> 
+   <td colname="col1"> Output </td> 
    <td colname="col2"> Nome del campo contenente il risultato dell’operazione aritmetica. </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -74,4 +76,4 @@ In questo esempio, che utilizza i campi di dati raccolti dal traffico del sito w
 
 ![](assets/cfg_TransformationType_Math.png)
 
-Per informazioni sulla condizione [!DNL Not Empty], consulta [Condizioni](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).
+Per informazioni sulla [!DNL Not Empty] condizione, vedi [Condizioni](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).

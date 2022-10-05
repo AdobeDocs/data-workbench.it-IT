@@ -1,24 +1,28 @@
 ---
-description: Ora puoi usare CSV, TSV, Esportazione segmenti ed Esportazione segmenti con intestazione tramite protocolli FTP e SFTP per esportare i file dei segmenti dal client (workstation) al server.
+description: Ora puoi utilizzare CSV, TSV, Esportazione segmento ed Esportazione segmento con intestazione utilizzando i protocolli FTP e SFTP per esportare i file dei segmenti dal client (workstation) al server.
 title: Esportazione di un segmento mediante la distribuzione S/FTP
 uuid: 4d654368-cbf7-4e7f-8ab9-82f4e0261ac6
-translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+exl-id: 0f1dc0a1-f376-47fb-887c-612a654ed0f0
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 3%
 
 ---
 
-
 # Esportazione di un segmento mediante la distribuzione S/FTP{#export-a-segment-using-s-ftp-delivery}
 
-Ora puoi usare CSV, TSV, Esportazione segmenti ed Esportazione segmenti con intestazione tramite protocolli FTP e SFTP per esportare i file dei segmenti dal client (workstation) al server.
+{{eol}}
 
-**Impostazione dei file di configurazione di esportazione S/FTP**
+Ora puoi utilizzare CSV, TSV, Esportazione segmento ed Esportazione segmento con intestazione utilizzando i protocolli FTP e SFTP per esportare i file dei segmenti dal client (workstation) al server.
 
-Per impostare la configurazione di esportazione, sono stati aggiunti due nuovi file di configurazione di esportazione per impostare una connessione FTP o SFTP, consentendo di scegliere i dettagli Server dal file *FTPServerInfo.cfg* e di scegliere le credenziali dalla cartella *FTPUserCredentials* (corrispondente al Nome Server fornito negli argomenti dei comandi).
+**Configurazione dei file di configurazione dell’esportazione S/FTP**
 
-* Impostate il file **FTPServerInfo.cfg** .
+Per impostare la configurazione di esportazione, sono stati aggiunti due nuovi file di configurazione di esportazione per impostare una connessione FTP o SFTP, che consentono di selezionare i dettagli del server dal *FTPServerInfo.cfg* e le credenziali verranno prelevate da *FTPUserCredentials* cartella (corrispondente al Nome server specificato negli argomenti del comando).
 
-   Immettere le informazioni sul server FTP e impostare i tentativi di connessione consentiti dalla workstation. Modificate dalla workstation o dal server nel file [!DNL Server\Addresses\Export\] **[!DNL FTPServerInfo.cfg]** .
+* Imposta la **FTPServerInfo.cfg** file.
+
+   Immetti le informazioni sul server FTP e imposta i tentativi di connessione consentiti dalla workstation. Modifica dalla workstation o dal server all&#39;indirizzo  [!DNL Server\Addresses\Export\] **[!DNL FTPServerInfo.cfg]**file.
 
    ```
    FTP Servers = vector: 1 items 
@@ -32,9 +36,9 @@ Per impostare la configurazione di esportazione, sono stati aggiunti due nuovi f
        Server Name = string:
    ```
 
-* Impostate il file **FTPUserCredentials.cfg** .
+* Imposta la **FTPUserCredentials.cfg** file.
 
-   Immettere le credenziali utente per connettersi ai server utilizzando il file [!DNL Server\Admin\Export\] **[!DNL FTPUserCredentials.cfg]** . Questo file contiene le credenziali utente necessarie per connettersi ai server e può essere modificato solo dal server e non dalla workstation (client).
+   Immetti le credenziali utente per la connessione ai server tramite  [!DNL Server\Admin\Export\] **[!DNL FTPUserCredentials.cfg]**file. Questo file contiene le credenziali utente necessarie per la connessione ai server e può essere modificato solo dal server e non dalla workstation (client).
 
    ```
    FTP User Credentials = vector: 1 items 
@@ -49,15 +53,16 @@ Per impostare la configurazione di esportazione, sono stati aggiunti due nuovi f
 
    >[!NOTE]
    >
-   >Assicurarsi che le chiavi SSH generate per l&#39;autenticazione siano nel formato identico a quelle generate quando si utilizza il comando SSH Keygen.
+   >Assicurati che le chiavi SSH generate per l’autenticazione siano nel formato identico a quelle generate quando utilizzi il comando SSH Keygen.
    >
-   >Esempio di generazione di chiavi SSH tramite keygen:
+   >Esempio per la generazione di chiavi SSH utilizzando keygen:
    >
-   >```
+   >
+   ```
    >ssh-keygen -t rsa -b 4096 -C "<label>"
    >```
 
-   Il file **FTPUserCredentials.cfg** contiene sei parametri necessari per diversi trasferimenti FTP o SFTP.
+   Sono presenti sei parametri nel **FTPUserCredentials.cfg** file necessario per vari trasferimenti FTP o SFTP.
 
    1. *Nome utente*
    1. *Password utente*
@@ -65,42 +70,43 @@ Per impostare la configurazione di esportazione, sono stati aggiunti due nuovi f
    1. *Percorso chiave pubblica*
    1. *Percorso chiave privata*
    1. *Passphrase*
+
    <table id="table_4EB416DC770D4D1AA4FAD9676C0D680C"> 
     <thead> 
       <tr> 
-      <th colname="col1" class="entry"> Protocollo </th> 
+      <th colname="col1" class="entry"> Protocol </th> 
       <th colname="col2" class="entry"> Parametri </th> 
       </tr> 
     </thead>
     <tbody> 
       <tr> 
       <td colname="col1"> <p>FTP </p> </td> 
-      <td colname="col2"> <p>Impostate i parametri 1, 2, 3. </p> </td> 
+      <td colname="col2"> <p>Impostare i parametri 1, 2, 3. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>SFTP mediante autenticazione tramite password </p> </td> 
-      <td colname="col2"> <p>Impostate i parametri 1, 2, 3 quando il trasferimento utilizza l'autenticazione tramite password (-p negli argomenti del comando). </p> </td> 
+      <td colname="col1"> <p>SFTP tramite autenticazione tramite password </p> </td> 
+      <td colname="col2"> <p>Impostare i parametri 1, 2, 3 quando il trasferimento utilizza l'autenticazione tramite password (-p negli argomenti del comando). </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>SFTP tramite autenticazione chiave </p> </td> 
-      <td colname="col2"> <p>Impostate i parametri 1, 2, 3, 4, 5, 6 quando il trasferimento utilizza l'autenticazione chiave (-k negli argomenti dei comandi). </p> </td> 
+      <td colname="col2"> <p>Imposta i parametri 1, 2, 3, 4, 5, 6 quando il trasferimento utilizza l'autenticazione chiave (-k negli argomenti del comando). </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
 **Impostazione dei comandi di esportazione FTP e SFTP**
 
-1. Aprire una tabella di esportazione.
+1. Apri una tabella di esportazione.
 
-   Nella workstation, fate clic con il pulsante destro del mouse su una tabella *di* dettaglio e scegliete uno dei tipi di esportazione: CSV, TSV, Esportazione segmento o Esportazione segmento con intestazione. In alternativa, aprite il [!DNL .export] file da un prompt dei comandi e modificatelo (consultate [Configurazione dei segmenti per l’esportazione](../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372)).
+   Dalla workstation, fai clic con il pulsante destro del mouse su un *Tabella dei dettagli* e scegli uno dei tipi di esportazione: CSV , TSV, Esportazione segmento o Esportazione segmento con intestazione. Oppure apri la [!DNL .export] file da un prompt dei comandi e modifica (vedere [Configurazione dei segmenti per l’esportazione](../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372)).
 
-1. Nel campo *Comando* , impostatelo in modo che punti all’eseguibile di esportazione:
+1. In *Comando* imposta il campo in modo che punti all&#39;eseguibile di esportazione:
 
    ```
    ExportIntegration.exe
    ```
 
-1. Impostate i campi *Argomenti* comando come illustrato di seguito per il protocollo e l&#39;autenticazione richiesti:
+1. Imposta la *Argomenti comando* campi come mostrato di seguito per il protocollo e l&#39;autenticazione richiesti:
 
    **FTP**
 
@@ -118,7 +124,7 @@ Per impostare la configurazione di esportazione, sono stati aggiunti due nuovi f
    <sftp "%file%" ServerName ServerDestinationPath -p>
    ```
 
-   **SFTP** (se si utilizzano le chiavi per l&#39;autenticazione)
+   **SFTP** (se utilizzi le chiavi per l’autenticazione)
 
    ```
    <Command Arguments> set to  
@@ -129,20 +135,20 @@ Per impostare la configurazione di esportazione, sono stati aggiunti due nuovi f
 
 Tutti gli argomenti dei comandi sono obbligatori e devono essere immessi come mostrato.
 
-## Esportazione S/FTP con chiavi private/pubbliche {#section-0534424d79a54a47b82594cfa7b3c17f}
+## Esportazione S/FTP utilizzando chiavi private/pubbliche {#section-0534424d79a54a47b82594cfa7b3c17f}
 
-Per implementare l’esportazione FTP e SFTP utilizzando chiavi private e pubbliche, inserite i file di configurazione nelle seguenti cartelle:
+Per implementare l’esportazione FTP e SFTP utilizzando chiavi private e pubbliche, inserisci i file di configurazione nelle seguenti cartelle:
 
-* Inserite **FTPServerInfo.cfg** nella [!DNL Server/Addresses/Export/] cartella.
-* Inserite **FTPUserCredentials.cfg** nella [!DNL Server/Admin/Export/] cartella.
+* Luogo **FTPServerInfo.cfg** in [!DNL Server/Addresses/Export/] cartella.
+* Luogo **FTPUserCredentials.cfg** in [!DNL Server/Admin/Export/] cartella.
 
-Sei parametri sono inclusi nel file **FTPServerInfo.cfg** :
+Sei parametri sono inclusi nella variabile **FTPServerInfo.cfg** file:
 
 1. *Nome utente*
 1. *Password utente*
 1. *Nome server*
 1. *Percorso chiave pubblica*
-1. *Percorso chiave privata —* Inserisci il percorso della chiave privata nel file di configurazione senza l&#39;estensione, ad esempio:
+1. *Percorso chiave privata —* Posiziona il percorso della chiave privata nel file di configurazione senza l’estensione, ad esempio:
 
 [!DNL Private Key Path = string: E:\\Server\\campaign\\campaignprivatekey]
 
@@ -150,9 +156,9 @@ Sei parametri sono inclusi nel file **FTPServerInfo.cfg** :
 
 L&#39;FTP utilizza i parametri 1, 2 e 3.
 
-SFTP utilizza i parametri 1, 2 e 3 quando il trasferimento utilizza l&#39;autenticazione tramite password.
+SFTP utilizza i parametri 1, 2 e 3 quando il trasferimento utilizza l’autenticazione tramite password.
 
-SFTP utilizza tutti e sei i parametri quando il trasferimento viene eseguito utilizzando l&#39;autenticazione chiave. Ad esempio, se utilizzate le chiavi per l&#39;autenticazione:
+SFTP utilizza tutti e sei i parametri quando il trasferimento viene eseguito utilizzando l’autenticazione chiave. Ad esempio, se utilizzi le chiavi per l’autenticazione:
 
 [!DNL 'Command Arguments' = sftp "%file%" ServerName ServerDestinationPath -k]
 
@@ -160,4 +166,4 @@ I file di configurazione devono trovarsi nella posizione corretta.
 
 >[!NOTE]
 >
->Le chiavi pubbliche devono puntare a un file **.pem** e non a un percorso di cartella. È possibile creare chiavi utilizzando una funzione di generazione di chiavi SSH da applicazioni come Cygwin. (Le chiavi vengono generate automaticamente in un formato .ppk non supportato.)
+>Le chiavi pubbliche devono puntare a un **.pem** e non in una posizione cartella. Puoi creare chiavi utilizzando una funzione di generazione di chiavi SSH da applicazioni come Cygwin. (Il pulsante genera le chiavi in un formato .ppk non supportato.)

@@ -3,7 +3,7 @@ description: Creazione di un gruppo di utenti
 title: Creazione di un gruppo di utenti
 uuid: 8a474480-81fa-4a86-9937-2fb82e949436
 exl-id: 8af9d635-ff07-486f-845a-44541d577fad
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 9%
@@ -12,7 +12,9 @@ ht-degree: 9%
 
 # Creazione di un gruppo di utenti{#creating-a-user-group}
 
-1. Fare clic su **[!UICONTROL Create Group]** per visualizzare il modulo **[!UICONTROL New Group]**.
+{{eol}}
+
+1. Fai clic su **[!UICONTROL Create Group]** per richiamare **[!UICONTROL New Group]** modulo.
 
    ![](assets/create_user_group.png)
 
@@ -37,11 +39,11 @@ ht-degree: 9%
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Autorizzazioni</strong></td> 
-    <td class="chdesc stentry"> <p> <span class="uicontrol"> Amministratore</span>: Salva, visualizza, modifica ed elimina tutte le dashboard per tutti i profili. I privilegi di amministratore consentono a un utente di accedere all'area di amministrazione ed eseguire tutte le funzioni amministrative. </p> <p> <span class="uicontrol"> Sola</span> lettura: Limita le autorizzazioni di sola lettura per le dashboard. L’utente non può aggiungere o modificare visualizzazioni o salvare dashboard. </p> <p> <b>Nessuna autorizzazione selezionata  </b>(impostazione predefinita): Nessuna autorizzazione selezionata concede agli utenti regolari autorizzazioni al gruppo. Questi utenti possono creare e modificare visualizzazioni, salvare dashboard e visualizzare le dashboard a cui hanno accesso. </p> </td> 
+    <td class="chdesc stentry"> <p> <span class="uicontrol"> Amministratore</span>: Salva, visualizza, modifica ed elimina tutte le dashboard per tutti i profili. I privilegi di amministratore consentono a un utente di accedere all'area di amministrazione ed eseguire tutte le funzioni amministrative. </p> <p> <span class="uicontrol"> Sola lettura</span>: Limita le autorizzazioni di sola lettura per le dashboard. L’utente non può aggiungere o modificare visualizzazioni o salvare dashboard. </p> <p> <b>Nessuna autorizzazione selezionata </b>(predefinito): Nessuna autorizzazione selezionata concede agli utenti regolari autorizzazioni al gruppo. Questi utenti possono creare e modificare visualizzazioni, salvare dashboard e visualizzare le dashboard a cui hanno accesso. </p> </td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Utenti/membri del gruppo disponibili</strong></td> 
-    <td class="chdesc stentry">Trascina gli utenti dall’elenco <span class="uicontrol"> Utenti disponibili</span> nella sezione <span class="uicontrol"> Membri del gruppo </span>. I membri del gruppo possono essere modificati in qualsiasi momento. </td> 
+    <td class="chdesc stentry">Trascinare gli utenti dall’elenco di <span class="uicontrol"> Utenti disponibili</span> nel <span class="uicontrol"> Membri del gruppo </span>sezione . I membri del gruppo possono essere modificati in qualsiasi momento. </td> 
     </tr> 
     </table>
 

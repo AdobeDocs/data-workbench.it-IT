@@ -3,7 +3,7 @@ description: Segui questi passaggi per avviare il processo di onboarding per Ado
 title: Istruzioni di configurazione di base per DWB Managed Services
 uuid: ad44a4eb-00ea-49c7-8401-58976d8fe39e
 exl-id: 49fb6afe-b417-4554-9238-fd6381c00029
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Istruzioni di configurazione di base per DWB Managed Services{#basic-onboarding-instructions-for-dwb-managed-services}
+
+{{eol}}
 
 Segui questi passaggi per avviare il processo di onboarding per Adobe Data Workbench (DWB), un componente di Adobe Analytics Premium (AAP).
 
@@ -55,14 +57,14 @@ Riceverai questi file di installazione dall’Assistenza clienti Adobe per insta
    >
    >Il browser potrebbe richiedere la presentazione di un certificato digitale. In questo caso, fare clic su Annulla per chiudere la finestra di dialogo.
 
-1. Individua il certificato rilasciato per la tua istanza di Adobe Data Workbench (`<PrimaryUser>`.pem) nella sezione Download e scarica.
+1. Individua il certificato rilasciato per la tua istanza di Data Workbench Adobe (`<PrimaryUser>`.pem) nella sezione Download e download.
 1. Individua il programma di installazione del client standard nella sezione Download per scaricare la procedura guidata di installazione DWB (file InsightSetup-x.xx.exe).
 1. Dopo aver ricevuto e scaricato i file da Adobe Customer Care, esegui l&#39;Installazione guidata DWB per installare il software della workstation sul computer client.
 
 >[!NOTE]
-La procedura guidata di installazione DWB illustra l’installazione della workstation client DWB e aiuta a individuare i file Insight.cfg e `<PrimaryUser>`.pem da inserire nelle cartelle richieste. Il file Insight.cfg risiede con il file Insight.exe nella workstation client installata. Il file `<PrimaryUser>`.pem si trova nella cartella Certificati con il file trust_ca_cert.pem . Tutti i file di certificato e di configurazione devono essere presenti affinché DWB funzioni.
+La procedura guidata di configurazione DWB illustra l’installazione della workstation client DWB e aiuta a individuare Insight.cfg e `<PrimaryUser>`file .pem da inserire nelle cartelle richieste. Il file Insight.cfg risiede con il file Insight.exe nella workstation client installata. La `<PrimaryUser>`Il file .pem si trova nella cartella Certificati con il file trust_ca_cert.pem. Tutti i file di certificato e di configurazione devono essere presenti affinché DWB funzioni.
 
-Per ulteriori informazioni, vedere la [Configurazione guidata DWB](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
+Per ulteriori informazioni, consulta la sezione [Configurazione guidata DWB](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
 
 ## Connessione ai server DWB {#section-8e79c4e07c2a4342a5bb8af6ee7be3c9}
 
@@ -83,4 +85,4 @@ Nell’area di lavoro Configurazione workstation sulla workstation client DWB, p
 
 ・ Adobe TechOps configurerà il cluster di produzione principale in modo che contenga tre mesi di dati continui da reimpostare ed elaborare mensilmente. Gli aggiornamenti alle ricerche (Geografia, DeviceAtlas, Classificazioni standard) verranno eseguiti anche nell’ambito dell’attività di rielaborazione. Per impostazione predefinita, l’attività viene eseguita il primo venerdì di ogni mese. Se necessario, la pianificazione può essere modificata dall’Assistenza clienti.
 
-Per ulteriori informazioni, contatta l’ [Adobe Customer Care](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+Per ulteriori informazioni contattare [Adobe Customer Care](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).

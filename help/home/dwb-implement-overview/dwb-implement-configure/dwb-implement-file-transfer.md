@@ -3,7 +3,7 @@ description: Guida rapida per diversi metodi di trasferimento file in DWB.
 title: Governance del trasferimento dei file
 uuid: a3e19f8a-1cc4-437c-9661-408f675109c0
 exl-id: a0ecd8e1-6d6f-4811-9869-092837dc9e55
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Governance del trasferimento dei file{#file-transfer-governance}
+
+{{eol}}
 
 Guida rapida per diversi metodi di trasferimento file in DWB.
 
@@ -20,7 +22,7 @@ La governance del trasferimento dei file è un processo standard per trasferire 
 
 1. AWS (Amazon Web Services)
 
-   1. Crea un ticket per installare l’interfaccia della riga di comando di AWS sul server se non è già installato (consulta [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)).
+   1. Crea un ticket per installare l’interfaccia della riga di comando di AWS sul server se non è già installato (vedi [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)).
    1. Come controllare? Prova a configurare AWS utilizzando il prompt dei comandi (vedi [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)).
 
 1. Trasferisci i file dal server FTP alla directory NAS.
@@ -53,10 +55,10 @@ La governance del trasferimento dei file è un processo standard per trasferire 
 
       >[!NOTE]
       >
-      >Se la cartella di archivio non è disponibile, consulta [Rielaborazione settimanale](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) per scaricare la cartella.
+      >Se la cartella di archivio non è disponibile, vedi [Rielaborazione settimanale](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) per scaricare la cartella.
 
    1. Pianifica lo script in base alla disponibilità dei file su ftp_address.
-   1. La convenzione di denominazione del file deve essere YYYMMDD-&lt;offline_feed_name>-00.*
+   1. La convenzione di denominazione del file deve essere YYYYMMDD-&lt;offline_feed_name>-00.&#42;
 
 1. Trasferisci i file dalla directory NAS al server FTP.
 
@@ -228,12 +230,12 @@ La governance del trasferimento dei file è un processo standard per trasferire 
       ```
 
    1. Pianifica lo script in base alla disponibilità dei file su ftp_address.
-   1. La convenzione di denominazione del file deve essere YYYMMDD-&lt;offline_feed_name>-00.*
+   1. La convenzione di denominazione del file deve essere YYYYMMDD-&lt;offline_feed_name>-00.&#42;
 
 1. Trasferisci i file da una directory NAS ad un&#39;altra directory NAS.
 
    1. Copiare e incollare i file direttamente collegati a una directory NAS da un&#39;altra. Segui la procedura seguente:)
 
-      accedi al server -> vai a Esegui -> \\server_name\E$ [la nuova cartella si aprirà e copierà o sposterà direttamente i file]
+      accedere al server -> vai a Esegui -> \\server_name\E$ [viene aperta una nuova cartella che consente di copiare o spostare direttamente i file]
 
    1. Utilizza lo script &quot;copy_files.pl&quot; per copiare i file da un server all&#39;altro o &quot;move_files.pl&quot; per spostare i file da un server all&#39;altro. (Questi file sono disponibili in E:\scripts\Scripository)

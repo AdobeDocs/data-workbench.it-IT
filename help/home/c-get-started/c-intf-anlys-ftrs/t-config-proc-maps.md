@@ -3,7 +3,7 @@ description: Le mappe dei processi possono essere configurate in modo da funzion
 title: Configurare una mappa del processo
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
 exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 1%
@@ -12,16 +12,18 @@ ht-degree: 1%
 
 # Configurare una mappa del processo{#configure-a-process-map}
 
+{{eol}}
+
 Le mappe dei processi possono essere configurate in modo da funzionare con qualsiasi combinazione di dimensioni di base, dimensioni di gruppo, dimensione di livello e metrica significativa per l’applicazione e il set di dati.
 
-Dopo aver configurato una mappa del processo, questa viene elencata con altre mappe del processo in [!DNL Add Visualization menu].
+Dopo aver configurato una mappa del processo, questa viene elencata con altre mappe del processo nel [!DNL Add Visualization menu].
 
 1. In [!DNL Profile Manager], fai clic su **[!UICONTROL Menu]**, fai clic su **[!UICONTROL Add Visualization]**, quindi fai clic sul tipo di mappa del processo da configurare (Mappa della metrica 2D, Mappa del processo 2D o Mappa del processo 3D).
 
-   Nella directory risiede almeno un file [!DNL *.vw].
+   Almeno uno [!DNL *.vw] il file si trova nella directory.
 
 1. Fai clic con il pulsante destro del mouse sul segno di spunta per il file desiderato e fai clic su **[!UICONTROL Make Local]**.
-1. Fai clic con il pulsante destro del mouse sul segno di spunta del file nella colonna [!DNL User] e fai clic su **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Fai clic con il pulsante destro del mouse sul segno di spunta per il file nel [!DNL User] e fai clic su **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Modifica i parametri del file utilizzando il file di esempio e la tabella seguenti come guide:
 
    ```
@@ -82,12 +84,12 @@ Dopo aver configurato una mappa del processo, questa viene elencata con altre ma
 >
 >Per ulteriori informazioni sulla dimensione di base, la dimensione di gruppo, la dimensione di livello e la metrica per una mappa del processo, consulta [Mappe del processo](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
 
-1. Nel Blocco note, fai clic su **[!UICONTROL File]** > **[!UICONTROL Save As]** per salvare il file con un nuovo nome basato sulla dimensione di base, ovvero *Nome della dimensione di base*.vw.
+1. In Blocco note, fai clic su **[!UICONTROL File]** > **[!UICONTROL Save As]** per salvare il file con un nuovo nome basato sulla dimensione di base, ovvero: *Nome dimensione di base* vw.
 
-   (Per configurare una mappa metrica 2D, è necessario salvare il file con un nome basato sul nome della metrica per la mappa metrica, ovvero *Nome della metrica per la mappa metrica*.vw.) Assicurati di salvare il file nella directory di mappa del processo appropriata.
+   (Se stai configurando una mappa metrica 2D, devi salvare il file con un nome basato sul nome della metrica per la mappa metrica, ovvero: *Nome della metrica per la mappa metrica*.vw.) Assicurati di salvare il file nella directory di mappa del processo appropriata.
 
    >[!NOTE]
    >
-   >Per assicurarti che la mappa del processo sia salvata come file [!DNL *.vw], nella finestra [!DNL Save As] imposta il tipo Salva come su Tutti i file.
+   >Per assicurarti che la mappa del processo sia salvata come [!DNL *.vw] nel [!DNL Save As] impostare il tipo Salva con nome su Tutti i file.
 
-1. (Facoltativo) Per rendere le modifiche disponibili a tutti gli utenti del profilo di lavoro, nella sezione [!DNL Profile Manager] fai clic con il pulsante destro del mouse sul segno di spunta del file nella colonna [!DNL User] e fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. (Facoltativo) Per rendere le modifiche disponibili a tutti gli utenti del profilo di lavoro, nella [!DNL Profile Manager], fai clic con il pulsante destro del mouse sul segno di spunta per il file nel [!DNL User] e fai clic su **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

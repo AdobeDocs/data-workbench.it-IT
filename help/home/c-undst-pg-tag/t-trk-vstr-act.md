@@ -3,7 +3,7 @@ description: I siti web progettati utilizzando il Flash richiedono particolare a
 title: Tracciamento delle attività dei visitatori all’interno dei contenuti flash multimediali
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 exl-id: f51c7034-a7fd-4575-80e1-18fc6513ca2b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 5%
@@ -12,13 +12,15 @@ ht-degree: 5%
 
 # Tracciamento delle attività dei visitatori all’interno dei contenuti flash multimediali{#tracking-visitor-activity-within-flash-rich-media-content}
 
+{{eol}}
+
 I siti web progettati utilizzando il Flash richiedono particolare attenzione per quanto riguarda l’acquisizione delle azioni dei visitatori eseguite all’interno dei contenuti rich media.
 
-Utilizzando [!DNL Flash] ActionScript, puoi apportare semplici modifiche ai filmati [!DNL Flash] esistenti per consentire il tracciamento di tutte le interazioni dei visitatori con il filmato, ad esempio i clic dei pulsanti o i movimenti del mouse.
+Utilizzo [!DNL Flash] ActionScript, puoi apportare semplici modifiche alle [!DNL Flash] per consentire il tracciamento di tutte le interazioni dei visitatori con il filmato, ad esempio i clic dei pulsanti o i movimenti del mouse.
 
-Per facilitare il tracciamento delle attività dei visitatori all&#39;interno del filmato [!DNL Flash], segui i passaggi elencati di seguito:
+Per facilitare il tracciamento dell’attività dei visitatori all’interno del [!DNL Flash] filmato, segui i passaggi elencati di seguito:
 
-1. Aggiungi il seguente codice ActionScript al filmato. Questo codice rappresenta una funzione che può essere richiamata dagli eventi all&#39;interno del filmato [!DNL Flash] che desideri monitorare.
+1. Aggiungi il seguente codice ActionScript al filmato. Questo codice rappresenta una funzione che può essere richiamata dagli eventi all&#39;interno del [!DNL Flash] filmato di cui si desidera tenere traccia.
 
    ```
    // FLASH TAG CODE BEGIN
@@ -29,8 +31,8 @@ Per facilitare il tracciamento delle attività dei visitatori all&#39;interno de
    // FLASH TAG CODE END
    ```
 
-1. Crea un file vuoto denominato [!DNL flashtag.txt] e inserisci il file sui server web.
-1. Nella funzione del passaggio 1, sostituisci il segnaposto \[[!DNL PATH_TO_WEB_SERVER]\] con il percorso completo o relativo alla posizione del file [!DNL flashtag.txt]. Ad esempio:
+1. Crea un file vuoto denominato [!DNL flashtag.txt] e inserire il file sui server web.
+1. Nella funzione del passaggio 1, sostituisci \[[!DNL PATH_TO_WEB_SERVER]\] segnaposto con il percorso completo o relativo alla posizione del [!DNL flashtag.txt] file. Esempio:
 
    ```
    var FLASHTAGURI = https://www.mysite.com/flashtag/flashtag.txt”;
@@ -44,7 +46,7 @@ Per facilitare il tracciamento delle attività dei visitatori all&#39;interno de
 
    Questo esempio illustra l’utilizzo dell’evento on(release); tuttavia, è possibile fare riferimento alla funzione tag() attraverso qualsiasi evento che si desidera monitorare, ad esempio un evento on(press), on(rollover), on(rollout) o on(keypress).
 
-   Il segnaposto \[[!DNL PUT_PAGE_NAME_HERE]\] deve essere sostituito da una stringa che rappresenta il nome della pagina o dell&#39;evento di cui si sta eseguendo il tracciamento. La variabile \[[!DNL PUT_PAGE_NAME_HERE]\]può essere modificata manualmente o tramite riferimento a una variabile per indicare un nome univoco per la pagina o l&#39;evento all&#39;interno dell&#39;applicazione [!DNL Flash]. Il valore che sostituisce il segnaposto \[[!DNL PUT_PAGE_NAME_HERE]\] può essere costituito da un nome semplice o strutturato in modo da rappresentare una struttura gerarchica simile a un URI completo. Ad esempio:
+   Il \[[!DNL PUT_PAGE_NAME_HERE]Il segnaposto \] deve essere sostituito da una stringa che rappresenta il nome della pagina o dell&#39;evento di cui si sta eseguendo il tracciamento. Il \[[!DNL PUT_PAGE_NAME_HERE]\]può essere modificata manualmente o tramite riferimento a una variabile per indicare un nome univoco per la pagina o l&#39;evento all&#39;interno della variabile [!DNL Flash] applicazione. Il valore che sostituisce il valore \[[!DNL PUT_PAGE_NAME_HERE]Il segnaposto \] può essere costituito da un nome semplice o può essere strutturato in modo da rappresentare una struttura gerarchica simile a un URI completo. Esempio:
 
    ```
    on(release) {tag(“/about_us/index.swf","[PUT_ADDITIONAL_VAR_HERE]");}
@@ -52,7 +54,7 @@ Per facilitare il tracciamento delle attività dei visitatori all&#39;interno de
 
    L&#39;Adobe consiglia di compilare una specifica scritta per i nomi di pagina e di evento prima della distribuzione del codice per facilitare l&#39;allineamento dei requisiti aziendali e delle attività di sviluppo e ridurre il potenziale di ulteriori cicli di sviluppo.
 
-1. Se lo desideri, è possibile raccogliere variabili aggiuntive e associarle a pagine o eventi nel filmato [!DNL Flash]. A questo scopo, sostituisci il segnaposto \[[!DNL PUT_ADDITIONAL_VAR_HERE]\] con un set di coppie nome=valore separate da una e commerciale (&amp;). Ad esempio:
+1. Se lo desideri, è possibile raccogliere variabili aggiuntive e associarle a pagine o eventi nel [!DNL Flash] film. A questo scopo, sostituisci il valore \[[!DNL PUT_ADDITIONAL_VAR_HERE]segnaposto \] con un set di coppie nome=valore separate da una e commerciale (&amp;). Esempio:
 
    ```
    on(release) {tag(“/about_us/index.swf"," var1=value1&var2=value2");}
@@ -60,13 +62,13 @@ Per facilitare il tracciamento delle attività dei visitatori all&#39;interno de
 
    Le variabili possono essere modificate manualmente o tramite riferimento a variabili per indicare gli attributi aggiuntivi da raccogliere e associare alla pagina o all’evento. Se non ci sono variabili aggiuntive applicabili da raccogliere, rimuovi \[[!DNL PUT_ADDITIONAL_VAR_HERE]\].
 
-   La configurazione del tracciamento dei visitatori all’interno di [!DNL Flash] contenuti rich media è ora completa. Quando si richiama l’evento , viene chiamata la funzione tag [!DNL (PAGENAME,VARIABLES)] , con conseguente richiesta HTTP per il file seguente. Questa funzione verrà chiamata in aggiunta ad altre funzioni che possono essere attivate come definito nel filmato [!DNL Flash]:
+   Configurazione del tracciamento dei visitatori in [!DNL Flash] i contenuti rich media sono ora completi. Quando si richiama l’evento, il tag [!DNL (PAGENAME,VARIABLES)] viene chiamata la funzione , con conseguente richiesta HTTP per il file seguente. Questa funzione verrà chiamata in aggiunta ad altre funzioni che possono essere attivate come definito all&#39;interno della [!DNL Flash] film:
 
    ```
    https://www.mysite.com/flashtag/flashtag.txt?PAGENAME=/about_us/index.swf&var1=value1&var2=value2
    ```
 
-La richiesta HTTP derivante dalla funzione [!DNL Flash] Tag ActionScript restituisce la raccolta delle seguenti informazioni rispetto a ogni evento all&#39;interno del filmato [!DNL Flash] . L’ultima riga della tabella (W3C Name cs-uri-query) rappresenta le informazioni raccolte per le variabili aggiuntive specificate nella chiamata della funzione.
+La richiesta HTTP risultante dalla [!DNL Flash] La funzione Tag ActionScript restituisce la raccolta delle seguenti informazioni rispetto a ogni evento all’interno della [!DNL Flash] film. L’ultima riga della tabella (W3C Name cs-uri-query) rappresenta le informazioni raccolte per le variabili aggiuntive specificate nella chiamata della funzione.
 
 <table id="table_A7ED9D38F36B4405947B2F48EA94D3C4">
  <thead>
@@ -81,14 +83,14 @@ La richiesta HTTP derivante dalla funzione [!DNL Flash] Tag ActionScript restitu
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> Identificatore di tracciamento (visitatore univoco) </td>
-   <td colname="col3"> Identificatore letto da un cookie inserito nel browser dell’utente da <span class="wintitle"> Sensor </span> sulla richiesta iniziale del visitatore </td>
+   <td colname="col3"> Identificatore letto da un cookie inserito nel browser dell’utente da <span class="wintitle"> Sensore </span> sulla richiesta iniziale del visitatore </td>
    <td colname="col4"> v1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Data </p> <p>Tempo </p> </td>
-   <td colname="col2"> Timestamp </td>
+   <td colname="col2"> Marca temporale </td>
    <td colname="col3"> il momento in cui la richiesta è stata elaborata dal server (con precisione di 100 ns; la precisione dipende dall'ambiente del server e da NTP) </td>
-   <td colname="col4"> 2002-11-21 17:21:45.123 </td>
+   <td colname="col4"> 2002-11-21 17:21:45,123 </td>
   </tr>
   <tr>
    <td colname="col1"> sc(content-Type) </td>
@@ -134,7 +136,7 @@ La richiesta HTTP derivante dalla funzione [!DNL Flash] Tag ActionScript restitu
   </tr>
   <tr>
    <td colname="col1"> cs(cookie) </td>
-   <td colname="col2"> Cookie client dal dominio </td>
+   <td colname="col2"> Cookie client da dominio </td>
    <td colname="col3"> Contenuto di tutti i cookie dell’utente per il sito </td>
    <td colname="col4"> <p>KL_TC1 1038058778312 </p> <p>KL972x1038058778312282052 </p> <p>KL_PVKL972 0 </p> </td>
   </tr>

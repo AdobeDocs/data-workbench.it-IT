@@ -3,7 +3,7 @@ description: Tabella che mostra le convenzioni applicabili per la costruzione di
 title: Convenzioni per la costruzione di trasformazioni
 uuid: 91dddca6-4c17-4107-b78b-0f8b8870ef8d
 exl-id: c2552c52-c6d3-4c9f-8359-b5a58bf1a59f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Convenzioni per la costruzione di trasformazioni{#conventions-for-constructing-transformations}
+
+{{eol}}
 
 Tabella che mostra le convenzioni applicabili per la costruzione di trasformazioni.
 
@@ -24,7 +26,7 @@ Tabella che mostra le convenzioni applicabili per la costruzione di trasformazio
  <tbody> 
   <tr> 
    <td colname="col1"> Esecuzione sequenziale </td> 
-   <td colname="col2"> <p>Le trasformazioni all’interno di un file di configurazione del set di dati vengono applicate alle voci del registro in sequenza (ovvero nell’ordine in cui sono elencate nel file di configurazione). Pertanto, le trasformazioni devono essere elencate nell'ordine in cui le loro uscite sono utilizzate come input per altre trasformazioni. Più specificamente, se l'output di una trasformazione viene utilizzato come input per un'altra trasformazione, è importante che tale trasformazione precedente sia elencata prima della seconda trasformazione nei file di configurazione del set di dati. In caso contrario, il server di Data Workbench genera un errore. </p> <p> Le fasi di elaborazione forniscono un modo per ordinare le trasformazioni definite all’interno di più set di dati che includono file. Per tutti i set di dati includere i file associati a una particolare fase di elaborazione, le trasformazioni vengono ordinate in base ai relativi input e output. Inoltre, se più set di dati includono file all’interno di uno stadio dati di output sullo stesso campo a seguito di una trasformazione, il server di Data Workbench genera un errore. </p> <p> Per ulteriori informazioni sulle fasi, vedere <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Log Processing Configuration File</a>, <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md"> Transformation Configuration File</a> e <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md"> Dataset Include Files</a> (File inclusi nel set di dati). </p> <p>Una <span class="wintitle"> Mappa di dipendenza delle trasformazioni</span> può visualizzare il modo in cui un campo viene modificato da una serie di trasformazioni. Consulta <a href="../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md"> Strumenti di configurazione del set di dati</a>. </p> </td> 
+   <td colname="col2"> <p>Le trasformazioni all’interno di un file di configurazione del set di dati vengono applicate alle voci del registro in sequenza (ovvero nell’ordine in cui sono elencate nel file di configurazione). Pertanto, le trasformazioni devono essere elencate nell'ordine in cui le loro uscite sono utilizzate come input per altre trasformazioni. Più specificamente, se l'output di una trasformazione viene utilizzato come input per un'altra trasformazione, è importante che tale trasformazione precedente sia elencata prima della seconda trasformazione nei file di configurazione del set di dati. In caso contrario, il server di Data Workbench genera un errore. </p> <p> Le fasi di elaborazione forniscono un modo per ordinare le trasformazioni definite all’interno di più set di dati che includono file. Per tutti i set di dati includere i file associati a una particolare fase di elaborazione, le trasformazioni vengono ordinate in base ai relativi input e output. Inoltre, se più set di dati includono file all’interno di uno stadio dati di output sullo stesso campo a seguito di una trasformazione, il server di Data Workbench genera un errore. </p> <p> Per ulteriori informazioni sulle fasi, vedi <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> File di configurazione dell’elaborazione del registro</a>, <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md"> File di configurazione delle trasformazioni</a>e <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md"> Dataset Include Files (File inclusi nel set di dati)</a>. </p> <p>A <span class="wintitle"> Mappa di dipendenza delle trasformazioni</span> può visualizzare il modo in cui un campo viene modificato da una serie di trasformazioni. Vedi <a href="../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md"> Strumenti di configurazione del set di dati</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Nomi di output </td> 
@@ -32,7 +34,7 @@ Tabella che mostra le convenzioni applicabili per la costruzione di trasformazio
   </tr> 
   <tr> 
    <td colname="col1"> Campi di input </td> 
-   <td colname="col2"> <p>I campi di input fanno riferimento a uno dei campi della linea di base o a un campo creato dall’utente risultante dall’output di una trasformazione precedente. Se è necessaria una stringa costante, è possibile utilizzare una stringa tra virgolette anziché una linea di base o un campo creato dall’utente. </p> <p> Per un elenco di alcuni dei campi di dati comunemente definiti che il server di Data Workbench può elaborare, vedere <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md"> Campi record dati evento</a>. </p> </td> 
+   <td colname="col2"> <p>I campi di input fanno riferimento a uno dei campi della linea di base o a un campo creato dall’utente risultante dall’output di una trasformazione precedente. Se è necessaria una stringa costante, è possibile utilizzare una stringa tra virgolette anziché una linea di base o un campo creato dall’utente. </p> <p> Per un elenco di alcuni dei campi di dati comunemente definiti che il server di Data Workbench può elaborare, consulta <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md"> Campi record dati evento</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Stringhe semplici e vettori di stringhe </td> 

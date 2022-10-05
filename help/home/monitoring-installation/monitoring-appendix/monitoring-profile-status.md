@@ -3,7 +3,7 @@ description: Le dimensioni seguenti sono disponibili per l’utilizzo nel profil
 title: Dimensioni nel profilo dello stato del profilo di Data Workbench
 uuid: bd84a3e5-d1ea-4768-9dac-62f5dfbad49a
 exl-id: 57b3ff16-26db-4292-819b-f6cd8e024c2a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Dimensioni nel profilo dello stato del profilo di Data Workbench{#dimensions-in-the-data-workbench-profile-status-profile}
+
+{{eol}}
 
 Le dimensioni seguenti sono disponibili per l’utilizzo nel profilo dello stato del profilo di Data Workbench.
 
@@ -30,15 +32,15 @@ Le dimensioni seguenti sono disponibili per l’utilizzo nel profilo dello stato
   </tr> 
   <tr> 
    <td colname="col1"> <b>MegaByte in ingresso rapido al minuto</b> </td> 
-   <td colname="col2"> Per questa dimensione viene utilizzato il valore cs-uri-query(bj). L’ultima riga per un blocco viene utilizzata come valore per la dimensione. Se il set di dati è in Fast Input, questo valore del Dimension numerico visualizza la MB al minuto in cui il sistema sta immettendo i dati. <p>Nota:  Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
+   <td colname="col2"> Per questa dimensione viene utilizzato il valore cs-uri-query(bj). L’ultima riga per un blocco viene utilizzata come valore per la dimensione. Se il set di dati è in Fast Input, questo valore del Dimension numerico visualizza la MB al minuto in cui il sistema sta immettendo i dati. <p>Nota: Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>MegaByte Fast Merge al minuto</b> </td> 
-   <td colname="col2">Per questa dimensione viene utilizzato il valore cs-uri-query(bk). L’ultima riga per un blocco viene utilizzata come valore per la dimensione. Se il set di dati è in Fast Merge Questo valore del Dimension numerico visualizza la MB al minuto in cui il sistema sta unendo. <p>Nota:  Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
+   <td colname="col2">Per questa dimensione viene utilizzato il valore cs-uri-query(bk). L’ultima riga per un blocco viene utilizzata come valore per la dimensione. Se il set di dati è in Fast Merge Questo valore del Dimension numerico visualizza la MB al minuto in cui il sistema sta unendo. <p>Nota: Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Byte campo</b> </td> 
-   <td colname="col2"> Per questa dimensione viene utilizzato il valore cs-uri-query(bg). Il valore è diviso per 1000 e arrotondato al numero intero più vicino. Questo valore del Dimension numerico visualizza la quantità di spazio utilizzato dai campi nel set di dati. <p>Nota:  Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
+   <td colname="col2"> Per questa dimensione viene utilizzato il valore cs-uri-query(bg). Il valore è diviso per 1000 e arrotondato al numero intero più vicino. Questo valore del Dimension numerico visualizza la quantità di spazio utilizzato dai campi nel set di dati. <p>Nota: Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Host</b> </td> 
@@ -46,19 +48,19 @@ Le dimensioni seguenti sono disponibili per l’utilizzo nel profilo dello stato
   </tr> 
   <tr> 
    <td colname="col1"> <b>Ultima chiamata</b> </td> 
-   <td colname="col2">x-last-ping è x-unixtime divide per 10 (per adattarsi ai vincoli di dimensione delle dimensioni numeriche). Ultimo ping è l'ultima riga per un determinato blocco e rappresenta l'ultima volta che l'agente di monitoraggio ha registrato l'integrità del sistema. <p>Nota:  Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
+   <td colname="col2">x-last-ping è x-unixtime divide per 10 (per adattarsi ai vincoli di dimensione delle dimensioni numeriche). Ultimo ping è l'ultima riga per un determinato blocco e rappresenta l'ultima volta che l'agente di monitoraggio ha registrato l'integrità del sistema. <p>Nota: Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Percentuale di lettura del registro</b> </td> 
-   <td colname="col2">per questa dimensione numerica viene utilizzato il valore cs-uri-query(be) . È l’ultima riga per un determinato blocco. Questa dimensione viene utilizzata per calcolare la percentuale di log letti. <p>Nota:  Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
+   <td colname="col2">per questa dimensione numerica viene utilizzato il valore cs-uri-query(be) . È l’ultima riga per un determinato blocco. Questa dimensione viene utilizzata per calcolare la percentuale di log letti. <p>Nota: Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>ID modalità di elaborazione</b> </td> 
-   <td colname="col2"> Il valore cs-uri-query(bb) viene utilizzato per questo Dimension semplice. È l’ultima riga per un determinato blocco. L'ID della modalità di elaborazione consente di vedere in che modo si trova l'elaborazione del sistema (Fast Input, Fast Merge, Real Time). <p>Nota:  Questa dimensione viene nascosta e quindi riesposta con valori descrittivi nella modalità di elaborazione delle dimensioni lato client. </p></td> 
+   <td colname="col2"> Il valore cs-uri-query(bb) viene utilizzato per questo Dimension semplice. È l’ultima riga per un determinato blocco. L'ID della modalità di elaborazione consente di vedere in che modo si trova l'elaborazione del sistema (Fast Input, Fast Merge, Real Time). <p>Nota: Questa dimensione viene nascosta e quindi riesposta con valori descrittivi nella modalità di elaborazione delle dimensioni lato client. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Elaborazione bloccata</b> </td> 
-   <td colname="col2"> Il campo con elaborazione x bloccato viene creato in diverse condizioni per indicare se il profilo è attualmente in esecuzione o meno. È una dimensione semplice. <p>Nota:  Questa dimensione funziona al meglio quando ci sono un gran numero di registri di input da distribuire equamente tra le DPU. Se, ad esempio, è presente un solo file di grandi dimensioni caricato al giorno, Data Workbench può apparire in "stallo" per un’ora o più, dando luogo a una lettura falsa positiva da questa dimensione. </p></td> 
+   <td colname="col2"> Il campo con elaborazione x bloccato viene creato in diverse condizioni per indicare se il profilo è attualmente in esecuzione o meno. È una dimensione semplice. <p>Nota: Questa dimensione funziona al meglio quando ci sono un gran numero di registri di input da distribuire equamente tra le DPU. Se, ad esempio, è presente un solo file di grandi dimensioni caricato al giorno, Data Workbench può apparire in "stallo" per un’ora o più, dando luogo a una lettura falsa positiva da questa dimensione. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Profilo</b> </td> 
@@ -70,7 +72,7 @@ Le dimensioni seguenti sono disponibili per l’utilizzo nel profilo dello stato
   </tr> 
   <tr> 
    <td colname="col1"> <b>Percentuale di trasformazione</b> </td> 
-   <td colname="col2"> il valore cs-uri-query(bf) viene utilizzato per questa dimensione numerica. È l’ultima riga per un determinato blocco. Questa dimensione viene utilizzata per calcolare la percentuale di trasformazione dati completa. <p>Nota:  Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
+   <td colname="col2"> il valore cs-uri-query(bf) viene utilizzato per questa dimensione numerica. È l’ultima riga per un determinato blocco. Questa dimensione viene utilizzata per calcolare la percentuale di trasformazione dati completa. <p>Nota: Questa dimensione è nascosta perché è utile solo se è stata calcolata la media in una metrica. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Dimensioni temporali</b> </td> 

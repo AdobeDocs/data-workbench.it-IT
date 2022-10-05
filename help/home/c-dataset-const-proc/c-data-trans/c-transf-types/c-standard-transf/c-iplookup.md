@@ -3,7 +3,7 @@ description: La trasformazione IPLookup prende i dati di geolocalizzazione IP o 
 title: IPLookup
 uuid: 6fccee39-761f-4854-a7fd-3f8b453e0698
 exl-id: 3e9dba44-8d31-49af-8ce0-fecaf92edeb7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 4%
@@ -12,22 +12,24 @@ ht-degree: 4%
 
 # IPLookup{#iplookup}
 
+{{eol}}
+
 La trasformazione IPLookup prende i dati di geolocalizzazione IP o geo-intelligence IP (forniti da qualsiasi venditore di tali dati e convertiti in un formato proprietario per Adobe) e li trasforma in informazioni geografiche che possono essere utilizzate nell&#39;analisi.
 
-Nel menu Aggiungi nuova > *Tipo di trasformazione *sono elencate due trasformazioni [!DNL IPLookup]:
+Due [!DNL IPLookup] Le trasformazioni sono elencate nel menu Aggiungi nuovo > *Tipo di trasformazione *:
 
-* [!DNL IPLookup] Quova per  [!DNL IP geo-location] i dati
+* [!DNL IPLookup] Quova per [!DNL IP geo-location] dati
 
-* [!DNL IPLookup] Inviato digitale per  [!DNL IP geo-intelligence] i dati
+* [!DNL IPLookup] Inviato digitale per [!DNL IP geo-intelligence] dati
 
-Quando definisci una trasformazione [!DNL IPLookup], scegli la trasformazione appropriata per i dati [!DNL IP geo-location] o [!DNL IP geo-intelligence].
+Quando definisci un [!DNL IPLookup] trasformazione, scegli la trasformazione appropriata per la tua [!DNL IP geo-location] o [!DNL IP geo-intelligence] dati.
 
 <table id="table_C438A30AB5E64160A5C486D6887B1D7E"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Parametro </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
-   <th colname="col3" class="entry"> impostazione predefinita </th> 
+   <th colname="col3" class="entry"> Impostazione predefinita </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -58,12 +60,12 @@ Quando definisci una trasformazione [!DNL IPLookup], scegli la trasformazione ap
   </tr> 
   <tr> 
    <td colname="col1"> Uscite </td> 
-   <td colname="col2"> <p>Nomi delle stringhe di output. </p> <p> Le trasformazioni <span class="wintitle"> IPLookup</span> Quova e <span class="wintitle"> IPLookup</span> Digital Envoy hanno parametri di output diversi. Assicurati di utilizzare la trasformazione appropriata per i dati di ricerca IP. </p> </td> 
+   <td colname="col2"> <p>Nomi delle stringhe di output. </p> <p> La <span class="wintitle"> IPLookup</span> Quova e <span class="wintitle"> IPLookup</span> Le trasformazioni dell'inviato digitale hanno diversi parametri di output. Assicurati di utilizzare la trasformazione appropriata per i dati di ricerca IP. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-In questo esempio, i dati [!DNL IP geo-location] (nel file di ricerca [!DNL Quova.bin]) vengono utilizzati per creare i campi di output elencati. Gli output (AOL, ASN, prefisso e così via) possono essere utilizzati per creare dimensioni per l’analisi geografica del traffico dei visitatori.
+In questo esempio, [!DNL IP geo-location] dati (nel file di ricerca) [!DNL Quova.bin]) viene utilizzata per creare i campi di output elencati. Gli output (AOL, ASN, prefisso e così via) possono essere utilizzati per creare dimensioni per l’analisi geografica del traffico dei visitatori.
 
 ![](assets/cfg_TransformationType_IPLookup.png)

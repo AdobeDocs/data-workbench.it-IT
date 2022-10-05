@@ -3,7 +3,7 @@ description: La proiezione UWP (Universal Transverse Mercator) è definita da ot
 title: Proiezioni universali trasverse di Mercatore
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
 exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 3%
@@ -12,19 +12,21 @@ ht-degree: 3%
 
 # Proiezioni universali trasverse di Mercatore{#universal-transverse-mercator-projections}
 
+{{eol}}
+
 La proiezione UWP (Universal Transverse Mercator) è definita da otto parametri.
 
 Quando si specifica una proiezione universale trasversa di Mercatore per un livello immagine del terreno, i file immagine del terreno devono essere allineati con falso (proiettato) a nord verso la parte superiore dell&#39;immagine e con falso a est verso destra dell&#39;immagine.
 
-Per specificare una proiezione UTM per qualsiasi origine immagine del terreno, è necessario aprire il file [!DNL Terrain Images.cfg] in un editor di testo come Blocco note, impostare il parametro Info proiezione su &quot;TransverseMercatorProjection&quot; e aggiungere le impostazioni per la proiezione UTM.
+Per specificare una proiezione UTM per qualsiasi sorgente di immagine del terreno, è necessario aprire [!DNL Terrain Images.cfg] in un editor di testo come Notepad, impostare il parametro Info proiezione su &quot;TransverseMercatorProjection&quot; e aggiungere le impostazioni per la proiezione UTM.
 
 **Per specificare una proiezione universale trasversa di Mercatore**
 
-1. In [!DNL Server Files Manager], fai clic su **[!UICONTROL Components]** per visualizzarne il contenuto. Il file [!DNL Terrain Images.cfg] si trova all&#39;interno di questa directory.
+1. In [!DNL Server Files Manager], fai clic su **[!UICONTROL Components]** per visualizzarne il contenuto. La [!DNL Terrain Images.cfg] il file si trova all&#39;interno di questa directory.
 
-1. Fai clic con il pulsante destro del mouse sul segno di spunta nella colonna *nome server* per [!DNL Terrain Images.cfg], quindi fai clic su **[!UICONTROL Make Local]**. Un segno di spunta viene visualizzato nella colonna [!DNL Temp] per [!DNL Terrain Images.cfg].
+1. Fai clic con il pulsante destro del mouse sul segno di spunta nel *nome server* colonna per [!DNL Terrain Images.cfg], quindi fai clic su **[!UICONTROL Make Local]**. Un segno di spunta viene visualizzato nel [!DNL Temp] colonna per [!DNL Terrain Images.cfg].
 
-1. Fai clic con il pulsante destro del mouse sul segno di spunta appena creato nella colonna [!DNL Temp] e fai clic su **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Il file [!DNL Terrain Images.cfg]viene visualizzato in una finestra Blocco note.
+1. Fai clic con il pulsante destro del mouse sul segno di spunta appena creato nel [!DNL Temp] e fai clic su **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. La [!DNL Terrain Images.cfg]il file viene visualizzato in una finestra Blocco note.
 
 1. Modifica i parametri di Informazioni proiezione utilizzando il frammento di file di esempio e la tabella dei parametri come guide. Assicurati di specificare il tipo di proiezione come evidenziato di seguito.
 
