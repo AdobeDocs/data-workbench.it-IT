@@ -17,7 +17,7 @@ ht-degree: 99%
 # Guida di Data Workbench {#using}
 
 + [Guida di Data Workbench](home.md)
-+ [Annuncio di fine vita](eol.md)
++ [Annuncio sulla fine del ciclo di vita](eol.md)
 + Note sulla versione {#release-notes}
    + [Panoramica alle note sulla versione](c-release-notes-insight/release-notes.md)
    + [Note sulla versione di Data Workbench 6.74](c-release-notes-insight/dwb-6-74-release-notes.md)
