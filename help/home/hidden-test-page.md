@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 73c7ad435917ab17022494f6f73d2c626363dcc2
+source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 1%
 
 ---
 
@@ -113,7 +113,7 @@ Esempio 2:
 ```
 Highlighting should start after this paragraph.
 
-<div class="preview">
+<span class="preview">
 
 **This is a test**
 
@@ -123,14 +123,16 @@ Highlighting should start after this paragraph.
 
 Last highlighted paragraph
 
-</div>
+</span>
 
 Not highlighted
 ```
 
-Rendering: L&#39;evidenziazione deve iniziare dopo questo paragrafo.
+Rendering:
 
-<div class="preview">
+L&#39;evidenziazione deve iniziare dopo questo paragrafo.
+
+<span class="preview">
 
 **Questo è un test**
 
@@ -140,11 +142,9 @@ Rendering: L&#39;evidenziazione deve iniziare dopo questo paragrafo.
 
 Ultimo paragrafo evidenziato
 
-</div>
+</span>
 
 Non evidenziato
-
-Come regola generale, utilizza `<span class="preview">` per evidenziare un paragrafo o un testo all’interno di un paragrafo e utilizzare `<div class="preview">` per più paragrafi e componenti.
 
 ## Evidenziazione della sintassi per i blocchi di codice
 
