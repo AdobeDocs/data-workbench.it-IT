@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 3c3a0289ae50d407a83ca8878af59ecde5e86e8d
+source-git-commit: c92c1e5688ca867caf1f3d4a6a3e44dafb5b3734
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 0%
+source-wordcount: '695'
+ht-degree: 1%
 
 ---
 
@@ -98,7 +98,7 @@ Esempi di sintassi
 
 Il team Workfront ha chiesto di poter utilizzare l’evidenziazione gialla per indicare l’anteprima delle prossime funzioni. Ecco come funziona.
 
-Esempio:
+Esempio 1:
 
 ```
 This entire paragraph should NOT be highlighted. <span class="preview"> This word is **bold** inside a highlighted sentence.</span> And this is just the last sentence.
@@ -107,6 +107,42 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 Rendering:
 
 L&#39;intero paragrafo NON deve essere evidenziato. <span class="preview"> Questa parola è **audace** all&#39;interno di una frase evidenziata.</span> E questa è solo l&#39;ultima frase.
+
+Esempio 2:
+
+```
+Highlighting should start after this paragraph.
+
+<div class="preview">
+
+**This is a test**
+
+>[!TIP]
+>
+>Drink 6 cups of water a day.
+
+Last highlighted paragraph
+
+<\div>
+
+Not highlighted
+```
+
+Rendering: L&#39;evidenziazione deve iniziare dopo questo paragrafo.
+
+<div class="preview">
+
+**Questo è un test**
+
+>[!TIP]
+>
+>Bevi 6 tazze d&#39;acqua al giorno.
+
+Ultimo paragrafo evidenziato
+
+&lt;\div>
+
+Non evidenziato
 
 Come regola generale, utilizza `<span class="preview">` per evidenziare un paragrafo o un testo all’interno di un paragrafo e utilizzare `<div class="preview">` per più paragrafi e componenti.
 
