@@ -5,14 +5,70 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 0cd0a201aa10e519fa9760a64ab95fa1a10a3799
+exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
+source-git-commit: a3625867de6b7b8f8b7f71b3b124f028356dabad
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 1%
+source-wordcount: '749'
+ht-degree: 2%
 
 ---
 
 # Pagina di test nascosta
+
+## Tipi di nota
+
+
+Tutti i tipi di note supportati.
+
+>[!NOTE]
+>
+>This is a standard NOTE block.
+
+>[!TIP]
+>
+>This is a standard tip.
+
+>[!IMPORTANT]
+>
+>Questa è una nota importante.
+
+>[!WARNING]
+>
+>Questo è un avviso.
+
+>[!CAUTION]
+>
+>Questo è un avvertimento.
+
+>[!ADMIN]
+>
+>Questa è una nota di amministrazione. Solo EXL.
+
+>[!AVAILABILITY]
+>
+>Questa è una nota sulla disponibilità. Solo EXL.
+
+>[!PREREQUISITES]
+>
+>Questa è una nota sui prerequisiti. Solo EXL.
+
+>[!INFO]
+>
+>Questa è una nota informativa. Solo EXL.
+
+>[!ERROR]
+>
+>Questa è una nota di errore. Solo EXL.
+
+>[!SUCCESS]
+>
+>Questa è una nota di successo. Solo EXL.
+
+>[!MORELIKETHIS]
+>
+>* Pagina 1
+>* Pagina 2
+
 
 ## Badge
 
