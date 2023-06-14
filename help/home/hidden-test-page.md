@@ -1,24 +1,23 @@
 ---
-title: Pagina di test nascosta
+title: Pagina di prova nascosta
 description: Questa pagina è nascosta dalla ricerca e dal sommario
 hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: a3625867de6b7b8f8b7f71b3b124f028356dabad
+source-git-commit: 62b03629815f33344189c2562bc486301878a146
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '753'
 ht-degree: 2%
 
 ---
 
-# Pagina di test nascosta
+# Pagina di prova nascosta
 
-## Tipi di nota
+## Tipi di note
 
-
-Tutti i tipi di note supportati.
+Tutti i tipi di nota supportati.
 
 >[!NOTE]
 >
@@ -38,11 +37,11 @@ Tutti i tipi di note supportati.
 
 >[!CAUTION]
 >
->Questo è un avvertimento.
+>Questa è un&#39;avvertenza.
 
 >[!ADMIN]
 >
->Questa è una nota di amministrazione. Solo EXL.
+>Questa è una nota dell’amministratore che viene riprodotta come ADMINISTRATION. Solo EXL.
 
 >[!AVAILABILITY]
 >
@@ -58,7 +57,7 @@ Tutti i tipi di note supportati.
 
 >[!ERROR]
 >
->Questa è una nota di errore. Solo EXL.
+>Nota di errore. Solo EXL.
 
 >[!SUCCESS]
 >
@@ -69,23 +68,22 @@ Tutti i tipi di note supportati.
 >* Pagina 1
 >* Pagina 2
 
+## Distintivi
 
-## Badge
-
-Un badge è un’etichetta colorata utilizzata come indicatore di contenuto. Ad esempio, puoi aggiungere un badge per contrassegnare un articolo come _Beta_ o una sezione come _Premium_. Puoi modificare il colore di un badge e associare un URL e una descrizione comando.
+Un badge è un’etichetta colorata utilizzata come indicatore di contenuto. Ad esempio, puoi aggiungere un badge per contrassegnare un articolo come _Beta_ o una sezione come _Premium_. Puoi modificare il colore di un badge e associare un URL e una descrizione.
 
 [!BADGE Esempio di badge]
 
-Esistono due tipi di badge, ciascuno con sintassi diversa:
+Esistono due tipi di badge, ciascuno con una sintassi diversa:
 
-* **Metadati** - Visualizza il badge vicino alla parte superiore di una pagina
+* **Metadati** - Visualizza il badge nella parte superiore di una pagina
 * **In linea** - Visualizza il badge in cui si trova la sintassi
 
 ### Badge metadati
 
-L’aggiunta della sintassi del badge nei metadati posiziona un badge sopra il titolo della pagina (H1) nell’articolo.
+L’aggiunta della sintassi dei badge nei metadati posiziona un badge sopra il titolo della pagina (H1) nell’articolo.
 
-Ad esempio, puoi assegnare un nome ai badge utilizzando _badge1_ o _badge2_. Oppure, puoi essere più creativo (purché il nome inizi con _badge_).
+Puoi denominare i badge, ad esempio, utilizzando _badge1_ o _badge2_. In alternativa, puoi essere più creativo (purché il nome inizi con _badge_).
 
 Esempi di metadati:
 
@@ -94,28 +92,28 @@ badgePremium: label="Premium" type="Positive" url="https://www.premium-product.c
 badgeExam: label="Exam ADO-E903" type="neutral"
 ```
 
-* **badgePremium:** In questo esempio viene visualizzato un badge Premium con un URL e una descrizione comandi.
+* **badgePremium:** In questo esempio viene visualizzato un badge Premium con un URL e una descrizione comando.
 
-* **badgeExam:** In questo esempio viene visualizzato un badge scuro con un numero di ID dell&#39;esame.
+* **badgeExam:** In questo esempio viene visualizzato un badge scuro con un numero ID esame.
 
 #### Badge in linea
 
-Specifica le informazioni del badge sulla riga corrispondente o in un’intestazione, una tabella o un altro elemento di pagina.
+Specifica le informazioni del badge sulla propria riga o in un’intestazione, una tabella o un altro elemento della pagina.
 
-Di seguito è riportata la sintassi per un badge in linea con un’etichetta beta, un colore blu, un URL e una descrizione comando:
+Di seguito è riportata la sintassi per un badge in linea con etichetta beta, colore blu, URL e descrizione comando:
 
 `[!BADGE Beta]{type=Informative url="https://www.example.com" tooltip="Go to example.com"}`
 
-### Colori del badge disponibili
+### Colori badge disponibili
 
-I badge utilizzano i colori definiti in Adobe Spettro:
+I badge utilizzano i colori definiti nello spettro Adobe:
 
 | Tipo | Badge |
 |---|---|
-| Informativo (predefinito) | [!BADGE Beta]{type=Informative url="https://www.example.com"} |
+| Informativo (impostazione predefinita) | [!BADGE Beta]{type=Informative url="https://www.example.com"} |
 | Positivo | [!BADGE Nuova funzionalità]{type=Positive url="https://www.example.com" tooltip="Vai a example.com"} |
-| Negativo | [!BADGE Disattivato]{type=negative tooltip="Questa funzione è ora terminata"} |
-| Neutro | [!BADGE Forse]{type=Neutral tooltip="Un cavaliere cadde dal cavallo.."} |
+| Negativo | [!BADGE Interrotto]{type=negative tooltip="Questa funzione è giunta al termine del ciclo di vita"} |
+| Neutro | [!BADGE Forse]{type=Neutral tooltip="Un cavaliere è caduto dal cavallo..."} |
 | Attenzione | [!BADGE Attenzione]{type=Caution tooltip="Stato giallo"} |
 
 Esempi di sintassi
@@ -130,27 +128,27 @@ Esempi di sintassi
 |Caution|[!BADGE Attention]{type=Caution tooltip="Yellow status"}|
 ```
 
-### Requisiti per i distintivi
+### Requisiti dei distintivi
 
-* Nei metadati sono consentiti solo due badge. Questa regola è configurabile, quindi informaci se hai bisogno di un&#39;eccezione.
-* È richiesta solo l’etichetta del badge. La `type`, `url`e `tooltip` i parametri sono facoltativi. La `type` determina il colore. La `url` consente agli utenti di fare clic sul badge per aprire un articolo o una pagina. La `tooltip` visualizza il testo della descrizione comando al passaggio del mouse.
-* Aggiunta di un badge a `TOC.md` in file viene visualizzato il badge su ogni articolo della guida. Se specifichi un URL per il badge per passare a un articolo, accertati di utilizzare un collegamento principale (ad esempio, `/help/guide/article.md`) non un collegamento relativo (ad esempio, `article.md`) per tenere conto degli articoli in cartelle diverse.
-* Aggiunta di un badge a `metadata-new.md` visualizza il badge su ogni articolo di un repo.
-* Per i badge per metadati, accertati che tutti i valori siano racchiusi tra virgolette. Per i badge in linea, assicurati che `url` e `tooltip` sono racchiusi tra virgolette.
-* I valori di tipo validi includono *Informativo* (predefinito, blu), *Positivo* (verde), *Negativo* (rosso), *Neutro* (grigio scuro) e *Attenzione* (giallo).
+* Nei metadati sono consentiti solo due badge. Questa regola è configurabile, pertanto contattaci se hai bisogno di un’eccezione.
+* È necessaria solo l’etichetta del badge. Il `type`, `url`, e `tooltip` I parametri sono facoltativi. Il `type` Il parametro determina il colore. Il `url` Il parametro consente agli utenti di fare clic sul badge per aprire un articolo o una pagina. Il `tooltip` Il parametro visualizza il testo della descrizione comandi al passaggio del mouse.
+* Aggiunta di un badge a `TOC.md` file mostra il badge su ogni articolo della guida. Se specifichi un URL per il badge per passare a un articolo, assicurati di utilizzare un collegamento root (ad esempio, `/help/guide/article.md`) non un collegamento relativo (ad es. `article.md`) per tenere conto degli articoli in cartelle diverse.
+* Aggiunta di un badge a `metadata-new.md` mostra il badge su ogni articolo in un archivio.
+* Per i badge di metadati, assicurati che tutti i valori siano racchiusi tra virgolette. Per i badge in linea, assicurati che `url` e `tooltip` sono racchiusi tra virgolette.
+* I valori validi per il tipo includono *Informativo* (impostazione predefinita, blu), *Positivo* (verde) *Negativo* (rosso), *Neutro* (grigio scuro) e *Attenzione* (giallo).
 * Le etichette dei badge sono localizzate.
-* Se sono specificati più badge per metadati, i badge vengono visualizzati in ordine alfabetico in base al nome del badge, ad esempio `badge1:` o `badgeWeb`.
-* Se desideri che l’URL venga aperto in una nuova scheda, utilizza la sintassi seguente:
+* Se sono specificati più badge di metadati, questi vengono visualizzati in ordine alfabetico in base al nome del badge, ad esempio `badge1:` o `badgeWeb`.
+* Se desideri che l’URL venga aperto in una nuova scheda, utilizza la seguente sintassi:
 
-   ```
-   [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
-   ```
+  ```
+  [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
+  ```
 
-   Rendering:
+  Rendering:
 
-   [!BADGE Apri in una nuova scheda]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Apri adobe.com nella nuova scheda"}
+  [!BADGE Apri in una nuova scheda]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Apri adobe.com in una nuova scheda"}
 
-## Evidenziazione del testo
+## Evidenziazione testo
 
 Il team Workfront ha chiesto di poter utilizzare l’evidenziazione gialla per indicare l’anteprima delle prossime funzioni. Ecco come funziona.
 
@@ -162,7 +160,7 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 
 Rendering:
 
-L&#39;intero paragrafo NON deve essere evidenziato. <span class="preview"> Questa parola è **audace** all&#39;interno di una frase evidenziata.</span> E questa è solo l&#39;ultima frase.
+L&#39;intero paragrafo NON deve essere evidenziato. <span class="preview"> Questa parola è **grassetto** in una frase evidenziata.</span> E questa è solo l&#39;ultima frase.
 
 Esempio 2:
 
@@ -186,13 +184,13 @@ Not highlighted
 
 Rendering:
 
-L&#39;evidenziazione deve iniziare dopo questo paragrafo.
+L’evidenziazione deve iniziare dopo questo paragrafo.
 
 <div class="preview">
 
-Inizio del DIV.
+Inizio DIV.
 
-Questo è un nuovo paragrafo, quindi un&#39;immagine
+Questo è un nuovo paragrafo, quindi un’immagine
 
 ![immagine](/help/home/assets/analytics-icon-24.png)
 
@@ -204,13 +202,13 @@ Non evidenziato
 
 ## Evidenziazione della sintassi per i blocchi di codice
 
-L&#39;Experience League supporta l&#39;evidenziazione della sintassi per i blocchi di codice. Assicurati di specificare una lingua come `java` dopo il set di apertura dei contrassegni posteriori per assicurarti che la sintassi sia evidenziata correttamente. Per un elenco delle lingue valide, vedere [https://prismjs.com](https://prismjs.com/#supported-languages). Se mancano delle lingue, registra un biglietto jira.
+L’Experience League supporta l’evidenziazione della sintassi per i blocchi di codice. Assicurati di specificare una lingua come `java` dopo il set di apri dei segni di graduazione posteriori per verificare che la sintassi sia evidenziata correttamente. Per un elenco delle lingue valide, consulta [https://prismjs.com](https://prismjs.com/#supported-languages). Se mancano le lingue, registra un ticket jira.
 
 ### Numerazione delle righe nei blocchi di codice
 
 Aggiungi `{line-numbers="true"}` dopo la lingua per abilitare la numerazione delle righe.
 
-Esempio con numeri di riga (&grave;&grave;&grave;&grave;`html {line-numbers="true"}`):
+Esempio con numeri di riga (&grave;&grave;&grave;`html {line-numbers="true"}`):
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -224,11 +222,11 @@ Esempio con numeri di riga (&grave;&grave;&grave;&grave;`html {line-numbers="tru
 </html>
 ```
 
-**Inizia la numerazione alla riga _**
+**Inizia numerazione sulla riga _**
 
-Aggiungi `start-number="n"` dopo la sintassi del numero di riga per iniziare la numerazione su un numero diverso da 1.
+Aggiungi `start-number="n"` dopo la sintassi dei numeri di riga per iniziare la numerazione su un numero diverso da 1.
 
-Esempio con nuova riga iniziale (&grave;&grave;&grave;&amp;grave)`html {line-numbers="true" start-line="7"}`):
+Esempio con nuova riga iniziale (&grave;&grave;&grave;`html {line-numbers="true" start-line="7"}`):
 
 ```html {line-numbers="true" start-line="7"}
 <!DOCTYPE html>
@@ -243,11 +241,11 @@ Esempio con nuova riga iniziale (&grave;&grave;&grave;&amp;grave)`html {line-num
 </html>
 ```
 
-### Evidenziazione delle linee nei blocchi di codice
+### Evidenziazione riga nei blocchi di codice
 
-Aggiungi `highlight="n"` dopo la sintassi del numero di riga per evidenziare le righe all&#39;interno di un blocco di codice. Specifica `11-13, 16` evidenziano le linee da 11 a 13 e 16.
+Aggiungi `highlight="n"` dopo la sintassi dei numeri di riga per evidenziare le righe all’interno di un blocco di codice. Specifica `11-13, 16` evidenzierà le righe da 11 a 13 e 16.
 
-Esempio con evidenziazione linea (&grave;&grave;&grave;&grave;`html {line-numbers="true" start-line="7" highlight="11-13, 16"}`):
+Esempio con evidenziazione riga (&grave;&grave;&grave;`html {line-numbers="true" start-line="7" highlight="11-13, 16"}`):
 
 ```html {line-numbers="true" start-line="7" highlight="11-13, 16"}
 <!DOCTYPE html>
