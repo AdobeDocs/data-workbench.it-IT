@@ -1,13 +1,13 @@
 ---
-description: Data Workbench della documentazione
+description: Documentazione di Data Workbench
 title: Guida di Data Workbench
 feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
 source-git-commit: 541751e1b8966a0816b7a42e117f4c69db1ed002
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 {{eol}}
 
-[Data Workbench](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) fa parte di [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html). Fornisce funzionalità multi-canale, potenti e altamente flessibili progettate per raccogliere, elaborare, analizzare e visualizzare dati da interazioni cliente online e offline in tutti i tipi di siti web CRM, POS, e altri tipi di dati. I rapporti interattivi in Data Workbench ti consentono di analizzare e rispondere secondo informazioni statistiche pertinenti in modo da monitorare l’attività e prevedere le tendenze dei clienti.
+[Data Workbench](http://www.adobe.com/it/solutions/digital-analytics/data-workbench.html) fa parte di [Adobe Analytics](http://www.adobe.com/it/solutions/digital-analytics.html). Fornisce funzionalità multi-canale, potenti e altamente flessibili progettate per raccogliere, elaborare, analizzare e visualizzare dati da interazioni cliente online e offline in tutti i tipi di siti web CRM, POS, e altri tipi di dati. I rapporti interattivi in Data Workbench ti consentono di analizzare e rispondere secondo informazioni statistiche pertinenti in modo da monitorare l’attività e prevedere le tendenze dei clienti.
 
 * ![icona analytics](assets/analytics-icon-24.png) [Documentazione di Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=it)
 * ![icona PDF](assets/pdf_icon.png) [Scarica tutta la documentazione di Data Workbench in PDF](/help/home/assets/data-workbench.pdf)
@@ -26,18 +26,18 @@ ht-degree: 95%
 
 Data Workbench include le seguenti funzioni di analisi predittiva, visualizzazioni dati e rapporti:
 
-* [Attribuzione adattamento ottimale](/help/home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md)
-* [Punteggio tendenza](/help/home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md)
+* [Attribuzione per adattamento ottimale](/help/home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md)
+* [Punteggio propensione](/help/home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md)
 * [Alberi delle decisioni](/help/home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees.md)
 * [Matrice di correlazione](/help/home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md)
 * [Clustering](/help/home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md)
-* [Visualizzazione accordi](/help/home/c-get-started/c-analysis-vis/c-chord-visualization.md)
+* [Visualizzazione a corde](/help/home/c-get-started/c-analysis-vis/c-chord-visualization.md)
 * [Profilo di attribuzione](/help/home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
-* [Esportazione e integrazione del profilo di marketing principale](/help/home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
+* [Esportazione e integrazione del profilo marketing principale](/help/home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
 
 ## Altre guide utente di Analytics
 
-[Guide utente di Analytics](https://experienceleague.adobe.com/docs/analytics.html)
+[Guide utente di Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=it)
 
 ## Note sulla versione e nuove funzioni di Data Workbench
 
@@ -58,7 +58,7 @@ Data Workbench include le seguenti funzioni di analisi predittiva, visualizzazio
 
 * [Esportazione nei servizi core di Analytics](/help/home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
 * [Configurazione guidata della workstation](/help/home/c-install-insight/install-setup/dwb-client-installer.md)
-* [Livello Presentation (Presentazione) per l’annotazione delle visualizzazioni](/help/home/c-get-started/c-vis/c-present-layer.md)
-* [Procedura guidata di attenuazione della metrica](/help/home/c-get-started/c-vis/dwb-create-metricdim/dwb-create-metricdim.md)
+* [Livello presentazione per l’annotazione delle visualizzazioni](/help/home/c-get-started/c-vis/c-present-layer.md)
+* [Creazione guidata di dimensioni basate su metriche](/help/home/c-get-started/c-vis/dwb-create-metricdim/dwb-create-metricdim.md)
 
 *Ultimo aggiornamento*: **30/09/2019**
