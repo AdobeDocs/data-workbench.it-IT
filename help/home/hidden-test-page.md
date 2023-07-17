@@ -1,19 +1,25 @@
 ---
-title: Pagina di prova nascosta
+title: Pagina di test nascosta
 description: Questa pagina è nascosta dalla ricerca e dal sommario
 hide: true
 hidefromtoc: true
-badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
-badgeExam: label="Exam ADO-E903" type="neutral"
+badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Scarica Premium"
+badgeExam: label="Esame ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 62b03629815f33344189c2562bc486301878a146
+source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 2%
+source-wordcount: '796'
+ht-degree: 3%
 
 ---
 
-# Pagina di prova nascosta
+# Pagina di test nascosta
+
+## Anteprima problema
+
+Il paragrafo seguente non riesce a eseguire correttamente il rendering in Anteprima VSC. Non sono sicuro del perché.
+
+Se la password viene gestita da [!DNL Adobe], è possibile [modifica la password nel tuo account di Adobe](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 ## Tipi di note
 
