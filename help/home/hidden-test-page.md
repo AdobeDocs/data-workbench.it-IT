@@ -5,17 +5,17 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Scarica Premium"
 badgeExam: label="Esame ADO-E903" type="neutral"
-exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
+exl-id: 02245655-511e-4e89-8846-dac85681ea91
+source-git-commit: 6df7ed2c80f04416a48db8d4bc52ede2e87bf372
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '803'
 ht-degree: 3%
 
 ---
 
 # Pagina di test nascosta
 
-Attiva?
+Attiva? Ripeti, l’attivazione automatica è avvenuta alle 11:30 PT?
 
 ## Anteprima problema
 
@@ -49,7 +49,7 @@ Tutti i tipi di nota supportati.
 
 >[!ADMIN]
 >
->Questa è una nota dell’amministratore che viene riprodotta come ADMINISTRATION. Solo EXL.
+>Questa è una nota per gli amministratori di cui viene eseguito il rendering come AMMINISTRAZIONE. Solo EXL.
 
 >[!AVAILABILITY]
 >
@@ -82,7 +82,7 @@ Un badge è un’etichetta colorata utilizzata come indicatore di contenuto. Ad 
 
 [!BADGE Esempio di badge]
 
-Esistono due tipi di badge, ciascuno con una sintassi diversa:
+Esistono due tipi of badge, ciascuno con sintassi diversa:
 
 * **Metadati** - Visualizza il badge nella parte superiore di una pagina
 * **In linea** - Visualizza il badge in cui si trova la sintassi
