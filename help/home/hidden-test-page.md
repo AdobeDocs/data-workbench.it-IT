@@ -6,16 +6,16 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Scarica Premium"
 badgeExam: label="Esame ADO-E903" type="neutral"
 exl-id: 02245655-511e-4e89-8846-dac85681ea91
-source-git-commit: c71bf8c5b40b478c5b1901b79a29b3d1c3ca8fde
+source-git-commit: 6a10bc9a2ed41223070f3eba94b8ea7b4b1b77ab
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '806'
 ht-degree: 3%
 
 ---
 
 # Pagina di test nascosta
 
-Attiva? Ricontrolla l’invio intorno alle 15:00. Andrà in diretta alle 3:30?
+Attiva? Ricontrolla invia intorno alle 15:10. Andrà in diretta alle 15:30?
 
 ## Anteprima problema
 
